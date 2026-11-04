@@ -1,4 +1,4 @@
-RETROZAP · PACK SEMANAL 02 (16 a 22/11/2026) · rodada 1
+RETROZAP · PACK SEMANAL 02 (16 a 22/11/2026) · rodada 2
 Reels: 1080×1920, 30 fps, H.264, áudio mudo (escolha o áudio no Instagram). Capa: 1080×1920 com a arte 4:5 no centro.
 Feed: 1080×1350. Stories: 1080×1920, sem adesivo (o CTA está na arte).
 Editáveis: HTML com fontes e SVGs embutidos (abre no navegador; reels tocam sozinhos, clique para recomeçar).
@@ -138,13 +138,6 @@ Notas: Formato antes × depois. Capa Uva fecha a semana; páginas divididas Noit
 
 ------------------------------------------------------------
 
-S02-R-S6-v1 · seg 16/11 · STORY · Frase pro grupo: O print mais perigoso do ano está no seu grupo.
-Arquivos: R-S6.png
-
-Notas: Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Grupo.
-
-------------------------------------------------------------
-
 S02-R-S7-v1 · ter 17/11 · STORY · Frase pro grupo: Ninguém lê a descrição do grupo.
 Arquivos: R-S7.png
 
@@ -166,13 +159,6 @@ Notas: Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa 
 
 ------------------------------------------------------------
 
-S02-R-S10-v1 · sex 20/11 · STORY · Frase pro grupo: Feriado: o único dia em que o grupo marca alguma coisa.
-Arquivos: R-S10.png
-
-Notas: Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Grupo.
-
-------------------------------------------------------------
-
 S02-R-S11-v1 · sáb 21/11 · STORY · Frase pro grupo: Aniversário no grupo: 40 "parabéns" e nenhum bolo.
 Arquivos: R-S11.png
 
@@ -184,3 +170,17 @@ S02-R-S12-v1 · dom 22/11 · STORY · Frase pro grupo: 1º grupo grátis. O rest
 Arquivos: R-S12.png
 
 Notas: Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Grupo.
+
+------------------------------------------------------------
+
+S02-R-S6-v2 · seg 16/11 · STORY · A tela da retrospectiva no celular
+Arquivos: R-S6.png
+
+Notas: v2 (você reprovou a frase): tela do produto num celular genérico, Ato II com três troféus. Dados de exemplo (Turma do Churras), marcados.
+
+------------------------------------------------------------
+
+S02-R-S10-v2 · sex 20/11 · STORY · Conversa do grupo no feriado (simulação)
+Arquivos: R-S10.png
+
+Notas: v2 (você reprovou a frase): conversa do grupo num celular genérico, sem marca de app. Simulação com nomes de exemplo, marcada.

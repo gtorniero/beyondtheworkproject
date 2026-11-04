@@ -61,6 +61,13 @@ Teste a fazer: reels da SPORT DNA às 7h em uma semana e às 19h45 na outra, par
 - **Trend vence rápido.** Peça de trend sai na mesma semana em que foi feita; se perder a janela, cai.
 - **Quiddo é a marca mais "meme"**, com família, firma, escola e amigo secreto. A SPORT DNA faz meme com dado e ironia ("perguntei pra IA…"). O Retrozap faz meme com comportamento de grupo.
 
+## 4b. Design tangível (feedback do Gui, S02 rodada 1)
+
+- **Variar o design de verdade:** simular um celular (moldura genérica, sem marca de aparelho), bloco de notas, conversa de grupo (sem marca de app, com etiqueta de simulação), tela do produto.
+- **Mostrar o produto em uso:** como se usa, exemplo de relatório da SPORT DNA, exemplo de uma partida no Quiddo, exemplo de uma retrospectiva do Retrozap. Sempre com etiqueta "dados de exemplo".
+- **Menos peça só de texto:** frase solta e glossário puro foram reprovados por serem básicos. Cada peça precisa de um objeto concreto na tela.
+- Helpers: `C.phone()` e `C.bubble()` em `pipeline/common.py`.
+
 ## 5. Backlog e harmonia
 
 - **Backlog:** quando o Gui termina de aprovar um pack, o Claude já produz o próximo. Fica sempre um pack aprovado à frente, no máximo 2.

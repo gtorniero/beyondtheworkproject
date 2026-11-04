@@ -357,6 +357,7 @@ TERMOS = [
 
 def d_stories():
     for n, (d, sp, termo, defi, cor, lg) in enumerate(TERMOS):
+        if d in (1, 3): continue  # v2 tangível (rodada 1 do S02): d_s6(), d_s8()
         light = n % 2 == 1
         body = f'''<section class="page {'light' if light else ''}" style="width:1080px;height:1920px">
           <div class="abs lbl" style="left:80px;top:300px">DICIONÁRIO DNA · {sp}</div>
@@ -371,4 +372,47 @@ def d_stories():
               caption='(story, sem legenda)', sticker='', kind='story',
               notes='Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.')
 
-d_c3(); d_r4(); d_c4(); d_r5(); d_c5(); d_r6(); d_c6(); d_stories()
+
+def d_s6():
+    """v2: o relatório do RUN DNA na tela do celular (exemplo)."""
+    row = lambda k, v, c='#0A0A0A': f'<div style="display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-top:2px solid var(--lineL)"><span class="lbl" style="color:var(--mutedL)">{k}</span><span class="t" style="font-size:40px;color:{c}">{v}</span></div>'
+    tela = f'''<div style="position:absolute;inset:0;background:var(--off);color:var(--ink);padding:24px 34px">
+      <div style="display:flex;align-items:center;justify-content:space-between">{logo('rundna-logo-fundo-claro', 300)}<span class="lbl" style="color:var(--mutedL);font-size:20px">EXEMPLO</span></div>
+      <div class="lbl" style="margin-top:34px;color:var(--mutedL)">SEU FINALISTA</div>
+      <div class="t" style="font-size:58px;margin-top:8px">Tênis de treino diário</div>
+      <div style="display:flex;align-items:flex-end;gap:20px;margin-top:20px"><span class="n" style="font-size:110px;color:var(--run)">92%</span><span class="t" style="font-size:34px;padding-bottom:12px">DNA Score</span></div>
+      <div style="margin-top:10px">{row('CUSTO POR KM', 'R$ 0,95', 'var(--run)')}{row('DURABILIDADE', '700 km')}{row('TROCAR EM', 'set/2027')}</div>
+      <div style="margin-top:20px;background:#fff;border-radius:24px;padding:22px 24px;font-size:28px;line-height:1.35">Por que ele: amortecimento alto para o seu peso e o seu volume de treino, sem pesar no ritmo.</div></div>'''
+    body = f'''<section class="page" style="width:1080px;height:1920px">
+      <div class="abs t" style="left:80px;top:270px;width:920px;font-size:84px">Assim é o relatório do <span style="color:var(--run)">RUN DNA.</span></div>
+      <div class="abs" style="left:200px;top:470px">{C.phone(tela, 680, 1010, screen='#F4F4F2', frame='#1A1A1A', status_color='#0A0A0A', hora='07:10')}</div>
+      <div class="abs m" style="left:80px;top:1475px;font-size:34px">Teste grátis · relatório R$ 9,99</div>
+      <div class="abs lbl" style="left:80px;top:1530px">RELATÓRIO DE EXEMPLO · MODELO SEM MARCA</div>
+    </section>'''
+    piece(id='D-S6', fmt='story', day=1, title='O relatório do RUN DNA no celular (exemplo)', w=1080, h=1920, html=doc('D-S6', FONTS, CSS, body, 1080, 1920),
+          caption='(story, sem legenda)', sticker='', kind='story',
+          notes='v2 (você reprovou o glossário): tela do relatório num celular genérico. Exemplo marcado; custo por km e 700 km são o exemplo do site; modelo sem marca.')
+
+def d_s8():
+    """v2: do bloco de notas para a prancha certa (Gui: "mto basico")."""
+    linhas = ['78 kg', 'surfo há 2 anos, fim de semana', 'praia de tombo, onda média', 'a minha atual afunda na remada', 'orçamento: até a Black Friday']
+    notas = ''.join(f'<div style="display:flex;gap:18px;align-items:center;padding:18px 0;border-bottom:2px solid #EFE7C8"><span style="width:34px;height:34px;border:3px solid #B9A66A;border-radius:50%;flex:none"></span><span style="font:500 36px/1.3 \'DM Sans\'">{l}</span></div>' for l in linhas)
+    tela = f'''<div style="position:absolute;inset:0;background:#FFFBEA;color:#2B2B28;padding:26px 36px">
+      <div style="font:700 26px 'DM Sans';color:#B08A1E">‹ Notas</div>
+      <div style="font:800 60px/1.1 Archivo;margin-top:26px">prancha nova??</div>
+      <div style="font-size:24px;color:#8C8572;margin-top:8px">hoje, 06:52</div>
+      <div style="margin-top:20px">{notas}</div></div>'''
+    body = f'''<section class="page" style="width:1080px;height:1920px">
+      <div class="abs t" style="left:80px;top:270px;width:920px;font-size:84px">Do bloco de notas pra prancha <span style="color:var(--surf)">certa.</span></div>
+      <div class="abs" style="left:70px;top:470px">{C.phone(tela, 580, 960, screen='#FFFBEA', frame='#1A1A1A', status_color='#2B2B28', hora='06:52')}</div>
+      <div class="abs" style="left:640px;top:1020px;width:380px;background:var(--surf);color:var(--ink);border-radius:30px;padding:30px 32px;box-shadow:0 30px 60px rgba(0,0,0,.4)">
+        <div class="lbl" style="color:var(--ink)">SURF DNA · RESULTADO DE EXEMPLO</div>
+        <div class="t" style="font-size:56px;margin-top:12px">Funboard</div>
+        <div style="font-size:28px;margin-top:10px;line-height:1.3">Mais volume que a atual, para chegar antes na onda.</div></div>
+      <div class="abs" style="left:80px;top:1480px;width:920px;font-size:32px;color:var(--muted)">Peso, nível e mar contra 13 tipos de prancha. Teste grátis.</div>
+    </section>'''
+    piece(id='D-S8', fmt='story', day=3, title='Do bloco de notas pra prancha certa', w=1080, h=1920, html=doc('D-S8', FONTS, CSS, body, 1080, 1920),
+          caption='(story, sem legenda)', sticker='', kind='story',
+          notes='v2 (seu comentário: "mto basico"): bloco de notas num celular genérico e o resultado do SURF DNA ao lado, marcado como exemplo. 13 tipos: número do site.')
+
+d_c3(); d_r4(); d_c4(); d_r5(); d_c5(); d_r6(); d_c6(); d_stories(); d_s6(); d_s8()

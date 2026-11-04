@@ -1,4 +1,4 @@
-SPORTDNA · PACK SEMANAL 02 (16 a 22/11/2026) · rodada 1
+SPORTDNA · PACK SEMANAL 02 (16 a 22/11/2026) · rodada 2
 Reels: 1080×1920, 30 fps, H.264, áudio mudo (escolha o áudio no Instagram). Capa: 1080×1920 com a arte 4:5 no centro.
 Feed: 1080×1350. Stories: 1080×1920, sem adesivo (o CTA está na arte).
 Editáveis: HTML com fontes e SVGs embutidos (abre no navegador; reels tocam sozinhos, clique para recomeçar).
@@ -136,22 +136,8 @@ Notas: Peça de produto com a mensagem pedida pelo Gui (calibrado com atletas e 
 
 ------------------------------------------------------------
 
-S02-D-S6-v1 · seg 16/11 · STORY · Dicionário DNA: Drop
-Arquivos: D-S6.png
-
-Notas: Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.
-
-------------------------------------------------------------
-
 S02-D-S7-v1 · ter 17/11 · STORY · Dicionário DNA: Balanço
 Arquivos: D-S7.png
-
-Notas: Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.
-
-------------------------------------------------------------
-
-S02-D-S8-v1 · qua 18/11 · STORY · Dicionário DNA: Rabeta
-Arquivos: D-S8.png
 
 Notas: Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.
 
@@ -182,3 +168,17 @@ S02-D-S12-v1 · dom 22/11 · STORY · Dicionário DNA: Rocker
 Arquivos: D-S12.png
 
 Notas: Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.
+
+------------------------------------------------------------
+
+S02-D-S6-v2 · seg 16/11 · STORY · O relatório do RUN DNA no celular (exemplo)
+Arquivos: D-S6.png
+
+Notas: v2 (você reprovou o glossário): tela do relatório num celular genérico. Exemplo marcado; custo por km e 700 km são o exemplo do site; modelo sem marca.
+
+------------------------------------------------------------
+
+S02-D-S8-v2 · qua 18/11 · STORY · Do bloco de notas pra prancha certa
+Arquivos: D-S8.png
+
+Notas: v2 (seu comentário: "mto basico"): bloco de notas num celular genérico e o resultado do SURF DNA ao lado, marcado como exemplo. 13 tipos: número do site.

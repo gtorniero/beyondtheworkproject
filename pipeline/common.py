@@ -180,3 +180,19 @@ def apply_ctas(table, st_for):
             i = p['html'].rfind('</section>')
             p['html'] = p['html'][:i] + blk + p['html'][i:]
             p['sticker'] = 'Sem adesivo: o CTA já está na arte. Agendar no Business Suite.'
+
+# ---------------------------------------------------------------- celular genérico (sem marca de aparelho ou de app)
+def phone(inner, w=760, h=1340, screen='#fff', frame='#111', status_color='#111', hora='12:00'):
+    """Moldura de celular genérica. inner é posicionado dentro da tela (largura w-44)."""
+    sw = w - 44
+    return (f'<div style="position:relative;width:{w}px;height:{h}px;border-radius:96px;background:{frame};padding:22px;box-shadow:0 40px 80px rgba(0,0,0,.28)">'
+            f'<div style="position:relative;width:{sw}px;height:{h-44}px;border-radius:76px;background:{screen};overflow:hidden">'
+            f'<div style="position:absolute;left:0;right:0;top:0;height:86px;display:flex;align-items:center;justify-content:space-between;padding:0 54px;font:700 28px/1 \'DM Sans\',sans-serif;color:{status_color};z-index:3">'
+            f'<span>{hora}</span><span style="width:150px;height:40px;border-radius:20px;background:{frame}"></span><span style="letter-spacing:2px">●●● ▮</span></div>'
+            f'<div style="position:absolute;left:0;right:0;top:86px;bottom:0">{inner}</div></div></div>')
+
+def bubble(txt, me=False, nome='', hora='', bg_me='#D9FDD3', bg='#fff', fg='#111', fs=34):
+    al = 'flex-end' if me else 'flex-start'
+    n = f'<div style="font-weight:700;font-size:{fs-8}px;color:#C2185B;margin-bottom:4px">{nome}</div>' if nome and not me else ''
+    return (f'<div style="display:flex;justify-content:{al};margin:10px 22px"><div style="max-width:80%;background:{bg_me if me else bg};color:{fg};border-radius:22px;padding:14px 20px 10px;font:500 {fs}px/1.3 \'DM Sans\',sans-serif;box-shadow:0 2px 0 rgba(0,0,0,.08)">'
+            f'{n}{txt}<div style="text-align:right;font-size:{fs-12}px;opacity:.55;margin-top:4px">{hora}</div></div></div>')

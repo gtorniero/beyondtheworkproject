@@ -377,6 +377,7 @@ FRASES = [
 
 def r_stories():
     for n, (d, txt, ic, casa, bg, fg, ac) in enumerate(FRASES):
+        if d in (1, 5): continue  # v2 tangível (rodada 1 do S02): r_s6(), r_s10()
         art = icon(ic, 240, casa) if ic else taca(240, inv=True)
         last = d == 7
         body = f'''<section class="page {'casal' if casa == 'casal' else ''}" style="width:1080px;height:1920px;background:{bg};color:{fg}">
@@ -390,4 +391,45 @@ def r_stories():
               caption='(story, sem legenda)', sticker='', kind='story',
               notes='Sem adesivo: frase pronta para print (motivo de envio: identidade). ' + ('Casa Casal, sem roxo.' if casa == 'casal' else 'Casa Grupo.'))
 
-r_c3(); r_r4(); r_c4(); r_r5(); r_c5(); r_r6(); r_c6(); r_stories()
+
+def r_s6():
+    """v2: a tela da retrospectiva no celular (Gui: mais tangível, mostrar o produto)."""
+    trof = [('speech-balloon', 'O Tagarela', 'Pedrão', '3.940 mensagens', 'var(--manga)'), ('studio-microphone', 'Podcaster do Grupo', 'Juninho', '171 áudios', 'var(--piscina)'),
+            ('ghost', 'O Fantasma', 'Rafa', 'visualizou 212 vezes sem responder', 'var(--uva)')]
+    cards = ''.join(f'''<div style="margin:0 26px 20px;background:var(--acai);border-radius:30px;padding:24px 26px;display:flex;gap:22px;align-items:center">
+        <div style="flex:none;width:96px;height:96px;border-radius:24px;background:{c};display:flex;align-items:center;justify-content:center">{icon(i, 80)}</div>
+        <div style="min-width:0"><div class="mono" style="font-size:22px;color:var(--neblina)">{t.upper()}</div><div class="t" style="font-size:52px;margin-top:6px">{n}</div><div style="font-size:26px;margin-top:6px;color:var(--neblina)">{d}</div></div></div>''' for i, t, n, d, c in trof)
+    tela = f'''<div style="position:absolute;inset:0;background:var(--noite);color:var(--areia)">
+      <div style="padding:30px 26px 10px;display:flex;align-items:center;gap:18px">{taca(64)}<div><div class="t" style="font-size:40px">Turma do Churras</div><div class="mono" style="font-size:22px;color:var(--neblina)">RETROSPECTIVA 2026 · ATO II</div></div></div>
+      <div class="t" style="font-size:58px;padding:20px 26px 26px">Os troféus</div>{cards}
+      <div class="mono" style="text-align:center;font-size:22px;color:var(--neblina);margin-top:10px">toque para revelar o próximo →</div></div>'''
+    body = f'''<section class="page" style="width:1080px;height:1920px">
+      <div class="abs t" style="left:80px;top:260px;width:920px;font-size:76px">Assim chega a retrospectiva do seu <span class="hl">grupo.</span></div>
+      <div class="abs" style="left:200px;top:500px">{C.phone(tela, 680, 950, screen='#1A0B2E', frame='#0B0414', status_color='#FFF4E0', hora='21:40')}</div>
+      <div class="abs" style="left:80px;top:1475px;font-size:36px;font-weight:700;color:var(--manga)">1º grupo grátis · retrozap.com.br</div>
+      <div class="abs sim" style="left:80px;top:1530px">DADOS DE EXEMPLO · TURMA DO CHURRAS</div>
+    </section>'''
+    piece(id='R-S6', fmt='story', day=1, title='A tela da retrospectiva no celular', w=1080, h=1920, html=doc('R-S6', FONTS, CSS, body, 1080, 1920),
+          caption='(story, sem legenda)', sticker='', kind='story',
+          notes='v2 (você reprovou a frase): tela do produto num celular genérico, Ato II com três troféus. Dados de exemplo (Turma do Churras), marcados.')
+
+def r_s10():
+    """v2: conversa do grupo no feriado, num celular (simulação, sem marca de app)."""
+    head = f'''<div style="height:110px;background:var(--noite);color:var(--areia);display:flex;align-items:center;gap:18px;padding:0 26px">
+      <div style="width:70px;height:70px;border-radius:50%;background:var(--manga);display:flex;align-items:center;justify-content:center">{icon('hamburger', 50)}</div>
+      <div><div style="font:800 34px/1.1 'Bricolage Grotesque'">Turma do Churras</div><div style="font-size:22px;color:var(--neblina)">Lu, Caio, Pedrão, Bia, Rafa, você</div></div></div>'''
+    msgs = (C.bubble('gente quem tá com a chave da casa?', nome='Lu', hora='09:12', fs=30) +
+            C.bubble('tava comigo, deixei com a Bia', nome='Pedrão', hora='09:14', fs=30) + C.bubble('deixei embaixo do tapete', nome='Bia', hora='09:31', fs=30) +
+            C.bubble('QUE TAPETE', nome='Rafa', hora='09:31', fs=30) + C.bubble('tô chegando', me=True, hora='09:40', bg_me='#FFE3A3', fs=30))
+    tela = f'<div style="position:absolute;inset:0;background:#F3EDE2">{head}<div style="padding-top:16px">{msgs}</div></div>'
+    body = f'''<section class="page" style="width:1080px;height:1920px;background:var(--manga);color:var(--noite)">
+      <div class="abs t" style="left:80px;top:260px;width:920px;font-size:84px">Feriado no grupo, versão real.</div>
+      <div class="abs" style="left:200px;top:470px">{C.phone(tela, 680, 980, screen='#F3EDE2', frame='#1A0B2E', status_color='#FFF4E0', hora='09:41')}</div>
+      <div class="abs" style="left:80px;top:1475px;font-size:36px;font-weight:700">No fim do ano, isso vira troféu.</div>
+      <div class="abs sim" style="left:80px;top:1530px;opacity:.85">SIMULAÇÃO · NOMES DE EXEMPLO</div>
+    </section>'''
+    piece(id='R-S10', fmt='story', day=5, title='Conversa do grupo no feriado (simulação)', w=1080, h=1920, html=doc('R-S10', FONTS, CSS, body, 1080, 1920),
+          caption='(story, sem legenda)', sticker='', kind='story',
+          notes='v2 (você reprovou a frase): conversa do grupo num celular genérico, sem marca de app. Simulação com nomes de exemplo, marcada.')
+
+r_c3(); r_r4(); r_c4(); r_r5(); r_c5(); r_r6(); r_c6(); r_stories(); r_s6(); r_s10()

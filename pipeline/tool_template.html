@@ -102,6 +102,21 @@ summary{cursor:pointer;font-size:13px;font-weight:600}
 .feedgrid div{aspect-ratio:3/4;background:var(--bg);overflow:hidden;position:relative}
 .feedgrid img{width:100%;height:100%;object-fit:cover;display:block}
 .feedgrid i{position:absolute;top:6px;right:6px;font-style:normal;font-family:var(--mono);font-size:10px;background:rgba(0,0,0,.66);color:#fff;border-radius:4px;padding:1px 5px}
+.wk{margin-block:20px;display:grid;gap:18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi b{display:block;font-family:var(--display);font-size:34px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.kpi span{font-size:12px;color:var(--ink2)}
+.kpi.tot{border-color:var(--ok)} .kpi.tot b{color:var(--ok)}
+.wkday{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.wkday h3{margin:0;padding:12px 16px;font-size:15px;font-weight:600;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px}
+.wkrow{display:grid;grid-template-columns:44px 64px 1fr auto;gap:12px;align-items:center;padding:8px 16px;border-top:1px solid var(--line)}
+.wkrow:first-of-type{border-top:0}
+.wkrow img{width:44px;height:55px;object-fit:cover;border-radius:6px;background:var(--bg)}
+.wkrow .h{font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums}
+.wkrow .t{min-width:0;font-size:13px;line-height:1.35}
+.wkrow .t small{display:block;color:var(--ink2);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wkrow.off{opacity:.45}
 .empty{padding:40px 0;color:var(--ink2);text-align:center}
 footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
 .chg{font-size:12px;background:var(--pe-bg);border-left:3px solid var(--red);border-radius:6px;padding:8px 10px}
@@ -141,7 +156,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       <div class="tally" id="tally" aria-live="polite"></div>
     </div>
     <div class="filters">
-      <div class="seg" id="f-view"><span class="lbl">Ver</span><button data-v="pecas" aria-pressed="true">Peças</button><button data-v="grade" aria-pressed="false">Grade do feed</button><button data-v="pub" aria-pressed="false">Publicação</button></div>
+      <div class="seg" id="f-view"><span class="lbl">Ver</span><button data-v="pecas" aria-pressed="true">Peças</button><button data-v="semana" aria-pressed="false">Assets da semana</button><button data-v="grade" aria-pressed="false">Grade do feed</button><button data-v="pub" aria-pressed="false">Publicação</button></div>
       <div class="seg" id="f-brand"><span class="lbl">Marca</span></div>
       <div class="seg" id="f-fmt"><span class="lbl">Formato</span></div>
       <div class="seg" id="f-status"><span class="lbl">Status</span></div>
@@ -252,11 +267,37 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
     return P.filter(p => (state.brand==='todas'||p.brand===state.brand) && (state.fmt==='todos'||p.fmt===state.fmt) && (state.status==='todos'||eff(p)===state.status));
   }
 
+  function renderSemana(v){
+    const FL = {reel:'Reels', carrossel:'Feed · carrossel', story:'Stories'};
+    const thumb = p => p.fmt==='reel' ? p.cover45 : p.previews[0];
+    const hora = p => p.slot || (p.fmt==='story' ? '12h' : '12h30');
+    const ok = P.filter(p=>eff(p)==='aprovado');
+    const cnt = f => ok.filter(p=>p.fmt===f).length, tot = f => P.filter(p=>p.fmt===f).length;
+    const falta = P.length - ok.length;
+    let h = `<div class="wk"><p class="note" style="margin:0">Tudo o que está aprovado aqui vai para o DOT agendar no Business Suite, no dia e na hora abaixo. Você não posta nada. As peças sem aprovação aparecem apagadas.</p>
+      <div class="kpis">
+        <div class="kpi tot"><b>${ok.length} / ${P.length}</b><span>assets aprovados</span></div>
+        ${['reel','carrossel','story'].map(f=>`<div class="kpi"><b>${cnt(f)} / ${tot(f)}</b><span>${FL[f]}</span></div>`).join('')}
+        <div class="kpi"><b>${falta}</b><span>ainda sem aprovação</span></div>
+      </div>
+      <div class="kpis">${BRANDS.map(b=>{ const bp = ok.filter(p=>p.brand===b); return `<div class="kpi"><b>${bp.length}</b><span>${esc(b)} · ${bp.filter(p=>p.fmt==='reel').length} reels, ${bp.filter(p=>p.fmt==='carrossel').length} carr., ${bp.filter(p=>p.fmt==='story').length} stories</span></div>`; }).join('')}</div>`;
+    const ord = {story:0, carrossel:1, reel:2};
+    [1,2,3,4,5,6,7].forEach(d=>{
+      const ps = P.filter(p=>p.day===d).sort((a,c)=>hora(a).localeCompare(hora(c)) || ord[a.fmt]-ord[c.fmt] || a.brand.localeCompare(c.brand));
+      if(!ps.length) return;
+      const n = ps.filter(p=>eff(p)==='aprovado').length;
+      h += `<section class="wkday"><h3><span>${esc(DAYS[d])}</span><span class="lbl">${n} de ${ps.length} aprovados</span></h3>${ps.map(p=>{ const a = eff(p)==='aprovado';
+        return `<div class="wkrow${a?'':' off'}"><img src="media/${thumb(p)}" alt="" loading="lazy"><span class="h">${esc(hora(p))}</span><span class="t">${esc(p.brand)} · ${esc(p.fmt)}<small>${esc(p.title)}</small></span><span class="status s-${eff(p)}">${a?'vai entrar':esc(stLabel(eff(p)).toLowerCase())}</span></div>`; }).join('')}</section>`;
+    });
+    v.innerHTML = h + '</div>';
+  }
+
   function render(){
     tally();
     const v = document.getElementById('view');
     const focusId = document.activeElement && document.activeElement.id;
     if (state.view==='pub'){ renderPub(v); return; }
+    if (state.view==='semana'){ renderSemana(v); return; }
     if (state.view==='grade'){
       const brands = state.brand==='todas'?BRANDS:[state.brand];
       v.innerHTML = `<div class="feeds">${brands.map(b=>{

@@ -39,6 +39,10 @@ for p in P:
     shutil.copy(O / p['editable'], T / p['editable'])
 MUDOU = {
  'Q-R4': 'Veio do S01 sem decisão: mesma arte, data nova (sáb 21/11).',
+ 'R-S6': 'Linha nova (você reprovou a frase): a tela da retrospectiva num celular, com três troféus de exemplo. Mais tangível, como pediu no feedback geral.',
+ 'R-S10': 'Linha nova (você reprovou a frase): conversa do grupo no feriado num celular genérico, simulação marcada.',
+ 'D-S6': 'Linha nova (você reprovou o glossário): o relatório do RUN DNA na tela do celular, exemplo marcado.',
+ 'D-S8': 'Linha nova (seu comentário: "mto basico"): bloco de notas no celular e o resultado do SURF DNA ao lado.',
 }
 STORIES_CTA = 'O Instagram não agenda adesivos e você não vai postar nada: a enquete/quiz/link virou CTA desenhado na arte ("responde no direct", "link na bio"). Assim o DOT agenda tudo.'
 for p in P:

@@ -1,0 +1,89 @@
+{
+ "pack": "S02",
+ "pieces": [
+  {
+   "id": "R-S6",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "",
+   "title": "A tela da retrospectiva no celular",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (você reprovou a frase): tela do produto num celular genérico, Ato II com três troféus. Dados de exemplo (Turma do Churras), marcados.",
+   "version": "S02-R-S6-v2",
+   "v": 2,
+   "hash": "9d76f16d46",
+   "media": [
+    "R-S6.png"
+   ],
+   "editable": "editaveis/R-S6.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "R-S10",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 5,
+   "dia": "sex 20/11",
+   "slot": "",
+   "title": "Conversa do grupo no feriado (simulação)",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (você reprovou a frase): conversa do grupo num celular genérico, sem marca de app. Simulação com nomes de exemplo, marcada.",
+   "version": "S02-R-S10-v2",
+   "v": 2,
+   "hash": "37563ee8ab",
+   "media": [
+    "R-S10.png"
+   ],
+   "editable": "editaveis/R-S10.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S6",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "",
+   "title": "O relatório do RUN DNA no celular (exemplo)",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (você reprovou o glossário): tela do relatório num celular genérico. Exemplo marcado; custo por km e 700 km são o exemplo do site; modelo sem marca.",
+   "version": "S02-D-S6-v2",
+   "v": 2,
+   "hash": "d30813f47c",
+   "media": [
+    "D-S6.png"
+   ],
+   "editable": "editaveis/D-S6.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S8",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 18/11",
+   "slot": "",
+   "title": "Do bloco de notas pra prancha certa",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (seu comentário: \"mto basico\"): bloco de notas num celular genérico e o resultado do SURF DNA ao lado, marcado como exemplo. 13 tipos: número do site.",
+   "version": "S02-D-S8-v2",
+   "v": 2,
+   "hash": "cd708dd65e",
+   "media": [
+    "D-S8.png"
+   ],
+   "editable": "editaveis/D-S8.html",
+   "duration": null,
+   "sticker": ""
+  }
+ ]
+}
