@@ -1,9 +1,9 @@
 """Gera STATUS.json (o que está liberado para o DOT) a partir das decisões da Mesa.
-Uso: python3 status.py <pasta com reviews/*.json do ArtifactData> <saida STATUS.json>"""
+Uso: python3 status.py <pasta reviews/*.json> <saida STATUS.json> [manifest.json]"""
 import json, sys
 from pathlib import Path
-M = json.loads((Path(__file__).parent / 'out' / 'manifest.json').read_text())
 rev_dir = Path(sys.argv[1])
+M = json.loads(Path(sys.argv[3]).read_text()) if len(sys.argv) > 3 else json.loads((Path(__file__).parent / 'out' / 'manifest.json').read_text())
 pack = M['pack']
 rev = {}
 for f in rev_dir.glob('*.json'):
