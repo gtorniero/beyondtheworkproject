@@ -1,7 +1,7 @@
 {
  "pack": "S01",
  "liberadas": 17,
- "total": 31,
+ "total": 18,
  "pecas": [
   {
    "peca": "Q-R1",
@@ -64,36 +64,6 @@
    "status_mesa": "aprovado"
   },
   {
-   "peca": "Q-S1",
-   "marca": "Quiddo",
-   "formato": "story",
-   "dia": "seg 09/11",
-   "hora": "12h",
-   "versao": "S01-Q-S1-v2",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "Q-S2",
-   "marca": "Quiddo",
-   "formato": "story",
-   "dia": "ter 10/11",
-   "hora": "12h",
-   "versao": "S01-Q-S2-v2",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "Q-S3",
-   "marca": "Quiddo",
-   "formato": "story",
-   "dia": "qua 11/11",
-   "hora": "12h",
-   "versao": "S01-Q-S3-v4",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
    "peca": "Q-S4",
    "marca": "Quiddo",
    "formato": "story",
@@ -101,16 +71,6 @@
    "hora": "12h",
    "versao": "S01-Q-S4-v1",
    "liberado": true,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "Q-S5",
-   "marca": "Quiddo",
-   "formato": "story",
-   "dia": "sáb 14/11",
-   "hora": "12h",
-   "versao": "S01-Q-S5-v3",
-   "liberado": false,
    "status_mesa": "aprovado"
   },
   {
@@ -164,36 +124,6 @@
    "status_mesa": "aprovado"
   },
   {
-   "peca": "R-S1",
-   "marca": "Retrozap",
-   "formato": "story",
-   "dia": "seg 09/11",
-   "hora": "12h",
-   "versao": "S01-R-S1-v2",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "R-S2",
-   "marca": "Retrozap",
-   "formato": "story",
-   "dia": "qua 11/11",
-   "hora": "12h",
-   "versao": "S01-R-S2-v2",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "R-S3",
-   "marca": "Retrozap",
-   "formato": "story",
-   "dia": "qui 12/11",
-   "hora": "12h",
-   "versao": "S01-R-S3-v2",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
    "peca": "R-S4",
    "marca": "Retrozap",
    "formato": "story",
@@ -201,16 +131,6 @@
    "hora": "12h",
    "versao": "S01-R-S4-v1",
    "liberado": true,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "R-S5",
-   "marca": "Retrozap",
-   "formato": "story",
-   "dia": "sáb 14/11",
-   "hora": "12h",
-   "versao": "S01-R-S5-v2",
-   "liberado": false,
    "status_mesa": "aprovado"
   },
   {
@@ -261,56 +181,6 @@
    "hora": "19h45",
    "versao": "S01-D-R3-v1",
    "liberado": true,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "D-S1",
-   "marca": "SPORT DNA",
-   "formato": "story",
-   "dia": "seg 09/11",
-   "hora": "12h",
-   "versao": "S01-D-S1-v2",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "D-S2",
-   "marca": "SPORT DNA",
-   "formato": "story",
-   "dia": "ter 10/11",
-   "hora": "12h",
-   "versao": "S01-D-S2-v3",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "D-S3",
-   "marca": "SPORT DNA",
-   "formato": "story",
-   "dia": "qua 11/11",
-   "hora": "12h",
-   "versao": "S01-D-S3-v3",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "D-S4",
-   "marca": "SPORT DNA",
-   "formato": "story",
-   "dia": "sex 13/11",
-   "hora": "12h",
-   "versao": "S01-D-S4-v3",
-   "liberado": false,
-   "status_mesa": "aprovado"
-  },
-  {
-   "peca": "D-S5",
-   "marca": "SPORT DNA",
-   "formato": "story",
-   "dia": "sáb 14/11",
-   "hora": "12h",
-   "versao": "S01-D-S5-v2",
-   "liberado": false,
    "status_mesa": "aprovado"
   }
  ]

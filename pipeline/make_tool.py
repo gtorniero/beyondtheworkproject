@@ -11,6 +11,9 @@ import common as C, importlib
 for m in ('quiddo', 'retrozap', 'sportdna'): importlib.import_module(m)
 order = [p['id'] for p in C.PIECES]
 P = [pieces[i] for i in order if i in pieces]
+# Canceladas pelo Gui (rodada 4): stories que dependiam de adesivo
+CANCELADAS = {'Q-S1', 'Q-S2', 'Q-S3', 'Q-S5', 'R-S1', 'R-S2', 'R-S3', 'R-S5', 'D-S1', 'D-S2', 'D-S3', 'D-S4', 'D-S5'}
+P = [p for p in P if p['id'] not in CANCELADAS]
 missing = [i for i in order if i not in pieces]
 SRC = {p['id']: p for p in C.PIECES}
 for p in P:  # metadados vêm sempre do código (horário, título, notas, adesivo)

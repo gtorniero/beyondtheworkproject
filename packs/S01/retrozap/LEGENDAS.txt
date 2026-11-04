@@ -1,4 +1,4 @@
-RETROZAP · PACK SEMANAL 01 (09–15/11/2026) · rodada 4
+RETROZAP · PACK SEMANAL 01 (09–15/11/2026) · rodada 2
 Reels: 1080×1920, 30 fps, H.264, áudio mudo (escolha o áudio no Instagram). Capa: 1080×1920 com a arte 4:5 no centro.
 Feed: 1080×1350. Stories: 1080×1920 com o espaço do adesivo já reservado.
 Editáveis: HTML com fontes e SVGs embutidos (abre no navegador; reels tocam sozinhos, clique para recomeçar).
@@ -92,40 +92,8 @@ Notas: Notificações genéricas (sem marca de app). Etiqueta "simulação" vis�
 
 ------------------------------------------------------------
 
-S01-R-S1-v2 · seg 09/11 · STORY · Enquete: seu grupo tem um Fantasma?
-Arquivos: R-S1.png
-Adesivo: Sem adesivo: o CTA já está na arte. Agendar no Business Suite.
-
-Notas: Uva + Noite (mapa do guia para Fantasma).
-
-------------------------------------------------------------
-
-S01-R-S2-v2 · qua 11/11 · STORY · Enquete: o troféu mais disputado
-Arquivos: R-S2.png
-Adesivo: Sem adesivo: o CTA já está na arte. Agendar no Business Suite.
-
-Notas: Piscina + Noite.
-
-------------------------------------------------------------
-
-S01-R-S3-v2 · qui 12/11 · STORY · Casal: quem manda mais boa noite?
-Arquivos: R-S3.png
-Adesivo: Sem adesivo: o CTA já está na arte. Agendar no Business Suite.
-
-Notas: Casa Casal. Sem roxo.
-
-------------------------------------------------------------
-
 S01-R-S4-v1 · sex 13/11 · STORY · Privacidade em uma frase
 Arquivos: R-S4.png
 Adesivo: Sem adesivo (ou adesivo de link para a página de privacidade).
 
 Notas: Editorial de confiança.
-
-------------------------------------------------------------
-
-S01-R-S5-v2 · sáb 14/11 · STORY · Link: faça o do seu grupo
-Arquivos: R-S5.png
-Adesivo: Sem adesivo: o CTA já está na arte. Agendar no Business Suite.
-
-Notas: Grupo invertido: taça Noite sobre Manga.

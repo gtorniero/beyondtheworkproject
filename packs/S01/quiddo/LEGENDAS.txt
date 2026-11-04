@@ -1,4 +1,4 @@
-QUIDDO · PACK SEMANAL 01 (09–15/11/2026) · rodada 4
+QUIDDO · PACK SEMANAL 01 (09–15/11/2026) · rodada 2
 Reels: 1080×1920, 30 fps, H.264, áudio mudo (escolha o áudio no Instagram). Capa: 1080×1920 com a arte 4:5 no centro.
 Feed: 1080×1350. Stories: 1080×1920 com o espaço do adesivo já reservado.
 Editáveis: HTML com fontes e SVGs embutidos (abre no navegador; reels tocam sozinhos, clique para recomeçar).
@@ -109,40 +109,8 @@ Notas: Visual Espaço (selo "Na Lua!" é o carimbo oficial do pódio da cena lua
 
 ------------------------------------------------------------
 
-S01-Q-S1-v2 · seg 09/11 · STORY · Enquete: amigo secreto ou quiz?
-Arquivos: Q-S1.png
-Adesivo: Sem adesivo: o CTA já está na arte. Agendar no Business Suite.
-
-Notas: Story de enquete. Sem legenda de feed.
-
-------------------------------------------------------------
-
-S01-Q-S2-v2 · ter 10/11 · STORY · Caixa: a pergunta que derruba a família
-Arquivos: Q-S2.png
-Adesivo: Sem adesivo: o CTA já está na arte. Agendar no Business Suite.
-
-Notas: Story. Sem legenda de feed.
-
-------------------------------------------------------------
-
-S01-Q-S3-v4 · qua 11/11 · STORY · Quiz: quantos bichos tem no Quiddo?
-Arquivos: Q-S3.png
-Adesivo: Sem adesivo: o CTA já está na arte. Agendar no Business Suite.
-
-Notas: v3 (você reprovou a v2 do intruso). Pergunta direta, valendo ponto, como no jogo. Nada se sobrepõe: título em cima, adesivo no meio, bichos embaixo.
-
-------------------------------------------------------------
-
 S01-Q-S4-v1 · sex 13/11 · STORY · Bastidor: 13.200 jeitos de montar o bicho
 Arquivos: Q-S4.png
 Adesivo: Sem adesivo. Opcional: adesivo de link no rodapé.
 
 Notas: Story editorial. 20 × 11 × 6 × 10 = 13.200 (contagem do código do site).
-
-------------------------------------------------------------
-
-S01-Q-S5-v3 · sáb 14/11 · STORY · Link: crie o quiz da confraternização
-Arquivos: Q-S5.png
-Adesivo: Sem adesivo: o CTA já está na arte. Agendar no Business Suite.
-
-Notas: Story de conversão leve.
