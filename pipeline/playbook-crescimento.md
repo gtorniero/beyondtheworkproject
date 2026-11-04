@@ -61,7 +61,13 @@ Teste a fazer: reels da SPORT DNA às 7h em uma semana e às 19h45 na outra, par
 - **Trend vence rápido.** Peça de trend sai na mesma semana em que foi feita; se perder a janela, cai.
 - **Quiddo é a marca mais "meme"**, com família, firma, escola e amigo secreto. A SPORT DNA faz meme com dado e ironia ("perguntei pra IA…"). O Retrozap faz meme com comportamento de grupo.
 
-## 5. Fluxo da semana
+## 5. Backlog e harmonia
+
+- **Backlog:** quando o Gui termina de aprovar um pack, o Claude já produz o próximo. Fica sempre um pack aprovado à frente, no máximo 2.
+- **Sem repetição:** nada de repetir tema, gancho ou piada da mesma marca nas últimas 4 semanas. O Claude confere os packs anteriores e o Registro de publicações.
+- **Grade harmônica:** antes de ir para a Mesa, o Claude monta a grade das 9 últimas peças de cada marca com as novas e ajusta cor e composição.
+
+## 6. Fluxo da semana
 
 | Dia | O quê | Quem |
 |---|---|---|

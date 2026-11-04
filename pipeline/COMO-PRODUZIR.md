@@ -43,8 +43,25 @@ mkdir -p out && cp state/*.json out/
 4. Atualize `packs/SNN/` com `pipeline/entrega/*`, `pipeline/state/` com `out/versions-*.json` e `out/manifest*.json`, e `rodadas-processadas.json`. Commit e push.
 5. Notifique: "Rodada n aplicada: N peças novas na Mesa".
 
-## C. Produzir o pack da semana seguinte (sábado)
-1. Leia o doc de trends mais recente em "Entrada do DOT", as métricas da semana e o Playbook.
+## Regra de backlog (decisão do Gui, 04/11)
+- Sempre que o Gui terminar de aprovar um pack (nenhuma peça "sem decisão" ou "revisar" na Mesa, ou rodada finalizada com quase tudo aprovado), produza logo o próximo. O objetivo é ter sempre um pack aprovado à frente da semana em curso.
+- Limite: no máximo 2 packs à frente da semana atual. Se já houver 2, não produza.
+- Peças sem decisão do pack anterior entram no pack novo como candidatas (mesma arte, data nova), porque a Mesa mostra só o pack mais recente.
+
+## Não repetir e manter o feed harmônico (vale para toda produção)
+- Antes de criar, leia:
+  - todos os `packs/*/manifest.json` (títulos, legendas, formatos, temas);
+  - o "Registro de publicações" no Drive (o que foi de fato agendado ou publicado);
+  - as métricas mais recentes.
+- Não repita tema, gancho, piada, pergunta ou dado de peça das últimas 4 semanas da mesma marca. Formato pode repetir; ideia não.
+- Monte a grade de cada marca com as 9 últimas peças de feed (as já publicadas e as do pack anterior) mais as novas, na ordem real de publicação, e olhe a imagem:
+  - alterne fundo claro e escuro;
+  - não ponha duas capas de mesma cor ou mesma composição lado a lado;
+  - mantenha a identidade de cada marca.
+- Faça essa checagem com uma folha de contato gerada pelo `preview.py` e corrija antes de publicar na Mesa.
+
+## C. Produzir o próximo pack (gatilho de backlog ou sábado)
+1. Leia o doc de trends mais recente em "Entrada do DOT", as métricas da semana, o Playbook e faça a checagem de repetição e harmonia acima.
 2. Crie o pack S(NN+1), com a semana de segunda a domingo seguinte:
    - por marca, 1 post de feed por dia alternando reel e carrossel, continuando a sequência da semana anterior;
    - de 1 a 3 stories por dia, sem adesivo do Instagram (CTA desenhado na arte com `C.apply_ctas`);
