@@ -117,6 +117,13 @@ summary{cursor:pointer;font-size:13px;font-weight:600}
 .wkrow .t{min-width:0;font-size:13px;line-height:1.35}
 .wkrow .t small{display:block;color:var(--ink2);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .wkrow.off{opacity:.45}
+[hidden]{display:none!important}
+.modes{display:flex;gap:4px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+.modes button{flex:1 1 0;max-width:340px;background:transparent;border:0;border-bottom:3px solid transparent;padding:12px 16px 10px;font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:-.01em;color:var(--ink2);text-align:left;margin-bottom:-1px}
+.modes button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--red)}
+.modes button[data-m="ok"][aria-selected="true"]{border-bottom-color:var(--ok)}
+.modes .n{display:inline-block;min-width:28px;text-align:center;font-family:var(--mono);font-size:13px;font-weight:500;padding:2px 8px;border-radius:999px;background:var(--pe-bg);color:var(--ink2);margin-left:6px;vertical-align:2px}
+.modes button[data-m="ok"] .n{background:var(--ok-bg);color:var(--ok)}
 .empty{padding:40px 0;color:var(--ink2);text-align:center}
 footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
 .chg{font-size:12px;background:var(--pe-bg);border-left:3px solid var(--red);border-radius:6px;padding:8px 10px}
@@ -155,11 +162,16 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       </div>
       <div class="tally" id="tally" aria-live="polite"></div>
     </div>
+    <nav class="modes" role="tablist" aria-label="Painéis">
+      <button type="button" role="tab" data-m="aprov">Em aprovação <span class="n" id="m-aprov">0</span></button>
+      <button type="button" role="tab" data-m="ok">Aprovados <span class="n" id="m-ok">0</span></button>
+    </nav>
     <div class="filters">
-      <div class="seg" id="f-view"><span class="lbl">Ver</span><button data-v="pecas" aria-pressed="true">Em aprovação</button><button data-v="semana" aria-pressed="false">Aprovados e programados</button><button data-v="grade" aria-pressed="false">Grade do feed</button><button data-v="pub" aria-pressed="false">Publicação</button></div>
+      <div class="seg" id="f-view"><span class="lbl">Ver</span></div>
       <div class="seg" id="f-brand"><span class="lbl">Marca</span></div>
       <div class="seg" id="f-fmt"><span class="lbl">Formato</span></div>
       <div class="seg" id="f-status"><span class="lbl">Status</span></div>
+      <div class="seg" id="f-day"><span class="lbl">Dia</span></div>
       <div class="right"><button class="btn ghost" id="copyx" type="button">Copiar exportação</button><button class="btn" id="exportx" type="button">Exportar decisões</button></div>
     </div>
   </div>
@@ -189,12 +201,12 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
   const FMTS = [['reel','Reel'],['carrossel','Carrossel'],['story','Story']];
   const STS = [['pendente','Pendente'],['revisar','Revisar de novo'],['aprovado','Aprovado'],['reprovado','Não aprovado']];
   const DAYS = M.days || {1:'Dia 1 · seg 09/11',2:'Dia 2 · ter 10/11',3:'Dia 3 · qua 11/11',4:'Dia 4 · qui 12/11',5:'Dia 5 · sex 13/11',6:'Dia 6 · sáb 14/11',7:'Dia 7 · dom 15/11'};
-  const state = { view:'pecas', brand:'todas', fmt:'todos', status:'todos', reviews:{}, geral:'', geralAt:null, packDoc:{}, confirm:false, sending:false, err:'' };
+  const state = { mode:'aprov', viewA:'pecas', viewB:'dia', day:'todos', view:'pecas', brand:'todas', fmt:'todos', status:'todos', reviews:{}, geral:'', geralAt:null, packDoc:{}, confirm:false, sending:false, err:'' };
   let db = null, dls = null;
   const key = id => M.pack === 'S01' ? id : M.pack + '_' + id;
 
-  try { const s = JSON.parse(localStorage.getItem('mesa-f')||'{}'); Object.assign(state, {view:s.view||'pecas', brand:s.brand||'todas', fmt:s.fmt||'todos', status:s.status||'todos'}); } catch(e){}
-  function keepF(){ try{ localStorage.setItem('mesa-f', JSON.stringify({view:state.view,brand:state.brand,fmt:state.fmt,status:state.status})); }catch(e){} }
+  try { const s = JSON.parse(localStorage.getItem('mesa-f2')||'{}'); ['mode','viewA','viewB','day','brand','fmt','status'].forEach(k=>{ if(s[k]!=null) state[k]=s[k]; }); } catch(e){}
+  function keepF(){ try{ localStorage.setItem('mesa-f2', JSON.stringify({mode:state.mode,viewA:state.viewA,viewB:state.viewB,day:state.day,brand:state.brand,fmt:state.fmt,status:state.status})); }catch(e){} }
 
   function eff(p){
     const r = state.reviews[p.id];
@@ -214,16 +226,19 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
     };
     mk('f-brand', [['todas','Todas']].concat(BRANDS.map(b=>[b,b])), 'brand');
     mk('f-fmt', [['todos','Todos']].concat(FMTS), 'fmt');
-    mk('f-status', [['todos','Todos']].concat(STS), 'status');
-    document.querySelectorAll('#f-view button').forEach(b=>{ b.setAttribute('aria-pressed', String(state.view===b.dataset.v)); b.onclick=()=>{state.view=b.dataset.v; keepF(); segs(); render();}; });
+    const ok = state.mode==='ok';
+    mk('f-view', ok ? [['dia','Por dia'],['pecas','Peças'],['grade','Grade do feed'],['pub','Publicação']] : [['pecas','Peças'],['grade','Grade do feed']], ok ? 'viewB' : 'viewA');
+    mk('f-status', [['todos','Todos']].concat(STS.filter(x=>x[0]!=='aprovado')), 'status');
+    mk('f-day', [['todos','Todos']].concat([1,2,3,4,5,6,7].map(d=>[String(d), (M.days&&M.days[d]||DAYS[d]).replace(/^Dia \d+ · /,'')])), 'day');
+    document.getElementById('f-status').hidden = ok; document.getElementById('f-day').hidden = !ok;
+    document.querySelectorAll('.modes button').forEach(b=>{ b.setAttribute('aria-selected', String(state.mode===b.dataset.m)); b.onclick=()=>{ state.mode=b.dataset.m; keepF(); segs(); render(); window.scrollTo(0,0); }; });
   }
 
   function tally(){
     const c = {pendente:0,revisar:0,aprovado:0,reprovado:0};
     P.forEach(p=>c[eff(p)]++);
     document.getElementById('tally').innerHTML = STS.map(([k,l])=>`<span class="s-${k}">${c[k]} ${l.toLowerCase()}</span>`).join('');
-    const bp = document.querySelector('#f-view [data-v="pecas"]'), bs = document.querySelector('#f-view [data-v="semana"]');
-    if (bp) bp.textContent = `Em aprovação (${P.length - c.aprovado})`; if (bs) bs.textContent = `Aprovados e programados (${c.aprovado})`;
+    document.getElementById('m-aprov').textContent = P.length - c.aprovado; document.getElementById('m-ok').textContent = c.aprovado;
     dock();
   }
 
@@ -266,29 +281,32 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
   }
 
   function visible(){
-    return P.filter(p => eff(p)!=='aprovado' && (state.brand==='todas'||p.brand===state.brand) && (state.fmt==='todos'||p.fmt===state.fmt) && (state.status==='todos'||eff(p)===state.status));
+    return base().filter(p => state.mode==='ok' ? eff(p)==='aprovado' : (eff(p)!=='aprovado' && (state.status==='todos'||eff(p)===state.status)));
+  }
+  function base(){
+    return P.filter(p => (state.brand==='todas'||p.brand===state.brand) && (state.fmt==='todos'||p.fmt===state.fmt) && (state.mode!=='ok'||state.day==='todos'||p.day===Number(state.day)));
   }
 
   function renderSemana(v){
     const FL = {reel:'Reels', carrossel:'Feed · carrossel', story:'Stories'};
     const thumb = p => p.fmt==='reel' ? p.cover45 : p.previews[0];
     const hora = p => p.slot || (p.fmt==='story' ? '12h' : '12h30');
-    const ok = P.filter(p=>eff(p)==='aprovado');
-    const cnt = f => ok.filter(p=>p.fmt===f).length, tot = f => P.filter(p=>p.fmt===f).length;
-    const falta = P.length - ok.length;
+    const B = base(), ok = B.filter(p=>eff(p)==='aprovado');
+    const cnt = f => ok.filter(p=>p.fmt===f).length, tot = f => B.filter(p=>p.fmt===f).length;
+    const falta = B.length - ok.length;
     let h = `<div class="wk"><p class="note" style="margin:0">Só o que você aprovou. Cada peça aqui vai para o DOT agendar no Business Suite, no dia e na hora abaixo; você não posta nada. Para mudar de ideia, use "voltar p/ aprovação".</p>
       <div class="kpis">
-        <div class="kpi tot"><b>${ok.length} / ${P.length}</b><span>assets aprovados</span></div>
+        <div class="kpi tot"><b>${ok.length} / ${B.length}</b><span>assets aprovados</span></div>
         ${['reel','carrossel','story'].map(f=>`<div class="kpi"><b>${cnt(f)} / ${tot(f)}</b><span>${FL[f]}</span></div>`).join('')}
         <div class="kpi"><b>${falta}</b><span>ainda em aprovação</span></div>
       </div>
       <div class="kpis">${BRANDS.map(b=>{ const bp = ok.filter(p=>p.brand===b); return `<div class="kpi"><b>${bp.length}</b><span>${esc(b)} · ${bp.filter(p=>p.fmt==='reel').length} reels, ${bp.filter(p=>p.fmt==='carrossel').length} carr., ${bp.filter(p=>p.fmt==='story').length} stories</span></div>`; }).join('')}</div>`;
     const ord = {story:0, carrossel:1, reel:2};
-    if (!ok.length) h += '<p class="empty">Nada aprovado ainda. As peças estão na aba "Em aprovação".</p>';
+    if (!ok.length) h += '<p class="empty">Nada aprovado com esses filtros. O resto está no painel "Em aprovação".</p>';
     [1,2,3,4,5,6,7].forEach(d=>{
-      const ps = P.filter(p=>p.day===d && eff(p)==='aprovado').sort((a,c)=>hora(a).localeCompare(hora(c)) || ord[a.fmt]-ord[c.fmt] || a.brand.localeCompare(c.brand));
+      const ps = ok.filter(p=>p.day===d).sort((a,c)=>hora(a).localeCompare(hora(c)) || ord[a.fmt]-ord[c.fmt] || a.brand.localeCompare(c.brand));
       if(!ps.length) return;
-      const total = P.filter(p=>p.day===d).length;
+      const total = B.filter(p=>p.day===d).length;
       if (!ps.length) return;
       h += `<section class="wkday"><h3><span>${esc(DAYS[d])}</span><span class="lbl">${ps.length} de ${total} aprovados</span></h3>${ps.map(p=>
         `<div class="wkrow"><img src="media/${thumb(p)}" alt="" loading="lazy"><span class="h">${esc(hora(p))}</span><span class="t">${esc(p.brand)} · ${esc(p.fmt)}<small>${esc(p.title)} · ${esc(p.version)}</small></span><span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end"><span class="status s-aprovado">programado</span><button class="btn ghost" type="button" data-undo="${p.id}" style="padding:4px 10px;font-size:12px">voltar p/ aprovação</button></span></div>`).join('')}</section>`;
@@ -303,17 +321,19 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
     tally();
     const v = document.getElementById('view');
     const focusId = document.activeElement && document.activeElement.id;
-    if (state.view==='pub'){ renderPub(v); return; }
-    if (state.view==='semana'){ renderSemana(v); return; }
-    if (state.view==='grade'){
+    const okm = state.mode==='ok', view = okm ? state.viewB : state.viewA;
+    document.querySelector('.geral').hidden = okm; document.querySelector('.dock').hidden = okm;
+    if (okm && view==='pub'){ renderPub(v); return; }
+    if (okm && view==='dia'){ renderSemana(v); return; }
+    if (view==='grade'){
       const brands = state.brand==='todas'?BRANDS:[state.brand];
       v.innerHTML = `<div class="feeds">${brands.map(b=>{
-        const feed = P.filter(p=>p.brand===b && p.fmt!=='story').sort((a,c)=>c.day-a.day);
+        const feed = P.filter(p=>p.brand===b && p.fmt!=='story' && (!okm || eff(p)==='aprovado')).sort((a,c)=>c.day-a.day);
         return `<div class="feed"><h3>${esc(b)}</h3><div class="feedgrid">${feed.map(p=>`<div><img src="media/${p.fmt==='reel'?p.cover45:p.previews[0]}" alt="${esc(p.title)}" loading="lazy"><i>D${p.day} · ${p.fmt==='reel'?'reel':'carr.'}</i></div>`).join('')}${((M.grade||{})[b]||[]).map(g=>`<div style="opacity:.55"><img src="media/${g.img}" alt="${esc(g.title)}" loading="lazy"><i>${esc(g.label)}</i></div>`).join('')}</div><p class="note">A última publicação (dia 7) fica no canto de cima à esquerda. As apagadas são do pack anterior, para conferir a grade.</p></div>`;}).join('')}</div>`;
       return;
     }
     const list = visible();
-    if (!list.length){ v.innerHTML = P.some(p=>eff(p)!=='aprovado') ? '<p class="empty">Nenhuma peça em aprovação com esses filtros.</p>' : '<p class="empty">Tudo aprovado. Veja a aba "Aprovados e programados".</p>'; return; }
+    if (!list.length){ v.innerHTML = okm ? '<p class="empty">Nada aprovado com esses filtros.</p>' : (P.some(p=>eff(p)!=='aprovado') ? '<p class="empty">Nenhuma peça em aprovação com esses filtros.</p>' : '<p class="empty">Tudo aprovado. Veja o painel "Aprovados".</p>'); return; }
     let html = '';
     [1,2,3,4,5,6,7].forEach(d=>{ const ps = list.filter(p=>p.day===d); if(!ps.length) return;
       html += `<div class="day"><h3>${DAYS[d]}</h3><span class="lbl">${ps.length} peça${ps.length>1?'s':''}</span></div><div class="grid">${ps.map(card).join('')}</div>`; });
@@ -435,7 +455,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
   async function act(x, b){
     if (x==='abrir'){ state.confirm = true; state.err=''; dock(); return; }
     if (x==='voltar'){ state.confirm = false; dock(); return; }
-    if (x==='pub'){ state.view='pub'; keepF(); segs(); render(); scrollTo(0,0); return; }
+    if (x==='pub'){ state.mode='ok'; state.viewB='pub'; keepF(); segs(); render(); scrollTo(0,0); return; }
     if (x==='copiar'){ try { await navigator.clipboard.writeText(resumo()); b.textContent='Copiado: cole no chat'; } catch(e){ b.textContent='Cópia bloqueada: use Exportar'; } return; }
     if (x==='enviar'){
       if (!db) return;
