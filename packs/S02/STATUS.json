@@ -1,6 +1,6 @@
 {
  "pack": "S02",
- "liberadas": 39,
+ "liberadas": 40,
  "total": 42,
  "pecas": [
   {
@@ -280,8 +280,8 @@
    "dia": "sex 20/11",
    "hora": "12h",
    "versao": "S02-R-S10-v3",
-   "liberado": false,
-   "status_mesa": "reprovado"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-C3",
@@ -301,7 +301,7 @@
    "hora": "19h45",
    "versao": "S02-D-R7-v1",
    "liberado": false,
-   "status_mesa": "pendente"
+   "status_mesa": "reprovado"
   },
   {
    "peca": "D-R4",
