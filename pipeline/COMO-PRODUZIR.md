@@ -58,7 +58,7 @@ mkdir -p out && cp state/*.json out/
   - alterne fundo claro e escuro;
   - não ponha duas capas de mesma cor ou mesma composição lado a lado;
   - mantenha a identidade de cada marca.
-- Faça essa checagem com uma folha de contato gerada pelo `preview.py` e corrija antes de publicar na Mesa.
+- Faça essa checagem com `python3 grade.py out/grade.jpg` (feed do pack anterior + o novo, por marca) e com o `preview.py` peça a peça; corrija antes de publicar na Mesa.
 
 ## C. Produzir o próximo pack (gatilho de backlog ou sábado)
 1. Leia o doc de trends mais recente em "Entrada do DOT", as métricas da semana, o Playbook e faça a checagem de repetição e harmonia acima.
@@ -67,7 +67,7 @@ mkdir -p out && cp state/*.json out/
    - de 1 a 3 stories por dia, sem adesivo do Instagram (CTA desenhado na arte com `C.apply_ctas`);
    - reels misturando meme e trend; Quiddo com no mínimo 2 memes;
    - toda peça com um motivo para ser enviada e um CTA de envio na legenda.
-3. Em `common.py`, mude `PACK` e `DIAS`. Escreva as peças em `pipeline/<marca>.py`, seguindo o padrão do S01 (funções por peça, `piece(...)` com id, fmt, day, slot, título, legenda e notas).
+3. Mova o código do pack anterior para `pipeline/arquivo/SNN/` e o estado para `pipeline/state/SNN/`. Em `common.py`, mude `PACK`, `NUM`, `SEMANA`, `SEMANA_LONGA`, `PREV`, `DIAS` e `DATAS` (guia e Mesa leem daí). Escreva as peças em `pipeline/<marca>.py`, seguindo o padrão do S01 (funções por peça, `piece(...)` com id, fmt, day, slot, título, legenda e notas).
 4. Use só dado verdadeiro:
    - Quiddo: CTA "Faça o seu. Teste grátis.", nunca "até 10 pessoas".
    - Retrozap: dados de exemplo só "Turma do Churras" e "Dani & Cris", com etiqueta.

@@ -1,0 +1,1143 @@
+{
+ "pack": "S02",
+ "pieces": [
+  {
+   "id": "Q-C3",
+   "brand": "Quiddo",
+   "fmt": "carrossel",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "12h30",
+   "title": "Desafio: 5 perguntas sobre bichos do Brasil",
+   "kind": "engajamento",
+   "caption": "Bichos do Brasil: aposto que você erra 2 de 5. 🦥\n\nLíngua do tamanduá, casa do boto, agenda da preguiça, cardápio do lobo-guará e a diferença entre jabuti e tartaruga.\nArrasta, anota as suas e confere o gabarito na última página.\n\nManda no grupo e vê quem acerta mais 👇\nFaça o seu quiz, teste grátis: quiddo.com.br\n#bichosdobrasil #quiz #desafio #curiosidades #fauna #quiddo",
+   "notes": "Desafio (motivo de envio: \"aposto que você erra\"). Capa amarela para separar o mata do domingo (Q-R3) do creme de terça. Fatos conferidos: língua do tamanduá-bandeira até ~60 cm; boto é golfinho de rio; preguiça desce ~1x por semana; lobeira na dieta do lobo-guará; jabuti é terrestre.",
+   "version": "S02-Q-C3-v1",
+   "v": 1,
+   "hash": "efd0ab5582",
+   "media": [
+    "Q-C3-1.png",
+    "Q-C3-2.png",
+    "Q-C3-3.png",
+    "Q-C3-4.png",
+    "Q-C3-5.png",
+    "Q-C3-6.png",
+    "Q-C3-7.png"
+   ],
+   "editable": "editaveis/Q-C3.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-C3-1.jpg",
+    "Q-C3-2.jpg",
+    "Q-C3-3.jpg",
+    "Q-C3-4.jpg",
+    "Q-C3-5.jpg",
+    "Q-C3-6.jpg",
+    "Q-C3-7.jpg"
+   ]
+  },
+  {
+   "id": "Q-R5",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 2,
+   "dia": "ter 17/11",
+   "slot": "19h45",
+   "title": "Meme \"Ninguém:\": a tia no quiz da família",
+   "kind": "meme",
+   "caption": "Ninguém:\nA tia, na pergunta 1 do quiz da família: \"quem fez essas perguntas? tá impossível.\" 🙄\n\nPlacar final: Tia Célia em 1º. De novo.\n\nManda pra tia do grupo da família 👇\nFaça o seu, teste grátis: quiddo.com.br\n#meme #familia #tia #quiz #natalemfamilia #quiddo",
+   "notes": "Meme no formato \"Ninguém: / Fulano:\". Curto (12 s) para loop, com áudio em alta no app. Nomes de exemplo.",
+   "version": "S02-Q-R5-v1",
+   "v": 1,
+   "hash": "c61dc58f82",
+   "media": [
+    "Q-R5.mp4",
+    "Q-R5-capa.png"
+   ],
+   "editable": "editaveis/Q-R5.html",
+   "duration": 12.4,
+   "sticker": "",
+   "poster": "Q-R5-poster.jpg",
+   "cover": "Q-R5-capa.jpg",
+   "cover45": "Q-R5-capa45.jpg"
+  },
+  {
+   "id": "Q-C4",
+   "brand": "Quiddo",
+   "fmt": "carrossel",
+   "day": 3,
+   "dia": "qua 18/11",
+   "slot": "12h30",
+   "title": "Meme: me diga que é Natal sem dizer Natal",
+   "kind": "meme",
+   "caption": "Me diga que é Natal em família sem dizer Natal. 🎄\n\n1. \"É pavê ou é pra comer?\"\n2. O primo que você só vê uma vez por ano.\n3. \"E os namoradinhos?\"\n4. A disputa pela última rabanada.\n5. Alguém dormindo no sofá às 22h.\n\nFaltou um: o quiz da família. Faça o seu, teste grátis: quiddo.com.br\nManda no grupo da família e marca o tio do pavê 👇\n#natal #natalemfamilia #meme #familia #pave #quiddo",
+   "notes": "Carrossel de meme (\"me diga X sem dizer X\"). Capa vermelha (Natal) entre o creme de terça e o creme de quinta. Bichos de gorro do avatarSvg.",
+   "version": "S02-Q-C4-v1",
+   "v": 1,
+   "hash": "371ba29f5a",
+   "media": [
+    "Q-C4-1.png",
+    "Q-C4-2.png",
+    "Q-C4-3.png",
+    "Q-C4-4.png",
+    "Q-C4-5.png",
+    "Q-C4-6.png",
+    "Q-C4-7.png"
+   ],
+   "editable": "editaveis/Q-C4.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-C4-1.jpg",
+    "Q-C4-2.jpg",
+    "Q-C4-3.jpg",
+    "Q-C4-4.jpg",
+    "Q-C4-5.jpg",
+    "Q-C4-6.jpg",
+    "Q-C4-7.jpg"
+   ]
+  },
+  {
+   "id": "Q-R6",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 4,
+   "dia": "qui 19/11",
+   "slot": "19h45",
+   "title": "Trend expectativa × realidade: \"um quiz rapidinho\"",
+   "kind": "trend",
+   "caption": "Expectativa: \"um quiz rapidinho antes da pizza.\" 🍕\nRealidade: 00:40, rodada 7, \"melhor de 9?\".\n\nNo Quiddo, ninguém sai antes do pódio.\n\nManda pro amigo que sempre pede revanche 👇\nFaça o seu, teste grátis: quiddo.com.br\n#expectativavsrealidade #quiz #amigos #resenha #noitedejogos #quiddo",
+   "notes": "Trend \"expectativa × realidade\". Capa dividida creme/tinta (fica clara na grade). Áudio em alta no app.",
+   "version": "S02-Q-R6-v1",
+   "v": 1,
+   "hash": "6b51520e59",
+   "media": [
+    "Q-R6.mp4",
+    "Q-R6-capa.png"
+   ],
+   "editable": "editaveis/Q-R6.html",
+   "duration": 13.6,
+   "sticker": "",
+   "poster": "Q-R6-poster.jpg",
+   "cover": "Q-R6-capa.jpg",
+   "cover45": "Q-R6-capa45.jpg"
+  },
+  {
+   "id": "Q-C5",
+   "brand": "Quiddo",
+   "fmt": "carrossel",
+   "day": 5,
+   "dia": "sex 20/11",
+   "slot": "12h30",
+   "title": "Feriado com chuva: 5 temas de quiz",
+   "kind": "engajamento",
+   "caption": "Feriado com chuva? 5 temas de quiz pra salvar a tarde. ☔\n\n1. Família: em que cidade o vô e a vó se conheceram?\n2. Brasil: qual é a capital mais ao norte?\n3. Comida: de que estado é o pão de queijo?\n4. Ciência: quantos corações tem um polvo?\n5. Quem é mais provável de dormir no meio do filme?\n\nSalva e manda no grupo de quem vai passar o feriado junto 👇\nFaça o seu, teste grátis: quiddo.com.br\n#feriado #feriadao #quiz #diversaoemfamilia #jogosemfamilia #quiddo",
+   "notes": "Sexta 20/11 é feriado nacional. Utilidade (salvar e mandar no grupo). Respostas conferidas: Boa Vista é a capital mais ao norte; pão de queijo é de Minas; polvo tem 3 corações.",
+   "version": "S02-Q-C5-v1",
+   "v": 1,
+   "hash": "065e476cba",
+   "media": [
+    "Q-C5-1.png",
+    "Q-C5-2.png",
+    "Q-C5-3.png",
+    "Q-C5-4.png",
+    "Q-C5-5.png",
+    "Q-C5-6.png",
+    "Q-C5-7.png"
+   ],
+   "editable": "editaveis/Q-C5.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-C5-1.jpg",
+    "Q-C5-2.jpg",
+    "Q-C5-3.jpg",
+    "Q-C5-4.jpg",
+    "Q-C5-5.jpg",
+    "Q-C5-6.jpg",
+    "Q-C5-7.jpg"
+   ]
+  },
+  {
+   "id": "Q-R4",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 6,
+   "dia": "sáb 21/11",
+   "slot": "19h45",
+   "title": "Meme POV: a pergunta do vô",
+   "kind": "meme",
+   "caption": "POV: a pergunta 3 do quiz da família era o nome completo do vô. 👴\n\n0 de 9 acertaram. O vô acertou.\n\nManda no grupo da família e vê quem sabe 👇\nFaça o seu, teste grátis: quiddo.com.br\n#quiz #familia #natalemfamilia #pov #meme #quiddo",
+   "notes": "Formato meme (POV com texto na tela), curto para rodar em loop. Feito para entrar com um áudio em alta no app (o DOT pega o áudio da semana). CTA de envio para o grupo da família, que é o sinal que mais espalha no Instagram.",
+   "version": "S02-Q-R4-v1",
+   "v": 1,
+   "hash": "3bd9b516ae",
+   "media": [
+    "Q-R4.mp4",
+    "Q-R4-capa.png"
+   ],
+   "editable": "editaveis/Q-R4.html",
+   "duration": 9.6,
+   "sticker": "",
+   "poster": "Q-R4-poster.jpg",
+   "cover": "Q-R4-capa.jpg",
+   "cover45": "Q-R4-capa45.jpg",
+   "mudou": "Veio do S01 sem decisão: mesma arte, data nova (sáb 21/11)."
+  },
+  {
+   "id": "Q-C6",
+   "brand": "Quiddo",
+   "fmt": "carrossel",
+   "day": 7,
+   "dia": "dom 22/11",
+   "slot": "12h30",
+   "title": "Natal em 1 mês: o quiz da família em 3 passos (produto)",
+   "kind": "produto",
+   "caption": "Natal em 1 mês. O quiz da família em 3 passos. 🎄\n\n1. Escolha o visual.\n2. Escreva as perguntas da família: quiz que vale ponto, enquete e \"quem é mais provável\".\n3. Manda o código no grupo. Cada um joga pelo celular, sem baixar app.\n\nManda no grupo da família e já avisa: este ano tem quiz 👇\nFaça o seu. Teste grátis: quiddo.com.br\n#natal #natalemfamilia #quiz #ceiadenatal #familia #quiddo",
+   "notes": "Peça de produto. Visuais são as miniaturas oficiais do site (art.json). Código da sala é de exemplo e está marcado. Capa azul fecha a semana depois do creme do Q-R4.",
+   "version": "S02-Q-C6-v1",
+   "v": 1,
+   "hash": "5050551d31",
+   "media": [
+    "Q-C6-1.png",
+    "Q-C6-2.png",
+    "Q-C6-3.png",
+    "Q-C6-4.png",
+    "Q-C6-5.png"
+   ],
+   "editable": "editaveis/Q-C6.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-C6-1.jpg",
+    "Q-C6-2.jpg",
+    "Q-C6-3.jpg",
+    "Q-C6-4.jpg",
+    "Q-C6-5.jpg"
+   ]
+  },
+  {
+   "id": "Q-S6",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "",
+   "title": "Pergunta do dia: Qual é a maior ave do Brasil?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: a resposta está na arte, de cabeça pra baixo. Motivo de envio: print no grupo. Fato conferido.",
+   "version": "S02-Q-S6-v1",
+   "v": 1,
+   "hash": "267b8cc732",
+   "media": [
+    "Q-S6.png"
+   ],
+   "editable": "editaveis/Q-S6.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-S6.jpg"
+   ]
+  },
+  {
+   "id": "Q-S7",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 2,
+   "dia": "ter 17/11",
+   "slot": "",
+   "title": "Pergunta do dia: Quantos ossos tem o corpo de um adulto?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: a resposta está na arte, de cabeça pra baixo. Motivo de envio: print no grupo. Fato conferido.",
+   "version": "S02-Q-S7-v1",
+   "v": 1,
+   "hash": "0acd8b3d0f",
+   "media": [
+    "Q-S7.png"
+   ],
+   "editable": "editaveis/Q-S7.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-S7.jpg"
+   ]
+  },
+  {
+   "id": "Q-S8",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 18/11",
+   "slot": "",
+   "title": "Pergunta do dia: Qual é o maior roedor do mundo?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: a resposta está na arte, de cabeça pra baixo. Motivo de envio: print no grupo. Fato conferido.",
+   "version": "S02-Q-S8-v1",
+   "v": 1,
+   "hash": "5266778591",
+   "media": [
+    "Q-S8.png"
+   ],
+   "editable": "editaveis/Q-S8.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-S8.jpg"
+   ]
+  },
+  {
+   "id": "Q-S9",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 4,
+   "dia": "qui 19/11",
+   "slot": "",
+   "title": "Pergunta do dia: Qual é o planeta mais quente do Sistema Solar?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: a resposta está na arte, de cabeça pra baixo. Motivo de envio: print no grupo. Fato conferido.",
+   "version": "S02-Q-S9-v1",
+   "v": 1,
+   "hash": "a93d1cdd16",
+   "media": [
+    "Q-S9.png"
+   ],
+   "editable": "editaveis/Q-S9.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-S9.jpg"
+   ]
+  },
+  {
+   "id": "Q-S10",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 5,
+   "dia": "sex 20/11",
+   "slot": "",
+   "title": "Pergunta do dia: Quantos estados tem o Brasil?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: a resposta está na arte, de cabeça pra baixo. Motivo de envio: print no grupo. Fato conferido.",
+   "version": "S02-Q-S10-v1",
+   "v": 1,
+   "hash": "ddcb325393",
+   "media": [
+    "Q-S10.png"
+   ],
+   "editable": "editaveis/Q-S10.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-S10.jpg"
+   ]
+  },
+  {
+   "id": "Q-S11",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 6,
+   "dia": "sáb 21/11",
+   "slot": "",
+   "title": "Pergunta do dia: Qual é o maior bioma do Brasil?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: a resposta está na arte, de cabeça pra baixo. Motivo de envio: print no grupo. Fato conferido.",
+   "version": "S02-Q-S11-v1",
+   "v": 1,
+   "hash": "8ac1a6d92b",
+   "media": [
+    "Q-S11.png"
+   ],
+   "editable": "editaveis/Q-S11.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-S11.jpg"
+   ]
+  },
+  {
+   "id": "Q-S12",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 7,
+   "dia": "dom 22/11",
+   "slot": "",
+   "title": "Pergunta do dia: Qual destes bichos é um mamífero?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: a resposta está na arte, de cabeça pra baixo. Motivo de envio: print no grupo. Fato conferido.",
+   "version": "S02-Q-S12-v1",
+   "v": 1,
+   "hash": "8d4a4fd99e",
+   "media": [
+    "Q-S12.png"
+   ],
+   "editable": "editaveis/Q-S12.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "Q-S12.jpg"
+   ]
+  },
+  {
+   "id": "R-C3",
+   "brand": "Retrozap",
+   "fmt": "carrossel",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "12h30",
+   "title": "Dicionário do grupo",
+   "kind": "engajamento",
+   "caption": "Dicionário do grupo: o que cada mensagem quer dizer de verdade. 📖\n\n\"Vamos marcar\": não vamos marcar.\n\"Tô chegando\": tô saindo do banho.\n\"Quem topa?\": sete visualizações, nenhuma resposta.\n\"Depois eu vejo\": não vai ver.\n\"Gente, rapidinho\": textão chegando.\n\"Bom dia, grupo\": ninguém responde desde terça.\n\nFaltou alguma? Comenta. E manda no grupo pra ver quem se ofende 👇\nretrozap.com.br · 1º grupo grátis\n#retrozap #grupodeamigos #meme #amigos #resenha",
+   "notes": "Identidade (motivo de envio). Capa Manga com a taça invertida oficial; páginas Noite com acento por página.",
+   "version": "S02-R-C3-v1",
+   "v": 1,
+   "hash": "4070e3bc82",
+   "media": [
+    "R-C3-1.png",
+    "R-C3-2.png",
+    "R-C3-3.png",
+    "R-C3-4.png",
+    "R-C3-5.png"
+   ],
+   "editable": "editaveis/R-C3.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-C3-1.jpg",
+    "R-C3-2.jpg",
+    "R-C3-3.jpg",
+    "R-C3-4.jpg",
+    "R-C3-5.jpg"
+   ]
+  },
+  {
+   "id": "R-R4",
+   "brand": "Retrozap",
+   "fmt": "reel",
+   "day": 2,
+   "dia": "ter 17/11",
+   "slot": "19h45",
+   "title": "Meme POV: marcar o churrasco do feriado",
+   "kind": "meme",
+   "caption": "POV: o grupo tentando marcar o churrasco do feriado. 🍔\n\n52 mensagens. 0 datas. Fechou: \"a gente vê\".\n(Simulação com nomes de exemplo.)\n\nManda no grupo que ainda não marcou nada 👇\nretrozap.com.br · 1º grupo grátis\n#retrozap #feriado #churrasco #grupodeamigos #meme #pov",
+   "notes": "Meme POV com notificações genéricas (sem marca de app) e etiqueta de simulação. Áudio em alta no app.",
+   "version": "S02-R-R4-v1",
+   "v": 1,
+   "hash": "433302a4b5",
+   "media": [
+    "R-R4.mp4",
+    "R-R4-capa.png"
+   ],
+   "editable": "editaveis/R-R4.html",
+   "duration": 15.4,
+   "sticker": "",
+   "poster": "R-R4-poster.jpg",
+   "cover": "R-R4-capa.jpg",
+   "cover45": "R-R4-capa45.jpg"
+  },
+  {
+   "id": "R-C4",
+   "brand": "Retrozap",
+   "fmt": "carrossel",
+   "day": 3,
+   "dia": "qua 18/11",
+   "slot": "12h30",
+   "title": "Casal: as 5 mensagens de todo dia",
+   "kind": "engajamento",
+   "caption": "As 5 mensagens que todo casal manda todo dia. 💌\n\n5. \"Manda foto\"\n4. \"Tá onde?\"\n3. \"O que vamos jantar?\"\n2. \"Já tô indo\"\n1. \"Chegou?\"\n\n(Contagem de exemplo, do casal Dani & Cris.) No Retrozap Casais, a conta é a de vocês dois.\nManda pro seu amor e aposta qual ganha no de vocês 👇\nretrozap.com.br\n#retrozap #casal #namorados #amor #retrospectiva2026",
+   "notes": "Casa Casal: creme, rosa, cereja e vinho, sem roxo. Números de exemplo (Dani & Cris), marcados em todas as páginas.",
+   "version": "S02-R-C4-v1",
+   "v": 1,
+   "hash": "26c217333f",
+   "media": [
+    "R-C4-1.png",
+    "R-C4-2.png",
+    "R-C4-3.png",
+    "R-C4-4.png",
+    "R-C4-5.png"
+   ],
+   "editable": "editaveis/R-C4.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-C4-1.jpg",
+    "R-C4-2.jpg",
+    "R-C4-3.jpg",
+    "R-C4-4.jpg",
+    "R-C4-5.jpg"
+   ]
+  },
+  {
+   "id": "R-R5",
+   "brand": "Retrozap",
+   "fmt": "reel",
+   "day": 4,
+   "dia": "qui 19/11",
+   "slot": "19h45",
+   "title": "Trend \"me diga sem dizer\": grupo da família",
+   "kind": "trend",
+   "caption": "Me diga que você está no grupo da família sem dizer. ☀️\n\n\"Bom dia\" com flor às 6h. \"Quem é esse número?\" Áudio de 3 minutos da tia. \"Lindo!\" em todas as fotos. A foto do almoço de domingo.\n\nO grupo da família também ganha troféu no Retrozap.\nManda no grupo da família (se tiver coragem) 👇\nretrozap.com.br · 1º grupo grátis\n#retrozap #grupodafamilia #familia #meme #trend",
+   "notes": "Trend \"me diga X sem dizer X\". Sem conversa simulada: só frases e ícones oficiais. Uma cor de apoio por cena, corte seco. Áudio em alta no app.",
+   "version": "S02-R-R5-v1",
+   "v": 1,
+   "hash": "825286425c",
+   "media": [
+    "R-R5.mp4",
+    "R-R5-capa.png"
+   ],
+   "editable": "editaveis/R-R5.html",
+   "duration": 15.0,
+   "sticker": "",
+   "poster": "R-R5-poster.jpg",
+   "cover": "R-R5-capa.jpg",
+   "cover45": "R-R5-capa45.jpg"
+  },
+  {
+   "id": "R-C5",
+   "brand": "Retrozap",
+   "fmt": "carrossel",
+   "day": 5,
+   "dia": "sex 20/11",
+   "slot": "12h30",
+   "title": "Feriadão: o grupo que viaja junto, em 6 fases",
+   "kind": "engajamento",
+   "caption": "O grupo que viaja junto, em 6 fases. 🧳\n\n1. \"Bora viajar no feriado?\"\n2. A planilha.\n3. \"Quem leva o quê?\"\n4. \"Racha a conta.\"\n5. 600 fotos.\n6. \"Ano que vem de novo?\"\n\nEm que fase o seu grupo está? Manda no grupo da viagem 👇\nretrozap.com.br · 1º grupo grátis\n#retrozap #feriado #viagemcomamigos #grupodeamigos #feriadao",
+   "notes": "Sexta 20/11 é feriado. Capa Chiclete (cor de apoio) entre a Noite de quinta e a de sábado.",
+   "version": "S02-R-C5-v1",
+   "v": 1,
+   "hash": "4d8c0fdbba",
+   "media": [
+    "R-C5-1.png",
+    "R-C5-2.png",
+    "R-C5-3.png",
+    "R-C5-4.png",
+    "R-C5-5.png"
+   ],
+   "editable": "editaveis/R-C5.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-C5-1.jpg",
+    "R-C5-2.jpg",
+    "R-C5-3.jpg",
+    "R-C5-4.jpg",
+    "R-C5-5.jpg"
+   ]
+  },
+  {
+   "id": "R-R6",
+   "brand": "Retrozap",
+   "fmt": "reel",
+   "day": 6,
+   "dia": "sáb 21/11",
+   "slot": "19h45",
+   "title": "Produto: a retrospectiva do grupo em 3 passos",
+   "kind": "produto",
+   "caption": "A retrospectiva do seu grupo em 3 passos. 🏆\n\n1. Exporte a conversa do grupo, no celular.\n2. Abra no retrozap.com.br: o arquivo é lido no seu navegador, nada vai para servidor.\n3. Receba os troféus, revelados um por um.\n\n1º grupo grátis. Acesso completo por R$ 8,99, pagamento único.\nManda pro amigo que guarda todos os prints do grupo 👇\nretrozap.com.br (link na bio)\n#retrozap #retrospectiva2026 #grupodeamigos #amigos",
+   "notes": "Peça de produto. Preço e privacidade iguais ao S01 (R$ 8,99, 1º grupo grátis, leitura no navegador). Sem nome de app de terceiros na arte.",
+   "version": "S02-R-R6-v1",
+   "v": 1,
+   "hash": "7690480c13",
+   "media": [
+    "R-R6.mp4",
+    "R-R6-capa.png"
+   ],
+   "editable": "editaveis/R-R6.html",
+   "duration": 16.0,
+   "sticker": "",
+   "poster": "R-R6-poster.jpg",
+   "cover": "R-R6-capa.jpg",
+   "cover45": "R-R6-capa45.jpg"
+  },
+  {
+   "id": "R-C6",
+   "brand": "Retrozap",
+   "fmt": "carrossel",
+   "day": 7,
+   "dia": "dom 22/11",
+   "slot": "12h30",
+   "title": "Antes × depois: grupo de amigos 2016 × 2026",
+   "kind": "engajamento",
+   "caption": "Grupo de amigos: 2016 × 2026. 🕰️\n\n\"Rolê hoje?\" virou \"rolê em 2027?\".\nBalada até as 5h virou dormir às 22h.\n300 mensagens por dia viraram 1 meme por semana.\nFoto da festa virou foto do pet.\n\nManda no grupo mais antigo que você tem 👇\nO Retrozap mostra o seu grupo ano a ano. retrozap.com.br · 1º grupo grátis\n#retrozap #amigos #antesedepois #grupodeamigos #nostalgia",
+   "notes": "Formato antes × depois. Capa Uva fecha a semana; páginas divididas Noite (2016) e Manga (2026).",
+   "version": "S02-R-C6-v1",
+   "v": 1,
+   "hash": "cefdd64120",
+   "media": [
+    "R-C6-1.png",
+    "R-C6-2.png",
+    "R-C6-3.png",
+    "R-C6-4.png",
+    "R-C6-5.png",
+    "R-C6-6.png"
+   ],
+   "editable": "editaveis/R-C6.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-C6-1.jpg",
+    "R-C6-2.jpg",
+    "R-C6-3.jpg",
+    "R-C6-4.jpg",
+    "R-C6-5.jpg",
+    "R-C6-6.jpg"
+   ]
+  },
+  {
+   "id": "R-S6",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "",
+   "title": "Frase pro grupo: O print mais perigoso do ano está no seu grupo.",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Grupo.",
+   "version": "S02-R-S6-v1",
+   "v": 1,
+   "hash": "4af94c3e05",
+   "media": [
+    "R-S6.png"
+   ],
+   "editable": "editaveis/R-S6.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-S6.jpg"
+   ]
+  },
+  {
+   "id": "R-S7",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 2,
+   "dia": "ter 17/11",
+   "slot": "",
+   "title": "Frase pro grupo: Ninguém lê a descrição do grupo.",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Grupo.",
+   "version": "S02-R-S7-v1",
+   "v": 1,
+   "hash": "daa14403ea",
+   "media": [
+    "R-S7.png"
+   ],
+   "editable": "editaveis/R-S7.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-S7.jpg"
+   ]
+  },
+  {
+   "id": "R-S8",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 18/11",
+   "slot": "",
+   "title": "Frase pro grupo: Casal que manda meme um pro outro no mesmo sofá.",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Casal, sem roxo.",
+   "version": "S02-R-S8-v1",
+   "v": 1,
+   "hash": "72b2fa70ed",
+   "media": [
+    "R-S8.png"
+   ],
+   "editable": "editaveis/R-S8.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-S8.jpg"
+   ]
+  },
+  {
+   "id": "R-S9",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 4,
+   "dia": "qui 19/11",
+   "slot": "",
+   "title": "Frase pro grupo: Todo grupo tem um \"kkkk\" que não riu.",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Grupo.",
+   "version": "S02-R-S9-v1",
+   "v": 1,
+   "hash": "47fe32e2ca",
+   "media": [
+    "R-S9.png"
+   ],
+   "editable": "editaveis/R-S9.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-S9.jpg"
+   ]
+  },
+  {
+   "id": "R-S10",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 5,
+   "dia": "sex 20/11",
+   "slot": "",
+   "title": "Frase pro grupo: Feriado: o único dia em que o grupo marca alguma coisa.",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Grupo.",
+   "version": "S02-R-S10-v1",
+   "v": 1,
+   "hash": "ec1b377ea7",
+   "media": [
+    "R-S10.png"
+   ],
+   "editable": "editaveis/R-S10.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-S10.jpg"
+   ]
+  },
+  {
+   "id": "R-S11",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 6,
+   "dia": "sáb 21/11",
+   "slot": "",
+   "title": "Frase pro grupo: Aniversário no grupo: 40 \"parabéns\" e nenhum bolo.",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Grupo.",
+   "version": "S02-R-S11-v1",
+   "v": 1,
+   "hash": "37c220c408",
+   "media": [
+    "R-S11.png"
+   ],
+   "editable": "editaveis/R-S11.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-S11.jpg"
+   ]
+  },
+  {
+   "id": "R-S12",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 7,
+   "dia": "dom 22/11",
+   "slot": "",
+   "title": "Frase pro grupo: 1º grupo grátis. O resto é história.",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa Grupo.",
+   "version": "S02-R-S12-v1",
+   "v": 1,
+   "hash": "d5928bbaf1",
+   "media": [
+    "R-S12.png"
+   ],
+   "editable": "editaveis/R-S12.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "R-S12.jpg"
+   ]
+  },
+  {
+   "id": "D-C3",
+   "brand": "SPORT DNA",
+   "fmt": "carrossel",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "12h30",
+   "title": "Black Friday: 4 perguntas antes de comprar",
+   "kind": "engajamento",
+   "caption": "Desconto bom em equipamento errado continua caro. 🏷️\n\nAntes da Black Friday (27/11), 4 perguntas:\n01 O que você usa hoje te incomoda?\n02 Qual é o seu nível de verdade?\n03 O desconto é no modelo certo para o seu corpo?\n04 Quanto custa por uso?\n\nSalva e manda pro amigo que já está com o carrinho cheio 👇\nTeste grátis e sem cadastro. Link na bio.\n#sportdna #blackfriday #tenis #surf #corrida #equipamentoesportivo",
+   "notes": "Utilidade com o gancho da Black Friday (27/11). Capa off-white depois do preto do D-R3. Sem número novo.",
+   "version": "S02-D-C3-v1",
+   "v": 1,
+   "hash": "0a1f51103b",
+   "media": [
+    "D-C3-1.png",
+    "D-C3-2.png",
+    "D-C3-3.png",
+    "D-C3-4.png",
+    "D-C3-5.png",
+    "D-C3-6.png"
+   ],
+   "editable": "editaveis/D-C3.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-C3-1.jpg",
+    "D-C3-2.jpg",
+    "D-C3-3.jpg",
+    "D-C3-4.jpg",
+    "D-C3-5.jpg",
+    "D-C3-6.jpg"
+   ]
+  },
+  {
+   "id": "D-R4",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 2,
+   "dia": "ter 17/11",
+   "slot": "19h45",
+   "title": "RUN: 3 corredores, a mesma resposta da IA",
+   "kind": "engajamento",
+   "caption": "3 corredores. A mesma pergunta pra IA. A mesma resposta: \"bom amortecimento e conforto\". 🏃\n\nUm tem 52 kg e está começando. Outro tem 90 kg e treina para maratona. O terceiro sente o joelho.\nParece simples. Não é.\n\nO RUN DNA foi calibrado com atletas e corredores e compara 212 tênis com o seu corpo, o seu ritmo e as suas dores.\nManda pro seu parceiro de treino 👇\nTeste grátis e sem cadastro. Link na bio.\n#rundna #sportdna #corrida #corridaderua #tenisdecorrida #ia",
+   "notes": "Linha \"simulação de IA\" pedida pelo Gui, com gancho novo (três perfis, uma resposta). IA genérica, sem marca, com etiqueta de simulação. 212 tênis: número do site.",
+   "version": "S02-D-R4-v1",
+   "v": 1,
+   "hash": "960e07b7c3",
+   "media": [
+    "D-R4.mp4",
+    "D-R4-capa.png"
+   ],
+   "editable": "editaveis/D-R4.html",
+   "duration": 19.0,
+   "sticker": "",
+   "poster": "D-R4-poster.jpg",
+   "cover": "D-R4-capa.jpg",
+   "cover45": "D-R4-capa45.jpg"
+  },
+  {
+   "id": "D-C4",
+   "brand": "SPORT DNA",
+   "fmt": "carrossel",
+   "day": 3,
+   "dia": "qua 18/11",
+   "slot": "12h30",
+   "title": "SURF: uma prancha para cada mar",
+   "kind": "engajamento",
+   "caption": "Uma prancha para cada mar. 🌊\n\nLongboard: acima de 9 pés, para onda pequena e fraca.\nFunboard: entre 7 e 8 pés, a ponte de quem sai da escolinha.\nFish: curta e larga, para onda sem força.\nShortboard: fina, para onda com força.\nGun: longa e estreita, para onda grande.\n\nSalva para a próxima trip e manda pro amigo do surf 👇\nO SURF DNA olha 13 tipos de prancha com o seu peso, nível e mar. Teste grátis, link na bio.\n#surfdna #sportdna #surf #pranchadesurf #surfbrasil",
+   "notes": "Guia editorial. Medidas são faixas gerais de mercado, sem marca. 13 tipos: número do site. Capa azul SURF entre o preto de terça e o de quinta.",
+   "version": "S02-D-C4-v1",
+   "v": 1,
+   "hash": "eddd9d390b",
+   "media": [
+    "D-C4-1.png",
+    "D-C4-2.png",
+    "D-C4-3.png",
+    "D-C4-4.png",
+    "D-C4-5.png",
+    "D-C4-6.png",
+    "D-C4-7.png"
+   ],
+   "editable": "editaveis/D-C4.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-C4-1.jpg",
+    "D-C4-2.jpg",
+    "D-C4-3.jpg",
+    "D-C4-4.jpg",
+    "D-C4-5.jpg",
+    "D-C4-6.jpg",
+    "D-C4-7.jpg"
+   ]
+  },
+  {
+   "id": "D-R5",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 4,
+   "dia": "qui 19/11",
+   "slot": "19h45",
+   "title": "Meme POV: a raquete \"dos profissionais\"",
+   "kind": "meme",
+   "caption": "POV: você comprou a raquete mais pesada da loja porque \"é a dos profissionais\". 🎾\n\nSemana 1: \"que pancada\".\nSemana 2: o braço cansa no 2º set.\nSemana 3: o cotovelo pediu pra conversar.\n\nRaquete boa é a que combina com o seu braço. O RACKET DNA cruza o seu jogo com 62 raquetes medidas.\nMarca o seu parceiro de quadra que precisa ver isso 👇\nTeste grátis, link na bio.\n#racketdna #sportdna #tenis #beachtennis #raquete #meme",
+   "notes": "Meme POV, ironia com dado (linha da marca). Sem desenho de raquete (o Gui reprovou o ícone desenhado). Áudio em alta no app.",
+   "version": "S02-D-R5-v1",
+   "v": 1,
+   "hash": "87dde57ac6",
+   "media": [
+    "D-R5.mp4",
+    "D-R5-capa.png"
+   ],
+   "editable": "editaveis/D-R5.html",
+   "duration": 14.0,
+   "sticker": "",
+   "poster": "D-R5-poster.jpg",
+   "cover": "D-R5-capa.jpg",
+   "cover45": "D-R5-capa45.jpg"
+  },
+  {
+   "id": "D-C5",
+   "brand": "SPORT DNA",
+   "fmt": "carrossel",
+   "day": 5,
+   "dia": "sex 20/11",
+   "slot": "12h30",
+   "title": "RUN: 5 sinais de que o tênis já deu",
+   "kind": "engajamento",
+   "caption": "5 sinais de que o seu tênis de corrida já deu. 👟\n\n1. A entressola tem vincos fundos.\n2. A sola está lisa em alguns pontos.\n3. Apoiado na mesa, ele tomba.\n4. Você sente mais o impacto.\n5. Já passou dos 500 a 800 km.\n\nConfere antes do longão do feriado e manda pro grupo da corrida 👇\nO RUN DNA mostra o mês certo de trocar e o custo por km entre 212 tênis. Link na bio.\n#rundna #sportdna #corrida #corridaderua #tenisdecorrida #feriado",
+   "notes": "Utilidade (salvar e mandar no grupo de corrida). 500–800 km é a faixa geral de troca citada no mercado; sem marca. Capa off-white entre pretos.",
+   "version": "S02-D-C5-v1",
+   "v": 1,
+   "hash": "505b2d89fe",
+   "media": [
+    "D-C5-1.png",
+    "D-C5-2.png",
+    "D-C5-3.png",
+    "D-C5-4.png",
+    "D-C5-5.png",
+    "D-C5-6.png",
+    "D-C5-7.png"
+   ],
+   "editable": "editaveis/D-C5.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-C5-1.jpg",
+    "D-C5-2.jpg",
+    "D-C5-3.jpg",
+    "D-C5-4.jpg",
+    "D-C5-5.jpg",
+    "D-C5-6.jpg",
+    "D-C5-7.jpg"
+   ]
+  },
+  {
+   "id": "D-R6",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 6,
+   "dia": "sáb 21/11",
+   "slot": "19h45",
+   "title": "Black Friday: desconto em equipamento errado",
+   "kind": "trend",
+   "caption": "Desconto em equipamento errado não é economia. 🛒\n\nFaltam 6 dias para a Black Friday (27/11). Antes de fechar o carrinho:\nraquete leve demais pro seu jogo? Prancha com pouco volume pro seu nível? Tênis que não combina com a sua pisada?\n\nTeste grátis e sem cadastro. Relatório de R$ 9,99 a R$ 19,99. Link na bio.\nManda pro amigo do carrinho cheio 👇\n#sportdna #blackfriday #tenis #surf #corrida",
+   "notes": "Assunto da semana (Black Friday 27/11). \"−30%\" é ilustrativo, não é oferta. Preços do site.",
+   "version": "S02-D-R6-v1",
+   "v": 1,
+   "hash": "96d3000406",
+   "media": [
+    "D-R6.mp4",
+    "D-R6-capa.png"
+   ],
+   "editable": "editaveis/D-R6.html",
+   "duration": 15.0,
+   "sticker": "",
+   "poster": "D-R6-poster.jpg",
+   "cover": "D-R6-capa.jpg",
+   "cover45": "D-R6-capa45.jpg"
+  },
+  {
+   "id": "D-C6",
+   "brand": "SPORT DNA",
+   "fmt": "carrossel",
+   "day": 7,
+   "dia": "dom 22/11",
+   "slot": "12h30",
+   "title": "Produto: por que o teste pergunta o que pergunta",
+   "kind": "produto",
+   "caption": "Por que o teste pergunta o que pergunta. 🧬\n\nRACKET DNA: seu braço, seu jogo e seu nível, cruzados com 62 raquetes.\nSURF DNA: seu peso, seu nível e seu mar, cruzados com 13 tipos de prancha.\nRUN DNA: seu corpo, seu ritmo e suas dores, cruzados com 212 tênis.\n\nCalibrado com atletas e esportistas e testado em vários perfis antes de ir ao ar. Parece simples. Não é.\nManda pro amigo que vai trocar de equipamento 👇\nTeste grátis e sem cadastro. Link na bio.\n#sportdna #racketdna #surfdna #rundna #esporte",
+   "notes": "Peça de produto com a mensagem pedida pelo Gui (calibrado com atletas e esportistas). Números do site. Capa lima RACKET fecha a semana.",
+   "version": "S02-D-C6-v1",
+   "v": 1,
+   "hash": "01962b44a0",
+   "media": [
+    "D-C6-1.png",
+    "D-C6-2.png",
+    "D-C6-3.png",
+    "D-C6-4.png",
+    "D-C6-5.png"
+   ],
+   "editable": "editaveis/D-C6.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-C6-1.jpg",
+    "D-C6-2.jpg",
+    "D-C6-3.jpg",
+    "D-C6-4.jpg",
+    "D-C6-5.jpg"
+   ]
+  },
+  {
+   "id": "D-S6",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "",
+   "title": "Dicionário DNA: Drop",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.",
+   "version": "S02-D-S6-v1",
+   "v": 1,
+   "hash": "c1d4924019",
+   "media": [
+    "D-S6.png"
+   ],
+   "editable": "editaveis/D-S6.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-S6.jpg"
+   ]
+  },
+  {
+   "id": "D-S7",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 2,
+   "dia": "ter 17/11",
+   "slot": "",
+   "title": "Dicionário DNA: Balanço",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.",
+   "version": "S02-D-S7-v1",
+   "v": 1,
+   "hash": "9d12d9c828",
+   "media": [
+    "D-S7.png"
+   ],
+   "editable": "editaveis/D-S7.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-S7.jpg"
+   ]
+  },
+  {
+   "id": "D-S8",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 18/11",
+   "slot": "",
+   "title": "Dicionário DNA: Rabeta",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.",
+   "version": "S02-D-S8-v1",
+   "v": 1,
+   "hash": "3cc50cb7d3",
+   "media": [
+    "D-S8.png"
+   ],
+   "editable": "editaveis/D-S8.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-S8.jpg"
+   ]
+  },
+  {
+   "id": "D-S9",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 4,
+   "dia": "qui 19/11",
+   "slot": "",
+   "title": "Dicionário DNA: Pronação",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.",
+   "version": "S02-D-S9-v1",
+   "v": 1,
+   "hash": "b02f78c835",
+   "media": [
+    "D-S9.png"
+   ],
+   "editable": "editaveis/D-S9.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-S9.jpg"
+   ]
+  },
+  {
+   "id": "D-S10",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 5,
+   "dia": "sex 20/11",
+   "slot": "",
+   "title": "Dicionário DNA: 16×19",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.",
+   "version": "S02-D-S10-v1",
+   "v": 1,
+   "hash": "6660d2f164",
+   "media": [
+    "D-S10.png"
+   ],
+   "editable": "editaveis/D-S10.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-S10.jpg"
+   ]
+  },
+  {
+   "id": "D-S11",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 6,
+   "dia": "sáb 21/11",
+   "slot": "",
+   "title": "Dicionário DNA: Quilhas",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.",
+   "version": "S02-D-S11-v1",
+   "v": 1,
+   "hash": "2c7fa37f88",
+   "media": [
+    "D-S11.png"
+   ],
+   "editable": "editaveis/D-S11.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-S11.jpg"
+   ]
+  },
+  {
+   "id": "D-S12",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 7,
+   "dia": "dom 22/11",
+   "slot": "",
+   "title": "Dicionário DNA: Rocker",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo: glossário para salvar e mandar. Definição geral, sem marca.",
+   "version": "S02-D-S12-v1",
+   "v": 1,
+   "hash": "9d1f0f3f3b",
+   "media": [
+    "D-S12.png"
+   ],
+   "editable": "editaveis/D-S12.html",
+   "duration": null,
+   "sticker": "",
+   "previews": [
+    "D-S12.jpg"
+   ]
+  }
+ ]
+}

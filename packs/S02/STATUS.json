@@ -1,0 +1,427 @@
+{
+ "pack": "S02",
+ "liberadas": 0,
+ "total": 42,
+ "pecas": [
+  {
+   "peca": "Q-C3",
+   "marca": "Quiddo",
+   "formato": "carrossel",
+   "dia": "seg 16/11",
+   "hora": "12h30",
+   "versao": "S02-Q-C3-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-R5",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "ter 17/11",
+   "hora": "19h45",
+   "versao": "S02-Q-R5-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-C4",
+   "marca": "Quiddo",
+   "formato": "carrossel",
+   "dia": "qua 18/11",
+   "hora": "12h30",
+   "versao": "S02-Q-C4-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-R6",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "qui 19/11",
+   "hora": "19h45",
+   "versao": "S02-Q-R6-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-C5",
+   "marca": "Quiddo",
+   "formato": "carrossel",
+   "dia": "sex 20/11",
+   "hora": "12h30",
+   "versao": "S02-Q-C5-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-R4",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "sáb 21/11",
+   "hora": "19h45",
+   "versao": "S02-Q-R4-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-C6",
+   "marca": "Quiddo",
+   "formato": "carrossel",
+   "dia": "dom 22/11",
+   "hora": "12h30",
+   "versao": "S02-Q-C6-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-S6",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "seg 16/11",
+   "hora": "12h",
+   "versao": "S02-Q-S6-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-S7",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "ter 17/11",
+   "hora": "12h",
+   "versao": "S02-Q-S7-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-S8",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "qua 18/11",
+   "hora": "12h",
+   "versao": "S02-Q-S8-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-S9",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "qui 19/11",
+   "hora": "12h",
+   "versao": "S02-Q-S9-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-S10",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "sex 20/11",
+   "hora": "12h",
+   "versao": "S02-Q-S10-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-S11",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "sáb 21/11",
+   "hora": "12h",
+   "versao": "S02-Q-S11-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "Q-S12",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "dom 22/11",
+   "hora": "12h",
+   "versao": "S02-Q-S12-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-C3",
+   "marca": "Retrozap",
+   "formato": "carrossel",
+   "dia": "seg 16/11",
+   "hora": "12h30",
+   "versao": "S02-R-C3-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-R4",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "ter 17/11",
+   "hora": "19h45",
+   "versao": "S02-R-R4-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-C4",
+   "marca": "Retrozap",
+   "formato": "carrossel",
+   "dia": "qua 18/11",
+   "hora": "12h30",
+   "versao": "S02-R-C4-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-R5",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "qui 19/11",
+   "hora": "19h45",
+   "versao": "S02-R-R5-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-C5",
+   "marca": "Retrozap",
+   "formato": "carrossel",
+   "dia": "sex 20/11",
+   "hora": "12h30",
+   "versao": "S02-R-C5-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-R6",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "sáb 21/11",
+   "hora": "19h45",
+   "versao": "S02-R-R6-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-C6",
+   "marca": "Retrozap",
+   "formato": "carrossel",
+   "dia": "dom 22/11",
+   "hora": "12h30",
+   "versao": "S02-R-C6-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-S6",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "seg 16/11",
+   "hora": "12h",
+   "versao": "S02-R-S6-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-S7",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "ter 17/11",
+   "hora": "12h",
+   "versao": "S02-R-S7-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-S8",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "qua 18/11",
+   "hora": "12h",
+   "versao": "S02-R-S8-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-S9",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "qui 19/11",
+   "hora": "12h",
+   "versao": "S02-R-S9-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-S10",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "sex 20/11",
+   "hora": "12h",
+   "versao": "S02-R-S10-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-S11",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "sáb 21/11",
+   "hora": "12h",
+   "versao": "S02-R-S11-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "R-S12",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "dom 22/11",
+   "hora": "12h",
+   "versao": "S02-R-S12-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-C3",
+   "marca": "SPORT DNA",
+   "formato": "carrossel",
+   "dia": "seg 16/11",
+   "hora": "12h30",
+   "versao": "S02-D-C3-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-R4",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "ter 17/11",
+   "hora": "19h45",
+   "versao": "S02-D-R4-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-C4",
+   "marca": "SPORT DNA",
+   "formato": "carrossel",
+   "dia": "qua 18/11",
+   "hora": "12h30",
+   "versao": "S02-D-C4-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-R5",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "qui 19/11",
+   "hora": "19h45",
+   "versao": "S02-D-R5-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-C5",
+   "marca": "SPORT DNA",
+   "formato": "carrossel",
+   "dia": "sex 20/11",
+   "hora": "12h30",
+   "versao": "S02-D-C5-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-R6",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "sáb 21/11",
+   "hora": "19h45",
+   "versao": "S02-D-R6-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-C6",
+   "marca": "SPORT DNA",
+   "formato": "carrossel",
+   "dia": "dom 22/11",
+   "hora": "12h30",
+   "versao": "S02-D-C6-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-S6",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "seg 16/11",
+   "hora": "12h",
+   "versao": "S02-D-S6-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-S7",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "ter 17/11",
+   "hora": "12h",
+   "versao": "S02-D-S7-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-S8",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "qua 18/11",
+   "hora": "12h",
+   "versao": "S02-D-S8-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-S9",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "qui 19/11",
+   "hora": "12h",
+   "versao": "S02-D-S9-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-S10",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "sex 20/11",
+   "hora": "12h",
+   "versao": "S02-D-S10-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-S11",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "sáb 21/11",
+   "hora": "12h",
+   "versao": "S02-D-S11-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
+   "peca": "D-S12",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "dom 22/11",
+   "hora": "12h",
+   "versao": "S02-D-S12-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  }
+ ]
+}

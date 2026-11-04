@@ -11,8 +11,8 @@ import common as C, importlib
 for m in ('quiddo', 'retrozap', 'sportdna'): importlib.import_module(m)
 order = [p['id'] for p in C.PIECES]
 P = [pieces[i] for i in order if i in pieces]
-# Canceladas pelo Gui (rodada 4): stories que dependiam de adesivo
-CANCELADAS = {'Q-S1', 'Q-S2', 'Q-S3', 'Q-S5', 'R-S1', 'R-S2', 'R-S3', 'R-S5', 'D-S1', 'D-S2', 'D-S3', 'D-S4', 'D-S5'}
+# Canceladas pelo Gui (peças que não entram na Mesa deste pack)
+CANCELADAS = set()
 P = [p for p in P if p['id'] not in CANCELADAS]
 missing = [i for i in order if i not in pieces]
 SRC = {p['id']: p for p in C.PIECES}
@@ -38,26 +38,29 @@ for p in P:
             n = f.replace('.png', '.jpg'); jpg(md / f, T / 'media' / n, 720); p['previews'].append(n)
     shutil.copy(O / p['editable'], T / p['editable'])
 MUDOU = {
- 'Q-R1': 'Fim do vídeo e legenda com o CTA "Faça o seu. Teste grátis." no lugar de "grátis até 10 pessoas" (seu comentário).',
- 'Q-R2': 'Entrou o CTA "Faça o seu. Teste grátis." no fim (regra nova do Quiddo, do seu comentário no Q-R1).',
- 'Q-R3': 'Entrou o CTA "Faça o seu. Teste grátis." no fim (regra nova do Quiddo).',
- 'Q-C1': 'Entrou o CTA "Faça o seu. Teste grátis." na última página (regra nova do Quiddo).',
- 'Q-C2': 'Saiu "grátis até 10 pessoas"; entrou o CTA "Faça o seu. Teste grátis." (regra nova do Quiddo).',
- 'Q-S5': 'Saiu "grátis até 10 pessoas"; entrou o CTA "Faça o seu. Teste grátis." (regra nova do Quiddo).',
- 'Q-S3': 'Linha nova (você reprovou o intruso): pergunta direta valendo ponto, sem nada sobreposto. A resposta (20 bichos) sai no story de sexta.',
- 'D-R1': 'Linha nova: simulação de uma IA genérica respondendo qual raquete comprar, "Parece simples. Não é." e o modelo calibrado com atletas e esportistas (feedback geral).',
- 'D-S2': 'Saiu o desenho da raquete; entrou o logo oficial do RACKET DNA (seu comentário).',
- 'D-S3': 'Linha nova: a IA genérica responde sobre prancha, "Parece simples. Não é." e enquete (feedback geral).',
- 'D-S4': 'Linha nova: o que a IA responde e o que falta (feedback geral). CTA na arte no lugar do adesivo.',
+ 'Q-R4': 'Veio do S01 sem decisão: mesma arte, data nova (sáb 21/11).',
 }
 STORIES_CTA = 'O Instagram não agenda adesivos e você não vai postar nada: a enquete/quiz/link virou CTA desenhado na arte ("responde no direct", "link na bio"). Assim o DOT agenda tudo.'
 for p in P:
-    if p['v'] > 1 and p['id'] in MUDOU: p['mudou'] = MUDOU[p['id']]
+    if p['id'] in MUDOU: p['mudou'] = MUDOU[p['id']]
     if p['fmt'] == 'story' and 'Sem adesivo: o CTA' in p.get('sticker', ''): p['mudou'] = STORIES_CTA + (' ' + MUDOU[p['id']] if p['id'] in MUDOU and p['id'] != 'Q-S3' else '')
 RODADA = max(p['v'] for p in P)
 GUIA = guia.guia_md(P)
 FINAL = {}
-html = (R / 'tool_template.html').read_text().replace('/*MANIFEST*/', json.dumps({'pack': C.PACK, 'rodada': RODADA, 'pieces': P, 'guiaHtml': markdown.markdown(GUIA, extensions=['tables', 'fenced_code']), 'prompt': guia.PROMPT, 'final': '__FINAL__'}, ensure_ascii=False).replace('</', '<\\/'))
+# grade: feed do pack anterior (apagado na aba de grade da Mesa)
+GRADE = {}
+PREVD = R.parent / 'packs' / C.PREV
+if (PREVD / 'manifest.json').exists():
+    ids_now = {p['id'] for p in P}
+    for q in sorted(json.loads((PREVD / 'manifest.json').read_text())['pieces'], key=lambda q: -q['day']):
+        if q['fmt'] == 'story' or q['id'] in ids_now: continue
+        b = {'Quiddo': 'quiddo', 'Retrozap': 'retrozap', 'SPORT DNA': 'sportdna'}[q['brand']]
+        n = f"prev-{q['id']}.jpg"
+        if q['fmt'] == 'reel': jpg(PREVD / b / 'reels' / f"{q['id']}-capa.png", T / 'media' / n, 600, crop=(0, 285, 1080, 1635))
+        else: jpg(PREVD / b / 'carrosseis' / q['media'][0], T / 'media' / n, 600)
+        GRADE.setdefault(q['brand'], []).append({'img': n, 'title': q['title'], 'label': f"{C.PREV} · {q['dia']}"})
+DAYS = {d: f'Dia {d} · {v}' for d, v in C.DIAS.items()}
+html = (R / 'tool_template.html').read_text().replace('/*MANIFEST*/', json.dumps({'pack': C.PACK, 'rodada': RODADA, 'days': DAYS, 'titulo': f'PACK SEMANAL {C.NUM} · {C.SEMANA}', 'grade': GRADE, 'pieces': P, 'guiaHtml': markdown.markdown(GUIA, extensions=['tables', 'fenced_code']), 'prompt': guia.PROMPT, 'final': '__FINAL__'}, ensure_ascii=False).replace('</', '<\\/'))
 (T / 'index.html').write_text(html)
 (O / 'manifest.json').write_text(json.dumps({'pack': C.PACK, 'pieces': P}, ensure_ascii=False, indent=1))
 # ---- entrega
@@ -81,7 +84,7 @@ for p in P:
     if p.get('notes'): t += f"\nNotas: {p['notes']}\n"
     leg.setdefault(b, []).append(t)
 for b, ts in leg.items():
-    head = f"{b.upper()} · PACK SEMANAL 01 (09–15/11/2026) · rodada {RODADA}\nReels: 1080×1920, 30 fps, H.264, áudio mudo (escolha o áudio no Instagram). Capa: 1080×1920 com a arte 4:5 no centro.\nFeed: 1080×1350. Stories: 1080×1920 com o espaço do adesivo já reservado.\nEditáveis: HTML com fontes e SVGs embutidos (abre no navegador; reels tocam sozinhos, clique para recomeçar).\n\n"
+    head = f"{b.upper()} · PACK SEMANAL {C.NUM} ({C.SEMANA_LONGA}) · rodada {RODADA}\nReels: 1080×1920, 30 fps, H.264, áudio mudo (escolha o áudio no Instagram). Capa: 1080×1920 com a arte 4:5 no centro.\nFeed: 1080×1350. Stories: 1080×1920, sem adesivo (o CTA está na arte).\nEditáveis: HTML com fontes e SVGs embutidos (abre no navegador; reels tocam sozinhos, clique para recomeçar).\n\n"
     (E / b / 'LEGENDAS.txt').write_text(head + ('\n' + '-' * 60 + '\n\n').join(ts))
 (E / 'GUIA-PUBLICACAO-DOT.md').write_text(GUIA)
 (E / 'agenda.csv').write_text(guia.agenda_csv(P))
@@ -94,9 +97,9 @@ for b in slug.values():
             FINAL.setdefault(b, []).append(str(f.relative_to(E / b)))
 html = html.replace('"__FINAL__"', json.dumps(FINAL, ensure_ascii=False))
 (T / 'index.html').write_text(html)
-z = R / f'pack-semanal-01-v{RODADA}.zip'
+z = R / f'pack-semanal-{C.NUM}-v{RODADA}.zip'
 with zipfile.ZipFile(z, 'w', zipfile.ZIP_DEFLATED) as zf:
     for f in sorted(E.rglob('*')):
-        if f.is_file(): zf.write(f, 'pack-semanal-01/' + str(f.relative_to(E)))
+        if f.is_file(): zf.write(f, f'pack-semanal-{C.NUM}/' + str(f.relative_to(E)))
 tot = sum(f.stat().st_size for f in T.rglob('*') if f.is_file())
 print('tool files', sum(1 for f in T.rglob('*') if f.is_file()), 'MB', round(tot / 1e6, 1), '| zip MB', round(z.stat().st_size / 1e6, 1))

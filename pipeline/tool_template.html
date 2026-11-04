@@ -173,7 +173,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
   const BRANDS = ['Quiddo','Retrozap','SPORT DNA'];
   const FMTS = [['reel','Reel'],['carrossel','Carrossel'],['story','Story']];
   const STS = [['pendente','Pendente'],['revisar','Revisar de novo'],['aprovado','Aprovado'],['reprovado','Não aprovado']];
-  const DAYS = {1:'Dia 1 · seg 09/11',2:'Dia 2 · ter 10/11',3:'Dia 3 · qua 11/11',4:'Dia 4 · qui 12/11',5:'Dia 5 · sex 13/11',6:'Dia 6 · sáb 14/11',7:'Dia 7 · dom 15/11'};
+  const DAYS = M.days || {1:'Dia 1 · seg 09/11',2:'Dia 2 · ter 10/11',3:'Dia 3 · qua 11/11',4:'Dia 4 · qui 12/11',5:'Dia 5 · sex 13/11',6:'Dia 6 · sáb 14/11',7:'Dia 7 · dom 15/11'};
   const state = { view:'pecas', brand:'todas', fmt:'todos', status:'todos', reviews:{}, geral:'', geralAt:null, packDoc:{}, confirm:false, sending:false, err:'' };
   let db = null, dls = null;
   const key = id => M.pack === 'S01' ? id : M.pack + '_' + id;
@@ -261,7 +261,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       const brands = state.brand==='todas'?BRANDS:[state.brand];
       v.innerHTML = `<div class="feeds">${brands.map(b=>{
         const feed = P.filter(p=>p.brand===b && p.fmt!=='story').sort((a,c)=>c.day-a.day);
-        return `<div class="feed"><h3>${esc(b)}</h3><div class="feedgrid">${feed.map(p=>`<div><img src="media/${p.fmt==='reel'?p.cover45:p.previews[0]}" alt="${esc(p.title)}" loading="lazy"><i>D${p.day} · ${p.fmt==='reel'?'reel':'carr.'}</i></div>`).join('')}</div><p class="note">A última publicação (dia 7) fica no canto de cima à esquerda.</p></div>`;}).join('')}</div>`;
+        return `<div class="feed"><h3>${esc(b)}</h3><div class="feedgrid">${feed.map(p=>`<div><img src="media/${p.fmt==='reel'?p.cover45:p.previews[0]}" alt="${esc(p.title)}" loading="lazy"><i>D${p.day} · ${p.fmt==='reel'?'reel':'carr.'}</i></div>`).join('')}${((M.grade||{})[b]||[]).map(g=>`<div style="opacity:.55"><img src="media/${g.img}" alt="${esc(g.title)}" loading="lazy"><i>${esc(g.label)}</i></div>`).join('')}</div><p class="note">A última publicação (dia 7) fica no canto de cima à esquerda. As apagadas são do pack anterior, para conferir a grade.</p></div>`;}).join('')}</div>`;
       return;
     }
     const list = visible();
@@ -433,7 +433,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
 
   (function(){ const d = new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'})); const el = document.getElementById('domingo');
     if (d.getDay() === 0){ el.hidden = false; el.textContent = 'Hoje é domingo: dia de aprovar o pack da semana. Aprove até 21h; às 21h o Claude confere e libera o que estiver aprovado para o DOT agendar.'; } })();
-  document.getElementById('packline').textContent = 'PACK SEMANAL 01 · 09–15/11 · RODADA ' + M.rodada;
+  document.getElementById('packline').textContent = (M.titulo || 'PACK SEMANAL 01 · 09–15/11') + ' · RODADA ' + M.rodada;
   segs(); render();
 
   // ---- capacidades

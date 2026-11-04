@@ -1,15 +1,17 @@
 # Pack Semanal de Instagram · Quiddo, Retrozap e SPORT DNA
 
 ## Estado atual
-- **Pack Semanal 01 · rodada 3 (Q-S3 v3 e Q-R4 meme novo; resto aprovado)** (semana 09–15/11/2026). Rodada 1 revisada pelo Gui em 03/11; 11 peças foram para v2. 30 peças: 15 feed (3 reels + 2 carrosséis por marca, dias 1, 2, 4, 5 e 7) e 15 stories.
-- Peças de produto (2): R-C2 (Retrozap, o que vem na retrospectiva) e D-C2 (SPORT DNA, como o motor escolhe). O resto é engajamento.
+- **Pack Semanal 02 · rodada 1** (semana 16–22/11/2026), produzido em 04/11 pela tarefa de backlog. 42 peças: 21 feed (por marca 3 reels + 4 carrosséis, 1 por dia, começando por carrossel na segunda) e 21 stories (1 por dia por marca, sem adesivo).
+  - Memes: Q-R5, Q-C4, Q-R4 (veio do S01 sem decisão, mesma arte), R-R4, D-R5. Trends: Q-R6, R-R5, D-R6 (Black Friday 27/11).
+  - Produto: Q-C6, R-R6, D-C6.
+  - Stories sem adesivo: Quiddo "Pergunta do dia" (resposta de cabeça pra baixo), Retrozap "frase pro grupo" (print), SPORT DNA "Dicionário DNA".
+  - Grade conferida com `grade.py` (packs/S02/grade-S02.jpg).
+- **Pack Semanal 01** (09–15/11): 17 de 18 liberadas; Q-R4 foi para o S02. Código do S01 em `pipeline/arquivo/S01/`, estado em `pipeline/state/S01/`.
 - Ferramenta de aprovação: **Mesa de Aprovação**, https://claude.ai/artifact/KAwUuKVHZgYknpdquaTkwd
-  - Botão "Finalizar rodada N e enviar ao Claude" grava `rodadas/R<N>` (foto das decisões) e `pack/S01.ultimaRodada`. Quando o Gui disser "finalizei a rodada", ler `rodadas/R<N>` e `pack/S01`.
-  - Aba Publicação: monta os 3 zips no navegador (arquivos em `final/<marca>/`) e mostra o guia do DOT. Guia também no Drive: pasta "Instagram · Pack Semanal 01" (1eeyUwJgospoBN7ZdCzJ9nBvtS3i3TJuL).
-  - Banco do artefato: `reviews/<id da peça>` = {status: aprovado|reprovado|null, comment, hash, version, at, history[]}; `pack/S01` = {geral, at}.
-  - Status "revisar de novo" = o hash da mídia mudou desde a última decisão. O comentário anterior fica visível.
-  - O feedback geral nunca aprova nem reprova peças.
-- Pack anterior (lançamento, v2): Drive `quiddo-insta-pack-v2`, Retrozap "Pack completo + guias", `SPORT-DNA-instagram.zip`.
+  - Banco: `reviews/S02_<id>`, `pack/S02`, `rodadas/R<n>`. A Mesa mostra só o pack mais recente; as decisões do S01 continuam no banco.
+  - Botão "Finalizar rodada N e enviar ao Claude" grava `rodadas/R<N>` e `pack/<SNN>.ultimaRodada`.
+  - Aba Publicação: zips por marca e guia do DOT. Aba Grade: feed novo + feed do pack anterior (apagado).
+  - Publicar a Mesa: no máximo 255 arquivos por publish e 511 por versão. Publique em lotes (mídia e editáveis; depois `null` nos arquivos do pack anterior; depois `final/`).
 
 ## Para aplicar feedbacks
 1. Ler `reviews` e `pack/S01` com ArtifactData (url acima).
@@ -17,6 +19,7 @@
 
 ## Decisões em vigor
 - Tudo de social vai para o Drive em "05. Social Content" (1y4dovKtUNSnNvcflf5d3cLItGrH8ajOm), uma subpasta por pack. Eu subo os docs; os zips (binários) o Gui arrasta, porque o conector do Drive não sobe binário com segurança.
+- Stories: só os que funcionam sem adesivo e sem pedir resposta no direct (Gui cancelou os de enquete/quiz/caixa/link no S01, rodada 4).
 - Volume a partir do Pack 02: por marca, 1 post de feed por dia alternando reel e carrossel (1 reel a cada 2 dias, 1 carrossel a cada 2 dias), 1 a 3 stories por dia; reels misturam meme e trend; Quiddo com no mínimo 2 memes por semana.
 - Playbook de crescimento (volume, horários, envios, trends e memes): claude/pack-semanal/playbook-crescimento.md e no Drive.
 - Ao finalizar a rodada, a Mesa copia um resumo em texto; o Gui cola no chat. Ler também `rodadas/R<N>.resumo`.

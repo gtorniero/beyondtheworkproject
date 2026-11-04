@@ -1,9 +1,9 @@
 """Gera o guia de publicação para o DOT (ChatGPT) e a agenda do pack, a partir do manifesto."""
 import csv, io
+import common as C
 
-DATAS = {1: '09/11/2026 (seg)', 2: '10/11/2026 (ter)', 3: '11/11/2026 (qua)', 4: '12/11/2026 (qui)',
-         5: '13/11/2026 (sex)', 6: '14/11/2026 (sáb)', 7: '15/11/2026 (dom)'}
-RAW = 'https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/packs/S01'
+DATAS = C.DATAS
+RAW = f'https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/packs/{C.PACK}'
 SLUG = {'Quiddo': 'quiddo', 'Retrozap': 'retrozap', 'SPORT DNA': 'sportdna'}
 SUB = {'reel': 'reels', 'carrossel': 'carrosseis', 'story': 'stories'}
 ZIP = {'Quiddo': 'quiddo.zip', 'Retrozap': 'retrozap.zip', 'SPORT DNA': 'sportdna.zip'}
@@ -33,21 +33,21 @@ def agenda_csv(P):
         w.writerow([DATAS[p['day']], hora(p), p['brand'], p['fmt'], p['id'], p['version'], como(p), arquivos(p), links(p), p.get('sticker', ''), p['title']])
     return b.getvalue()
 
-PROMPT = """DOT, agende o Pack Semanal 01 (Quiddo, Retrozap e SPORT DNA, semana de 09 a 15/11/2026) seguindo o guia do pack.
-Mídia, legendas e agenda: GitHub, branch social, pasta packs/S01 (links diretos no agenda.csv). Só agende o que o STATUS.json marca como liberado.
+PROMPT = f"""DOT, agende o Pack Semanal {C.NUM} (Quiddo, Retrozap e SPORT DNA, semana de {C.SEMANA_LONGA}) seguindo o guia do pack.
+Mídia, legendas e agenda: GitHub, branch social, pasta packs/{C.PACK} (links diretos no agenda.csv). Só agende o que o STATUS.json marca como liberado.
 Antes de cada peça, cheque duplicidade no Registro de publicações, no Planejador e na grade do perfil. Depois, registre.
 Tudo vai agendado no Meta Business Suite, inclusive os stories (o CTA já está na arte). Não edite nada. Se der erro, pare e me mande print."""
 
-def guia_md(P, pack='S01'):
+def guia_md(P, pack=C.PACK):
     rows = '\n'.join(f"| {DATAS[p['day']]} | {hora(p)} | {p['brand']} | {p['fmt']} | {p['id']} ({p['version'].split('-')[-1]}) | {como(p)} |" for p in linhas(P))
     stickers = '\n'.join(f"- **{p['id']}** ({p['brand']}, {DATAS[p['day']]}): {p['sticker']}" for p in linhas(P) if p['fmt'] == 'story' and p.get('sticker'))
-    return f"""# Guia de publicação · Pack Semanal 01
+    return f"""# Guia de publicação · Pack Semanal {C.NUM}
 
-Para o DOT (ChatGPT, modo agente) agendar as peças aprovadas na Mesa de Aprovação. Semana de 09 a 15/11/2026.
+Para o DOT (ChatGPT, modo agente) agendar as peças aprovadas na Mesa de Aprovação. Semana de {C.SEMANA_LONGA}.
 
 ## Onde está tudo
 
-- **Mídia e legendas:** no GitHub, pasta pública `packs/S01` do branch `social` (`{RAW}/<marca>/...`). Cada linha do `agenda.csv` traz os links diretos dos arquivos. `LEGENDAS.txt` de cada marca: `{RAW}/<marca>/LEGENDAS.txt`.
+- **Mídia e legendas:** no GitHub, pasta pública `packs/{C.PACK}` do branch `social` (`{RAW}/<marca>/...`). Cada linha do `agenda.csv` traz os links diretos dos arquivos. `LEGENDAS.txt` de cada marca: `{RAW}/<marca>/LEGENDAS.txt`.
 - **Liberação:** o arquivo `{RAW}/STATUS.json` diz quais peças estão aprovadas (`"liberado": true`). Só agende peça liberada, na versão indicada ali.
 - **Controle do que já foi feito:** planilha "Registro de publicações" na pasta "Entrada do DOT" do Drive.
 

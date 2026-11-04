@@ -1,4 +1,4 @@
-"""Quiddo · Pack Semanal 01. Fraunces 900 + Nunito; creme/tinta/mata; contorno grosso e sombra dura.
+"""Quiddo · Pack Semanal 02. Fraunces 900 + Nunito; creme/tinta/mata; contorno grosso e sombra dura.
 Bichos, olho, símbolos e cortinas saem do código do site (assets/quiddo/art.json, gerado de src/lib)."""
 import json, re
 import common as C
@@ -66,391 +66,6 @@ def cover_from_feed(feed_html_body, cls='', bg='var(--creme)'):
     return doc('capa', FONTS, CSS, f'<section class="page {cls}" style="width:1080px;height:1920px;background:{bg}"><div class="abs" style="left:0;top:285px;width:1080px;height:1350px;overflow:hidden">{feed_html_body}</div></section>', 1080, 1920)
 
 # =====================================================================================
-# Q-R1 · Reel · "Quem é mais provável…" (Floresta, fundo escuro)
-# =====================================================================================
-def q_r1():
-    T = 17.0
-    tl = TL(T)
-    opts = [('tucano.bone.-.5', 'Primo Davi'), ('capivara.palha.-.1', 'Tia Neide'),
-            ('coruja.-.redondos.6', 'Vó Lurdes'), ('preguica.fone.-.2', 'Beto')]
-    # cena 1: gancho
-    s1 = f'''<div {tl.scene(0, 3.7, fin=False)}>
-      <div class="abs" style="left:90px;top:330px;{at(.05,'pop')}"><span class="chip" style="background:var(--amarelo)">Pergunta 4 de 10</span></div>
-      <div class="abs t" style="left:90px;top:450px;width:900px;font-size:104px;color:var(--creme);{at(.2,'rise')}">Quem é mais provável de chegar <span class="mt">atrasado</span> no amigo secreto?</div>
-      <div class="abs" style="left:640px;top:1150px;--r:6deg;{at(.9,'drop')}">{av('preguica.fone.-.2', 300)}</div>
-      <div class="abs" style="left:150px;top:1220px;--r:-7deg;{at(1.2,'drop')}">{av('tucano.bone.-.5', 230)}</div>
-    </div>'''
-    # cena 2: opções + contagem do olho (5 s)
-    rows = ''
-    for i, (k, n) in enumerate(opts):
-        rows += f'<div style="{at(3.9 + i * .18, "slideL")}">' + resp(i, n, 'height:150px;margin-bottom:26px;padding-left:20px', '') .replace(f'{sym(i)}', f'{sym(i)}<span style="margin-left:-6px">{av(k, 104)}</span>', 1) + '</div>'
-    olho = f'''<svg width="250" height="250" viewBox="0 0 300 300"><circle cx="150" cy="150" r="136" fill="#13A07A" stroke="{INK}" stroke-width="8"/>
-      <circle cx="150" cy="150" r="105" fill="none" stroke="#0B5D45" stroke-width="14"/>
-      <circle cx="150" cy="150" r="105" fill="none" stroke="#FFC83D" stroke-width="14" stroke-linecap="round" pathLength="100" stroke-dasharray="100 200" transform="rotate(-90 150 150)" style="animation:drain 5s linear 3.8s 1 both"/>
-      <circle cx="150" cy="150" r="88" fill="#5BC0EB" stroke="{INK}" stroke-width="7"/><circle cx="150" cy="150" r="62" fill="#fff" stroke="{INK}" stroke-width="4"/></svg>'''
-    nums = ''.join(f'<div class="abs t" style="left:0;right:0;top:78px;text-align:center;font-size:96px;color:{INK};opacity:0;animation:fade .01s linear {3.8 + j}s 1 both{",fadeOut .01s linear " + str(3.8 + j + 1) + "s 1 forwards" if j < 4 else ""}">{5 - j}</div>' for j in range(5))
-    s2 = f'''<div {tl.scene(3.7, 9.0)}>
-      <div class="abs t" style="left:90px;top:300px;width:620px;font-size:56px;color:var(--creme)">Quem é mais provável de chegar <span class="mt">atrasado</span> no amigo secreto?</div>
-      <div class="abs" style="left:760px;top:290px;width:250px;height:250px">{olho}{nums}</div>
-      <div class="abs" style="left:90px;top:640px;width:900px">{rows}</div>
-    </div>'''
-    # cena 3: resultado
-    votos = [1, 1, 0, 7]
-    bars = ''
-    for i, (k, n) in enumerate(opts):
-        w = 120 + votos[i] * 92
-        win = i == 3
-        bars += f'''<div style="display:flex;align-items:center;gap:22px;height:150px;margin-bottom:22px">
-          {av(k, 120)}
-          <div style="flex:1"><div class="mini" style="color:var(--creme);margin-bottom:8px">{n}</div>
-          <div style="height:58px;width:{w}px;border:5px solid {INK};border-radius:18px;background:{['var(--verde)','var(--laranja)','var(--azul)','var(--vermelho)'][i]};box-shadow:0 6px 0 {INK};transform-origin:left;{at(9.3 + i * .12, 'grow')}"></div></div>
-          <div class="t" style="font-size:64px;color:{'var(--amarelo)' if win else 'var(--creme)'};width:120px;text-align:right;{at(9.9, 'fade')}">{votos[i]}</div></div>'''
-    s3 = f'''<div {tl.scene(9.0, 13.2)}>
-      <div class="abs mini" style="left:90px;top:320px;color:var(--amarelo);{at(9.1,'fade')}">9 PESSOAS VOTARAM</div>
-      <div class="abs" style="left:90px;top:400px;width:900px">{bars}</div>
-      <div class="abs t" style="left:90px;top:1200px;width:900px;font-size:92px;color:var(--creme);{at(10.6,'pop')}">Beto, de <span class="mt">novo.</span></div>
-      <div class="abs" style="left:90px;top:1330px;font-size:40px;color:var(--creme);{at(11.3,'rise')}">Ninguém ficou surpreso. Nem o Beto.</div>
-    </div>'''
-    # cena 4: fim
-    s4 = f'''<div {tl.scene(13.2, T, fout=False)}>
-      <div class="abs" style="left:190px;top:560px;{at(13.35,'pop')}">{logo('neg', 700)}</div>
-      <div class="abs t" style="left:0;right:0;top:860px;text-align:center;font-size:72px;color:var(--creme);{at(13.8,'rise')}">Quiz ao vivo, do seu jeito.</div>
-      <div class="abs" style="left:0;right:0;top:990px;text-align:center;{at(14.2,'rise')}"><span class="chip" style="font-size:38px;background:var(--amarelo)">Faça o seu. Teste grátis.</span></div>
-      <div class="abs url" style="left:0;right:0;top:1120px;text-align:center;color:var(--amarelo);{at(14.5,'fade')}">quiddo.com.br</div>
-    </div>'''
-    css = CSS + tl.style() + '@keyframes fadeOut{to{opacity:0}}@keyframes drain{from{stroke-dashoffset:0}to{stroke-dashoffset:100}}'
-    body = f'<section class="page esc" style="width:1080px;height:1920px">{s1}{s2}{s3}{s4}</section>'
-    cover_body = f'''<div class="page esc" style="width:1080px;height:1350px">
-      <div class="abs" style="left:80px;top:80px">{logo('neg', 210)}</div>
-      <div class="abs t" style="left:80px;top:270px;width:920px;font-size:100px">Quem é mais provável de chegar <span class="mt">atrasado</span> no amigo secreto?</div>
-      <div class="abs" style="left:610px;top:860px;transform:rotate(6deg)">{av('preguica.fone.-.2', 360)}</div>
-      <div class="abs" style="left:120px;top:960px;transform:rotate(-7deg)">{av('tucano.bone.-.5', 250)}</div></div>'''
-    piece(id='Q-R1', fmt='reel', day=1, slot='19h45', title='Quem é mais provável… (amigo secreto)', total=T,
-          html=doc('Q-R1', FONTS, css, body, 1080, 1920, reel=True, total=T),
-          cover=cover_from_feed(cover_body, 'esc', 'var(--mata)'),
-          caption=('Toda família tem um Beto. 🦥\n\nNo Quiddo, além do quiz que vale ponto, tem a pergunta "Quem é mais provável…": '
-                   'as opções são as pessoas da sala e todo mundo vota pelo celular.\n\n'
-                   'Use no amigo secreto, no Natal ou na confraternização. Faça o seu, teste grátis.\n'
-                   'Marca aqui o Beto da sua família 👇\n\nquiddo.com.br (link na bio)\n'
-                   '#amigosecreto #natalemfamilia #quiz #quizaovivo #brincadeira #resenha #quiddo'),
-          notes='Floresta, fundo mata. Áudio: tique da contagem (5 s), plim no resultado. Música em alta a 20–30%.')
-
-# =====================================================================================
-# Q-C1 · Carrossel · Confraternização (Escritório, claro)
-# =====================================================================================
-POSTIT = ['#FFC23D', '#FF8FB0', '#8FA6FF', '#7FE0B5']
-
-def postit(x, y, s, rot, cor, inner='', fs=30):
-    return f'<div class="abs" style="left:{x}px;top:{y}px;width:{s}px;height:{s}px;background:{cor};border:5px solid {INK};transform:rotate({rot}deg);box-shadow:0 8px 0 {INK};padding:26px;font-weight:900;font-size:{fs}px;line-height:1.15;color:{INK}">{inner}</div>'
-
-def q_c1():
-    pages = []
-    # 1 capa
-    pages.append(page(f'''
-      <div class="abs" style="left:80px;top:80px">{logo('cor', 210)}</div>
-      <div class="abs chip" style="left:80px;top:250px;background:var(--amarelo)">Salva pra confraternização</div>
-      <div class="abs t" style="left:80px;top:360px;width:930px;font-size:108px">7 perguntas que não constrangem <span class="mt">ninguém</span> na festa da firma</div>
-      <div class="abs" style="left:-40px;top:980px;width:1160px;height:420px;overflow:hidden;border-top:6px solid {INK}">{cortina('escritorio', 1160, 700)}</div>
-      <div class="abs" style="right:80px;top:880px;transform:rotate(6deg)">{av('tucano.bone.redondos.5', 200)}</div>'''))
-    # 2 quiz com números (lista vertical)
-    pages.append(page(f'''
-      <div class="abs mini" style="left:80px;top:90px;color:var(--txt2)">1 / 7 · QUIZ · VALE PONTO</div>
-      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:84px">Quantos cafés a copa serve num dia <span class="mt">normal?</span></div>
-      <div class="abs" style="left:80px;top:520px;width:920px">
-        {resp(0,'40','margin-bottom:26px')}{resp(1,'120','margin-bottom:26px')}{resp(2,'300','margin-bottom:26px')}{resp(3,'Ninguém tem coragem de contar')}</div>
-      <div class="abs mini" style="left:80px;top:1220px;width:920px;color:var(--txt2)">Antes da festa, pergunte na copa. A resposta certa vira assunto.</div>'''))
-    # 3 quem é mais provável (avatares em linha)
-    people = [('gato.-.escuros.6', 'Lu'), ('jabuti.-.redondos.3', 'Marcão'), ('arara.flor.-.4', 'Dri'), ('tatu.cartola.-.9', 'Seu Zé')]
-    cells = ''.join(f'<div style="width:215px;text-align:center"><div style="height:200px">{av(k,190)}</div><div class="resp {LET[i]}" style="justify-content:center;padding:14px 8px;font-size:30px;margin-top:20px">{sym(i,36)}{n}</div></div>' for i, (k, n) in enumerate(people))
-    pages.append(page(f'''
-      <div class="abs" style="inset:0;background:var(--amarelo)"></div>
-      <div class="abs mini" style="left:80px;top:90px">2 / 7 · QUEM É MAIS PROVÁVEL</div>
-      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:92px">Quem responde <span style="white-space:nowrap">e-mail</span> às 23h?</div>
-      <div class="abs" style="left:80px;top:600px;width:920px;display:flex;justify-content:space-between">{cells}</div>
-      <div class="abs card" style="left:80px;top:1060px;width:920px;padding:30px 36px;font-size:32px;font-weight:800">As opções são as pessoas da sala. Ninguém erra, todo mundo ri.</div>'''))
-    # 4 enquete (barras)
-    bars = [('A reunião de alinhamento do alinhamento', 46, 0), ('A daily que durou 1 hora', 31, 1), ('A que começou "rapidinho"', 23, 2)]
-    bh = ''.join(f'''<div style="margin-bottom:40px"><div style="font-size:36px;font-weight:800;margin-bottom:12px">{t}</div>
-        <div style="display:flex;align-items:center;gap:20px"><div style="height:64px;width:{p*14}px;background:{['var(--verde)','var(--laranja)','var(--azul)'][k]};border:5px solid {INK};border-radius:16px;box-shadow:0 6px 0 {INK}"></div><span class="t" style="font-size:56px">{p}%</span></div></div>''' for t, p, k in bars)
-    pages.append(page(f'''
-      <div class="abs mini" style="left:80px;top:90px;color:var(--txt2)">3 / 7 · ENQUETE · NINGUÉM ERRA</div>
-      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:88px">Qual reunião podia ter sido um <span class="mt">e-mail?</span></div>
-      <div class="abs" style="left:80px;top:560px;width:920px">{bh}</div>
-      <div class="abs mini" style="left:80px;top:1230px;color:var(--txt2)">Resultado ilustrativo. O da sua firma sai ao vivo.</div>'''))
-    # 5 complete a frase (post-its)
-    pages.append(page(f'''
-      <div class="abs mini" style="left:80px;top:90px;color:var(--txt2)">4 / 7 · COMPLETE</div>
-      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:96px">"Vamos alinhar…"</div>
-      {postit(90, 470, 400, -5, POSTIT[0], '<span style="font-family:Fraunces;font-size:56px">A</span><br>…na segunda', 46)}
-      {postit(570, 450, 400, 4, POSTIT[1], '<span style="font-family:Fraunces;font-size:56px">B</span><br>…offline', 46)}
-      {postit(110, 900, 400, 3, POSTIT[2], '<span style="font-family:Fraunces;font-size:56px">C</span><br>…as expectativas', 46)}
-      {postit(560, 880, 400, -4, POSTIT[3], '<span style="font-family:Fraunces;font-size:56px">D</span><br>…depois do almoço', 46)}'''))
-    # 6 template da empresa
-    pages.append(page(f'''
-      <div class="abs" style="inset:0;background:var(--mata)"></div>
-      <div class="abs mini" style="left:80px;top:90px;color:var(--amarelo)">5 / 7 · QUIZ · VALE PONTO</div>
-      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:96px;color:var(--creme)">Em que ano a empresa <span class="mt">nasceu?</span></div>
-      <div class="abs" style="left:80px;top:560px;width:920px;display:grid;grid-template-columns:1fr 1fr;gap:28px">
-        {resp(0,'2009')}{resp(1,'2012')}{resp(2,'2015')}{resp(3,'2018')}</div>
-      <div class="abs card" style="left:80px;top:1000px;width:920px;padding:30px 36px;font-size:32px;font-weight:800;background:var(--creme)">Troque pelos dados da sua empresa. Pergunta de casa vale mais que trivia.</div>'''))
-    # 7 perguntas 6 e 7 juntas + fechamento
-    pages.append(page(f'''
-      <div class="abs mini" style="left:80px;top:90px;color:var(--txt2)">6 E 7 / 7 · PARA FECHAR</div>
-      <div class="abs card" style="left:80px;top:160px;width:920px;padding:36px 40px;transform:rotate(-1.5deg)"><div class="t" style="font-size:60px">Quem é mais provável de ganhar o amigo secreto e trocar?</div></div>
-      <div class="abs card" style="left:80px;top:500px;width:920px;padding:36px 40px;transform:rotate(1.2deg);background:var(--amarelo)"><div class="t" style="font-size:60px">Qual é o melhor momento do ano na firma?</div><div style="font-size:30px;margin-top:12px">Enquete. Deixe a resposta mais votada para o discurso.</div></div>
-      <div class="abs t" style="left:80px;top:930px;width:920px;font-size:64px">Pódio no fim, foto pro grupo.</div>
-      <div class="abs" style="left:80px;top:1040px"><span class="chip" style="font-size:38px;background:var(--amarelo)">Faça o seu. Teste grátis.</span></div>
-      <div class="abs" style="left:80px;top:1170px">{logo('cor', 240)}</div>
-      <div class="abs url" style="right:80px;top:1210px">quiddo.com.br</div>'''))
-    body = ''.join(pages)
-    piece(id='Q-C1', fmt='carrossel', day=2, slot='12h30', title='7 perguntas para a festa da firma', w=1080, h=1350,
-          html=doc('Q-C1', FONTS, CSS, body, 1080, 1350),
-          caption=('7 perguntas para a confraternização que não constrangem ninguém. 💼\n\n'
-                   'Tem quiz que vale ponto, enquete em que ninguém erra e "quem é mais provável", que é onde a sala ri de verdade.\n'
-                   'Arrasta, salva e troca os dados pelos da sua empresa.\n\n'
-                   'Marca aqui quem organiza a festa 👇\nFaça o seu, teste grátis: quiddo.com.br\n'
-                   '#confraternizacao #festadefimdeano #endomarketing #rh #dinamicadegrupo #quiz #quiddo'),
-          notes='Escritório (post-its do site). Página 1 usa a cortina oficial do visual Escritório.')
-
-# =====================================================================================
-# Q-R2 · Reel · "Que bicho você seria?" (Álbum de figurinhas, escuro)
-# =====================================================================================
-def figurinha(k, n, nome, fundo, size=560, rot=-4):
-    return f'''<div style="width:{size}px;color:{INK};background:#fff;border:7px solid {INK};border-radius:30px;box-shadow:0 14px 0 {INK};padding:26px;transform:rotate({rot}deg)">
-      <div style="background:{fundo};border:5px solid {INK};border-radius:20px;height:{size-120}px;display:flex;align-items:center;justify-content:center;position:relative">{av(k, size-180)}
-      <span class="abs t" style="left:18px;top:12px;font-size:40px">Nº {n:02d}</span></div>
-      <div class="t" style="font-size:44px;margin-top:18px;text-align:center">{nome}</div></div>'''
-
-def q_r2():
-    T = 19.4
-    tl = TL(T)
-    slots = ''.join(f'<div style="border:5px dashed rgba(255,246,230,.25);border-radius:26px"></div>' for _ in range(12))
-    grid = f'<div class="abs" style="left:60px;top:60px;right:60px;bottom:60px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px">{slots}</div>'
-    s1 = f'''<div {tl.scene(0, 3.5, fin=False)}>
-      <div class="abs t" style="left:90px;top:360px;width:900px;font-size:110px;color:var(--creme);{at(.1,'rise')}">Diz qual bicho você <span class="mt">escolhe.</span></div>
-      <div class="abs t" style="left:90px;top:640px;width:900px;font-size:80px;color:var(--amarelo);{at(.9,'rise')}">Eu digo como você joga.</div>
-      <div class="abs" style="left:200px;top:880px;{at(1.3,'drop')}">{figurinha('onca.coroa.-.2', 3, 'Onça', '#FFF0CC', 520, -5)}</div>
-    </div>'''
-    tipos = [('capivara.bone.-.7', 7, 'Capivara de boné', '#E3F2C8', 'Responde por último.', 'Acerta tudo.', 4),
-             ('onca.coroa.escuros.2', 3, 'Onça de coroa', '#FFF0CC', 'Entra na sala', 'já se achando campeã.', -3),
-             ('preguica.fone.-.5', 12, 'Preguiça de fone', '#DCEBFA', 'Ainda está lendo', 'a pergunta 2.', 5),
-             ('sapo.festa.estrela.4', 18, 'Sapo de chapéu de festa', '#FDE2E1', 'Veio pela resenha.', 'Ficou pelo pódio.', -4)]
-    sc = ''
-    t = 3.5
-    for k, n, nome, fundo, l1, l2, rot in tipos:
-        sc += f'''<div {tl.scene(t, t + 3.2)}>
-          <div class="abs" style="left:250px;top:300px;{at(t + .05,'drop')}">{figurinha(k, n, nome, fundo, 580, rot)}</div>
-          <div class="abs t" style="left:90px;top:1080px;width:900px;font-size:76px;color:var(--creme);text-align:center;{at(t + .55,'rise')}">{l1}</div>
-          <div class="abs t" style="left:90px;top:1180px;width:900px;font-size:76px;text-align:center;{at(t + 1.0,'pop')}"><span class="mt">{l2}</span></div>
-        </div>'''
-        t += 3.2
-    small = ['tucano.-.-.0', 'arara.flor.-.4', 'tamandua.gorro.-.8', 'boto.-.coracao.9', 'loboguara.faixa.-.1', 'caramelo.bone.bigode.3']
-    row = ''.join(f'<div style="--r:{(-1)**i*6}deg;{at(16.4 + i*.1,"pop")}">{av(k, 150)}</div>' for i, k in enumerate(small))
-    s6 = f'''<div {tl.scene(16.3, T, fout=False)}>
-      <div class="abs" style="left:60px;right:60px;top:380px;display:flex;justify-content:space-between">{row}</div>
-      <div class="abs t" style="left:90px;top:640px;width:900px;font-size:92px;color:var(--creme);text-align:center;{at(16.7,'rise')}">20 bichos. 13.200 combinações. Qual é <span class="mt">o seu?</span></div>
-      <div class="abs" style="left:240px;top:1080px;{at(17.4,'pop')}">{logo('neg', 600)}</div>
-      <div class="abs" style="left:0;right:0;top:1330px;text-align:center;{at(17.7,'rise')}"><span class="chip" style="font-size:38px;background:var(--amarelo)">Faça o seu. Teste grátis.</span></div>
-      <div class="abs url" style="left:0;right:0;top:1460px;text-align:center;color:var(--amarelo);{at(17.9,'fade')}">quiddo.com.br</div>
-    </div>'''
-    body = f'<section class="page esc" style="width:1080px;height:1920px">{grid}{s1}{sc}{s6}</section>'
-    cover_body = f'''<div class="page esc" style="width:1080px;height:1350px">
-      <div class="abs" style="left:80px;top:80px">{logo('neg', 210)}</div>
-      <div class="abs t" style="left:80px;top:260px;width:920px;font-size:96px">Diz qual bicho você <span class="mt">escolhe.</span> Eu digo como você joga.</div>
-      <div class="abs" style="left:110px;top:720px">{figurinha('capivara.bone.-.7', 7, 'Capivara de boné', '#E3F2C8', 420, -6)}</div>
-      <div class="abs" style="left:560px;top:760px">{figurinha('preguica.fone.-.5', 12, 'Preguiça de fone', '#DCEBFA', 420, 5)}</div></div>'''
-    piece(id='Q-R2', fmt='reel', day=4, slot='19h45', title='Que bicho você seria? (tipologia)', total=T, poster=.3,
-          html=doc('Q-R2', FONTS, CSS + tl.style(), body, 1080, 1920, reel=True, total=T),
-          cover=cover_from_feed(cover_body, 'esc', 'var(--mata)'),
-          caption=('Diz qual bicho você escolhe e a gente diz como você joga. 🐸\n\n'
-                   'Capivara de boné: responde por último e acerta tudo.\n'
-                   'Onça de coroa: entra na sala já se achando campeã.\n'
-                   'Preguiça de fone: ainda está lendo a pergunta 2.\n'
-                   'Sapo de chapéu de festa: veio pela resenha, ficou pelo pódio.\n\n'
-                   'No Quiddo são 20 bichos do Brasil e 13.200 jeitos de montar o seu. Qual é o seu? Comenta 👇\nFaça o seu, teste grátis: quiddo.com.br\n'
-                   '#bichosdobrasil #capivara #quiz #resenha #jogoemgrupo #quiddo'),
-          notes='Visual Álbum de figurinhas sobre fundo mata. Bichos gerados pelo avatarSvg do site.')
-
-# =====================================================================================
-# Q-C2 · Carrossel · 5 regras (Sala de aula, claro)
-# =====================================================================================
-def caderno(margin=True):
-    lines = ''.join(f'<div class="abs" style="left:0;right:0;top:{y}px;height:3px;background:#C9D8F5"></div>' for y in range(200, 1350, 72))
-    m = '<div class="abs" style="left:150px;top:0;bottom:0;width:4px;background:rgba(229,56,59,.55)"></div>' if margin else ''
-    return f'<div class="abs" style="inset:0;background:#FFFDF5"></div>{lines}{m}'
-
-def q_c2():
-    regras = [
-        ('Comece fácil.', 'A primeira pergunta é para a sala inteira acertar. Ela ensina o jogo sem ninguém explicar.', 'folha'),
-        ('Uma pergunta, uma ideia.', 'Se a pergunta precisa de vírgula, ela vira duas perguntas.', 'sol'),
-        ('Misture os tipos.', 'Quiz vale ponto. Enquete ninguém erra. "Quem é mais provável" é onde a sala ri.', 'gota'),
-        ('A difícil vai no meio.', 'No fim, a turma quer virada, não frustração. Guarde a última para a mais divertida.', 'flor'),
-        ('Feche com o pódio.', 'Revele do 3º para o 1º, devagar. Depois, todo mundo junto para a foto.', 'folha'),
-    ]
-    pages = [page(f'''{caderno()}
-      <div class="abs" style="left:200px;top:90px">{logo('cor', 210)}</div>
-      <div class="abs t" style="left:200px;top:300px;width:800px;font-size:112px">Como fazer um quiz que ninguém <span class="mt">esquece</span></div>
-      <div class="abs" style="left:200px;top:820px;font-size:40px;font-weight:800;width:760px">5 regras para a próxima festa, aula ou resenha.</div>
-      <div class="abs" style="left:640px;top:960px;transform:rotate(6deg)">{av('coruja.-.redondos.6', 300)}</div>
-      <div class="abs t" style="left:210px;top:1080px;background:var(--vermelho);color:#fff;border:7px solid {INK};padding:12px 36px;font-size:76px;box-shadow:0 10px 0 {INK};transform:rotate(-6deg)">Nota 10</div>''')]
-    for i, (tit, txt, s) in enumerate(regras):
-        # composições alternadas: número gigante à esquerda, cartão, etc.
-        if i % 2 == 0:
-            inner = f'''<div class="abs t" style="left:190px;top:120px;font-size:400px;color:var(--amarelo);-webkit-text-stroke:8px {INK}">{i+1}</div>
-              <div class="abs t" style="left:200px;top:620px;width:820px;font-size:92px">{tit}</div>
-              <div class="abs" style="left:200px;top:780px;width:780px;font-size:44px;font-weight:700;line-height:1.3">{txt}</div>'''
-        else:
-            inner = f'''<div class="abs card" style="left:200px;top:220px;width:800px;padding:50px 50px 60px;transform:rotate({-1.5 if i==1 else 1.5}deg)">
-                <div class="t" style="font-size:150px;color:var(--verde)">{i+1}.</div>
-                <div class="t" style="font-size:86px;margin-top:10px">{tit}</div>
-                <div style="font-size:42px;font-weight:700;line-height:1.3;margin-top:30px">{txt}</div></div>'''
-        pages.append(page(f'''{caderno()}{inner}<div class="abs mini" style="left:200px;top:1250px;color:var(--txt2)">{i+1} / 5</div>'''))
-    pages.append(page(f'''
-      <div class="abs" style="inset:0;background:var(--verde)"></div>
-      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:104px;color:#fff">Agora é só <span class="mt">montar.</span></div>
-      <div class="abs card" style="left:80px;top:470px;width:920px;padding:44px 48px;font-size:42px;font-weight:800;line-height:1.35">
-        Escreve as perguntas, manda o código da sala e a turma joga pelo celular. Sem baixar app.</div>
-      <div class="abs" style="left:80px;top:860px"><span class="chip" style="font-size:38px;background:var(--amarelo)">Faça o seu. Teste grátis.</span></div>
-      <div class="abs" style="left:80px;top:1060px">{logo('neg', 300)}</div>
-      <div class="abs url" style="right:80px;top:1120px;color:#fff">quiddo.com.br</div>'''))
-    piece(id='Q-C2', fmt='carrossel', day=5, slot='12h30', title='Como fazer um quiz que ninguém esquece', w=1080, h=1350,
-          html=doc('Q-C2', FONTS, CSS, ''.join(pages), 1080, 1350),
-          caption=('5 regras para um quiz que ninguém esquece. 📒\n\n'
-                   '1. Comece fácil.\n2. Uma pergunta, uma ideia.\n3. Misture os tipos.\n4. A difícil vai no meio.\n5. Feche com o pódio.\n\n'
-                   'Salva para a próxima festa, aula ou resenha. E manda para quem sempre organiza.\n'
-                   'Faça o seu, teste grátis: quiddo.com.br\n#quiz #professor #saladeaula #dinamicadegrupo #gincana #dicas #quiddo'),
-          notes='Sala de aula: folha de caderno. Composições alternam número gigante e cartão.')
-
-# =====================================================================================
-# Q-R3 · Reel · Virada no último segundo (Espaço, escuro)
-# =====================================================================================
-def q_r3():
-    T = 18.6
-    tl = TL(T)
-    stars = ''.join(f'<div class="abs" style="left:{(i*149)%1060+10}px;top:{(i*83)%1880+20}px;width:{6 if i%4 else 9}px;height:{6 if i%4 else 9}px;border-radius:50%;background:#fff;opacity:.8"></div>' for i in range(70))
-    bg = f'<div class="abs" style="inset:0;background:#0B1033"></div>{stars}'
-    players = [('Lua', 'boto.-.estrela.9', 4820), ('Caio', 'quati.bone.-.1', 4610), ('Nina', 'gato.coroa.-.6', 4400),
-               ('Tati', 'tamandua.fone.redondos.2', 4390), ('Ju', 'mico.flor.-.7', 3900)]
-    s1 = f'''<div {tl.scene(0, 2.9, fin=False)}>
-      <div class="abs t" style="left:90px;top:420px;width:900px;font-size:120px;color:#fff;{at(.05,'rise')}">Faltava 1 pergunta.</div>
-      <div class="abs t" style="left:90px;top:720px;width:900px;font-size:120px;{at(.8,'pop')}"><span class="mt">A Tati estava em 4º.</span></div>
-      <div class="abs" style="left:700px;top:1050px;{at(1.2,'drop')}">{av('tamandua.fone.redondos.2', 260)}</div>
-    </div>'''
-    def row(i, nome, k, pts, y, extra='', hl=False):
-        return f'''<div class="abs" style="left:90px;width:900px;top:{y}px;height:150px;display:flex;align-items:center;gap:24px;background:{'var(--amarelo)' if hl else '#fff'};border:6px solid {INK};border-radius:30px;box-shadow:0 10px 0 {INK};padding:0 34px 0 18px;{extra}">
-          <span class="t" style="font-size:56px;width:60px;text-align:center">{i}</span>{av(k, 112)}<span style="font-size:46px;font-weight:900;flex:1">{nome}</span><span class="t" style="font-size:56px">{pts:,}</span></div>'''.replace(',', '.') if False else f'''<div class="abs" style="left:90px;width:900px;top:{y}px;height:150px;display:flex;align-items:center;gap:24px;background:{'var(--amarelo)' if hl else '#fff'};border:6px solid {INK};border-radius:30px;box-shadow:0 10px 0 {INK};padding:0 34px 0 18px;{extra}">
-          <span class="t" style="font-size:56px;width:60px;text-align:center">{i}</span>{av(k, 112)}<span style="font-size:46px;font-weight:900;flex:1">{nome}</span><span class="t" style="font-size:56px">{f"{pts:,}".replace(",", ".")}</span></div>'''
-    rows = ''.join(row(i + 1, n, k, p, 520 + i * 180, at(3.0 + i * .12, 'slideR'), hl=(n == 'Tati')) for i, (n, k, p) in enumerate(players))
-    s2 = f'''<div {tl.scene(2.9, 7.6)}>
-      <div class="abs" style="left:90px;top:320px;{at(2.95,'pop')}"><span class="chip" style="background:var(--amarelo)">Placar · antes da pergunta 10</span></div>
-      {rows}</div>'''
-    q = f'''<div {tl.scene(7.6, 11.4)}>
-      <div class="abs mini" style="left:90px;top:320px;color:var(--amarelo)">PERGUNTA 10 DE 10</div>
-      <div class="abs t" style="left:90px;top:380px;width:900px;font-size:84px;color:#fff">Qual planeta tem o dia mais longo?</div>
-      <div class="abs" style="left:90px;top:720px;width:900px;display:grid;grid-template-columns:1fr 1fr;gap:28px">
-        <div style="{at(7.8,'pop')}">{resp(0,'Marte','height:150px')}</div>
-        <div style="position:relative;{at(7.9,'pop')}">{resp(1,'Vênus','height:150px')}<div class="abs" style="inset:-14px;border:8px solid var(--amarelo);border-radius:38px;{at(9.6,'pop')}"></div></div>
-        <div style="{at(8.0,'pop')}">{resp(2,'Júpiter','height:150px')}</div>
-        <div style="{at(8.1,'pop')}">{resp(3,'Netuno','height:150px')}</div></div>
-      <div class="abs card" style="left:90px;top:1140px;width:900px;padding:28px 34px;display:flex;align-items:center;gap:24px;{at(10.0,'rise')}">{av('tamandua.fone.redondos.2', 110)}<span style="font-size:38px;font-weight:900">Tati acertou em 1,2 s · +980</span></div>
-      <div class="abs" style="left:90px;top:1360px;width:900px;font-size:30px;color:#fff;opacity:.85;{at(10.3,'fade')}">Um dia em Vênus dura mais que o ano de lá.</div>
-    </div>'''
-    # ranking depois: Tati sobe de 4º para 1º
-    after = [('Tati', 'tamandua.fone.redondos.2', 5370), ('Lua', 'boto.-.estrela.9', 5290), ('Caio', 'quati.bone.-.1', 5010), ('Nina', 'gato.coroa.-.6', 4400), ('Ju', 'mico.flor.-.7', 4300)]
-    before_pos = {'Lua': 0, 'Caio': 1, 'Nina': 2, 'Tati': 3, 'Ju': 4}
-    mv = ''
-    rows2 = ''
-    for i, (n, k, p) in enumerate(after):
-        b = before_pos[n]
-        name = f'mv{n}'
-        dy = (b - i) * 180
-        mv += f'@keyframes {name}{{0%{{transform:translateY({dy}px)}}100%{{transform:translateY(0)}}}}'
-        rows2 += row(i + 1, n, k, p, 520 + i * 180, f'animation:{name} .9s cubic-bezier(.34,1.3,.64,1) 12.0s 1 both;z-index:{5 if n=="Tati" else 1}', hl=(n == 'Tati'))
-    crown = '<svg width="150" height="102" viewBox="-34 -26 68 46"><path d="M-26 12 L-29 -14 L-14 -1 L0 -20 L14 -1 L29 -14 L26 12Z" fill="#FFC83D" stroke="#0E2A22" stroke-width="4" stroke-linejoin="round"/><circle cx="0" cy="2" r="4" fill="#E5383B"/><circle cx="-15" cy="5" r="3" fill="#1E7FD6"/><circle cx="15" cy="5" r="3" fill="#13A07A"/></svg>'
-    s4 = f'''<div {tl.scene(11.4, 15.4)}>
-      <div class="abs" style="left:90px;top:320px"><span class="chip" style="background:var(--amarelo)">Placar final</span></div>
-      {rows2}
-      <div class="abs" style="left:150px;top:430px;--r:-12deg;{at(13.0,'drop')}">{crown}</div>
-    </div>'''
-    s5 = f'''<div {tl.scene(15.4, T, fout=False)}>
-      <div class="abs t" style="left:0;right:0;top:420px;text-align:center;font-size:110px;color:#fff;{at(15.5,'rise')}">De 4º para 1º.</div>
-      <div class="abs" style="left:300px;top:610px;--r:-6deg;{at(15.8,'stamp')}"><div class="t" style="background:var(--vermelho);color:#fff;border:7px solid {INK};padding:14px 40px;font-size:80px;box-shadow:0 10px 0 {INK}">Na Lua!</div></div>
-      <div class="abs" style="left:240px;top:950px;{at(16.3,'pop')}">{logo('neg', 600)}</div>
-      <div class="abs" style="left:0;right:0;top:1200px;text-align:center;{at(16.6,'rise')}"><span class="chip" style="font-size:38px;background:var(--amarelo)">Faça o seu. Teste grátis.</span></div>
-      <div class="abs url" style="left:0;right:0;top:1330px;text-align:center;color:var(--amarelo);{at(16.8,'fade')}">quiddo.com.br</div>
-    </div>'''
-    body = f'<section class="page" style="width:1080px;height:1920px">{bg}{s1}{s2}{q}{s4}{s5}</section>'
-    cover_body = f'''<div class="page" style="width:1080px;height:1350px;background:#0B1033">{stars}
-      <div class="abs" style="left:80px;top:80px">{logo('neg', 210)}</div>
-      <div class="abs t" style="left:80px;top:270px;width:920px;font-size:112px;color:#fff">Faltava 1 pergunta. <span class="mt">Ela estava em 4º.</span></div>
-      <div class="abs" style="left:620px;top:830px;transform:rotate(5deg)">{av('tamandua.fone.redondos.2', 340)}</div>
-      <div class="abs" style="left:140px;top:900px">{mini('espaco', 300)}</div></div>'''
-    piece(id='Q-R3', fmt='reel', day=7, slot='19h45', title='A virada no último segundo (Espaço)', total=T, poster=.7,
-          html=doc('Q-R3', FONTS, CSS + tl.style() + mv, body, 1080, 1920, reel=True, total=T),
-          cover=cover_from_feed(cover_body, '', '#0B1033'),
-          caption=('Faltava uma pergunta. A Tati estava em 4º. 🚀\n\n'
-                   'No Quiddo, quem acerta mais rápido ganha mais ponto. Por isso dá virada até na última pergunta.\n'
-                   'E sim: um dia em Vênus dura mais que o ano de lá.\n\n'
-                   'Monte o seu com o visual Espaço. Faça o seu, teste grátis: quiddo.com.br\n'
-                   '#quiz #quizaovivo #espaco #astronomia #curiosidades #quiddo'),
-          notes='Visual Espaço (selo "Na Lua!" é o carimbo oficial do pódio da cena lua). Áudio: plim na resposta, fanfarra na virada.')
-
-# =====================================================================================
-# Stories (5)
-# =====================================================================================
-def story(body, cls='', bg=''):
-    return f'<section class="page {cls}" style="width:1080px;height:1920px;{bg}">{body}</section>'
-
-def q_stories():
-    out = []
-    # S1 enquete
-    out.append(('Q-S1', 1, 'Enquete: amigo secreto ou quiz?', story(f'''
-      <div class="abs" style="left:80px;top:270px">{logo('cor', 230)}</div>
-      <div class="abs t" style="left:80px;top:470px;width:920px;font-size:110px">Na confraternização deste ano vai ter…</div>
-      <div class="abs" style="left:120px;top:1300px;transform:rotate(-6deg)">{av('onca.festa.-.2', 230)}</div>
-      <div class="abs" style="left:730px;top:1300px;transform:rotate(6deg)">{av('capivara.laranja.escuros.7', 230)}</div>'''),
-      'Enquete', 'Adesivo de ENQUETE no centro (y≈900–1200): "Amigo secreto" / "Quiz". Espaço livre já reservado.',
-      'Story de enquete. Sem legenda de feed.'))
-    # S2 caixa de perguntas
-    out.append(('Q-S2', 2, 'Caixa: a pergunta que derruba a família', story(f'''
-      <div class="abs t" style="left:80px;top:330px;width:920px;font-size:104px;color:var(--creme)">Mande uma pergunta que <span class="mt">derrubaria</span> a sua família no Natal.</div>
-      <div class="abs" style="left:80px;top:1370px;width:920px;font-size:36px;color:var(--creme);opacity:.9">As melhores viram um quiz pronto aqui no perfil.</div>
-      <div class="abs" style="left:760px;top:1480px;transform:rotate(8deg)">{av('peixeboi.gorro.-.9', 200)}</div>''', 'esc'),
-      'Caixa de perguntas', 'Adesivo CAIXA DE PERGUNTAS em y≈950–1300.', 'Story. Sem legenda de feed.'))
-    # S3 quiz sticker
-    row = ''.join(av(k, 168) for k in ['capivara.bone.-.1', 'boto.-.-.9', 'onca.coroa.-.2', 'sapo.festa.-.4', 'tucano.-.escuros.5'])
-    out.append(('Q-S3', 3, 'Quiz: quantos bichos tem no Quiddo?', story(f'''
-      <div class="abs" style="inset:0;background:var(--amarelo)"></div>
-      <div class="abs" style="left:80px;top:290px"><span class="chip">Pergunta valendo ponto</span></div>
-      <div class="abs t" style="left:80px;top:400px;width:920px;font-size:96px">Quantos bichos do Brasil tem no Quiddo?</div>
-      <div class="abs" style="left:80px;top:1330px;width:920px;display:flex;justify-content:space-between">{row}</div>
-      <div class="abs mini" style="left:80px;top:1530px;width:920px">A resposta sai na sexta, aqui nos stories.</div>'''),
-      'Quiz', 'Adesivo QUIZ em y≈780–1230: 8 / 12 / 20 (correta) / 30.', 'v3 (você reprovou a v2 do intruso). Pergunta direta, valendo ponto, como no jogo. Nada se sobrepõe: título em cima, adesivo no meio, bichos embaixo.'))
-    # S4 bastidor 13.200
-    out.append(('Q-S4', 5, 'Bastidor: 13.200 jeitos de montar o bicho', story(f'''
-      <div class="abs mini" style="left:80px;top:290px;color:var(--txt2)">BASTIDOR</div>
-      <div class="abs t" style="left:80px;top:350px;width:920px;font-size:96px">De onde vêm os 13.200 bichos?</div>
-      <div class="abs" style="left:80px;top:700px;width:920px;display:grid;grid-template-columns:1fr 1fr;gap:28px">
-        <div class="card" style="padding:30px"><div class="t" style="font-size:96px;color:var(--verde)">20</div><div style="font-size:34px">bichos do Brasil</div></div>
-        <div class="card" style="padding:30px"><div class="t" style="font-size:96px;color:var(--laranja)">× 11</div><div style="font-size:34px">chapéus (ou nenhum)</div></div>
-        <div class="card" style="padding:30px"><div class="t" style="font-size:96px;color:var(--azul)">× 6</div><div style="font-size:34px">óculos e bigodes (ou nada)</div></div>
-        <div class="card" style="padding:30px"><div class="t" style="font-size:96px;color:var(--vermelho)">× 10</div><div style="font-size:34px">cores de fundo</div></div></div>
-      <div class="abs" style="left:80px;top:1290px;display:flex;gap:26px">{av('tatu.cartola.bigode.3',150)}{av('arara.coroa.coracao.4',150)}{av('caramelo.palha.escuros.8',150)}{av('jabuti.fone.estrela.5',150)}{av('bemtevi.faixa.-.0',150)}</div>'''),
-      'Bastidor', 'Sem adesivo. Opcional: adesivo de link no rodapé.', 'Story editorial. 20 × 11 × 6 × 10 = 13.200 (contagem do código do site).'))
-    # S5 link
-    out.append(('Q-S5', 6, 'Link: crie o quiz da confraternização', story(f'''
-      <div class="abs" style="inset:0;background:var(--verde)"></div>
-      <div class="abs t" style="left:80px;top:330px;width:920px;font-size:112px;color:#fff">Sem ideia para a <span class="mt">confra?</span></div>
-      <div class="abs card" style="left:80px;top:760px;width:920px;padding:40px 44px;font-size:44px;font-weight:800;line-height:1.3">Escreve as perguntas, manda o código, a turma joga pelo celular.</div>
-      <div class="abs" style="left:80px;top:1080px"><span class="chip" style="font-size:44px;background:var(--amarelo)">Faça o seu. Teste grátis.</span></div>
-      <div class="abs" style="left:300px;top:1440px">{logo('neg', 480)}</div>'''),
-      'Link', 'Adesivo de LINK (quiddo.com.br) em y≈1200–1400.', 'Story de conversão leve.'))
-    for sid, day, title, body, kind, sticker, notes in out:
-        piece(id=sid, fmt='story', day=day, title=title, w=1080, h=1920, html=doc(sid, FONTS, CSS, body, 1080, 1920),
-              caption='(story, sem legenda)', sticker=sticker, notes=notes, kind='story')
-
-
-# =====================================================================================
 # Q-R4 · Reel meme · "POV" curto, feito para loop e áudio em alta (entra no app)
 # =====================================================================================
 def q_r4():
@@ -486,17 +101,329 @@ def q_r4():
           notes='Formato meme (POV com texto na tela), curto para rodar em loop. Feito para entrar com um áudio em alta no app (o DOT pega o áudio da semana). CTA de envio para o grupo da família, que é o sinal que mais espalha no Instagram.')
 
 
+CSS += """
+.mtw{display:inline-block;background:#fff;color:var(--tinta);padding:0 .14em;margin:0 -.04em;transform:rotate(-2deg);border-radius:.08em}
+@property --n{syntax:'<integer>';inherits:false;initial-value:0}
+.cnt{counter-reset:c var(--n)}.cnt::after{content:counter(c)}
+"""
+
+def cta_fim(y, cor='var(--amarelo)'):
+    return f'<span class="chip" style="font-size:38px;background:{cor}">Faça o seu. Teste grátis.</span>'
+
+# =====================================================================================
+# Q-C3 · Carrossel · Desafio: bichos do Brasil (seg, capa amarela)
+# =====================================================================================
+BICHOS_Q = [
+    ('tamandua.-.redondos.8', 'Quanto mede a língua do tamanduá-bandeira?', ['10 cm', '25 cm', 'Até 60 cm', '1,5 m'], 2, 'Até 60 cm. Ela entra no formigueiro e sai cheia.'),
+    ('boto.-.-.9', 'Onde vive o boto-cor-de-rosa?', ['No mar', 'Nos rios da Amazônia', 'Em lagos de sal', 'No mangue'], 1, 'Nos rios da Amazônia. É golfinho de água doce.'),
+    ('preguica.fone.-.2', 'A preguiça desce da árvore mais ou menos…', ['Toda hora', '1 vez por dia', '1 vez por semana', 'Nunca'], 2, '1 vez por semana, em geral para ir ao "banheiro".'),
+    ('loboguara.-.-.1', 'Do que é boa parte da comida do lobo-guará?', ['Peixe', 'Fruta', 'Só carne', 'Folha de árvore'], 1, 'Fruta. A lobeira, ou fruta-do-lobo, é a preferida.'),
+    ('jabuti.palha.-.3', 'Jabuti e tartaruga: qual vive só em terra?', ['Jabuti', 'Tartaruga', 'Os dois', 'Nenhum'], 0, 'Jabuti. A tartaruga vive na água.'),
+]
+
+def q_c3():
+    row = ''.join(f'<div style="--r:{(-1)**i*5}deg;transform:rotate({(-1)**i*5}deg)">{av(k, 172)}</div>' for i, (k, *_ ) in enumerate(BICHOS_Q))
+    pages = [page(f'''
+      <div class="abs" style="inset:0;background:var(--amarelo)"></div>
+      <div class="abs" style="left:80px;top:80px">{logo('cor', 210)}</div>
+      <div class="abs" style="left:80px;top:250px"><span class="chip">Desafio · 5 perguntas</span></div>
+      <div class="abs t" style="left:80px;top:370px;width:930px;font-size:112px">Bichos do Brasil: aposto que você erra <span class="mtw">2 de 5.</span></div>
+      <div class="abs" style="left:70px;top:960px;width:940px;display:flex;justify-content:space-between">{row}</div>
+      <div class="abs mini" style="left:80px;top:1210px">Arrasta. O gabarito está na última página.</div>''')]
+    for i, (k, q, opts, ok, _) in enumerate(BICHOS_Q):
+        dark = i % 2 == 1
+        opts_html = ''.join(resp(j, o, 'height:150px;font-size:38px') for j, o in enumerate(opts))
+        pages.append(page(f'''
+          <div class="abs mini" style="left:80px;top:90px;color:{'var(--amarelo)' if dark else 'var(--txt2)'}">PERGUNTA {i+1} DE 5</div>
+          <div class="abs" style="right:70px;top:110px;transform:rotate({6 if i%2 else -6}deg)">{av(k, 250)}</div>
+          <div class="abs t" style="left:80px;top:170px;width:640px;font-size:76px">{q}</div>
+          <div class="abs" style="left:80px;top:640px;width:920px;display:grid;grid-template-columns:1fr 1fr;gap:28px">{opts_html}</div>
+          <div class="abs mini" style="left:80px;top:1180px;width:920px;color:{'var(--creme)' if dark else 'var(--txt2)'};opacity:.85">Anota a sua. Resposta na última página.</div>''', cls='esc' if dark else ''))
+    gab = ''.join(f'''<div style="display:flex;align-items:center;gap:22px;margin-bottom:22px">
+        <span class="t" style="font-size:52px;width:46px;color:var(--amarelo)">{i+1}</span>
+        <span style="flex:none;width:64px;height:64px;border:5px solid {INK};border-radius:18px;background:{['var(--verde)','var(--laranja)','var(--azul)','var(--vermelho)'][ok]};display:flex;align-items:center;justify-content:center">{sym(ok, 40)}</span>
+        <span style="font-size:34px;font-weight:800;line-height:1.2">{exp}</span></div>''' for i, (k, q, opts, ok, exp) in enumerate(BICHOS_Q))
+    pages.append(page(f'''
+      <div class="abs t" style="left:80px;top:90px;font-size:96px">Gabarito</div>
+      <div class="abs" style="left:80px;top:250px;width:920px">{gab}</div>
+      <div class="abs t" style="left:80px;top:860px;width:920px;font-size:56px">Quantas você acertou? Manda pro grupo e vê quem sabe mais.</div>
+      <div class="abs" style="left:80px;top:1060px">{cta_fim(0)}</div>
+      <div class="abs" style="left:80px;top:1190px">{logo('neg', 230)}</div>
+      <div class="abs url" style="right:80px;top:1215px;color:var(--amarelo)">quiddo.com.br</div>''', cls='esc'))
+    piece(id='Q-C3', fmt='carrossel', day=1, slot='12h30', title='Desafio: 5 perguntas sobre bichos do Brasil', w=1080, h=1350,
+          html=doc('Q-C3', FONTS, CSS, ''.join(pages), 1080, 1350),
+          caption=('Bichos do Brasil: aposto que você erra 2 de 5. 🦥\n\n'
+                   'Língua do tamanduá, casa do boto, agenda da preguiça, cardápio do lobo-guará e a diferença entre jabuti e tartaruga.\n'
+                   'Arrasta, anota as suas e confere o gabarito na última página.\n\n'
+                   'Manda no grupo e vê quem acerta mais 👇\n'
+                   'Faça o seu quiz, teste grátis: quiddo.com.br\n'
+                   '#bichosdobrasil #quiz #desafio #curiosidades #fauna #quiddo'),
+          notes='Desafio (motivo de envio: "aposto que você erra"). Capa amarela para separar o mata do domingo (Q-R3) do creme de terça. Fatos conferidos: língua do tamanduá-bandeira até ~60 cm; boto é golfinho de rio; preguiça desce ~1x por semana; lobeira na dieta do lobo-guará; jabuti é terrestre.')
+
+# =====================================================================================
+# Q-R5 · Reel meme · "Ninguém: / A tia no quiz da família:" (ter, claro)
+# =====================================================================================
+def q_r5():
+    T = 12.4
+    tl = TL(T)
+    tia = 'capivara.palha.redondos.1'
+    s1 = f'''<div {tl.scene(0, 2.4, fin=False)}>
+      <div class="abs t" style="left:90px;top:520px;font-size:140px;{at(.05,'rise')}">Ninguém:</div>
+      <div class="abs" style="left:96px;top:720px;width:14px;height:110px;background:var(--tinta);animation:blink .8s steps(1) 0s 3"></div>
+    </div>'''
+    s2 = f'''<div {tl.scene(2.4, 6.9)}>
+      <div class="abs t" style="left:90px;top:330px;width:900px;font-size:84px;{at(2.45,'rise')}">A tia, na pergunta 1 do quiz da família:</div>
+      <div class="abs card" style="left:90px;top:680px;width:900px;padding:40px 44px;{at(3.1,'pop')}"><div class="t" style="font-size:70px">"Quem fez essas perguntas? Tá impossível."</div></div>
+      <div class="abs" style="left:620px;top:1060px;--r:6deg;{at(3.6,'drop')}">{av(tia, 340)}</div>
+      <div class="abs mini" style="left:110px;top:1240px;width:460px;{at(4.6,'fade')}">Tia Célia, 3 segundos depois de reclamar, acertando em 1,4 s.</div>
+    </div>'''
+    rows = [('1', 'Tia Célia', tia, '5.120', True), ('2', 'Primo Leo', 'tucano.bone.-.5', '4.300', False), ('3', 'Mãe', 'onca.flor.-.2', '4.180', False), ('4', 'Você', 'sapo.-.escuros.4', '2.010', False)]
+    rr = ''.join(f'''<div style="height:140px;margin-bottom:22px;display:flex;align-items:center;gap:22px;background:{'var(--amarelo)' if hl else '#fff'};border:6px solid {INK};border-radius:30px;box-shadow:0 10px 0 {INK};padding:0 30px 0 16px;{at(7.1 + i*.15,'slideR')}">
+        <span class="t" style="font-size:54px;width:54px;text-align:center">{n}</span>{av(k, 104)}<span style="font-size:44px;font-weight:900;flex:1">{nome}</span><span class="t" style="font-size:54px">{pts}</span></div>''' for i, (n, nome, k, pts, hl) in enumerate(rows))
+    s3 = f'''<div {tl.scene(6.9, 9.8)}>
+      <div class="abs" style="left:90px;top:320px"><span class="chip" style="background:var(--amarelo)">Placar final</span></div>
+      <div class="abs" style="left:90px;top:450px;width:900px">{rr}</div>
+      <div class="abs" style="left:540px;top:1140px;--r:-5deg;{at(8.2,'stamp')}"><div class="t" style="background:var(--vermelho);color:#fff;border:7px solid {INK};padding:12px 36px;font-size:72px;box-shadow:0 10px 0 {INK}">De novo.</div></div>
+    </div>'''
+    s4 = f'''<div {tl.scene(9.8, T, fout=False)}>
+      <div class="abs" style="left:190px;top:560px;{at(9.9,'pop')}">{logo('cor', 700)}</div>
+      <div class="abs t" style="left:0;right:0;top:860px;text-align:center;font-size:66px;{at(10.2,'rise')}">Toda família tem uma tia dessas.</div>
+      <div class="abs" style="left:0;right:0;top:990px;text-align:center;{at(10.5,'rise')}">{cta_fim(0)}</div>
+      <div class="abs url" style="left:0;right:0;top:1120px;text-align:center;{at(10.7,'fade')}">quiddo.com.br</div>
+    </div>'''
+    body = f'<section class="page" style="width:1080px;height:1920px">{s1}{s2}{s3}{s4}</section>'
+    cover_body = f'''<div class="page" style="width:1080px;height:1350px">
+      <div class="abs t" style="left:80px;top:90px;font-size:110px">Ninguém:</div>
+      <div class="abs t" style="left:80px;top:300px;width:920px;font-size:76px">A tia, na pergunta 1 do quiz da família:</div>
+      <div class="abs card" style="left:80px;top:560px;width:920px;padding:36px 42px"><div class="t" style="font-size:64px">"Quem fez essas perguntas? Tá impossível."</div></div>
+      <div class="abs" style="left:620px;top:900px;transform:rotate(6deg)">{av(tia, 360)}</div></div>'''
+    piece(id='Q-R5', fmt='reel', day=2, slot='19h45', title='Meme "Ninguém:": a tia no quiz da família', total=T, poster=.62, kind='meme',
+          html=doc('Q-R5', FONTS, CSS + tl.style(), body, 1080, 1920, reel=True, total=T),
+          cover=cover_from_feed(cover_body, '', 'var(--creme)'),
+          caption=('Ninguém:\nA tia, na pergunta 1 do quiz da família: "quem fez essas perguntas? tá impossível." 🙄\n\n'
+                   'Placar final: Tia Célia em 1º. De novo.\n\n'
+                   'Manda pra tia do grupo da família 👇\n'
+                   'Faça o seu, teste grátis: quiddo.com.br\n#meme #familia #tia #quiz #natalemfamilia #quiddo'),
+          notes='Meme no formato "Ninguém: / Fulano:". Curto (12 s) para loop, com áudio em alta no app. Nomes de exemplo.')
+
+# =====================================================================================
+# Q-C4 · Carrossel meme · "Me diga que é Natal sem dizer Natal" (qua, vermelho)
+# =====================================================================================
+def q_c4():
+    pages = [page(f'''
+      <div class="abs" style="inset:0;background:var(--vermelho)"></div>
+      <div class="abs" style="left:80px;top:80px">{logo('neg', 210)}</div>
+      <div class="abs t" style="left:80px;top:270px;width:930px;font-size:118px;color:#fff">Me diga que é Natal em família sem dizer <span class="mtw">Natal.</span></div>
+      <div class="abs" style="left:110px;top:930px;transform:rotate(-6deg)">{av('onca.gorro.-.2', 300)}</div>
+      <div class="abs" style="left:620px;top:900px;transform:rotate(7deg)">{av('capivara.gorro.redondos.7', 320)}</div>''')]
+    itens = [
+        ('"É pavê ou é pra comer?"', 'Todo ano. Mesma pessoa. Mesma risada.', 'tatu.cartola.bigode.3'),
+        ('O primo que você só vê uma vez por ano.', 'E que cresceu 30 cm desde a última.', 'tucano.bone.-.5'),
+        ('"E os namoradinhos?"', 'Pergunta feita antes do "oi".', 'coruja.flor.redondos.6'),
+        ('A disputa pela última rabanada.', 'Sem regra. Sem juiz. Sem perdão.', 'quati.festa.-.1'),
+        ('Alguém dormindo no sofá às 22h.', 'Antes da meia-noite, como manda a tradição.', 'preguica.gorro.-.2'),
+    ]
+    bgs = ['var(--creme)', '#fff', 'var(--creme)', '#fff', 'var(--creme)']
+    for i, (tit, sub, k) in enumerate(itens):
+        if i % 2 == 0:
+            inner = f'''<div class="abs t" style="left:80px;top:150px;font-size:300px;color:var(--vermelho);-webkit-text-stroke:7px {INK}">{i+1}</div>
+              <div class="abs t" style="left:80px;top:520px;width:920px;font-size:96px">{tit}</div>
+              <div class="abs" style="left:80px;top:860px;width:560px;font-size:42px;font-weight:800;line-height:1.3">{sub}</div>
+              <div class="abs" style="left:680px;top:830px;transform:rotate(6deg)">{av(k, 300)}</div>'''
+        else:
+            inner = f'''<div class="abs" style="left:80px;top:130px;transform:rotate(-5deg)">{av(k, 280)}</div>
+              <div class="abs card" style="left:80px;top:500px;width:920px;padding:48px 50px 56px;transform:rotate(-1.2deg)">
+                <div class="t" style="font-size:44px;color:var(--vermelho)">{i+1} / 5</div>
+                <div class="t" style="font-size:86px;margin-top:14px">{tit}</div>
+                <div style="font-size:40px;font-weight:800;margin-top:24px;line-height:1.3">{sub}</div></div>'''
+        pages.append(page(f'<div class="abs" style="inset:0;background:{bgs[i]}"></div>{inner}<div class="abs mini" style="left:80px;top:1250px;color:var(--txt2)">{i+1} / 5 · sem dizer Natal</div>'))
+    pages.append(page(f'''
+      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:100px;color:var(--creme)">Faltou um: o quiz da <span class="mt">família.</span></div>
+      <div class="abs card" style="left:80px;top:560px;width:920px;padding:40px 46px;font-size:42px;font-weight:800;line-height:1.35">A pergunta do vô, o placar do primo e o pódio antes da ceia. Todo mundo joga pelo celular.</div>
+      <div class="abs" style="left:80px;top:930px">{cta_fim(0)}</div>
+      <div class="abs" style="left:80px;top:1140px">{logo('neg', 260)}</div>
+      <div class="abs url" style="right:80px;top:1175px;color:var(--amarelo)">quiddo.com.br</div>''', cls='esc'))
+    piece(id='Q-C4', fmt='carrossel', day=3, slot='12h30', title='Meme: me diga que é Natal sem dizer Natal', kind='meme', w=1080, h=1350,
+          html=doc('Q-C4', FONTS, CSS, ''.join(pages), 1080, 1350),
+          caption=('Me diga que é Natal em família sem dizer Natal. 🎄\n\n'
+                   '1. "É pavê ou é pra comer?"\n2. O primo que você só vê uma vez por ano.\n3. "E os namoradinhos?"\n4. A disputa pela última rabanada.\n5. Alguém dormindo no sofá às 22h.\n\n'
+                   'Faltou um: o quiz da família. Faça o seu, teste grátis: quiddo.com.br\n'
+                   'Manda no grupo da família e marca o tio do pavê 👇\n#natal #natalemfamilia #meme #familia #pave #quiddo'),
+          notes='Carrossel de meme ("me diga X sem dizer X"). Capa vermelha (Natal) entre o creme de terça e o creme de quinta. Bichos de gorro do avatarSvg.')
+
+# =====================================================================================
+# Q-R6 · Reel trend · Expectativa × realidade: "um quiz rapidinho" (qui, claro)
+# =====================================================================================
+def q_r6():
+    T = 13.6
+    tl = TL(T)
+    kf = '@keyframes rod{from{--n:1}to{--n:7}}'
+    horas = ['21:00', '21:40', '22:30', '23:15', '00:05', '00:40']
+    relogio = ''.join(f'<div class="abs t" style="left:0;top:0;font-size:150px;opacity:0;animation:fade .01s linear {4.6 + j*.55:.2f}s 1 both{",fadeOut .01s linear " + format(4.6 + (j+1)*.55, ".2f") + "s 1 forwards" if j < len(horas)-1 else ""}">{h}</div>' for j, h in enumerate(horas))
+    s1 = f'''<div {tl.scene(0, 4.3, fin=False)}>
+      <div class="abs" style="left:90px;top:320px;{at(.05,'pop')}"><span class="chip" style="background:var(--verde);color:#fff">EXPECTATIVA</span></div>
+      <div class="abs t" style="left:90px;top:440px;width:900px;font-size:104px;{at(.3,'rise')}">"Um quiz rapidinho antes da pizza."</div>
+      <div class="abs t" style="left:90px;top:900px;font-size:150px;{at(1.2,'fade')}">21:00</div>
+      <div class="abs" style="left:90px;top:1080px;{at(1.5,'rise')}"><span class="chip">Rodada 1 de 1</span></div>
+      <div class="abs" style="left:660px;top:930px;--r:6deg;{at(1.8,'drop')}">{av('caramelo.festa.-.8', 300)}</div>
+    </div>'''
+    s2 = f'''<div {tl.scene(4.3, 10.4, fade=.08)}>
+      <div class="abs" style="inset:0;background:var(--tinta)"></div>
+      <div class="abs" style="left:90px;top:320px;{at(4.35,'pop')}"><span class="chip" style="background:var(--vermelho);color:#fff">REALIDADE</span></div>
+      <div class="abs" style="left:90px;top:440px;width:600px;height:160px;color:var(--creme)">{relogio}</div>
+      <div class="abs" style="left:90px;top:640px;{at(4.6,'rise')}"><span class="chip" style="font-size:40px;background:var(--amarelo)">Rodada <span class="cnt" style="animation:rod 3s steps(6) 4.8s 1 both"></span></span></div>
+      <div class="abs card" style="left:90px;top:820px;width:640px;padding:28px 34px;{at(6.6,'pop')}"><div class="t" style="font-size:56px">"Agora valendo de verdade."</div></div>
+      <div class="abs card" style="left:350px;top:1080px;width:640px;padding:28px 34px;background:var(--amarelo);{at(8.0,'pop')}"><div class="t" style="font-size:56px">"Melhor de 9?"</div></div>
+      <div class="abs" style="left:780px;top:760px;--r:8deg;{at(6.9,'drop')}">{av('onca.coroa.escuros.2', 220)}</div>
+      <div class="abs" style="left:90px;top:1300px;font-size:38px;font-weight:800;color:var(--creme);{at(9.0,'fade')}">A pizza esfriou na rodada 3.</div>
+    </div>'''
+    s3 = f'''<div {tl.scene(10.4, T, fout=False)}>
+      <div class="abs" style="left:190px;top:560px;{at(10.5,'pop')}">{logo('cor', 700)}</div>
+      <div class="abs t" style="left:0;right:0;top:860px;text-align:center;font-size:66px;{at(10.8,'rise')}">Ninguém sai antes do pódio.</div>
+      <div class="abs" style="left:0;right:0;top:990px;text-align:center;{at(11.1,'rise')}">{cta_fim(0)}</div>
+      <div class="abs url" style="left:0;right:0;top:1120px;text-align:center;{at(11.3,'fade')}">quiddo.com.br</div>
+    </div>'''
+    body = f'<section class="page" style="width:1080px;height:1920px">{s1}{s2}{s3}</section>'
+    cover_body = f'''<div class="page" style="width:1080px;height:1350px">
+      <div class="abs" style="left:0;top:0;width:1080px;height:640px;background:var(--creme)">
+        <div class="abs" style="left:80px;top:80px"><span class="chip" style="background:var(--verde);color:#fff">EXPECTATIVA</span></div>
+        <div class="abs t" style="left:80px;top:190px;width:600px;font-size:76px">"Um quiz rapidinho."</div>
+        <div class="abs t" style="left:80px;top:440px;font-size:110px">21:00</div>
+        <div class="abs" style="left:700px;top:230px;transform:rotate(6deg)">{av('caramelo.festa.-.8', 300)}</div></div>
+      <div class="abs" style="left:0;top:640px;width:1080px;height:710px;background:var(--tinta);color:var(--creme)">
+        <div class="abs" style="left:80px;top:70px"><span class="chip" style="background:var(--vermelho);color:#fff">REALIDADE</span></div>
+        <div class="abs t" style="left:80px;top:180px;width:600px;font-size:76px">"Melhor de 9?"</div>
+        <div class="abs t" style="left:80px;top:420px;font-size:110px">00:40</div>
+        <div class="abs" style="left:720px;top:220px;transform:rotate(-6deg)">{av('onca.coroa.escuros.2', 280)}</div></div></div>'''
+    piece(id='Q-R6', fmt='reel', day=4, slot='19h45', title='Trend expectativa × realidade: "um quiz rapidinho"', total=T, poster=.55, kind='trend',
+          html=doc('Q-R6', FONTS, CSS + tl.style() + kf + '@keyframes fadeOut{to{opacity:0}}', body, 1080, 1920, reel=True, total=T),
+          cover=cover_from_feed(cover_body, '', 'var(--creme)'),
+          caption=('Expectativa: "um quiz rapidinho antes da pizza." 🍕\nRealidade: 00:40, rodada 7, "melhor de 9?".\n\n'
+                   'No Quiddo, ninguém sai antes do pódio.\n\n'
+                   'Manda pro amigo que sempre pede revanche 👇\n'
+                   'Faça o seu, teste grátis: quiddo.com.br\n#expectativavsrealidade #quiz #amigos #resenha #noitedejogos #quiddo'),
+          notes='Trend "expectativa × realidade". Capa dividida creme/tinta (fica clara na grade). Áudio em alta no app.')
+
+# =====================================================================================
+# Q-C5 · Carrossel · Feriado com chuva: 5 temas de quiz (sex 20/11, escuro)
+# =====================================================================================
+def q_c5():
+    temas = [
+        ('Família', 'Em que cidade o vô e a vó se conheceram?', None, None, 'Só a família sabe. É aí que fica bom.', 'flor'),
+        ('Brasil', 'Qual é a capital mais ao norte do Brasil?', ['Macapá', 'Boa Vista', 'Belém', 'Manaus'], 1, 'Boa Vista, em Roraima.', 'folha'),
+        ('Comida', 'De que estado é o pão de queijo?', ['Minas Gerais', 'Goiás', 'São Paulo', 'Bahia'], 0, 'Minas Gerais.', 'sol'),
+        ('Ciência', 'Quantos corações tem um polvo?', ['1', '2', '3', '4'], 2, 'Três.', 'gota'),
+        ('Quem é mais provável', 'Quem é mais provável de dormir no meio do filme?', None, None, 'As opções são as pessoas da sala.', 'folha'),
+    ]
+    pages = [page(f'''
+      <div class="abs" style="left:80px;top:80px">{logo('neg', 210)}</div>
+      <div class="abs t" style="left:80px;top:260px;width:930px;font-size:112px;color:var(--creme)">Feriado com chuva? 5 temas de quiz pra salvar a <span class="mt">tarde.</span></div>
+      <div class="abs" style="left:90px;top:900px;transform:rotate(-5deg)">{mini('sala', 260)}</div>
+      <div class="abs" style="left:640px;top:860px;transform:rotate(6deg)">{av('preguica.fone.redondos.5', 340)}</div>
+      <div class="abs mini" style="left:80px;top:1230px;color:var(--amarelo)">Salva para o feriado</div>''', cls='esc')]
+    for i, (tema, q, opts, ok, rodape, s) in enumerate(temas):
+        if opts:
+            mid = f'''<div class="abs" style="left:80px;top:640px;width:920px;display:grid;grid-template-columns:1fr 1fr;gap:26px">{''.join(resp(j, o, 'height:136px;font-size:38px') for j, o in enumerate(opts))}</div>
+              <div class="abs" style="left:80px;top:1010px;transform:rotate(-2deg)"><span class="chip" style="background:var(--amarelo)">Resposta: {"ABCD"[ok]} · {rodape}</span></div>'''
+        else:
+            pes = [('gato.-.escuros.6', 'Tio'), ('jabuti.-.redondos.3', 'Vó'), ('arara.flor.-.4', 'Prima'), ('tatu.cartola.-.9', 'Pai')]
+            cells = ''.join(f'<div style="width:215px;text-align:center"><div style="height:190px">{av(k, 180)}</div><div class="resp {LET[j]}" style="justify-content:center;padding:12px 8px;font-size:30px;margin-top:14px">{sym(j, 34)}{n}</div></div>' for j, (k, n) in enumerate(pes)) if i == 4 else ''
+            mid = (f'<div class="abs" style="left:80px;top:620px;width:920px;display:flex;justify-content:space-between">{cells}</div>' if cells else
+                   f'<div class="abs" style="left:80px;top:640px;transform:rotate(-4deg)">{av("coruja.-.redondos.6", 300)}</div><div class="abs" style="left:440px;top:700px;transform:rotate(5deg)">{av("jabuti.palha.redondos.3", 280)}</div>')
+            mid += f'<div class="abs card" style="left:80px;top:1010px;width:920px;padding:26px 34px;font-size:34px;font-weight:800">{rodape}</div>'
+        pages.append(page(f'''
+          <div class="abs mini" style="left:80px;top:90px;color:var(--txt2)">TEMA {i+1} DE 5</div>
+          <div class="abs" style="left:80px;top:150px;display:flex;align-items:center;gap:20px">{sym(['folha','sol','gota','flor'].index(s), 70, INK)}<span class="t" style="font-size:84px">{tema}</span></div>
+          <div class="abs t" style="left:80px;top:300px;width:920px;font-size:66px">{q}</div>{mid}'''))
+    pages.append(page(f'''
+      <div class="abs" style="inset:0;background:var(--verde)"></div>
+      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:100px;color:#fff">Junta as 5 e chama a <span class="mt">turma.</span></div>
+      <div class="abs card" style="left:80px;top:480px;width:920px;padding:40px 46px;font-size:42px;font-weight:800;line-height:1.35">Escreve as perguntas, manda o código da sala e todo mundo joga pelo celular. Sem baixar app.</div>
+      <div class="abs" style="left:80px;top:860px">{cta_fim(0)}</div>
+      <div class="abs" style="left:80px;top:1080px">{logo('neg', 280)}</div>
+      <div class="abs url" style="right:80px;top:1120px;color:#fff">quiddo.com.br</div>'''))
+    piece(id='Q-C5', fmt='carrossel', day=5, slot='12h30', title='Feriado com chuva: 5 temas de quiz', w=1080, h=1350,
+          html=doc('Q-C5', FONTS, CSS, ''.join(pages), 1080, 1350),
+          caption=('Feriado com chuva? 5 temas de quiz pra salvar a tarde. ☔\n\n'
+                   '1. Família: em que cidade o vô e a vó se conheceram?\n2. Brasil: qual é a capital mais ao norte?\n3. Comida: de que estado é o pão de queijo?\n4. Ciência: quantos corações tem um polvo?\n5. Quem é mais provável de dormir no meio do filme?\n\n'
+                   'Salva e manda no grupo de quem vai passar o feriado junto 👇\n'
+                   'Faça o seu, teste grátis: quiddo.com.br\n#feriado #feriadao #quiz #diversaoemfamilia #jogosemfamilia #quiddo'),
+          notes='Sexta 20/11 é feriado nacional. Utilidade (salvar e mandar no grupo). Respostas conferidas: Boa Vista é a capital mais ao norte; pão de queijo é de Minas; polvo tem 3 corações.')
+
+# =====================================================================================
+# Q-C6 · Carrossel produto · Natal em 1 mês: o quiz da família em 3 passos (dom, azul)
+# =====================================================================================
+def q_c6():
+    vis = [('floresta', 'Floresta'), ('sala', 'Sala de aula'), ('album', 'Álbum'), ('espaco', 'Espaço'), ('escritorio', 'Escritório'), ('amor', 'Amor')]
+    grid = ''.join(f'<div class="card" style="padding:18px;text-align:center">{mini(k, 220)}<div style="font-size:30px;font-weight:900;margin-top:8px">{n}</div></div>' for k, n in vis)
+    pages = [page(f'''
+      <div class="abs" style="inset:0;background:var(--azul)"></div>
+      <div class="abs" style="left:80px;top:80px">{logo('neg', 210)}</div>
+      <div class="abs t" style="left:80px;top:260px;width:930px;font-size:120px;color:#fff">Natal em 1 mês. O quiz da família em <span class="mt">3 passos.</span></div>
+      <div class="abs" style="left:640px;top:860px;transform:rotate(6deg)">{av('tucano.gorro.redondos.5', 330)}</div>
+      <div class="abs" style="left:110px;top:940px;transform:rotate(-6deg)">{av('jabuti.gorro.bigode.3', 260)}</div>''')]
+    pages.append(page(f'''
+      <div class="abs t" style="left:80px;top:100px;font-size:180px;color:var(--azul);-webkit-text-stroke:6px {INK}">1</div>
+      <div class="abs t" style="left:280px;top:150px;width:720px;font-size:84px">Escolha o visual.</div>
+      <div class="abs" style="left:80px;top:420px;width:920px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px">{grid}</div>'''))
+    tipos = [(0, 'Quiz que vale ponto', '"Qual é o nome completo do vô?"'), (1, 'Enquete, ninguém erra', '"Melhor prato da ceia?"'), (2, 'Quem é mais provável', '"…de abrir o presente antes?"')]
+    rows = ''.join(f'<div class="resp {LET[k]}" style="margin-bottom:26px;flex-direction:column;align-items:flex-start;gap:6px;padding:26px 34px"><div style="display:flex;gap:18px;align-items:center">{sym(k, 48)}<span style="font-size:34px">{a}</span></div><span class="t" style="font-size:52px">{b}</span></div>' for k, a, b in tipos)
+    pages.append(page(f'''
+      <div class="abs t" style="left:80px;top:100px;font-size:180px;color:var(--laranja);-webkit-text-stroke:6px {INK}">2</div>
+      <div class="abs t" style="left:280px;top:150px;width:720px;font-size:84px">Escreva as perguntas da família.</div>
+      <div class="abs" style="left:80px;top:480px;width:920px">{rows}</div>'''))
+    pages.append(page(f'''
+      <div class="abs t" style="left:80px;top:100px;font-size:180px;color:var(--amarelo);-webkit-text-stroke:6px {INK}">3</div>
+      <div class="abs t" style="left:280px;top:150px;width:720px;font-size:84px">Manda o código no grupo.</div>
+      <div class="abs card" style="left:180px;top:480px;width:720px;padding:46px;text-align:center;transform:rotate(-2deg)">
+        <div class="mini" style="color:var(--txt2)">CÓDIGO DA SALA · EXEMPLO</div>
+        <div class="t" style="font-size:170px;letter-spacing:.06em;margin-top:10px">K7Q2</div></div>
+      <div class="abs" style="left:80px;top:960px;width:920px;font-size:44px;font-weight:800;line-height:1.3">Cada um entra pelo celular. Sem baixar app.</div>''', cls=''))
+    pages.append(page(f'''
+      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:104px;color:var(--creme)">No dia: celular na mão e pódio antes da <span class="mt">ceia.</span></div>
+      <div class="abs" style="left:80px;top:700px">{cta_fim(0)}</div>
+      <div class="abs" style="left:80px;top:900px;width:900px;font-size:40px;color:var(--creme);line-height:1.3">Manda este post no grupo da família e já avisa: este ano tem quiz.</div>
+      <div class="abs" style="left:80px;top:1130px">{logo('neg', 280)}</div>
+      <div class="abs url" style="right:80px;top:1170px;color:var(--amarelo)">quiddo.com.br</div>''', cls='esc'))
+    piece(id='Q-C6', fmt='carrossel', day=7, slot='12h30', title='Natal em 1 mês: o quiz da família em 3 passos (produto)', kind='produto', w=1080, h=1350,
+          html=doc('Q-C6', FONTS, CSS, ''.join(pages), 1080, 1350),
+          caption=('Natal em 1 mês. O quiz da família em 3 passos. 🎄\n\n'
+                   '1. Escolha o visual.\n2. Escreva as perguntas da família: quiz que vale ponto, enquete e "quem é mais provável".\n3. Manda o código no grupo. Cada um joga pelo celular, sem baixar app.\n\n'
+                   'Manda no grupo da família e já avisa: este ano tem quiz 👇\n'
+                   'Faça o seu. Teste grátis: quiddo.com.br\n#natal #natalemfamilia #quiz #ceiadenatal #familia #quiddo'),
+          notes='Peça de produto. Visuais são as miniaturas oficiais do site (art.json). Código da sala é de exemplo e está marcado. Capa azul fecha a semana depois do creme do Q-R4.')
+
+# =====================================================================================
+# Stories · "Pergunta do dia" (resposta de cabeça pra baixo, sem adesivo)
+# =====================================================================================
+PERGUNTAS_DIA = [
+    (1, 'Qual é a maior ave do Brasil?', ['Tucano', 'Ema', 'Arara', 'Gavião'], 1, 'Ema', 'bemtevi.-.-.0', False),
+    (2, 'Quantos ossos tem o corpo de um adulto?', ['106', '206', '306', '406'], 1, '206', 'coruja.-.redondos.6', True),
+    (3, 'Qual é o maior roedor do mundo?', ['Rato-gigante', 'Capivara', 'Castor', 'Paca'], 1, 'Capivara', 'capivara.bone.-.7', False),
+    (4, 'Qual é o planeta mais quente do Sistema Solar?', ['Mercúrio', 'Vênus', 'Marte', 'Júpiter'], 1, 'Vênus, não Mercúrio: a atmosfera segura o calor', 'gato.coroa.-.6', True),
+    (5, 'Quantos estados tem o Brasil?', ['24', '25', '26', '27'], 2, '26, mais o Distrito Federal', 'arara.festa.-.4', False),
+    (6, 'Qual é o maior bioma do Brasil?', ['Cerrado', 'Amazônia', 'Mata Atlântica', 'Pantanal'], 1, 'Amazônia', 'mico.flor.-.7', True),
+    (7, 'Qual destes bichos é um mamífero?', ['Jacaré', 'Sapo', 'Boto', 'Tucano'], 2, 'Boto', 'boto.-.estrela.9', False),
+]
+
+def q_stories():
+    for n, (d, q, opts, ok, ans, k, dark) in enumerate(PERGUNTAS_DIA):
+        grid = ''.join(resp(j, o, 'height:150px;font-size:40px') for j, o in enumerate(opts))
+        body = f'''<section class="page {'esc' if dark else ''}" style="width:1080px;height:1920px">
+          <div class="abs" style="left:80px;top:290px"><span class="chip" style="background:var(--amarelo)">Pergunta do dia · {C.DIAS[d].split()[1]}</span></div>
+          <div class="abs" style="right:80px;top:260px;transform:rotate(6deg)">{av(k, 190)}</div>
+          <div class="abs t" style="left:80px;top:470px;width:920px;font-size:96px">{q}</div>
+          <div class="abs" style="left:80px;top:890px;width:920px;display:grid;grid-template-columns:1fr 1fr;gap:28px">{grid}</div>
+          <div class="abs" style="left:80px;top:1260px;width:920px;transform:rotate(180deg);text-align:right"><span class="mini" style="opacity:.75">Resposta: {"ABCD"[ok]} · {ans}</span></div>
+          <div class="abs t" style="left:80px;top:1340px;width:920px;font-size:48px">Tira print e manda no grupo: quem acerta?</div>
+          <div class="abs" style="left:80px;top:1510px">{logo('neg' if dark else 'cor', 170)}</div>
+        </section>'''
+        sid = f'Q-S{5 + n + 1}'
+        piece(id=sid, fmt='story', day=d, title=f'Pergunta do dia: {q}', w=1080, h=1920, html=doc(sid, FONTS, CSS, body, 1080, 1920),
+              caption='(story, sem legenda)', sticker='', kind='story',
+              notes='Sem adesivo: a resposta está na arte, de cabeça pra baixo. Motivo de envio: print no grupo. Fato conferido.')
+
 def build():
-    q_r1(); q_c1(); q_r2(); q_c2(); q_r4(); q_r3(); q_stories()
+    q_c3(); q_r5(); q_c4(); q_r6(); q_c5(); q_r4(); q_c6(); q_stories()
 
 build()
-CTA = {
-    'Q-S1': ('enquete', 880, ['Amigo secreto', 'Quiz'], 'Responde no direct: A ou B.'),
-    'Q-S2': ('caixa', 1000, None, 'Manda a sua pergunta no direct.'),
-    'Q-S3': ('quiz', 790, ['8', '12', '20', '30'], 'Chuta no direct. A resposta sai na sexta.'),
-    'Q-S5': ('link', 1230, None, 'Link na bio · quiddo.com.br'),
-}
-C.apply_ctas(CTA, lambda i: {'bgs': ['#13A07A', '#FF7A1A', '#1E7FD6', '#E5383B'] if i != 'Q-S2' else ['#FFC83D'], 'fg': '#fff' if i not in ('Q-S2', 'Q-S5') else INK,
-    'tfont': 'Fraunces', 'bfont': 'Nunito', 'border': f'6px solid {INK}', 'radius': '28px', 'shadow': f'0 10px 0 {INK}', 'tw': 900, 'fs': 50,
-    'txt_color': '#FFF6E6' if i == 'Q-S2' else INK, 'ts': 40, 'ts_big': 56} if i != 'Q-S5' else
-    {'bgs': ['#FFC83D'], 'fg': INK, 'tfont': 'Fraunces', 'bfont': 'Nunito', 'border': f'6px solid {INK}', 'radius': '999px', 'shadow': f'0 10px 0 {INK}', 'txt_color': INK, 'ts_big': 48})

@@ -1,0 +1,5 @@
+out/
+tool/
+entrega/
+*.zip
+__pycache__/
