@@ -1,0 +1,27 @@
+{
+ "pack": "S01",
+ "pieces": [
+  {
+   "id": "Q-R4",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 6,
+   "dia": "sáb 14/11",
+   "slot": "19h45",
+   "title": "Meme POV: a pergunta do vô",
+   "kind": "meme",
+   "caption": "POV: a pergunta 3 do quiz da família era o nome completo do vô. 👴\n\n0 de 9 acertaram. O vô acertou.\n\nManda no grupo da família e vê quem sabe 👇\nFaça o seu, teste grátis: quiddo.com.br\n#quiz #familia #natalemfamilia #pov #meme #quiddo",
+   "notes": "Formato meme (POV com texto na tela), curto para rodar em loop. Feito para entrar com um áudio em alta no app (o DOT pega o áudio da semana). CTA de envio para o grupo da família, que é o sinal que mais espalha no Instagram.",
+   "version": "S01-Q-R4-v1",
+   "v": 1,
+   "hash": "f94a676904",
+   "media": [
+    "Q-R4.mp4",
+    "Q-R4-capa.png"
+   ],
+   "editable": "editaveis/Q-R4.html",
+   "duration": 9.6,
+   "sticker": ""
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "pack": "S01",
+ "pieces": [
+  {
+   "id": "Q-R3",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 7,
+   "dia": "dom 15/11",
+   "slot": "18h",
+   "title": "A virada no último segundo (Espaço)",
+   "kind": "engajamento",
+   "caption": "Faltava uma pergunta. A Tati estava em 4º. 🚀\n\nNo Quiddo, quem acerta mais rápido ganha mais ponto. Por isso dá virada até na última pergunta.\nE sim: um dia em Vênus dura mais que o ano de lá.\n\nMonte o seu com o visual Espaço. Faça o seu, teste grátis: quiddo.com.br\n#quiz #quizaovivo #espaco #astronomia #curiosidades #quiddo",
+   "notes": "Visual Espaço (selo \"Na Lua!\" é o carimbo oficial do pódio da cena lua). Áudio: plim na resposta, fanfarra na virada.",
+   "version": "S01-Q-R3-v2",
+   "v": 2,
+   "hash": "244f0dc981",
+   "media": [
+    "Q-R3.mp4",
+    "Q-R3-capa.png"
+   ],
+   "editable": "editaveis/Q-R3.html",
+   "duration": 18.6,
+   "sticker": ""
+  },
+  {
+   "id": "D-R1",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 1,
+   "dia": "seg 09/11",
+   "slot": "07h",
+   "title": "RACKET: perguntei pra IA qual raquete comprar",
+   "kind": "engajamento",
+   "caption": "Perguntei pra IA qual raquete comprar. A resposta: \"uma leve, com cabeça grande, experimenta na loja\". 🎾\n\nParece simples. Não é. Faltou o seu braço, o seu jogo, o seu nível e a ficha técnica de cada raquete.\n\nO RACKET DNA foi calibrado com atletas e esportistas e testado em vários perfis de jogo antes de ir ao ar. Ele cruza tudo isso com 62 raquetes medidas.\n\nTeste grátis e sem cadastro. Link na bio.\n#racketdna #sportdna #tenis #raquetedetenis #tenisbrasil #ia",
+   "notes": "v2 (você reprovou a v1 da ficha técnica). Nova linha do feedback geral: simulação de IA genérica, \"parece simples, mas não é\", modelo calibrado com atletas e esportistas. IA sem marca e com etiqueta de simulação.",
+   "version": "S01-D-R1-v2",
+   "v": 2,
+   "hash": "3f7d4170b4",
+   "media": [
+    "D-R1.mp4",
+    "D-R1-capa.png"
+   ],
+   "editable": "editaveis/D-R1.html",
+   "duration": 21.0,
+   "sticker": ""
+  }
+ ]
+}

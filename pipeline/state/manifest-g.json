@@ -1,0 +1,278 @@
+{
+ "pack": "S01",
+ "pieces": [
+  {
+   "id": "Q-S1",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 09/11",
+   "slot": "",
+   "title": "Enquete: amigo secreto ou quiz?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Story de enquete. Sem legenda de feed.",
+   "version": "S01-Q-S1-v2",
+   "v": 2,
+   "hash": "e243f5ee59",
+   "media": [
+    "Q-S1.png"
+   ],
+   "editable": "editaveis/Q-S1.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "Q-S2",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 2,
+   "dia": "ter 10/11",
+   "slot": "",
+   "title": "Caixa: a pergunta que derruba a família",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Story. Sem legenda de feed.",
+   "version": "S01-Q-S2-v2",
+   "v": 2,
+   "hash": "d637a70fa3",
+   "media": [
+    "Q-S2.png"
+   ],
+   "editable": "editaveis/Q-S2.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "Q-S3",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 11/11",
+   "slot": "",
+   "title": "Quiz: quantos bichos tem no Quiddo?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v3 (você reprovou a v2 do intruso). Pergunta direta, valendo ponto, como no jogo. Nada se sobrepõe: título em cima, adesivo no meio, bichos embaixo.",
+   "version": "S01-Q-S3-v4",
+   "v": 4,
+   "hash": "ef945bd060",
+   "media": [
+    "Q-S3.png"
+   ],
+   "editable": "editaveis/Q-S3.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "Q-S5",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 6,
+   "dia": "sáb 14/11",
+   "slot": "",
+   "title": "Link: crie o quiz da confraternização",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Story de conversão leve.",
+   "version": "S01-Q-S5-v3",
+   "v": 3,
+   "hash": "b55410ce1d",
+   "media": [
+    "Q-S5.png"
+   ],
+   "editable": "editaveis/Q-S5.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "R-S1",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 09/11",
+   "slot": "",
+   "title": "Enquete: seu grupo tem um Fantasma?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Uva + Noite (mapa do guia para Fantasma).",
+   "version": "S01-R-S1-v2",
+   "v": 2,
+   "hash": "23563ce103",
+   "media": [
+    "R-S1.png"
+   ],
+   "editable": "editaveis/R-S1.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "R-S2",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 11/11",
+   "slot": "",
+   "title": "Enquete: o troféu mais disputado",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Piscina + Noite.",
+   "version": "S01-R-S2-v2",
+   "v": 2,
+   "hash": "a611c4f05f",
+   "media": [
+    "R-S2.png"
+   ],
+   "editable": "editaveis/R-S2.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "R-S3",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 4,
+   "dia": "qui 12/11",
+   "slot": "",
+   "title": "Casal: quem manda mais boa noite?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Casa Casal. Sem roxo.",
+   "version": "S01-R-S3-v2",
+   "v": 2,
+   "hash": "e199033f06",
+   "media": [
+    "R-S3.png"
+   ],
+   "editable": "editaveis/R-S3.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "R-S5",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 6,
+   "dia": "sáb 14/11",
+   "slot": "",
+   "title": "Link: faça o do seu grupo",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Grupo invertido: taça Noite sobre Manga.",
+   "version": "S01-R-S5-v2",
+   "v": 2,
+   "hash": "4c5c6075cf",
+   "media": [
+    "R-S5.png"
+   ],
+   "editable": "editaveis/R-S5.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "D-S1",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 09/11",
+   "slot": "",
+   "title": "Enquete: já comprou equipamento errado?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Mesma enquete do lançamento, agora com resultado comentado no story seguinte.",
+   "version": "S01-D-S1-v2",
+   "v": 2,
+   "hash": "9ce83b192b",
+   "media": [
+    "D-S1.png"
+   ],
+   "editable": "editaveis/D-S1.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "D-S2",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 2,
+   "dia": "ter 10/11",
+   "slot": "",
+   "title": "Quiz: qual número é a rigidez?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2: saiu o desenho da raquete; entrou o logo oficial do RACKET DNA.",
+   "version": "S01-D-S2-v3",
+   "v": 3,
+   "hash": "3ec947950f",
+   "media": [
+    "D-S2.png"
+   ],
+   "editable": "editaveis/D-S2.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "D-S3",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 11/11",
+   "slot": "",
+   "title": "Enquete: pediu dica de prancha pra IA?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (você reprovou a caixa de perguntas). Nova linha: simulação de IA genérica, junto com o reel D-R1.",
+   "version": "S01-D-S3-v3",
+   "v": 3,
+   "hash": "cb4d9706d0",
+   "media": [
+    "D-S3.png"
+   ],
+   "editable": "editaveis/D-S3.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "D-S4",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 5,
+   "dia": "sex 13/11",
+   "slot": "",
+   "title": "A IA disse: bom amortecimento",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (você reprovou a caixa de perguntas). Nova linha: o que a IA genérica responde e o que falta.",
+   "version": "S01-D-S4-v3",
+   "v": 3,
+   "hash": "214464c528",
+   "media": [
+    "D-S4.png"
+   ],
+   "editable": "editaveis/D-S4.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  },
+  {
+   "id": "D-S5",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 6,
+   "dia": "sáb 14/11",
+   "slot": "",
+   "title": "Link: teste grátis",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Fecha a semana.",
+   "version": "S01-D-S5-v2",
+   "v": 2,
+   "hash": "88268ad15b",
+   "media": [
+    "D-S5.png"
+   ],
+   "editable": "editaveis/D-S5.html",
+   "duration": null,
+   "sticker": "Sem adesivo: o CTA já está na arte. Agendar no Business Suite."
+  }
+ ]
+}

@@ -1,0 +1,463 @@
+<title>Mesa de Aprovação</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: mesa de luz do estúdio. Barra fixa com o placar do pack, filtros, feedback geral e as peças em folha de contato. */
+:root{
+  --bg:#F4F4F2; --paper:#FFFFFF; --ink:#111111; --ink2:#55524E; --line:#DEDCD8; --red:#D92B1C;
+  --ok:#1F7A4D; --ok-bg:#E2F1E8; --no:#B42318; --no-bg:#FBE4E1; --re:#8A5A00; --re-bg:#FFF0C7; --pe:#55524E; --pe-bg:#ECEBE8;
+  --stage:#1A1A1A;
+  --display:'Sora',system-ui,sans-serif; --body:'Sora',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121212; --paper:#1C1C1B; --ink:#F2F1EE; --ink2:#A8A49F; --line:#33312F; --red:#F0503F;
+  --ok:#6FD39C; --ok-bg:#16301F; --no:#FF8A7A; --no-bg:#3A1714; --re:#F5C24B; --re-bg:#3A2C08; --pe:#A8A49F; --pe-bg:#2A2928; --stage:#0A0A0A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121212; --paper:#1C1C1B; --ink:#F2F1EE; --ink2:#A8A49F; --line:#33312F; --red:#F0503F;
+  --ok:#6FD39C; --ok-bg:#16301F; --no:#FF8A7A; --no-bg:#3A1714; --re:#F5C24B; --re-bg:#3A2C08; --pe:#A8A49F; --pe-bg:#2A2928; --stage:#0A0A0A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.wrap{max-width:1360px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+button,textarea,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.mono{font-family:var(--mono)}
+.lbl{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+
+/* barra */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding-block:14px}
+.brandmark{display:flex;align-items:center;gap:10px}
+.brandmark svg{flex:none}
+.brandmark h1{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.brandmark small{display:block;font-family:var(--mono);font-size:11px;color:var(--ink2);letter-spacing:.06em}
+.tally{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+.tally span{font-family:var(--mono);font-size:12px;padding:4px 10px;border-radius:999px;font-variant-numeric:tabular-nums}
+.s-aprovado{background:var(--ok-bg);color:var(--ok)} .s-reprovado{background:var(--no-bg);color:var(--no)}
+.s-revisar{background:var(--re-bg);color:var(--re)} .s-pendente{background:var(--pe-bg);color:var(--pe)}
+.filters{display:flex;flex-wrap:wrap;gap:8px 18px;padding-block:0 12px;align-items:center}
+.seg{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.seg .lbl{margin-right:4px}
+.seg button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:5px 12px;font-size:13px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.right{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:8px;padding:7px 14px;font-size:13px;font-weight:600}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+
+/* feedback geral */
+.geral{margin-block:20px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;gap:10px}
+.geral h2{margin:0;font-size:16px;font-weight:600}
+.geral p{margin:0;color:var(--ink2);font-size:13px}
+textarea{width:100%;min-height:72px;resize:vertical;border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:10px 12px;font-size:14px;line-height:1.45}
+.saved{font-family:var(--mono);font-size:11px;color:var(--ink2);min-height:16px}
+.notice{margin-block:12px;padding:10px 14px;border-radius:8px;background:var(--re-bg);color:var(--re);font-size:13px}
+
+/* dias */
+.day{margin-block:28px 8px;display:flex;align-items:baseline;gap:12px;border-top:1px solid var(--line);padding-top:14px}
+.day h3{margin:0;font-family:var(--display);font-weight:600;font-size:20px;letter-spacing:-.02em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:18px}
+
+/* peça */
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card.st-revisar{border-color:var(--re)}
+.stage{background:var(--stage);position:relative;display:flex;justify-content:center}
+.frame{position:relative;width:100%;max-width:330px;aspect-ratio:9/16;max-height:520px;overflow:hidden}
+.frame.f45{aspect-ratio:4/5}
+.frame img,.frame video{width:100%;height:100%;object-fit:contain;display:block;background:var(--stage)}
+.strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;height:100%;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.strip img{flex:0 0 100%;scroll-snap-align:center;height:100%}
+.ctl{position:absolute;bottom:10px;left:10px;right:10px;display:flex;gap:8px;align-items:center;justify-content:space-between;pointer-events:none}
+.ctl>*{pointer-events:auto}
+.pill{background:rgba(0,0,0,.66);color:#fff;border:0;border-radius:999px;padding:6px 12px;font-family:var(--mono);font-size:12px}
+.crop{position:absolute;left:0;right:0;top:14.84%;bottom:14.84%;border-top:2px dashed rgba(255,255,255,.75);border-bottom:2px dashed rgba(255,255,255,.75);pointer-events:none}
+.safe{position:absolute;left:0;right:0;pointer-events:none;background:rgba(217,43,28,.18)}
+.meta{padding:14px 16px;display:grid;gap:10px}
+.head{display:flex;gap:8px;align-items:flex-start;justify-content:space-between}
+.head h4{margin:0;font-size:15px;font-weight:600;line-height:1.3;text-wrap:balance}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--ink2)}
+.tag.prod{border-color:var(--red);color:var(--red)}
+.status{font-family:var(--mono);font-size:11px;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.ver{font-family:var(--mono);font-size:11px;color:var(--ink2)}
+details{border-top:1px solid var(--line);padding-top:8px}
+summary{cursor:pointer;font-size:13px;font-weight:600}
+.cap{white-space:pre-wrap;font-size:13px;color:var(--ink);margin:8px 0 0;max-height:240px;overflow:auto}
+.note{font-size:12px;color:var(--ink2)}
+.acts{display:flex;gap:8px}
+.acts button{flex:1;border-radius:8px;padding:9px 10px;font-weight:600;font-size:13px;border:1px solid var(--line);background:transparent}
+.acts .ap[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:var(--paper)}
+.acts .rp[aria-pressed="true"]{background:var(--no);border-color:var(--no);color:var(--paper)}
+.prev{font-size:12px;background:var(--re-bg);color:var(--re);border-radius:8px;padding:8px 10px}
+.links{display:flex;gap:12px;flex-wrap:wrap;font-size:12px}
+.links a,.links button{color:var(--ink2);background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;font-size:12px}
+
+/* grade */
+.feeds{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;margin-block:20px}
+.feed h3{margin:0 0 10px;font-size:16px;font-weight:600}
+.feedgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;background:var(--line);border:1px solid var(--line)}
+.feedgrid div{aspect-ratio:3/4;background:var(--bg);overflow:hidden;position:relative}
+.feedgrid img{width:100%;height:100%;object-fit:cover;display:block}
+.feedgrid i{position:absolute;top:6px;right:6px;font-style:normal;font-family:var(--mono);font-size:10px;background:rgba(0,0,0,.66);color:#fff;border-radius:4px;padding:1px 5px}
+.empty{padding:40px 0;color:var(--ink2);text-align:center}
+footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
+.chg{font-size:12px;background:var(--pe-bg);border-left:3px solid var(--red);border-radius:6px;padding:8px 10px}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--paper);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.dock .in{max-width:1360px;margin:0 auto;padding-block:12px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.dock .txt{flex:1 1 260px;min-width:0;font-size:14px}
+.dock .txt b{font-weight:600}
+.dock .txt small{display:block;color:var(--ink2);font-size:12px}
+.big{background:var(--red);color:#fff;border:0;border-radius:12px;padding:16px 26px;font-size:17px;font-weight:600;letter-spacing:-.01em;flex:0 1 auto}
+.big.ok{background:var(--ok)}
+.big.sec{background:transparent;color:var(--ink);border:1px solid var(--line);font-size:15px;padding:14px 20px}
+@media (max-width:560px){.big{flex:1 1 100%}}
+.pub{margin-block:20px;display:grid;gap:18px}
+.pub .box{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:grid;gap:12px;min-width:0}
+.pub h2{margin:0;font-size:18px;font-weight:600}
+.zips{display:flex;flex-wrap:wrap;gap:10px}
+.guia{font-size:14px;line-height:1.55;min-width:0}
+.guia h1{font-size:22px;margin:0 0 6px;font-weight:600;letter-spacing:-.02em}
+.guia h2{font-size:16px;margin:22px 0 6px}
+.guia p,.guia li{max-width:72ch}
+.guia table{border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}
+.guia th,.guia td{border-bottom:1px solid var(--line);padding:6px 10px;text-align:left;white-space:nowrap}
+.guia pre{white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px;font-family:var(--mono);font-size:12px}
+.guia code{font-family:var(--mono);font-size:12px}
+.tw{overflow-x:auto}
+@media (max-width:760px){header{position:static}}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="bar">
+      <div class="brandmark">
+        <svg viewBox="0 0 120 120" width="30" height="30" aria-hidden="true"><line x1="46" y1="34" x2="110" y2="34" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><line x1="28" y1="60" x2="110" y2="60" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><line x1="10" y1="86" x2="110" y2="86" stroke="#D92B1C" stroke-width="8" stroke-linecap="round"/></svg>
+        <div><h1>Mesa de Aprovação</h1><small id="packline">PACK SEMANAL 01 · 09–15/11</small></div>
+      </div>
+      <div class="tally" id="tally" aria-live="polite"></div>
+    </div>
+    <div class="filters">
+      <div class="seg" id="f-view"><span class="lbl">Ver</span><button data-v="pecas" aria-pressed="true">Peças</button><button data-v="grade" aria-pressed="false">Grade do feed</button><button data-v="pub" aria-pressed="false">Publicação</button></div>
+      <div class="seg" id="f-brand"><span class="lbl">Marca</span></div>
+      <div class="seg" id="f-fmt"><span class="lbl">Formato</span></div>
+      <div class="seg" id="f-status"><span class="lbl">Status</span></div>
+      <div class="right"><button class="btn ghost" id="copyx" type="button">Copiar exportação</button><button class="btn" id="exportx" type="button">Exportar decisões</button></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="dbmsg" class="notice" hidden></div>
+  <div id="domingo" class="notice" hidden></div>
+  <section class="geral" aria-labelledby="g-h">
+    <h2 id="g-h">Feedback geral do pack</h2>
+    <p>Vale para todas as marcas e peças. Não aprova nem reprova nada: o status de cada peça só muda nos botões dela.</p>
+    <textarea id="geral" placeholder="Ex.: menos texto nos reels, mais respiro nas capas…"></textarea>
+    <div class="saved" id="geral-s"></div>
+  </section>
+  <div id="view"></div>
+  <footer>Aprovar aqui não publica nada. Cada mudança de mídia gera uma nova versão e pede revisão de novo, mantendo o comentário anterior.</footer>
+</main>
+
+<div class="dock" role="region" aria-label="Finalizar rodada"><div class="in" id="dock"></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script id="manifest" type="application/json">/*MANIFEST*/</script>
+<script>
+(function(){
+  const M = JSON.parse(document.getElementById('manifest').textContent);
+  const P = M.pieces;
+  const BRANDS = ['Quiddo','Retrozap','SPORT DNA'];
+  const FMTS = [['reel','Reel'],['carrossel','Carrossel'],['story','Story']];
+  const STS = [['pendente','Pendente'],['revisar','Revisar de novo'],['aprovado','Aprovado'],['reprovado','Não aprovado']];
+  const DAYS = {1:'Dia 1 · seg 09/11',2:'Dia 2 · ter 10/11',3:'Dia 3 · qua 11/11',4:'Dia 4 · qui 12/11',5:'Dia 5 · sex 13/11',6:'Dia 6 · sáb 14/11',7:'Dia 7 · dom 15/11'};
+  const state = { view:'pecas', brand:'todas', fmt:'todos', status:'todos', reviews:{}, geral:'', geralAt:null, packDoc:{}, confirm:false, sending:false, err:'' };
+  let db = null, dls = null;
+  const key = id => M.pack === 'S01' ? id : M.pack + '_' + id;
+
+  try { const s = JSON.parse(localStorage.getItem('mesa-f')||'{}'); Object.assign(state, {view:s.view||'pecas', brand:s.brand||'todas', fmt:s.fmt||'todos', status:s.status||'todos'}); } catch(e){}
+  function keepF(){ try{ localStorage.setItem('mesa-f', JSON.stringify({view:state.view,brand:state.brand,fmt:state.fmt,status:state.status})); }catch(e){} }
+
+  function eff(p){
+    const r = state.reviews[p.id];
+    if (!r || !r.status) return (r && r.hash && r.hash !== p.hash && r.comment) ? 'revisar' : 'pendente';
+    if (r.hash !== p.hash) return 'revisar';
+    return r.status;
+  }
+  const stLabel = s => (STS.find(x=>x[0]===s)||[s,s])[1];
+  const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const fmtAt = t => { try { return new Date(t).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}); } catch(e){ return ''; } };
+
+  function segs(){
+    const mk = (id, items, key) => {
+      const el = document.getElementById(id);
+      el.querySelectorAll('button').forEach(b=>b.remove());
+      items.forEach(([v,l])=>{ const b=document.createElement('button'); b.type='button'; b.textContent=l; b.dataset.v=v; b.setAttribute('aria-pressed', String(state[key]===v)); b.onclick=()=>{state[key]=v; keepF(); segs(); render();}; el.appendChild(b); });
+    };
+    mk('f-brand', [['todas','Todas']].concat(BRANDS.map(b=>[b,b])), 'brand');
+    mk('f-fmt', [['todos','Todos']].concat(FMTS), 'fmt');
+    mk('f-status', [['todos','Todos']].concat(STS), 'status');
+    document.querySelectorAll('#f-view button').forEach(b=>{ b.setAttribute('aria-pressed', String(state.view===b.dataset.v)); b.onclick=()=>{state.view=b.dataset.v; keepF(); segs(); render();}; });
+  }
+
+  function tally(){
+    const c = {pendente:0,revisar:0,aprovado:0,reprovado:0};
+    P.forEach(p=>c[eff(p)]++);
+    document.getElementById('tally').innerHTML = STS.map(([k,l])=>`<span class="s-${k}">${c[k]} ${l.toLowerCase()}</span>`).join('');
+    dock();
+  }
+
+  function media(p){
+    if (p.fmt==='reel'){
+      return `<div class="frame" data-reel>
+        <video src="media/${p.media[0]}" poster="media/${p.cover}" playsinline preload="none" muted></video>
+        <img src="media/${p.cover}" alt="Capa de ${esc(p.title)}" hidden>
+        <div class="crop" hidden></div>
+        <div class="ctl"><button class="pill" data-play type="button">▶ Play</button><span style="display:flex;gap:6px"><button class="pill" data-cover type="button" aria-pressed="false">Capa</button><button class="pill" data-crop type="button" aria-pressed="false">4:5</button></span></div></div>`;
+    }
+    if (p.fmt==='carrossel'){
+      return `<div class="frame f45"><div class="strip" data-strip tabindex="0" aria-label="Páginas do carrossel">${p.previews.map((m,i)=>`<img src="media/${m}" alt="Página ${i+1} de ${p.previews.length}" loading="lazy">`).join('')}</div>
+        <div class="ctl"><button class="pill" data-prev type="button" aria-label="Página anterior">←</button><span class="pill" data-count>1 / ${p.previews.length}</span><button class="pill" data-next type="button" aria-label="Próxima página">→</button></div></div>`;
+    }
+    return `<div class="frame"><img src="media/${p.previews[0]}" alt="${esc(p.title)}" loading="lazy"><div class="safe" style="top:0;height:13%" hidden></div><div class="safe" style="bottom:0;height:18.2%" hidden></div>
+      <div class="ctl"><span></span><button class="pill" data-safe type="button" aria-pressed="false">Área segura</button></div></div>`;
+  }
+
+  function card(p){
+    const s = eff(p), r = state.reviews[p.id] || {};
+    const prev = s==='revisar' && r.version ? `<div class="prev">Mídia nova (${esc(p.version)}). Você tinha marcado ${esc(stLabel(r.status||'pendente').toLowerCase())} na ${esc(r.version)}${r.comment?`: “${esc(r.comment)}”`:''}.</div>` : '';
+    return `<article class="card st-${s}" id="p-${p.id}" data-id="${p.id}">
+      <div class="stage">${media(p)}</div>
+      <div class="meta">
+        <div class="head"><h4>${esc(p.title)}</h4><span class="status s-${s}">${stLabel(s)}</span></div>
+        <div class="tags"><span class="tag">${esc(p.brand)}</span><span class="tag">${esc(p.fmt)}${p.duration?` · ${p.duration.toFixed(1).replace('.',',')} s`:''}${p.previews&&p.fmt==='carrossel'?` · ${p.previews.length} pág.`:''}</span>${p.slot?`<span class="tag">${esc(p.slot)}</span>`:''}${p.kind==='produto'?'<span class="tag prod">produto</span>':''}</div>
+        <div class="ver">${esc(p.version)}</div>
+        ${p.mudou?`<div class="chg"><b>Nesta versão:</b> ${esc(p.mudou)}</div>`:''}
+        ${prev}
+        ${p.sticker?`<div class="note"><b>Adesivo:</b> ${esc(p.sticker)}</div>`:''}
+        ${p.fmt!=='story'?`<details><summary>Legenda</summary><p class="cap">${esc(p.caption)}</p></details>`:''}
+        ${p.notes?`<div class="note">${esc(p.notes)}</div>`:''}
+        <div class="acts"><button class="ap" type="button" aria-pressed="${s==='aprovado'}">Aprovar</button><button class="rp" type="button" aria-pressed="${s==='reprovado'}">Não aprovar</button></div>
+        <label class="lbl" for="c-${p.id}">Comentário da peça</label>
+        <textarea id="c-${p.id}" placeholder="O que mudar nesta peça?">${esc(r.comment||'')}</textarea>
+        <div class="saved" data-saved>${r.at?`salvo ${fmtAt(r.at)}`:''}</div>
+        <div class="links"><a href="${esc(p.editable)}" target="_blank" rel="noopener">Abrir editável</a>${p.fmt!=='story'?'<button type="button" data-copycap>Copiar legenda</button>':''}${p.fmt==='reel'?`<a href="media/${p.media[0]}" target="_blank" rel="noopener">MP4</a><a href="media/${p.cover}" target="_blank" rel="noopener">Capa</a>`:''}</div>
+      </div></article>`;
+  }
+
+  function visible(){
+    return P.filter(p => (state.brand==='todas'||p.brand===state.brand) && (state.fmt==='todos'||p.fmt===state.fmt) && (state.status==='todos'||eff(p)===state.status));
+  }
+
+  function render(){
+    tally();
+    const v = document.getElementById('view');
+    const focusId = document.activeElement && document.activeElement.id;
+    if (state.view==='pub'){ renderPub(v); return; }
+    if (state.view==='grade'){
+      const brands = state.brand==='todas'?BRANDS:[state.brand];
+      v.innerHTML = `<div class="feeds">${brands.map(b=>{
+        const feed = P.filter(p=>p.brand===b && p.fmt!=='story').sort((a,c)=>c.day-a.day);
+        return `<div class="feed"><h3>${esc(b)}</h3><div class="feedgrid">${feed.map(p=>`<div><img src="media/${p.fmt==='reel'?p.cover45:p.previews[0]}" alt="${esc(p.title)}" loading="lazy"><i>D${p.day} · ${p.fmt==='reel'?'reel':'carr.'}</i></div>`).join('')}</div><p class="note">A última publicação (dia 7) fica no canto de cima à esquerda.</p></div>`;}).join('')}</div>`;
+      return;
+    }
+    const list = visible();
+    if (!list.length){ v.innerHTML = '<p class="empty">Nenhuma peça com esses filtros.</p>'; return; }
+    let html = '';
+    [1,2,3,4,5,6,7].forEach(d=>{ const ps = list.filter(p=>p.day===d); if(!ps.length) return;
+      html += `<div class="day"><h3>${DAYS[d]}</h3><span class="lbl">${ps.length} peça${ps.length>1?'s':''}</span></div><div class="grid">${ps.map(card).join('')}</div>`; });
+    v.innerHTML = html;
+    wire();
+    if (focusId){ const el=document.getElementById(focusId); if(el && el.tagName==='TEXTAREA'){ el.focus(); } }
+  }
+
+  // ---- gravação
+  async function save(p, patch, msgEl){
+    const r = Object.assign({}, state.reviews[p.id]||{});
+    const now = new Date().toISOString();
+    const next = Object.assign({}, r, patch, {at: now});
+    state.reviews[p.id] = next; tally();
+    if (!db){ if(msgEl) msgEl.textContent='não salvo: armazenamento indisponível nesta visualização'; return; }
+    try { await db.doc('reviews/'+key(p.id)).set(next); if(msgEl) msgEl.textContent = 'salvo '+fmtAt(now); }
+    catch(e){ if(msgEl) msgEl.textContent = 'não salvou ('+(e&&e.code||'erro')+'). Tente de novo.'; }
+  }
+  function decide(p, status, cardEl){
+    const r = state.reviews[p.id]||{};
+    const ta = cardEl.querySelector('textarea');
+    const comment = ta.value.trim();
+    const hist = (r.history||[]).concat([{version:p.version, status, comment, at:new Date().toISOString()}]).slice(-20);
+    save(p, {status, hash:p.hash, version:p.version, comment, history:hist}, cardEl.querySelector('[data-saved]')).then(render);
+  }
+  const timers = {};
+  function wire(){
+    document.querySelectorAll('.card').forEach(el=>{
+      const p = P.find(x=>x.id===el.dataset.id);
+      el.querySelector('.ap').onclick = ()=>decide(p, eff(p)==='aprovado'?null:'aprovado', el);
+      el.querySelector('.rp').onclick = ()=>decide(p, eff(p)==='reprovado'?null:'reprovado', el);
+      const ta = el.querySelector('textarea'), sv = el.querySelector('[data-saved]');
+      ta.oninput = ()=>{ sv.textContent='editando…'; clearTimeout(timers[p.id]); timers[p.id]=setTimeout(()=>{
+        const r = state.reviews[p.id]||{};
+        save(p, {comment: ta.value.trim(), hash: r.hash || p.hash, version: r.version || p.version, status: r.status || null}, sv);
+      }, 900); };
+      const cc = el.querySelector('[data-copycap]');
+      if (cc) cc.onclick = async ()=>{ try{ await navigator.clipboard.writeText(p.caption); cc.textContent='Legenda copiada'; }catch(e){ const pre=el.querySelector('.cap'); el.querySelector('details').open=true; const rg=document.createRange(); rg.selectNodeContents(pre); const s=getSelection(); s.removeAllRanges(); s.addRange(rg); cc.textContent='Selecionada: copie com Ctrl+C'; } };
+      const fr = el.querySelector('[data-reel]');
+      if (fr){
+        const vid = fr.querySelector('video'), img = fr.querySelector('img'), crop = fr.querySelector('.crop');
+        const play = fr.querySelector('[data-play]'), cov = fr.querySelector('[data-cover]'), cr = fr.querySelector('[data-crop]');
+        play.onclick = ()=>{ if (!img.hidden){ img.hidden=true; vid.hidden=false; cov.setAttribute('aria-pressed','false'); } if (vid.paused){ vid.play(); } else { vid.pause(); } };
+        vid.onplay = ()=>play.textContent='❚❚ Pausar'; vid.onpause = ()=>play.textContent='▶ Play'; vid.onended = ()=>play.textContent='↺ De novo';
+        cov.onclick = ()=>{ const on = img.hidden; img.hidden=!on; vid.hidden=on; if(on) vid.pause(); cov.setAttribute('aria-pressed', String(on)); };
+        cr.onclick = ()=>{ crop.hidden=!crop.hidden; cr.setAttribute('aria-pressed', String(!crop.hidden)); };
+      }
+      const st = el.querySelector('[data-strip]');
+      if (st){
+        const cnt = el.querySelector('[data-count]'), n = st.children.length;
+        const idx = ()=>Math.round(st.scrollLeft / st.clientWidth);
+        st.onscroll = ()=>{ cnt.textContent = (idx()+1)+' / '+n; };
+        el.querySelector('[data-prev]').onclick = ()=>st.scrollTo({left:Math.max(0,idx()-1)*st.clientWidth, behavior:'smooth'});
+        el.querySelector('[data-next]').onclick = ()=>st.scrollTo({left:Math.min(n-1,idx()+1)*st.clientWidth, behavior:'smooth'});
+      }
+      const sf = el.querySelector('[data-safe]');
+      if (sf) sf.onclick = ()=>{ const on = sf.getAttribute('aria-pressed')!=='true'; sf.setAttribute('aria-pressed', String(on)); el.querySelectorAll('.safe').forEach(s=>s.hidden=!on); };
+    });
+  }
+
+  // ---- feedback geral (nunca aprova nada)
+  const g = document.getElementById('geral'), gs = document.getElementById('geral-s');
+  let gt;
+  g.oninput = ()=>{ gs.textContent='editando…'; clearTimeout(gt); gt = setTimeout(async ()=>{
+    const now = new Date().toISOString(); state.geral = g.value.trim();
+    if (!db){ gs.textContent='não salvo: armazenamento indisponível nesta visualização'; return; }
+    try { const nd = Object.assign({}, state.packDoc, {geral: state.geral, at: now}); state.packDoc = nd; await db.doc('pack/'+M.pack).set(nd); gs.textContent='salvo '+fmtAt(now); }
+    catch(e){ gs.textContent='não salvou ('+(e&&e.code||'erro')+'). Tente de novo.'; }
+  }, 900); };
+
+  // ---- exportação
+  function exportData(){
+    return { pack: M.pack, exportadoEm: new Date().toISOString(), feedbackGeral: state.geral,
+      pecas: P.map(p=>{ const r = state.reviews[p.id]||{}; return { id:p.id, marca:p.brand, formato:p.fmt, dia:p.day, versaoAtual:p.version, status:eff(p), versaoRevisada:r.version||null, comentario:r.comment||'', historico:r.history||[] }; }) };
+  }
+  document.getElementById('exportx').onclick = async (ev)=>{
+    const b = ev.currentTarget, txt = JSON.stringify(exportData(), null, 2);
+    if (!dls){ b.textContent='Use “Copiar exportação”'; return; }
+    try { await dls.save({filename:`aprovacao-${M.pack}.json`, data: txt}); b.textContent='Exportado'; }
+    catch(e){ b.textContent = e && e.code==='declined' ? 'Exportação cancelada' : 'Não exportou: use copiar'; }
+  };
+  document.getElementById('copyx').onclick = async (ev)=>{
+    const b = ev.currentTarget;
+    try { await navigator.clipboard.writeText(JSON.stringify(exportData(), null, 2)); b.textContent='Copiado'; }
+    catch(e){ b.textContent='Cópia bloqueada aqui'; }
+  };
+
+
+  // ---- finalizar rodada (botão grande)
+  function resumo(){
+    const c = counts(), d = exportData();
+    const no = d.pecas.filter(p=>p.status==='reprovado'), sem = d.pecas.filter(p=>p.status==='pendente'||p.status==='revisar');
+    const com = d.pecas.filter(p=>p.comentario && p.status!=='reprovado');
+    let t = `Claude, finalizei a rodada ${M.rodada} da Mesa (Pack ${M.pack}).\nAprovadas: ${c.aprovado} · Não aprovadas: ${c.reprovado} · Sem decisão: ${c.pendente + c.revisar}\n`;
+    if (no.length) t += `\nNão aprovadas:\n` + no.map(p=>`- ${p.id} (${p.versaoAtual})${p.comentario?': '+p.comentario:''}`).join('\n') + '\n';
+    if (sem.length) t += `\nSem decisão: ${sem.map(p=>p.id).join(', ')}\n`;
+    if (com.length) t += `\nComentários nas aprovadas:\n` + com.map(p=>`- ${p.id}: ${p.comentario}`).join('\n') + '\n';
+    t += `\nFeedback geral: ${state.geral || '(vazio)'}`;
+    return t;
+  }
+  function counts(){ const c = {pendente:0,revisar:0,aprovado:0,reprovado:0}; P.forEach(p=>c[eff(p)]++); return c; }
+  function dock(){
+    const el = document.getElementById('dock'); if (!el) return;
+    const c = counts(), n = M.rodada, sent = (state.packDoc.ultimaRodada||0) >= n;
+    const falta = c.pendente + c.revisar;
+    const tudo = c.aprovado === P.length;
+    if (state.confirm){
+      el.innerHTML = `<div class="txt"><b>Enviar a rodada ${n}?</b><small>${c.aprovado} aprovadas, ${c.reprovado} não aprovadas${falta?`, ${falta} sem decisão`:''} e o feedback geral${state.geral?'':' (vazio)'}.</small></div>
+        <button class="big sec" type="button" data-x="voltar">Voltar</button><button class="big" type="button" data-x="enviar" ${state.sending?'disabled':''}>${state.sending?'Enviando…':'Confirmar envio'}</button>`;
+    } else if (sent){
+      el.innerHTML = `<div class="txt"><b>Rodada ${n} enviada ${state.packDoc.enviadaEm?fmtAt(state.packDoc.enviadaEm):''}.</b><small>${state.copied?'O resumo foi copiado. Cole aqui no chat com o Claude.':'Copie o resumo e cole no chat com o Claude.'} ${tudo?'Tudo aprovado: os pacotes para o DOT estão em Publicação.':''}</small></div>
+        <button class="big" type="button" data-x="copiar">Copiar resumo para o chat</button>${tudo?'<button class="big ok" type="button" data-x="pub">Ir para Publicação</button>':''}<button class="big sec" type="button" data-x="abrir">Reenviar</button>`;
+    } else {
+      el.innerHTML = `<div class="txt"><b>${tudo?'Tudo aprovado.':`Rodada ${n}: ${c.aprovado} de ${P.length} aprovadas.`}</b><small>${state.err||(falta?`${falta} peça${falta>1?'s':''} sem decisão. Você pode enviar assim mesmo.`:'Todas as peças têm decisão.')}</small></div>
+        <button class="big${tudo?' ok':''}" type="button" data-x="abrir" ${db?'':'disabled'}>Finalizar rodada ${n} e enviar ao Claude</button>`;
+    }
+    el.querySelectorAll('[data-x]').forEach(b=>b.onclick=()=>act(b.dataset.x, b));
+  }
+  async function act(x, b){
+    if (x==='abrir'){ state.confirm = true; state.err=''; dock(); return; }
+    if (x==='voltar'){ state.confirm = false; dock(); return; }
+    if (x==='pub'){ state.view='pub'; keepF(); segs(); render(); scrollTo(0,0); return; }
+    if (x==='copiar'){ try { await navigator.clipboard.writeText(resumo()); b.textContent='Copiado: cole no chat'; } catch(e){ b.textContent='Cópia bloqueada: use Exportar'; } return; }
+    if (x==='enviar'){
+      if (!db) return;
+      const txt = resumo(); try { await navigator.clipboard.writeText(txt); state.copied = true; } catch(e){ state.copied = false; }
+      state.sending = true; dock();
+      const now = new Date().toISOString(), d = exportData();
+      try {
+        await db.doc('rodadas/R'+M.rodada).set({resumo:txt, rodada:M.rodada, enviadaEm:now, contagem:counts(), feedbackGeral:state.geral, pecas:d.pecas.map(p=>({id:p.id, versao:p.versaoAtual, status:p.status, comentario:p.comentario}))});
+        const nd = Object.assign({}, state.packDoc, {ultimaRodada:M.rodada, enviadaEm:now});
+        state.packDoc = nd; await db.doc('pack/'+M.pack).set(nd);
+        state.confirm = false;
+      } catch(e){ state.err = 'Não enviou ('+(e&&e.code||'erro')+'). Tente de novo.'; state.confirm = false; }
+      state.sending = false; dock(); return;
+    }
+  }
+
+  // ---- publicação: pacotes e guia do DOT
+  function renderPub(v){
+    const c = counts(), tudo = c.aprovado === P.length;
+    v.innerHTML = `<div class="pub">
+      <section class="box"><h2>Pacotes para o DOT</h2>
+        <p class="note">${tudo?'Tudo aprovado. Baixe os 3 pacotes e mande para o DOT com o prompt abaixo.':`Ainda faltam ${P.length - c.aprovado} peças aprovadas. Os pacotes trazem a versão atual de cada peça; mande ao DOT só quando estiver tudo aprovado.`}</p>
+        <div class="zips">${[['quiddo','Quiddo'],['retrozap','Retrozap'],['sportdna','SPORT DNA']].map(([f,l])=>`<button class="btn" type="button" data-zip="${f}">Baixar ${l} (.zip)</button>`).join('')}<button class="btn ghost" type="button" id="cprompt">Copiar prompt do DOT</button></div>
+        <div class="saved" id="zmsg"></div></section>
+      <section class="box guia"><div class="tw">${M.guiaHtml}</div></section></div>`;
+    v.querySelectorAll('[data-zip]').forEach(b=>b.onclick=async ()=>{
+      const m = document.getElementById('zmsg');
+      if (!dls){ m.textContent='Download indisponível nesta visualização. Abra o artefato no claude.ai.'; return; }
+      b.disabled = true; m.textContent = 'Preparando '+b.dataset.zip+'.zip…';
+      try {
+        if (!window.JSZip) throw {code:'sem_zip'};
+        const z = new JSZip(), files = M.final[b.dataset.zip] || [];
+        let k = 0;
+        for (const f of files){ const r = await fetch('final/'+b.dataset.zip+'/'+f); if (!r.ok) throw {code:'arquivo '+f}; z.file(b.dataset.zip+'/'+f, await r.blob()); k++; m.textContent = 'Juntando arquivos '+k+'/'+files.length+'…'; }
+        const blob = await z.generateAsync({type:'blob'});
+        await dls.save({filename:b.dataset.zip+'-'+M.pack+'-rodada'+M.rodada+'.zip', data:blob}); m.textContent = b.dataset.zip+'.zip salvo.';
+      }
+      catch(e){ m.textContent = e && e.code==='declined' ? 'Download cancelado.' : 'Não baixou ('+(e&&e.code||'erro')+').'; }
+      b.disabled = false;
+    });
+    document.getElementById('cprompt').onclick = async (ev)=>{ try { await navigator.clipboard.writeText(M.prompt); ev.currentTarget.textContent='Prompt copiado'; } catch(e){ ev.currentTarget.textContent='Copie o prompt no fim do guia'; } };
+  }
+
+  (function(){ const d = new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'})); const el = document.getElementById('domingo');
+    if (d.getDay() === 0){ el.hidden = false; el.textContent = 'Hoje é domingo: dia de aprovar o pack da semana. Aprove até 21h; às 21h o Claude confere e libera o que estiver aprovado para o DOT agendar.'; } })();
+  document.getElementById('packline').textContent = 'PACK SEMANAL 01 · 09–15/11 · RODADA ' + M.rodada;
+  segs(); render();
+
+  // ---- capacidades
+  (async ()=>{
+    try { dls = await window.claude.use('downloads'); } catch(e){ dls = null; }
+    if (!dls) document.getElementById('exportx').disabled = true;
+  })();
+  (async ()=>{
+    try { db = await window.claude.use('db'); } catch(e){ db = null; }
+    const msg = document.getElementById('dbmsg');
+    dock();
+    if (!db){ msg.hidden=false; msg.textContent='Esta visualização não consegue salvar. Abra o link do artefato no claude.ai para aprovar e comentar.'; return; }
+    db.collection('reviews').onSnapshot(snap=>{
+      const next = {}; snap.docs.forEach(d=>{ const id = d.id.startsWith(M.pack+'_') ? d.id.slice(M.pack.length+1) : (M.pack==='S01' ? d.id : null); if (id) next[id] = d.data(); });
+      state.reviews = next;
+      const act = document.activeElement;
+      if (act && act.tagName==='TEXTAREA' && act.id!=='geral'){ tally(); return; }
+      render();
+    }, e=>{ msg.hidden=false; msg.textContent='Conexão com as decisões caiu ('+e.code+'). Recarregue a página.'; });
+    db.doc('pack/'+M.pack).onSnapshot(d=>{
+      const data = d.exists ? d.data() : {};
+      state.packDoc = data; state.geral = data.geral || ''; dock();
+      if (document.activeElement !== g){ g.value = state.geral; gs.textContent = data.at ? 'salvo '+fmtAt(data.at) : ''; }
+    });
+  })();
+})();
+</script>

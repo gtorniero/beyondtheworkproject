@@ -1,0 +1,26 @@
+{
+ "pack": "S01",
+ "pieces": [
+  {
+   "id": "Q-S3",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 11/11",
+   "slot": "",
+   "title": "Quiz: quantos bichos tem no Quiddo?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v3 (você reprovou a v2 do intruso). Pergunta direta, valendo ponto, como no jogo. Nada se sobrepõe: título em cima, adesivo no meio, bichos embaixo.",
+   "version": "S01-Q-S3-v3",
+   "v": 3,
+   "hash": "e6397b1ee3",
+   "media": [
+    "Q-S3.png"
+   ],
+   "editable": "editaveis/Q-S3.html",
+   "duration": null,
+   "sticker": "Adesivo QUIZ em y≈780–1230: 8 / 12 / 20 (correta) / 30."
+  }
+ ]
+}

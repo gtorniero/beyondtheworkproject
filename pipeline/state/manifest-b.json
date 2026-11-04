@@ -1,0 +1,115 @@
+{
+ "pack": "S01",
+ "pieces": [
+  {
+   "id": "R-R2",
+   "brand": "Retrozap",
+   "fmt": "reel",
+   "day": 4,
+   "dia": "qui 12/11",
+   "slot": "20h",
+   "title": "Duelo do casal: Dani × Cris",
+   "kind": "engajamento",
+   "caption": "Dani × Cris. 2026 inteiro. Quem ama mais, em números? 💘\n\nNo Retrozap Casais vocês recebem o \"um contra o outro\": quem puxou mais conversa, quem mandou mais boa noite, quem disse mais te amo.\nQuem perde paga o jantar. (Regra da casa, não do app.)\n\nMarca quem vai pagar 👇\nretrozap.com.br\n#retrozap #casal #namorados #retrospectiva2026 #amor",
+   "notes": "Casa Casal: creme, cereja e vinho, sem roxo. Contadores sobem de 0 até o valor. Dados de exemplo (Dani & Cris).",
+   "version": "S01-R-R2-v1",
+   "v": 1,
+   "hash": "c165eb27b5",
+   "media": [
+    "R-R2.mp4",
+    "R-R2-capa.png"
+   ],
+   "editable": "editaveis/R-R2.html",
+   "duration": 18.2,
+   "sticker": ""
+  },
+  {
+   "id": "R-R3",
+   "brand": "Retrozap",
+   "fmt": "reel",
+   "day": 7,
+   "dia": "dom 15/11",
+   "slot": "19h",
+   "title": "03:12 e o grupo acordado (Tagarela)",
+   "kind": "engajamento",
+   "caption": "03:12. E o grupo ainda está acordado. 🌙\n\n47 mensagens, 19 do mesmo amigo. Todo grupo tem o seu Tagarela, e o Retrozap faz a conta certinha.\n(Simulação com nomes de exemplo.)\n\nMarca o Pedrão da sua turma 👇\nretrozap.com.br · 1º grupo grátis\n#retrozap #grupodeamigos #madrugada #tagarela #resenha #retrospectiva2026",
+   "notes": "Notificações genéricas (sem marca de app). Etiqueta \"simulação\" visível. Som: notificação genérica, nunca a do WhatsApp.",
+   "version": "S01-R-R3-v1",
+   "v": 1,
+   "hash": "9492bce48d",
+   "media": [
+    "R-R3.mp4",
+    "R-R3-capa.png"
+   ],
+   "editable": "editaveis/R-R3.html",
+   "duration": 18.8,
+   "sticker": ""
+  },
+  {
+   "id": "D-R1",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 1,
+   "dia": "seg 09/11",
+   "slot": "07h",
+   "title": "RACKET: 4 números da ficha técnica",
+   "kind": "engajamento",
+   "caption": "A ficha técnica que ninguém lê decide o seu cotovelo. 🎾\n\n295 g: mais peso, mais estabilidade; menos peso, mais fácil de girar.\n100 pol²: cabeça maior perdoa mais a bola fora do centro.\n61 RA: quanto maior, mais dura a raquete e mais vibração no braço.\n16×19: cordas mais abertas facilitam o spin.\n\nO RACKET DNA cruza esses números com o seu braço, o seu nível e o seu jogo, entre 62 raquetes. Teste grátis, link na bio.\n#racketdna #sportdna #tenis #raquetedetenis #tenisbrasil #beachtennis",
+   "notes": "Números de exemplo do card do site (raquete escolhida entre 62, 295 g, 100 pol², 61 RA, 16×19). Explicações gerais de física do equipamento, sem estatística inventada. Cortes secos, contadores 0→valor.",
+   "version": "S01-D-R1-v1",
+   "v": 1,
+   "hash": "6b493df285",
+   "media": [
+    "D-R1.mp4",
+    "D-R1-capa.png"
+   ],
+   "editable": "editaveis/D-R1.html",
+   "duration": 19.8,
+   "sticker": ""
+  },
+  {
+   "id": "D-R2",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 4,
+   "dia": "qui 12/11",
+   "slot": "07h",
+   "title": "RUN: custo por km",
+   "kind": "engajamento",
+   "caption": "Quanto custa cada km do seu tênis? 🏃\n\nR$ 664,99 ÷ 700 km de durabilidade = R$ 0,95 por km.\nO tênis mais barato nem sempre é o mais barato por km.\n\nO RUN DNA mostra o custo por km de cada finalista, entre 212 tênis, e o mês certo de trocar. Relatório: R$ 9,99. Link na bio.\n#rundna #sportdna #corrida #corridaderua #running #tenisdecorrida",
+   "notes": "Conta feita com o exemplo do site (R$ 664,99, 700 km, R$ 0,95/km). Capa laranja para a grade alternar com preto.",
+   "version": "S01-D-R2-v1",
+   "v": 1,
+   "hash": "63f19aac16",
+   "media": [
+    "D-R2.mp4",
+    "D-R2-capa.png"
+   ],
+   "editable": "editaveis/D-R2.html",
+   "duration": 17.4,
+   "sticker": ""
+  },
+  {
+   "id": "D-R3",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 7,
+   "dia": "dom 15/11",
+   "slot": "09h",
+   "title": "Três esportes, um DNA (marca)",
+   "kind": "engajamento",
+   "caption": "Equipamento não é tamanho único. 🧬\n\nRaquete: o seu braço. Prancha: o seu mar. Tênis de corrida: o seu ritmo.\nA SPORT DNA cruza o seu jeito com a ficha técnica de cada equipamento e mostra o porquê de cada escolha. Nenhuma marca paga para aparecer.\n\nTeste grátis, link na bio.\n#sportdna #racketdna #surfdna #rundna #tenis #surf #corrida",
+   "notes": "Assinatura animada oficial: os 3 arcos do símbolo se desenham em sequência; o S fica parado. Troca de esporte com corte seco.",
+   "version": "S01-D-R3-v1",
+   "v": 1,
+   "hash": "0ef0f1cc87",
+   "media": [
+    "D-R3.mp4",
+    "D-R3-capa.png"
+   ],
+   "editable": "editaveis/D-R3.html",
+   "duration": 16.6,
+   "sticker": ""
+  }
+ ]
+}

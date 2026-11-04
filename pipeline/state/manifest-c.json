@@ -1,0 +1,208 @@
+{
+ "pack": "S01",
+ "pieces": [
+  {
+   "id": "Q-R1",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 1,
+   "dia": "seg 09/11",
+   "slot": "18h",
+   "title": "Quem é mais provável… (amigo secreto)",
+   "kind": "engajamento",
+   "caption": "Toda família tem um Beto. 🦥\n\nNo Quiddo, além do quiz que vale ponto, tem a pergunta \"Quem é mais provável…\": as opções são as pessoas da sala e todo mundo vota pelo celular.\n\nUse no amigo secreto, no Natal ou na confraternização. Faça o seu, teste grátis.\nMarca aqui o Beto da sua família 👇\n\nquiddo.com.br (link na bio)\n#amigosecreto #natalemfamilia #quiz #quizaovivo #brincadeira #resenha #quiddo",
+   "notes": "Floresta, fundo mata. Áudio: tique da contagem (5 s), plim no resultado. Música em alta a 20–30%.",
+   "version": "S01-Q-R1-v2",
+   "v": 2,
+   "hash": "8f79f6768d",
+   "media": [
+    "Q-R1.mp4",
+    "Q-R1-capa.png"
+   ],
+   "editable": "editaveis/Q-R1.html",
+   "duration": 17.0,
+   "sticker": ""
+  },
+  {
+   "id": "Q-C1",
+   "brand": "Quiddo",
+   "fmt": "carrossel",
+   "day": 2,
+   "dia": "ter 10/11",
+   "slot": "12h",
+   "title": "7 perguntas para a festa da firma",
+   "kind": "engajamento",
+   "caption": "7 perguntas para a confraternização que não constrangem ninguém. 💼\n\nTem quiz que vale ponto, enquete em que ninguém erra e \"quem é mais provável\", que é onde a sala ri de verdade.\nArrasta, salva e troca os dados pelos da sua empresa.\n\nMarca aqui quem organiza a festa 👇\nFaça o seu, teste grátis: quiddo.com.br\n#confraternizacao #festadefimdeano #endomarketing #rh #dinamicadegrupo #quiz #quiddo",
+   "notes": "Escritório (post-its do site). Página 1 usa a cortina oficial do visual Escritório.",
+   "version": "S01-Q-C1-v2",
+   "v": 2,
+   "hash": "5d7a22cf4c",
+   "media": [
+    "Q-C1-1.png",
+    "Q-C1-2.png",
+    "Q-C1-3.png",
+    "Q-C1-4.png",
+    "Q-C1-5.png",
+    "Q-C1-6.png",
+    "Q-C1-7.png"
+   ],
+   "editable": "editaveis/Q-C1.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "Q-R2",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 4,
+   "dia": "qui 12/11",
+   "slot": "19h",
+   "title": "Que bicho você seria? (tipologia)",
+   "kind": "engajamento",
+   "caption": "Diz qual bicho você escolhe e a gente diz como você joga. 🐸\n\nCapivara de boné: responde por último e acerta tudo.\nOnça de coroa: entra na sala já se achando campeã.\nPreguiça de fone: ainda está lendo a pergunta 2.\nSapo de chapéu de festa: veio pela resenha, ficou pelo pódio.\n\nNo Quiddo são 20 bichos do Brasil e 13.200 jeitos de montar o seu. Qual é o seu? Comenta 👇\nFaça o seu, teste grátis: quiddo.com.br\n#bichosdobrasil #capivara #quiz #resenha #jogoemgrupo #quiddo",
+   "notes": "Visual Álbum de figurinhas sobre fundo mata. Bichos gerados pelo avatarSvg do site.",
+   "version": "S01-Q-R2-v2",
+   "v": 2,
+   "hash": "52fd84db85",
+   "media": [
+    "Q-R2.mp4",
+    "Q-R2-capa.png"
+   ],
+   "editable": "editaveis/Q-R2.html",
+   "duration": 19.4,
+   "sticker": ""
+  },
+  {
+   "id": "Q-C2",
+   "brand": "Quiddo",
+   "fmt": "carrossel",
+   "day": 5,
+   "dia": "sex 13/11",
+   "slot": "12h",
+   "title": "Como fazer um quiz que ninguém esquece",
+   "kind": "engajamento",
+   "caption": "5 regras para um quiz que ninguém esquece. 📒\n\n1. Comece fácil.\n2. Uma pergunta, uma ideia.\n3. Misture os tipos.\n4. A difícil vai no meio.\n5. Feche com o pódio.\n\nSalva para a próxima festa, aula ou resenha. E manda para quem sempre organiza.\nFaça o seu, teste grátis: quiddo.com.br\n#quiz #professor #saladeaula #dinamicadegrupo #gincana #dicas #quiddo",
+   "notes": "Sala de aula: folha de caderno. Composições alternam número gigante e cartão.",
+   "version": "S01-Q-C2-v2",
+   "v": 2,
+   "hash": "abf9a5d098",
+   "media": [
+    "Q-C2-1.png",
+    "Q-C2-2.png",
+    "Q-C2-3.png",
+    "Q-C2-4.png",
+    "Q-C2-5.png",
+    "Q-C2-6.png",
+    "Q-C2-7.png"
+   ],
+   "editable": "editaveis/Q-C2.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "Q-S3",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 11/11",
+   "slot": "",
+   "title": "Quiz: qual bicho não está no Quiddo?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Story. Os 6 bichos da arte existem no site; o intruso fica só no adesivo.",
+   "version": "S01-Q-S3-v2",
+   "v": 2,
+   "hash": "b1d5f0dbc5",
+   "media": [
+    "Q-S3.png"
+   ],
+   "editable": "editaveis/Q-S3.html",
+   "duration": null,
+   "sticker": "Adesivo QUIZ em y≈1260–1560: Capivara / Boto / Pinguim (correta) / Quati."
+  },
+  {
+   "id": "Q-S5",
+   "brand": "Quiddo",
+   "fmt": "story",
+   "day": 6,
+   "dia": "sáb 14/11",
+   "slot": "",
+   "title": "Link: crie o quiz da confraternização",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Story de conversão leve.",
+   "version": "S01-Q-S5-v2",
+   "v": 2,
+   "hash": "880b6bb24c",
+   "media": [
+    "Q-S5.png"
+   ],
+   "editable": "editaveis/Q-S5.html",
+   "duration": null,
+   "sticker": "Adesivo de LINK (quiddo.com.br) em y≈1200–1400."
+  },
+  {
+   "id": "D-S2",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 2,
+   "dia": "ter 10/11",
+   "slot": "",
+   "title": "Quiz: qual número é a rigidez?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2: saiu o desenho da raquete; entrou o logo oficial do RACKET DNA.",
+   "version": "S01-D-S2-v2",
+   "v": 2,
+   "hash": "6ba65c9da7",
+   "media": [
+    "D-S2.png"
+   ],
+   "editable": "editaveis/D-S2.html",
+   "duration": null,
+   "sticker": "Adesivo QUIZ em y≈880–1300: 295 g / 100 pol² / 61 RA (correta) / 16×19."
+  },
+  {
+   "id": "D-S3",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 11/11",
+   "slot": "",
+   "title": "Enquete: pediu dica de prancha pra IA?",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (você reprovou a caixa de perguntas). Nova linha: simulação de IA genérica, junto com o reel D-R1.",
+   "version": "S01-D-S3-v2",
+   "v": 2,
+   "hash": "f03a0c0f52",
+   "media": [
+    "D-S3.png"
+   ],
+   "editable": "editaveis/D-S3.html",
+   "duration": null,
+   "sticker": "Adesivo de ENQUETE em y≈1260–1520: \"Já pedi dica pra IA\" / \"Nunca pedi\"."
+  },
+  {
+   "id": "D-S4",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 5,
+   "dia": "sex 13/11",
+   "slot": "",
+   "title": "A IA disse: bom amortecimento",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (você reprovou a caixa de perguntas). Nova linha: o que a IA genérica responde e o que falta.",
+   "version": "S01-D-S4-v2",
+   "v": 2,
+   "hash": "5dd08d0f18",
+   "media": [
+    "D-S4.png"
+   ],
+   "editable": "editaveis/D-S4.html",
+   "duration": null,
+   "sticker": "Adesivo de LINK (sportdna.com.br) em y≈1300–1500."
+  }
+ ]
+}
