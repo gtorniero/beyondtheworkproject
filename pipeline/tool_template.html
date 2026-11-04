@@ -156,7 +156,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       <div class="tally" id="tally" aria-live="polite"></div>
     </div>
     <div class="filters">
-      <div class="seg" id="f-view"><span class="lbl">Ver</span><button data-v="pecas" aria-pressed="true">Peças</button><button data-v="semana" aria-pressed="false">Assets da semana</button><button data-v="grade" aria-pressed="false">Grade do feed</button><button data-v="pub" aria-pressed="false">Publicação</button></div>
+      <div class="seg" id="f-view"><span class="lbl">Ver</span><button data-v="pecas" aria-pressed="true">Em aprovação</button><button data-v="semana" aria-pressed="false">Aprovados e programados</button><button data-v="grade" aria-pressed="false">Grade do feed</button><button data-v="pub" aria-pressed="false">Publicação</button></div>
       <div class="seg" id="f-brand"><span class="lbl">Marca</span></div>
       <div class="seg" id="f-fmt"><span class="lbl">Formato</span></div>
       <div class="seg" id="f-status"><span class="lbl">Status</span></div>
@@ -222,6 +222,8 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
     const c = {pendente:0,revisar:0,aprovado:0,reprovado:0};
     P.forEach(p=>c[eff(p)]++);
     document.getElementById('tally').innerHTML = STS.map(([k,l])=>`<span class="s-${k}">${c[k]} ${l.toLowerCase()}</span>`).join('');
+    const bp = document.querySelector('#f-view [data-v="pecas"]'), bs = document.querySelector('#f-view [data-v="semana"]');
+    if (bp) bp.textContent = `Em aprovação (${P.length - c.aprovado})`; if (bs) bs.textContent = `Aprovados e programados (${c.aprovado})`;
     dock();
   }
 
@@ -264,7 +266,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
   }
 
   function visible(){
-    return P.filter(p => (state.brand==='todas'||p.brand===state.brand) && (state.fmt==='todos'||p.fmt===state.fmt) && (state.status==='todos'||eff(p)===state.status));
+    return P.filter(p => eff(p)!=='aprovado' && (state.brand==='todas'||p.brand===state.brand) && (state.fmt==='todos'||p.fmt===state.fmt) && (state.status==='todos'||eff(p)===state.status));
   }
 
   function renderSemana(v){
@@ -274,22 +276,27 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
     const ok = P.filter(p=>eff(p)==='aprovado');
     const cnt = f => ok.filter(p=>p.fmt===f).length, tot = f => P.filter(p=>p.fmt===f).length;
     const falta = P.length - ok.length;
-    let h = `<div class="wk"><p class="note" style="margin:0">Tudo o que está aprovado aqui vai para o DOT agendar no Business Suite, no dia e na hora abaixo. Você não posta nada. As peças sem aprovação aparecem apagadas.</p>
+    let h = `<div class="wk"><p class="note" style="margin:0">Só o que você aprovou. Cada peça aqui vai para o DOT agendar no Business Suite, no dia e na hora abaixo; você não posta nada. Para mudar de ideia, use "voltar p/ aprovação".</p>
       <div class="kpis">
         <div class="kpi tot"><b>${ok.length} / ${P.length}</b><span>assets aprovados</span></div>
         ${['reel','carrossel','story'].map(f=>`<div class="kpi"><b>${cnt(f)} / ${tot(f)}</b><span>${FL[f]}</span></div>`).join('')}
-        <div class="kpi"><b>${falta}</b><span>ainda sem aprovação</span></div>
+        <div class="kpi"><b>${falta}</b><span>ainda em aprovação</span></div>
       </div>
       <div class="kpis">${BRANDS.map(b=>{ const bp = ok.filter(p=>p.brand===b); return `<div class="kpi"><b>${bp.length}</b><span>${esc(b)} · ${bp.filter(p=>p.fmt==='reel').length} reels, ${bp.filter(p=>p.fmt==='carrossel').length} carr., ${bp.filter(p=>p.fmt==='story').length} stories</span></div>`; }).join('')}</div>`;
     const ord = {story:0, carrossel:1, reel:2};
+    if (!ok.length) h += '<p class="empty">Nada aprovado ainda. As peças estão na aba "Em aprovação".</p>';
     [1,2,3,4,5,6,7].forEach(d=>{
-      const ps = P.filter(p=>p.day===d).sort((a,c)=>hora(a).localeCompare(hora(c)) || ord[a.fmt]-ord[c.fmt] || a.brand.localeCompare(c.brand));
+      const ps = P.filter(p=>p.day===d && eff(p)==='aprovado').sort((a,c)=>hora(a).localeCompare(hora(c)) || ord[a.fmt]-ord[c.fmt] || a.brand.localeCompare(c.brand));
       if(!ps.length) return;
-      const n = ps.filter(p=>eff(p)==='aprovado').length;
-      h += `<section class="wkday"><h3><span>${esc(DAYS[d])}</span><span class="lbl">${n} de ${ps.length} aprovados</span></h3>${ps.map(p=>{ const a = eff(p)==='aprovado';
-        return `<div class="wkrow${a?'':' off'}"><img src="media/${thumb(p)}" alt="" loading="lazy"><span class="h">${esc(hora(p))}</span><span class="t">${esc(p.brand)} · ${esc(p.fmt)}<small>${esc(p.title)}</small></span><span class="status s-${eff(p)}">${a?'vai entrar':esc(stLabel(eff(p)).toLowerCase())}</span></div>`; }).join('')}</section>`;
+      const total = P.filter(p=>p.day===d).length;
+      if (!ps.length) return;
+      h += `<section class="wkday"><h3><span>${esc(DAYS[d])}</span><span class="lbl">${ps.length} de ${total} aprovados</span></h3>${ps.map(p=>
+        `<div class="wkrow"><img src="media/${thumb(p)}" alt="" loading="lazy"><span class="h">${esc(hora(p))}</span><span class="t">${esc(p.brand)} · ${esc(p.fmt)}<small>${esc(p.title)} · ${esc(p.version)}</small></span><span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end"><span class="status s-aprovado">programado</span><button class="btn ghost" type="button" data-undo="${p.id}" style="padding:4px 10px;font-size:12px">voltar p/ aprovação</button></span></div>`).join('')}</section>`;
     });
     v.innerHTML = h + '</div>';
+    v.querySelectorAll('[data-undo]').forEach(b=>b.onclick=()=>{ const p = P.find(x=>x.id===b.dataset.undo); const r = state.reviews[p.id]||{};
+      const hist = (r.history||[]).concat([{version:p.version, status:null, comment:r.comment||'', at:new Date().toISOString()}]).slice(-20);
+      save(p, {status:null, hash:p.hash, version:p.version, comment:r.comment||'', history:hist}).then(render); });
   }
 
   function render(){
@@ -306,7 +313,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       return;
     }
     const list = visible();
-    if (!list.length){ v.innerHTML = '<p class="empty">Nenhuma peça com esses filtros.</p>'; return; }
+    if (!list.length){ v.innerHTML = P.some(p=>eff(p)!=='aprovado') ? '<p class="empty">Nenhuma peça em aprovação com esses filtros.</p>' : '<p class="empty">Tudo aprovado. Veja a aba "Aprovados e programados".</p>'; return; }
     let html = '';
     [1,2,3,4,5,6,7].forEach(d=>{ const ps = list.filter(p=>p.day===d); if(!ps.length) return;
       html += `<div class="day"><h3>${DAYS[d]}</h3><span class="lbl">${ps.length} peça${ps.length>1?'s':''}</span></div><div class="grid">${ps.map(card).join('')}</div>`; });
