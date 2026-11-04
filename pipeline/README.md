@@ -1,7 +1,7 @@
 # Pack Semanal de Instagram · Quiddo, Retrozap e SPORT DNA
 
 ## Estado atual
-- **Pack Semanal 02 · rodada 2** (semana 16–22/11/2026). Rodada 1: 35 aprovadas, 4 stories reprovados (R-S6, R-S10, D-S6, D-S8) refeitos em v2 com celular, conversa, relatório e bloco de notas; Q-C4, Q-S8 e R-C4 sem decisão. A Mesa ganhou a aba "Assets da semana" (o que vai entrar, por dia, e contagem de aprovados por formato e marca). 42 peças: 21 feed (por marca 3 reels + 4 carrosséis, 1 por dia, começando por carrossel na segunda) e 21 stories (1 por dia por marca, sem adesivo).
+- **Pack Semanal 02 · rodada 3** (semana 16–22/11/2026). Rodada 2: 39 de 42 aprovadas; R-S6 e R-S10 em v3 sem etiquetas; story D-S6 trocado pelo reel D-R7 (relatório do RUN DNA rolando no celular, seg 19h45, 2º post de feed da SPORT DNA no dia). Mesa: painéis Em aprovação e Aprovados, header preto, visão Calendário, feedback geral limpo a cada rodada. Rodada 1: 35 aprovadas, 4 stories reprovados (R-S6, R-S10, D-S6, D-S8) refeitos em v2 com celular, conversa, relatório e bloco de notas; Q-C4, Q-S8 e R-C4 sem decisão. A Mesa ganhou a aba "Assets da semana" (o que vai entrar, por dia, e contagem de aprovados por formato e marca). 42 peças: 21 feed (por marca 3 reels + 4 carrosséis, 1 por dia, começando por carrossel na segunda) e 21 stories (1 por dia por marca, sem adesivo).
   - Memes: Q-R5, Q-C4, Q-R4 (veio do S01 sem decisão, mesma arte), R-R4, D-R5. Trends: Q-R6, R-R5, D-R6 (Black Friday 27/11).
   - Produto: Q-C6, R-R6, D-C6.
   - Stories sem adesivo: Quiddo "Pergunta do dia" (resposta de cabeça pra baixo), Retrozap "frase pro grupo" (print), SPORT DNA "Dicionário DNA".

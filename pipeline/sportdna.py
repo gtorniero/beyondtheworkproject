@@ -415,4 +415,79 @@ def d_s8():
           caption='(story, sem legenda)', sticker='', kind='story',
           notes='v2 (seu comentário: "mto basico"): bloco de notas num celular genérico e o resultado do SURF DNA ao lado, marcado como exemplo. 13 tipos: número do site.')
 
-d_c3(); d_r4(); d_c4(); d_r5(); d_c5(); d_r6(); d_c6(); d_stories(); d_s6(); d_s8()
+
+# =====================================================================================
+# D-R7 · Reel · Por dentro do relatório do RUN DNA (seg, preto) · rodada 2: no lugar do story D-S6
+# =====================================================================================
+def d_r7():
+    T = 22.0
+    tl = TL(T)
+    SW = 656  # largura útil da tela
+    def card(inner, h, bg='#fff'):
+        return f'<div style="height:{h}px;margin:0 22px 22px;background:{bg};border-radius:28px;padding:26px 28px;overflow:hidden">{inner}</div>'
+    def kv(k, v):
+        return f'<div style="background:var(--off2);border-radius:18px;padding:14px 16px"><div class="lbl" style="font-size:18px;color:var(--mutedL)">{k}</div><div class="t" style="font-size:34px;margin-top:6px">{v}</div></div>'
+    secs = []
+    secs.append(('Seu perfil', 470, card(f'''<div class="lbl" style="color:var(--mutedL)">SEU PERFIL</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px">{kv('Peso','78 kg')}{kv('Ritmo','5:30/km')}{kv('Volume','30 km/sem')}{kv('Objetivo','21 km')}{kv('Pisada','neutra')}{kv('Dor','joelho, às vezes')}</div>''', 448)))
+    ring = '''<svg width="190" height="190" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="#EAEAE7" stroke-width="10"/><circle cx="50" cy="50" r="42" fill="none" stroke="#FF8A3D" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="92 100" transform="rotate(-90 50 50)"/></svg>'''
+    secs.append(('O finalista', 470, card(f'''<div class="lbl" style="color:var(--mutedL)">SEU FINALISTA · ENTRE 212 TÊNIS</div>
+        <div style="display:flex;gap:24px;align-items:center;margin-top:18px"><div style="position:relative;width:190px;height:190px;flex:none">{ring}<div class="n" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:52px;color:var(--ink)">92%</div></div>
+        <div><div class="t" style="font-size:44px">Tênis de treino diário</div><div style="font-size:26px;color:var(--mutedL);margin-top:8px">DNA Score</div></div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">{''.join(f'<span class="chip" style="font-size:22px;color:var(--ink);border-color:var(--lineL)">{t}</span>' for t in ['amortecimento alto', 'drop 8 mm', '280 g', 'base estável'])}</div>''', 448)))
+    secs.append(('Por que ele', 470, card(f'''<div class="lbl" style="color:var(--mutedL)">POR QUE ELE</div>
+        {''.join(f'<div style="display:flex;gap:16px;padding:18px 0;border-top:2px solid var(--off2);font-size:30px;line-height:1.3"><span style="color:var(--run);font-weight:700">{i+1}</span><span>{t}</span></div>' for i, t in enumerate(['Amortecimento que segura 78 kg em treino longo.', 'Base estável para o joelho que reclama.', 'Leve o bastante para o seu ritmo de 5:30.']))}''', 448)))
+    top3 = [('A', 'Tênis de treino diário', '92%', 'R$ 0,95/km', True), ('B', 'Tênis de amortecimento máximo', '88%', 'R$ 1,12/km', False), ('C', 'Tênis leve de ritmo', '85%', 'R$ 0,89/km', False)]
+    secs.append(('Top 3 comparado', 470, card(f'''<div class="lbl" style="color:var(--mutedL)">TOP 3 COMPARADO</div>
+        {''.join(f'<div style="display:flex;align-items:center;gap:16px;padding:16px 14px;margin-top:12px;border-radius:18px;background:{"#FFF1E6" if hl else "var(--off2)"}"><span class="t" style="font-size:34px;width:34px">{l}</span><span style="flex:1;font-size:26px;line-height:1.2">{n}</span><span style="text-align:right"><b class="t" style="font-size:32px">{s}</b><br><span class="m" style="font-size:20px;color:var(--mutedL)">{c}</span></span></div>' for l, n, s, c, hl in top3)}''', 448)))
+    secs.append(('Custo por km', 470, card(f'''<div class="lbl" style="color:var(--mutedL)">CUSTO POR KM</div>
+        <div class="m" style="font-size:30px;margin-top:26px;color:var(--mutedL)">R$ 664,99 ÷ 700 km</div>
+        <div class="n" style="font-size:120px;color:var(--run);margin-top:14px"><span style="font-size:64px">R$ </span>0,95</div>
+        <div style="font-size:28px;margin-top:18px;line-height:1.3">O C é mais barato por km, mas não segura o seu joelho no longão.</div>''', 448)))
+    secs.append(('Quando trocar', 470, card(f'''<div class="lbl" style="color:var(--mutedL)">QUANDO TROCAR</div>
+        <div class="t" style="font-size:52px;margin-top:20px">Em cerca de 5 meses.</div>
+        <div style="font-size:28px;color:var(--mutedL);margin-top:10px">Com 30 km por semana, os 700 km chegam lá.</div>
+        <div style="position:relative;height:20px;border-radius:10px;background:var(--off2);margin-top:48px"><div style="width:100%;height:20px;border-radius:10px;background:linear-gradient(90deg,#FFD2B0,#FF8A3D)"></div><div style="position:absolute;right:-6px;top:-14px;width:12px;height:48px;border-radius:6px;background:var(--ink)"></div></div>
+        <div class="m" style="display:flex;justify-content:space-between;font-size:22px;margin-top:12px;color:var(--mutedL)"><span>0 km</span><span>700 km</span></div>''', 448)))
+    head = f'<div style="height:120px;padding:20px 28px;display:flex;align-items:center;justify-content:space-between">{logo("rundna-logo-fundo-claro", 300)}<span class="lbl" style="color:var(--mutedL)">SEU RELATÓRIO</span></div>'
+    col = head + ''.join(c for _, _, c in secs)
+    # rolagem: cada seção fica ~2,6 s na tela
+    t0, step = 3.0, 2.6
+    offs = [0] + [120 + 470 * i for i in range(1, len(secs))]
+    frames, chips = [], ''
+    for i, off in enumerate(offs):
+        a, b = t0 + i * step, t0 + i * step + .55
+        frames.append((a, -offs[i - 1] if i else 0)); frames.append((b, -off))
+    kf = '@keyframes rol{' + ''.join(f'{max(0, min(100, t / T * 100)):.3f}%{{transform:translateY({y}px)}}' for t, y in [(0, 0)] + frames + [(T, -offs[-1])]) + '}'
+    for i, (nome, _, _) in enumerate(secs):
+        a = t0 + i * step
+        chips += f'<div {tl.scene(a, a + step if i < len(secs) - 1 else 19.0, fade=.15)}><div class="abs" style="left:90px;top:262px"><span class="chip" style="color:var(--run);font-size:30px">{i+1} / {len(secs)} · {nome}</span></div></div>'
+    tela = f'<div style="position:absolute;inset:0;background:var(--off);color:var(--ink)"><div style="animation:rol {T}s linear 0s 1 both;will-change:transform">{col}</div></div>'
+    s1 = f'''<div {tl.scene(0, 3.0, fin=False)}>
+      <div class="abs t" style="left:90px;top:420px;width:900px;font-size:120px;{at(.05,'rise', .6)}">Por dentro do relatório do <span style="color:var(--run)">RUN DNA.</span></div>
+      <div class="abs" style="left:90px;top:900px;width:860px;font-size:48px;line-height:1.3;color:var(--muted);{at(.7,'fade', .5)}">Seis partes. Nenhuma é "compre um com bom amortecimento".</div>
+    </div>'''
+    s2 = f'''<div {tl.scene(3.0, 19.0, fade=.2)}>
+      <div class="abs" style="left:190px;top:340px">{C.phone(tela, 700, 1225, screen='#F4F4F2', frame='#2A2A28', status_color='#0A0A0A', hora='07:10')}</div>
+    </div>{chips}'''
+    s3 = f'''<div {tl.scene(19.0, T, fout=False)}>
+      <div class="abs" style="left:90px;top:560px;{at(19.05,'fade', .6)}">{logo('rundna-logo-fundo-escuro', 800)}</div>
+      <div class="abs" style="left:90px;top:760px;width:880px;font-size:50px;line-height:1.3;{at(19.4,'rise', .5)}">212 tênis comparados com o seu corpo, o seu ritmo e as suas dores.</div>
+      <div class="abs m" style="left:90px;top:1000px;font-size:34px;color:var(--muted);{at(19.8,'fade')}">Teste grátis · relatório R$ 9,99 · sportdna.com.br</div>
+    </div>'''
+    body = f'<section class="page" style="width:1080px;height:1920px">{s1}{s2}{s3}</section>'
+    tela_capa = f'<div style="position:absolute;inset:0;background:var(--off);color:var(--ink)"><div style="transform:translateY(-120px)">{col}</div></div>'
+    cover_body = f'''<div class="page" style="width:1080px;height:1350px">
+      <div class="abs t" style="left:80px;top:90px;width:520px;font-size:92px">Por dentro do relatório do <span style="color:var(--run)">RUN DNA.</span></div>
+      <div class="abs" style="left:80px;top:700px;width:480px;font-size:38px;line-height:1.3;color:var(--muted)">Perfil, finalista, top 3, custo por km e quando trocar.</div>
+      <div class="abs" style="left:600px;top:80px;transform:scale(.62);transform-origin:top left">{C.phone(tela_capa, 700, 1225, screen='#F4F4F2', frame='#2A2A28', status_color='#0A0A0A', hora='07:10')}</div></div>'''
+    piece(id='D-R7', fmt='reel', day=1, slot='19h45', title='Por dentro do relatório do RUN DNA', total=T, poster=.35, kind='produto',
+          html=doc('D-R7', FONTS, CSS + tl.style() + kf, body, 1080, 1920, reel=True, total=T),
+          cover=cover_from_feed(cover_body, 'var(--ink)'),
+          caption=('Por dentro do relatório do RUN DNA. 📊\n\n'
+                   '1. Seu perfil: peso, ritmo, volume, objetivo, pisada e dores.\n2. O finalista, com DNA Score.\n3. Por que ele, em três motivos.\n4. O top 3 comparado.\n5. O custo por km.\n6. Quando trocar.\n\n'
+                   '212 tênis comparados com o seu corpo, o seu ritmo e as suas dores. Calibrado com atletas e corredores.\n'
+                   'Manda pro seu parceiro de corrida 👇\nTeste grátis. Relatório R$ 9,99. Link na bio.\n#rundna #sportdna #corrida #corridaderua #tenisdecorrida'),
+          notes='Rodada 2: você pediu reel com a tela do relatório completo no lugar do story D-S6. A tela rola pelas 6 partes do relatório num celular genérico; modelos sem marca. Entra na segunda 19h45, como 2º post de feed do dia (o carrossel D-C3 sai às 12h30).')
+
+d_c3(); d_r7(); d_r4(); d_c4(); d_r5(); d_c5(); d_r6(); d_c6(); d_stories(); d_s8()

@@ -214,7 +214,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
   <div id="domingo" class="notice" hidden></div>
   <section class="geral" aria-labelledby="g-h">
     <h2 id="g-h">Feedback geral do pack</h2>
-    <p>Vale para todas as marcas e peças. Não aprova nem reprova nada: o status de cada peça só muda nos botões dela.</p>
+    <p>Vale para todas as marcas e peças desta rodada. Ao finalizar a rodada, ele vai para o Claude, some daqui e fica guardado no painel Aprovados.</p>
     <textarea id="geral" placeholder="Ex.: menos texto nos reels, mais respiro nas capas…"></textarea>
     <div class="saved" id="geral-s"></div>
   </section>
@@ -354,6 +354,8 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       h += `<section class="wkday"><h3><span>${esc(DAYS[d])}</span><span class="lbl">${ps.length} de ${total} aprovados</span></h3>${ps.map(p=>
         `<div class="wkrow"><img src="media/${thumb(p)}" alt="" loading="lazy"><span class="h">${esc(hora(p))}</span><span class="t">${esc(p.brand)} · ${esc(p.fmt)}<small>${esc(p.title)} · ${esc(p.version)}</small></span><span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end"><span class="status s-aprovado">programado</span><button class="btn ghost" type="button" data-undo="${p.id}" style="padding:4px 10px;font-size:12px">voltar p/ aprovação</button></span></div>`).join('')}</section>`;
     });
+    const gh = (state.packDoc.geralHist||[]).slice().reverse();
+    if (gh.length) h += `<section class="wkday"><h3><span>Feedbacks gerais já enviados</span><span class="lbl">${gh.length}</span></h3>${gh.map(x=>`<div style="padding:10px 16px;border-top:1px solid var(--line);font-size:13px"><span class="lbl">Rodada ${esc(x.rodada)} · ${esc(fmtAt(x.enviadaEm))}</span><div style="margin-top:4px;white-space:pre-wrap">${esc(x.texto)}</div></div>`).join('')}</section>`;
     v.innerHTML = h + '</div>';
     v.querySelectorAll('[data-undo]').forEach(b=>b.onclick=()=>{ const p = P.find(x=>x.id===b.dataset.undo); const r = state.reviews[p.id]||{};
       const hist = (r.history||[]).concat([{version:p.version, status:null, comment:r.comment||'', at:new Date().toISOString()}]).slice(-20);
@@ -507,9 +509,12 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       state.sending = true; dock();
       const now = new Date().toISOString(), d = exportData();
       try {
-        await db.doc('rodadas/R'+M.rodada).set({resumo:txt, rodada:M.rodada, enviadaEm:now, contagem:counts(), feedbackGeral:state.geral, pecas:d.pecas.map(p=>({id:p.id, versao:p.versaoAtual, status:p.status, comentario:p.comentario}))});
-        const nd = Object.assign({}, state.packDoc, {ultimaRodada:M.rodada, enviadaEm:now});
-        state.packDoc = nd; await db.doc('pack/'+M.pack).set(nd);
+        const rk = M.pack==='S01' ? 'R'+M.rodada : M.pack+'_R'+M.rodada;
+        await db.doc('rodadas/'+rk).set({resumo:txt, rodada:M.rodada, enviadaEm:now, contagem:counts(), feedbackGeral:state.geral, pecas:d.pecas.map(p=>({id:p.id, versao:p.versaoAtual, status:p.status, comentario:p.comentario}))});
+        const hist = (state.packDoc.geralHist||[]).concat(state.geral ? [{rodada:M.rodada, texto:state.geral, enviadaEm:now}] : []);
+        const nd = Object.assign({}, state.packDoc, {ultimaRodada:M.rodada, enviadaEm:now, geral:'', geralHist:hist});
+        state.packDoc = nd; state.geral = ''; const gEl = document.getElementById('geral'); if (gEl) gEl.value = '';
+        await db.doc('pack/'+M.pack).set(nd);
         state.confirm = false;
       } catch(e){ state.err = 'Não enviou ('+(e&&e.code||'erro')+'). Tente de novo.'; state.confirm = false; }
       state.sending = false; dock(); return;

@@ -1,6 +1,6 @@
 {
  "pack": "S02",
- "liberadas": 35,
+ "liberadas": 39,
  "total": 42,
  "pecas": [
   {
@@ -30,8 +30,8 @@
    "dia": "qua 18/11",
    "hora": "12h30",
    "versao": "S02-Q-C4-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-R6",
@@ -100,8 +100,8 @@
    "dia": "qua 18/11",
    "hora": "12h",
    "versao": "S02-Q-S8-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-S9",
@@ -170,8 +170,8 @@
    "dia": "qua 18/11",
    "hora": "12h30",
    "versao": "S02-R-C4-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "R-R5",
@@ -269,7 +269,7 @@
    "formato": "story",
    "dia": "seg 16/11",
    "hora": "12h",
-   "versao": "S02-R-S6-v2",
+   "versao": "S02-R-S6-v3",
    "liberado": false,
    "status_mesa": "reprovado"
   },
@@ -279,7 +279,7 @@
    "formato": "story",
    "dia": "sex 20/11",
    "hora": "12h",
-   "versao": "S02-R-S10-v2",
+   "versao": "S02-R-S10-v3",
    "liberado": false,
    "status_mesa": "reprovado"
   },
@@ -292,6 +292,16 @@
    "versao": "S02-D-C3-v1",
    "liberado": true,
    "status_mesa": "aprovado"
+  },
+  {
+   "peca": "D-R7",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "seg 16/11",
+   "hora": "19h45",
+   "versao": "S02-D-R7-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
   },
   {
    "peca": "D-R4",
@@ -404,24 +414,14 @@
    "status_mesa": "aprovado"
   },
   {
-   "peca": "D-S6",
-   "marca": "SPORT DNA",
-   "formato": "story",
-   "dia": "seg 16/11",
-   "hora": "12h",
-   "versao": "S02-D-S6-v2",
-   "liberado": false,
-   "status_mesa": "reprovado"
-  },
-  {
    "peca": "D-S8",
    "marca": "SPORT DNA",
    "formato": "story",
    "dia": "qua 18/11",
    "hora": "12h",
    "versao": "S02-D-S8-v2",
-   "liberado": false,
-   "status_mesa": "reprovado"
+   "liberado": true,
+   "status_mesa": "aprovado"
   }
  ]
 }

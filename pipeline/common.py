@@ -189,7 +189,7 @@ def phone(inner, w=760, h=1340, screen='#fff', frame='#111', status_color='#111'
             f'<div style="position:relative;width:{sw}px;height:{h-44}px;border-radius:76px;background:{screen};overflow:hidden">'
             f'<div style="position:absolute;left:0;right:0;top:0;height:86px;display:flex;align-items:center;justify-content:space-between;padding:0 54px;font:700 28px/1 \'DM Sans\',sans-serif;color:{status_color};z-index:3">'
             f'<span>{hora}</span><span style="width:150px;height:40px;border-radius:20px;background:{frame}"></span><span style="letter-spacing:2px">●●● ▮</span></div>'
-            f'<div style="position:absolute;left:0;right:0;top:86px;bottom:0">{inner}</div></div></div>')
+            f'<div style="position:absolute;left:0;right:0;top:86px;bottom:0;overflow:hidden">{inner}</div></div></div>')
 
 def bubble(txt, me=False, nome='', hora='', bg_me='#D9FDD3', bg='#fff', fg='#111', fs=34):
     al = 'flex-end' if me else 'flex-start'

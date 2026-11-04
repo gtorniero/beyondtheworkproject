@@ -1,4 +1,4 @@
-RETROZAP · PACK SEMANAL 02 (16 a 22/11/2026) · rodada 2
+RETROZAP · PACK SEMANAL 02 (16 a 22/11/2026) · rodada 3
 Reels: 1080×1920, 30 fps, H.264, áudio mudo (escolha o áudio no Instagram). Capa: 1080×1920 com a arte 4:5 no centro.
 Feed: 1080×1350. Stories: 1080×1920, sem adesivo (o CTA está na arte).
 Editáveis: HTML com fontes e SVGs embutidos (abre no navegador; reels tocam sozinhos, clique para recomeçar).
@@ -173,14 +173,14 @@ Notas: Sem adesivo: frase pronta para print (motivo de envio: identidade). Casa 
 
 ------------------------------------------------------------
 
-S02-R-S6-v2 · seg 16/11 · STORY · A tela da retrospectiva no celular
+S02-R-S6-v3 · seg 16/11 · STORY · A tela da retrospectiva no celular
 Arquivos: R-S6.png
 
-Notas: v2 (você reprovou a frase): tela do produto num celular genérico, Ato II com três troféus. Dados de exemplo (Turma do Churras), marcados.
+Notas: v3: sem "1º grupo grátis" e sem etiqueta (seu comentário: é conteúdo, não site). Tela da retrospectiva num celular, Ato II com três troféus.
 
 ------------------------------------------------------------
 
-S02-R-S10-v2 · sex 20/11 · STORY · Conversa do grupo no feriado (simulação)
+S02-R-S10-v3 · sex 20/11 · STORY · Conversa do grupo no feriado (simulação)
 Arquivos: R-S10.png
 
-Notas: v2 (você reprovou a frase): conversa do grupo num celular genérico, sem marca de app. Simulação com nomes de exemplo, marcada.
+Notas: v3: sem etiqueta de simulação (seu comentário). Conversa do grupo no feriado num celular genérico, sem marca de app.

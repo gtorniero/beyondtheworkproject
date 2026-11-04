@@ -1,0 +1,69 @@
+{
+ "pack": "S02",
+ "pieces": [
+  {
+   "id": "R-S6",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "",
+   "title": "A tela da retrospectiva no celular",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v3: sem \"1º grupo grátis\" e sem etiqueta (seu comentário: é conteúdo, não site). Tela da retrospectiva num celular, Ato II com três troféus.",
+   "version": "S02-R-S6-v3",
+   "v": 3,
+   "hash": "210b557db6",
+   "media": [
+    "R-S6.png"
+   ],
+   "editable": "editaveis/R-S6.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "R-S10",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 5,
+   "dia": "sex 20/11",
+   "slot": "",
+   "title": "Conversa do grupo no feriado (simulação)",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v3: sem etiqueta de simulação (seu comentário). Conversa do grupo no feriado num celular genérico, sem marca de app.",
+   "version": "S02-R-S10-v3",
+   "v": 3,
+   "hash": "0a4d0c8c45",
+   "media": [
+    "R-S10.png"
+   ],
+   "editable": "editaveis/R-S10.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-R7",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "19h45",
+   "title": "Por dentro do relatório do RUN DNA",
+   "kind": "produto",
+   "caption": "Por dentro do relatório do RUN DNA. 📊\n\n1. Seu perfil: peso, ritmo, volume, objetivo, pisada e dores.\n2. O finalista, com DNA Score.\n3. Por que ele, em três motivos.\n4. O top 3 comparado.\n5. O custo por km.\n6. Quando trocar.\n\n212 tênis comparados com o seu corpo, o seu ritmo e as suas dores. Calibrado com atletas e corredores.\nManda pro seu parceiro de corrida 👇\nTeste grátis. Relatório R$ 9,99. Link na bio.\n#rundna #sportdna #corrida #corridaderua #tenisdecorrida",
+   "notes": "Rodada 2: você pediu reel com a tela do relatório completo no lugar do story D-S6. A tela rola pelas 6 partes do relatório num celular genérico; modelos sem marca. Entra na segunda 19h45, como 2º post de feed do dia (o carrossel D-C3 sai às 12h30).",
+   "version": "S02-D-R7-v1",
+   "v": 1,
+   "hash": "ce35abfee9",
+   "media": [
+    "D-R7.mp4",
+    "D-R7-capa.png"
+   ],
+   "editable": "editaveis/D-R7.html",
+   "duration": 22.0,
+   "sticker": ""
+  }
+ ]
+}

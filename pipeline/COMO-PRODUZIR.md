@@ -6,7 +6,8 @@ Use este runbook quando uma tarefa agendada pedir para liberar, ajustar ou produ
 - **Mesa de Aprovação:** https://claude.ai/artifact/KAwUuKVHZgYknpdquaTkwd
   - Banco `reviews/<id>`: no S01 a chave é o id da peça; do S02 em diante, `<SNN>_<id>`.
   - Banco `pack/<SNN>`: feedback geral, `ultimaRodada`, `enviadaEm`.
-  - Banco `rodadas/R<n>`: foto de cada rodada finalizada, com o campo `resumo`.
+  - Banco `rodadas/<SNN>_R<n>` (do S02 rodada 3 em diante; antes era `rodadas/R<n>`, e o R2 do S02 sobrescreveu o R2 do S01): foto de cada rodada finalizada, com o campo `resumo`.
+  - Ao finalizar a rodada, a Mesa limpa `pack/<SNN>.geral` e guarda o texto em `pack/<SNN>.geralHist` (aparece no painel Aprovados). Não reaplique feedback geral que já está no histórico.
   - Leia e escreva com a ferramenta ArtifactData.
 - **Repositório:** gtorniero/beyondtheworkproject, branch `social` (nunca o `main`, que é o site).
   - Peça acesso de push com add_repo e clone só esse branch: `git clone --depth 1 -b social https://github.com/gtorniero/beyondtheworkproject btw-social`.

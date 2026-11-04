@@ -66,6 +66,8 @@ Teste a fazer: reels da SPORT DNA às 7h em uma semana e às 19h45 na outra, par
 - **Variar o design de verdade:** simular um celular (moldura genérica, sem marca de aparelho), bloco de notas, conversa de grupo (sem marca de app, com etiqueta de simulação), tela do produto.
 - **Mostrar o produto em uso:** como se usa, exemplo de relatório da SPORT DNA, exemplo de uma partida no Quiddo, exemplo de uma retrospectiva do Retrozap. Sempre com etiqueta "dados de exemplo".
 - **Menos peça só de texto:** frase solta e glossário puro foram reprovados por serem básicos. Cada peça precisa de um objeto concreto na tela.
+- **Peça de conteúdo não é site** (Gui, S02 rodada 2): nada de "1º grupo grátis", preço ou etiqueta "dados de exemplo"/"simulação" em story de conteúdo. Nomes e dados fictícios continuam fictícios (Turma do Churras, modelos sem marca), só sem etiqueta.
+- **Produto complexo vira reel** (Gui, S02 rodada 2): relatório da SPORT DNA, partida do Quiddo e retrospectiva do Retrozap se mostram em reel com a tela rolando e completa. Story estático com tela de produto faz o produto parecer simples.
 - Helpers: `C.phone()` e `C.bubble()` em `pipeline/common.py`.
 
 ## 5. Backlog e harmonia

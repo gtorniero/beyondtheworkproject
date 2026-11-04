@@ -406,12 +406,11 @@ def r_s6():
     body = f'''<section class="page" style="width:1080px;height:1920px">
       <div class="abs t" style="left:80px;top:260px;width:920px;font-size:76px">Assim chega a retrospectiva do seu <span class="hl">grupo.</span></div>
       <div class="abs" style="left:200px;top:500px">{C.phone(tela, 680, 950, screen='#1A0B2E', frame='#0B0414', status_color='#FFF4E0', hora='21:40')}</div>
-      <div class="abs" style="left:80px;top:1475px;font-size:36px;font-weight:700;color:var(--manga)">1º grupo grátis · retrozap.com.br</div>
-      <div class="abs sim" style="left:80px;top:1530px">DADOS DE EXEMPLO · TURMA DO CHURRAS</div>
+      <div class="abs" style="left:80px;top:1480px">{assinatura(300)}</div>
     </section>'''
     piece(id='R-S6', fmt='story', day=1, title='A tela da retrospectiva no celular', w=1080, h=1920, html=doc('R-S6', FONTS, CSS, body, 1080, 1920),
           caption='(story, sem legenda)', sticker='', kind='story',
-          notes='v2 (você reprovou a frase): tela do produto num celular genérico, Ato II com três troféus. Dados de exemplo (Turma do Churras), marcados.')
+          notes='v3: sem "1º grupo grátis" e sem etiqueta (seu comentário: é conteúdo, não site). Tela da retrospectiva num celular, Ato II com três troféus.')
 
 def r_s10():
     """v2: conversa do grupo no feriado, num celular (simulação, sem marca de app)."""
@@ -424,12 +423,11 @@ def r_s10():
     tela = f'<div style="position:absolute;inset:0;background:#F3EDE2">{head}<div style="padding-top:16px">{msgs}</div></div>'
     body = f'''<section class="page" style="width:1080px;height:1920px;background:var(--manga);color:var(--noite)">
       <div class="abs t" style="left:80px;top:260px;width:920px;font-size:84px">Feriado no grupo, versão real.</div>
-      <div class="abs" style="left:200px;top:470px">{C.phone(tela, 680, 980, screen='#F3EDE2', frame='#1A0B2E', status_color='#FFF4E0', hora='09:41')}</div>
+      <div class="abs" style="left:200px;top:470px">{C.phone(tela, 680, 980, screen='#F3EDE2', frame='#1A0B2E', status_color='#1A0B2E', hora='09:41')}</div>
       <div class="abs" style="left:80px;top:1475px;font-size:36px;font-weight:700">No fim do ano, isso vira troféu.</div>
-      <div class="abs sim" style="left:80px;top:1530px;opacity:.85">SIMULAÇÃO · NOMES DE EXEMPLO</div>
     </section>'''
     piece(id='R-S10', fmt='story', day=5, title='Conversa do grupo no feriado (simulação)', w=1080, h=1920, html=doc('R-S10', FONTS, CSS, body, 1080, 1920),
           caption='(story, sem legenda)', sticker='', kind='story',
-          notes='v2 (você reprovou a frase): conversa do grupo num celular genérico, sem marca de app. Simulação com nomes de exemplo, marcada.')
+          notes='v3: sem etiqueta de simulação (seu comentário). Conversa do grupo no feriado num celular genérico, sem marca de app.')
 
 r_c3(); r_r4(); r_c4(); r_r5(); r_c5(); r_r6(); r_c6(); r_stories(); r_s6(); r_s10()

@@ -38,11 +38,11 @@ Os MP4 saem sem música. Se o Business Suite mostrar uma biblioteca de músicas 
 | Data | Hora | Marca | Formato | Peça | Como |
 |---|---|---|---|---|---|
 | 16/11/2026 (seg) | 12h | Quiddo | story | Q-S6 (v1) | Business Suite · story |
-| 16/11/2026 (seg) | 12h | Retrozap | story | R-S6 (v2) | Business Suite · story |
-| 16/11/2026 (seg) | 12h | SPORT DNA | story | D-S6 (v2) | Business Suite · story |
+| 16/11/2026 (seg) | 12h | Retrozap | story | R-S6 (v3) | Business Suite · story |
 | 16/11/2026 (seg) | 12h30 | Quiddo | carrossel | Q-C3 (v1) | Business Suite · post |
 | 16/11/2026 (seg) | 12h30 | Retrozap | carrossel | R-C3 (v1) | Business Suite · post |
 | 16/11/2026 (seg) | 12h30 | SPORT DNA | carrossel | D-C3 (v1) | Business Suite · post |
+| 16/11/2026 (seg) | 19h45 | SPORT DNA | reel | D-R7 (v1) | Business Suite · reel |
 | 17/11/2026 (ter) | 12h | Quiddo | story | Q-S7 (v1) | Business Suite · story |
 | 17/11/2026 (ter) | 12h | Retrozap | story | R-S7 (v1) | Business Suite · story |
 | 17/11/2026 (ter) | 12h | SPORT DNA | story | D-S7 (v1) | Business Suite · story |
@@ -62,7 +62,7 @@ Os MP4 saem sem música. Se o Business Suite mostrar uma biblioteca de músicas 
 | 19/11/2026 (qui) | 19h45 | Retrozap | reel | R-R5 (v1) | Business Suite · reel |
 | 19/11/2026 (qui) | 19h45 | SPORT DNA | reel | D-R5 (v1) | Business Suite · reel |
 | 20/11/2026 (sex) | 12h | Quiddo | story | Q-S10 (v1) | Business Suite · story |
-| 20/11/2026 (sex) | 12h | Retrozap | story | R-S10 (v2) | Business Suite · story |
+| 20/11/2026 (sex) | 12h | Retrozap | story | R-S10 (v3) | Business Suite · story |
 | 20/11/2026 (sex) | 12h | SPORT DNA | story | D-S10 (v1) | Business Suite · story |
 | 20/11/2026 (sex) | 12h30 | Quiddo | carrossel | Q-C5 (v1) | Business Suite · post |
 | 20/11/2026 (sex) | 12h30 | Retrozap | carrossel | R-C5 (v1) | Business Suite · post |
