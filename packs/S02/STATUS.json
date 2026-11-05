@@ -154,6 +154,16 @@
    "status_mesa": "aprovado"
   },
   {
+   "peca": "R-R7",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "seg 16/11",
+   "hora": "19h45",
+   "versao": "S02-R-R7-v1",
+   "liberado": false,
+   "status_mesa": "pendente"
+  },
+  {
    "peca": "R-R4",
    "marca": "Retrozap",
    "formato": "reel",
@@ -264,16 +274,6 @@
    "status_mesa": "aprovado"
   },
   {
-   "peca": "R-S6",
-   "marca": "Retrozap",
-   "formato": "story",
-   "dia": "seg 16/11",
-   "hora": "12h",
-   "versao": "S02-R-S6-v3",
-   "liberado": false,
-   "status_mesa": "reprovado"
-  },
-  {
    "peca": "R-S10",
    "marca": "Retrozap",
    "formato": "story",
@@ -299,7 +299,7 @@
    "formato": "reel",
    "dia": "seg 16/11",
    "hora": "19h45",
-   "versao": "S02-D-R7-v1",
+   "versao": "S02-D-R7-v2",
    "liberado": false,
    "status_mesa": "reprovado"
   },

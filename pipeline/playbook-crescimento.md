@@ -68,6 +68,8 @@ Teste a fazer: reels da SPORT DNA às 7h em uma semana e às 19h45 na outra, par
 - **Menos peça só de texto:** frase solta e glossário puro foram reprovados por serem básicos. Cada peça precisa de um objeto concreto na tela.
 - **Peça de conteúdo não é site** (Gui, S02 rodada 2): nada de "1º grupo grátis", preço ou etiqueta "dados de exemplo"/"simulação" em story de conteúdo. Nomes e dados fictícios continuam fictícios (Turma do Churras, modelos sem marca), só sem etiqueta.
 - **Produto complexo vira reel** (Gui, S02 rodada 2): relatório da SPORT DNA, partida do Quiddo e retrospectiva do Retrozap se mostram em reel com a tela rolando e completa. Story estático com tela de produto faz o produto parecer simples.
+- **Mostrar o produto como gravação de tela** (Gui, S02 rodada 3): reel em tela cheia com o indicador vermelho de gravação, a barra de endereço do site, toques visíveis e o fluxo real (perguntas, análise, relatório; ou subir a conversa e os 3 atos). Legenda curta por cima. Helpers `C.rec_bar()`, `C.tap()`, `C.legenda()`.
+- O ideal é gravar o app de verdade: daqui a rede bloqueia os sites das marcas e os repositórios dos apps não estão na sessão; por ora as telas são recriadas no estilo do app (decisão do Gui, 05/11).
 - Helpers: `C.phone()` e `C.bubble()` em `pipeline/common.py`.
 
 ## 5. Backlog e harmonia

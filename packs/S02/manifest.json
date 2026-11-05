@@ -418,6 +418,32 @@
    ]
   },
   {
+   "id": "R-R7",
+   "brand": "Retrozap",
+   "fmt": "reel",
+   "day": 1,
+   "dia": "seg 16/11",
+   "slot": "19h45",
+   "title": "Gravação de tela: a retrospectiva da Turma do Churras",
+   "kind": "produto",
+   "caption": "Gravei a retrospectiva do meu grupo. 🏆\n\nSobe a conversa, o Retrozap lê tudo no navegador e entrega em três atos: há quanto tempo vocês existem, os troféus um por um e o ano em números.\n\nManda no grupo e descobre quem é o Pedrão de vocês 👇\nretrozap.com.br\n#retrozap #retrospectiva2026 #grupodeamigos #amigos #resenha",
+   "notes": "Rodada 3: você pediu reel com vídeo da retrospectiva como gravação de tela do app. Barra de gravação, endereço retrozap.com.br, toques visíveis e os 3 atos do produto (Turma do Churras). Telas recriadas no estilo do app, não capturadas do app real.",
+   "version": "S02-R-R7-v1",
+   "v": 1,
+   "hash": "3240ed2d56",
+   "media": [
+    "R-R7.mp4",
+    "R-R7-capa.png"
+   ],
+   "editable": "editaveis/R-R7.html",
+   "duration": 26.0,
+   "sticker": "",
+   "poster": "R-R7-poster.jpg",
+   "cover": "R-R7-capa.jpg",
+   "cover45": "R-R7-capa45.jpg",
+   "mudou": "Novo, no lugar do story R-S6 (seu comentário: reel com a retrospectiva como gravação de tela do app). Barra de gravação, endereço do site, toques e os 3 atos. Entra seg 16/11 19h45."
+  },
+  {
    "id": "R-R4",
    "brand": "Retrozap",
    "fmt": "reel",
@@ -711,31 +737,6 @@
    ]
   },
   {
-   "id": "R-S6",
-   "brand": "Retrozap",
-   "fmt": "story",
-   "day": 1,
-   "dia": "seg 16/11",
-   "slot": "",
-   "title": "A tela da retrospectiva no celular",
-   "kind": "story",
-   "caption": "(story, sem legenda)",
-   "notes": "v3: sem \"1º grupo grátis\" e sem etiqueta (seu comentário: é conteúdo, não site). Tela da retrospectiva num celular, Ato II com três troféus.",
-   "version": "S02-R-S6-v3",
-   "v": 3,
-   "hash": "210b557db6",
-   "media": [
-    "R-S6.png"
-   ],
-   "editable": "editaveis/R-S6.html",
-   "duration": null,
-   "sticker": "",
-   "previews": [
-    "R-S6.jpg"
-   ],
-   "mudou": "v3: saiu \"1º grupo grátis\" e a etiqueta de dados de exemplo (seu comentário: é conteúdo, não site). Ficou a tela da retrospectiva e a assinatura."
-  },
-  {
    "id": "R-S10",
    "brand": "Retrozap",
    "fmt": "story",
@@ -801,24 +802,24 @@
    "day": 1,
    "dia": "seg 16/11",
    "slot": "19h45",
-   "title": "Por dentro do relatório do RUN DNA",
+   "title": "Gravação de tela: teste e relatório do SURF DNA",
    "kind": "produto",
-   "caption": "Por dentro do relatório do RUN DNA. 📊\n\n1. Seu perfil: peso, ritmo, volume, objetivo, pisada e dores.\n2. O finalista, com DNA Score.\n3. Por que ele, em três motivos.\n4. O top 3 comparado.\n5. O custo por km.\n6. Quando trocar.\n\n212 tênis comparados com o seu corpo, o seu ritmo e as suas dores. Calibrado com atletas e corredores.\nManda pro seu parceiro de corrida 👇\nTeste grátis. Relatório R$ 9,99. Link na bio.\n#rundna #sportdna #corrida #corridaderua #tenisdecorrida",
-   "notes": "Rodada 2: você pediu reel com a tela do relatório completo no lugar do story D-S6. A tela rola pelas 6 partes do relatório num celular genérico; modelos sem marca. Entra na segunda 19h45, como 2º post de feed do dia (o carrossel D-C3 sai às 12h30).",
-   "version": "S02-D-R7-v1",
-   "v": 1,
-   "hash": "ce35abfee9",
+   "caption": "Fiz o teste do SURF DNA. Olha o relatório. 🏄\n\nPeso, mar, prancha de hoje e mais umas perguntas. A análise grátis já mostra o tipo que combina.\nO relatório completo traz o tipo com o grau de encaixe, as medidas e a litragem, rabeta, quilhas, material e a comparação com a prancha atual.\n\n13 tipos de prancha e 422 casos reais por trás. Parece simples. Não é.\nManda pro amigo que está com a prancha errada 👇\nAnálise grátis. Relatório R$ 19,99. Link na bio.\n#surfdna #sportdna #surf #pranchadesurf #surfbrasil",
+   "notes": "v2 da rodada 3 (você pediu exemplo real): gravação de tela do teste e do relatório do SURF DNA em sportdna.com.br, com toques visíveis. Estrutura do relatório e números iguais aos do produto (18 a 23 perguntas, análise grátis, relatório R$ 19,99, 13 tipos, 422 casos). Telas recriadas no estilo do app, não capturadas do app real.",
+   "version": "S02-D-R7-v2",
+   "v": 2,
+   "hash": "973c7de282",
    "media": [
     "D-R7.mp4",
     "D-R7-capa.png"
    ],
    "editable": "editaveis/D-R7.html",
-   "duration": 22.0,
+   "duration": 28.0,
    "sticker": "",
    "poster": "D-R7-poster.jpg",
    "cover": "D-R7-capa.jpg",
    "cover45": "D-R7-capa45.jpg",
-   "mudou": "Novo, no lugar do story D-S6 (seu comentário: tem que ser reel com o relatório completo). A tela rola pelas 6 partes do relatório. Entra seg 16/11 19h45, como 2º post de feed do dia."
+   "mudou": "v2 (seu comentário: exemplo real): gravação de tela do teste e do relatório do SURF DNA, com a estrutura real do relatório (tipo e encaixe, medidas e litragem, rabeta, quilhas, material, comparação com a atual)."
   },
   {
    "id": "D-R4",

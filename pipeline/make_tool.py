@@ -39,10 +39,10 @@ for p in P:
     shutil.copy(O / p['editable'], T / p['editable'])
 MUDOU = {
  'Q-R4': 'Veio do S01 sem decisão: mesma arte, data nova (sáb 21/11).',
- 'R-S6': 'v3: saiu "1º grupo grátis" e a etiqueta de dados de exemplo (seu comentário: é conteúdo, não site). Ficou a tela da retrospectiva e a assinatura.',
  'R-S10': 'v3: saiu a etiqueta de simulação (seu comentário).',
  'D-S8': 'Linha nova (seu comentário: "mto basico"): bloco de notas no celular e o resultado do SURF DNA ao lado.',
- 'D-R7': 'Novo, no lugar do story D-S6 (seu comentário: tem que ser reel com o relatório completo). A tela rola pelas 6 partes do relatório. Entra seg 16/11 19h45, como 2º post de feed do dia.',
+ 'R-R7': 'Novo, no lugar do story R-S6 (seu comentário: reel com a retrospectiva como gravação de tela do app). Barra de gravação, endereço do site, toques e os 3 atos. Entra seg 16/11 19h45.',
+ 'D-R7': 'v2 (seu comentário: exemplo real): gravação de tela do teste e do relatório do SURF DNA, com a estrutura real do relatório (tipo e encaixe, medidas e litragem, rabeta, quilhas, material, comparação com a atual).',
 }
 STORIES_CTA = 'O Instagram não agenda adesivos e você não vai postar nada: a enquete/quiz/link virou CTA desenhado na arte ("responde no direct", "link na bio"). Assim o DOT agenda tudo.'
 for p in P:

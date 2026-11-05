@@ -430,4 +430,96 @@ def r_s10():
           caption='(story, sem legenda)', sticker='', kind='story',
           notes='v3: sem etiqueta de simulação (seu comentário). Conversa do grupo no feriado num celular genérico, sem marca de app.')
 
-r_c3(); r_r4(); r_c4(); r_r5(); r_c5(); r_r6(); r_c6(); r_stories(); r_s6(); r_s10()
+
+# =====================================================================================
+# R-R7 · Reel · Gravação de tela: a retrospectiva da Turma do Churras (seg 19h45) · rodada 3: no lugar do story R-S6
+# =====================================================================================
+def r_r7():
+    T = 26.0
+    tl = TL(T)
+    top = 200  # abaixo da barra de status e da barra de endereço
+    # cena 1: subir a conversa (0–4,6)
+    s1 = f'''<div {tl.scene(0, 4.6, fin=False, fade=.12)}>
+      <div class="abs" style="left:0;right:0;top:{top}px;bottom:0;background:var(--noite)"></div>
+      <div class="abs" style="left:70px;top:{top+70}px">{assinatura(380)}</div>
+      <div class="abs t" style="left:70px;top:{top+230}px;width:940px;font-size:88px">A retrospectiva do seu grupo.</div>
+      <div class="abs" style="left:70px;top:{top+500}px;width:940px;height:300px;border:4px dashed var(--linha);border-radius:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;{at(.2,'fade')}">
+        {icon('paperclip', 110)}<div style="font-size:40px;font-weight:700">Escolher a conversa exportada</div></div>
+      <div class="abs" style="left:70px;top:{top+840}px;width:940px;background:var(--acai);border-radius:30px;padding:26px 30px;display:flex;align-items:center;gap:22px;{at(1.5,'rise', .35)}">
+        {icon('clipboard', 80)}<div style="flex:1"><div style="font-size:36px;font-weight:700">Conversa · Turma do Churras.zip</div>
+        <div style="height:14px;border-radius:7px;background:var(--acai2);margin-top:16px;overflow:hidden"><div style="height:14px;background:var(--manga);transform-origin:left;{at(1.8,'grow', 1.8)}"></div></div></div></div>
+      <div class="abs" style="left:70px;top:{top+1060}px;width:940px;display:flex;gap:18px;align-items:center;font-size:34px;color:var(--neblina);{at(2.4,'fade')}">{icon('lock', 64)}Lendo no seu navegador. Nada sai do celular.</div>
+      <div class="abs mono" style="left:70px;top:{top+1150}px;font-size:34px;color:var(--manga);{at(3.6,'fade')}">18.402 mensagens lidas ✓</div>
+      {C.tap(540, top+650, .9)}
+    </div>'''
+    # cena 2: Ato I (4,6–9,6)
+    anos = [('2021', 18), ('2022', 34), ('2023', 52), ('2024', 61), ('2025', 78), ('2026', 100)]
+    barras = ''.join(f'<div style="display:flex;flex-direction:column;align-items:center;gap:14px;justify-content:flex-end;height:560px"><div style="width:120px;height:{v*5:.0f}px;border-radius:20px 20px 6px 6px;background:{"var(--manga)" if a=="2026" else "var(--piscina)"};transform-origin:bottom;animation:growY .7s cubic-bezier(.2,.8,.2,1) {4.9 + i*.15:.2f}s 1 both"></div><span class="mono" style="font-size:30px">{a}</span></div>' for i, (a, v) in enumerate(anos))
+    s2 = f'''<div {tl.scene(4.6, 9.6, fade=.12)}>
+      <div class="abs" style="left:0;right:0;top:{top}px;bottom:0;background:var(--noite)"></div>
+      <div class="abs mono" style="left:70px;top:{top+70}px;font-size:32px;color:var(--manga)">ATO I · CONHECENDO O GRUPO</div>
+      <div class="abs t" style="left:70px;top:{top+130}px;width:940px;font-size:84px;{at(4.7,'rise')}">A Turma do Churras existe há 5 anos.</div>
+      <div class="abs" style="left:70px;top:{top+430}px;width:940px;display:flex;justify-content:space-between">{barras}</div>
+      <div class="abs" style="left:70px;top:{top+1080}px;font-size:38px;font-weight:700;{at(6.4,'fade')}">E 2026 foi o ano em que vocês mais falaram.</div>
+    </div>'''
+    # cena 3: Ato II, troféus revelados com toque (9,6–19,2)
+    trof = [('speech-balloon', 'O Tagarela', 'Pedrão', '3.940 mensagens em 2026', 'var(--manga)'),
+            ('studio-microphone', 'Podcaster do Grupo', 'Juninho', '171 áudios · 6 h 12 min', 'var(--piscina)'),
+            ('ghost', 'O Fantasma', 'Rafa', 'visualizou e sumiu 212 vezes', 'var(--uva)')]
+    sc3 = ''
+    t = 9.6
+    for i, (ic, cat, nome, dado, cor) in enumerate(trof):
+        sc3 += f'''<div {tl.scene(t, t + 3.2, fade=.1)}>
+          <div class="abs" style="left:0;right:0;top:{top}px;bottom:0;background:var(--noite)"></div>
+          <div class="abs mono" style="left:70px;top:{top+70}px;font-size:32px;color:var(--manga)">ATO II · TROFÉU {i+1} DE 7</div>
+          <div class="abs t" style="left:70px;top:{top+130}px;width:940px;font-size:80px">{cat} vai para…</div>
+          {dots(440, top + 420, 50, 'var(--manga)', t + .2, 1)}
+          <div class="abs" style="left:390px;top:{top+340}px;{at(t + .9,'pop')}"><div style="width:300px;height:300px;border-radius:70px;background:{cor};display:flex;align-items:center;justify-content:center">{icon(ic, 230)}</div></div>
+          <div class="abs" style="left:0;right:0;top:{top+700}px;text-align:center;--r:-3deg;{at(t + 1.1,'drop', .55)}"><span class="selo t" style="font-size:140px">{nome}</span></div>
+          <div class="abs" style="left:0;right:0;top:{top+940}px;text-align:center;font-size:44px;font-weight:700;{at(t + 1.6,'rise')}">{dado}</div>
+          <div class="abs mono" style="left:0;right:0;top:{top+1150}px;text-align:center;font-size:30px;color:var(--neblina);{at(t + 2.2,'fade')}">toque para revelar o próximo</div>
+          {C.tap(540, top + 1170, t + 2.85) if i < 2 else ''}
+        </div>'''
+        t += 3.2
+    # cena 4: Ato III (19,2–23,4)
+    s4 = f'''<div {tl.scene(19.2, 23.4, fade=.12)}>
+      <div class="abs" style="left:0;right:0;top:{top}px;bottom:0;background:var(--noite)"></div>
+      <div class="abs mono" style="left:70px;top:{top+70}px;font-size:32px;color:var(--manga)">ATO III · GRAN FINALE</div>
+      <div class="abs t" style="left:70px;top:{top+130}px;width:940px;font-size:84px">Nosso 2026.</div>
+      <div class="abs" style="left:70px;top:{top+260}px;width:940px;display:grid;grid-template-columns:1fr 1fr;gap:22px">
+        <div class="box" style="padding:30px 36px;height:230px;{at(19.4,'pop')}"><div class="t hl" style="font-size:104px">18.402</div><div style="font-size:34px;margin-top:10px">mensagens</div></div>
+        <div class="box" style="padding:30px 36px;height:230px;background:var(--chiclete);color:var(--noite);{at(19.6,'pop')}"><div class="t" style="font-size:104px">2.130</div><div style="font-size:34px;margin-top:10px">áudios</div></div>
+        <div class="box" style="padding:30px 36px;height:230px;background:var(--piscina);color:var(--noite);grid-column:span 2;display:flex;align-items:center;gap:36px;{at(19.9,'pop')}">{icon('slice-of-pizza',150)}<div><div style="font-size:34px">assunto do ano</div><div class="t" style="font-size:100px">pizza</div></div></div></div>
+      <div class="abs" style="left:70px;top:{top+800}px;width:940px;height:380px;display:flex;gap:24px;align-items:flex-end;justify-content:center">
+        {''.join(f'<div style="text-align:center;{at(20.6 + k*.25,"rise")}"><div class="t" style="font-size:44px;margin-bottom:12px">{n}</div><div style="width:240px;height:{h}px;border-radius:24px 24px 0 0;background:{c};color:var(--noite);display:flex;justify-content:center;padding-top:18px"><span class="t" style="font-size:64px">{p}º</span></div></div>' for k, (n, h, c, p) in enumerate([('Juninho', 180, 'var(--piscina)', 2), ('Pedrão', 260, 'var(--manga)', 1), ('Bia', 130, 'var(--goiaba)', 3)]))}</div>
+    </div>'''
+    s5 = f'''<div {tl.scene(23.4, T, fout=False, fade=.15)}>
+      <div class="abs" style="inset:0;background:var(--noite)"></div>
+      <div class="abs" style="left:0;right:0;top:620px;display:flex;justify-content:center;{at(23.5,'pop')}">{assinatura(700)}</div>
+      <div class="abs t" style="left:0;right:0;top:900px;text-align:center;font-size:92px;{at(23.8,'rise')}">e o seu grupo?</div>
+      <div class="foot" style="top:1060px;font-size:40px;{at(24.2,'fade')}">retrozap.com.br</div>
+    </div>'''
+    rec = f'<div class="sc" style="animation:recOff {T}s linear 0s 1 both">{C.rec_bar("retrozap.com.br")}</div>'
+    leg = (C.legenda('Gravei a retrospectiva do meu grupo', .1, 4.4, y=1440) + C.legenda('Ato I: há quanto tempo vocês existem', 4.7, 9.4, y=1440) +
+           C.legenda('Ato II: os troféus, um por um', 9.7, 19.0, y=1440) + C.legenda('Ato III: o ano em números', 19.3, 23.2, y=1440))
+    kf = f'@keyframes recOff{{0%,{23.4/T*100:.3f}%{{opacity:1}}{23.5/T*100:.3f}%,100%{{opacity:0}}}}'
+    body = f'<section class="page" style="width:1080px;height:1920px;background:#000">{s1}{s2}{sc3}{s4}{s5}{rec}{leg}</section>'
+    cover_body = f'''<div class="page" style="width:1080px;height:1350px">
+      <div class="abs t" style="left:80px;top:90px;width:920px;font-size:100px">Gravei a retrospectiva do meu <span class="hl">grupo.</span></div>
+      <div class="abs" style="left:80px;top:470px;width:920px;height:800px;border-radius:50px;overflow:hidden;background:#000;border:6px solid var(--acai)">
+        <div class="abs" style="left:0;right:0;top:0;height:70px;display:flex;align-items:center;padding:0 34px"><span style="display:inline-flex;align-items:center;gap:10px;background:#FF3B30;color:#fff;border-radius:18px;padding:6px 14px;font:700 26px 'DM Sans'"><span style="width:12px;height:12px;border-radius:50%;background:#fff"></span>21:40</span></div>
+        <div class="abs" style="left:0;right:0;top:70px;bottom:0;background:var(--noite)">
+          <div class="abs mono" style="left:50px;top:40px;font-size:26px;color:var(--manga)">ATO II · TROFÉU 1 DE 7</div>
+          <div class="abs t" style="left:50px;top:90px;font-size:60px">O Tagarela vai para…</div>
+          <div class="abs" style="left:330px;top:210px"><div style="width:240px;height:240px;border-radius:56px;background:var(--manga);display:flex;align-items:center;justify-content:center">{icon('speech-balloon', 180)}</div></div>
+          <div class="abs" style="left:0;right:0;top:500px;text-align:center"><span class="selo t" style="font-size:110px">Pedrão</span></div></div></div></div>'''
+    piece(id='R-R7', fmt='reel', day=1, slot='19h45', title='Gravação de tela: a retrospectiva da Turma do Churras', total=T, poster=.42, kind='produto',
+          html=doc('R-R7', FONTS, CSS + C.REC_CSS + tl.style() + kf + '@keyframes growY{0%{transform:scaleY(0)}100%{transform:scaleY(1)}}', body, 1080, 1920, reel=True, total=T),
+          cover=cover_from_feed(cover_body, 'var(--noite)'),
+          caption=('Gravei a retrospectiva do meu grupo. 🏆\n\n'
+                   'Sobe a conversa, o Retrozap lê tudo no navegador e entrega em três atos: há quanto tempo vocês existem, os troféus um por um e o ano em números.\n\n'
+                   'Manda no grupo e descobre quem é o Pedrão de vocês 👇\nretrozap.com.br\n'
+                   '#retrozap #retrospectiva2026 #grupodeamigos #amigos #resenha'),
+          notes='Rodada 3: você pediu reel com vídeo da retrospectiva como gravação de tela do app. Barra de gravação, endereço retrozap.com.br, toques visíveis e os 3 atos do produto (Turma do Churras). Telas recriadas no estilo do app, não capturadas do app real.')
+
+r_c3(); r_r7(); r_r4(); r_c4(); r_r5(); r_c5(); r_r6(); r_c6(); r_stories(); r_s10()

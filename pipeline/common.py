@@ -196,3 +196,32 @@ def bubble(txt, me=False, nome='', hora='', bg_me='#D9FDD3', bg='#fff', fg='#111
     n = f'<div style="font-weight:700;font-size:{fs-8}px;color:#C2185B;margin-bottom:4px">{nome}</div>' if nome and not me else ''
     return (f'<div style="display:flex;justify-content:{al};margin:10px 22px"><div style="max-width:80%;background:{bg_me if me else bg};color:{fg};border-radius:22px;padding:14px 20px 10px;font:500 {fs}px/1.3 \'DM Sans\',sans-serif;box-shadow:0 2px 0 rgba(0,0,0,.08)">'
             f'{n}{txt}<div style="text-align:right;font-size:{fs-12}px;opacity:.55;margin-top:4px">{hora}</div></div></div>')
+
+# ---------------------------------------------------------------- gravação de tela (reels "como se fosse real")
+REC_CSS = """
+@keyframes tapk{0%{opacity:0;transform:translate(-50%,-50%) scale(.4)}15%{opacity:.9;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) scale(1.6)}}
+@keyframes recblink{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes fadeOut{to{opacity:0}}
+"""
+
+def rec_bar(url, hora='21:40', dark=True):
+    """Barra de status com o indicador de gravação de tela + barra de endereço genérica (sem marca de navegador)."""
+    fg = '#fff' if dark else '#111'
+    bg = '#000' if dark else '#F2F2F2'
+    ub = '#1C1C1E' if dark else '#fff'
+    return (f'<div class="abs" style="left:0;right:0;top:0;height:96px;background:{bg};display:flex;align-items:center;justify-content:space-between;padding:0 48px;font:700 34px/1 \'DM Sans\',sans-serif;color:{fg};z-index:20">'
+            f'<span style="display:inline-flex;align-items:center;gap:12px;background:#FF3B30;color:#fff;border-radius:22px;padding:8px 18px"><span style="width:16px;height:16px;border-radius:50%;background:#fff;animation:recblink 1.2s linear infinite"></span>{hora}</span>'
+            f'<span style="letter-spacing:3px;font-size:28px">●●●● ▮</span></div>'
+            f'<div class="abs" style="left:0;right:0;top:96px;height:104px;background:{bg};display:flex;align-items:center;justify-content:center;z-index:20">'
+            f'<div style="width:960px;height:76px;border-radius:22px;background:{ub};display:flex;align-items:center;justify-content:center;gap:12px;font:500 32px/1 \'DM Sans\',sans-serif;color:{fg};opacity:.92">'
+            f'<svg width="22" height="26" viewBox="0 0 22 26" style="opacity:.6"><rect x="2" y="11" width="18" height="14" rx="3" fill="currentColor"/><path d="M6 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="3" fill="none"/></svg>{url}</div></div>')
+
+def tap(x, y, t, size=110):
+    """Indicador de toque (como no 'mostrar toques' da gravação de tela)."""
+    return (f'<div class="abs" style="left:{x}px;top:{y}px;width:{size}px;height:{size}px;border-radius:50%;background:rgba(255,255,255,.55);border:4px solid rgba(0,0,0,.25);'
+            f'opacity:0;animation:tapk .6s ease-out {t:.2f}s 1 both;z-index:30"></div>')
+
+def legenda(txt, t0, t1, y=1430, total=0):
+    """Legenda curta por cima da gravação (texto do reel)."""
+    return (f'<div class="abs" style="left:60px;right:60px;top:{y}px;text-align:center;z-index:40;opacity:0;animation:fade .25s linear {t0:.2f}s 1 both{f",fadeOut .25s linear {t1:.2f}s 1 forwards" if t1 else ""}">'
+            f'<span style="display:inline-block;background:#fff;color:#111;border-radius:18px;padding:16px 28px;font:800 46px/1.2 \'DM Sans\',sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.35)">{txt}</span></div>')
