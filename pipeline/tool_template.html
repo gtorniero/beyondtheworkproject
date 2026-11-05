@@ -505,6 +505,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
     if (x==='copiar'){ try { await navigator.clipboard.writeText(resumo()); b.textContent='Copiado: cole no chat'; } catch(e){ b.textContent='Cópia bloqueada: use Exportar'; } return; }
     if (x==='enviar'){
       if (!db) return;
+      const gEl0 = document.getElementById('geral'); if (gEl0) state.geral = gEl0.value.trim();
       const txt = resumo(); try { await navigator.clipboard.writeText(txt); state.copied = true; } catch(e){ state.copied = false; }
       state.sending = true; dock();
       const now = new Date().toISOString(), d = exportData();

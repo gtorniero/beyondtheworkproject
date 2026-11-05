@@ -12,7 +12,7 @@ for m in ('quiddo', 'retrozap', 'sportdna'): importlib.import_module(m)
 order = [p['id'] for p in C.PIECES]
 P = [pieces[i] for i in order if i in pieces]
 # Canceladas pelo Gui (peças que não entram na Mesa deste pack)
-CANCELADAS = set()
+CANCELADAS = {'R-R7', 'D-R7'}  # Gui, S02 rodada 3: cancelados por ora (voltam quando der para gravar o app de verdade)
 P = [p for p in P if p['id'] not in CANCELADAS]
 missing = [i for i in order if i not in pieces]
 SRC = {p['id']: p for p in C.PIECES}
@@ -48,7 +48,9 @@ STORIES_CTA = 'O Instagram não agenda adesivos e você não vai postar nada: a 
 for p in P:
     if p['id'] in MUDOU: p['mudou'] = MUDOU[p['id']]
     if p['fmt'] == 'story' and 'Sem adesivo: o CTA' in p.get('sticker', ''): p['mudou'] = STORIES_CTA + (' ' + MUDOU[p['id']] if p['id'] in MUDOU and p['id'] != 'Q-S3' else '')
-RODADA = max(p['v'] for p in P)
+# rodada = última processada + 1 (antes era a maior versão, que repetia o número)
+_rp = json.loads((R / 'state' / 'rodadas-processadas.json').read_text()) if (R / 'state' / 'rodadas-processadas.json').exists() else {}
+RODADA = _rp.get(C.PACK, 0) + 1
 GUIA = guia.guia_md(P)
 FINAL = {}
 # grade: feed do pack anterior (apagado na aba de grade da Mesa)

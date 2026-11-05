@@ -1,7 +1,7 @@
 {
  "pack": "S02",
  "liberadas": 40,
- "total": 42,
+ "total": 40,
  "pecas": [
   {
    "peca": "Q-C3",
@@ -154,16 +154,6 @@
    "status_mesa": "aprovado"
   },
   {
-   "peca": "R-R7",
-   "marca": "Retrozap",
-   "formato": "reel",
-   "dia": "seg 16/11",
-   "hora": "19h45",
-   "versao": "S02-R-R7-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
-  },
-  {
    "peca": "R-R4",
    "marca": "Retrozap",
    "formato": "reel",
@@ -292,16 +282,6 @@
    "versao": "S02-D-C3-v1",
    "liberado": true,
    "status_mesa": "aprovado"
-  },
-  {
-   "peca": "D-R7",
-   "marca": "SPORT DNA",
-   "formato": "reel",
-   "dia": "seg 16/11",
-   "hora": "19h45",
-   "versao": "S02-D-R7-v2",
-   "liberado": false,
-   "status_mesa": "reprovado"
   },
   {
    "peca": "D-R4",

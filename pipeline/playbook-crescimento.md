@@ -69,7 +69,7 @@ Teste a fazer: reels da SPORT DNA às 7h em uma semana e às 19h45 na outra, par
 - **Peça de conteúdo não é site** (Gui, S02 rodada 2): nada de "1º grupo grátis", preço ou etiqueta "dados de exemplo"/"simulação" em story de conteúdo. Nomes e dados fictícios continuam fictícios (Turma do Churras, modelos sem marca), só sem etiqueta.
 - **Produto complexo vira reel** (Gui, S02 rodada 2): relatório da SPORT DNA, partida do Quiddo e retrospectiva do Retrozap se mostram em reel com a tela rolando e completa. Story estático com tela de produto faz o produto parecer simples.
 - **Mostrar o produto como gravação de tela** (Gui, S02 rodada 3): reel em tela cheia com o indicador vermelho de gravação, a barra de endereço do site, toques visíveis e o fluxo real (perguntas, análise, relatório; ou subir a conversa e os 3 atos). Legenda curta por cima. Helpers `C.rec_bar()`, `C.tap()`, `C.legenda()`.
-- O ideal é gravar o app de verdade: daqui a rede bloqueia os sites das marcas e os repositórios dos apps não estão na sessão; por ora as telas são recriadas no estilo do app (decisão do Gui, 05/11).
+- **Recriação não serve** (Gui, S02 rodada 3): R-R7 e D-R7 recriados foram cancelados. Para gravação de tela, usar o app real ou os artefatos que simulam os apps (ex.: "Retrozap", "Retrozap onboarding v2", "Board Match", "Racket Match", "Tenis Match" na galeria): ler com Artifact read, abrir no Playwright e gravar a interação de verdade. Confirmar com o Gui qual artefato é o atual de cada app antes de produzir.
 - Helpers: `C.phone()` e `C.bubble()` em `pipeline/common.py`.
 
 ## 5. Backlog e harmonia

@@ -418,32 +418,6 @@
    ]
   },
   {
-   "id": "R-R7",
-   "brand": "Retrozap",
-   "fmt": "reel",
-   "day": 1,
-   "dia": "seg 16/11",
-   "slot": "19h45",
-   "title": "Gravação de tela: a retrospectiva da Turma do Churras",
-   "kind": "produto",
-   "caption": "Gravei a retrospectiva do meu grupo. 🏆\n\nSobe a conversa, o Retrozap lê tudo no navegador e entrega em três atos: há quanto tempo vocês existem, os troféus um por um e o ano em números.\n\nManda no grupo e descobre quem é o Pedrão de vocês 👇\nretrozap.com.br\n#retrozap #retrospectiva2026 #grupodeamigos #amigos #resenha",
-   "notes": "Rodada 3: você pediu reel com vídeo da retrospectiva como gravação de tela do app. Barra de gravação, endereço retrozap.com.br, toques visíveis e os 3 atos do produto (Turma do Churras). Telas recriadas no estilo do app, não capturadas do app real.",
-   "version": "S02-R-R7-v1",
-   "v": 1,
-   "hash": "3240ed2d56",
-   "media": [
-    "R-R7.mp4",
-    "R-R7-capa.png"
-   ],
-   "editable": "editaveis/R-R7.html",
-   "duration": 26.0,
-   "sticker": "",
-   "poster": "R-R7-poster.jpg",
-   "cover": "R-R7-capa.jpg",
-   "cover45": "R-R7-capa45.jpg",
-   "mudou": "Novo, no lugar do story R-S6 (seu comentário: reel com a retrospectiva como gravação de tela do app). Barra de gravação, endereço do site, toques e os 3 atos. Entra seg 16/11 19h45."
-  },
-  {
    "id": "R-R4",
    "brand": "Retrozap",
    "fmt": "reel",
@@ -794,32 +768,6 @@
     "D-C3-5.jpg",
     "D-C3-6.jpg"
    ]
-  },
-  {
-   "id": "D-R7",
-   "brand": "SPORT DNA",
-   "fmt": "reel",
-   "day": 1,
-   "dia": "seg 16/11",
-   "slot": "19h45",
-   "title": "Gravação de tela: teste e relatório do SURF DNA",
-   "kind": "produto",
-   "caption": "Fiz o teste do SURF DNA. Olha o relatório. 🏄\n\nPeso, mar, prancha de hoje e mais umas perguntas. A análise grátis já mostra o tipo que combina.\nO relatório completo traz o tipo com o grau de encaixe, as medidas e a litragem, rabeta, quilhas, material e a comparação com a prancha atual.\n\n13 tipos de prancha e 422 casos reais por trás. Parece simples. Não é.\nManda pro amigo que está com a prancha errada 👇\nAnálise grátis. Relatório R$ 19,99. Link na bio.\n#surfdna #sportdna #surf #pranchadesurf #surfbrasil",
-   "notes": "v2 da rodada 3 (você pediu exemplo real): gravação de tela do teste e do relatório do SURF DNA em sportdna.com.br, com toques visíveis. Estrutura do relatório e números iguais aos do produto (18 a 23 perguntas, análise grátis, relatório R$ 19,99, 13 tipos, 422 casos). Telas recriadas no estilo do app, não capturadas do app real.",
-   "version": "S02-D-R7-v2",
-   "v": 2,
-   "hash": "973c7de282",
-   "media": [
-    "D-R7.mp4",
-    "D-R7-capa.png"
-   ],
-   "editable": "editaveis/D-R7.html",
-   "duration": 28.0,
-   "sticker": "",
-   "poster": "D-R7-poster.jpg",
-   "cover": "D-R7-capa.jpg",
-   "cover45": "D-R7-capa45.jpg",
-   "mudou": "v2 (seu comentário: exemplo real): gravação de tela do teste e do relatório do SURF DNA, com a estrutura real do relatório (tipo e encaixe, medidas e litragem, rabeta, quilhas, material, comparação com a atual)."
   },
   {
    "id": "D-R4",
