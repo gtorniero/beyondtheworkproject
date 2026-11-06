@@ -183,6 +183,33 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
 .tw{overflow-x:auto}
 @media (max-width:760px){header{position:static}}
 @media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+/* orgânico × ADs */
+.tipo{display:flex;flex-wrap:wrap;gap:8px;padding-block:0 12px}
+.tipo button{flex:1 1 260px;max-width:440px;text-align:left;border:1px solid #3A3937;background:transparent;color:#E6E4E0;border-radius:12px;padding:10px 14px;display:grid;gap:1px}
+.tipo button:hover{border-color:#6A6865}
+.tipo small{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#9C9893}
+.tipo b{font-family:var(--display);font-size:16px;font-weight:600;letter-spacing:-.01em}
+.tipo .d{font-size:12px;color:#9C9893}
+.tipo .n{display:inline-block;min-width:24px;text-align:center;font-family:var(--mono);font-size:12px;font-weight:500;padding:1px 7px;border-radius:999px;background:#262624;color:#CFCBC6;margin-left:4px;vertical-align:2px}
+.tipo button[aria-pressed="true"]{background:#fff;color:#111;border-color:#fff}
+.tipo button[aria-pressed="true"] small,.tipo button[aria-pressed="true"] .d{color:#55524E}
+.tipo button[aria-pressed="true"] .n{background:var(--hred);color:#fff}
+.adsintro{margin-block:20px;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--ink);border-radius:12px;padding:16px 18px;display:grid;gap:8px}
+.adsintro h2{margin:0;font-size:16px;font-weight:600}
+.adsintro p{margin:0;color:var(--ink2);font-size:13px;max-width:80ch}
+.adsintro ul{margin:0;padding-left:18px;font-size:13px;display:grid;gap:2px}
+.adf{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0;font-size:13px;line-height:1.4}
+.adf dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);padding-top:1px}
+.adf dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.adf .copy{white-space:pre-wrap;max-height:180px;overflow:auto}
+.adf .ctab{display:inline-block;font-weight:600;border:1px solid var(--ink);border-radius:6px;padding:1px 8px}
+.adf a{color:var(--ink);text-underline-offset:3px}
+.tag.paid{border-color:var(--ink);color:var(--ink);font-weight:500}
+.miss{color:var(--no)}
+.adempty{background:var(--paper);border:1px dashed var(--line);border-radius:12px;padding:22px 20px;display:grid;gap:10px;max-width:760px}
+.adempty h3{margin:0;font-size:17px;font-weight:600}
+.adempty p{margin:0;font-size:13px;color:var(--ink2)}
+.adempty .adf{background:var(--bg);border-radius:8px;padding:12px 14px}
 </style>
 
 <header>
@@ -194,6 +221,10 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       </div>
       <div class="tally" id="tally" aria-live="polite"></div>
     </div>
+    <div class="tipo" id="tipo" role="group" aria-label="Tipo de asset">
+      <button type="button" data-t="org" aria-pressed="true"><small>Orgânico</small><b>Assets de conteúdo <span class="n" id="t-org">0</span></b><span class="d">Identificação, utilidade e engajamento</span></button>
+      <button type="button" data-t="ads" aria-pressed="false"><small>Mídia paga</small><b>Assets para ADs <span class="n" id="t-ads">0</span></b><span class="d">Oferta clara, texto direto, CTA e destino</span></button>
+    </div>
     <nav class="modes" role="tablist" aria-label="Painéis">
       <button type="button" role="tab" data-m="aprov">Em aprovação <span class="n" id="m-aprov">0</span></button>
       <button type="button" role="tab" data-m="ok">Aprovados <span class="n" id="m-ok">0</span></button>
@@ -204,6 +235,7 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       <div class="seg" id="f-fmt"><span class="lbl">Formato</span></div>
       <div class="seg" id="f-status"><span class="lbl">Status</span></div>
       <div class="seg" id="f-day"><span class="lbl">Dia</span></div>
+      <div class="seg" id="f-adstatus" hidden><span class="lbl">Status do AD</span></div>
       <div class="right"><button class="btn ghost" id="copyx" type="button">Copiar exportação</button><button class="btn" id="exportx" type="button">Exportar decisões</button></div>
     </div>
   </div>
@@ -229,19 +261,22 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
 (function(){
   const M = JSON.parse(document.getElementById('manifest').textContent);
   const P = M.pieces;
+  // ADs (mídia paga): lista própria no manifesto e aprovação própria no banco (coleção ads), separada de reviews.
+  const A = M.ads || [];
   const BRANDS = ['Quiddo','Retrozap','SPORT DNA'];
   const FMTS = [['reel','Reel'],['carrossel','Carrossel'],['story','Story']];
   const STS = [['pendente','Pendente'],['revisar','Revisar de novo'],['aprovado','Aprovado'],['reprovado','Não aprovado']];
   const DAYS = M.days || {1:'Dia 1 · seg 09/11',2:'Dia 2 · ter 10/11',3:'Dia 3 · qua 11/11',4:'Dia 4 · qui 12/11',5:'Dia 5 · sex 13/11',6:'Dia 6 · sáb 14/11',7:'Dia 7 · dom 15/11'};
-  const state = { mode:'aprov', viewA:'pecas', viewB:'dia', day:'todos', view:'pecas', brand:'todas', fmt:'todos', status:'todos', reviews:{}, geral:'', geralAt:null, packDoc:{}, confirm:false, sending:false, err:'' };
+  const state = { tipo:'org', adStatus:'todos', adReviews:{}, mode:'aprov', viewA:'pecas', viewB:'dia', day:'todos', view:'pecas', brand:'todas', fmt:'todos', status:'todos', reviews:{}, geral:'', geralAt:null, packDoc:{}, confirm:false, sending:false, err:'' };
   let db = null, dls = null;
   const key = id => M.pack === 'S01' ? id : M.pack + '_' + id;
 
-  try { const s = JSON.parse(localStorage.getItem('mesa-f2')||'{}'); ['mode','viewA','viewB','day','brand','fmt','status'].forEach(k=>{ if(s[k]!=null) state[k]=s[k]; }); } catch(e){}
-  function keepF(){ try{ localStorage.setItem('mesa-f2', JSON.stringify({mode:state.mode,viewA:state.viewA,viewB:state.viewB,day:state.day,brand:state.brand,fmt:state.fmt,status:state.status})); }catch(e){} }
+  try { const s = JSON.parse(localStorage.getItem('mesa-f2')||'{}'); ['tipo','adStatus','mode','viewA','viewB','day','brand','fmt','status'].forEach(k=>{ if(s[k]!=null) state[k]=s[k]; }); } catch(e){}
+  function keepF(){ try{ localStorage.setItem('mesa-f2', JSON.stringify({tipo:state.tipo,adStatus:state.adStatus,mode:state.mode,viewA:state.viewA,viewB:state.viewB,day:state.day,brand:state.brand,fmt:state.fmt,status:state.status})); }catch(e){} }
 
-  function eff(p){
-    const r = state.reviews[p.id];
+  function eff(p){ return effOf(state.reviews[p.id], p); }
+  function effAd(a){ return effOf(state.adReviews[a.id], a); }
+  function effOf(r, p){
     if (!r || !r.status) return (r && r.hash && r.hash !== p.hash && r.comment) ? 'revisar' : 'pendente';
     if (r.hash !== p.hash) return 'revisar';
     return r.status;
@@ -262,15 +297,21 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
     mk('f-view', ok ? [['dia','Por dia'],['cal','Calendário'],['pecas','Peças'],['grade','Grade do feed'],['pub','Publicação']] : [['pecas','Peças'],['grade','Grade do feed']], ok ? 'viewB' : 'viewA');
     mk('f-status', [['todos','Todos']].concat(STS.filter(x=>x[0]!=='aprovado')), 'status');
     mk('f-day', [['todos','Todos']].concat([1,2,3,4,5,6,7].map(d=>[String(d), (M.days&&M.days[d]||DAYS[d]).replace(/^Dia \d+ · /,'')])), 'day');
-    document.getElementById('f-status').hidden = ok; document.getElementById('f-day').hidden = !ok;
+    const ads = state.tipo==='ads';
+    mk('f-adstatus', [['todos','Todos']].concat(STS), 'adStatus');
+    document.getElementById('f-status').hidden = ok || ads; document.getElementById('f-day').hidden = !ok || ads;
+    document.getElementById('f-view').hidden = ads; document.getElementById('f-adstatus').hidden = !ads;
+    document.querySelector('.modes').hidden = ads;
+    document.querySelectorAll('#tipo button').forEach(b=>{ b.setAttribute('aria-pressed', String(state.tipo===b.dataset.t)); b.onclick=()=>{ state.tipo=b.dataset.t; keepF(); segs(); render(); window.scrollTo(0,0); }; });
     document.querySelectorAll('.modes button').forEach(b=>{ b.setAttribute('aria-selected', String(state.mode===b.dataset.m)); b.onclick=()=>{ state.mode=b.dataset.m; keepF(); segs(); render(); window.scrollTo(0,0); }; });
   }
 
   function tally(){
     const c = {pendente:0,revisar:0,aprovado:0,reprovado:0};
-    P.forEach(p=>c[eff(p)]++);
+    if (state.tipo==='ads') A.forEach(a=>c[effAd(a)]++); else P.forEach(p=>c[eff(p)]++);
+    document.getElementById('t-org').textContent = P.length; document.getElementById('t-ads').textContent = A.length;
     document.getElementById('tally').innerHTML = STS.map(([k,l])=>`<span class="s-${k}">${c[k]} ${l.toLowerCase()}</span>`).join('');
-    document.getElementById('m-aprov').textContent = P.length - c.aprovado; document.getElementById('m-ok').textContent = c.aprovado;
+    const co = counts(); document.getElementById('m-aprov').textContent = P.length - co.aprovado; document.getElementById('m-ok').textContent = co.aprovado;
     dock();
   }
 
@@ -366,8 +407,10 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
     tally();
     const v = document.getElementById('view');
     const focusId = document.activeElement && document.activeElement.id;
-    const okm = state.mode==='ok', view = okm ? state.viewB : state.viewA;
-    document.querySelector('.geral').hidden = okm; document.querySelector('.dock').hidden = okm;
+    const ads = state.tipo==='ads';
+    const okm = !ads && state.mode==='ok', view = okm ? state.viewB : state.viewA;
+    document.querySelector('.geral').hidden = okm || ads; document.querySelector('.dock').hidden = okm || ads;
+    if (ads){ renderAds(v); return; }
     if (okm && view==='pub'){ renderPub(v); return; }
     if (okm && view==='dia'){ renderSemana(v); return; }
     if (okm && view==='cal'){ renderCal(v); return; }
@@ -408,16 +451,18 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
   const timers = {};
   function wire(){
     document.querySelectorAll('.card').forEach(el=>{
-      const p = P.find(x=>x.id===el.dataset.id);
-      el.querySelector('.ap').onclick = ()=>decide(p, eff(p)==='aprovado'?null:'aprovado', el);
-      el.querySelector('.rp').onclick = ()=>decide(p, eff(p)==='reprovado'?null:'reprovado', el);
+      const isAd = el.dataset.ad === '1';
+      const p = isAd ? A.find(x=>x.id===el.dataset.id) : P.find(x=>x.id===el.dataset.id);
+      const E = isAd ? effAd : eff, D = isAd ? decideAd : decide, S = isAd ? saveAd : save, RV = isAd ? state.adReviews : state.reviews;
+      el.querySelector('.ap').onclick = ()=>D(p, E(p)==='aprovado'?null:'aprovado', el);
+      el.querySelector('.rp').onclick = ()=>D(p, E(p)==='reprovado'?null:'reprovado', el);
       const ta = el.querySelector('textarea'), sv = el.querySelector('[data-saved]');
-      ta.oninput = ()=>{ sv.textContent='editando…'; clearTimeout(timers[p.id]); timers[p.id]=setTimeout(()=>{
-        const r = state.reviews[p.id]||{};
-        save(p, {comment: ta.value.trim(), hash: r.hash || p.hash, version: r.version || p.version, status: r.status || null}, sv);
+      ta.oninput = ()=>{ sv.textContent='editando…'; const tk=(isAd?'ad:':'')+p.id; clearTimeout(timers[tk]); timers[tk]=setTimeout(()=>{
+        const r = RV[p.id]||{};
+        S(p, {comment: ta.value.trim(), hash: r.hash || p.hash, version: r.version || p.version, status: r.status || null}, sv);
       }, 900); };
       const cc = el.querySelector('[data-copycap]');
-      if (cc) cc.onclick = async ()=>{ try{ await navigator.clipboard.writeText(p.caption); cc.textContent='Legenda copiada'; }catch(e){ const pre=el.querySelector('.cap'); el.querySelector('details').open=true; const rg=document.createRange(); rg.selectNodeContents(pre); const s=getSelection(); s.removeAllRanges(); s.addRange(rg); cc.textContent='Selecionada: copie com Ctrl+C'; } };
+      if (cc) cc.onclick = async ()=>{ try{ await navigator.clipboard.writeText(isAd ? p.copy : p.caption); cc.textContent='Legenda copiada'; }catch(e){ const pre=el.querySelector('.cap'); el.querySelector('details').open=true; const rg=document.createRange(); rg.selectNodeContents(pre); const s=getSelection(); s.removeAllRanges(); s.addRange(rg); cc.textContent='Selecionada: copie com Ctrl+C'; } };
       const fr = el.querySelector('[data-reel]');
       if (fr){
         const vid = fr.querySelector('video'), img = fr.querySelector('img'), crop = fr.querySelector('.crop');
@@ -440,6 +485,68 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
     });
   }
 
+  // ---- ADs (mídia paga). Aprovação separada da orgânica: banco ads/<SNN>_<id>; nada aqui mexe em reviews.
+  async function saveAd(a, patch, msgEl){
+    const r = Object.assign({}, state.adReviews[a.id]||{});
+    const now = new Date().toISOString();
+    const next = Object.assign({}, r, patch, {at: now, tipo:'ad'});
+    state.adReviews[a.id] = next; tally();
+    if (!db){ if(msgEl) msgEl.textContent='não salvo: armazenamento indisponível nesta visualização'; return; }
+    try { await db.doc('ads/'+M.pack+'_'+a.id).set(next); if(msgEl) msgEl.textContent = 'salvo '+fmtAt(now); }
+    catch(e){ if(msgEl) msgEl.textContent = 'não salvou ('+(e&&e.code||'erro')+'). Tente de novo.'; }
+  }
+  function decideAd(a, status, cardEl){
+    const r = state.adReviews[a.id]||{};
+    const comment = cardEl.querySelector('textarea').value.trim();
+    const hist = (r.history||[]).concat([{version:a.version, status, comment, at:new Date().toISOString()}]).slice(-20);
+    saveAd(a, {status, hash:a.hash, version:a.version, comment, history:hist}, cardEl.querySelector('[data-saved]')).then(render);
+  }
+  const AD_FIELDS = [['objetivo','Objetivo'],['formato','Formato'],['version','Versão'],['copy','Legenda / copy'],['cta','CTA'],['url','URL final']];
+  function adCard(a){
+    const s = effAd(a), r = state.adReviews[a.id] || {};
+    const src = a.origem ? P.find(p=>p.id===a.origem) : null;
+    const orgS = src ? stLabel(eff(src)).toLowerCase() : '';
+    const val = (k)=>{ const x = a[k]; if (!x) return '<span class="miss">falta definir</span>';
+      if (k==='url') return `<a href="${esc(x)}" target="_blank" rel="noopener">${esc(x)}</a>`;
+      if (k==='cta') return `<span class="ctab">${esc(x)}</span>`;
+      if (k==='copy') return `<div class="copy">${esc(x)}${a.titulo?`\n\n<b>Título:</b> ${esc(a.titulo)}`:''}</div>`;
+      return esc(x); };
+    const prev = s==='revisar' && r.version ? `<div class="prev">AD novo (${esc(a.version)}). Você tinha marcado ${esc(stLabel(r.status||'pendente').toLowerCase())} na ${esc(r.version)}${r.comment?`: “${esc(r.comment)}”`:''}.</div>` : '';
+    return `<article class="card st-${s}" id="ad-${a.id}" data-id="${a.id}" data-ad="1">
+      <div class="stage">${media(a)}</div>
+      <div class="meta">
+        <div class="head"><h4>${esc(a.title||a.id)}</h4><span class="status s-${s}">${s==='aprovado'?'AD aprovado':stLabel(s)}</span></div>
+        <div class="tags"><span class="tag paid">AD · mídia paga</span><span class="tag">${esc(a.brand)}</span>${a.origem?`<span class="tag">da peça ${esc(a.origem)}</span>`:''}</div>
+        <dl class="adf">${AD_FIELDS.map(([k,l])=>`<dt>${l}</dt><dd>${val(k)}</dd>`).join('')}</dl>
+        ${src?`<div class="note">Peça orgânica de origem: ${esc(src.id)} (${esc(orgS)} no orgânico). Essa decisão não vale para o AD.</div>`:''}
+        ${a.mudou?`<div class="chg"><b>Nesta versão:</b> ${esc(a.mudou)}</div>`:''}
+        ${prev}
+        ${a.notes?`<div class="note">${esc(a.notes)}</div>`:''}
+        <div class="acts"><button class="ap" type="button" aria-pressed="${s==='aprovado'}">Aprovar AD</button><button class="rp" type="button" aria-pressed="${s==='reprovado'}">Não aprovar</button></div>
+        <label class="lbl" for="ac-${a.id}">Comentário do AD</label>
+        <textarea id="ac-${a.id}" placeholder="O que mudar neste anúncio? (oferta, texto, CTA, destino)">${esc(r.comment||'')}</textarea>
+        <div class="saved" data-saved>${r.at?`salvo ${fmtAt(r.at)}`:''}</div>
+        <div class="links">${a.editable?`<a href="${esc(a.editable)}" target="_blank" rel="noopener">Abrir editável</a>`:''}${a.copy?'<button type="button" data-copycap>Copiar copy</button>':''}</div>
+      </div></article>`;
+  }
+  function renderAds(v){
+    const intro = `<section class="adsintro"><h2>Assets para ADs · mídia paga</h2>
+      <p>Aqui a aprovação é só do anúncio e fica separada do orgânico. Aprovar uma peça orgânica não aprova o AD feito a partir dela, e aprovar um AD não mexe na peça orgânica nem no que o DOT agenda.</p>
+      <ul><li>O AD precisa de oferta clara, texto direto, CTA explícito e URL final coerente com a oferta.</li>
+      <li>Aprovar aqui não sobe nada na conta de anúncios, não cria nem ativa campanha e não gasta dinheiro. Isso depende de uma ordem sua, à parte.</li></ul></section>`;
+    if (!A.length){
+      v.innerHTML = intro + `<div class="adempty"><h3>Nenhum AD na Mesa ainda</h3>
+        <p>O Pack ${esc(M.pack)} tem só assets de conteúdo. Quando um AD entrar, cada card mostra:</p>
+        <dl class="adf">${AD_FIELDS.map(([k,l])=>`<dt>${l}</dt><dd>${({objetivo:'tráfego, cadastro, venda ou teste grátis',formato:'feed 4:5, stories/reels 9:16 ou carrossel',version:'ex.: S02-AD-Q-01-v1; mídia nova pede revisão de novo',copy:'texto principal e título do anúncio',cta:'o botão do anúncio (ex.: Saiba mais, Cadastre-se)',url:'a página de destino, com UTM'})[k]}</dd>`).join('')}</dl>
+        <p>Para montar os primeiros ADs falta a sua definição de objetivo, oferta e URL final de cada marca.</p></div>`;
+      return;
+    }
+    const list = A.filter(a => (state.brand==='todas'||a.brand===state.brand) && (state.fmt==='todos'||a.fmt===state.fmt) && (state.adStatus==='todos'||effAd(a)===state.adStatus));
+    if (!list.length){ v.innerHTML = intro + '<p class="empty">Nenhum AD com esses filtros.</p>'; return; }
+    v.innerHTML = intro + BRANDS.map(b=>{ const ps = list.filter(a=>a.brand===b); return ps.length ? `<div class="day"><h3>${esc(b)}</h3><span class="lbl">${ps.length} AD${ps.length>1?'s':''}</span></div><div class="grid">${ps.map(adCard).join('')}</div>` : ''; }).join('');
+    wire();
+  }
+
   // ---- feedback geral (nunca aprova nada)
   const g = document.getElementById('geral'), gs = document.getElementById('geral-s');
   let gt;
@@ -453,7 +560,8 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
   // ---- exportação
   function exportData(){
     return { pack: M.pack, exportadoEm: new Date().toISOString(), feedbackGeral: state.geral,
-      pecas: P.map(p=>{ const r = state.reviews[p.id]||{}; return { id:p.id, marca:p.brand, formato:p.fmt, dia:p.day, versaoAtual:p.version, status:eff(p), versaoRevisada:r.version||null, comentario:r.comment||'', historico:r.history||[] }; }) };
+      pecas: P.map(p=>{ const r = state.reviews[p.id]||{}; return { id:p.id, marca:p.brand, formato:p.fmt, dia:p.day, versaoAtual:p.version, status:eff(p), versaoRevisada:r.version||null, comentario:r.comment||'', historico:r.history||[] }; }),
+      ads: A.map(a=>{ const r = state.adReviews[a.id]||{}; return { id:a.id, marca:a.brand, objetivo:a.objetivo||'', formato:a.formato||a.fmt, origem:a.origem||null, versaoAtual:a.version, cta:a.cta||'', url:a.url||'', statusAD:effAd(a), versaoRevisada:r.version||null, comentario:r.comment||'', historico:r.history||[] }; }) };
   }
   document.getElementById('exportx').onclick = async (ev)=>{
     const b = ev.currentTarget, txt = JSON.stringify(exportData(), null, 2);
@@ -571,6 +679,13 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
       if (act && act.tagName==='TEXTAREA' && act.id!=='geral'){ tally(); return; }
       render();
     }, e=>{ msg.hidden=false; msg.textContent='Conexão com as decisões caiu ('+e.code+'). Recarregue a página.'; });
+    db.collection('ads').onSnapshot(snap=>{
+      const next = {}; snap.docs.forEach(d=>{ if (d.id.startsWith(M.pack+'_')) next[d.id.slice(M.pack.length+1)] = d.data(); });
+      state.adReviews = next;
+      const act = document.activeElement;
+      if (act && act.tagName==='TEXTAREA' && act.id!=='geral'){ tally(); return; }
+      if (state.tipo==='ads') render(); else tally();
+    }, e=>{ msg.hidden=false; msg.textContent='Conexão com as decisões de ADs caiu ('+e.code+'). Recarregue a página.'; });
     db.doc('pack/'+M.pack).onSnapshot(d=>{
       const data = d.exists ? d.data() : {};
       state.packDoc = data; state.geral = data.geral || ''; dock();

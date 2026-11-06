@@ -8,6 +8,7 @@ Use este runbook quando uma tarefa agendada pedir para liberar, ajustar ou produ
   - Banco `pack/<SNN>`: feedback geral, `ultimaRodada`, `enviadaEm`.
   - Banco `rodadas/<SNN>_R<n>` (do S02 rodada 3 em diante; antes era `rodadas/R<n>`, e o R2 do S02 sobrescreveu o R2 do S01): foto de cada rodada finalizada, com o campo `resumo`.
   - Ao finalizar a rodada, a Mesa limpa `pack/<SNN>.geral` e guarda o texto em `pack/<SNN>.geralHist` (aparece no painel Aprovados). Não reaplique feedback geral que já está no histórico.
+  - Banco `ads/<SNN>_<id>` (desde 06/11): aprovação dos **Assets para ADs** (mídia paga), separada da orgânica. Nunca copie uma decisão de `reviews` para `ads`, nem o contrário: peça orgânica aprovada não é AD aprovado. O `status.py` e o DOT leem só `reviews`; AD aprovado não vai para o STATUS.json.
   - Leia e escreva com a ferramenta ArtifactData.
 - **Repositório:** gtorniero/beyondtheworkproject, branch `social` (nunca o `main`, que é o site).
   - Peça acesso de push com add_repo e clone só esse branch: `git clone --depth 1 -b social https://github.com/gtorniero/beyondtheworkproject btw-social`.
@@ -77,3 +78,9 @@ mkdir -p out && cp state/*.json out/
 6. Rode `make_tool.py` e republique a Mesa. A Mesa mostra o pack novo; as decisões do S01 continuam no banco.
 7. Copie `pipeline/entrega/*` para `packs/S(NN+1)/`, com `STATUS.json` todo `false` e o `manifest.json`. Atualize `pipeline/state`. Commit e push.
 8. Notifique: "Pack S(NN+1) na Mesa. Aprove até domingo 21h."
+
+## D. Assets para ADs (mídia paga)
+- A Mesa tem dois tipos no topo: "Assets de conteúdo" (orgânico: identificação, utilidade, engajamento) e "Assets para ADs" (mídia paga: oferta clara, texto direto, CTA explícito, destino coerente). O filtro de marca vale nos dois.
+- Os ADs ficam em `pipeline/ads/<SNN>.json` (um objeto por AD; campos no topo do bloco ADs do `make_tool.py`). Cada card mostra objetivo, formato, versão, copy, CTA e URL final; campo vazio aparece como "falta definir".
+- Só crie AD com objetivo, oferta e URL final definidos pelo Gui. Pode reaproveitar a mídia de uma peça orgânica (campo `origem`), sem duplicar o render.
+- Aprovar AD na Mesa não autoriza nada fora dela: nenhum upload em conta de anúncios, campanha, ativação, impulsionamento ou gasto sem ordem explícita e específica do Gui.

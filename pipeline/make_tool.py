@@ -65,8 +65,22 @@ if (PREVD / 'manifest.json').exists():
         if q['fmt'] == 'reel': jpg(PREVD / b / 'reels' / f"{q['id']}-capa.png", T / 'media' / n, 600, crop=(0, 285, 1080, 1635))
         else: jpg(PREVD / b / 'carrosseis' / q['media'][0], T / 'media' / n, 600)
         GRADE.setdefault(q['brand'], []).append({'img': n, 'title': q['title'], 'label': f"{C.PREV} · {q['dia']}"})
+# ---- ADs (mídia paga): definidos à parte em ads/<SNN>.json, com aprovação própria na Mesa (banco `ads`).
+# Campos: id, brand, fmt (reel|carrossel|story, para a prévia), formato, objetivo, version, v, hash, media, copy, titulo, cta, url, origem (id orgânico ou null), notes.
+# Nunca reaproveite a decisão orgânica: o AD nasce "pendente" mesmo se a peça de origem estiver aprovada.
+ADS = json.loads((R / 'ads' / f'{C.PACK}.json').read_text()) if (R / 'ads' / f'{C.PACK}.json').exists() else []
+for a in ADS:
+    md = O / 'media'
+    if a['fmt'] == 'reel':
+        shutil.copy(md / a['media'][0], T / 'media' / a['media'][0])
+        a['cover'] = f"{a['id']}-capa.jpg"; jpg(md / f"{a['id']}-capa.png", T / 'media' / a['cover'], 720)
+    else:
+        a['previews'] = []
+        for m in a['media']:
+            n = m.replace('.png', '.jpg'); jpg(md / m, T / 'media' / n, 720); a['previews'].append(n)
+    if a.get('editable'): shutil.copy(O / a['editable'], T / a['editable'])
 DAYS = {d: f'Dia {d} · {v}' for d, v in C.DIAS.items()}
-html = (R / 'tool_template.html').read_text().replace('/*MANIFEST*/', json.dumps({'pack': C.PACK, 'rodada': RODADA, 'days': DAYS, 'titulo': f'PACK SEMANAL {C.NUM} · {C.SEMANA}', 'grade': GRADE, 'pieces': P, 'guiaHtml': markdown.markdown(GUIA, extensions=['tables', 'fenced_code']), 'prompt': guia.PROMPT, 'final': '__FINAL__'}, ensure_ascii=False).replace('</', '<\\/'))
+html = (R / 'tool_template.html').read_text().replace('/*MANIFEST*/', json.dumps({'pack': C.PACK, 'rodada': RODADA, 'days': DAYS, 'titulo': f'PACK SEMANAL {C.NUM} · {C.SEMANA}', 'grade': GRADE, 'pieces': P, 'ads': ADS, 'guiaHtml': markdown.markdown(GUIA, extensions=['tables', 'fenced_code']), 'prompt': guia.PROMPT, 'final': '__FINAL__'}, ensure_ascii=False).replace('</', '<\\/'))
 (T / 'index.html').write_text(html)
 (O / 'manifest.json').write_text(json.dumps({'pack': C.PACK, 'pieces': P}, ensure_ascii=False, indent=1))
 # ---- entrega
