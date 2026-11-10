@@ -27,6 +27,9 @@ Código: `pipeline/ads/reels/rz08.py`. Todo AD de todas as marcas segue essa té
 - **Zonas seguras 9:16:** nada importante nos 270 px de cima e 370 px de baixo. CTA e texto dentro da zona.
 
 ## Regras fixas do Gui (não negociáveis)
+- **Retrozap = RETROSPECTIVA do WhatsApp.** O gancho e o CTA falam sempre em "retrospectiva" (do grupo, do casal, de 2026). Nunca "seu WhatsApp virou premiação": ninguém entende (Gui, 10/11, "já falei 18x"). Troféu e pódio são conteúdo da retrospectiva, não a promessa.
+- **Referências aprovadas:** ADC-RZ-08-v1 (técnica) e ADC-RZ-02-v3 (big numbers, "o melhor"); ADC-RN-03-v2 ("foda").
+- **Quiddo:** a tela do jogo não pode travar. Grave com o relógio da página desacelerado para sair em 30 fps reais, ou use cenas mais curtas e simples. Celular em proporção real de tela (nem "mais longo que a página", nem gigante).
 - Captura 100% real do produto; nada de tela recriada. Nada cortado de forma que quebre a leitura (zoom é permitido, desde que o elemento em foco apareça inteiro).
 - **Nunca** etiqueta "exemplo", "simulação", "demonstração", "nomes fictícios", "ilustrativo".
 - Sem música embutida, sem narração, sem IA generativa de imagem/vídeo/voz.

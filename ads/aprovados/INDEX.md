@@ -1,16 +1,28 @@
 # ADs aprovados · arquivos por posicionamento da Meta
 
-Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy, CTA e URL final. Nada foi enviado à conta de anúncios.
+Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy, CTA e URL final. "anterior" = versão aprovada que já foi substituída na Mesa. Nada foi enviado à conta de anúncios.
 
-| Marca | AD | Versão | Título | Arquivos | Pasta |
+| Marca | AD | Versão | Situação | Título | Pasta |
 |---|---|---|---|---|---|
-| Retrozap | ADC-RZ-01 | v2 | Piloto Retrozap: seu WhatsApp de 2026 virou premiação | 8 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-01-v2 |
-| Retrozap | ADC-RZ-02 | v1 | Hero Retrozap: Retrospectiva 2026 do seu grupo no WhatsApp | 8 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-02-v1 |
-| Retrozap | ADC-RZ-06 | v1 | Família: o grupo também merece troféu | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-06-v1 |
-| SPORT DNA | ADC-RK-01 | v2 | Piloto RACKET: antes de comprar, faça o teste | 8 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-01-v2 |
-| SPORT DNA | ADC-RK-02 | v1 | RACKET DNA: jogo e braço | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-02-v1 |
-| SPORT DNA | ADC-RN-01 | v1 | RUN DNA: o tênis certo para você | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-01-v1 |
-| SPORT DNA | ADC-RN-02 | v1 | RUN · Black Friday: teste antes do carrinho | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-02-v1 |
-| SPORT DNA | ADC-SF-01 | v1 | SURF DNA: a prancha certa | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-01-v1 |
-| Quiddo | ADC-QD-02 | v2 | Natal: o quiz da família | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-02-v2 |
-| Retrozap | ADC-RZ-08 | v1 | Hero Retrozap: quem ri mais no seu grupo? (referência do modelo novo) | 4 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-08-v1 |
+| quiddo | ADC-QD-02 | v2 | atual | Natal: o quiz da família | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-02-v2 |
+| quiddo | ADC-QD-03 | v4 | atual | Chá-bar: quem conhece mais os noivos | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-03-v4 |
+| quiddo | ADC-QD-05 | v2 | atual | Confra da firma com pódio | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-05-v2 |
+| quiddo | ADC-QD-06 | v2 | atual | Aniversário: quem conhece mais | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-06-v2 |
+| retrozap | ADC-RZ-01 | v2 | anterior | (versão anterior) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-01-v2 |
+| retrozap | ADC-RZ-02 | v1 | anterior | (versão anterior) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-02-v1 |
+| retrozap | ADC-RZ-02 | v3 | atual | Hero Retrozap: Retrospectiva 2026 do seu grupo no WhatsApp | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-02-v3 |
+| retrozap | ADC-RZ-03 | v2 | atual | Casais: a retrospectiva de vocês dois | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-03-v2 |
+| retrozap | ADC-RZ-04 | v2 | atual | Manda no grupo: alguém vai pedir recontagem | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-04-v2 |
+| retrozap | ADC-RZ-05 | v2 | atual | Troféus: quem leva o Fantasma do Ano | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-05-v2 |
+| retrozap | ADC-RZ-06 | v1 | atual | Família: o grupo também merece troféu | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-06-v1 |
+| retrozap | ADC-RZ-07 | v2 | atual | Fim de ano: o pódio do seu grupo | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-07-v2 |
+| retrozap | ADC-RZ-08 | v1 | atual | Hero Retrozap: quem ri mais no seu grupo? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-08-v1 |
+| sportdna | ADC-RK-01 | v2 | anterior | (versão anterior) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-01-v2 |
+| sportdna | ADC-RK-01 | v4 | atual | Piloto RACKET: antes de comprar, faça o teste | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-01-v4 |
+| sportdna | ADC-RK-02 | v1 | atual | RACKET DNA: jogo e braço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-02-v1 |
+| sportdna | ADC-RN-01 | v1 | atual | RUN DNA: o tênis certo para você | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-01-v1 |
+| sportdna | ADC-RN-02 | v1 | atual | RUN · Black Friday: teste antes do carrinho | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-02-v1 |
+| sportdna | ADC-RN-03 | v2 | atual | RUN DNA: seu tênis combina com você? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-03-v2 |
+| sportdna | ADC-SF-01 | v1 | atual | SURF DNA: a prancha certa | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-01-v1 |
+| sportdna | ADC-SF-02 | v2 | atual | SURF: calculadora grátis de litragem | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-02-v2 |
+| sportdna | ADC-SF-03 | v1 | atual | Hero SURF DNA: sua prancha é a certa? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-03-v1 |
