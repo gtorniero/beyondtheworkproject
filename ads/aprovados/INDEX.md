@@ -4,11 +4,13 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 
 | Marca | AD | Versão | Situação | Título | Pasta |
 |---|---|---|---|---|---|
+| quiddo | ADC-QD-01 | v6 | atual | Piloto Quiddo: quiz ao vivo no meio do treinamento | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-01-v6 |
 | quiddo | ADC-QD-02 | v2 | atual | Natal: o quiz da família | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-02-v2 |
 | quiddo | ADC-QD-03 | v4 | atual | Chá-bar: quem conhece mais os noivos | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-03-v4 |
 | quiddo | ADC-QD-04 | v5 | atual | Professores: a turma pedindo mais uma pergunta | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-04-v5 |
 | quiddo | ADC-QD-05 | v2 | atual | Confra da firma com pódio | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-05-v2 |
 | quiddo | ADC-QD-06 | v2 | atual | Aniversário: quem conhece mais | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-06-v2 |
+| quiddo | ADC-QD-10 | v1 | atual | Empresas: sua apresentação vira participação | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-10-v1 |
 | retrozap | ADC-RZ-01 | v2 | anterior | (versão anterior) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-01-v2 |
 | retrozap | ADC-RZ-01 | v5 | atual | A retrospectiva do seu grupo no WhatsApp | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-01-v5 |
 | retrozap | ADC-RZ-02 | v1 | anterior | (versão anterior) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-02-v1 |
