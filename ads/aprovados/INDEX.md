@@ -6,9 +6,11 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 |---|---|---|---|---|---|
 | quiddo | ADC-QD-02 | v2 | atual | Natal: o quiz da família | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-02-v2 |
 | quiddo | ADC-QD-03 | v4 | atual | Chá-bar: quem conhece mais os noivos | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-03-v4 |
+| quiddo | ADC-QD-04 | v5 | atual | Professores: a turma pedindo mais uma pergunta | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-04-v5 |
 | quiddo | ADC-QD-05 | v2 | atual | Confra da firma com pódio | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-05-v2 |
 | quiddo | ADC-QD-06 | v2 | atual | Aniversário: quem conhece mais | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-06-v2 |
 | retrozap | ADC-RZ-01 | v2 | anterior | (versão anterior) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-01-v2 |
+| retrozap | ADC-RZ-01 | v5 | atual | A retrospectiva do seu grupo no WhatsApp | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-01-v5 |
 | retrozap | ADC-RZ-02 | v1 | anterior | (versão anterior) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-02-v1 |
 | retrozap | ADC-RZ-02 | v3 | atual | Hero Retrozap: Retrospectiva 2026 do seu grupo no WhatsApp | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-02-v3 |
 | retrozap | ADC-RZ-03 | v2 | atual | Casais: a retrospectiva de vocês dois | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-03-v2 |
@@ -17,6 +19,7 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 | retrozap | ADC-RZ-06 | v1 | atual | Família: o grupo também merece troféu | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-06-v1 |
 | retrozap | ADC-RZ-07 | v2 | atual | Fim de ano: o pódio do seu grupo | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-07-v2 |
 | retrozap | ADC-RZ-08 | v1 | atual | Hero Retrozap: quem ri mais no seu grupo? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-08-v1 |
+| retrozap | ADC-RZ-09 | v1 | atual | Casal: quantas mensagens vocês trocaram em 2026? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-09-v1 |
 | sportdna | ADC-RK-01 | v2 | anterior | (versão anterior) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-01-v2 |
 | sportdna | ADC-RK-01 | v4 | atual | Piloto RACKET: antes de comprar, faça o teste | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-01-v4 |
 | sportdna | ADC-RK-02 | v1 | atual | RACKET DNA: jogo e braço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-02-v1 |
