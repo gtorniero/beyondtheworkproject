@@ -85,7 +85,7 @@
   "id": "ADC-QD-01",
   "brand": "Quiddo",
   "fmt": "reel",
-  "formato": "Reel 9:16 · 17 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 de 11 s",
+  "formato": "Reel 9:16 · 25 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 de 15 s",
   "title": "Piloto Quiddo: quiz ao vivo no meio do treinamento",
   "objetivo": "Tráfego para criar o quiz (teste grátis).",
   "publico": "RH, T&D, líderes e quem apresenta treinamento, onboarding ou convenção.",
@@ -93,32 +93,32 @@
   "copy": "Treinamento com a sala no celular? Use a favor. 📱\nVocê escreve as perguntas do conteúdo, abre a sala e todo mundo responde pelo celular, ao mesmo tempo, no meio da apresentação. Sem app, sem cadastro. Na hora, você vê quem entendeu.\nFaça o seu. Teste grátis.",
   "titulo": "Quiz ao vivo no meio do treinamento",
   "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
-  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_treinamento&utm_content=ADC-QD-01-v5",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_treinamento&utm_content=ADC-QD-01-v6",
   "direitos": [
    "Partida real gravada para o anúncio (integração da turma de novembro (phishing, crachá, risco de acidente), 8 pessoas); nomes comuns, sem etiqueta na tela.",
    "Bichos (avatarSvg), símbolos das respostas e logo oficiais do Quiddo; fontes do site (Fraunces 900 e Nunito).",
    "Na gravação ficam ocultos o selo de teste local, o botão de convite por app de mensagens e a oferta/limite da sala grátis; o endereço local aparece como quiddo.com.br e o QR não entra em quadro legível."
   ],
-  "mudou": "v5 (seu comentário na v4: \"as animações com tela do jogo tá travando um pouco. Talvez deixar mais curto ou simples\"): partida regravada com o celular em câmera lenta real durante as animações (JS e CSS do app desacelerados 3 a 16×) e devolvida à velocidade do app na montagem. Medido na captura: 44 a 46 quadros reais por segundo no \"Mandou bem!\" e no ranking e 36 no pódio (média; 27 a 51 por segundo), contra 10 a 19 na v4. Mais curto e simples: só o celular (a TV saiu), 4 cenas (toque, \"Mandou bem!\", ranking, pódio) e CTA, 17 s em vez de 20. Celular menor, em proporção real da tela, e zoom mais leve.",
-  "notes": "Partida de 2 perguntas no visual Escritório (phishing e crachá), 8 jogadores; números reais da tela: +959 pontos na 1ª pergunta e 1.914 pontos da campeã (Mariana). Nomes comuns, sem etiqueta.",
-  "version": "ADC-QD-01-v5",
-  "v": 5,
-  "hash": "a28038a134",
+  "mudou": "v6 (seu comentário na v5: \"animações tão muito rápidas, não dá pra entender msg, tem que deixar ler melhor\"): mesma partida fluida, montagem mais lenta. Reel de 17 para 25 s e motions de 11 para 15 s; a pergunta do treinamento fica legível 2,7 s antes do toque, o \"Mandou bem! +959\" 3 s, o ranking 3,5 s e o pódio 4 s depois do campeão; textos entram em 0,7 s (0,5 s por palavra), câmera e zoom mais lentos e suaves, sem flash na revelação da resposta; cada tela fica parada pelo menos 1,2 s antes do corte.",
+  "notes": "Montagem: pipeline/ads/reels/qd01_v6.py + qd_ref6.py (captura q5_01b do v5). Linha do tempo do reel: 0–4 s pergunta e toque; 4–6,5 s \"A sala responde pelo celular.\"; 6,5–10,7 s \"+959 pontos na hora.\"; 10,7–14,9 s ranking; 14,9–21,1 s pódio (campeã Mariana) e 1.914 pontos; 21,1–25 s CTA. Nos motions o total do pódio sai para o título ter tempo de leitura.",
+  "version": "ADC-QD-01-v6",
+  "v": 6,
+  "hash": "b851cfadf4",
   "media": [
-   "ADC-QD-01-v5.mp4"
+   "ADC-QD-01-v6.mp4"
   ],
-  "cover": "ADC-QD-01-v5-capa.jpg",
-  "duration": 17.0,
+  "cover": "ADC-QD-01-v6-capa.jpg",
+  "duration": 25.0,
   "producao": "pronto para revisão",
   "ferramentas": "Captura real do Quiddo rodando a partir do código do site (repo gtorniero/quiddo), partida de verdade com todos os jogadores conectados. Celular gravado em 1080 px de largura por screencast do Chromium com o tempo da página desacelerado só nas animações (qd_cap3.py) e remapeado para a velocidade real (qd_remap.py). Montagem em HTML/CSS com o kit estudio.py na referência ADC-RZ-08 (qd_ref5.py). ffmpeg H.264 30 fps, sem áudio. Sem IA generativa.",
   "arquivos": [
    {
     "label": "Motion 4:5",
-    "path": "media/ads/ADC-QD-01-v5/ADC-QD-01-v5-motion-feed45.mp4"
+    "path": "media/ads/ADC-QD-01-v6/ADC-QD-01-v6-motion-feed45.mp4"
    },
    {
     "label": "Motion 1:1",
-    "path": "media/ads/ADC-QD-01-v5/ADC-QD-01-v5-motion-sq.mp4"
+    "path": "media/ads/ADC-QD-01-v6/ADC-QD-01-v6-motion-sq.mp4"
    }
   ]
  },
