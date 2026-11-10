@@ -1,4 +1,4 @@
-RETROZAP · PACK SEMANAL 03 (23 a 29/11/2026) · rodada 1
+RETROZAP · PACK SEMANAL 03 (23 a 29/11/2026) · rodada 3
 Reels: 1080×1920, 30 fps, H.264, áudio mudo (escolha o áudio no Instagram). Capa: 1080×1920 com a arte 4:5 no centro.
 Feed: 1080×1350. Stories: 1080×1920, sem adesivo (o CTA está na arte).
 Editáveis: HTML com fontes e SVGs embutidos (abre no navegador; reels tocam sozinhos, clique para recomeçar).

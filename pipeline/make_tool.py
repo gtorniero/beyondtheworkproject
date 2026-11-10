@@ -76,6 +76,9 @@ for a in ADS:
     md = O / 'media'
     for fn in (a['media'][0], a.get('cover', '')):  # mídia nova de AD em out/media; o resto já está publicado na Mesa
         if fn and '/' not in fn and (md / fn).exists(): shutil.copy(md / fn, T / 'media' / fn)
+    for x in a.get('arquivos', []):
+        src = O / x['path']
+        if src.exists(): (T / x['path']).parent.mkdir(parents=True, exist_ok=True); shutil.copy(src, T / x['path'])
 DAYS = {d: f'Dia {d} · {v}' for d, v in C.DIAS.items()}
 html = (R / 'tool_template.html').read_text().replace('/*MANIFEST*/', json.dumps({'pack': C.PACK, 'rodada': RODADA, 'days': DAYS, 'titulo': f'PACK SEMANAL {C.NUM} · {C.SEMANA}', 'grade': GRADE, 'pieces': P, 'ads': ADS, 'adsLote': ADS_LOTE, 'adsPack': ADS_PACK, 'guiaHtml': markdown.markdown(GUIA, extensions=['tables', 'fenced_code']), 'prompt': guia.PROMPT, 'final': '__FINAL__'}, ensure_ascii=False).replace('</', '<\\/'))
 (T / 'index.html').write_text(html)

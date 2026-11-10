@@ -1,6 +1,6 @@
 {
  "pack": "S03",
- "liberadas": 37,
+ "liberadas": 42,
  "total": 42,
  "pecas": [
   {
@@ -230,8 +230,8 @@
    "dia": "ter 24/11",
    "hora": "12h",
    "versao": "S03-R-S14-v2",
-   "liberado": false,
-   "status_mesa": "reprovado"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "R-S15",
@@ -360,8 +360,8 @@
    "dia": "seg 23/11",
    "hora": "12h",
    "versao": "S03-D-S13-v2",
-   "liberado": false,
-   "status_mesa": "reprovado"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-S14",
@@ -400,8 +400,8 @@
    "dia": "sex 27/11",
    "hora": "12h",
    "versao": "S03-D-S17-v2",
-   "liberado": false,
-   "status_mesa": "reprovado"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-S18",
@@ -410,8 +410,8 @@
    "dia": "sáb 28/11",
    "hora": "12h",
    "versao": "S03-D-S18-v2",
-   "liberado": false,
-   "status_mesa": "reprovado"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-S19",
@@ -420,8 +420,8 @@
    "dia": "dom 29/11",
    "hora": "12h",
    "versao": "S03-D-S19-v2",
-   "liberado": false,
-   "status_mesa": "reprovado"
+   "liberado": true,
+   "status_mesa": "aprovado"
   }
  ]
 }

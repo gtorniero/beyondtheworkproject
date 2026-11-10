@@ -1,0 +1,135 @@
+{
+ "quiz": {
+  "titulo": "Ciências · 7º B · Sistema Solar",
+  "tema": "escola",
+  "visual": "sala",
+  "tempo": 20,
+  "perguntas": [
+   {
+    "t": "Qual é o maior planeta do Sistema Solar?",
+    "o": [
+     "Saturno",
+     "Júpiter",
+     "Terra",
+     "Netuno"
+    ],
+    "c": 1,
+    "tl": 20
+   },
+   {
+    "t": "A Lua tem luz própria.",
+    "o": [
+     "Verdadeiro",
+     "Falso"
+    ],
+    "c": 1,
+    "tl": 20,
+    "vf": true
+   },
+   {
+    "t": "Qual planeta é conhecido como planeta vermelho?",
+    "o": [
+     "Vênus",
+     "Mercúrio",
+     "Marte",
+     "Urano"
+    ],
+    "c": 2,
+    "tl": 20
+   }
+  ]
+ },
+ "hero": [
+  "Sofia",
+  [
+   1,
+   1,
+   2
+  ],
+  1.2
+ ],
+ "sorteios": 2,
+ "jogadores": [
+  [
+   "Pedro",
+   [
+    1,
+    1,
+    0
+   ],
+   1.9
+  ],
+  [
+   "Larissa",
+   [
+    1,
+    0,
+    2
+   ],
+   3.2
+  ],
+  [
+   "Gabriel",
+   [
+    0,
+    1,
+    2
+   ],
+   2.8
+  ],
+  [
+   "Isabela",
+   [
+    1,
+    1,
+    0
+   ],
+   3.8
+  ],
+  [
+   "Lucas",
+   [
+    3,
+    1,
+    2
+   ],
+   4.4
+  ],
+  [
+   "Manu",
+   [
+    1,
+    1,
+    2
+   ],
+   2.6
+  ],
+  [
+   "João",
+   [
+    1,
+    0,
+    1
+   ],
+   5.0
+  ],
+  [
+   "Bia",
+   [
+    1,
+    1,
+    2
+   ],
+   3.5
+  ],
+  [
+   "Enzo",
+   [
+    2,
+    1,
+    2
+   ],
+   4.1
+  ]
+ ]
+}

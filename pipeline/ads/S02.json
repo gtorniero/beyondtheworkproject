@@ -194,124 +194,88 @@
  {
   "id": "ADC-QD-03",
   "brand": "Quiddo",
-  "fmt": "estatico",
+  "fmt": "reel",
   "lote": 2,
-  "formato": "Hero estático 4:5 + motion (12.0 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio) + motions 4:5 e 1:1 de 13 s",
   "title": "Chá-bar: quem conhece mais os noivos",
   "objetivo": "Tráfego para criar o quiz (teste grátis).",
   "publico": "Madrinhas, padrinhos e noivos com chá-bar, chá de panela ou casamento nos próximos meses (interesses: casamento, noivado, chá de panela).",
   "hipotese": "Quiz é uma brincadeira de chá-bar conhecida; trocar papel e caneta por celular com pódio parece upgrade fácil.",
   "copy": "Quem conhece mais os noivos? 💍\nMonte o quiz do chá-bar com as histórias do casal: onde se conheceram, quem disse \"eu te amo\" primeiro, o prato que ninguém aguenta mais. Todo mundo responde pelo celular e o pódio sai na hora.\nFaça o seu. Teste grátis.",
   "titulo": "Quiz do casal para o chá-bar",
-  "cta": "Na arte: \"Faça o seu. Teste grátis.\". Botão do anúncio: Saiba mais.",
-  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_cha_casamento&utm_content=ADC-QD-03-v2",
+  "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_cha_casamento&utm_content=ADC-QD-03-v3",
   "direitos": [
-   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
-   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
-   "Não consegui ler o texto do site do Quiddo (a página só carrega com JavaScript). As promessas (jogar pelo celular, sem baixar app, ranking, pódio, sorteio de prêmios) vêm do pack aprovado e da descrição do site no ar. A URL /criar respondeu."
+   "Sem música: o MP4 não tem faixa de áudio. Se quiser áudio, entra pela biblioteca da Meta.",
+   "Na captura: selo de teste local, botão de convite por app de mensagens e aviso de plano ocultos; endereço local trocado por quiddo.com.br; o QR (apontava para o computador local) fica desfocado.",
+   "O Google Fonts é bloqueado neste ambiente: as mesmas fontes do site (Fraunces 900 e Nunito) foram servidas a partir de pipeline/fonts.",
+   "Logo quiddo-negativo.svg, Fraunces 900 e Nunito oficiais.",
+   "Partida de chá-bar com 8 convidados e nomes comuns (Camila, Rafa, Tia Sônia, Vô Zé…), sem etiqueta na tela. Os noivos \"Bia e Leo\" e as perguntas são da partida gravada."
   ],
-  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
-  "version": "ADC-QD-03-v2",
-  "v": 2,
-  "mudou": "v2: só saiu a etiqueta de exemplo/fictício da arte (seu comentário no ADC-RZ-07). Texto, layout e oferta iguais à v1 que você aprovou.",
-  "hash": "602da29788",
+  "notes": "Roteiro: 0 s gancho \"Quem conhece mais os noivos?\" com o celular na contagem; 2,5 s TV + celular, toque em \"Num churrasco\"; 6 s revelação na TV e \"Mandou bem! +954\" no celular; 9,5 s ranking; 12 s pódio \"Camila conquistou todo mundo!\"; 17 s CTA. Texto de cena: \"Cada um no seu celular.\", \"Acertou? Sai na hora.\", \"Ranking a cada pergunta.\", \"E o pódio vira festa.\"",
+  "version": "ADC-QD-03-v3",
+  "v": 3,
+  "mudou": "v3 (seu comentário na v2: \"faz na identidade visual de casal e amor né\"): virou reel no modelo novo, gravado numa partida real com o visual Amor do próprio app (corações, rosa e vinho) e o AD inteiro nessa identidade. TV e celular aparecem juntos e sincronizados: pergunta do chá-bar, toque no celular, resposta na hora, ranking e pódio com confete do app.",
+  "hash": "2f70bec3d3",
   "media": [
-   "ads/ADC-QD-03-v2/ADC-QD-03-v2-motion-feed45.mp4"
+   "ADC-QD-03-v3.mp4"
   ],
-  "cover": "ADC-QD-03-v2-hero.jpg",
-  "duration": 12.0,
+  "cover": "ADC-QD-03-v3-capa.jpg",
+  "duration": 20.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "ferramentas": "Partida real do Quiddo rodando a partir do código (gtorniero/quiddo), gravada por screencast do Chromium: TV do anfitrião (1536×864) e celular da protagonista (780×1688), com outros jogadores conectados em páginas próprias (pipeline/ads/reels/qd_cap2.py). Composição no modelo novo (pipeline/ads/estudio.py + reels/qd_modelo.py): TV e celular sincronizados, câmera no toque, cortes e tipografia cinética; H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
   "arquivos": [
    {
-    "label": "Feed 4:5 (hero)",
-    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-feed45.png"
-   },
-   {
-    "label": "1:1",
-    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-sq.png"
-   },
-   {
-    "label": "9:16",
-    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-story.png"
-   },
-   {
-    "label": "1,91:1",
-    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-land.png"
-   },
-   {
-    "label": "Motion 9:16",
-    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-motion-story.mp4"
-   },
-   {
     "label": "Motion 4:5",
-    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-motion-feed45.mp4"
+    "path": "media/ads/ADC-QD-03-v3/ADC-QD-03-v3-motion-feed45.mp4"
    },
    {
     "label": "Motion 1:1",
-    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-motion-sq.mp4"
+    "path": "media/ads/ADC-QD-03-v3/ADC-QD-03-v3-motion-sq.mp4"
    }
   ]
  },
  {
   "id": "ADC-QD-04",
   "brand": "Quiddo",
-  "fmt": "estatico",
+  "fmt": "reel",
   "lote": 2,
-  "formato": "Hero estático 4:5 + motion (14.4 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
-  "title": "Professores: o celular a favor da aula",
+  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio) + motions 4:5 e 1:1 de 13 s",
+  "title": "Professores: a turma pedindo mais uma pergunta",
   "objetivo": "Tráfego para criar o quiz (teste grátis).",
   "publico": "Professores do fundamental II, médio e cursinho; coordenação pedagógica (interesses: educação, gamificação, ensino).",
-  "hipotese": "A briga com o celular em sala é a dor nº 1 do professor; virar o celular em ferramenta da aula é uma promessa mais forte do que \"revisão\".",
-  "copy": "Proibir o celular? Coloca ele pra jogar. 📱\nVocê escreve as perguntas da matéria, abre a sala e a turma inteira responde pelo celular, ao mesmo tempo, sem baixar app. O ranking aparece a cada pergunta e você vê na hora quem entendeu.\nFaça o seu. Teste grátis.",
-  "titulo": "O celular a favor da sua aula",
-  "cta": "Na arte: \"Faça o seu. Teste grátis.\". Botão do anúncio: Saiba mais.",
-  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_escola_celular&utm_content=ADC-QD-04-v2",
+  "hipotese": "Professor compra engajamento, não \"revisão\": mostrar a turma disputando a matéria (e pedindo mais) é uma promessa mais forte e mais visual do que falar do celular ou de revisar conteúdo.",
+  "copy": "A turma pedindo mais uma pergunta. 🙋\nVocê escreve as perguntas da matéria, abre a sala e todo mundo responde pelo celular, ao mesmo tempo, sem baixar app. Ranking a cada pergunta, pódio no fim e você vê na hora quem entendeu.\nFaça o seu. Teste grátis.",
+  "titulo": "A aula que a turma pede bis",
+  "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_escola_disputa&utm_content=ADC-QD-04-v3",
   "direitos": [
-   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
-   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
-   "Não consegui ler o texto do site do Quiddo (a página só carrega com JavaScript). As promessas (jogar pelo celular, sem baixar app, ranking, pódio, sorteio de prêmios) vêm do pack aprovado e da descrição do site no ar. A URL /criar respondeu."
+   "Sem música: o MP4 não tem faixa de áudio. Se quiser áudio, entra pela biblioteca da Meta.",
+   "Na captura: selo de teste local, botão de convite por app de mensagens e aviso de plano ocultos; endereço local trocado por quiddo.com.br; o QR (apontava para o computador local) fica desfocado.",
+   "O Google Fonts é bloqueado neste ambiente: as mesmas fontes do site (Fraunces 900 e Nunito) foram servidas a partir de pipeline/fonts.",
+   "Logo quiddo-negativo.svg, Fraunces 900 e Nunito oficiais.",
+   "Turma com 10 alunos de nomes comuns (Sofia, Pedro, Larissa…), sem etiqueta na tela. Perguntas com resposta conferida: Júpiter é o maior planeta; a Lua não tem luz própria; Marte é o planeta vermelho."
   ],
-  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
-  "version": "ADC-QD-04-v2",
-  "v": 2,
-  "mudou": "v2: conceito novo (seu comentário: \"revisão? conceito ruim\"). Saiu a revisão; entrou o celular a favor da aula: \"Proibir o celular? Coloca ele pra jogar.\" Sem etiqueta de exemplo.",
-  "hash": "f3ae7dd61e",
+  "notes": "Roteiro: 0 s gancho \"A turma pedindo mais uma pergunta.\" com o celular na contagem \"Lápis na mão!\"; 2,5 s TV + celular, toque em \"Júpiter\"; 6 s revelação e \"Mandou bem!\"; 9,5 s ranking; 12 s pódio; 17 s CTA. Texto de cena: \"O celular entra na aula.\", \"Na hora, quem entendeu.\", \"Ranking a cada pergunta.\", \"E a matéria vira disputa.\"",
+  "version": "ADC-QD-04-v3",
+  "v": 3,
+  "mudou": "v3 (seu comentário, duas vezes: \"revisão? conceito ruim\"): conceito novo. Saiu \"revisão\" e saiu \"proibir o celular\": agora o AD mostra a aula virando disputa, com a turma jogando de verdade. Gancho \"A turma pedindo mais uma pergunta.\", partida real de Ciências (7º B, Sistema Solar) no visual Sala de aula do app, TV e celular sincronizados, ranking e pódio \"Sofia tirou nota 10!\".",
+  "hash": "4ac774740c",
   "media": [
-   "ads/ADC-QD-04-v2/ADC-QD-04-v2-motion-feed45.mp4"
+   "ADC-QD-04-v3.mp4"
   ],
-  "cover": "ADC-QD-04-v2-hero.jpg",
-  "duration": 14.4,
+  "cover": "ADC-QD-04-v3-capa.jpg",
+  "duration": 20.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "ferramentas": "Partida real do Quiddo rodando a partir do código (gtorniero/quiddo), gravada por screencast do Chromium: TV do anfitrião (1536×864) e celular da protagonista (780×1688), com outros jogadores conectados em páginas próprias (pipeline/ads/reels/qd_cap2.py). Composição no modelo novo (pipeline/ads/estudio.py + reels/qd_modelo.py): TV e celular sincronizados, câmera no toque, cortes e tipografia cinética; H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
   "arquivos": [
    {
-    "label": "Feed 4:5 (hero)",
-    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-feed45.png"
-   },
-   {
-    "label": "1:1",
-    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-sq.png"
-   },
-   {
-    "label": "9:16",
-    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-story.png"
-   },
-   {
-    "label": "1,91:1",
-    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-land.png"
-   },
-   {
-    "label": "Motion 9:16",
-    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-motion-story.mp4"
-   },
-   {
     "label": "Motion 4:5",
-    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-motion-feed45.mp4"
+    "path": "media/ads/ADC-QD-04-v3/ADC-QD-04-v3-motion-feed45.mp4"
    },
    {
     "label": "Motion 1:1",
-    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-motion-sq.mp4"
+    "path": "media/ads/ADC-QD-04-v3/ADC-QD-04-v3-motion-sq.mp4"
    }
   ]
  },
@@ -1061,5 +1025,89 @@
     "path": "media/ads/ADC-RK-02-v1/ADC-RK-02-v1-motion-sq.mp4"
    }
   ]
+ },
+ {
+  "id": "ADC-RN-03",
+  "brand": "SPORT DNA",
+  "fmt": "reel",
+  "formato": "Reel 9:16 · 20,5 s · sem narração · sem música (sem faixa de áudio). Motions para feed: 4:5 e 1:1, 11 s.",
+  "title": "RUN DNA: seu tênis combina com você?",
+  "objetivo": "Tráfego para o teste RUN DNA (prévia grátis) com venda do relatório.",
+  "publico": "Corredores de rua iniciantes e intermediários, 25–50 anos (interesses: corrida, meia maratona, assessoria esportiva).",
+  "hipotese": "Abrir com a pergunta e o dedo já respondendo o teste real (peso, dor, ritmo) e entregar a revelação do top 3 em 9 s prende mais do que explicar o produto: quem corre quer ver o próprio resultado.",
+  "copy": "Seu tênis combina com você? 🏃\nO RUN DNA faz 19 perguntas sobre o seu corpo e a sua corrida (até onde dói) e cruza as respostas com 212 tênis de 13 marcas. Você vê os 3 que mais combinam e o porquê de cada um.\nAntes de comprar, faça o teste.",
+  "titulo": "Seu tênis combina com você?",
+  "cta": "No vídeo: \"Antes de comprar, faça o teste.\" + sportdna.com.br/run. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=run_teste&utm_content=ADC-RN-03-v1",
+  "direitos": [
+   "Captura real do RUN DNA (/run/), rodando a partir do código do site (gtorniero/sportdna), com o teste respondido de ponta a ponta por um perfil coerente (72 kg, joelho, 20 a 40 km por semana, 5:00 a 6:00 /km, meia maratona). Sem tela recriada.",
+   "Números da própria tela: 19 perguntas, 212 tênis, 13 marcas, 96% / 94% / 91%, 87% de confiança. O botão \"Revelar meus tênis · R$ 9,99\" aparece porque está na tela real do produto.",
+   "Modelos de tênis aparecem borrados pelo próprio produto (antes do desbloqueio). Nenhuma marca de fabricante em destaque.",
+   "Logo rundna-logo-fundo-escuro.svg, Archivo 800, DM Sans, JetBrains Mono e Syne oficiais. Sem música, sem narração, sem IA generativa."
+  ],
+  "notes": "Primeiro AD do modelo novo (estudio.py + DIRECAO.md) para a SPORT DNA. Gancho com interação em 0 s, revelação aos 8,5 s, 3 cortes de prova e CTA com o celular na mesma pose do quadro 0 (loop). O áudio, se houver, entra pela biblioteca da Meta; cortes na grade de 0,5 s.",
+  "version": "ADC-RN-03-v1",
+  "v": 1,
+  "mudou": "Novo. Modelo novo de AD: câmera em cima da tela real, toque visível, título cinético, contador até 212 e revelação do top 3. Versões reel 9:16 e motion 4:5 e 1:1.",
+  "media": [
+   "ADC-RN-03-v1.mp4"
+  ],
+  "cover": "ADC-RN-03-v1-capa.jpg",
+  "duration": 20.5,
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura com Playwright (screenshots do Chromium a ~29 fps, 1080×1920, toques visíveis; rn_capture.py); composição em HTML/CSS com estudio.py (rn03.py), render quadro a quadro, ffmpeg H.264 30 fps. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RN-03-v1/ADC-RN-03-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RN-03-v1/ADC-RN-03-v1-motion-sq.mp4"
+   }
+  ],
+  "hash": "e99466c568"
+ },
+ {
+  "id": "ADC-RZ-08",
+  "brand": "Retrozap",
+  "fmt": "reel",
+  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio). Motion 4:5 e 1:1 de 12 s para feed.",
+  "title": "Hero Retrozap: quem ri mais no seu grupo?",
+  "objetivo": "Tráfego para começar a retrospectiva do grupo.",
+  "publico": "18–45 anos com grupos de amigos, família ou trabalho ativos; interesse em retrospectivas de fim de ano, memes e amigos.",
+  "hipotese": "Abrir com uma pergunta que todo grupo sabe responder e mostrar o dedo dando o palpite prende mais do que explicar o produto. A interação real (palpite, pódio, raspadinha) é a própria demonstração.",
+  "copy": "Quem ri mais no seu grupo? 👑\nDá o seu palpite e o Retrozap revela: troféu por troféu, com pódio, raspadinha e o ano inteiro do grupo em números. Depois é só mandar o card lá no grupo.\nFaça a retrospectiva 2026 do seu grupo.",
+  "titulo": "A retrospectiva 2026 do seu grupo",
+  "cta": "No vídeo: \"Faça a retrospectiva 2026 do seu grupo.\" + retrozap.com.br. Botão do anúncio: Saiba mais.",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_content=ADC-RZ-08-v1",
+  "direitos": [
+   "Captura real do Retrozap rodando a partir do código do site, com uma conversa de grupo importada pelo fluxo normal (não é o modo demo). Nomes e números na tela vêm dessa conversa, criada para a gravação.",
+   "Sem música, sem narração e sem IA generativa de imagem, vídeo ou voz. Áudio, se quiser, pela biblioteca da Meta.",
+   "Assinatura e símbolo oficiais (pipeline/assets/retrozap), Bricolage Grotesque 800 e DM Sans. Celular genérico, sem marca de aparelho ou de app de terceiros.",
+   "Sem preço, sem \"1º grupo grátis\" e sem etiqueta de exemplo."
+  ],
+  "notes": "Primeiro AD do Retrozap no modelo novo (estudio.py + DIRECAO.md). Cortes em 4,5 s, 9 s, 13 s e 17 s; o top 3 do ano aparece em câmera lenta (a tela dura menos de 1 s no app).",
+  "version": "ADC-RZ-08-v1",
+  "v": 1,
+  "mudou": "Peça nova no modelo novo: gancho em pergunta com tipografia cinética, câmera que entra na tela no toque do palpite, flash na revelação, pódio e raspadinha reais, 3 cortes de prova e CTA. Não substitui RZ-01 nem RZ-02.",
+  "media": [
+   "ADC-RZ-08-v1.mp4"
+  ],
+  "cover": "ADC-RZ-08-v1-capa.jpg",
+  "duration": 20.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura com Playwright + screencast do Chromium (pipeline/ads/reels/captura_rz.py); composição e câmera em HTML/CSS com pipeline/ads/estudio.py (script pipeline/ads/reels/rz08.py); render quadro a quadro, H.264 30 fps.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RZ-08-v1/ADC-RZ-08-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RZ-08-v1/ADC-RZ-08-v1-motion-sq.mp4"
+   }
+  ],
+  "hash": "ed135328eb"
  }
 ]
