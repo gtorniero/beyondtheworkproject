@@ -74,15 +74,8 @@ ADS = json.loads((R / 'ads' / f'{ADS_PACK}.json').read_text()) if (R / 'ads' / f
 ADS_LOTE = json.loads((R / 'ads' / f'{ADS_PACK}-lote.json').read_text()) if (R / 'ads' / f'{ADS_PACK}-lote.json').exists() else []
 for a in ADS:
     md = O / 'media'
-    if not (md / a['media'][0].split('/')[-1]).exists(): continue  # já publicado na Mesa
-    if a['fmt'] == 'reel':
-        shutil.copy(md / a['media'][0], T / 'media' / a['media'][0])
-        a['cover'] = f"{a['id']}-capa.jpg"; jpg(md / f"{a['id']}-capa.png", T / 'media' / a['cover'], 720)
-    else:
-        a['previews'] = []
-        for m in a['media']:
-            n = m.replace('.png', '.jpg'); jpg(md / m, T / 'media' / n, 720); a['previews'].append(n)
-    if a.get('editable'): shutil.copy(O / a['editable'], T / a['editable'])
+    for fn in (a['media'][0], a.get('cover', '')):  # mídia nova de AD em out/media; o resto já está publicado na Mesa
+        if fn and '/' not in fn and (md / fn).exists(): shutil.copy(md / fn, T / 'media' / fn)
 DAYS = {d: f'Dia {d} · {v}' for d, v in C.DIAS.items()}
 html = (R / 'tool_template.html').read_text().replace('/*MANIFEST*/', json.dumps({'pack': C.PACK, 'rodada': RODADA, 'days': DAYS, 'titulo': f'PACK SEMANAL {C.NUM} · {C.SEMANA}', 'grade': GRADE, 'pieces': P, 'ads': ADS, 'adsLote': ADS_LOTE, 'adsPack': ADS_PACK, 'guiaHtml': markdown.markdown(GUIA, extensions=['tables', 'fenced_code']), 'prompt': guia.PROMPT, 'final': '__FINAL__'}, ensure_ascii=False).replace('</', '<\\/'))
 (T / 'index.html').write_text(html)

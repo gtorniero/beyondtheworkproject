@@ -1,0 +1,30 @@
+{
+ "tv_editor": 3.5859665870666504,
+ "tv_perguntas": 7.031728267669678,
+ "tv_abrir": 13.645290613174438,
+ "code": "LG3P",
+ "tv_lobby": 15.300707340240479,
+ "t_offset": 15.439629793167114,
+ "cel_form": 36.20379304885864,
+ "cel_sala": 42.49299430847168,
+ "q0_prep": 80.76812076568604,
+ "q0_resp": 90.89255976676941,
+ "q0_mari": 92.80657625198364,
+ "q0_reveal": 97.75226759910583,
+ "q0_rank": 102.77051019668579,
+ "q1_prep": 109.28998184204102,
+ "q1_resp": 119.97191047668457,
+ "q1_mari": 122.03196334838867,
+ "q1_reveal": 126.87804317474365,
+ "q1_rank": 131.94563627243042,
+ "q2_prep": 138.51206970214844,
+ "q2_resp": 148.67409992218018,
+ "q2_mari": 150.58897924423218,
+ "q2_reveal": 155.74442410469055,
+ "podio": 160.91831707954407,
+ "fim": 185.90654230117798,
+ "videos": {
+  "tv": "/tmp/claude-0/-home-claude-beyondtheworkproject/70ce8e8e-8c10-5997-ad90-074b6e8e0170/scratchpad/qd_cap/tv/page@e4ef2a289c688ebd4a716d1148e52924.webm",
+  "cel": "/tmp/claude-0/-home-claude-beyondtheworkproject/70ce8e8e-8c10-5997-ad90-074b6e8e0170/scratchpad/qd_cap/cel/page@51fd2b39e388f9670886e12066c45417.webm"
+ }
+}
