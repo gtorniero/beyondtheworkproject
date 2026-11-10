@@ -7,7 +7,7 @@ from pathlib import Path
 
 if sys.argv[1] == '--cfr':
     D = Path(sys.argv[2]); m = json.loads((D / 'marcas.json').read_text())
-    for k in ('tv', 'cel'):
+    for k in [k for k in ('tv', 'cel') if m['frames'].get(k)]:
         ts = m['frames'][k]; t_end = m['fim']
         with open(D / f'{k}.txt', 'w') as f:
             f.write(f"file '{k}/00000.jpg'\nduration {max(ts[0], 0.001):.4f}\n")  # segura o 1º quadro desde t=0

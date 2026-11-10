@@ -4,39 +4,39 @@
   "brand": "Retrozap",
   "fmt": "reel",
   "formato": "Reel 9:16 · 20 s · sem narração · sem música. Motion 4:5 e 1:1 de 12 s.",
-  "title": "Piloto Retrozap: seu WhatsApp de 2026 virou premiação",
+  "title": "A retrospectiva do seu grupo no WhatsApp",
   "objetivo": "Tráfego para o site, para começar a retrospectiva grátis do 1º grupo.",
   "publico": "Quem tem grupo de amigos ou família ativo, no clima de fim de ano (retrospectiva 2026).",
-  "hipotese": "Gancho com o contexto explícito (\"seu WhatsApp de 2026\") + o produto real em ação (exportar, ler, pódio, troféu de áudio) converte mais do que explicar o conceito.",
-  "copy": "Seu WhatsApp de 2026 virou cerimônia de premiação. 🏆\nVocê exporta a conversa do grupo, o Retrozap lê no seu celular (nada sai dele) e entrega um troféu pra cada um: quem mais fala, quem manda áudio, quem some.\nFaça a retrospectiva do seu grupo: retrozap.com.br",
-  "titulo": "A retrospectiva 2026 do seu grupo",
+  "hipotese": "Mostrar a retrospectiva como experiência completa (escolhe o grupo, Ato I, troféus, Gran Finale, card), com a palavra \"retrospectiva\" no gancho e no CTA, explica o produto melhor do que a metáfora de premiação.",
+  "copy": "A retrospectiva do seu grupo do WhatsApp. 🏆\nVocê exporta a conversa, escolhe o grupo e o Retrozap monta a retrospectiva de vocês: o Ato I conta quem é o grupo, os troféus saem um por um, o Gran Finale mostra o ano em números e no fim vem um card pronto pra mandar no grupo.\nFaça a retrospectiva do seu grupo: retrozap.com.br",
+  "titulo": "A retrospectiva do seu grupo do WhatsApp",
   "cta": "No vídeo: \"Faça a retrospectiva do seu grupo.\" + retrozap.com.br. Botão do anúncio: Saiba mais.",
-  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_content=ADC-RZ-01-v4",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_content=ADC-RZ-01-v5",
   "direitos": [
    "Captura real do produto; nomes e números vêm da conversa gerada para a gravação (Turma do Churras), sem etiqueta na tela.",
    "Logo, assinatura e ícones oficiais do Retrozap (pipeline/assets/retrozap); Bricolage Grotesque e DM Sans.",
-   "Sem música (vídeo sem faixa de áudio), sem preço, sem logo ou cor de app de terceiros."
+   "Sem música (vídeo sem faixa de áudio), sem preço, sem logo ou cor de app de terceiros, sem tema de privacidade."
   ],
-  "mudou": "v4 no modelo da referência (seu comentário no ADC-RZ-08: \"essa é a referência\"): abre no pódio explodindo em confete, volta ao começo (você escolhe a conversa, 10.505 mensagens lidas rodando em número gigante), desfile de troféus (Podcaster, raspadinha do Boca-Suja, Coração Mole, top 3) com os ícones oficiais flutuando, e CTA. 20 s (a v3 tinha 30 s).",
-  "notes": "Mesmo look do ADC-RZ-08, com gancho e sequência próprios (pódio primeiro, depois o caminho até ele). Script: pipeline/ads/reels/rz01.py.",
-  "version": "ADC-RZ-01-v4",
-  "v": 4,
-  "hash": "0786e1e1c5",
+  "mudou": "v5 (seu comentário na v4: \"o foco deve ser RETROSPECTIVA DO WHATSAPP; ninguém entende 'seu WhatsApp virou premiação'\"): saiu \"premiação\" do vídeo, do título e da copy. Gancho \"A retrospectiva do seu grupo no WhatsApp.\" e a retrospectiva mostrada como experiência, do começo ao fim: escolhe o grupo → Ato I (quem é o grupo) → troféus (raspadinha) → Gran Finale → card pro grupo → CTA. Mesmo look da referência RZ-08.",
+  "notes": "Sequência própria, diferente do RZ-08 (palpite) e do RZ-02 (números). Script: pipeline/ads/reels/rz01_v5.py (quadros da captura do RZ-08).",
+  "version": "ADC-RZ-01-v5",
+  "v": 5,
+  "hash": "72f178864b",
   "media": [
-   "ADC-RZ-01-v4.mp4"
+   "ADC-RZ-01-v5.mp4"
   ],
-  "cover": "ADC-RZ-01-v4-capa.jpg",
+  "cover": "ADC-RZ-01-v5-capa.jpg",
   "duration": 20.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Captura real do Retrozap (site rodando da cópia do código, conversa importada pelo fluxo normal), gravada com Playwright; composição no estudio.py com os helpers da referência ADC-RZ-08 (reels/rz_ref.py): celular grande em perspectiva, câmera por toque, título cinético, wipes de cor, ícones oficiais flutuando e números rodando. ffmpeg H.264 30 fps, sem faixa de áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "ferramentas": "Captura real do Retrozap (site rodando da cópia do código do repo gtorniero/retrozap, conversa importada pelo fluxo normal), gravada com Playwright; composição no estudio.py com os helpers da referência ADC-RZ-08 (reels/rz_ref.py): celular grande em perspectiva, câmera por toque, título cinético, wipes de cor, ícones oficiais flutuando e números rodando. ffmpeg H.264 30 fps, sem faixa de áudio. Sem IA generativa de imagem, vídeo ou voz.",
   "arquivos": [
    {
     "label": "Motion 4:5",
-    "path": "media/ads/ADC-RZ-01-v4/ADC-RZ-01-v4-motion-feed45.mp4"
+    "path": "media/ads/ADC-RZ-01-v5/ADC-RZ-01-v5-motion-feed45.mp4"
    },
    {
     "label": "Motion 1:1",
-    "path": "media/ads/ADC-RZ-01-v4/ADC-RZ-01-v4-motion-sq.mp4"
+    "path": "media/ads/ADC-RZ-01-v5/ADC-RZ-01-v5-motion-sq.mp4"
    }
   ]
  },
@@ -85,7 +85,7 @@
   "id": "ADC-QD-01",
   "brand": "Quiddo",
   "fmt": "reel",
-  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 de 12 s",
+  "formato": "Reel 9:16 · 17 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 de 11 s",
   "title": "Piloto Quiddo: quiz ao vivo no meio do treinamento",
   "objetivo": "Tráfego para criar o quiz (teste grátis).",
   "publico": "RH, T&D, líderes e quem apresenta treinamento, onboarding ou convenção.",
@@ -93,32 +93,32 @@
   "copy": "Treinamento com a sala no celular? Use a favor. 📱\nVocê escreve as perguntas do conteúdo, abre a sala e todo mundo responde pelo celular, ao mesmo tempo, no meio da apresentação. Sem app, sem cadastro. Na hora, você vê quem entendeu.\nFaça o seu. Teste grátis.",
   "titulo": "Quiz ao vivo no meio do treinamento",
   "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
-  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_treinamento&utm_content=ADC-QD-01-v4",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_treinamento&utm_content=ADC-QD-01-v5",
   "direitos": [
    "Partida real gravada para o anúncio (integração da turma de novembro (phishing, crachá, risco de acidente), 8 pessoas); nomes comuns, sem etiqueta na tela.",
    "Bichos (avatarSvg), símbolos das respostas e logo oficiais do Quiddo; fontes do site (Fraunces 900 e Nunito).",
    "Na gravação ficam ocultos o selo de teste local, o botão de convite por app de mensagens e a oferta/limite da sala grátis; o endereço local aparece como quiddo.com.br e o QR não entra em quadro legível."
   ],
-  "mudou": "v4, refeito na referência que você aprovou no ADC-RZ-08 (\"essa é a referência para todos os nossos ADs\"): o celular do jogador virou o protagonista, grande e central, com a câmera entrando no toque; a TV entra por trás só na revelação; fundo vivo na paleta do visual Escritório; big numbers reais da partida rodando (+948 pontos, 8 pessoas, 2.848 pontos no pódio); bichos e símbolos oficiais do site em cena e no CTA. Gancho: \"Treinamento com a sala ligada.\"",
-  "notes": "Celular gravado com 780 px de largura (acima disso a captura perde fluidez nesta máquina); as animações do app saem a cerca de 10 a 19 quadros por segundo.",
-  "version": "ADC-QD-01-v4",
-  "v": 4,
-  "hash": "a0871aaa04",
+  "mudou": "v5 (seu comentário na v4: \"as animações com tela do jogo tá travando um pouco. Talvez deixar mais curto ou simples\"): partida regravada com o celular em câmera lenta real durante as animações (JS e CSS do app desacelerados 3 a 16×) e devolvida à velocidade do app na montagem. Medido na captura: 44 a 46 quadros reais por segundo no \"Mandou bem!\" e no ranking e 36 no pódio (média; 27 a 51 por segundo), contra 10 a 19 na v4. Mais curto e simples: só o celular (a TV saiu), 4 cenas (toque, \"Mandou bem!\", ranking, pódio) e CTA, 17 s em vez de 20. Celular menor, em proporção real da tela, e zoom mais leve.",
+  "notes": "Partida de 2 perguntas no visual Escritório (phishing e crachá), 8 jogadores; números reais da tela: +959 pontos na 1ª pergunta e 1.914 pontos da campeã (Mariana). Nomes comuns, sem etiqueta.",
+  "version": "ADC-QD-01-v5",
+  "v": 5,
+  "hash": "a28038a134",
   "media": [
-   "ADC-QD-01-v4.mp4"
+   "ADC-QD-01-v5.mp4"
   ],
-  "cover": "ADC-QD-01-v4-capa.jpg",
-  "duration": 20.0,
+  "cover": "ADC-QD-01-v5-capa.jpg",
+  "duration": 17.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Captura real do Quiddo rodando a partir do código do site (repo gtorniero/quiddo), partida de verdade com todos os jogadores conectados, gravada por screencast do Chromium (qd_cap2.py). Montagem em HTML/CSS com o kit estudio.py no modelo da referência (qd_ref.py): câmera, tipografia cinética, contadores e transições; ffmpeg H.264 30 fps. Sem IA generativa de imagem, vídeo ou voz. Sem narração e sem música.",
+  "ferramentas": "Captura real do Quiddo rodando a partir do código do site (repo gtorniero/quiddo), partida de verdade com todos os jogadores conectados. Celular gravado em 1080 px de largura por screencast do Chromium com o tempo da página desacelerado só nas animações (qd_cap3.py) e remapeado para a velocidade real (qd_remap.py). Montagem em HTML/CSS com o kit estudio.py na referência ADC-RZ-08 (qd_ref5.py). ffmpeg H.264 30 fps, sem áudio. Sem IA generativa.",
   "arquivos": [
    {
     "label": "Motion 4:5",
-    "path": "media/ads/ADC-QD-01-v4/ADC-QD-01-v4-motion-feed45.mp4"
+    "path": "media/ads/ADC-QD-01-v5/ADC-QD-01-v5-motion-feed45.mp4"
    },
    {
     "label": "Motion 1:1",
-    "path": "media/ads/ADC-QD-01-v4/ADC-QD-01-v4-motion-sq.mp4"
+    "path": "media/ads/ADC-QD-01-v5/ADC-QD-01-v5-motion-sq.mp4"
    }
   ]
  },
@@ -273,7 +273,7 @@
   "brand": "Quiddo",
   "fmt": "reel",
   "lote": 2,
-  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 de 12 s",
+  "formato": "Reel 9:16 · 17 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 de 11 s",
   "title": "Professores: a turma pedindo mais uma pergunta",
   "objetivo": "Tráfego para criar o quiz (teste grátis).",
   "publico": "Professores do fundamental II, médio e cursinho; coordenação pedagógica (interesses: educação, gamificação, ensino).",
@@ -281,32 +281,32 @@
   "copy": "A turma pedindo mais uma pergunta. 🙋\nVocê escreve as perguntas da matéria, abre a sala e todo mundo responde pelo celular, ao mesmo tempo, sem baixar app. Ranking a cada pergunta, pódio no fim e você vê na hora quem entendeu.\nFaça o seu. Teste grátis.",
   "titulo": "A aula que a turma pede bis",
   "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
-  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_escola_disputa&utm_content=ADC-QD-04-v4",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_escola_disputa&utm_content=ADC-QD-04-v5",
   "direitos": [
    "Partida real gravada para o anúncio (Ciências, 7º B, Sistema Solar, 10 alunos); nomes comuns, sem etiqueta na tela.",
    "Bichos (avatarSvg), símbolos das respostas e logo oficiais do Quiddo; fontes do site (Fraunces 900 e Nunito).",
    "Na gravação ficam ocultos o selo de teste local, o botão de convite por app de mensagens e a oferta/limite da sala grátis; o endereço local aparece como quiddo.com.br e o QR não entra em quadro legível."
   ],
-  "notes": "Celular gravado com 780 px de largura (acima disso a captura perde fluidez nesta máquina); as animações do app saem a cerca de 10 a 19 quadros por segundo.",
-  "version": "ADC-QD-04-v4",
-  "v": 4,
-  "mudou": "v4, refeito na referência que você aprovou no ADC-RZ-08 (\"essa é a referência para todos os nossos ADs\"): o celular do jogador virou o protagonista, grande e central, com a câmera entrando no toque; a TV entra por trás só na revelação; fundo vivo na paleta do visual Sala de aula; big numbers reais da partida rodando (+952 pontos, 10 alunos, 2.865 pontos no pódio); bichos e símbolos oficiais do site em cena e no CTA. Gancho: \"A turma pedindo mais uma.\"",
-  "hash": "c8dc92a8f4",
+  "notes": "Partida de 2 perguntas no visual Sala de aula (Ciências, 7º B, Sistema Solar), 10 alunos; números reais da tela: +954 pontos na 1ª pergunta e 1.911 pontos da campeã (Sofia). Nomes comuns, sem etiqueta.",
+  "version": "ADC-QD-04-v5",
+  "v": 5,
+  "mudou": "v5 (mesmo travamento que você apontou no QD-01: \"as animações com tela do jogo tá travando um pouco. Talvez deixar mais curto ou simples\"; e antes: \"celular gigante\"): partida regravada com o celular em câmera lenta real durante as animações (JS e CSS do app desacelerados 4 a 16×) e devolvida à velocidade do app na montagem. Medido na captura: 69 quadros reais por segundo no \"Mandou bem!\" e no ranking e 45 no pódio (média; 21 a 64 por segundo), contra 10 a 19 na v4. Mais curto e simples: só o celular (a TV saiu), 4 cenas (toque, \"Mandou bem!\", ranking, pódio) e CTA, 17 s em vez de 20. Celular menor, em proporção real da tela, e zoom mais leve.",
+  "hash": "9d8bf66a40",
   "media": [
-   "ADC-QD-04-v4.mp4"
+   "ADC-QD-04-v5.mp4"
   ],
-  "cover": "ADC-QD-04-v4-capa.jpg",
-  "duration": 20.0,
+  "cover": "ADC-QD-04-v5-capa.jpg",
+  "duration": 17.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Captura real do Quiddo rodando a partir do código do site (repo gtorniero/quiddo), partida de verdade com todos os jogadores conectados, gravada por screencast do Chromium (qd_cap2.py). Montagem em HTML/CSS com o kit estudio.py no modelo da referência (qd_ref.py): câmera, tipografia cinética, contadores e transições; ffmpeg H.264 30 fps. Sem IA generativa de imagem, vídeo ou voz. Sem narração e sem música.",
+  "ferramentas": "Captura real do Quiddo rodando a partir do código do site (repo gtorniero/quiddo), partida de verdade com todos os jogadores conectados. Celular gravado em 1080 px de largura por screencast do Chromium com o tempo da página desacelerado só nas animações (qd_cap3.py) e remapeado para a velocidade real (qd_remap.py). Montagem em HTML/CSS com o kit estudio.py na referência ADC-RZ-08 (qd_ref5.py). ffmpeg H.264 30 fps, sem áudio. Sem IA generativa.",
   "arquivos": [
    {
     "label": "Motion 4:5",
-    "path": "media/ads/ADC-QD-04-v4/ADC-QD-04-v4-motion-feed45.mp4"
+    "path": "media/ads/ADC-QD-04-v5/ADC-QD-04-v5-motion-feed45.mp4"
    },
    {
     "label": "Motion 1:1",
-    "path": "media/ads/ADC-QD-04-v4/ADC-QD-04-v4-motion-sq.mp4"
+    "path": "media/ads/ADC-QD-04-v5/ADC-QD-04-v5-motion-sq.mp4"
    }
   ]
  },
@@ -1182,5 +1182,46 @@
    }
   ],
   "hash": "77934b4674"
+ },
+ {
+  "id": "ADC-RZ-09",
+  "brand": "Retrozap",
+  "fmt": "reel",
+  "version": "ADC-RZ-09-v1",
+  "v": 1,
+  "media": [
+   "ADC-RZ-09-v1.mp4"
+  ],
+  "cover": "ADC-RZ-09-v1-capa.jpg",
+  "duration": 20.0,
+  "formato": "Reel 9:16 · 20 s · sem narração · sem música. Motion 4:5 e 1:1 de 12 s.",
+  "title": "Casal: quantas mensagens vocês trocaram em 2026?",
+  "objetivo": "Tráfego para o site, para fazer a retrospectiva de casal.",
+  "publico": "Casais (namorados, noivos, casados) 20–45 anos, interesse em relacionamento, presentes e datas especiais, no clima de fim de ano.",
+  "hipotese": "A estrutura de big numbers que funcionou no RZ-02 v3 (\"o melhor\"), com os números da conversa a dois (mensagens, \"te amo\", risadas, áudios), gera curiosidade sobre o próprio casal e vontade de mandar para o outro.",
+  "copy": "Quantas mensagens vocês trocaram em 2026? 💕\nO Retrozap faz a retrospectiva do casal a partir da conversa de vocês no WhatsApp: mensagens do ano, quantos \"te amo\", risadas, áudios, troféus como \"quem fala mais\" e \"quem manda mais coração\", e um vídeo de vocês no fim.\nFaçam a retrospectiva de vocês: retrozap.com.br",
+  "titulo": "A retrospectiva 2026 de vocês dois",
+  "cta": "No vídeo: \"Façam a retrospectiva de vocês.\" + retrozap.com.br. Botão do anúncio: Saiba mais.",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_casal_retro2026&utm_content=ADC-RZ-09-v1",
+  "mudou": "Peça nova (seu comentário no RZ-02 v3: \"O MELHOR, ref. Faça um desse pra casal também\"): mesma estrutura de big numbers do RZ-02 v3, com a retrospectiva de casal real do site e a identidade Casa Casal (creme, rosa, cereja, vinho).",
+  "ferramentas": "Captura real do Retrozap (site rodando da cópia do código do repo gtorniero/retrozap, conversa importada pelo fluxo normal), gravada com Playwright; composição no estudio.py com os helpers da referência ADC-RZ-08 (reels/rz_ref_casal.py, versão Casa Casal): celular grande em perspectiva, câmera por toque, título cinético, wipes de cor, ícones oficiais flutuando e números rodando. ffmpeg H.264 30 fps, sem faixa de áudio. Sem IA generativa de imagem, vídeo ou voz. Conversa a dois gerada com reels/gera_casal.py e gravada com reels/captura_casal.py (fluxo real: \"Somos um casal\" → nomes → Ato I → troféus → Gran Finale).",
+  "direitos": [
+   "Captura real do produto; nomes e números vêm da conversa gerada para a gravação (Dani & Cris), sem etiqueta na tela.",
+   "Logo, assinatura e ícones oficiais do Retrozap (pipeline/assets/retrozap/icones-casal e logo-assinatura-casal.svg); Bricolage Grotesque e DM Sans.",
+   "Sem música (vídeo sem faixa de áudio), sem preço, sem logo ou cor de app de terceiros, sem tema de privacidade."
+  ],
+  "notes": "Números reais da tela do Gran Finale do casal: 10.524 mensagens em 2026, 677 declarações de amor (\"te amo\" e cia.), 865 risadas, 726 áudios; troféus Tagarela do Casal (Dani 5.937 × Cris 4.587) e Coração Ambulante (970 × 539). Script: pipeline/ads/reels/rz09.py.",
+  "producao": "pronto para revisão",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RZ-09-v1/ADC-RZ-09-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RZ-09-v1/ADC-RZ-09-v1-motion-sq.mp4"
+   }
+  ],
+  "hash": "200b6ade09"
  }
 ]
