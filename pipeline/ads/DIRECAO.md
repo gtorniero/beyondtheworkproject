@@ -2,6 +2,16 @@
 
 Objetivo: anúncio best in class, com cara de 2026, feito para parar o dedo e ser mandado no grupo. Sempre com o **produto real** (captura de verdade) como protagonista. Ferramenta: `pipeline/ads/estudio.py`.
 
+## REFERÊNCIA OFICIAL: ADC-RZ-08-v1 (Gui, 10/11: "É isso! Essa é a referência para TODOS os nossos ADs")
+Código: `pipeline/ads/reels/rz08.py`. Todo AD de todas as marcas segue essa técnica e esse look and feel:
+- **Celular grande e central** (cerca de 70% da largura no 9:16), com a tela real do app, em perspectiva leve, que a câmera aproxima a cada toque (helpers `cam`, `rot`, `shot` do rz08.py).
+- **Fundo vivo na cor da marca:** cor escura/base chapada + 2 manchas de luz desfocadas (blobs) nas cores de apoio, andando devagar.
+- **Título enorme no topo**, 2 linhas, fonte de título da marca, com 1 palavra em destaque na cor de acento; troca a cada cena.
+- **Big numbers:** números reais do app/site em corpo gigante, rodando com `count()` (SPORT DNA: o motor e a recomendação: modelos cruzados, % de combinação, confiança; Retrozap: mensagens; Quiddo: pontos, posição, jogadores).
+- **Assets do site:** ícones, troféus, bichos, logos e ilustrações oficiais (dos repos dos sites e de `pipeline/assets`) entram como elementos de cena (flutuando, no CTA), nunca desenho novo.
+- Wipes de cor da marca entre blocos, flash na revelação, CTA com assinatura oficial + frase + pílula da URL.
+- Motions 4:5 e 1:1 recompostos pelo mesmo script (tabela `LAY`).
+
 ## Estrutura (reel 9:16, 16 a 24 s)
 1. **Gancho, 0 a 1,5 s.** Uma pergunta ou provocação de até 6 palavras, em tipografia cinética grande, já com o produto na tela e em movimento. Nada de logo ou cartela parada na abertura. O quadro 0 já precisa funcionar como capa.
 2. **Interação, 1,5 a 6 s.** O momento mais interativo do app, com o dedo agindo: palpite, raspadinha, resposta no celular, slider do teste. A câmera entra na tela (zoom para o ponto do toque), `ring()` no toque.
