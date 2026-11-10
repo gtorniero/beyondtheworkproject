@@ -3,7 +3,7 @@
   "id": "ADC-RZ-01",
   "brand": "Retrozap",
   "fmt": "reel",
-  "formato": "Reel 9:16 · 30,0 s · sem narração · sem música (sem faixa de áudio)",
+  "formato": "Reel 9:16 · 20 s · sem narração · sem música. Motion 4:5 e 1:1 de 12 s.",
   "title": "Piloto Retrozap: seu WhatsApp de 2026 virou premiação",
   "objetivo": "Tráfego para o site, para começar a retrospectiva grátis do 1º grupo.",
   "publico": "Quem tem grupo de amigos ou família ativo, no clima de fim de ano (retrospectiva 2026).",
@@ -11,32 +11,40 @@
   "copy": "Seu WhatsApp de 2026 virou cerimônia de premiação. 🏆\nVocê exporta a conversa do grupo, o Retrozap lê no seu celular (nada sai dele) e entrega um troféu pra cada um: quem mais fala, quem manda áudio, quem some.\nFaça a retrospectiva do seu grupo: retrozap.com.br",
   "titulo": "A retrospectiva 2026 do seu grupo",
   "cta": "No vídeo: \"Faça a retrospectiva do seu grupo.\" + retrozap.com.br. Botão do anúncio: Saiba mais.",
-  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_content=ADC-RZ-01-v3",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_content=ADC-RZ-01-v4",
   "direitos": [
-   "Sem voz e sem música: o MP4 não tem faixa de áudio. Se quiser áudio, escolha na biblioteca da Meta.",
-   "Os dados na tela vêm de uma conversa de grupo gerada para a gravação (Turma do Churras, 2025–2026, gera_grupo.py) e importada pelo fluxo real do site, como um usuário faz. Por isso o site não mostra nenhuma etiqueta de exemplo, e o vídeo também não tem.",
-   "Sem preço e sem \"1º grupo grátis\" na arte e na copy (o site e o kit divergem no preço).",
-   "Sem logo, cor ou tela de app de terceiros: só a palavra WhatsApp no texto. Indicador de toque (como o \"mostrar toques\" da gravação de tela) por cima da página.",
-   "Logo assinatura oficial (logo-assinatura-grupo.svg), Bricolage Grotesque 800 e DM Sans."
+   "Captura real do produto; nomes e números vêm da conversa gerada para a gravação (Turma do Churras), sem etiqueta na tela.",
+   "Logo, assinatura e ícones oficiais do Retrozap (pipeline/assets/retrozap); Bricolage Grotesque e DM Sans.",
+   "Sem música (vídeo sem faixa de áudio), sem preço, sem logo ou cor de app de terceiros."
   ],
-  "mudou": "v3 (seus comentários: \"rapido pra cacete o video! tem q ver essas musiquinhas que tao toscas\" e \"tirar exemplo e nomes fictícios\"): gravação nova do site de verdade, importando uma conversa pelo fluxo real, então não aparece mais \"Grupo de exemplo · nomes fictícios\". Mais lento: 30,0 s com 5 cenas de 4 a 7 s, telas na velocidade real (antes 24,2 s). Sem trilha. Sem preço. Tela inteira do celular numa moldura, sem cortar nada. Cenas: pódio do Tagarela, importação do arquivo, pódio do Podcaster, raspadinha do Boca-Suja e CTA.",
-  "notes": "Mesma ideia da v2 aprovada (importação → cerimônia → pódio). Visivelmente diferente do ADC-RZ-02: aqui a tela inteira fica numa moldura de celular com manchete em cima; no RZ-02 a tela vem em tela cheia, reenquadrada, com legenda em caixa.",
-  "version": "ADC-RZ-01-v3",
-  "v": 3,
-  "hash": "453e406192",
+  "mudou": "v4 no modelo da referência (seu comentário no ADC-RZ-08: \"essa é a referência\"): abre no pódio explodindo em confete, volta ao começo (você escolhe a conversa, 10.505 mensagens lidas rodando em número gigante), desfile de troféus (Podcaster, raspadinha do Boca-Suja, Coração Mole, top 3) com os ícones oficiais flutuando, e CTA. 20 s (a v3 tinha 30 s).",
+  "notes": "Mesmo look do ADC-RZ-08, com gancho e sequência próprios (pódio primeiro, depois o caminho até ele). Script: pipeline/ads/reels/rz01.py.",
+  "version": "ADC-RZ-01-v4",
+  "v": 4,
+  "hash": "0786e1e1c5",
   "media": [
-   "ADC-RZ-01-v3.mp4"
+   "ADC-RZ-01-v4.mp4"
   ],
-  "cover": "ADC-RZ-01-v3-capa.jpg",
-  "duration": 30.0,
+  "cover": "ADC-RZ-01-v4-capa.jpg",
+  "duration": 20.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Captura real do Retrozap rodando local a partir do código do repositório gtorniero/retrozap (pasta public/, 10/11/2026), no fluxo de verdade: escolher o arquivo exportado → turma → Ato I → categorias → troféus. Screencast do Chromium (CDP) a 1080×1920, viewport 390×693, na velocidade real (pipeline/ads/reels/captura_rz.py, raw_video.py). Montagem com fontes e SVGs oficiais (monta_rz.py) e ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração."
+  "ferramentas": "Captura real do Retrozap (site rodando da cópia do código, conversa importada pelo fluxo normal), gravada com Playwright; composição no estudio.py com os helpers da referência ADC-RZ-08 (reels/rz_ref.py): celular grande em perspectiva, câmera por toque, título cinético, wipes de cor, ícones oficiais flutuando e números rodando. ffmpeg H.264 30 fps, sem faixa de áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RZ-01-v4/ADC-RZ-01-v4-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RZ-01-v4/ADC-RZ-01-v4-motion-sq.mp4"
+   }
+  ]
  },
  {
   "id": "ADC-RZ-02",
   "brand": "Retrozap",
   "fmt": "reel",
-  "formato": "Reel 9:16 · 31,7 s · sem narração · sem música (sem faixa de áudio)",
+  "formato": "Reel 9:16 · 20 s · sem narração · sem música. Motion 4:5 e 1:1 de 12 s.",
   "title": "Hero Retrozap: Retrospectiva 2026 do seu grupo no WhatsApp",
   "objetivo": "Tráfego para o site, para começar a retrospectiva grátis do 1º grupo.",
   "publico": "Quem tem grupo de amigos, família ou trabalho ativo, no clima de fim de ano (retrospectiva 2026).",
@@ -44,63 +52,81 @@
   "copy": "A Retrospectiva 2026 do seu grupo no WhatsApp. 🏆\nVocê exporta a conversa do grupo e abre no retrozap.com.br. O arquivo é lido no seu celular e não vai para servidor. Cada um ganha um troféu, revelado um por um, com palpite, pódio e card pronto pra mandar no grupo.\nFaça a retrospectiva 2026 do seu grupo.",
   "titulo": "Retrospectiva 2026 do seu grupo",
   "cta": "No vídeo: \"Faça a retrospectiva 2026 do seu grupo.\" + retrozap.com.br. Botão do anúncio: Saiba mais.",
-  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_content=ADC-RZ-02-v2",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_content=ADC-RZ-02-v3",
   "direitos": [
-   "Sem voz e sem música: o MP4 não tem faixa de áudio. Se quiser áudio, escolha na biblioteca da Meta.",
-   "Os dados na tela vêm de uma conversa de grupo gerada para a gravação (Turma do Churras, 2025–2026, gera_grupo.py) e importada pelo fluxo real do site, como um usuário faz. Por isso o site não mostra nenhuma etiqueta de exemplo, e o vídeo também não tem.",
-   "Sem preço e sem \"1º grupo grátis\" na arte e na copy (o site e o kit divergem no preço).",
-   "Sem logo, cor ou tela de app de terceiros: só a palavra WhatsApp no texto. Indicador de toque (como o \"mostrar toques\" da gravação de tela) por cima da página.",
-   "Logo assinatura oficial (logo-assinatura-grupo.svg), Bricolage Grotesque 800 e DM Sans."
+   "Captura real do produto; nomes e números vêm da conversa gerada para a gravação (Turma do Churras), sem etiqueta na tela.",
+   "Logo, assinatura e ícones oficiais do Retrozap (pipeline/assets/retrozap); Bricolage Grotesque e DM Sans.",
+   "Sem música (vídeo sem faixa de áudio), sem preço, sem logo ou cor de app de terceiros."
   ],
-  "mudou": "v2 (sua regra: \"tirar exemplo e nomes fictícios\", e o ritmo mais lento pedido no RZ-01): gravação nova do site de verdade, importando uma conversa pelo fluxo real; saíram \"Grupo de exemplo\" e \"Demonstração · grupo de exemplo do site\". 31,7 s, cada cena com 3,6 a 7 s e na velocidade real. Sem preço. Cenas: palpite no Rei(nha) do Kkkk (você toca no nome e o site revela), Ato I, as 8 categorias, card pro grupo, 2026 em números e CTA. Reenquadramento por cena com bordas em espaço vazio, sem cortar nada.",
-  "notes": "Hero aprovado na v1; a v2 só tira as etiquetas, desacelera e troca as cenas por capturas novas (sem modo de exemplo). Diferente do RZ-01: tela cheia reenquadrada, legenda em caixa Manga e CTA em fundo Manga.",
-  "version": "ADC-RZ-02-v2",
-  "v": 2,
-  "hash": "dfe20ca805",
+  "mudou": "v3 no modelo da referência (seu comentário no ADC-RZ-08: \"essa é a referência\"), em versão big numbers: \"Quantas mensagens seu grupo mandou em 2026?\" e os números reais do Gran Finale rodando em corpo gigante (7.249 mensagens, 421 áudios, 636 vezes \"bora\", de 3.256 para 7.249), depois top 3 do ano, vídeo do grupo, card e CTA. 20 s (a v2 tinha 31,7 s).",
+  "notes": "Mesmo look do ADC-RZ-08, com gancho de número. Os números do título são os mesmos da tela capturada. Script: pipeline/ads/reels/rz02.py.",
+  "version": "ADC-RZ-02-v3",
+  "v": 3,
+  "hash": "c763132c13",
   "media": [
-   "ADC-RZ-02-v2.mp4"
+   "ADC-RZ-02-v3.mp4"
   ],
-  "cover": "ADC-RZ-02-v2-capa.jpg",
-  "duration": 31.7,
+  "cover": "ADC-RZ-02-v3-capa.jpg",
+  "duration": 20.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Captura real do Retrozap rodando local a partir do código do repositório gtorniero/retrozap (pasta public/, 10/11/2026), no fluxo de verdade: escolher o arquivo exportado → turma → Ato I → categorias → troféus. Screencast do Chromium (CDP) a 1080×1920, viewport 390×693, na velocidade real (pipeline/ads/reels/captura_rz.py, raw_video.py). Montagem com fontes e SVGs oficiais (monta_rz.py) e ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração."
+  "ferramentas": "Captura real do Retrozap (site rodando da cópia do código, conversa importada pelo fluxo normal), gravada com Playwright; composição no estudio.py com os helpers da referência ADC-RZ-08 (reels/rz_ref.py): celular grande em perspectiva, câmera por toque, título cinético, wipes de cor, ícones oficiais flutuando e números rodando. ffmpeg H.264 30 fps, sem faixa de áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RZ-02-v3/ADC-RZ-02-v3-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RZ-02-v3/ADC-RZ-02-v3-motion-sq.mp4"
+   }
+  ]
  },
  {
   "id": "ADC-QD-01",
   "brand": "Quiddo",
   "fmt": "reel",
-  "formato": "Reel 9:16 · 36,2 s · sem narração · sem música (sem faixa de áudio)",
+  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 de 12 s",
   "title": "Piloto Quiddo: quiz ao vivo no meio do treinamento",
   "objetivo": "Tráfego para criar o quiz (teste grátis).",
   "publico": "RH, T&D, líderes e quem apresenta treinamento, onboarding ou convenção.",
   "hipotese": "Mostrar a participação durante a apresentação (TV e celular ao mesmo tempo, resultado na hora) vende melhor para o corporativo do que \"competição entre amigos\".",
   "copy": "Treinamento com a sala no celular? Use a favor. 📱\nVocê escreve as perguntas do conteúdo, abre a sala e todo mundo responde pelo celular, ao mesmo tempo, no meio da apresentação. Sem app, sem cadastro. Na hora, você vê quem entendeu.\nFaça o seu. Teste grátis.",
   "titulo": "Quiz ao vivo no meio do treinamento",
-  "cta": "No vídeo: \"Faça o seu. Teste grátis.\" Botão do anúncio: Saiba mais.",
-  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_treinamento&utm_content=ADC-QD-01-v3",
+  "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_treinamento&utm_content=ADC-QD-01-v4",
   "direitos": [
-   "Telas do próprio Quiddo, gravadas do código do produto. Perguntas e nomes dos participantes escritos para o anúncio, sem pessoas reais identificáveis.",
-   "Fora do produto no ar, só o que é do ambiente local: o selo de teste local foi escondido, o endereço local virou quiddo.com.br, o QR (que apontava para o computador local) está desfocado, e o botão de convite por app de mensagens e o aviso de limite da sala grátis foram ocultados.",
-   "Logo quiddo-cor.svg, Fraunces 900 e Nunito oficiais. Sem música: o áudio, se quiser, entra pela biblioteca da Meta."
+   "Partida real gravada para o anúncio (integração da turma de novembro (phishing, crachá, risco de acidente), 8 pessoas); nomes comuns, sem etiqueta na tela.",
+   "Bichos (avatarSvg), símbolos das respostas e logo oficiais do Quiddo; fontes do site (Fraunces 900 e Nunito).",
+   "Na gravação ficam ocultos o selo de teste local, o botão de convite por app de mensagens e a oferta/limite da sala grátis; o endereço local aparece como quiddo.com.br e o QR não entra em quadro legível."
   ],
-  "mudou": "v3 (seu comentário: \"tá tosco o exemplo do jogo, pegue um case real, 100% fidedigno à experiência; tá cortado o exemplo do jogo\"): partida de verdade gravada no Quiddo, do editor ao pódio. Quiz \"Integração · Turma de novembro\" no modo Corporativo, visual Escritório, com 3 perguntas de treinamento (phishing, crachá, risco de acidente) e 8 pessoas entrando pelo celular. Cada tela aparece inteira, sem corte: TV e celular em cenas separadas e grandes. Sem etiqueta de exemplo, sem música, ritmo mais calmo (cenas de 3 a 5 s).",
-  "notes": "Refeito na rodada de 10/11 a partir do seu último feedback. Sem citar limite de pessoas. Respostas dos jogadores combinadas antes de gravar (a partida é real; o roteiro de quem acerta não).",
-  "version": "ADC-QD-01-v3",
-  "v": 3,
-  "hash": "c0a6ebc2c1",
+  "mudou": "v4, refeito na referência que você aprovou no ADC-RZ-08 (\"essa é a referência para todos os nossos ADs\"): o celular do jogador virou o protagonista, grande e central, com a câmera entrando no toque; a TV entra por trás só na revelação; fundo vivo na paleta do visual Escritório; big numbers reais da partida rodando (+948 pontos, 8 pessoas, 2.848 pontos no pódio); bichos e símbolos oficiais do site em cena e no CTA. Gancho: \"Treinamento com a sala ligada.\"",
+  "notes": "Celular gravado com 780 px de largura (acima disso a captura perde fluidez nesta máquina); as animações do app saem a cerca de 10 a 19 quadros por segundo.",
+  "version": "ADC-QD-01-v4",
+  "v": 4,
+  "hash": "a0871aaa04",
   "media": [
-   "ADC-QD-01-v3.mp4"
+   "ADC-QD-01-v4.mp4"
   ],
-  "cover": "ADC-QD-01-v3-capa.jpg",
-  "duration": 36.2,
+  "cover": "ADC-QD-01-v4-capa.jpg",
+  "duration": 20.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Gravação real do site Quiddo rodando a partir do código do repositório (npm run dev, sala ao vivo no Durable Object local), 10/11/2026: Playwright grava a TV do anfitrião (1920×1080) e o celular da Mariana (480×1040); outros 7 jogadores entram e respondem em navegadores próprios. Montagem com ffmpeg (corte, escala, cartelas em HTML com Fraunces 900, Nunito e o logo oficial). H.264 30 fps, sem áudio. Scripts: pipeline/ads/reels/qd_capture.py e qd_compose.py. Sem IA generativa de imagem, vídeo ou voz. Sem narração."
+  "ferramentas": "Captura real do Quiddo rodando a partir do código do site (repo gtorniero/quiddo), partida de verdade com todos os jogadores conectados, gravada por screencast do Chromium (qd_cap2.py). Montagem em HTML/CSS com o kit estudio.py no modelo da referência (qd_ref.py): câmera, tipografia cinética, contadores e transições; ffmpeg H.264 30 fps. Sem IA generativa de imagem, vídeo ou voz. Sem narração e sem música.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-01-v4/ADC-QD-01-v4-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-01-v4/ADC-QD-01-v4-motion-sq.mp4"
+   }
+  ]
  },
  {
   "id": "ADC-RK-01",
   "brand": "SPORT DNA",
   "fmt": "reel",
-  "formato": "Reel 9:16 · 35,6 s · sem narração · sem música (sem faixa de áudio)",
+  "formato": "Reel 9:16 · 20,5 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 (12 s)",
   "title": "Piloto RACKET: antes de comprar, faça o teste",
   "objetivo": "Tráfego para o teste RACKET DNA (prévia grátis), com venda do relatório completo.",
   "publico": "Tenistas amadores que vão trocar de raquete (gancho de Black Friday, 27/11).",
@@ -108,26 +134,35 @@
   "copy": "Qual raquete combina com o seu jogo? 🎾\nResponda sobre você e o seu jogo. O RACKET DNA cruza as respostas com 62 raquetes e mostra a prévia grátis. O relatório completo sai por R$ 19,99, pagamento único via Pix.\nAntes de comprar, faça o teste.",
   "titulo": "Antes de comprar raquete, faça o teste",
   "cta": "No vídeo: \"Antes de comprar, faça o teste.\" Botão do anúncio: Saiba mais.",
-  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_teste_previa&utm_content=ADC-RK-01-v3",
+  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_teste_previa&utm_content=ADC-RK-01-v4",
   "direitos": [
-   "Telas, textos e números são do próprio RACKET DNA, capturados do código do site.",
-   "Os modelos de raquete aparecem borrados pelo próprio produto (\"Modelo oculto até o desbloqueio\"): nenhuma marca de fabricante na tela. Na raquete atual foi escolhida a opção \"Minha raquete não está na lista\".",
-   "O proxy desta sessão bloqueia o Google Fonts: a captura usou as mesmas fontes do Google (Archivo, DM Sans e Syne, pacotes @fontsource), servidas localmente.",
-   "Banner de cookies recusado antes da gravação, como faria quem visita.",
-   "Logo racketdna-logo-fundo-escuro.svg, Archivo 800 e DM Sans oficiais."
+   "Números do motor (183 raquetes, 670 avaliações, 46 variáveis, 3.000 perfis simulados) são os que a página do RACKET DNA mostra hoje; 96%, 96%, 94% e \"Atacante de fundo de topspin moderado\" são o resultado real do teste respondido na gravação (34 anos, 178 cm, 76 kg, intermediário, ataca do fundo, já teve dor no cotovelo).",
+   "Os modelos de raquete aparecem borrados pelo próprio produto; na raquete atual foi escolhido \"Minha raquete não está na lista\". Nenhuma marca de fabricante na tela.",
+   "Logo e ícone RACKET DNA oficiais; Archivo 800, Syne 800, DM Sans e JetBrains Mono.",
+   "Sem trilha: o áudio, se houver, entra pela biblioteca da Meta."
   ],
-  "mudou": "v3 (seus comentários: \"deixe um pouco mais lento só o vídeo de animação da tela\" e a regra de nunca ter etiqueta de exemplo): captura nova e 100% real do RACKET DNA, com o teste respondido de ponta a ponta por um perfil coerente (34 anos, intermediário, ataca do fundo, já teve dor no cotovelo). As telas ficam de 4 a 5 s cada e a análise roda em câmera lenta (0,55×). Saíram o selo \"Perfil de exemplo\" e a cartela \"Peso ideal no exemplo\". O número agora é o que o site mostra hoje: 183 raquetes (a v2 dizia 62). Sem música: o áudio, se quiser, entra pela biblioteca da Meta.",
-  "notes": "Roteiro: Qual raquete combina com o seu jogo? → 19 a 28 perguntas sobre corpo, braço e jogo → até se o braço já doeu → o teste cruza tudo com 183 raquetes → as 3 que mais combinam com você (96%, 96%, 94%) → o que está por trás (183 raquetes, 14 avaliações, 283 g de peso ideal) → seu DNA de jogo em um card (atacante de fundo de topspin moderado) → Antes de comprar, faça o teste. sportdna.com.br/racket. O preço R$ 19,99 só aparece no botão da própria tela do produto.",
-  "version": "ADC-RK-01-v3",
-  "v": 3,
-  "hash": "620f13e32c",
+  "mudou": "v4 (seu comentário no ADC-RZ-08: \"essa é a referência para todos os nossos ADs\"; \"big numbers, SPORT DNA com nosso motor e recomendação\"): refeito na técnica e no look da referência, com captura nova em 1080×1920. Celular grande em perspectiva, câmera no toque, fundo preto com luz lima. Números gigantes do motor (183 raquetes cruzadas; 670 avaliações de testadores lidas, 46 variáveis por raquete, 3.000 perfis simulados por teste) e da recomendação (96%, 96% e 94%), depois o card do DNA de jogo. Passou de 35,6 s para 20,5 s. O botão com preço ficou fora do quadro.",
+  "notes": "Modelo de referência (ADC-RZ-08) aplicado à SPORT DNA; mesmo script (dna_ref.py) do RUN e do SURF. O site hoje diz 183 raquetes (não 62).",
+  "version": "ADC-RK-01-v4",
+  "v": 4,
+  "hash": "ad07e3666b",
   "media": [
-   "ADC-RK-01-v3.mp4"
+   "ADC-RK-01-v4.mp4"
   ],
-  "cover": "ADC-RK-01-v3-capa.jpg",
-  "duration": 35.6,
+  "cover": "ADC-RK-01-v4-capa.jpg",
+  "duration": 20.5,
   "producao": "pronto para revisão",
-  "ferramentas": "Captura real do RACKET DNA rodando a partir de uma cópia local do código (gtorniero/sportdna, 10/11/2026), gravada com Playwright em 2× (390×480 → 780×960), com a página desacelerada 2,2× durante a gravação para sair fluida (rk_capture.py); montagem com cartelas em Archivo 800/DM Sans e logo oficial RACKET DNA (rk_compose.py); ffmpeg H.264 30 fps, sem áudio. Sem IA generativa, sem narração."
+  "ferramentas": "Captura real do teste rodando a partir de uma cópia local do código do site (gtorniero/sportdna), gravada com Playwright em 1080×1920 com toques visíveis (dna_capture.py racket); montagem no modelo de referência do ADC-RZ-08 (pipeline/ads/estudio.py + reels/dna_ref.py + rk01_v4.py): celular em perspectiva, câmera no toque, números rodando; ffmpeg H.264 30 fps, sem faixa de áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RK-01-v4/ADC-RK-01-v4-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RK-01-v4/ADC-RK-01-v4-motion-sq.mp4"
+   }
+  ]
  },
  {
   "id": "ADC-QD-02",
@@ -196,7 +231,7 @@
   "brand": "Quiddo",
   "fmt": "reel",
   "lote": 2,
-  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio) + motions 4:5 e 1:1 de 13 s",
+  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 de 12 s",
   "title": "Chá-bar: quem conhece mais os noivos",
   "objetivo": "Tráfego para criar o quiz (teste grátis).",
   "publico": "Madrinhas, padrinhos e noivos com chá-bar, chá de panela ou casamento nos próximos meses (interesses: casamento, noivado, chá de panela).",
@@ -204,34 +239,32 @@
   "copy": "Quem conhece mais os noivos? 💍\nMonte o quiz do chá-bar com as histórias do casal: onde se conheceram, quem disse \"eu te amo\" primeiro, o prato que ninguém aguenta mais. Todo mundo responde pelo celular e o pódio sai na hora.\nFaça o seu. Teste grátis.",
   "titulo": "Quiz do casal para o chá-bar",
   "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
-  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_cha_casamento&utm_content=ADC-QD-03-v3",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_cha_casamento&utm_content=ADC-QD-03-v4",
   "direitos": [
-   "Sem música: o MP4 não tem faixa de áudio. Se quiser áudio, entra pela biblioteca da Meta.",
-   "Na captura: selo de teste local, botão de convite por app de mensagens e aviso de plano ocultos; endereço local trocado por quiddo.com.br; o QR (apontava para o computador local) fica desfocado.",
-   "O Google Fonts é bloqueado neste ambiente: as mesmas fontes do site (Fraunces 900 e Nunito) foram servidas a partir de pipeline/fonts.",
-   "Logo quiddo-negativo.svg, Fraunces 900 e Nunito oficiais.",
-   "Partida de chá-bar com 8 convidados e nomes comuns (Camila, Rafa, Tia Sônia, Vô Zé…), sem etiqueta na tela. Os noivos \"Bia e Leo\" e as perguntas são da partida gravada."
+   "Partida real gravada para o anúncio (chá-bar da Bia e do Leo, 8 convidados); nomes comuns, sem etiqueta na tela.",
+   "Bichos (avatarSvg), símbolos das respostas e logo oficiais do Quiddo; fontes do site (Fraunces 900 e Nunito).",
+   "Na gravação ficam ocultos o selo de teste local, o botão de convite por app de mensagens e a oferta/limite da sala grátis; o endereço local aparece como quiddo.com.br e o QR não entra em quadro legível."
   ],
-  "notes": "Roteiro: 0 s gancho \"Quem conhece mais os noivos?\" com o celular na contagem; 2,5 s TV + celular, toque em \"Num churrasco\"; 6 s revelação na TV e \"Mandou bem! +954\" no celular; 9,5 s ranking; 12 s pódio \"Camila conquistou todo mundo!\"; 17 s CTA. Texto de cena: \"Cada um no seu celular.\", \"Acertou? Sai na hora.\", \"Ranking a cada pergunta.\", \"E o pódio vira festa.\"",
-  "version": "ADC-QD-03-v3",
-  "v": 3,
-  "mudou": "v3 (seu comentário na v2: \"faz na identidade visual de casal e amor né\"): virou reel no modelo novo, gravado numa partida real com o visual Amor do próprio app (corações, rosa e vinho) e o AD inteiro nessa identidade. TV e celular aparecem juntos e sincronizados: pergunta do chá-bar, toque no celular, resposta na hora, ranking e pódio com confete do app.",
-  "hash": "2f70bec3d3",
+  "notes": "Celular gravado com 780 px de largura (acima disso a captura perde fluidez nesta máquina); as animações do app saem a cerca de 10 a 19 quadros por segundo.",
+  "version": "ADC-QD-03-v4",
+  "v": 4,
+  "mudou": "v4, refeito na referência que você aprovou no ADC-RZ-08 (\"essa é a referência para todos os nossos ADs\"): o celular do jogador virou o protagonista, grande e central, com a câmera entrando no toque; a TV entra por trás só na revelação; fundo vivo na paleta do visual Amor; big numbers reais da partida rodando (+954 pontos, 8 convidados, 2.866 pontos no pódio); bichos e símbolos oficiais do site em cena e no CTA. Gancho: \"Quem conhece mais os noivos?\"",
+  "hash": "1ddb03bccf",
   "media": [
-   "ADC-QD-03-v3.mp4"
+   "ADC-QD-03-v4.mp4"
   ],
-  "cover": "ADC-QD-03-v3-capa.jpg",
+  "cover": "ADC-QD-03-v4-capa.jpg",
   "duration": 20.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Partida real do Quiddo rodando a partir do código (gtorniero/quiddo), gravada por screencast do Chromium: TV do anfitrião (1536×864) e celular da protagonista (780×1688), com outros jogadores conectados em páginas próprias (pipeline/ads/reels/qd_cap2.py). Composição no modelo novo (pipeline/ads/estudio.py + reels/qd_modelo.py): TV e celular sincronizados, câmera no toque, cortes e tipografia cinética; H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
+  "ferramentas": "Captura real do Quiddo rodando a partir do código do site (repo gtorniero/quiddo), partida de verdade com todos os jogadores conectados, gravada por screencast do Chromium (qd_cap2.py). Montagem em HTML/CSS com o kit estudio.py no modelo da referência (qd_ref.py): câmera, tipografia cinética, contadores e transições; ffmpeg H.264 30 fps. Sem IA generativa de imagem, vídeo ou voz. Sem narração e sem música.",
   "arquivos": [
    {
     "label": "Motion 4:5",
-    "path": "media/ads/ADC-QD-03-v3/ADC-QD-03-v3-motion-feed45.mp4"
+    "path": "media/ads/ADC-QD-03-v4/ADC-QD-03-v4-motion-feed45.mp4"
    },
    {
     "label": "Motion 1:1",
-    "path": "media/ads/ADC-QD-03-v3/ADC-QD-03-v3-motion-sq.mp4"
+    "path": "media/ads/ADC-QD-03-v4/ADC-QD-03-v4-motion-sq.mp4"
    }
   ]
  },
@@ -240,7 +273,7 @@
   "brand": "Quiddo",
   "fmt": "reel",
   "lote": 2,
-  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio) + motions 4:5 e 1:1 de 13 s",
+  "formato": "Reel 9:16 · 20 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 de 12 s",
   "title": "Professores: a turma pedindo mais uma pergunta",
   "objetivo": "Tráfego para criar o quiz (teste grátis).",
   "publico": "Professores do fundamental II, médio e cursinho; coordenação pedagógica (interesses: educação, gamificação, ensino).",
@@ -248,34 +281,32 @@
   "copy": "A turma pedindo mais uma pergunta. 🙋\nVocê escreve as perguntas da matéria, abre a sala e todo mundo responde pelo celular, ao mesmo tempo, sem baixar app. Ranking a cada pergunta, pódio no fim e você vê na hora quem entendeu.\nFaça o seu. Teste grátis.",
   "titulo": "A aula que a turma pede bis",
   "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
-  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_escola_disputa&utm_content=ADC-QD-04-v3",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_escola_disputa&utm_content=ADC-QD-04-v4",
   "direitos": [
-   "Sem música: o MP4 não tem faixa de áudio. Se quiser áudio, entra pela biblioteca da Meta.",
-   "Na captura: selo de teste local, botão de convite por app de mensagens e aviso de plano ocultos; endereço local trocado por quiddo.com.br; o QR (apontava para o computador local) fica desfocado.",
-   "O Google Fonts é bloqueado neste ambiente: as mesmas fontes do site (Fraunces 900 e Nunito) foram servidas a partir de pipeline/fonts.",
-   "Logo quiddo-negativo.svg, Fraunces 900 e Nunito oficiais.",
-   "Turma com 10 alunos de nomes comuns (Sofia, Pedro, Larissa…), sem etiqueta na tela. Perguntas com resposta conferida: Júpiter é o maior planeta; a Lua não tem luz própria; Marte é o planeta vermelho."
+   "Partida real gravada para o anúncio (Ciências, 7º B, Sistema Solar, 10 alunos); nomes comuns, sem etiqueta na tela.",
+   "Bichos (avatarSvg), símbolos das respostas e logo oficiais do Quiddo; fontes do site (Fraunces 900 e Nunito).",
+   "Na gravação ficam ocultos o selo de teste local, o botão de convite por app de mensagens e a oferta/limite da sala grátis; o endereço local aparece como quiddo.com.br e o QR não entra em quadro legível."
   ],
-  "notes": "Roteiro: 0 s gancho \"A turma pedindo mais uma pergunta.\" com o celular na contagem \"Lápis na mão!\"; 2,5 s TV + celular, toque em \"Júpiter\"; 6 s revelação e \"Mandou bem!\"; 9,5 s ranking; 12 s pódio; 17 s CTA. Texto de cena: \"O celular entra na aula.\", \"Na hora, quem entendeu.\", \"Ranking a cada pergunta.\", \"E a matéria vira disputa.\"",
-  "version": "ADC-QD-04-v3",
-  "v": 3,
-  "mudou": "v3 (seu comentário, duas vezes: \"revisão? conceito ruim\"): conceito novo. Saiu \"revisão\" e saiu \"proibir o celular\": agora o AD mostra a aula virando disputa, com a turma jogando de verdade. Gancho \"A turma pedindo mais uma pergunta.\", partida real de Ciências (7º B, Sistema Solar) no visual Sala de aula do app, TV e celular sincronizados, ranking e pódio \"Sofia tirou nota 10!\".",
-  "hash": "4ac774740c",
+  "notes": "Celular gravado com 780 px de largura (acima disso a captura perde fluidez nesta máquina); as animações do app saem a cerca de 10 a 19 quadros por segundo.",
+  "version": "ADC-QD-04-v4",
+  "v": 4,
+  "mudou": "v4, refeito na referência que você aprovou no ADC-RZ-08 (\"essa é a referência para todos os nossos ADs\"): o celular do jogador virou o protagonista, grande e central, com a câmera entrando no toque; a TV entra por trás só na revelação; fundo vivo na paleta do visual Sala de aula; big numbers reais da partida rodando (+952 pontos, 10 alunos, 2.865 pontos no pódio); bichos e símbolos oficiais do site em cena e no CTA. Gancho: \"A turma pedindo mais uma.\"",
+  "hash": "c8dc92a8f4",
   "media": [
-   "ADC-QD-04-v3.mp4"
+   "ADC-QD-04-v4.mp4"
   ],
-  "cover": "ADC-QD-04-v3-capa.jpg",
+  "cover": "ADC-QD-04-v4-capa.jpg",
   "duration": 20.0,
   "producao": "pronto para revisão",
-  "ferramentas": "Partida real do Quiddo rodando a partir do código (gtorniero/quiddo), gravada por screencast do Chromium: TV do anfitrião (1536×864) e celular da protagonista (780×1688), com outros jogadores conectados em páginas próprias (pipeline/ads/reels/qd_cap2.py). Composição no modelo novo (pipeline/ads/estudio.py + reels/qd_modelo.py): TV e celular sincronizados, câmera no toque, cortes e tipografia cinética; H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
+  "ferramentas": "Captura real do Quiddo rodando a partir do código do site (repo gtorniero/quiddo), partida de verdade com todos os jogadores conectados, gravada por screencast do Chromium (qd_cap2.py). Montagem em HTML/CSS com o kit estudio.py no modelo da referência (qd_ref.py): câmera, tipografia cinética, contadores e transições; ffmpeg H.264 30 fps. Sem IA generativa de imagem, vídeo ou voz. Sem narração e sem música.",
   "arquivos": [
    {
     "label": "Motion 4:5",
-    "path": "media/ads/ADC-QD-04-v3/ADC-QD-04-v3-motion-feed45.mp4"
+    "path": "media/ads/ADC-QD-04-v4/ADC-QD-04-v4-motion-feed45.mp4"
    },
    {
     "label": "Motion 1:1",
-    "path": "media/ads/ADC-QD-04-v3/ADC-QD-04-v3-motion-sq.mp4"
+    "path": "media/ads/ADC-QD-04-v4/ADC-QD-04-v4-motion-sq.mp4"
    }
   ]
  },
@@ -1030,7 +1061,7 @@
   "id": "ADC-RN-03",
   "brand": "SPORT DNA",
   "fmt": "reel",
-  "formato": "Reel 9:16 · 20,5 s · sem narração · sem música (sem faixa de áudio). Motions para feed: 4:5 e 1:1, 11 s.",
+  "formato": "Reel 9:16 · 20,5 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 (12 s)",
   "title": "RUN DNA: seu tênis combina com você?",
   "objetivo": "Tráfego para o teste RUN DNA (prévia grátis) com venda do relatório.",
   "publico": "Corredores de rua iniciantes e intermediários, 25–50 anos (interesses: corrida, meia maratona, assessoria esportiva).",
@@ -1038,35 +1069,35 @@
   "copy": "Seu tênis combina com você? 🏃\nO RUN DNA faz 19 perguntas sobre o seu corpo e a sua corrida (até onde dói) e cruza as respostas com 212 tênis de 13 marcas. Você vê os 3 que mais combinam e o porquê de cada um.\nAntes de comprar, faça o teste.",
   "titulo": "Seu tênis combina com você?",
   "cta": "No vídeo: \"Antes de comprar, faça o teste.\" + sportdna.com.br/run. Botão do anúncio: Saiba mais.",
-  "url": "https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=run_teste&utm_content=ADC-RN-03-v1",
+  "url": "https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=run_teste&utm_content=ADC-RN-03-v2",
   "direitos": [
-   "Captura real do RUN DNA (/run/), rodando a partir do código do site (gtorniero/sportdna), com o teste respondido de ponta a ponta por um perfil coerente (72 kg, joelho, 20 a 40 km por semana, 5:00 a 6:00 /km, meia maratona). Sem tela recriada.",
-   "Números da própria tela: 19 perguntas, 212 tênis, 13 marcas, 96% / 94% / 91%, 87% de confiança. O botão \"Revelar meus tênis · R$ 9,99\" aparece porque está na tela real do produto.",
-   "Modelos de tênis aparecem borrados pelo próprio produto (antes do desbloqueio). Nenhuma marca de fabricante em destaque.",
-   "Logo rundna-logo-fundo-escuro.svg, Archivo 800, DM Sans, JetBrains Mono e Syne oficiais. Sem música, sem narração, sem IA generativa."
+   "Números do motor (212 tênis, 1.755 reviews, 41 estudos, 5.000 perfis simulados) são os que a página do RUN DNA mostra; 96%, 94%, 91% e o perfil \"Corredor de Prova\" são o resultado real do teste respondido na gravação (72 kg, joelho, 20 a 40 km por semana, 5:00 a 6:00 /km, meia maratona).",
+   "Os modelos de tênis aparecem borrados pelo próprio produto; nenhuma marca de fabricante na tela.",
+   "Logo e ícone RUN DNA oficiais; Archivo 800, Syne 800, DM Sans e JetBrains Mono.",
+   "Sem trilha: o áudio, se houver, entra pela biblioteca da Meta."
   ],
-  "notes": "Primeiro AD do modelo novo (estudio.py + DIRECAO.md) para a SPORT DNA. Gancho com interação em 0 s, revelação aos 8,5 s, 3 cortes de prova e CTA com o celular na mesma pose do quadro 0 (loop). O áudio, se houver, entra pela biblioteca da Meta; cortes na grade de 0,5 s.",
-  "version": "ADC-RN-03-v1",
-  "v": 1,
-  "mudou": "Novo. Modelo novo de AD: câmera em cima da tela real, toque visível, título cinético, contador até 212 e revelação do top 3. Versões reel 9:16 e motion 4:5 e 1:1.",
+  "notes": "Modelo de referência (ADC-RZ-08) aplicado à SPORT DNA. Mesmo roteiro e script (dna_ref.py) do RACKET (ADC-RK-01-v4) e do SURF (ADC-SF-03-v1), cada um com a cor, a captura e os números do seu esporte.",
+  "version": "ADC-RN-03-v2",
+  "v": 2,
+  "mudou": "v2 (seu comentário no ADC-RZ-08: \"essa é a referência para todos os nossos ADs\"; \"big numbers, SPORT DNA com nosso motor e recomendação\"): refeito na técnica e no look da referência. Celular grande em perspectiva com a tela real do teste, câmera entrando no toque, fundo preto com luz laranja. Números gigantes do motor (212 tênis cruzados; 1.755 reviews lidas, 41 estudos científicos, 5.000 perfis simulados) e da recomendação (96%, 94% e 91% batendo um a um), depois o card do perfil. O botão com preço ficou fora do quadro.",
   "media": [
-   "ADC-RN-03-v1.mp4"
+   "ADC-RN-03-v2.mp4"
   ],
-  "cover": "ADC-RN-03-v1-capa.jpg",
+  "cover": "ADC-RN-03-v2-capa.jpg",
   "duration": 20.5,
   "producao": "pronto para revisão",
-  "ferramentas": "Captura com Playwright (screenshots do Chromium a ~29 fps, 1080×1920, toques visíveis; rn_capture.py); composição em HTML/CSS com estudio.py (rn03.py), render quadro a quadro, ffmpeg H.264 30 fps. Sem IA generativa de imagem, vídeo ou voz.",
+  "ferramentas": "Captura real do teste rodando a partir de uma cópia local do código do site (gtorniero/sportdna), gravada com Playwright em 1080×1920 com toques visíveis (rn_capture.py); montagem no modelo de referência do ADC-RZ-08 (pipeline/ads/estudio.py + reels/dna_ref.py + rn03_v2.py): celular em perspectiva, câmera no toque, números rodando; ffmpeg H.264 30 fps, sem faixa de áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
   "arquivos": [
    {
     "label": "Motion 4:5",
-    "path": "media/ads/ADC-RN-03-v1/ADC-RN-03-v1-motion-feed45.mp4"
+    "path": "media/ads/ADC-RN-03-v2/ADC-RN-03-v2-motion-feed45.mp4"
    },
    {
     "label": "Motion 1:1",
-    "path": "media/ads/ADC-RN-03-v1/ADC-RN-03-v1-motion-sq.mp4"
+    "path": "media/ads/ADC-RN-03-v2/ADC-RN-03-v2-motion-sq.mp4"
    }
   ],
-  "hash": "e99466c568"
+  "hash": "c6243f116e"
  },
  {
   "id": "ADC-RZ-08",
@@ -1109,5 +1140,47 @@
    }
   ],
   "hash": "ed135328eb"
+ },
+ {
+  "fmt": "reel",
+  "duration": 20.5,
+  "producao": "pronto para revisão",
+  "id": "ADC-SF-03",
+  "brand": "SPORT DNA",
+  "version": "ADC-SF-03-v1",
+  "v": 1,
+  "media": [
+   "ADC-SF-03-v1.mp4"
+  ],
+  "cover": "ADC-SF-03-v1-capa.jpg",
+  "formato": "Reel 9:16 · 20,5 s · sem narração · sem música (sem faixa de áudio) + motion 4:5 e 1:1 (12 s)",
+  "title": "Hero SURF DNA: sua prancha é a certa?",
+  "objetivo": "Tráfego para o teste SURF DNA (prévia grátis) com venda do relatório.",
+  "publico": "Surfistas iniciantes e intermediários, 20 a 45 anos, pensando em comprar ou trocar de prancha (interesses: surf, prancha de surf, surf trip, escolinha de surf).",
+  "hipotese": "Mostrar o teste real e a recomendação com números (13 tipos de prancha, 416 tamanhos, 422 casos reais, top 3 com % de combinação) convence mais do que falar de litragem em abstrato.",
+  "copy": "Sua prancha é a certa? 🏄\nO SURF DNA cruza o seu peso, o seu nível e o seu mar com 13 tipos de prancha e 416 tamanhos, medida por medida, e mostra as 3 que mais combinam com você.\nA prévia é grátis e sai na hora. Antes de comprar, faça o teste.",
+  "titulo": "Descubra a prancha certa para você",
+  "cta": "No vídeo: \"Antes de comprar, faça o teste.\" + sportdna.com.br/surf. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_teste&utm_content=ADC-SF-03-v1",
+  "mudou": "Peça nova no modelo de referência (ADC-RZ-08): celular grande em perspectiva com a tela real do teste do SURF DNA, câmera no toque, fundo preto com luz azul. Números gigantes do motor (416 tamanhos comparados; 422 casos reais na calibração, 13 tipos de prancha, 17 medidas na ficha técnica) e da recomendação (96%, 88% e 84%), depois o card do DNA de surf. O botão com preço ficou fora do quadro.",
+  "ferramentas": "Captura real do teste rodando a partir de uma cópia local do código do site (gtorniero/sportdna), gravada com Playwright em 1080×1920 com toques visíveis (dna_capture.py surf); montagem no modelo de referência do ADC-RZ-08 (pipeline/ads/estudio.py + reels/dna_ref.py + sf03.py): celular em perspectiva, câmera no toque, números rodando; ffmpeg H.264 30 fps, sem faixa de áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
+  "direitos": [
+   "Números do motor (13 tipos, 416 tamanhos, 422 casos reais, 17 medidas) são os que a página do SURF DNA mostra; 96%, 88%, 84% e \"Surfista de curvas de onda pequena\" são o resultado real do teste respondido na gravação (74 kg, 176 cm, 26 a 35 anos, intermediário, 3 a 6 vezes por mês, onda de meio metro a 1 m).",
+   "As pranchas aparecem borradas pelo próprio produto; nenhuma marca de fabricante na tela.",
+   "Logo e ícone SURF DNA oficiais; Archivo 800, Syne 800, DM Sans e JetBrains Mono.",
+   "Sem trilha: o áudio, se houver, entra pela biblioteca da Meta."
+  ],
+  "notes": "Primeiro reel do SURF DNA. Mesmo roteiro e script (dna_ref.py) do RUN (ADC-RN-03-v2) e do RACKET (ADC-RK-01-v4).",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-SF-03-v1/ADC-SF-03-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-SF-03-v1/ADC-SF-03-v1-motion-sq.mp4"
+   }
+  ],
+  "hash": "77934b4674"
  }
 ]

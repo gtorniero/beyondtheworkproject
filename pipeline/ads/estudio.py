@@ -203,7 +203,7 @@ async def _render(c, out, cover, t_from, t_to, crf, sheet):
                                 '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', str(crf), '-preset', 'medium', '-r', str(FPS), '-movflags', '+faststart', str(out)], stdin=subprocess.PIPE)
         for i in range(a, z):
             await pg.evaluate(f'seek({i / FPS:.5f})')
-            ffm.stdin.write(await pg.screenshot(type='jpeg', quality=95))
+            ffm.stdin.write(await pg.screenshot(type='jpeg', quality=95, timeout=0))
         ffm.stdin.close(); ffm.wait(); await b.close()
 
 
