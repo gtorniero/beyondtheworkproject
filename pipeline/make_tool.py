@@ -12,7 +12,7 @@ for m in ('quiddo', 'retrozap', 'sportdna'): importlib.import_module(m)
 order = [p['id'] for p in C.PIECES]
 P = [pieces[i] for i in order if i in pieces]
 # Canceladas pelo Gui (peças que não entram na Mesa deste pack)
-CANCELADAS = {'R-R7', 'D-R7'}  # Gui, S02 rodada 3: cancelados por ora (voltam quando der para gravar o app de verdade)
+CANCELADAS = set()  # S02: R-R7 e D-R7 cancelados pelo Gui (voltam quando der para gravar o app de verdade)
 P = [p for p in P if p['id'] not in CANCELADAS]
 missing = [i for i in order if i not in pieces]
 SRC = {p['id']: p for p in C.PIECES}
@@ -38,11 +38,6 @@ for p in P:
             n = f.replace('.png', '.jpg'); jpg(md / f, T / 'media' / n, 720); p['previews'].append(n)
     shutil.copy(O / p['editable'], T / p['editable'])
 MUDOU = {
- 'Q-R4': 'Veio do S01 sem decisão: mesma arte, data nova (sáb 21/11).',
- 'R-S10': 'v3: saiu a etiqueta de simulação (seu comentário).',
- 'D-S8': 'Linha nova (seu comentário: "mto basico"): bloco de notas no celular e o resultado do SURF DNA ao lado.',
- 'R-R7': 'Novo, no lugar do story R-S6 (seu comentário: reel com a retrospectiva como gravação de tela do app). Barra de gravação, endereço do site, toques e os 3 atos. Entra seg 16/11 19h45.',
- 'D-R7': 'v2 (seu comentário: exemplo real): gravação de tela do teste e do relatório do SURF DNA, com a estrutura real do relatório (tipo e encaixe, medidas e litragem, rabeta, quilhas, material, comparação com a atual).',
 }
 STORIES_CTA = 'O Instagram não agenda adesivos e você não vai postar nada: a enquete/quiz/link virou CTA desenhado na arte ("responde no direct", "link na bio"). Assim o DOT agenda tudo.'
 for p in P:
@@ -68,9 +63,13 @@ if (PREVD / 'manifest.json').exists():
 # ---- ADs (mídia paga): definidos à parte em ads/<SNN>.json, com aprovação própria na Mesa (banco `ads`).
 # Campos: id, brand, fmt (reel|carrossel|story, para a prévia), formato, objetivo, version, v, hash, media, copy, titulo, cta, url, origem (id orgânico ou null), notes.
 # Nunca reaproveite a decisão orgânica: o AD nasce "pendente" mesmo se a peça de origem estiver aprovada.
-ADS = json.loads((R / 'ads' / f'{C.PACK}.json').read_text()) if (R / 'ads' / f'{C.PACK}.json').exists() else []
+# Os ADs ativos são do S02 (banco ads/S02_<id>); a mídia deles já está publicada na Mesa e não fica em out/.
+ADS_PACK = 'S02'
+ADS = json.loads((R / 'ads' / f'{ADS_PACK}.json').read_text()) if (R / 'ads' / f'{ADS_PACK}.json').exists() else []
+ADS_LOTE = json.loads((R / 'ads' / f'{ADS_PACK}-lote.json').read_text()) if (R / 'ads' / f'{ADS_PACK}-lote.json').exists() else []
 for a in ADS:
     md = O / 'media'
+    if not (md / a['media'][0].split('/')[-1]).exists(): continue  # já publicado na Mesa
     if a['fmt'] == 'reel':
         shutil.copy(md / a['media'][0], T / 'media' / a['media'][0])
         a['cover'] = f"{a['id']}-capa.jpg"; jpg(md / f"{a['id']}-capa.png", T / 'media' / a['cover'], 720)
@@ -80,7 +79,7 @@ for a in ADS:
             n = m.replace('.png', '.jpg'); jpg(md / m, T / 'media' / n, 720); a['previews'].append(n)
     if a.get('editable'): shutil.copy(O / a['editable'], T / a['editable'])
 DAYS = {d: f'Dia {d} · {v}' for d, v in C.DIAS.items()}
-html = (R / 'tool_template.html').read_text().replace('/*MANIFEST*/', json.dumps({'pack': C.PACK, 'rodada': RODADA, 'days': DAYS, 'titulo': f'PACK SEMANAL {C.NUM} · {C.SEMANA}', 'grade': GRADE, 'pieces': P, 'ads': ADS, 'guiaHtml': markdown.markdown(GUIA, extensions=['tables', 'fenced_code']), 'prompt': guia.PROMPT, 'final': '__FINAL__'}, ensure_ascii=False).replace('</', '<\\/'))
+html = (R / 'tool_template.html').read_text().replace('/*MANIFEST*/', json.dumps({'pack': C.PACK, 'rodada': RODADA, 'days': DAYS, 'titulo': f'PACK SEMANAL {C.NUM} · {C.SEMANA}', 'grade': GRADE, 'pieces': P, 'ads': ADS, 'adsLote': ADS_LOTE, 'adsPack': ADS_PACK, 'guiaHtml': markdown.markdown(GUIA, extensions=['tables', 'fenced_code']), 'prompt': guia.PROMPT, 'final': '__FINAL__'}, ensure_ascii=False).replace('</', '<\\/'))
 (T / 'index.html').write_text(html)
 (O / 'manifest.json').write_text(json.dumps({'pack': C.PACK, 'pieces': P}, ensure_ascii=False, indent=1))
 # ---- entrega

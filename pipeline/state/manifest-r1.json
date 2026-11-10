@@ -1,0 +1,127 @@
+{
+ "pack": "S03",
+ "pieces": [
+  {
+   "id": "R-R8",
+   "brand": "Retrozap",
+   "fmt": "reel",
+   "day": 1,
+   "dia": "seg 23/11",
+   "slot": "19h45",
+   "title": "Trend liga/desliga: modo dezembro ativado no grupo",
+   "kind": "trend",
+   "caption": "Modo dezembro: ativado no grupo. 🎄\n\nAmigo secreto: ligado.\nFigurinha de Natal: ligada.\nLista de presentes com link: ligada.\nConfra marcada: em votação desde outubro.\n\nManda no grupo que ainda não marcou a confra 👇\nNo fim do ano, o Retrozap transforma a conversa do grupo em retrospectiva. retrozap.com.br\n#retrozap #dezembro #amigosecreto #confraternizacao #grupodeamigos #trend",
+   "notes": "Trend \"liga/desliga\" (doc do DOT de 06/11): chaves desenhadas pela marca, sem interface de terceiros. A chave da confra trava no meio (piada). Motivo de envio: marcar o grupo que não marcou a confra. Áudio em alta no app.",
+   "version": "S03-R-R8-v1",
+   "v": 1,
+   "hash": "d1c280981e",
+   "media": [
+    "R-R8.mp4",
+    "R-R8-capa.png"
+   ],
+   "editable": "editaveis/R-R8.html",
+   "duration": 17.0,
+   "sticker": ""
+  },
+  {
+   "id": "R-C7",
+   "brand": "Retrozap",
+   "fmt": "carrossel",
+   "day": 2,
+   "dia": "ter 24/11",
+   "slot": "12h30",
+   "title": "Amigo secreto do grupo: o regulamento (bloco de notas)",
+   "kind": "engajamento",
+   "caption": "Regulamento do amigo secreto do grupo: o que está escrito × o que vai acontecer. 🎁\n\n1. Valor: R$ 50. Alguém vai dar um de R$ 20.\n2. Sorteio até sexta. Vai ser refeito 3 vezes.\n3. Lista de desejos. \"Qualquer coisa tá bom.\"\n4. Ninguém revela quem tirou. Revelado no mesmo dia, por áudio.\n5. Troca no dia da confra. Alguém esquece o presente.\n\nManda no grupo do amigo secreto antes do sorteio 👇\nretrozap.com.br\n#amigosecreto #amigooculto #retrozap #grupodeamigos #natal",
+   "notes": "Bloco de notas genérico (sem marca de app) com o \"realidade\" rabiscado em Chiclete. Motivo de envio: colar no grupo antes do sorteio. Capa Manga, páginas Noite.",
+   "version": "S03-R-C7-v1",
+   "v": 1,
+   "hash": "bd7955b8a0",
+   "media": [
+    "R-C7-1.png",
+    "R-C7-2.png",
+    "R-C7-3.png",
+    "R-C7-4.png",
+    "R-C7-5.png"
+   ],
+   "editable": "editaveis/R-C7.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "R-R9",
+   "brand": "Retrozap",
+   "fmt": "reel",
+   "day": 3,
+   "dia": "qua 25/11",
+   "slot": "19h45",
+   "title": "Meme \"Ninguém:\": o grupo depois de um \"preciso contar uma coisa\"",
+   "kind": "meme",
+   "caption": "Ninguém:\nO grupo depois de um \"gente, preciso contar uma coisa\": 👀\n\nFALA. Conta logo. É bom ou ruim? Até o Rafa, sumido desde março, apareceu.\nE a resposta: \"deixa, amanhã eu conto\".\n\nMarca a Lu do seu grupo 👇\nretrozap.com.br\n#retrozap #grupodeamigos #meme #amigos #fofoca",
+   "notes": "Meme \"Ninguém:\" com conversa num celular genérico (sem marca de app), etiqueta \"simulação · nomes de exemplo\", Turma do Churras. Motivo de envio: marcar a \"Lu\" do grupo. Capa Piscina.",
+   "version": "S03-R-R9-v1",
+   "v": 1,
+   "hash": "5ce29d2d79",
+   "media": [
+    "R-R9.mp4",
+    "R-R9-capa.png"
+   ],
+   "editable": "editaveis/R-R9.html",
+   "duration": 16.0,
+   "sticker": ""
+  },
+  {
+   "id": "R-C8",
+   "brand": "Retrozap",
+   "fmt": "carrossel",
+   "day": 4,
+   "dia": "qui 26/11",
+   "slot": "12h30",
+   "title": "Casal: 5 apostas que a conversa de vocês responde",
+   "kind": "engajamento",
+   "caption": "5 apostas para o casal. A conversa de vocês sabe a resposta. 💬❤️\n\n1. Quem manda \"bom dia\" primeiro?\n2. Quem demora mais para responder?\n3. Quem pede desculpa primeiro?\n4. Quem manda mais áudio?\n5. Quem manda foto da comida antes de comer?\n\nManda pro seu amor, cada um responde e depois confiram 👇\nretrozap.com.br\n#casal #namorados #retrozap #casais #teste",
+   "notes": "Casa Casal (Creme + Cereja, sem roxo). Cartão de aposta com botões EU/VOCÊ. Motivo de envio: mandar pro parceiro e apostar. Não promete métrica específica do produto.",
+   "version": "S03-R-C8-v1",
+   "v": 1,
+   "hash": "67617c949b",
+   "media": [
+    "R-C8-1.png",
+    "R-C8-2.png",
+    "R-C8-3.png",
+    "R-C8-4.png",
+    "R-C8-5.png",
+    "R-C8-6.png",
+    "R-C8-7.png"
+   ],
+   "editable": "editaveis/R-C8.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "R-C9",
+   "brand": "Retrozap",
+   "fmt": "carrossel",
+   "day": 6,
+   "dia": "sáb 28/11",
+   "slot": "12h30",
+   "title": "O ano do grupo em 12 meses (calendário)",
+   "kind": "engajamento",
+   "caption": "O ano do grupo em 12 meses. 🗓️\n\nJan: metas do grupo. Fev: 214 fotos de carnaval. Mar: a guerra da foto do grupo. Jun: bolão da Copa, 1 pagou. Ago: ninguém lembrou do aniversário do grupo. Out: votação da data da confra.\nDez: o grupo ganha troféu.\n\nManda no grupo e vê se o de vocês foi assim 👇\nretrozap.com.br\n#retrozap #retrospectiva2026 #grupodeamigos #amigos #fimdeano",
+   "notes": "Folhas de calendário com os 11 meses e dezembro como gancho para a retrospectiva. Copa do Mundo foi em jun–jul/2026 (bolão é verdadeiro como referência de época). Capa Goiaba, páginas Noite.",
+   "version": "S03-R-C9-v1",
+   "v": 1,
+   "hash": "c21ba3d039",
+   "media": [
+    "R-C9-1.png",
+    "R-C9-2.png",
+    "R-C9-3.png",
+    "R-C9-4.png",
+    "R-C9-5.png",
+    "R-C9-6.png"
+   ],
+   "editable": "editaveis/R-C9.html",
+   "duration": null,
+   "sticker": ""
+  }
+ ]
+}

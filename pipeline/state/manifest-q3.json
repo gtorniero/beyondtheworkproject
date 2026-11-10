@@ -1,0 +1,49 @@
+{
+ "pack": "S03",
+ "pieces": [
+  {
+   "id": "Q-R9",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 5,
+   "dia": "sex 27/11",
+   "slot": "19h45",
+   "title": "Meme Black Friday da família: etiquetas de desconto",
+   "kind": "meme",
+   "caption": "Black Friday da família. 🏷️\n\nPaciência do tio na 3ª rodada: −90%.\nVontade de lavar a louça: esgotada.\nRevanche: leve 3, pague 1.\nDesculpa de quem perdeu: frete grátis.\n\nO pódio? Não está à venda.\n\nManda pro tio que já está pedindo revanche 👇\nFaça o seu. Teste grátis: quiddo.com.br\n#blackfriday #meme #familia #quiz #humor #quiddo",
+   "notes": "Meme do dia da Black Friday (sex 27/11), feito com etiquetas de preço (objeto concreto). Não fala de preço do Quiddo nem de desconto real. Vermelho/tinta alterna com o amarelo de quinta e o claro de sábado.",
+   "version": "S03-Q-R9-v1",
+   "v": 1,
+   "hash": "142c507061",
+   "media": [
+    "Q-R9.mp4",
+    "Q-R9-capa.png"
+   ],
+   "editable": "editaveis/Q-R9.html",
+   "duration": 15.0,
+   "sticker": ""
+  },
+  {
+   "id": "Q-R10",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 7,
+   "dia": "dom 29/11",
+   "slot": "19h45",
+   "title": "Trend minivlog com rótulos: o domingo do quiz da família",
+   "kind": "trend",
+   "caption": "O domingo do quiz da família, em 5 rótulos. ☀️\n\n13h · almoço\n14h30 · alguém sugere um quiz\n14h35 · código no grupo\n15h10 · \"em que cidade o vô nasceu?\"\n15h40 · a vó em 1º. De novo.\n\nManda no grupo da família e marca o próximo domingo 👇\nFaça o seu. Teste grátis: quiddo.com.br\n#domingoemfamilia #minivlog #familia #quiz #almocodedomingo #quiddo",
+   "notes": "Trend \"minivlog com rótulos\" (doc do DOT, 06/11; sem validação no Brasil). Domingo é o melhor dia para reels. Código da sala é de exemplo e está marcado. Capa azul fecha a semana; não fica ao lado do azul do Q-C6 na grade.",
+   "version": "S03-Q-R10-v1",
+   "v": 1,
+   "hash": "5000fa6f65",
+   "media": [
+    "Q-R10.mp4",
+    "Q-R10-capa.png"
+   ],
+   "editable": "editaveis/Q-R10.html",
+   "duration": 18.0,
+   "sticker": ""
+  }
+ ]
+}

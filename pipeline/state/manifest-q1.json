@@ -1,0 +1,49 @@
+{
+ "pack": "S03",
+ "pieces": [
+  {
+   "id": "Q-R7",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 1,
+   "dia": "seg 23/11",
+   "slot": "19h45",
+   "title": "Trend ligar/desligar: modo quiz da família ativado",
+   "kind": "trend",
+   "caption": "Domingo, 16h. Modo quiz da família: desligado. 😴\nCada um no seu celular, ninguém fala nada.\n\nLiga o modo quiz e a pergunta 1 já vira assunto: qual era o apelido do pai na escola?\n\nManda no grupo da família e liga o modo quiz no próximo almoço 👇\nFaça o seu. Teste grátis: quiddo.com.br\n#familia #domingoemfamilia #quiz #trend #jogosemfamilia #quiddo",
+   "notes": "Trend \"ligar/desligar\" (doc do DOT, 06/11; circulação no Brasil sem validação). Interruptor desenhado pela marca, sem copiar interface de terceiros. Escuro para abrir a semana depois do azul do Q-C6. Áudio em alta no app.",
+   "version": "S03-Q-R7-v1",
+   "v": 1,
+   "hash": "df74a5d98e",
+   "media": [
+    "Q-R7.mp4",
+    "Q-R7-capa.png"
+   ],
+   "editable": "editaveis/Q-R7.html",
+   "duration": 16.0,
+   "sticker": ""
+  },
+  {
+   "id": "Q-R8",
+   "brand": "Quiddo",
+   "fmt": "reel",
+   "day": 3,
+   "dia": "qua 25/11",
+   "slot": "19h45",
+   "title": "Meme: o grupo da família quando tem prêmio",
+   "kind": "meme",
+   "caption": "O grupo da família quando você chama pro quiz: visto por 14. 🦗\nO mesmo grupo quando \"quem ganhar escolhe a pizza\": 5 respostas em 1 minuto.\n\nManda no grupo da família e vê quem responde primeiro 👇\nFaça o seu. Teste grátis: quiddo.com.br\n#meme #familia #grupodafamilia #quiz #pizza #quiddo",
+   "notes": "Meme de comportamento (antes/depois dentro da conversa). Celular e conversa genéricos, sem marca de app, nomes fictícios. Fundo mata alterna com o creme de terça e o amarelo de quinta.",
+   "version": "S03-Q-R8-v1",
+   "v": 1,
+   "hash": "cda2625eec",
+   "media": [
+    "Q-R8.mp4",
+    "Q-R8-capa.png"
+   ],
+   "editable": "editaveis/Q-R8.html",
+   "duration": 14.0,
+   "sticker": ""
+  }
+ ]
+}

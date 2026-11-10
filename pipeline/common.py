@@ -6,16 +6,16 @@ ROOT = Path(__file__).parent
 A = ROOT / 'assets'
 FONTS = ROOT / 'fonts'
 OUT = ROOT / 'out'
-PACK = 'S02'  # Pack Semanal 02
-NUM = '02'
-SEMANA = '16–22/11'
-SEMANA_LONGA = '16 a 22/11/2026'
-PREV = 'S01'  # pack anterior (para a grade)
+PACK = 'S03'  # Pack Semanal 03
+NUM = '03'
+SEMANA = '23–29/11'
+SEMANA_LONGA = '23 a 29/11/2026'
+PREV = 'S02'  # pack anterior (para a grade)
 
-# Datas da semana do pack (dia 1 = segunda 16/11/2026)
-DIAS = {1: 'seg 16/11', 2: 'ter 17/11', 3: 'qua 18/11', 4: 'qui 19/11', 5: 'sex 20/11', 6: 'sáb 21/11', 7: 'dom 22/11'}
-DATAS = {1: '16/11/2026 (seg)', 2: '17/11/2026 (ter)', 3: '18/11/2026 (qua)', 4: '19/11/2026 (qui)',
-         5: '20/11/2026 (sex)', 6: '21/11/2026 (sáb)', 7: '22/11/2026 (dom)'}
+# Datas da semana do pack (dia 1 = segunda 23/11/2026)
+DIAS = {1: 'seg 23/11', 2: 'ter 24/11', 3: 'qua 25/11', 4: 'qui 26/11', 5: 'sex 27/11', 6: 'sáb 28/11', 7: 'dom 29/11'}
+DATAS = {1: '23/11/2026 (seg)', 2: '24/11/2026 (ter)', 3: '25/11/2026 (qua)', 4: '26/11/2026 (qui)',
+         5: '27/11/2026 (sex)', 6: '28/11/2026 (sáb)', 7: '29/11/2026 (dom)'}
 
 def b64(p):
     return base64.b64encode(Path(p).read_bytes()).decode()

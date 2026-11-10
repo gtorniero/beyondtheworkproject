@@ -1,0 +1,247 @@
+{
+ "pack": "S03",
+ "pieces": [
+  {
+   "id": "D-R8",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 1,
+   "dia": "seg 23/11",
+   "slot": "19h45",
+   "title": "Meme tier list: as desculpas depois de perder",
+   "kind": "meme",
+   "caption": "Tier list: as desculpas depois de perder o jogo. 🎾\n\nD: o adversário só devolve.\nC: a bola tava nova.\nB: o sol na cara.\nA: o vento.\nS: …a raquete. A única que dá pra resolver.\n\nMarca o parceiro de quadra que usa todas 👇\nO RACKET DNA cruza o seu jogo com 62 raquetes. Teste grátis, link na bio.\n#racketdna #sportdna #tenis #tierlist #meme #tenisamador",
+   "notes": "Meme no formato tier list (identidade + marcação do parceiro de quadra). Ironia com o produto no fim, sem desenho de raquete. 62 raquetes: número do site. Áudio em alta no app.",
+   "version": "S03-D-R8-v1",
+   "v": 1,
+   "hash": "575a49c879",
+   "media": [
+    "D-R8.mp4",
+    "D-R8-capa.png"
+   ],
+   "editable": "editaveis/D-R8.html",
+   "duration": 18.0,
+   "sticker": ""
+  },
+  {
+   "id": "D-C7",
+   "brand": "SPORT DNA",
+   "fmt": "carrossel",
+   "day": 2,
+   "dia": "ter 24/11",
+   "slot": "12h30",
+   "title": "RUN: a tabela de pace para salvar",
+   "kind": "engajamento",
+   "caption": "A tabela de pace que todo corredor precisa. ⏱️\n\nPace 5:00 → 5 km em 25min · 10 km em 50min · 21 km em 1h45\nPace 5:30 → 27min30 · 55min · 1h56\nPace 6:00 → 30min · 1h00 · 2h07\nPace 6:30 → 32min30 · 1h05 · 2h17\nPace 7:00 → 35min · 1h10 · 2h28\n\nSalva pra próxima prova e manda pro grupo da corrida 👇\nO RUN DNA compara 212 tênis com o seu corpo e o seu ritmo. Teste grátis, link na bio.\n#rundna #sportdna #corrida #pace #corridaderua #meiamaratona",
+   "notes": "Utilidade (salvar e mandar no grupo de corrida). Contas conferidas por script: tempo = pace × distância; meia maratona 21,0975 km arredondada no minuto. Objeto concreto: \"pace band\" de prova. 212 tênis: número do site.",
+   "version": "S03-D-C7-v1",
+   "v": 1,
+   "hash": "0fee14fb26",
+   "media": [
+    "D-C7-1.png",
+    "D-C7-2.png",
+    "D-C7-3.png",
+    "D-C7-4.png",
+    "D-C7-5.png"
+   ],
+   "editable": "editaveis/D-C7.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-R9",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 3,
+   "dia": "qua 25/11",
+   "slot": "19h45",
+   "title": "Trend ligar/desligar: modo prancha certa",
+   "kind": "trend",
+   "caption": "Modo prancha certa: ativado. 🌊\n\nDesliga: \"pela foto\" e \"a do amigo\".\nLiga: seu peso, seu nível, seu mar e a prancha que você tem hoje.\n\nO SURF DNA cruza tudo isso com 13 tipos de prancha.\nManda pro amigo que vai trocar de prancha 👇\nTeste grátis e sem cadastro. Link na bio.\n#surfdna #sportdna #surf #pranchadesurf #surfbrasil #trend",
+   "notes": "Trend \"ligar/desligar\" (doc de trends do DOT, 06/11; circulação no Brasil sem validação). Interface de chaves desenhada pela marca, sem copiar app de terceiros. Prancha em desenho técnico de linha, sem marca. 13 tipos: número do site. Áudio em alta no app.",
+   "version": "S03-D-R9-v1",
+   "v": 1,
+   "hash": "97337f6f60",
+   "media": [
+    "D-R9.mp4",
+    "D-R9-capa.png"
+   ],
+   "editable": "editaveis/D-R9.html",
+   "duration": 17.0,
+   "sticker": ""
+  },
+  {
+   "id": "D-C8",
+   "brand": "SPORT DNA",
+   "fmt": "carrossel",
+   "day": 4,
+   "dia": "qui 26/11",
+   "slot": "12h30",
+   "title": "RACKET: a corda, a peça que você esquece",
+   "kind": "engajamento",
+   "caption": "A peça da raquete que você esquece: a corda. 🎾\n\n01 Ela perde tensão até parada no armário.\n02 Regra de bolso: troque, por ano, as vezes que você joga por semana.\n03 Tensão mais baixa dá mais potência; mais alta, mais controle.\n04 Corda que sai do lugar e bola saindo longa são sinais de troca.\n\nManda pro parceiro que joga com a corda de 2024 👇\nO RACKET DNA cruza o seu jogo com 62 raquetes. Teste grátis, link na bio.\n#racketdna #sportdna #tenis #encordoamento #raquete #tenisamador",
+   "notes": "Utilidade de manutenção (salvar e marcar o parceiro). Regra de bolso de troca e efeito da tensão são orientações gerais do tênis, sem marca. Sem desenho de raquete: mostrador e calendário como objetos. 62 raquetes: número do site.",
+   "version": "S03-D-C8-v1",
+   "v": 1,
+   "hash": "f8326498de",
+   "media": [
+    "D-C8-1.png",
+    "D-C8-2.png",
+    "D-C8-3.png",
+    "D-C8-4.png",
+    "D-C8-5.png",
+    "D-C8-6.png"
+   ],
+   "editable": "editaveis/D-C8.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S13",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 23/11",
+   "slot": "",
+   "title": "Dicionário DNA: Drop",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
+   "version": "S03-D-S13-v1",
+   "v": 1,
+   "hash": "b94cfe75a1",
+   "media": [
+    "D-S13.png"
+   ],
+   "editable": "editaveis/D-S13.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S14",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 2,
+   "dia": "ter 24/11",
+   "slot": "",
+   "title": "Dicionário DNA: Rigidez",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
+   "version": "S03-D-S14-v1",
+   "v": 1,
+   "hash": "549419cc57",
+   "media": [
+    "D-S14.png"
+   ],
+   "editable": "editaveis/D-S14.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S15",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 3,
+   "dia": "qua 25/11",
+   "slot": "",
+   "title": "Dicionário DNA: Borda",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
+   "version": "S03-D-S15-v1",
+   "v": 1,
+   "hash": "29aa8a3aca",
+   "media": [
+    "D-S15.png"
+   ],
+   "editable": "editaveis/D-S15.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S16",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 4,
+   "dia": "qui 26/11",
+   "slot": "",
+   "title": "Dicionário DNA: Cabo",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
+   "version": "S03-D-S16-v1",
+   "v": 1,
+   "hash": "6c8107ed4d",
+   "media": [
+    "D-S16.png"
+   ],
+   "editable": "editaveis/D-S16.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S17",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 5,
+   "dia": "sex 27/11",
+   "slot": "",
+   "title": "Dicionário DNA: Entressola",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
+   "version": "S03-D-S17-v1",
+   "v": 1,
+   "hash": "2b84033644",
+   "media": [
+    "D-S17.png"
+   ],
+   "editable": "editaveis/D-S17.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S18",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 6,
+   "dia": "sáb 28/11",
+   "slot": "",
+   "title": "Dicionário DNA: Deck",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
+   "version": "S03-D-S18-v1",
+   "v": 1,
+   "hash": "7f8db3b576",
+   "media": [
+    "D-S18.png"
+   ],
+   "editable": "editaveis/D-S18.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S19",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 7,
+   "dia": "dom 29/11",
+   "slot": "",
+   "title": "Dicionário DNA: Overgrip",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
+   "version": "S03-D-S19-v1",
+   "v": 1,
+   "hash": "2ce343a76d",
+   "media": [
+    "D-S19.png"
+   ],
+   "editable": "editaveis/D-S19.html",
+   "duration": null,
+   "sticker": ""
+  }
+ ]
+}

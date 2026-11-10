@@ -1,0 +1,1067 @@
+[
+ {
+  "id": "ADC-RZ-01",
+  "brand": "Retrozap",
+  "fmt": "reel",
+  "formato": "Reel 9:16 · 24,2 s · sem narração · trilha instrumental",
+  "title": "Piloto Retrozap: seu WhatsApp de 2026 virou premiação",
+  "objetivo": "Tráfego para o site, para começar a retrospectiva grátis do 1º grupo.",
+  "publico": "Quem tem grupo de amigos ou família ativo, no clima de fim de ano (retrospectiva 2026).",
+  "hipotese": "Gancho com o contexto explícito (\"seu WhatsApp de 2026\") + o produto real em ação (exportar, ler, pódio, troféu de áudio) converte mais do que explicar o conceito.",
+  "copy": "Seu WhatsApp de 2026 virou cerimônia de premiação. 🏆\nVocê exporta a conversa do grupo, o Retrozap lê no seu celular (nada sai dele) e entrega um troféu pra cada um: quem mais fala, quem manda áudio, quem some.\n1º grupo grátis. Mais grupos e a retrospectiva de casal: R$ 8,99, pagamento único.",
+  "titulo": "A retrospectiva 2026 do seu grupo",
+  "cta": "No vídeo: \"Faça a retrospectiva do seu grupo\". Botão do anúncio: Saiba mais.",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_content=ADC-RZ-01-v2",
+  "direitos": [
+   "Trilha instrumental original, composta e sintetizada por código nesta pipeline (sem sample, loop ou gravação de terceiros): direito próprio. Eu não consigo ouvir o áudio; conferi nível (−20 LUFS integrado), pico (abaixo de −2 dBTP), espectro e ausência de silêncios/cortes. Falta a sua escuta.",
+   "Telas do \"Grupo de exemplo\" oficial do site (Turma do Churras, nomes fictícios), com etiqueta na tela.",
+   "Usa a palavra \"WhatsApp\" (sem logo e sem verde), como pedido em 06/11. O kit de marca diz para não citar: confirme.",
+   "Oferta conferida no código de 03/11 (1º grupo grátis; casal sempre pago; R$ 8,99, pagamento único). Reconferir no site no ar antes de subir."
+  ],
+  "mudou": "v2: mais lento, de 19 s para 24,2 s (seu comentário na v1: \"ta mto rapido o video\"): telas na velocidade real e mais tempo de leitura. O pódio já aparece no 1º segundo (revisão do Estúdio). Mantidos WhatsApp de 2026, importação e premiação.",
+  "notes": "Piloto de calibração 1/3. Os 2 ADs de casal vêm depois do seu retorno (sem \"1º grupo grátis\", que não vale para casal).",
+  "version": "ADC-RZ-01-v2",
+  "v": 2,
+  "hash": "084cde9416",
+  "media": [
+   "ADC-RZ-01-v2.mp4"
+  ],
+  "cover": "ADC-RZ-01-v2-capa.jpg",
+  "duration": 24.2,
+  "producao": "rascunho",
+  "ferramentas": "Captura real do site rodando a partir de uma cópia local do código (03/11/2026), gravada com Playwright + screencast do Chromium; montagem em HTML/CSS com fontes e SVGs oficiais (compose.py, reels.py); ffmpeg H.264 30 fps; trilha sintetizada em Python (trilha.py). Sem IA generativa de imagem, vídeo ou voz. Sem narração."
+ },
+ {
+  "id": "ADC-RZ-02",
+  "brand": "Retrozap",
+  "fmt": "reel",
+  "formato": "Reel 9:16 · 29,2 s · sem narração · sem música (sem faixa de áudio)",
+  "title": "Hero Retrozap: Retrospectiva 2026 do seu grupo no WhatsApp",
+  "objetivo": "Tráfego para o site, para começar a retrospectiva grátis do 1º grupo.",
+  "publico": "Quem tem grupo de amigos, família ou trabalho ativo, no clima de fim de ano (retrospectiva 2026).",
+  "hipotese": "Um hero com o produto real do começo ao fim (gancho, importação, privacidade, troféu, pódio, palpite, oferta), em ritmo de leitura e telas grandes, convence mais do que o piloto acelerado com trilha.",
+  "copy": "A Retrospectiva 2026 do seu grupo no WhatsApp. 🏆\nVocê exporta a conversa do grupo e abre no retrozap.com.br. O arquivo é lido no seu celular e não vai para servidor. Cada um ganha um troféu, revelado um por um, com pódio e card pronto pra mandar no grupo.\n1º grupo grátis. Grupos ilimitados e casal: R$ 8,99, pago uma vez.",
+  "titulo": "Retrospectiva 2026 do seu grupo",
+  "cta": "No vídeo: \"Faça a retrospectiva 2026 do seu grupo.\" + retrozap.com.br. Botão do anúncio: Saiba mais.",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_content=ADC-RZ-02-v1",
+  "direitos": [
+   "Sem voz e sem música: o MP4 não tem faixa de áudio. Não havia trilha licenciada e revisada; a trilha sintetizada dos pilotos não foi usada.",
+   "Matéria-prima: telas reais do site, rodando a partir da cópia local do código de 03/11/2026, gravadas a 1215×2160 e enquadradas em escala nativa ou mais perto. Nada esticado.",
+   "Dados na tela só do Grupo de exemplo oficial do site (Turma do Churras: Pedrão, Lu e Caio, 217/161/141 mensagens), simulação autorizada pelo Gui em 07/11. Rótulo \"Grupo de exemplo\" do site visível nos troféus; no pódio, onde a página rola e o rótulo sai do quadro, selo \"Demonstração · grupo de exemplo do site\" por cima. Não aparece como cliente real.",
+   "Não há resultado real autorizado: nenhum número, depoimento ou resultado de cliente. Só ações e benefícios que dá para conferir no produto (exportar e abrir, leitura no celular, troféu, pódio, card, palpite, oferta).",
+   "Oferta conferida no código de 03/11 (1º grupo grátis; grupos ilimitados e casal por R$ 8,99, pago uma vez; Pix ou cartão). Reconferir no site no ar antes de subir.",
+   "Usa a palavra WhatsApp (sem logo e sem verde), com o aviso \"O Retrozap não tem relação com o WhatsApp ou a Meta.\" no fim.",
+   "Logos oficiais (logo-simbolo-grupo.svg, logo-assinatura-grupo.svg), Bricolage Grotesque e DM Sans oficiais. Nada redesenhado."
+  ],
+  "mudou": "Peça nova, não substitui a ADC-RZ-01-v2 (aprovada, intacta). Em relação ao piloto: captura em alta (antes eram telas ampliadas), cenas de 2,2 a 5 s, enquadramento diferente por cena com zoom e reenquadramento, pódio de verdade revelado e sem a trilha sintetizada.",
+  "notes": "Referência: ADC-RZ-01-v2, aprovada com o comentário \"rapido pra cacete o video! tem q ver essas musiquinhas que tao toscas\". Feita para comparar com o AD do Estúdio GPT. Uma aprovação vale para o hero; os cortes técnicos (4:5, 1:1, versões curtas) vêm depois, sem aprovação individual.",
+  "version": "ADC-RZ-02-v1",
+  "v": 1,
+  "hash": "d3ea28980e",
+  "media": [
+   "ADC-RZ-02-v1.mp4"
+  ],
+  "cover": "ADC-RZ-02-v1-capa.jpg",
+  "duration": 29.2,
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do site (Playwright, screenshots em DPR 3 com as animações da página a 1/3 da velocidade, remontadas em tempo real): cap_hero.py e cap_podio.py. Montagem em HTML/CSS com fontes e SVGs oficiais (hero_rz02.py). ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz."
+ },
+ {
+  "id": "ADC-QD-01",
+  "brand": "Quiddo",
+  "fmt": "reel",
+  "formato": "Reel 9:16 · 21 s · sem narração · trilha instrumental",
+  "title": "Piloto Quiddo: quiz ao vivo no meio do treinamento",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "RH, T&D, líderes e quem apresenta treinamento, onboarding ou convenção.",
+  "hipotese": "Mostrar a participação durante a apresentação (TV e celular ao mesmo tempo, resultado na hora) vende melhor para o corporativo do que \"competição entre amigos\".",
+  "copy": "Treinamento com a sala no celular? Use a favor. 📱\nVocê escreve as perguntas do conteúdo, abre a sala e todo mundo responde pelo celular, ao mesmo tempo, no meio da apresentação. Sem app, sem cadastro. Na hora, você vê quem entendeu.\nFaça o seu. Teste grátis.",
+  "titulo": "Quiz ao vivo no meio do treinamento",
+  "cta": "No vídeo: \"Faça o seu. Teste grátis.\" Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_treinamento&utm_content=ADC-QD-01-v2",
+  "direitos": [
+   "Trilha instrumental original, composta e sintetizada por código nesta pipeline (sem sample, loop ou gravação de terceiros): direito próprio. Eu não consigo ouvir o áudio; conferi nível (−20 LUFS integrado), pico (abaixo de −2 dBTP), espectro e ausência de silêncios/cortes. Falta a sua escuta.",
+   "Sala de demonstração rodando local, com pergunta e jogadores fictícios (Ana e 6 robôs com nomes inventados), com etiqueta na tela.",
+   "Na captura, o botão de convite por app de mensagens foi ocultado (marca de terceiro) e o endereço local virou quiddo.com.br. O QR (que apontava para o endereço local) está desfocado em toda a cena.",
+   "Logo quiddo-cor.svg, Fraunces 900 e Nunito oficiais."
+  ],
+  "mudou": "v2 (revisão do Estúdio, 07/11; a v1 que você aprovou continua no histórico): QR desfocado em toda a cena da TV; na resposta e no resultado, a TV mostra só a faixa da pergunta e da contagem e o celular ficou 40% maior (resposta e \"Mandou bem! +909\" legíveis).",
+  "notes": "Piloto de calibração 2/3. Próximos: casais/chá-bar, Natal/família e escola.",
+  "version": "ADC-QD-01-v2",
+  "v": 2,
+  "hash": "5812d1820e",
+  "media": [
+   "ADC-QD-01-v2.mp4"
+  ],
+  "cover": "ADC-QD-01-v2-capa.jpg",
+  "duration": 21.0,
+  "producao": "rascunho",
+  "ferramentas": "Captura real do site rodando a partir de uma cópia local do código (03/11/2026), gravada com Playwright + screencast do Chromium; montagem em HTML/CSS com fontes e SVGs oficiais (compose.py, reels.py); ffmpeg H.264 30 fps; trilha sintetizada em Python (trilha.py). Sem IA generativa de imagem, vídeo ou voz. Sem narração."
+ },
+ {
+  "id": "ADC-RK-01",
+  "brand": "SPORT DNA",
+  "fmt": "reel",
+  "formato": "Reel 9:16 · 20,4 s · sem narração · trilha instrumental",
+  "title": "Piloto RACKET: antes de comprar, faça o teste",
+  "objetivo": "Tráfego para o teste RACKET DNA (prévia grátis), com venda do relatório completo.",
+  "publico": "Tenistas amadores que vão trocar de raquete (gancho de Black Friday, 27/11).",
+  "hipotese": "Mostrar o teste, a análise e a prévia reais (% de encaixe, números por trás) tira a dúvida \"é genérico?\" e leva ao teste grátis.",
+  "copy": "Qual raquete combina com o seu jogo? 🎾\nResponda sobre você e o seu jogo. O RACKET DNA cruza as respostas com 62 raquetes e mostra a prévia grátis. O relatório completo sai por R$ 19,99, pagamento único via Pix.\nAntes de comprar, faça o teste.",
+  "titulo": "Antes de comprar raquete, faça o teste",
+  "cta": "No vídeo: \"Antes de comprar, faça o teste.\" Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_teste_previa&utm_content=ADC-RK-01-v2",
+  "direitos": [
+   "Trilha instrumental original, composta e sintetizada por código nesta pipeline (sem sample, loop ou gravação de terceiros): direito próprio. Eu não consigo ouvir o áudio; conferi nível (−20 LUFS integrado), pico (abaixo de −2 dBTP), espectro e ausência de silêncios/cortes. Falta a sua escuta.",
+   "Resultado do \"Ver um exemplo pronto\" oficial do site, com etiqueta \"Perfil de exemplo\"; nomes das raquetes borrados como na prévia do site.",
+   "O relatório completo não aparece aberto (é pago); usei só o exemplo público, sem desbloqueio nem compra.",
+   "Aparece por ~1 s o aviso do próprio site \"Sobre a dor no braço\"; a copy não faz promessa médica.",
+   "Preço conferido no código de 03/11 (prévia grátis; relatório R$ 19,99, Pix). Reconferir no site no ar."
+  ],
+  "mudou": "v2: vídeo mais lento (seu comentário na v1: \"deixe um pouco mais lento só o video\"), 20,4 s, telas na velocidade real e análise em câmera lenta. Zoom no resultado concreto do exemplo público (3 raquetes com 95%, 95% e 92%; \"atacante completo de topspin moderado\"; peso ideal 293 g sem corda) no lugar dos trechos parados (revisão do Estúdio). Sem desbloqueio nem compra.",
+  "notes": "Piloto de calibração 3/3. Foco RACKET; linguagem RACKET, sem logo SPORT DNA em toda peça.",
+  "version": "ADC-RK-01-v2",
+  "v": 2,
+  "hash": "1830a4aa4b",
+  "media": [
+   "ADC-RK-01-v2.mp4"
+  ],
+  "cover": "ADC-RK-01-v2-capa.jpg",
+  "duration": 20.4,
+  "producao": "rascunho",
+  "ferramentas": "Captura real do site rodando a partir de uma cópia local do código (03/11/2026), gravada com Playwright + screencast do Chromium; montagem em HTML/CSS com fontes e SVGs oficiais (compose.py, reels.py); ffmpeg H.264 30 fps; trilha sintetizada em Python (trilha.py). Sem IA generativa de imagem, vídeo ou voz. Sem narração."
+ },
+ {
+  "id": "ADC-QD-02",
+  "brand": "Quiddo",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (12.1 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Natal: o quiz da família",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Quem organiza a ceia ou o encontro de fim de ano da família (25–55 anos), interesse em Natal, família, jogos.",
+  "hipotese": "A pergunta concreta (\"o nome completo do vô\") faz a pessoa imaginar a própria família jogando; Natal dá urgência.",
+  "copy": "Este Natal tem quiz da família. 🎄\nVocê escreve perguntas sobre vocês (o nome completo do vô, a cidade onde os avós se conheceram), abre a sala e cada um joga pelo celular. Ranking a cada pergunta e pódio no fim.\nFaça o seu. Teste grátis.",
+  "titulo": "O quiz da família para o Natal",
+  "cta": "Na arte: \"Faça o seu. Teste grátis.\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_natal_familia&utm_content=ADC-QD-02-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Não consegui ler o texto do site do Quiddo (a página só carrega com JavaScript). As promessas (jogar pelo celular, sem baixar app, ranking, pódio, sorteio de prêmios) vêm do pack aprovado e da descrição do site no ar. A URL /criar respondeu."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-QD-02-v2",
+  "v": 2,
+  "mudou": "v2: só saiu a etiqueta de exemplo/fictício da arte (seu comentário no ADC-RZ-07). Texto, layout e oferta iguais à v1 que você aprovou.",
+  "hash": "fd1b8037d5",
+  "media": [
+   "ads/ADC-QD-02-v2/ADC-QD-02-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-QD-02-v2-hero.jpg",
+  "duration": 12.1,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-QD-02-v2/ADC-QD-02-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-QD-02-v2/ADC-QD-02-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-QD-02-v2/ADC-QD-02-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-QD-02-v2/ADC-QD-02-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-QD-02-v2/ADC-QD-02-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-02-v2/ADC-QD-02-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-02-v2/ADC-QD-02-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-QD-03",
+  "brand": "Quiddo",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (12.0 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Chá-bar: quem conhece mais os noivos",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Madrinhas, padrinhos e noivos com chá-bar, chá de panela ou casamento nos próximos meses (interesses: casamento, noivado, chá de panela).",
+  "hipotese": "Quiz é uma brincadeira de chá-bar conhecida; trocar papel e caneta por celular com pódio parece upgrade fácil.",
+  "copy": "Quem conhece mais os noivos? 💍\nMonte o quiz do chá-bar com as histórias do casal: onde se conheceram, quem disse \"eu te amo\" primeiro, o prato que ninguém aguenta mais. Todo mundo responde pelo celular e o pódio sai na hora.\nFaça o seu. Teste grátis.",
+  "titulo": "Quiz do casal para o chá-bar",
+  "cta": "Na arte: \"Faça o seu. Teste grátis.\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_cha_casamento&utm_content=ADC-QD-03-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Não consegui ler o texto do site do Quiddo (a página só carrega com JavaScript). As promessas (jogar pelo celular, sem baixar app, ranking, pódio, sorteio de prêmios) vêm do pack aprovado e da descrição do site no ar. A URL /criar respondeu."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-QD-03-v2",
+  "v": 2,
+  "mudou": "v2: só saiu a etiqueta de exemplo/fictício da arte (seu comentário no ADC-RZ-07). Texto, layout e oferta iguais à v1 que você aprovou.",
+  "hash": "602da29788",
+  "media": [
+   "ads/ADC-QD-03-v2/ADC-QD-03-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-QD-03-v2-hero.jpg",
+  "duration": 12.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-03-v2/ADC-QD-03-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-QD-04",
+  "brand": "Quiddo",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (14.4 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Professores: o celular a favor da aula",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Professores do fundamental II, médio e cursinho; coordenação pedagógica (interesses: educação, gamificação, ensino).",
+  "hipotese": "A briga com o celular em sala é a dor nº 1 do professor; virar o celular em ferramenta da aula é uma promessa mais forte do que \"revisão\".",
+  "copy": "Proibir o celular? Coloca ele pra jogar. 📱\nVocê escreve as perguntas da matéria, abre a sala e a turma inteira responde pelo celular, ao mesmo tempo, sem baixar app. O ranking aparece a cada pergunta e você vê na hora quem entendeu.\nFaça o seu. Teste grátis.",
+  "titulo": "O celular a favor da sua aula",
+  "cta": "Na arte: \"Faça o seu. Teste grátis.\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_escola_celular&utm_content=ADC-QD-04-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Não consegui ler o texto do site do Quiddo (a página só carrega com JavaScript). As promessas (jogar pelo celular, sem baixar app, ranking, pódio, sorteio de prêmios) vêm do pack aprovado e da descrição do site no ar. A URL /criar respondeu."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-QD-04-v2",
+  "v": 2,
+  "mudou": "v2: conceito novo (seu comentário: \"revisão? conceito ruim\"). Saiu a revisão; entrou o celular a favor da aula: \"Proibir o celular? Coloca ele pra jogar.\" Sem etiqueta de exemplo.",
+  "hash": "f3ae7dd61e",
+  "media": [
+   "ads/ADC-QD-04-v2/ADC-QD-04-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-QD-04-v2-hero.jpg",
+  "duration": 14.4,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-04-v2/ADC-QD-04-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-QD-05",
+  "brand": "Quiddo",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (12.2 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Confra da firma com pódio",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "RH, endomarketing, gestores e quem organiza a confraternização de fim de ano (diferente do piloto de treinamento).",
+  "hipotese": "Dezembro concentra confraternizações; o pódio entre áreas (RH × TI × Vendas) é o gancho de rivalidade saudável.",
+  "copy": "A confra da firma vai ter pódio. 🏆\nMonte um quiz com perguntas sobre o time e o ano da empresa, abra a sala no telão e todo mundo joga pelo celular. Ranking ao vivo, pódio e sorteio de prêmios.\nFaça o seu. Teste grátis.",
+  "titulo": "Quiz ao vivo para a confraternização",
+  "cta": "Na arte: \"Faça o seu. Teste grátis.\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_confra_empresa&utm_content=ADC-QD-05-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Não consegui ler o texto do site do Quiddo (a página só carrega com JavaScript). As promessas (jogar pelo celular, sem baixar app, ranking, pódio, sorteio de prêmios) vêm do pack aprovado e da descrição do site no ar. A URL /criar respondeu."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-QD-05-v2",
+  "v": 2,
+  "mudou": "v2: só saiu a etiqueta de exemplo/fictício da arte (seu comentário no ADC-RZ-07). Texto, layout e oferta iguais à v1 que você aprovou.",
+  "hash": "1d3e8346f7",
+  "media": [
+   "ads/ADC-QD-05-v2/ADC-QD-05-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-QD-05-v2-hero.jpg",
+  "duration": 12.2,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-QD-05-v2/ADC-QD-05-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-QD-05-v2/ADC-QD-05-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-QD-05-v2/ADC-QD-05-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-QD-05-v2/ADC-QD-05-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-QD-05-v2/ADC-QD-05-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-05-v2/ADC-QD-05-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-05-v2/ADC-QD-05-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-QD-06",
+  "brand": "Quiddo",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (12.0 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Aniversário: quem conhece mais",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Amigos e familiares organizando festa ou surpresa de aniversário (18–40 anos).",
+  "hipotese": "Formato \"quem conhece mais\" é universal e dá vontade de testar com o próprio grupo.",
+  "copy": "Quem conhece mais o aniversariante? 🎂\nCrie o quiz com perguntas sobre quem faz aniversário, mande o código no grupo e todo mundo joga pelo celular, na festa ou à distância. Ranking a cada pergunta.\nFaça o seu. Teste grátis.",
+  "titulo": "O quiz do aniversário",
+  "cta": "Na arte: \"Faça o seu. Teste grátis.\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_aniversario&utm_content=ADC-QD-06-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Não consegui ler o texto do site do Quiddo (a página só carrega com JavaScript). As promessas (jogar pelo celular, sem baixar app, ranking, pódio, sorteio de prêmios) vêm do pack aprovado e da descrição do site no ar. A URL /criar respondeu."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-QD-06-v2",
+  "v": 2,
+  "mudou": "v2: só saiu a etiqueta de exemplo/fictício da arte (seu comentário no ADC-RZ-07). Texto, layout e oferta iguais à v1 que você aprovou.",
+  "hash": "a50b9b5c53",
+  "media": [
+   "ads/ADC-QD-06-v2/ADC-QD-06-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-QD-06-v2-hero.jpg",
+  "duration": 12.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-QD-06-v2/ADC-QD-06-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-QD-06-v2/ADC-QD-06-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-QD-06-v2/ADC-QD-06-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-QD-06-v2/ADC-QD-06-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-QD-06-v2/ADC-QD-06-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-06-v2/ADC-QD-06-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-06-v2/ADC-QD-06-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-RZ-03",
+  "brand": "Retrozap",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (12.0 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Casais: a retrospectiva de vocês dois",
+  "objetivo": "Tráfego para a retrospectiva de casal (produto pago).",
+  "publico": "Casais 20–40 anos; datas: aniversário de namoro, Natal, fim de ano. Interesses: relacionamento, presentes criativos.",
+  "hipotese": "Casal compra por emoção e como presente; os números da conversa (\"quem manda mais mensagem\") são o gancho de curiosidade.",
+  "copy": "A retrospectiva de vocês dois. 💌\nO Retrozap Casais transforma a conversa do casal em troféus e números de 2026: quem manda mais mensagem, quem responde mais rápido, a palavra mais dita. A análise é feita no navegador e as mensagens não saem do celular.",
+  "titulo": "A retrospectiva do casal",
+  "cta": "Na arte: \"Faça a de vocês\". Botão do anúncio: Saiba mais.",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_casal_retro2026&utm_content=ADC-RZ-03-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Preço: hoje o site diz acesso ilimitado por R$ 4,99 no Pix (o kit dizia R$ 8,99), por isso os ADs não citam preço. \"1º grupo grátis\" virou \"a primeira retrospectiva é grátis\", que é o texto do FAQ no ar. Confirme.",
+   "Privacidade conforme o site no ar: a análise é feita no navegador e mensagens, nomes e telefones não saem do aparelho.",
+   "O preço do Casais não aparece no site e não achei página própria de casal: o destino é a home. Se existir URL de casal, troco."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-RZ-03-v2",
+  "v": 2,
+  "mudou": "v2: só saiu a etiqueta de exemplo/fictício da arte (seu comentário no ADC-RZ-07). Texto, layout e oferta iguais à v1 que você aprovou.",
+  "hash": "28abd8006e",
+  "media": [
+   "ads/ADC-RZ-03-v2/ADC-RZ-03-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-RZ-03-v2-hero.jpg",
+  "duration": 12.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-RZ-03-v2/ADC-RZ-03-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-RZ-03-v2/ADC-RZ-03-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-RZ-03-v2/ADC-RZ-03-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-RZ-03-v2/ADC-RZ-03-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-RZ-03-v2/ADC-RZ-03-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RZ-03-v2/ADC-RZ-03-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RZ-03-v2/ADC-RZ-03-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-RZ-04",
+  "brand": "Retrozap",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (13.3 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Manda no grupo: alguém vai pedir recontagem",
+  "objetivo": "Tráfego para começar a retrospectiva grátis.",
+  "publico": "Público amplo 18–40 com grupo de amigos ativo; lookalike de quem concluiu.",
+  "hipotese": "A graça do Retrozap acontece quando o resultado cai no grupo (a zoeira, a revolta com o troféu); mostrar essa reação vende o compartilhamento, não a ferramenta.",
+  "copy": "Manda no grupo. Alguém vai pedir recontagem. 🏆\nO Retrozap transforma a conversa do grupo em troféus: quem mais fala, quem mais ri, quem some. Cada um recebe o seu, pronto pra mandar no grupo (e ver quem reclama).\nA primeira retrospectiva é grátis.",
+  "titulo": "Os troféus do seu grupo em 2026",
+  "cta": "Na arte: \"Fazer a do meu grupo\". Botão do anúncio: Saiba mais.",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_recontagem&utm_content=ADC-RZ-04-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Preço: hoje o site diz acesso ilimitado por R$ 4,99 no Pix (o kit dizia R$ 8,99), por isso os ADs não citam preço. \"1º grupo grátis\" virou \"a primeira retrospectiva é grátis\", que é o texto do FAQ no ar. Confirme.",
+   "Privacidade conforme o site no ar: a análise é feita no navegador e mensagens, nomes e telefones não saem do aparelho."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-RZ-04-v2",
+  "v": 2,
+  "mudou": "v2: tema novo (seu comentário: \"privacidade não tem que ser tema de ads\"). Saiu privacidade; entrou a reação do grupo ao troféu: \"Manda no grupo. Alguém vai pedir recontagem.\"",
+  "hash": "a18bc3aeca",
+  "media": [
+   "ads/ADC-RZ-04-v2/ADC-RZ-04-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-RZ-04-v2-hero.jpg",
+  "duration": 13.3,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-RZ-04-v2/ADC-RZ-04-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-RZ-04-v2/ADC-RZ-04-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-RZ-04-v2/ADC-RZ-04-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-RZ-04-v2/ADC-RZ-04-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-RZ-04-v2/ADC-RZ-04-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RZ-04-v2/ADC-RZ-04-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RZ-04-v2/ADC-RZ-04-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-RZ-05",
+  "brand": "Retrozap",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (11.7 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Troféus: quem leva o Fantasma do Ano",
+  "objetivo": "Tráfego para começar a retrospectiva grátis.",
+  "publico": "Público amplo 18–40 com grupo de amigos ativo; lookalike de quem concluiu.",
+  "hipotese": "Nomear um troféu conhecido (Fantasma) faz a pessoa pensar em alguém do grupo na hora e mandar o link.",
+  "copy": "Quem do seu grupo leva o Fantasma do Ano? 👻\nO Retrozap lê a conversa do grupo e entrega um troféu pra cada um: Podcaster, Rei do Kkkk, Fantasma… Tudo no navegador, sem as mensagens saírem do celular.\nA primeira retrospectiva é grátis.",
+  "titulo": "Os troféus do seu grupo em 2026",
+  "cta": "Na arte: \"Ver os troféus do meu grupo\". Botão do anúncio: Saiba mais.",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_trofeus&utm_content=ADC-RZ-05-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Preço: hoje o site diz acesso ilimitado por R$ 4,99 no Pix (o kit dizia R$ 8,99), por isso os ADs não citam preço. \"1º grupo grátis\" virou \"a primeira retrospectiva é grátis\", que é o texto do FAQ no ar. Confirme.",
+   "Privacidade conforme o site no ar: a análise é feita no navegador e mensagens, nomes e telefones não saem do aparelho.",
+   "Troféus citados (Podcaster, Rei do Kkkk, Fantasma) estão na home no ar."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-RZ-05-v2",
+  "v": 2,
+  "mudou": "v2: só saiu a etiqueta de exemplo/fictício da arte (seu comentário no ADC-RZ-07). Texto, layout e oferta iguais à v1 que você aprovou.",
+  "hash": "fed29a84b6",
+  "media": [
+   "ads/ADC-RZ-05-v2/ADC-RZ-05-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-RZ-05-v2-hero.jpg",
+  "duration": 11.7,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-RZ-05-v2/ADC-RZ-05-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-RZ-05-v2/ADC-RZ-05-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-RZ-05-v2/ADC-RZ-05-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-RZ-05-v2/ADC-RZ-05-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-RZ-05-v2/ADC-RZ-05-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RZ-05-v2/ADC-RZ-05-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RZ-05-v2/ADC-RZ-05-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-RZ-06",
+  "brand": "Retrozap",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (12.9 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Família: o grupo também merece troféu",
+  "objetivo": "Tráfego para começar a retrospectiva grátis.",
+  "publico": "25–55 anos, interesses em família e festas de fim de ano; foco no Natal.",
+  "hipotese": "Grupo da família é universal e rende conversa no Natal; o tom carinhoso-zoeiro gera compartilhamento.",
+  "copy": "O grupo da família também merece troféu. ☀️\nQuem manda \"bom dia\" às 6h, quem só visualiza, quem responde três dias depois. O Retrozap transforma a conversa em uma retrospectiva com troféu pra cada um. Leva para a ceia.\nA primeira retrospectiva é grátis.",
+  "titulo": "A retrospectiva do grupo da família",
+  "cta": "Na arte: \"Fazer a da família\". Botão do anúncio: Saiba mais.",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_familia_natal&utm_content=ADC-RZ-06-v1",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Preço: hoje o site diz acesso ilimitado por R$ 4,99 no Pix (o kit dizia R$ 8,99), por isso os ADs não citam preço. \"1º grupo grátis\" virou \"a primeira retrospectiva é grátis\", que é o texto do FAQ no ar. Confirme.",
+   "Privacidade conforme o site no ar: a análise é feita no navegador e mensagens, nomes e telefones não saem do aparelho."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-RZ-06-v1",
+  "v": 1,
+  "hash": "7401ce9dc2",
+  "media": [
+   "ads/ADC-RZ-06-v1/ADC-RZ-06-v1-motion-feed45.mp4"
+  ],
+  "cover": "ADC-RZ-06-v1-hero.jpg",
+  "duration": 12.9,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-RZ-06-v1/ADC-RZ-06-v1-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-RZ-06-v1/ADC-RZ-06-v1-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-RZ-06-v1/ADC-RZ-06-v1-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-RZ-06-v1/ADC-RZ-06-v1-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-RZ-06-v1/ADC-RZ-06-v1-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RZ-06-v1/ADC-RZ-06-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RZ-06-v1/ADC-RZ-06-v1-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-RZ-07",
+  "brand": "Retrozap",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (12.0 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "Fim de ano: o pódio do seu grupo",
+  "objetivo": "Tráfego para começar a retrospectiva grátis.",
+  "publico": "Público amplo 18–45; veicular de 15/12 a 05/01 (pico de retrospectivas).",
+  "hipotese": "Sazonalidade: no fim do ano todo mundo vê retrospectivas; o pódio do grupo é a versão social disso.",
+  "copy": "2026 acabou. Falta o pódio do seu grupo. 🏆\nO Retrozap lê a conversa no navegador e monta a retrospectiva do ano: quem mais falou, quem mais riu, quem sumiu. Troféu pra cada um, pronto para mandar no grupo.\nA primeira retrospectiva é grátis.",
+  "titulo": "A retrospectiva 2026 do seu grupo",
+  "cta": "Na arte: \"Ver o pódio do meu grupo\". Botão do anúncio: Saiba mais.",
+  "url": "https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_virada&utm_content=ADC-RZ-07-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Preço: hoje o site diz acesso ilimitado por R$ 4,99 no Pix (o kit dizia R$ 8,99), por isso os ADs não citam preço. \"1º grupo grátis\" virou \"a primeira retrospectiva é grátis\", que é o texto do FAQ no ar. Confirme.",
+   "Privacidade conforme o site no ar: a análise é feita no navegador e mensagens, nomes e telefones não saem do aparelho."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-RZ-07-v2",
+  "v": 2,
+  "mudou": "v2: saiu \"grupo de exemplo · nomes fictícios\" (seu comentário). Nada mais mudou.",
+  "hash": "e2aa53cf1f",
+  "media": [
+   "ads/ADC-RZ-07-v2/ADC-RZ-07-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-RZ-07-v2-hero.jpg",
+  "duration": 12.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-RZ-07-v2/ADC-RZ-07-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-RZ-07-v2/ADC-RZ-07-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-RZ-07-v2/ADC-RZ-07-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-RZ-07-v2/ADC-RZ-07-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-RZ-07-v2/ADC-RZ-07-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RZ-07-v2/ADC-RZ-07-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RZ-07-v2/ADC-RZ-07-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-RN-01",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (11.5 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "RUN DNA: o tênis certo para você",
+  "objetivo": "Tráfego para o teste RUN DNA (prévia grátis) com venda do relatório (R$ 9,99).",
+  "publico": "Corredores de rua iniciantes e intermediários, 25–50 anos (interesses: corrida, maratona, assessoria esportiva).",
+  "hipotese": "Números concretos (212 tênis, 1.755 reviews, 41 estudos) dão credibilidade a um teste de 3 minutos.",
+  "copy": "Qual tênis de corrida combina com o seu corpo e o seu treino? 🏃\nO RUN DNA faz 19 perguntas e compara 212 tênis de 13 marcas com o seu peso, o seu ritmo e as suas dores. Prévia grátis e sem cadastro; o relatório completo sai por R$ 9,99, pagamento único.",
+  "titulo": "Descubra o seu tênis de corrida",
+  "cta": "Na arte: \"Fazer o teste grátis\". Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=run_teste&utm_content=ADC-RN-01-v1",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Números e preços conferidos nas páginas do produto no ar em 08/11/2026. Na home, a contagem de raquetes diverge (183 e 274); os ADs usam os 62 com specs medidas da página /racket/."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-RN-01-v1",
+  "v": 1,
+  "hash": "b281ca4704",
+  "media": [
+   "ads/ADC-RN-01-v1/ADC-RN-01-v1-motion-feed45.mp4"
+  ],
+  "cover": "ADC-RN-01-v1-hero.jpg",
+  "duration": 11.5,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-RN-01-v1/ADC-RN-01-v1-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-RN-01-v1/ADC-RN-01-v1-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-RN-01-v1/ADC-RN-01-v1-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-RN-01-v1/ADC-RN-01-v1-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-RN-01-v1/ADC-RN-01-v1-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RN-01-v1/ADC-RN-01-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RN-01-v1/ADC-RN-01-v1-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-RN-02",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (13.4 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "RUN · Black Friday: teste antes do carrinho",
+  "objetivo": "Tráfego para o teste RUN DNA (prévia grátis) na semana da Black Friday.",
+  "publico": "Corredores com intenção de compra (interesses: corrida + Black Friday, lojas esportivas); veicular de 20 a 30/11.",
+  "hipotese": "Na Black Friday a dúvida é \"qual modelo?\"; posicionar o teste como passo antes da compra aproveita a intenção alta.",
+  "copy": "Desconto bom em tênis errado continua caro. 🏷️\nAntes da Black Friday (27/11), faça o RUN DNA: 3 minutos, 19 perguntas, e o teste cruza o seu peso, o seu ritmo e as suas dores com 212 tênis. Grátis e sem cadastro.",
+  "titulo": "Antes da Black Friday, faça o teste",
+  "cta": "Na arte: \"Fazer o teste grátis\". Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=run_blackfriday&utm_content=ADC-RN-02-v1",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Números e preços conferidos nas páginas do produto no ar em 08/11/2026. Na home, a contagem de raquetes diverge (183 e 274); os ADs usam os 62 com specs medidas da página /racket/."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-RN-02-v1",
+  "v": 1,
+  "hash": "01bb4676a2",
+  "media": [
+   "ads/ADC-RN-02-v1/ADC-RN-02-v1-motion-feed45.mp4"
+  ],
+  "cover": "ADC-RN-02-v1-hero.jpg",
+  "duration": 13.4,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-RN-02-v1/ADC-RN-02-v1-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-RN-02-v1/ADC-RN-02-v1-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-RN-02-v1/ADC-RN-02-v1-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-RN-02-v1/ADC-RN-02-v1-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-RN-02-v1/ADC-RN-02-v1-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RN-02-v1/ADC-RN-02-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RN-02-v1/ADC-RN-02-v1-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-SF-01",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (11.0 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "SURF DNA: a prancha certa",
+  "objetivo": "Tráfego para o teste SURF DNA (prévia grátis) com venda do relatório (R$ 19,99).",
+  "publico": "Surfistas iniciantes e intermediários, 20–45, cidades litorâneas (interesses: surf, escolas de surf).",
+  "hipotese": "Quem vai trocar de prancha tem medo de errar volume e modelo; números de calibração passam segurança.",
+  "copy": "Qual prancha combina com o seu surf e com o seu mar? 🏄\nO SURF DNA compara 13 tipos de prancha e 416 tamanhos com o seu peso, o seu nível e as ondas onde você surfa. Prévia grátis, 3 minutos, sem cadastro. Relatório completo por R$ 19,99, pagamento único.",
+  "titulo": "Descubra a sua próxima prancha",
+  "cta": "Na arte: \"Fazer o teste grátis\". Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_teste&utm_content=ADC-SF-01-v1",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Números e preços conferidos nas páginas do produto no ar em 08/11/2026. Na home, a contagem de raquetes diverge (183 e 274); os ADs usam os 62 com specs medidas da página /racket/."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-SF-01-v1",
+  "v": 1,
+  "hash": "b7b734b27f",
+  "media": [
+   "ads/ADC-SF-01-v1/ADC-SF-01-v1-motion-feed45.mp4"
+  ],
+  "cover": "ADC-SF-01-v1-hero.jpg",
+  "duration": 11.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-SF-01-v1/ADC-SF-01-v1-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-SF-01-v1/ADC-SF-01-v1-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-SF-01-v1/ADC-SF-01-v1-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-SF-01-v1/ADC-SF-01-v1-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-SF-01-v1/ADC-SF-01-v1-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-SF-01-v1/ADC-SF-01-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-SF-01-v1/ADC-SF-01-v1-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-SF-02",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (11.5 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "SURF: calculadora grátis de litragem",
+  "objetivo": "Tráfego para a calculadora grátis de litragem (porta de entrada para o teste SURF DNA).",
+  "publico": "Surfistas de todos os níveis, 18–45 (interesses: surf, shapers, pranchas).",
+  "hipotese": "Ferramenta grátis com resposta imediata tem custo por clique menor e aquece o público para o teste pago.",
+  "copy": "Quantos litros a sua prancha precisa ter? 🌊\nLitragem é o número que decide se você rema ou fica parado. Calcule grátis pelo seu peso e pelo seu nível, e depois faça o SURF DNA para ver o tipo de prancha.",
+  "titulo": "Calculadora de litragem grátis",
+  "cta": "Na arte: \"Calcular grátis\". Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/ferramentas/litragem/index.html?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_litragem&utm_content=ADC-SF-02-v2",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Números e preços conferidos nas páginas do produto no ar em 08/11/2026. Na home, a contagem de raquetes diverge (183 e 274); os ADs usam os 62 com specs medidas da página /racket/.",
+   "Destino é a calculadora grátis (/ferramentas/litragem/)."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-SF-02-v2",
+  "v": 2,
+  "mudou": "v2: só saiu a etiqueta de exemplo/fictício da arte (seu comentário no ADC-RZ-07). Texto, layout e oferta iguais à v1 que você aprovou.",
+  "hash": "1f179e2ebf",
+  "media": [
+   "ads/ADC-SF-02-v2/ADC-SF-02-v2-motion-feed45.mp4"
+  ],
+  "cover": "ADC-SF-02-v2-hero.jpg",
+  "duration": 11.5,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-SF-02-v2/ADC-SF-02-v2-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-SF-02-v2/ADC-SF-02-v2-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-SF-02-v2/ADC-SF-02-v2-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-SF-02-v2/ADC-SF-02-v2-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-SF-02-v2/ADC-SF-02-v2-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-SF-02-v2/ADC-SF-02-v2-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-SF-02-v2/ADC-SF-02-v2-motion-sq.mp4"
+   }
+  ]
+ },
+ {
+  "id": "ADC-RK-02",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": 2,
+  "formato": "Hero estático 4:5 + motion (12.1 s, mudo). Adaptações para posicionamento automático: 1:1, 9:16, 1,91:1 e motion 9:16, 4:5, 1:1.",
+  "title": "RACKET DNA: jogo e braço",
+  "objetivo": "Tráfego para o teste RACKET DNA (prévia grátis) com venda do relatório (R$ 19,99).",
+  "publico": "Tenistas amadores 25–55 que vão trocar de raquete; complementa o piloto ADC-RK-01 (vídeo) com estático.",
+  "hipotese": "\"Para o seu braço\" fala com a dor de quem já se machucou ou tem medo; os números mostram que não é recomendação genérica.",
+  "copy": "Qual raquete combina com o seu jogo e com o seu braço? 🎾\nParece simples. Não é. O RACKET DNA cruza as suas respostas com 62 raquetes com specs medidas e 379 casos de especialistas. Você vê a prévia grátis antes de pagar; o relatório completo sai por R$ 19,99, pagamento único.",
+  "titulo": "Descubra a sua raquete",
+  "cta": "Na arte: \"Fazer o teste\". Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_teste_braco&utm_content=ADC-RK-02-v1",
+  "direitos": [
+   "Vídeo mudo de propósito (as trilhas dos pilotos foram reprovadas). Se quiser áudio, escolha na biblioteca de música do Meta ao subir.",
+   "Fontes, logos, ícones e bichos oficiais, tirados dos editáveis do Pack S02 (nada redesenhado). Sem etiquetas de exemplo/simulação na arte (pedido do Gui).",
+   "Números e preços conferidos nas páginas do produto no ar em 08/11/2026. Na home, a contagem de raquetes diverge (183 e 274); os ADs usam os 62 com specs medidas da página /racket/."
+  ],
+  "notes": "Lote 2 (feito sem acesso ao GitHub). Você aprova só o hero; as adaptações seguem o hero e ficam nos links abaixo.",
+  "version": "ADC-RK-02-v1",
+  "v": 1,
+  "hash": "295052507e",
+  "media": [
+   "ads/ADC-RK-02-v1/ADC-RK-02-v1-motion-feed45.mp4"
+  ],
+  "cover": "ADC-RK-02-v1-hero.jpg",
+  "duration": 12.1,
+  "producao": "pronto para revisão",
+  "ferramentas": "Arte em HTML/CSS com as fontes e SVGs oficiais (kit.py e ads.py), renderizada com Playwright em PNG; motion com animação CSS quadro a quadro, ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz.",
+  "arquivos": [
+   {
+    "label": "Feed 4:5 (hero)",
+    "path": "media/ads/ADC-RK-02-v1/ADC-RK-02-v1-feed45.png"
+   },
+   {
+    "label": "1:1",
+    "path": "media/ads/ADC-RK-02-v1/ADC-RK-02-v1-sq.png"
+   },
+   {
+    "label": "9:16",
+    "path": "media/ads/ADC-RK-02-v1/ADC-RK-02-v1-story.png"
+   },
+   {
+    "label": "1,91:1",
+    "path": "media/ads/ADC-RK-02-v1/ADC-RK-02-v1-land.png"
+   },
+   {
+    "label": "Motion 9:16",
+    "path": "media/ads/ADC-RK-02-v1/ADC-RK-02-v1-motion-story.mp4"
+   },
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-RK-02-v1/ADC-RK-02-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-RK-02-v1/ADC-RK-02-v1-motion-sq.mp4"
+   }
+  ]
+ }
+]

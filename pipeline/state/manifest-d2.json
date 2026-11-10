@@ -1,0 +1,74 @@
+{
+ "pack": "S03",
+ "pieces": [
+  {
+   "id": "D-R10",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 5,
+   "dia": "sex 27/11",
+   "slot": "19h45",
+   "title": "Trend antes × depois: como escolher o tênis",
+   "kind": "trend",
+   "caption": "Escolhendo tênis de corrida: antes × depois. 👟\n\nAntes: pela cor, porque o amigo usa, pelo maior desconto.\nDepois: pelo seu peso, pela sua pisada, pelo seu ritmo.\n\nO RUN DNA compara 212 tênis com o seu jeito de correr.\nManda pro amigo que escolhe tênis pela cor 👇\nTeste grátis, relatório R$ 9,99. Link na bio.\n#rundna #sportdna #corrida #tenisdecorrida #antesedepois #trend",
+   "notes": "Trend \"antes/depois\" (doc de trends do DOT, 06/11: compra por aparência × escolha pelo próprio jeito). Sem promessa de desempenho. Cai na sexta da Black Friday, mas sem falar de desconto (o S02 já fez). Preço e 212 tênis do site. Áudio em alta no app.",
+   "version": "S03-D-R10-v1",
+   "v": 1,
+   "hash": "824fa9926b",
+   "media": [
+    "D-R10.mp4",
+    "D-R10-capa.png"
+   ],
+   "editable": "editaveis/D-R10.html",
+   "duration": 17.0,
+   "sticker": ""
+  },
+  {
+   "id": "D-C9",
+   "brand": "SPORT DNA",
+   "fmt": "carrossel",
+   "day": 6,
+   "dia": "sáb 28/11",
+   "slot": "12h30",
+   "title": "SURF: checklist da trip no bloco de notas",
+   "kind": "engajamento",
+   "caption": "Checklist da trip de surf. 🏄\n\n✔ Parafina (e o pente)\n✔ Leash sem ressecar\n✔ Quilhas e a chave\n✔ Protetor solar\n✔ Lycra ou roupa de borracha\n✔ Capa da prancha\n✔ Previsão das ondas na véspera\n\nSalva e manda no grupo da trip. Quem esquecer a chave das quilhas paga o açaí 👇\nFaltou a prancha certa? O SURF DNA cruza seu peso, nível e mar com 13 tipos. Teste grátis, link na bio.\n#surfdna #sportdna #surf #surftrip #checklist #surfbrasil",
+   "notes": "Utilidade em bloco de notas (objeto concreto) para salvar e mandar no grupo da trip. Itens gerais, sem marca. 13 tipos: número do site. Capa off-white entre o laranja de sexta e o preto de domingo.",
+   "version": "S03-D-C9-v1",
+   "v": 1,
+   "hash": "a0dd95b1fa",
+   "media": [
+    "D-C9-1.png",
+    "D-C9-2.png",
+    "D-C9-3.png",
+    "D-C9-4.png",
+    "D-C9-5.png"
+   ],
+   "editable": "editaveis/D-C9.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-R11",
+   "brand": "SPORT DNA",
+   "fmt": "reel",
+   "day": 7,
+   "dia": "dom 29/11",
+   "slot": "19h45",
+   "title": "Meme: \"alguém indica um tênis?\" no grupo da corrida",
+   "kind": "meme",
+   "caption": "\"Gente, qual tênis eu compro pra começar a correr?\" 🏃\n\n\"O meu é ótimo.\" \"Compra o mais caro.\" \"O que tiver em promoção.\" \"Corre descalço.\" \"Uso o mesmo há 4 anos.\" \"Depende.\"\n6 respostas. Nenhuma sobre você.\n\nManda no grupo da corrida e vê quem se reconhece 👇\nO RUN DNA compara 212 tênis com o seu peso, pisada, ritmo e dores. Teste grátis, link na bio.\n#rundna #sportdna #corrida #corridaderua #meme #grupodecorrida",
+   "notes": "Meme de comportamento de grupo (identidade: todo grupo de corrida tem essas respostas). Conversa num celular genérico, sem marca de app, nomes fictícios. 212 tênis: número do site. Áudio em alta no app.",
+   "version": "S03-D-R11-v1",
+   "v": 1,
+   "hash": "c6ffe82f94",
+   "media": [
+    "D-R11.mp4",
+    "D-R11-capa.png"
+   ],
+   "editable": "editaveis/D-R11.html",
+   "duration": 19.0,
+   "sticker": ""
+  }
+ ]
+}
