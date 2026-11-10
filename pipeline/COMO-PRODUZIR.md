@@ -33,6 +33,11 @@ mkdir -p out && cp state/*.json out/
    python3 pipeline/status.py db/reviews packs/SNN/STATUS.json packs/SNN/manifest.json
    ```
 3. Se o STATUS.json mudou, faça commit e push. Notifique o Gui só se algo novo foi liberado ("X peças liberadas para o DOT").
+4. **ADs aprovados (regra do Gui, 10/11):** leia também o banco `ads` da Mesa. Para cada AD com `status: "aprovado"` na versão atual (a de `pipeline/ads/S02.json`) que ainda não tem pasta em `ads/aprovados/<marca>/<ID>-v<n>/`:
+   - baixe a mídia da Mesa (Artifact `read` com `paths`) e rode `python3 pipeline/ads/placements.py <pasta baixada> ads/aprovados <IDs>`;
+   - o script gera todos os posicionamentos da Meta (reel: 9:16 original e sem trilha, 4:5, 1:1, 16:9 in-stream e capas; estático: 4:5 hero, 1:1, 9:16, 1,91:1 e vídeos 4:5, 1:1, 9:16) com nomes por posicionamento e um LEIA-ME.md; reel novo precisa de entrada em `REEL` no script (fundo, frase do CTA, URL, logo);
+   - confira um quadro de cada formato, atualize `ads/aprovados/INDEX.md` e o doc "ADs aprovados" no Drive (pasta "05. Social Content"), commit e push;
+   - nunca suba nada para a conta de anúncios.
 
 ## B. Aplicar uma rodada finalizada
 1. Leia `pack/<SNN>`. Se `ultimaRodada` for maior que a última rodada que você já processou (veja `pipeline/state/rodadas-processadas.json`), leia `rodadas/R<n>`.
