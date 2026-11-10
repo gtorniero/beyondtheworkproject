@@ -504,7 +504,7 @@ def d_r11():
 # Stories · Dicionário DNA com desenho técnico (sem adesivo)
 # =====================================================================================
 TERMOS3 = [
-    (1, 'RUN', 'Drop', 'A diferença de altura entre o calcanhar e a ponta do tênis. No desenho: 32 − 24 = 8 mm.', 'var(--run)', 'rundna', 'drop', False),
+    (1, 'RUN', 'Drop', 'A diferença de altura entre o calcanhar e a ponta do tênis. 32 mm atrás e 24 mm na frente: drop de 8 mm.', 'var(--run)', 'rundna', 'drop', False),
     (2, 'RACKET', 'Rigidez', 'O quanto a raquete dobra na batida. Mais rígida: mais potência e mais vibração no braço.', 'var(--racket)', 'racketdna', 'rigidez', True),
     (3, 'SURF', 'Borda', 'A lateral da prancha. Mais redonda perdoa mais; mais fina corta melhor a onda.', 'var(--surf)', 'surfdna', 'borda', False),
     (4, 'RACKET', 'Cabo', 'A grossura da empunhadura, de L1 a L4. Cabo errado cansa a mão.', 'var(--racket)', 'racketdna', 'cabo', True),
@@ -513,8 +513,26 @@ TERMOS3 = [
     (7, 'RACKET', 'Overgrip', 'A fita fina por cima do cabo. Segura o suor e é barata de trocar.', 'var(--racket)', 'racketdna', 'overgrip', False),
 ]
 
+TIPO_SO = {'drop', 'entressola', 'deck', 'overgrip'}  # S03 rodada 1: Gui reprovou as ilustrações; voltam no layout tipográfico aprovado no S02
+
+def d_story_tipo(n, d, sp, termo, defi, cor, lg, light):
+    body = f'''<section class="page {'light' if light else ''}" style="width:1080px;height:1920px">
+      <div class="abs lbl" style="left:80px;top:300px">DICIONÁRIO DNA · {sp}</div>
+      <div class="abs" style="left:80px;top:360px;width:920px;height:6px;background:{cor}"></div>
+      <div class="abs t" style="left:80px;top:470px;width:920px;font-size:{200 if len(termo) < 8 else 170}px;{'color:' + cor if not light else ''}">{termo}</div>
+      <div class="abs" style="left:80px;top:780px;width:900px;font-size:64px;line-height:1.25;font-family:Archivo;font-weight:800">{defi}</div>
+      <div class="abs" style="left:80px;top:1300px;font-size:42px;{'color:var(--mutedL)' if light else 'color:var(--muted)'}">Salva e manda pro seu parceiro de treino.</div>
+      <div class="abs" style="left:80px;top:1400px">{logo(lg + ('-logo-fundo-claro' if light else '-logo-fundo-escuro'), 460)}</div>
+    </section>'''
+    sid = f'D-S{13 + n}'
+    piece(id=sid, fmt='story', day=d, title=f'Dicionário DNA: {termo}', w=1080, h=1920, html=doc(sid, FONTS, CSS, body, 1080, 1920),
+          caption='(story, sem legenda)', sticker='', kind='story',
+          notes='v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.')
+
 def d_stories3():
     for n, (d, sp, termo, defi, cor, lg, des, light) in enumerate(TERMOS3):
+        if des in TIPO_SO:
+            d_story_tipo(n, d, sp, termo, defi, cor, lg, {'drop': False, 'entressola': True, 'deck': False, 'overgrip': True}[des]); continue
         ink = '#0A0A0A' if light else '#fff'
         draw = {'drop': lambda: svg_drop(cor, ink, 900), 'rigidez': lambda: svg_rigidez('#0A0A0A' if light else cor, ink, 900),
                 'borda': lambda: svg_borda(cor, ink, 900), 'cabo': lambda: svg_cabo('#0A0A0A' if light else cor, ink, 480),

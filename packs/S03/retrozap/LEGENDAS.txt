@@ -142,10 +142,10 @@ Notas: Frase num papel de recibo (cupom). Sem adesivo, sem preço, sem etiqueta.
 
 ------------------------------------------------------------
 
-S03-R-S14-v1 · ter 24/11 · STORY · Frase pro grupo: Amigo secreto: 12 pessoas, 1 sorteio e 3 semanas para decidir o valor.
+S03-R-S14-v2 · ter 24/11 · STORY · Frase pro grupo: Todo grupo tem quem responde em novembro a mensagem de março.
 Arquivos: R-S14.png
 
-Notas: Cor chapada com ícone oficial. Sem adesivo, sem preço, sem etiqueta. Motivo de envio: print no grupo.
+Notas: v2 (rodada 1): tema novo (amigo secreto já estava no R-C7) e objeto concreto: a resposta citando a mensagem de março, num balão sem marca de app. Sem adesivo, sem preço, sem etiqueta. Motivo de envio: marcar o amigo.
 
 ------------------------------------------------------------
 

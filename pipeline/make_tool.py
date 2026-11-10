@@ -38,6 +38,11 @@ for p in P:
             n = f.replace('.png', '.jpg'); jpg(md / f, T / 'media' / n, 720); p['previews'].append(n)
     shutil.copy(O / p['editable'], T / p['editable'])
 MUDOU = {
+ 'R-S14': 'v2 (rodada 1): tema novo, porque amigo secreto já está no R-C7, e objeto concreto: a resposta de novembro citando a mensagem de março.',
+ 'D-S13': 'v2 (rodada 1, "horrível essa simulação de tênis"): saiu a ilustração; volta o layout tipográfico do Dicionário DNA aprovado no S02.',
+ 'D-S17': 'v2 (rodada 1): saiu a ilustração do tênis; layout tipográfico do Dicionário DNA do S02.',
+ 'D-S18': 'v2 (rodada 1): saiu a ilustração da prancha; layout tipográfico do Dicionário DNA do S02.',
+ 'D-S19': 'v2 (rodada 1): saiu a ilustração do overgrip; layout tipográfico do Dicionário DNA do S02.',
 }
 STORIES_CTA = 'O Instagram não agenda adesivos e você não vai postar nada: a enquete/quiz/link virou CTA desenhado na arte ("responde no direct", "link na bio"). Assim o DOT agenda tudo.'
 for p in P:

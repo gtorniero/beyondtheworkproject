@@ -1,0 +1,89 @@
+{
+ "pack": "S03",
+ "pieces": [
+  {
+   "id": "D-S13",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 1,
+   "dia": "seg 23/11",
+   "slot": "",
+   "title": "Dicionário DNA: Drop",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.",
+   "version": "S03-D-S13-v2",
+   "v": 2,
+   "hash": "edb112dc81",
+   "media": [
+    "D-S13.png"
+   ],
+   "editable": "editaveis/D-S13.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S17",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 5,
+   "dia": "sex 27/11",
+   "slot": "",
+   "title": "Dicionário DNA: Entressola",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.",
+   "version": "S03-D-S17-v2",
+   "v": 2,
+   "hash": "f827dad581",
+   "media": [
+    "D-S17.png"
+   ],
+   "editable": "editaveis/D-S17.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S18",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 6,
+   "dia": "sáb 28/11",
+   "slot": "",
+   "title": "Dicionário DNA: Deck",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.",
+   "version": "S03-D-S18-v2",
+   "v": 2,
+   "hash": "278c76cd6b",
+   "media": [
+    "D-S18.png"
+   ],
+   "editable": "editaveis/D-S18.html",
+   "duration": null,
+   "sticker": ""
+  },
+  {
+   "id": "D-S19",
+   "brand": "SPORT DNA",
+   "fmt": "story",
+   "day": 7,
+   "dia": "dom 29/11",
+   "slot": "",
+   "title": "Dicionário DNA: Overgrip",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.",
+   "version": "S03-D-S19-v2",
+   "v": 2,
+   "hash": "a0856c0051",
+   "media": [
+    "D-S19.png"
+   ],
+   "editable": "editaveis/D-S19.html",
+   "duration": null,
+   "sticker": ""
+  }
+ ]
+}

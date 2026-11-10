@@ -1,0 +1,26 @@
+{
+ "pack": "S03",
+ "pieces": [
+  {
+   "id": "R-S14",
+   "brand": "Retrozap",
+   "fmt": "story",
+   "day": 2,
+   "dia": "ter 24/11",
+   "slot": "",
+   "title": "Frase pro grupo: Todo grupo tem quem responde em novembro a mensagem de março.",
+   "kind": "story",
+   "caption": "(story, sem legenda)",
+   "notes": "v2 (rodada 1): tema novo (amigo secreto já estava no R-C7) e objeto concreto: a resposta citando a mensagem de março, num balão sem marca de app. Sem adesivo, sem preço, sem etiqueta. Motivo de envio: marcar o amigo.",
+   "version": "S03-R-S14-v2",
+   "v": 2,
+   "hash": "d0d7f81cfb",
+   "media": [
+    "R-S14.png"
+   ],
+   "editable": "editaveis/R-S14.html",
+   "duration": null,
+   "sticker": ""
+  }
+ ]
+}

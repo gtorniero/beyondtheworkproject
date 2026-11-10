@@ -39,12 +39,12 @@ Os MP4 saem sem música. Se o Business Suite mostrar uma biblioteca de músicas 
 |---|---|---|---|---|---|
 | 23/11/2026 (seg) | 12h | Quiddo | story | Q-S13 (v1) | Business Suite · story |
 | 23/11/2026 (seg) | 12h | Retrozap | story | R-S13 (v1) | Business Suite · story |
-| 23/11/2026 (seg) | 12h | SPORT DNA | story | D-S13 (v1) | Business Suite · story |
+| 23/11/2026 (seg) | 12h | SPORT DNA | story | D-S13 (v2) | Business Suite · story |
 | 23/11/2026 (seg) | 19h45 | Quiddo | reel | Q-R7 (v1) | Business Suite · reel |
 | 23/11/2026 (seg) | 19h45 | Retrozap | reel | R-R8 (v1) | Business Suite · reel |
 | 23/11/2026 (seg) | 19h45 | SPORT DNA | reel | D-R8 (v1) | Business Suite · reel |
 | 24/11/2026 (ter) | 12h | Quiddo | story | Q-S14 (v1) | Business Suite · story |
-| 24/11/2026 (ter) | 12h | Retrozap | story | R-S14 (v1) | Business Suite · story |
+| 24/11/2026 (ter) | 12h | Retrozap | story | R-S14 (v2) | Business Suite · story |
 | 24/11/2026 (ter) | 12h | SPORT DNA | story | D-S14 (v1) | Business Suite · story |
 | 24/11/2026 (ter) | 12h30 | Quiddo | carrossel | Q-C7 (v1) | Business Suite · post |
 | 24/11/2026 (ter) | 12h30 | Retrozap | carrossel | R-C7 (v1) | Business Suite · post |
@@ -63,19 +63,19 @@ Os MP4 saem sem música. Se o Business Suite mostrar uma biblioteca de músicas 
 | 26/11/2026 (qui) | 12h30 | SPORT DNA | carrossel | D-C8 (v1) | Business Suite · post |
 | 27/11/2026 (sex) | 12h | Quiddo | story | Q-S17 (v1) | Business Suite · story |
 | 27/11/2026 (sex) | 12h | Retrozap | story | R-S17 (v1) | Business Suite · story |
-| 27/11/2026 (sex) | 12h | SPORT DNA | story | D-S17 (v1) | Business Suite · story |
+| 27/11/2026 (sex) | 12h | SPORT DNA | story | D-S17 (v2) | Business Suite · story |
 | 27/11/2026 (sex) | 19h45 | Quiddo | reel | Q-R9 (v1) | Business Suite · reel |
 | 27/11/2026 (sex) | 19h45 | Retrozap | reel | R-R10 (v1) | Business Suite · reel |
 | 27/11/2026 (sex) | 19h45 | SPORT DNA | reel | D-R10 (v1) | Business Suite · reel |
 | 28/11/2026 (sáb) | 12h | Quiddo | story | Q-S18 (v1) | Business Suite · story |
 | 28/11/2026 (sáb) | 12h | Retrozap | story | R-S18 (v1) | Business Suite · story |
-| 28/11/2026 (sáb) | 12h | SPORT DNA | story | D-S18 (v1) | Business Suite · story |
+| 28/11/2026 (sáb) | 12h | SPORT DNA | story | D-S18 (v2) | Business Suite · story |
 | 28/11/2026 (sáb) | 12h30 | Quiddo | carrossel | Q-C9 (v1) | Business Suite · post |
 | 28/11/2026 (sáb) | 12h30 | Retrozap | carrossel | R-C9 (v1) | Business Suite · post |
 | 28/11/2026 (sáb) | 12h30 | SPORT DNA | carrossel | D-C9 (v1) | Business Suite · post |
 | 29/11/2026 (dom) | 12h | Quiddo | story | Q-S19 (v1) | Business Suite · story |
 | 29/11/2026 (dom) | 12h | Retrozap | story | R-S19 (v1) | Business Suite · story |
-| 29/11/2026 (dom) | 12h | SPORT DNA | story | D-S19 (v1) | Business Suite · story |
+| 29/11/2026 (dom) | 12h | SPORT DNA | story | D-S19 (v2) | Business Suite · story |
 | 29/11/2026 (dom) | 19h45 | Quiddo | reel | Q-R10 (v1) | Business Suite · reel |
 | 29/11/2026 (dom) | 19h45 | Retrozap | reel | R-R11 (v1) | Business Suite · reel |
 | 29/11/2026 (dom) | 19h45 | SPORT DNA | reel | D-R11 (v1) | Business Suite · reel |

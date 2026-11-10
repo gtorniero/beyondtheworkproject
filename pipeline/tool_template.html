@@ -1,4 +1,3 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Mesa de Aprovação</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -241,6 +240,43 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
 .adact textarea{min-height:90px;font-size:15px}
 .adcard .chg,.adcard .prev{font-size:14px}
 @media (max-width:860px){.adcard{grid-template-columns:1fr}.adcard .frame{max-width:380px}.adcard .stage{justify-content:center}.adrev{grid-template-columns:1fr}.admain{padding:18px 16px}}
+/* compacto (Gui, 10/11): header bem menor e área de aprovação do AD maior, para ver o AD inteiro na tela */
+.bar{padding-block:6px;gap:6px 16px}
+.brandmark svg{width:20px;height:20px}
+.brandmark h1{font-size:14px}
+.brandmark small{font-size:10px}
+.tally span{font-size:11px;padding:2px 8px}
+.tipo{gap:6px;padding-block:0 6px}
+.tipo button{flex:0 1 auto;max-width:none;padding:5px 12px;display:flex;align-items:center;gap:8px;border-radius:999px}
+.tipo small,.tipo .d{display:none}
+.tipo b{font-size:13px}
+.modes{margin-bottom:6px}
+.modes button{flex:0 1 auto;padding:6px 12px 5px;font-size:14px}
+.modes .n{font-size:11px;padding:1px 6px;min-width:22px}
+.filters{gap:4px 12px;padding-block:0 6px}
+.seg button{padding:2px 9px;font-size:12px}
+.seg .lbl,.filters .lbl{font-size:10px}
+.right .btn{padding:3px 10px;font-size:12px}
+header::after{display:none}
+header>.wrap{display:flex;flex-wrap:wrap;align-items:flex-end;column-gap:18px}
+header .bar,header .filters{flex:1 1 100%}
+header .modes{border-bottom:0;margin-bottom:6px}
+.dock .in{padding-block:6px}
+.dock .txt{font-size:13px}
+.big{padding:9px 18px;font-size:15px;border-radius:10px}
+.big.sec{padding:8px 14px;font-size:13px}
+/* card de AD: vídeo cabe na tela e a aprovação vem logo depois do título, maior */
+.adcard .frame{max-height:calc(100vh - 190px);aspect-ratio:auto}
+.adcard .frame video,.adcard .frame img{max-height:calc(100vh - 190px)}
+.adcard .stage{position:sticky;top:150px}
+.admain{gap:14px}
+.admain>.head{order:-3}.admain>.tags{order:-2}.admain>.prev,.admain>.chg{order:-1}.admain>.adrev{order:-1}
+.adrev{grid-template-columns:1fr 1fr;gap:20px;border-top:0;border-bottom:1px solid var(--line);padding:0 0 18px}
+.adrev .cr{font-size:16px;padding:4px 0}
+.adrev .seg2 button{font-size:14px;padding:6px 14px}
+.adact .acts button{font-size:17px;padding:16px 14px;border-radius:10px}
+.adact textarea{min-height:150px;font-size:16px}
+@media (max-width:860px){.adcard .stage{position:static}.adrev{grid-template-columns:1fr}}
 </style>
 
 <header>
@@ -745,6 +781,3 @@ footer{padding-block:40px 150px;color:var(--ink2);font-size:12px}
   })();
 })();
 </script>
-
-
-</body></html>

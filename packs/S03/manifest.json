@@ -612,13 +612,13 @@
    "day": 2,
    "dia": "ter 24/11",
    "slot": "",
-   "title": "Frase pro grupo: Amigo secreto: 12 pessoas, 1 sorteio e 3 semanas para decidir o valor.",
+   "title": "Frase pro grupo: Todo grupo tem quem responde em novembro a mensagem de março.",
    "kind": "story",
    "caption": "(story, sem legenda)",
-   "notes": "Cor chapada com ícone oficial. Sem adesivo, sem preço, sem etiqueta. Motivo de envio: print no grupo.",
-   "version": "S03-R-S14-v1",
-   "v": 1,
-   "hash": "6f501d9699",
+   "notes": "v2 (rodada 1): tema novo (amigo secreto já estava no R-C7) e objeto concreto: a resposta citando a mensagem de março, num balão sem marca de app. Sem adesivo, sem preço, sem etiqueta. Motivo de envio: marcar o amigo.",
+   "version": "S03-R-S14-v2",
+   "v": 2,
+   "hash": "d0d7f81cfb",
    "media": [
     "R-S14.png"
    ],
@@ -627,7 +627,8 @@
    "sticker": "",
    "previews": [
     "R-S14.jpg"
-   ]
+   ],
+   "mudou": "v2 (rodada 1): tema novo, porque amigo secreto já está no R-C7, e objeto concreto: a resposta de novembro citando a mensagem de março."
   },
   {
    "id": "R-S15",
@@ -957,10 +958,10 @@
    "title": "Dicionário DNA: Drop",
    "kind": "story",
    "caption": "(story, sem legenda)",
-   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
-   "version": "S03-D-S13-v1",
-   "v": 1,
-   "hash": "b94cfe75a1",
+   "notes": "v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.",
+   "version": "S03-D-S13-v2",
+   "v": 2,
+   "hash": "edb112dc81",
    "media": [
     "D-S13.png"
    ],
@@ -969,7 +970,8 @@
    "sticker": "",
    "previews": [
     "D-S13.jpg"
-   ]
+   ],
+   "mudou": "v2 (rodada 1, \"horrível essa simulação de tênis\"): saiu a ilustração; volta o layout tipográfico do Dicionário DNA aprovado no S02."
   },
   {
    "id": "D-S14",
@@ -1053,10 +1055,10 @@
    "title": "Dicionário DNA: Entressola",
    "kind": "story",
    "caption": "(story, sem legenda)",
-   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
-   "version": "S03-D-S17-v1",
-   "v": 1,
-   "hash": "2b84033644",
+   "notes": "v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.",
+   "version": "S03-D-S17-v2",
+   "v": 2,
+   "hash": "f827dad581",
    "media": [
     "D-S17.png"
    ],
@@ -1065,7 +1067,8 @@
    "sticker": "",
    "previews": [
     "D-S17.jpg"
-   ]
+   ],
+   "mudou": "v2 (rodada 1): saiu a ilustração do tênis; layout tipográfico do Dicionário DNA do S02."
   },
   {
    "id": "D-S18",
@@ -1077,10 +1080,10 @@
    "title": "Dicionário DNA: Deck",
    "kind": "story",
    "caption": "(story, sem legenda)",
-   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
-   "version": "S03-D-S18-v1",
-   "v": 1,
-   "hash": "7f8db3b576",
+   "notes": "v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.",
+   "version": "S03-D-S18-v2",
+   "v": 2,
+   "hash": "278c76cd6b",
    "media": [
     "D-S18.png"
    ],
@@ -1089,7 +1092,8 @@
    "sticker": "",
    "previews": [
     "D-S18.jpg"
-   ]
+   ],
+   "mudou": "v2 (rodada 1): saiu a ilustração da prancha; layout tipográfico do Dicionário DNA do S02."
   },
   {
    "id": "D-S19",
@@ -1101,10 +1105,10 @@
    "title": "Dicionário DNA: Overgrip",
    "kind": "story",
    "caption": "(story, sem legenda)",
-   "notes": "Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.",
-   "version": "S03-D-S19-v1",
-   "v": 1,
-   "hash": "2ce343a76d",
+   "notes": "v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.",
+   "version": "S03-D-S19-v2",
+   "v": 2,
+   "hash": "a0856c0051",
    "media": [
     "D-S19.png"
    ],
@@ -1113,7 +1117,8 @@
    "sticker": "",
    "previews": [
     "D-S19.jpg"
-   ]
+   ],
+   "mudou": "v2 (rodada 1): saiu a ilustração do overgrip; layout tipográfico do Dicionário DNA do S02."
   }
  ]
 }

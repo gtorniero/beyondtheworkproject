@@ -469,6 +469,7 @@ FRASES_S03 = [
 
 def r_stories():
     for n, (d, txt, ic, lay) in enumerate(FRASES_S03):
+        if n == 1: r_s14(); continue  # rodada 1: Gui pediu tema e design novos
         fs = 120 if len(txt) < 50 else 106
         if lay == 'nota':  # papel de cupom/recibo
             corpo = f'''<div class="abs" style="left:110px;top:330px;width:860px;background:var(--areia);color:var(--noite);border-radius:12px;padding:60px 60px 70px;transform:rotate(-2deg);box-shadow:0 30px 60px rgba(0,0,0,.4);
@@ -501,6 +502,25 @@ def r_stories():
         piece(id=sid, fmt='story', day=d, title=f'Frase pro grupo: {txt}', w=1080, h=1920, html=doc(sid, FONTS, CSS, body, 1080, 1920),
               caption='(story, sem legenda)', sticker='', kind='story',
               notes={'nota': 'Frase num papel de recibo (cupom). ', 'balao': 'Frase como mensagem única, sem marca de app. ', 'casal': 'Casa Casal, sem roxo. ', 'cor': 'Cor chapada com ícone oficial. '}[lay] + 'Sem adesivo, sem preço, sem etiqueta. Motivo de envio: print no grupo.')
+
+def r_s14():
+    """v2 (rodada 1): tema novo (amigo secreto já está no R-C7) e objeto concreto: resposta citando mensagem antiga."""
+    txt = 'Todo grupo tem quem responde em novembro a mensagem de março.'
+    corpo = f'''<div class="abs t" style="left:80px;top:300px;width:920px;font-size:96px;color:var(--noite)">{txt}</div>
+      <div class="abs" style="left:80px;top:800px;width:920px;background:var(--areia);color:var(--noite);border-radius:50px 50px 12px 50px;padding:34px 40px 26px;box-shadow:0 20px 50px rgba(26,11,46,.25);transform:rotate(-1.5deg)">
+        <div style="background:rgba(26,11,46,.08);border-left:10px solid var(--uva);border-radius:18px;padding:20px 26px;margin-bottom:22px">
+          <div style="font-weight:800;font-size:30px;color:var(--acai)">Você · 14/03</div>
+          <div style="font-size:38px;margin-top:6px">alguém tem o contato de um encanador?</div></div>
+        <div class="t" style="font-size:64px">tenho sim!! ainda precisa?</div>
+        <div class="mono" style="text-align:right;font-size:28px;opacity:.55;margin-top:14px">23/11 · 21:07 ✓✓</div></div>
+      <div class="abs" style="left:850px;top:720px;transform:rotate(8deg)">{icon('turtle', 170)}</div>'''
+    body = f'''<section class="page" style="width:1080px;height:1920px;background:var(--manga)">{corpo}
+      <div class="abs" style="left:80px;top:1350px;width:920px;font-size:44px;font-weight:700;color:var(--noite)">Marca o amigo que ainda vai responder.</div>
+      <div class="abs" style="left:80px;top:1440px">{assinatura(300, 'grupo', inv=True)}</div>
+    </section>'''
+    piece(id='R-S14', fmt='story', day=2, title=f'Frase pro grupo: {txt}', w=1080, h=1920, html=doc('R-S14', FONTS, CSS, body, 1080, 1920),
+          caption='(story, sem legenda)', sticker='', kind='story',
+          notes='v2 (rodada 1): tema novo (amigo secreto já estava no R-C7) e objeto concreto: a resposta citando a mensagem de março, num balão sem marca de app. Sem adesivo, sem preço, sem etiqueta. Motivo de envio: marcar o amigo.')
 
 def build():
     r_r8(); r_c7(); r_r9(); r_c8(); r_r10(); r_c9(); r_r11(); r_stories()

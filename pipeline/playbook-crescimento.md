@@ -70,6 +70,7 @@ Teste a fazer: reels da SPORT DNA às 7h em uma semana e às 19h45 na outra, par
 - **Produto complexo vira reel** (Gui, S02 rodada 2): relatório da SPORT DNA, partida do Quiddo e retrospectiva do Retrozap se mostram em reel com a tela rolando e completa. Story estático com tela de produto faz o produto parecer simples.
 - **Mostrar o produto como gravação de tela** (Gui, S02 rodada 3): reel em tela cheia com o indicador vermelho de gravação, a barra de endereço do site, toques visíveis e o fluxo real (perguntas, análise, relatório; ou subir a conversa e os 3 atos). Legenda curta por cima. Helpers `C.rec_bar()`, `C.tap()`, `C.legenda()`.
 - **Recriação não serve** (Gui, S02 rodada 3): R-R7 e D-R7 recriados foram cancelados. Para gravação de tela, usar o app real ou os artefatos que simulam os apps (ex.: "Retrozap", "Retrozap onboarding v2", "Board Match", "Racket Match", "Tenis Match" na galeria): ler com Artifact read, abrir no Playwright e gravar a interação de verdade. Confirmar com o Gui qual artefato é o atual de cada app antes de produzir.
+- **Sem ilustração de equipamento na SPORT DNA** (Gui, S03 rodada 1: "horrível essa simulação de tênis"; "tudo feio as ilustras"): nada de desenho de tênis, prancha, raquete ou grip. O Dicionário DNA volta ao layout tipográfico do S02. Diagramas abstratos (Rigidez, Borda, Cabo) passaram, mas evite também.
 - Helpers: `C.phone()` e `C.bubble()` em `pipeline/common.py`.
 
 ## 5. Backlog e harmonia

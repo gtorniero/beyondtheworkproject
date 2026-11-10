@@ -137,10 +137,10 @@ Notas: Meme de comportamento de grupo (identidade: todo grupo de corrida tem ess
 
 ------------------------------------------------------------
 
-S03-D-S13-v1 · seg 23/11 · STORY · Dicionário DNA: Drop
+S03-D-S13-v2 · seg 23/11 · STORY · Dicionário DNA: Drop
 Arquivos: D-S13.png
 
-Notas: Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.
+Notas: v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.
 
 ------------------------------------------------------------
 
@@ -165,21 +165,21 @@ Notas: Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (obje
 
 ------------------------------------------------------------
 
-S03-D-S17-v1 · sex 27/11 · STORY · Dicionário DNA: Entressola
+S03-D-S17-v2 · sex 27/11 · STORY · Dicionário DNA: Entressola
 Arquivos: D-S17.png
 
-Notas: Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.
+Notas: v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.
 
 ------------------------------------------------------------
 
-S03-D-S18-v1 · sáb 28/11 · STORY · Dicionário DNA: Deck
+S03-D-S18-v2 · sáb 28/11 · STORY · Dicionário DNA: Deck
 Arquivos: D-S18.png
 
-Notas: Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.
+Notas: v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.
 
 ------------------------------------------------------------
 
-S03-D-S19-v1 · dom 29/11 · STORY · Dicionário DNA: Overgrip
+S03-D-S19-v2 · dom 29/11 · STORY · Dicionário DNA: Overgrip
 Arquivos: D-S19.png
 
-Notas: Sem adesivo. Ficha do Dicionário DNA com desenho técnico de linha (objeto concreto), sem marca. Termo novo, não usado no S02. Definição geral.
+Notas: v2 (rodada 1): sem ilustração, no layout tipográfico do Dicionário DNA aprovado no S02. Definição geral, sem marca.
