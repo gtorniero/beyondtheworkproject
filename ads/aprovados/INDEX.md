@@ -31,3 +31,6 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 | sportdna | ADC-SF-01 | v1 | atual | SURF DNA: a prancha certa | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-01-v1 |
 | sportdna | ADC-SF-02 | v2 | atual | SURF: calculadora grátis de litragem | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-02-v2 |
 | sportdna | ADC-SF-03 | v1 | atual | Hero SURF DNA: sua prancha é a certa? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-03-v1 |
+| quiddo | ADC-QD-07 | v2 | atual | Reunião geral com todo mundo acordado | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-07-v2 |
+| quiddo | ADC-QD-08 | v2 | atual | Integração que o novato lembra | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-08-v2 |
+| quiddo | ADC-QD-09 | v2 | atual | Treinamento para ser lembrado | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-09-v2 |
