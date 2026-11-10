@@ -1223,5 +1223,220 @@
    }
   ],
   "hash": "200b6ade09"
+ },
+ {
+  "id": "ADC-QD-07",
+  "brand": "Quiddo",
+  "fmt": "reel",
+  "lote": "corporativo",
+  "formato": "Reel 9:16 · 25 s · sem narração · sem música + motion 4:5 e 1:1 (15 s) + estáticos 4:5, 1:1, 9:16 e 1,91:1",
+  "title": "Reunião geral com todo mundo acordado",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Líderes, RH e comunicação interna que fazem reunião geral, kickoff ou all-hands (25–55 anos; interesses: gestão de pessoas, RH, comunicação interna, liderança).",
+  "hipotese": "Reunião geral é sinônimo de gente no celular; mostrar 20 pessoas respondendo junto, com o resultado na TV, vende participação de verdade.",
+  "copy": "Reunião geral com todo mundo acordado. 📊\nVocê escreve perguntas sobre as metas e os números do time, abre a sala e todo mundo responde pelo celular, ao mesmo tempo. A TV mostra na hora quanto a sala acertou, e o pódio fecha a reunião.\nSem app, sem cadastro.\nFaça o seu. Teste grátis.",
+  "titulo": "Reunião geral com todo mundo acordado",
+  "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_reuniao&utm_content=ADC-QD-07-v1",
+  "direitos": [
+   "Captura real do produto (partida jogada no app local); perguntas e nomes comuns criados para a partida, sem etiqueta na tela.",
+   "Endereço local trocado por quiddo.com.br; QR desfocado; selo de teste local, botão de convite por app de mensagens e oferta de plano ocultos.",
+   "Logo quiddo-negativo.svg, Fraunces 900, Nunito, bichos do avatarSvg e símbolos das respostas, oficiais do site.",
+   "Sem música (escolha o áudio na biblioteca da Meta, se quiser)."
+  ],
+  "notes": "Partida real \"Reunião geral · Novembro\" no visual Escritório, 20 pessoas na sala, 2 perguntas (meta de NPS, mês do recorde de vendas). Números da tela: 18 de 20 acertaram a 1ª; +954 pontos da campeã na 1ª; pódio com 1.900 pontos.",
+  "version": "ADC-QD-07-v1",
+  "v": 1,
+  "mudou": "Peça nova: linha corporativa (pedido do Gui, 10/11).",
+  "media": [
+   "ADC-QD-07-v1.mp4"
+  ],
+  "cover": "ADC-QD-07-v1-capa.jpg",
+  "duration": 25.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Partida real gravada no Quiddo rodando a partir do código do site (gtorniero/quiddo, local), com o celular da jogadora em câmera lenta real nas animações (qd_cap4.py + qd_remap.py: ≥ 30 quadros reais por segundo) e fotos da TV do anfitrião; montagem em HTML/CSS no estúdio (estudio.py, qd_ref7.py, qd_corp.py) com fontes, logo, bichos e símbolos oficiais do site; ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-07-v1/ADC-QD-07-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-07-v1/ADC-QD-07-v1-motion-sq.mp4"
+   },
+   {
+    "label": "Estático 4:5 (hero)",
+    "path": "media/ads/ADC-QD-07-v1/ADC-QD-07-v1-feed45.png"
+   },
+   {
+    "label": "Estático 1:1",
+    "path": "media/ads/ADC-QD-07-v1/ADC-QD-07-v1-sq.png"
+   },
+   {
+    "label": "Estático 9:16",
+    "path": "media/ads/ADC-QD-07-v1/ADC-QD-07-v1-story.png"
+   },
+   {
+    "label": "Estático 1,91:1",
+    "path": "media/ads/ADC-QD-07-v1/ADC-QD-07-v1-land.png"
+   }
+  ],
+  "hash": "ffed571694"
+ },
+ {
+  "id": "ADC-QD-08",
+  "brand": "Quiddo",
+  "fmt": "reel",
+  "lote": "corporativo",
+  "formato": "Reel 9:16 · 25 s · sem narração · sem música + motion 4:5 e 1:1 (15 s) + estáticos 4:5, 1:1, 9:16 e 1,91:1",
+  "title": "Integração que o novato lembra",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "RH, T&D e people de empresas que recebem novos colaboradores (onboarding, integração, boas-vindas).",
+  "hipotese": "Integração costuma ser palestra; transformar em jogo com pódio faz o novato lembrar das regras e dos valores, e o RH vê quem já aprendeu.",
+  "copy": "Integração que o novato lembra. 🎉\nMonte o quiz da integração com o que todo novato precisa saber: onde pedir férias, os valores da empresa, as ferramentas do dia a dia. Cada um joga pelo celular, o ranking aparece a cada pergunta e o pódio fecha as boas-vindas.\nSem app, sem cadastro.\nFaça o seu. Teste grátis.",
+  "titulo": "Integração que o novato lembra",
+  "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_onboarding&utm_content=ADC-QD-08-v1",
+  "direitos": [
+   "Captura real do produto (partida jogada no app local); perguntas e nomes comuns criados para a partida, sem etiqueta na tela.",
+   "Endereço local trocado por quiddo.com.br; QR desfocado; selo de teste local, botão de convite por app de mensagens e oferta de plano ocultos.",
+   "Logo quiddo-negativo.svg, Fraunces 900, Nunito, bichos do avatarSvg e símbolos das respostas, oficiais do site.",
+   "Sem música (escolha o áudio na biblioteca da Meta, se quiser)."
+  ],
+  "notes": "Partida real \"Boas-vindas · Turma de dezembro\" no visual Escritório, 12 pessoas, 2 perguntas (onde pedir férias e reembolso; valor número 1). Números da tela: +950 pontos do novato na 1ª; ranking com ele em 1º; pódio com 1.891 pontos.",
+  "version": "ADC-QD-08-v1",
+  "v": 1,
+  "mudou": "Peça nova: linha corporativa (pedido do Gui, 10/11).",
+  "media": [
+   "ADC-QD-08-v1.mp4"
+  ],
+  "cover": "ADC-QD-08-v1-capa.jpg",
+  "duration": 25.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Partida real gravada no Quiddo rodando a partir do código do site (gtorniero/quiddo, local), com o celular da jogadora em câmera lenta real nas animações (qd_cap4.py + qd_remap.py: ≥ 30 quadros reais por segundo) e fotos da TV do anfitrião; montagem em HTML/CSS no estúdio (estudio.py, qd_ref7.py, qd_corp.py) com fontes, logo, bichos e símbolos oficiais do site; ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-08-v1/ADC-QD-08-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-08-v1/ADC-QD-08-v1-motion-sq.mp4"
+   },
+   {
+    "label": "Estático 4:5 (hero)",
+    "path": "media/ads/ADC-QD-08-v1/ADC-QD-08-v1-feed45.png"
+   },
+   {
+    "label": "Estático 1:1",
+    "path": "media/ads/ADC-QD-08-v1/ADC-QD-08-v1-sq.png"
+   },
+   {
+    "label": "Estático 9:16",
+    "path": "media/ads/ADC-QD-08-v1/ADC-QD-08-v1-story.png"
+   },
+   {
+    "label": "Estático 1,91:1",
+    "path": "media/ads/ADC-QD-08-v1/ADC-QD-08-v1-land.png"
+   }
+  ],
+  "hash": "81639ef487"
+ },
+ {
+  "id": "ADC-QD-09",
+  "brand": "Quiddo",
+  "fmt": "reel",
+  "lote": "corporativo",
+  "formato": "Reel 9:16 · 25 s · sem narração · sem música + motion 4:5 e 1:1 (15 s) + estáticos 4:5, 1:1, 9:16 e 1,91:1",
+  "title": "Treinamento que fixa",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "T&D, compliance, segurança do trabalho e líderes de vendas que aplicam treinamento e precisam medir o que ficou.",
+  "hipotese": "O diferencial para T&D é ver na hora quem entendeu: a TV mostra quantos acertaram cada pergunta, e o quiz no fim fixa o conteúdo.",
+  "copy": "Treinamento que fixa. 🎯\nNo fim do treinamento, você abre a sala e todo mundo responde pelo celular. A TV mostra na hora quanto a turma acertou cada pergunta, e você sabe o que precisa reforçar. O ranking e o pódio fazem o resto.\nSem app, sem cadastro.\nFaça o seu. Teste grátis.",
+  "titulo": "Treinamento que fixa",
+  "cta": "No vídeo: \"Faça o seu. Teste grátis.\" + quiddo.com.br. Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_corporativo_treinamento&utm_content=ADC-QD-09-v1",
+  "direitos": [
+   "Captura real do produto (partida jogada no app local); perguntas e nomes comuns criados para a partida, sem etiqueta na tela.",
+   "Endereço local trocado por quiddo.com.br; QR desfocado; selo de teste local, botão de convite por app de mensagens e oferta de plano ocultos.",
+   "Logo quiddo-negativo.svg, Fraunces 900, Nunito, bichos do avatarSvg e símbolos das respostas, oficiais do site.",
+   "Sem música (escolha o áudio na biblioteca da Meta, se quiser)."
+  ],
+  "notes": "Partida real \"Treinamento de vendas · Módulo 3\" no visual Escritório, 14 pessoas, 2 perguntas (objeção \"tá caro\"; prazo do follow-up). Números da tela: 13 de 14 acertaram a 1ª (93%); +949 pontos da campeã; pódio com 1.895 pontos.",
+  "version": "ADC-QD-09-v1",
+  "v": 1,
+  "mudou": "Peça nova: linha corporativa (pedido do Gui, 10/11).",
+  "media": [
+   "ADC-QD-09-v1.mp4"
+  ],
+  "cover": "ADC-QD-09-v1-capa.jpg",
+  "duration": 25.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Partida real gravada no Quiddo rodando a partir do código do site (gtorniero/quiddo, local), com o celular da jogadora em câmera lenta real nas animações (qd_cap4.py + qd_remap.py: ≥ 30 quadros reais por segundo) e fotos da TV do anfitrião; montagem em HTML/CSS no estúdio (estudio.py, qd_ref7.py, qd_corp.py) com fontes, logo, bichos e símbolos oficiais do site; ffmpeg H.264 30 fps, sem áudio. Sem IA generativa de imagem, vídeo ou voz. Sem narração.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-09-v1/ADC-QD-09-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-09-v1/ADC-QD-09-v1-motion-sq.mp4"
+   },
+   {
+    "label": "Estático 4:5 (hero)",
+    "path": "media/ads/ADC-QD-09-v1/ADC-QD-09-v1-feed45.png"
+   },
+   {
+    "label": "Estático 1:1",
+    "path": "media/ads/ADC-QD-09-v1/ADC-QD-09-v1-sq.png"
+   },
+   {
+    "label": "Estático 9:16",
+    "path": "media/ads/ADC-QD-09-v1/ADC-QD-09-v1-story.png"
+   },
+   {
+    "label": "Estático 1,91:1",
+    "path": "media/ads/ADC-QD-09-v1/ADC-QD-09-v1-land.png"
+   }
+  ],
+  "hash": "8f21bae923"
+ },
+ {
+  "id": "ADC-QD-10",
+  "brand": "Quiddo",
+  "fmt": "estatico",
+  "lote": "empresas",
+  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e vídeo de até 15 s depois da aprovação.",
+  "title": "Empresas: sua apresentação vira participação",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Quem apresenta ou organiza: líderes comerciais, vendedores, instrutores e RH/T&D (apresentações comerciais, demonstrações, treinamentos, onboarding e workshops).",
+  "hipotese": "Quem apresenta sofre com plateia distraída. Mostrar a mesma pergunta no telão e no celular deixa claro, num olhar, como o público participa ao vivo; vende melhor do que falar em \"engajamento\".",
+  "copy": "Sua apresentação vira participação. 📊\nVocê projeta a pergunta no telão e o público responde pelo celular, ao mesmo tempo, sem baixar app. Serve para apresentação comercial, demonstração de produto, treinamento, onboarding e workshop.\nCrie seu quiz.",
+  "titulo": "Sua apresentação vira participação",
+  "cta": "Na arte: \"Crie seu quiz\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_empresas_apresentacao&utm_content=ADC-QD-10-v1",
+  "direitos": [
+   "Telão e celular são capturas reais do Quiddo (modo Corporativo, visual padrão) rodando a partir do código (gtorniero/quiddo, 10/11/2026), com a pergunta do briefing: \"O que vem antes da proposta?\" (A Entender a necessidade, B Começar pelo desconto, C Escolher o contrato, D Enviar um catálogo). A mesma pergunta e as mesmas alternativas aparecem nos dois.",
+   "Nome no telão e no celular: \"Kickoff Comercial · Vértice\", empresa genérica inventada para a captura, sem logo nem marca real. Sem dados de cliente, sem depoimento nem resultado de empresa.",
+   "Na captura, o endereço local virou quiddo.com.br e o selo de teste local foi escondido; nenhuma etiqueta de exemplo na arte.",
+   "Logo quiddo-negativo.svg oficial, Fraunces 900 e Nunito; cores creme, tinta, mata e amarelo da marca. Sem IA generativa."
+  ],
+  "notes": "KV principal da linha Quiddo Empresas para aprovação. Destino: /criar abre o editor; o modo do evento (Corporativo, Amigos & família ou Escola) é escolhido ali mesmo, no topo do editor, e o código não tem parâmetro de URL para pré-selecionar o modo, então a URL não leva parâmetro de modo. Corporativo aceita nome (o nome do quiz vira o nome no telão e nos celulares), cor e logo da empresa. A captura usa o visual padrão do modo Corporativo (telão tinta, respostas A folha verde, B sol laranja, C gota azul, D flor vermelha, como no guia). Sem citar limite de pessoas nem preço. Depois da aprovação: 1:1, 9:16, 1,91:1, 16:9 e vídeo de até 15 s.",
+  "version": "ADC-QD-10-v1",
+  "v": 1,
+  "mudou": "Peça nova: KV principal da linha Quiddo Empresas (briefing de 10/11).",
+  "media": [
+   "ads/ADC-QD-10-v1/ADC-QD-10-v1-feed45.png"
+  ],
+  "cover": "ADC-QD-10-v1-hero.jpg",
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do app local (Playwright, qd10_cap.py: telão 1920×1080 e celular 1080 px de largura); composição em HTML/CSS com SVG e fontes oficiais (qd10_kv.py). Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "KV 4:5 (hero)",
+    "path": "media/ads/ADC-QD-10-v1/ADC-QD-10-v1-feed45.png"
+   }
+  ],
+  "hash": "5af406af95"
  }
 ]

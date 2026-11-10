@@ -112,7 +112,7 @@ for b in slug.values():
     shutil.copy(E / 'GUIA-PUBLICACAO-DOT.md', E / b / 'GUIA-PUBLICACAO-DOT.md')
     (E / b / 'agenda.csv').write_text(guia.agenda_csv([p for p in P if slug[p['brand']] == b]))
     for f in sorted((E / b).rglob('*')):
-        if f.is_file():
+        if f.is_file() and 'editaveis' not in f.parts:  # editáveis já ficam em editaveis/ na raiz (limite de 512 arquivos)
             dst = T / 'final' / b / f.relative_to(E / b); dst.parent.mkdir(parents=True, exist_ok=True); shutil.copy(f, dst)
             FINAL.setdefault(b, []).append(str(f.relative_to(E / b)))
 html = html.replace('"__FINAL__"', json.dumps(FINAL, ensure_ascii=False))

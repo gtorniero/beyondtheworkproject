@@ -1,0 +1,131 @@
+{
+ "quiz": {
+  "titulo": "Boas-vindas · Turma de dezembro",
+  "tema": "corp",
+  "visual": "escritorio",
+  "tempo": 20,
+  "perguntas": [
+   {
+    "t": "Onde você pede férias e reembolso?",
+    "o": [
+     "No e-mail do RH",
+     "No portal do colaborador",
+     "Com o líder no corredor",
+     "Não precisa pedir"
+    ],
+    "c": 1,
+    "tl": 20
+   },
+   {
+    "t": "Qual é o nosso valor número 1?",
+    "o": [
+     "Cliente no centro",
+     "Lucro acima de tudo",
+     "Cada um por si",
+     "Fazer rápido"
+    ],
+    "c": 0,
+    "tl": 20
+   }
+  ]
+ },
+ "hero": [
+  "Gabriel",
+  [
+   1,
+   0
+  ],
+  1.3
+ ],
+ "sorteios": 2,
+ "jogadores": [
+  [
+   "Ana",
+   [
+    1,
+    0
+   ],
+   2.0
+  ],
+  [
+   "Pedro",
+   [
+    1,
+    0
+   ],
+   2.37
+  ],
+  [
+   "Luiza",
+   [
+    0,
+    0
+   ],
+   2.74
+  ],
+  [
+   "Mateus",
+   [
+    1,
+    0
+   ],
+   3.11
+  ],
+  [
+   "Carla",
+   [
+    1,
+    1
+   ],
+   3.48
+  ],
+  [
+   "João",
+   [
+    1,
+    0
+   ],
+   3.85
+  ],
+  [
+   "Beatriz",
+   [
+    0,
+    0
+   ],
+   4.22
+  ],
+  [
+   "Rodrigo",
+   [
+    1,
+    0
+   ],
+   4.59
+  ],
+  [
+   "Sofia",
+   [
+    1,
+    0
+   ],
+   4.96
+  ],
+  [
+   "Eduardo",
+   [
+    1,
+    2
+   ],
+   5.33
+  ],
+  [
+   "Isabela",
+   [
+    1,
+    0
+   ],
+   2.1
+  ]
+ ]
+}

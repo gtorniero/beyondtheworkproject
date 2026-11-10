@@ -1,0 +1,147 @@
+{
+ "quiz": {
+  "titulo": "Treinamento de vendas · Módulo 3",
+  "tema": "corp",
+  "visual": "escritorio",
+  "tempo": 20,
+  "perguntas": [
+   {
+    "t": "O cliente disse \"tá caro\". Qual é o primeiro passo?",
+    "o": [
+     "Dar desconto",
+     "Perguntar com o que ele compara",
+     "Mudar de assunto",
+     "Encerrar a ligação"
+    ],
+    "c": 1,
+    "tl": 20
+   },
+   {
+    "t": "Depois da reunião, o follow-up sai em até…",
+    "o": [
+     "24 horas",
+     "1 semana",
+     "1 mês",
+     "Só se ele pedir"
+    ],
+    "c": 0,
+    "tl": 20
+   }
+  ]
+ },
+ "hero": [
+  "Paula",
+  [
+   1,
+   0
+  ],
+  1.3
+ ],
+ "sorteios": 2,
+ "jogadores": [
+  [
+   "Vinícius",
+   [
+    1,
+    0
+   ],
+   2.0
+  ],
+  [
+   "Tatiane",
+   [
+    1,
+    0
+   ],
+   2.37
+  ],
+  [
+   "Leonardo",
+   [
+    0,
+    0
+   ],
+   2.74
+  ],
+  [
+   "Daniela",
+   [
+    1,
+    0
+   ],
+   3.11
+  ],
+  [
+   "Henrique",
+   [
+    1,
+    0
+   ],
+   3.48
+  ],
+  [
+   "Natália",
+   [
+    1,
+    2
+   ],
+   3.85
+  ],
+  [
+   "Fábio",
+   [
+    1,
+    0
+   ],
+   4.22
+  ],
+  [
+   "Priscila",
+   [
+    1,
+    0
+   ],
+   4.59
+  ],
+  [
+   "Rodrigo",
+   [
+    1,
+    0
+   ],
+   4.96
+  ],
+  [
+   "Mônica",
+   [
+    1,
+    0
+   ],
+   5.33
+  ],
+  [
+   "Caio",
+   [
+    1,
+    3
+   ],
+   2.1
+  ],
+  [
+   "Elaine",
+   [
+    1,
+    0
+   ],
+   2.47
+  ],
+  [
+   "Sérgio",
+   [
+    1,
+    1
+   ],
+   2.84
+  ]
+ ]
+}

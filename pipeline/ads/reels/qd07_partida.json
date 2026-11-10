@@ -1,0 +1,195 @@
+{
+ "quiz": {
+  "titulo": "Reunião geral · Novembro",
+  "tema": "corp",
+  "visual": "escritorio",
+  "tempo": 20,
+  "perguntas": [
+   {
+    "t": "Qual foi a meta de NPS do trimestre?",
+    "o": [
+     "50",
+     "60",
+     "70",
+     "80"
+    ],
+    "c": 2,
+    "tl": 20
+   },
+   {
+    "t": "Em que mês o time bateu o recorde de vendas?",
+    "o": [
+     "Março",
+     "Junho",
+     "Agosto",
+     "Outubro"
+    ],
+    "c": 2,
+    "tl": 20
+   }
+  ]
+ },
+ "hero": [
+  "Renata",
+  [
+   2,
+   2
+  ],
+  1.3
+ ],
+ "sorteios": 2,
+ "jogadores": [
+  [
+   "Carlos",
+   [
+    2,
+    2
+   ],
+   2.0
+  ],
+  [
+   "Juliana",
+   [
+    2,
+    2
+   ],
+   2.37
+  ],
+  [
+   "Rafael",
+   [
+    2,
+    2
+   ],
+   2.74
+  ],
+  [
+   "Patrícia",
+   [
+    2,
+    2
+   ],
+   3.11
+  ],
+  [
+   "Bruno",
+   [
+    2,
+    2
+   ],
+   3.48
+  ],
+  [
+   "Fernanda",
+   [
+    2,
+    0
+   ],
+   3.85
+  ],
+  [
+   "Diego",
+   [
+    2,
+    2
+   ],
+   4.22
+  ],
+  [
+   "Camila",
+   [
+    2,
+    2
+   ],
+   4.59
+  ],
+  [
+   "Thiago",
+   [
+    3,
+    2
+   ],
+   4.96
+  ],
+  [
+   "Larissa",
+   [
+    2,
+    2
+   ],
+   5.33
+  ],
+  [
+   "Marcos",
+   [
+    2,
+    2
+   ],
+   2.1
+  ],
+  [
+   "Aline",
+   [
+    2,
+    2
+   ],
+   2.47
+  ],
+  [
+   "Felipe",
+   [
+    2,
+    2
+   ],
+   2.84
+  ],
+  [
+   "Vanessa",
+   [
+    2,
+    2
+   ],
+   3.21
+  ],
+  [
+   "André",
+   [
+    1,
+    2
+   ],
+   3.58
+  ],
+  [
+   "Bianca",
+   [
+    2,
+    2
+   ],
+   3.95
+  ],
+  [
+   "Gustavo",
+   [
+    2,
+    2
+   ],
+   4.32
+  ],
+  [
+   "Letícia",
+   [
+    2,
+    2
+   ],
+   4.69
+  ],
+  [
+   "Ricardo",
+   [
+    2,
+    2
+   ],
+   5.06
+  ]
+ ]
+}
