@@ -12,3 +12,4 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 | SPORT DNA | ADC-RN-01 | v1 | RUN DNA: o tênis certo para você | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-01-v1 |
 | SPORT DNA | ADC-RN-02 | v1 | RUN · Black Friday: teste antes do carrinho | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-02-v1 |
 | SPORT DNA | ADC-SF-01 | v1 | SURF DNA: a prancha certa | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-01-v1 |
+| Quiddo | ADC-QD-02 | v2 | Natal: o quiz da família | 7 | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/quiddo/ADC-QD-02-v2 |
