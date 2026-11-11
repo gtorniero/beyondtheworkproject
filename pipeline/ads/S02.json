@@ -1477,10 +1477,10 @@
   "objetivo": "Tráfego para o teste RACKET DNA (diagnóstico grátis antes de pagar; relatório completo R$ 19,99, pagamento único).",
   "publico": "Tenistas amadores 25–55 anos que vão trocar de raquete (interesses: tênis, torneios amadores, lojas de tênis).",
   "hipotese": "Quem já sentiu o cotovelo tem medo de errar de novo; falar do custo no corpo (e não do preço) provoca mais. 21 estudos e 46 variáveis mostram que não é palpite.",
-  "copy": "Raquete errada, o braço paga. 🎾\nRigidez, peso, balanço e a articulação que dói: o RACKET DNA avalia tudo antes de você pagar. São 46 variáveis cruzadas para cada raquete e 21 estudos científicos sobre braço e equipamento por trás das regras.\nVocê vê o diagnóstico antes de pagar.",
+  "copy": "Raquete errada, o braço paga. 🎾\nO RACKET DNA simula 3.000 perfis em cada teste de segurança para barrar recomendações arriscadas e cruza as suas respostas com 183 raquetes com specs medidas: rigidez, peso e balanço avaliados antes de você pagar.\nVocê vê o diagnóstico antes de pagar.",
   "titulo": "Raquete errada, o braço paga",
   "cta": "Na arte: \"Descobrir minha raquete →\" + sportdna.com.br/racket. Botão do anúncio: Saiba mais.",
-  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_kv_braco&utm_content=ADC-RK-03-v1",
+  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_kv_braco&utm_content=ADC-RK-03-v2",
   "direitos": [
    "Números do motor conferidos no site rodando a partir do código atual (gtorniero/sportdna, main 42f9455, 10/11/2026): 183 raquetes com specs medidas, 670 avaliações, 46 variáveis por raquete, 21 estudos, 379 casos de especialistas em 3 idiomas, 3.000 perfis simulados, 8.418 comparações e 279.990 combinações por teste.",
    "O site diz \"Nenhuma raquete previne ou trata lesão\": nenhum KV promete evitar lesão.",
@@ -1489,29 +1489,33 @@
    "Logos oficiais (racketdna/surfdna-logo-fundo-escuro.svg), Archivo 800, Syne 800, DM Sans e JetBrains Mono; preto, grade técnica e a cor do esporte, como na referência ADC-RZ-08. Sem ilustração de equipamento, sem marca de terceiros, sem pessoas reais, sem etiqueta de exemplo. Sem IA generativa."
   ],
   "notes": "Série de 4 KVs por esporte pedida pelo Gui em 10/11 (\"foco em big numbers dos motores, chamativo, provocativo: errar equipamento custa caro\"). Você aprova só o hero; as adaptações seguem o hero.",
-  "version": "ADC-RK-03-v1",
-  "v": 1,
-  "mudou": "Peça nova (série KV SPORT DNA de 10/11).",
+  "version": "ADC-RK-03-v2",
+  "v": 2,
+  "mudou": "v2 (seu comentário na v1: \"Da pra botar números mais chamativos\"): saíram 21 e 46; entram 3.000 perfis simulados em cada teste de segurança, em corpo gigante, e 183 raquetes com specs medidas. Título e tela iguais. A v1 aprovada está exportada com todos os posicionamentos.",
   "media": [
-   "ads/ADC-RK-03-v1/ADC-RK-03-v1-feed45.png"
+   "ads/ADC-RK-03-v2/ADC-RK-03-v2-feed45.png"
   ],
-  "cover": "ADC-RK-03-v1-hero.jpg",
+  "cover": "ADC-RK-03-v2-hero.jpg",
   "producao": "pronto para revisão",
   "ferramentas": "Captura real do site (dna_capture.py e kv_dna_stills.py, Playwright); composição em HTML/CSS com SVGs e fontes oficiais (kv_dna.py). Sem IA generativa.",
   "arquivos": [
    {
     "label": "KV 4:5 (hero)",
-    "path": "media/ads/ADC-RK-03-v1/ADC-RK-03-v1-feed45.png"
+    "path": "media/ads/ADC-RK-03-v2/ADC-RK-03-v2-feed45.png"
+   },
+   {
+    "label": "v1 aprovada: todos os posicionamentos (GitHub)",
+    "path": "https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-03-v1"
    }
   ],
-  "hash": "6b7efd2fbd"
+  "hash": "62ae93387b"
  },
  {
   "id": "ADC-RK-04",
   "brand": "SPORT DNA",
   "fmt": "estatico",
   "lote": "dna-kv",
-  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "formato": "KV estático 4:5 (hero) aprovado. Adaptações 1:1, 9:16, 1,91:1, 16:9 e motions 4:5, 1:1, 9:16 (12 s, sem áudio) em ads/aprovados.",
   "title": "RACKET KV: não é uma escolha, são seis",
   "objetivo": "Tráfego para o teste RACKET DNA (diagnóstico grátis antes de pagar; relatório completo R$ 19,99, pagamento único).",
   "publico": "Tenistas amadores 25–55 anos que vão trocar de raquete (interesses: tênis, torneios amadores, lojas de tênis).",
@@ -1541,6 +1545,10 @@
    {
     "label": "KV 4:5 (hero)",
     "path": "media/ads/ADC-RK-04-v1/ADC-RK-04-v1-feed45.png"
+   },
+   {
+    "label": "Todos os posicionamentos + motions (GitHub)",
+    "path": "https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-04-v1"
    }
   ],
   "hash": "beab32c832"
@@ -1550,7 +1558,7 @@
   "brand": "SPORT DNA",
   "fmt": "estatico",
   "lote": "dna-kv",
-  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "formato": "KV estático 4:5 (hero) aprovado. Adaptações 1:1, 9:16, 1,91:1, 16:9 e motions 4:5, 1:1, 9:16 (12 s, sem áudio) em ads/aprovados.",
   "title": "RACKET KV: 183 raquetes, uma é a sua",
   "objetivo": "Tráfego para o teste RACKET DNA (diagnóstico grátis antes de pagar; relatório completo R$ 19,99, pagamento único).",
   "publico": "Tenistas amadores 25–55 anos que vão trocar de raquete (interesses: tênis, torneios amadores, lojas de tênis).",
@@ -1580,6 +1588,10 @@
    {
     "label": "KV 4:5 (hero)",
     "path": "media/ads/ADC-RK-05-v1/ADC-RK-05-v1-feed45.png"
+   },
+   {
+    "label": "Todos os posicionamentos + motions (GitHub)",
+    "path": "https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-05-v1"
    }
   ],
   "hash": "a62a44710b"
@@ -1589,7 +1601,7 @@
   "brand": "SPORT DNA",
   "fmt": "estatico",
   "lote": "dna-kv",
-  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "formato": "KV estático 4:5 (hero) aprovado. Adaptações 1:1, 9:16, 1,91:1, 16:9 e motions 4:5, 1:1, 9:16 (12 s, sem áudio) em ads/aprovados.",
   "title": "RACKET KV: raquete do ídolo, golpe atrasado",
   "objetivo": "Tráfego para o teste RACKET DNA (diagnóstico grátis antes de pagar; relatório completo R$ 19,99, pagamento único).",
   "publico": "Tenistas amadores 25–55 anos que vão trocar de raquete (interesses: tênis, torneios amadores, lojas de tênis).",
@@ -1619,6 +1631,10 @@
    {
     "label": "KV 4:5 (hero)",
     "path": "media/ads/ADC-RK-06-v1/ADC-RK-06-v1-feed45.png"
+   },
+   {
+    "label": "Todos os posicionamentos + motions (GitHub)",
+    "path": "https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-06-v1"
    }
   ],
   "hash": "45e3b866de"
@@ -1628,7 +1644,7 @@
   "brand": "SPORT DNA",
   "fmt": "estatico",
   "lote": "dna-kv",
-  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "formato": "KV estático 4:5 (hero) aprovado. Adaptações 1:1, 9:16, 1,91:1, 16:9 e motions 4:5, 1:1, 9:16 (12 s, sem áudio) em ads/aprovados.",
   "title": "SURF KV: errar a prancha custa caro",
   "objetivo": "Tráfego para o teste SURF DNA (prévia grátis; relatório completo R$ 19,99, pagamento único).",
   "publico": "Surfistas iniciantes e intermediários, 20–45 anos, cidades litorâneas (interesses: surf, escolas de surf, shapers, pranchas).",
@@ -1657,6 +1673,10 @@
    {
     "label": "KV 4:5 (hero)",
     "path": "media/ads/ADC-SF-04-v1/ADC-SF-04-v1-feed45.png"
+   },
+   {
+    "label": "Todos os posicionamentos + motions (GitHub)",
+    "path": "https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-04-v1"
    }
   ],
   "hash": "b0524db8ec"
@@ -1666,7 +1686,7 @@
   "brand": "SPORT DNA",
   "fmt": "estatico",
   "lote": "dna-kv",
-  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "formato": "KV estático 4:5 (hero) aprovado. Adaptações 1:1, 9:16, 1,91:1, 16:9 e motions 4:5, 1:1, 9:16 (12 s, sem áudio) em ads/aprovados.",
   "title": "SURF KV: duas 6'0\" com 10 litros de diferença",
   "objetivo": "Tráfego para o teste SURF DNA (prévia grátis; relatório completo R$ 19,99, pagamento único).",
   "publico": "Surfistas iniciantes e intermediários, 20–45 anos, cidades litorâneas (interesses: surf, escolas de surf, shapers, pranchas).",
@@ -1695,6 +1715,10 @@
    {
     "label": "KV 4:5 (hero)",
     "path": "media/ads/ADC-SF-05-v1/ADC-SF-05-v1-feed45.png"
+   },
+   {
+    "label": "Todos os posicionamentos + motions (GitHub)",
+    "path": "https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-05-v1"
    }
   ],
   "hash": "eb6cc5efe2"
@@ -1704,7 +1728,7 @@
   "brand": "SPORT DNA",
   "fmt": "estatico",
   "lote": "dna-kv",
-  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "formato": "KV estático 4:5 (hero) aprovado. Adaptações 1:1, 9:16, 1,91:1, 16:9 e motions 4:5, 1:1, 9:16 (12 s, sem áudio) em ads/aprovados.",
   "title": "SURF KV: 200 trilhões de pranchas, a sua sob medida",
   "objetivo": "Tráfego para o teste SURF DNA (prévia grátis; relatório completo R$ 19,99, pagamento único).",
   "publico": "Surfistas iniciantes e intermediários, 20–45 anos, cidades litorâneas (interesses: surf, escolas de surf, shapers, pranchas).",
@@ -1733,6 +1757,10 @@
    {
     "label": "KV 4:5 (hero)",
     "path": "media/ads/ADC-SF-06-v1/ADC-SF-06-v1-feed45.png"
+   },
+   {
+    "label": "Todos os posicionamentos + motions (GitHub)",
+    "path": "https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-06-v1"
    }
   ],
   "hash": "213ab8680f"
@@ -1742,7 +1770,7 @@
   "brand": "SPORT DNA",
   "fmt": "estatico",
   "lote": "dna-kv",
-  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "formato": "KV estático 4:5 (hero) aprovado. Adaptações 1:1, 9:16, 1,91:1, 16:9 e motions 4:5, 1:1, 9:16 (12 s, sem áudio) em ads/aprovados.",
   "title": "SURF KV: a prancha do amigo foi feita pra outro surfista",
   "objetivo": "Tráfego para o teste SURF DNA (prévia grátis; relatório completo R$ 19,99, pagamento único).",
   "publico": "Surfistas iniciantes e intermediários, 20–45 anos, cidades litorâneas (interesses: surf, escolas de surf, shapers, pranchas).",
@@ -1771,6 +1799,10 @@
    {
     "label": "KV 4:5 (hero)",
     "path": "media/ads/ADC-SF-07-v1/ADC-SF-07-v1-feed45.png"
+   },
+   {
+    "label": "Todos os posicionamentos + motions (GitHub)",
+    "path": "https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-07-v1"
    }
   ],
   "hash": "5c7be9b3ad"
