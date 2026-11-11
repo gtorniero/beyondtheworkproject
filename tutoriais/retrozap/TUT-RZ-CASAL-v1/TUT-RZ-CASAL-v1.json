@@ -1,0 +1,5 @@
+{
+ "mensagem": "Já viu a retrospectiva de vocês dois no WhatsApp? 💘\nQuem manda mais mensagem, quem é mais romântico, quem dá mais boa noite…\nO vídeo mostra o passo a passo. Retrospectiva de casal: R$ 8,99, pagamento único 👉 retrozap.com.br",
+ "notas": "Demonstra o iPhone (diz na tela e aponta a aba Android). Conversa fictícia \"Dani & Cris\" (.zip do iPhone). Oferta conferida no código: casal sempre pago, R$ 8,99, pagamento único, Pix ou cartão; o aviso de pagamento real aparece depois do Ato I (o pagamento não é gravado). Compartilha o Recibo do amor. Gravação real do site publicado (retrozap, commit fabe1c7, onboarding v2) com conversa fictícia. Passos do WhatsApp pelo guia ilustrado do próprio site; o app do WhatsApp, o seletor de arquivos e a folha de compartilhar do celular não aparecem (telas do sistema, não imitadas): uma nota diz o que fazer. Sem narração e sem música (deliberado); legendas completas na tela e no .srt. Na Mesa vai a versão WhatsApp (720×1280); master 1080×1920 e complemento do outro aparelho no GitHub (tutoriais/retrozap). Versão WhatsApp: 79.2 s, 6.0 MB.",
+ "duracao": 79.2
+}

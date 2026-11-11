@@ -1,0 +1,5 @@
+{
+ "mensagem": "Já fez a retrospectiva do seu grupo de WhatsApp? 🏆\nTroféu pra cada um: quem mais manda mensagem, quem só manda áudio, quem some do grupo…\nO vídeo mostra o passo a passo. O 1º grupo é grátis, sem cadastro 👉 retrozap.com.br",
+ "notas": "Demonstra o Android (diz na tela e aponta a aba iPhone). Conversa fictícia \"Turma do Churras\" (.txt do Android). Oferta conferida no código: 1º grupo grátis, sem cadastro. Compartilha a imagem Diário da Turma (o vídeo do grupo é Premium). Gravação real do site publicado (retrozap, commit fabe1c7, onboarding v2) com conversa fictícia. Passos do WhatsApp pelo guia ilustrado do próprio site; o app do WhatsApp, o seletor de arquivos e a folha de compartilhar do celular não aparecem (telas do sistema, não imitadas): uma nota diz o que fazer. Sem narração e sem música (deliberado); legendas completas na tela e no .srt. Na Mesa vai a versão WhatsApp (720×1280); master 1080×1920 e complemento do outro aparelho no GitHub (tutoriais/retrozap). Versão WhatsApp: 75.8 s, 5.8 MB.",
+ "duracao": 75.8
+}
