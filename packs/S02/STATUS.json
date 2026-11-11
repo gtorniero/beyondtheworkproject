@@ -1,7 +1,7 @@
 {
  "pack": "S02",
- "liberadas": 40,
- "total": 40,
+ "liberadas": 44,
+ "total": 44,
  "pecas": [
   {
    "peca": "Q-C3",
@@ -268,10 +268,11 @@
    "marca": "Retrozap",
    "formato": "story",
    "dia": "sex 20/11",
-   "hora": "12h",
+   "hora": "reserva",
    "versao": "S02-R-S10-v3",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado",
+   "uso": "reserva: não agendar; o dia ficou com R-S21 (Mesa, 11/11)"
   },
   {
    "peca": "D-C3",
@@ -398,10 +399,55 @@
    "marca": "SPORT DNA",
    "formato": "story",
    "dia": "qua 18/11",
-   "hora": "12h",
+   "hora": "reserva",
    "versao": "S02-D-S8-v2",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado",
+   "uso": "reserva: não agendar; o dia ficou com D-S21 (Mesa, 11/11)"
+  },
+  {
+   "peca": "R-S20",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "seg 16/11",
+   "hora": "12h",
+   "versao": "X-R-S20-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories extras, aprovados na Mesa em 11/11"
+  },
+  {
+   "peca": "D-S20",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "seg 16/11",
+   "hora": "12h",
+   "versao": "X-D-S20-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories extras, aprovados na Mesa em 11/11"
+  },
+  {
+   "peca": "D-S21",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "qua 18/11",
+   "hora": "12h",
+   "versao": "X-D-S21-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories extras, aprovados na Mesa em 11/11"
+  },
+  {
+   "peca": "R-S21",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "sex 20/11",
+   "hora": "12h",
+   "versao": "X-R-S21-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories extras, aprovados na Mesa em 11/11"
   }
  ]
 }
