@@ -1,0 +1,310 @@
+[
+ {
+  "id": "ADC-RK-03",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": "dna-kv",
+  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "title": "RACKET KV: raquete errada, o braço paga",
+  "objetivo": "Tráfego para o teste RACKET DNA (diagnóstico grátis antes de pagar; relatório completo R$ 19,99, pagamento único).",
+  "publico": "Tenistas amadores 25–55 anos que vão trocar de raquete (interesses: tênis, torneios amadores, lojas de tênis).",
+  "hipotese": "Quem já sentiu o cotovelo tem medo de errar de novo; falar do custo no corpo (e não do preço) provoca mais. 21 estudos e 46 variáveis mostram que não é palpite.",
+  "copy": "Raquete errada, o braço paga. 🎾\nRigidez, peso, balanço e a articulação que dói: o RACKET DNA avalia tudo antes de você pagar. São 46 variáveis cruzadas para cada raquete e 21 estudos científicos sobre braço e equipamento por trás das regras.\nVocê vê o diagnóstico antes de pagar.",
+  "titulo": "Raquete errada, o braço paga",
+  "cta": "Na arte: \"Descobrir minha raquete →\" + sportdna.com.br/racket. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_kv_braco&utm_content=ADC-RK-03-v1",
+  "direitos": [
+   "Números do motor conferidos no site rodando a partir do código atual (gtorniero/sportdna, main 42f9455, 10/11/2026): 183 raquetes com specs medidas, 670 avaliações, 46 variáveis por raquete, 21 estudos, 379 casos de especialistas em 3 idiomas, 3.000 perfis simulados, 8.418 comparações e 279.990 combinações por teste.",
+   "O site diz \"Nenhuma raquete previne ou trata lesão\": nenhum KV promete evitar lesão.",
+   "Conforto no braço: tela real da pergunta \"Onde dói ou doía?\" do teste.",
+   "Tela no celular: captura real do teste (dna_capture.py, mesmo jogador/surfista coerente dos reels RK-01 v4 e SF-03 v1) ou da página do produto (kv_dna_stills.py). Na prévia, os nomes das 3 recomendadas aparecem borrados porque o próprio site esconde antes do pagamento.",
+   "Logos oficiais (racketdna/surfdna-logo-fundo-escuro.svg), Archivo 800, Syne 800, DM Sans e JetBrains Mono; preto, grade técnica e a cor do esporte, como na referência ADC-RZ-08. Sem ilustração de equipamento, sem marca de terceiros, sem pessoas reais, sem etiqueta de exemplo. Sem IA generativa."
+  ],
+  "notes": "Série de 4 KVs por esporte pedida pelo Gui em 10/11 (\"foco em big numbers dos motores, chamativo, provocativo: errar equipamento custa caro\"). Você aprova só o hero; as adaptações seguem o hero.",
+  "version": "ADC-RK-03-v1",
+  "v": 1,
+  "mudou": "Peça nova (série KV SPORT DNA de 10/11).",
+  "media": [
+   "ads/ADC-RK-03-v1/ADC-RK-03-v1-feed45.png"
+  ],
+  "cover": "ADC-RK-03-v1-hero.jpg",
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do site (dna_capture.py e kv_dna_stills.py, Playwright); composição em HTML/CSS com SVGs e fontes oficiais (kv_dna.py). Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "KV 4:5 (hero)",
+    "path": "media/ads/ADC-RK-03-v1/ADC-RK-03-v1-feed45.png"
+   }
+  ],
+  "hash": "6b7efd2fbd"
+ },
+ {
+  "id": "ADC-RK-04",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": "dna-kv",
+  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "title": "RACKET KV: não é uma escolha, são seis",
+  "objetivo": "Tráfego para o teste RACKET DNA (diagnóstico grátis antes de pagar; relatório completo R$ 19,99, pagamento único).",
+  "publico": "Tenistas amadores 25–55 anos que vão trocar de raquete (interesses: tênis, torneios amadores, lojas de tênis).",
+  "hipotese": "Mostrar que a compra tem 6 decisões (279.990 combinações) desmonta o \"é só escolher a raquete\" e cria a necessidade do teste.",
+  "copy": "Raquete não é uma escolha. São seis. 🎾\nModelo, cabeça, grip, corda, espessura e tensão: 279.990 combinações, e uma decisão errada anula as outras certas. O RACKET DNA faz 8.418 comparações entre você e o catálogo a cada teste.\nVocê vê o diagnóstico antes de pagar.",
+  "titulo": "Raquete não é uma escolha. São seis.",
+  "cta": "Na arte: \"Descobrir minha raquete →\" + sportdna.com.br/racket. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_kv_seis&utm_content=ADC-RK-04-v1",
+  "direitos": [
+   "Números do motor conferidos no site rodando a partir do código atual (gtorniero/sportdna, main 42f9455, 10/11/2026): 183 raquetes com specs medidas, 670 avaliações, 46 variáveis por raquete, 21 estudos, 379 casos de especialistas em 3 idiomas, 3.000 perfis simulados, 8.418 comparações e 279.990 combinações por teste.",
+   "O site diz \"Nenhuma raquete previne ou trata lesão\": nenhum KV promete evitar lesão.",
+   "Tela real da seção \"Por que é fácil errar\" da página do RACKET DNA.",
+   "Tela no celular: captura real do teste (dna_capture.py, mesmo jogador/surfista coerente dos reels RK-01 v4 e SF-03 v1) ou da página do produto (kv_dna_stills.py). Na prévia, os nomes das 3 recomendadas aparecem borrados porque o próprio site esconde antes do pagamento.",
+   "Logos oficiais (racketdna/surfdna-logo-fundo-escuro.svg), Archivo 800, Syne 800, DM Sans e JetBrains Mono; preto, grade técnica e a cor do esporte, como na referência ADC-RZ-08. Sem ilustração de equipamento, sem marca de terceiros, sem pessoas reais, sem etiqueta de exemplo. Sem IA generativa."
+  ],
+  "notes": "Série de 4 KVs por esporte pedida pelo Gui em 10/11 (\"foco em big numbers dos motores, chamativo, provocativo: errar equipamento custa caro\"). Você aprova só o hero; as adaptações seguem o hero.",
+  "version": "ADC-RK-04-v1",
+  "v": 1,
+  "mudou": "Peça nova (série KV SPORT DNA de 10/11).",
+  "media": [
+   "ads/ADC-RK-04-v1/ADC-RK-04-v1-feed45.png"
+  ],
+  "cover": "ADC-RK-04-v1-hero.jpg",
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do site (dna_capture.py e kv_dna_stills.py, Playwright); composição em HTML/CSS com SVGs e fontes oficiais (kv_dna.py). Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "KV 4:5 (hero)",
+    "path": "media/ads/ADC-RK-04-v1/ADC-RK-04-v1-feed45.png"
+   }
+  ],
+  "hash": "beab32c832"
+ },
+ {
+  "id": "ADC-RK-05",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": "dna-kv",
+  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "title": "RACKET KV: 183 raquetes, uma é a sua",
+  "objetivo": "Tráfego para o teste RACKET DNA (diagnóstico grátis antes de pagar; relatório completo R$ 19,99, pagamento único).",
+  "publico": "Tenistas amadores 25–55 anos que vão trocar de raquete (interesses: tênis, torneios amadores, lojas de tênis).",
+  "hipotese": "Big number do catálogo + o resultado com % de combinação dá a sensação de escolha sob medida; os nomes borrados da prévia geram curiosidade.",
+  "copy": "183 raquetes. Uma é a sua. 🎾\nO RACKET DNA cruza as suas respostas com as specs medidas de 183 raquetes, uma a uma, lê 670 avaliações de testadores e simula 3.000 perfis em cada teste de segurança. No fim, as 3 que mais combinam com o seu jogo.\nVocê vê o diagnóstico antes de pagar.",
+  "titulo": "183 raquetes. Uma é a sua.",
+  "cta": "Na arte: \"Descobrir minha raquete →\" + sportdna.com.br/racket. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_kv_183&utm_content=ADC-RK-05-v1",
+  "direitos": [
+   "Números do motor conferidos no site rodando a partir do código atual (gtorniero/sportdna, main 42f9455, 10/11/2026): 183 raquetes com specs medidas, 670 avaliações, 46 variáveis por raquete, 21 estudos, 379 casos de especialistas em 3 idiomas, 3.000 perfis simulados, 8.418 comparações e 279.990 combinações por teste.",
+   "O site diz \"Nenhuma raquete previne ou trata lesão\": nenhum KV promete evitar lesão.",
+   "Tela real da prévia do resultado (96%, 96%, 94%).",
+   "Tela no celular: captura real do teste (dna_capture.py, mesmo jogador/surfista coerente dos reels RK-01 v4 e SF-03 v1) ou da página do produto (kv_dna_stills.py). Na prévia, os nomes das 3 recomendadas aparecem borrados porque o próprio site esconde antes do pagamento.",
+   "Logos oficiais (racketdna/surfdna-logo-fundo-escuro.svg), Archivo 800, Syne 800, DM Sans e JetBrains Mono; preto, grade técnica e a cor do esporte, como na referência ADC-RZ-08. Sem ilustração de equipamento, sem marca de terceiros, sem pessoas reais, sem etiqueta de exemplo. Sem IA generativa."
+  ],
+  "notes": "Série de 4 KVs por esporte pedida pelo Gui em 10/11 (\"foco em big numbers dos motores, chamativo, provocativo: errar equipamento custa caro\"). Você aprova só o hero; as adaptações seguem o hero.",
+  "version": "ADC-RK-05-v1",
+  "v": 1,
+  "mudou": "Peça nova (série KV SPORT DNA de 10/11).",
+  "media": [
+   "ads/ADC-RK-05-v1/ADC-RK-05-v1-feed45.png"
+  ],
+  "cover": "ADC-RK-05-v1-hero.jpg",
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do site (dna_capture.py e kv_dna_stills.py, Playwright); composição em HTML/CSS com SVGs e fontes oficiais (kv_dna.py). Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "KV 4:5 (hero)",
+    "path": "media/ads/ADC-RK-05-v1/ADC-RK-05-v1-feed45.png"
+   }
+  ],
+  "hash": "a62a44710b"
+ },
+ {
+  "id": "ADC-RK-06",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": "dna-kv",
+  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "title": "RACKET KV: raquete do ídolo, golpe atrasado",
+  "objetivo": "Tráfego para o teste RACKET DNA (diagnóstico grátis antes de pagar; relatório completo R$ 19,99, pagamento único).",
+  "publico": "Tenistas amadores 25–55 anos que vão trocar de raquete (interesses: tênis, torneios amadores, lojas de tênis).",
+  "hipotese": "Provoca o erro mais comum (comprar a raquete do profissional) com o argumento do próprio site; o card de DNA mostra o que a pessoa ganha no lugar.",
+  "copy": "Raquete do ídolo, golpe atrasado. 🎾\nModelo de profissional tem mais peso e swingweight. Jogando duas vezes por semana, o golpe atrasa e o braço cansa. O RACKET DNA foi calibrado com 379 casos de especialistas e 670 avaliações de testadores para achar a raquete do seu jogo.\nVocê vê o diagnóstico antes de pagar.",
+  "titulo": "Raquete do ídolo, golpe atrasado",
+  "cta": "Na arte: \"Descobrir minha raquete →\" + sportdna.com.br/racket. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_kv_idolo&utm_content=ADC-RK-06-v1",
+  "direitos": [
+   "Números do motor conferidos no site rodando a partir do código atual (gtorniero/sportdna, main 42f9455, 10/11/2026): 183 raquetes com specs medidas, 670 avaliações, 46 variáveis por raquete, 21 estudos, 379 casos de especialistas em 3 idiomas, 3.000 perfis simulados, 8.418 comparações e 279.990 combinações por teste.",
+   "O site diz \"Nenhuma raquete previne ou trata lesão\": nenhum KV promete evitar lesão.",
+   "Tela real do card \"Seu DNA de jogo\" (Atacante de fundo de topspin moderado).",
+   "Tela no celular: captura real do teste (dna_capture.py, mesmo jogador/surfista coerente dos reels RK-01 v4 e SF-03 v1) ou da página do produto (kv_dna_stills.py). Na prévia, os nomes das 3 recomendadas aparecem borrados porque o próprio site esconde antes do pagamento.",
+   "Logos oficiais (racketdna/surfdna-logo-fundo-escuro.svg), Archivo 800, Syne 800, DM Sans e JetBrains Mono; preto, grade técnica e a cor do esporte, como na referência ADC-RZ-08. Sem ilustração de equipamento, sem marca de terceiros, sem pessoas reais, sem etiqueta de exemplo. Sem IA generativa."
+  ],
+  "notes": "Série de 4 KVs por esporte pedida pelo Gui em 10/11 (\"foco em big numbers dos motores, chamativo, provocativo: errar equipamento custa caro\"). Você aprova só o hero; as adaptações seguem o hero.",
+  "version": "ADC-RK-06-v1",
+  "v": 1,
+  "mudou": "Peça nova (série KV SPORT DNA de 10/11).",
+  "media": [
+   "ads/ADC-RK-06-v1/ADC-RK-06-v1-feed45.png"
+  ],
+  "cover": "ADC-RK-06-v1-hero.jpg",
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do site (dna_capture.py e kv_dna_stills.py, Playwright); composição em HTML/CSS com SVGs e fontes oficiais (kv_dna.py). Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "KV 4:5 (hero)",
+    "path": "media/ads/ADC-RK-06-v1/ADC-RK-06-v1-feed45.png"
+   }
+  ],
+  "hash": "45e3b866de"
+ },
+ {
+  "id": "ADC-SF-04",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": "dna-kv",
+  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "title": "SURF KV: errar a prancha custa caro",
+  "objetivo": "Tráfego para o teste SURF DNA (prévia grátis; relatório completo R$ 19,99, pagamento único).",
+  "publico": "Surfistas iniciantes e intermediários, 20–45 anos, cidades litorâneas (interesses: surf, escolas de surf, shapers, pranchas).",
+  "hipotese": "Contraste de preço (até R$ 4.000 de prancha × R$ 19,99 de relatório), com os números do próprio site, transforma o teste em seguro barato.",
+  "copy": "Errar a prancha custa caro. 🏄\nUma prancha nova sai por R$ 1.500 a R$ 4.000. Acertar a escolha custa R$ 19,99: o SURF DNA cruza o seu corpo, o seu surf e o seu mar com 13 tipos de prancha e 416 tamanhos.\nPrévia grátis, 3 minutos, sem cadastro.",
+  "titulo": "Errar a prancha custa caro",
+  "cta": "Na arte: \"Descobrir minha prancha →\" + sportdna.com.br/surf. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_kv_custo&utm_content=ADC-SF-04-v1",
+  "direitos": [
+   "Números do motor conferidos no site rodando a partir do código atual (gtorniero/sportdna, main 42f9455, 10/11/2026): 13 tipos, 416 tamanhos de 35 modelos, 422 casos reais, 17 medidas, 1.000+ fontes em 400+ sites, mais de 200 trilhões de pranchas possíveis; \"Errar a prancha custa caro: uma nova sai por R$ 1.500 a R$ 4.000. Acertar custa R$ 19,99.\"",
+   "Tela real da prévia do resultado (96%, 88%, 84%) com a frase do site sobre o preço.",
+   "Tela no celular: captura real do teste (dna_capture.py, mesmo jogador/surfista coerente dos reels RK-01 v4 e SF-03 v1) ou da página do produto (kv_dna_stills.py). Na prévia, os nomes das 3 recomendadas aparecem borrados porque o próprio site esconde antes do pagamento.",
+   "Logos oficiais (racketdna/surfdna-logo-fundo-escuro.svg), Archivo 800, Syne 800, DM Sans e JetBrains Mono; preto, grade técnica e a cor do esporte, como na referência ADC-RZ-08. Sem ilustração de equipamento, sem marca de terceiros, sem pessoas reais, sem etiqueta de exemplo. Sem IA generativa."
+  ],
+  "notes": "Série de 4 KVs por esporte pedida pelo Gui em 10/11 (\"foco em big numbers dos motores, chamativo, provocativo: errar equipamento custa caro\"). Você aprova só o hero; as adaptações seguem o hero.",
+  "version": "ADC-SF-04-v1",
+  "v": 1,
+  "mudou": "Peça nova (série KV SPORT DNA de 10/11).",
+  "media": [
+   "ads/ADC-SF-04-v1/ADC-SF-04-v1-feed45.png"
+  ],
+  "cover": "ADC-SF-04-v1-hero.jpg",
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do site (dna_capture.py e kv_dna_stills.py, Playwright); composição em HTML/CSS com SVGs e fontes oficiais (kv_dna.py). Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "KV 4:5 (hero)",
+    "path": "media/ads/ADC-SF-04-v1/ADC-SF-04-v1-feed45.png"
+   }
+  ],
+  "hash": "b0524db8ec"
+ },
+ {
+  "id": "ADC-SF-05",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": "dna-kv",
+  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "title": "SURF KV: duas 6'0\" com 10 litros de diferença",
+  "objetivo": "Tráfego para o teste SURF DNA (prévia grátis; relatório completo R$ 19,99, pagamento único).",
+  "publico": "Surfistas iniciantes e intermediários, 20–45 anos, cidades litorâneas (interesses: surf, escolas de surf, shapers, pranchas).",
+  "hipotese": "Quem escolhe pelo tamanho em pés não sabe que o volume muda tanto; o dado surpreende e leva à litragem certa.",
+  "copy": "Duas 6'0\" podem ter 10 litros de diferença. 🏄\nÉ a litragem que decide se você rema e entra na onda. O SURF DNA compara 416 tamanhos de 35 modelos, medida por medida, e mostra quanto a sua prancha deve boiar.\nPrévia grátis, 3 minutos, sem cadastro.",
+  "titulo": "Duas 6'0\" podem ter 10 litros de diferença",
+  "cta": "Na arte: \"Descobrir minha prancha →\" + sportdna.com.br/surf. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_kv_litros&utm_content=ADC-SF-05-v1",
+  "direitos": [
+   "Números do motor conferidos no site rodando a partir do código atual (gtorniero/sportdna, main 42f9455, 10/11/2026): 13 tipos, 416 tamanhos de 35 modelos, 422 casos reais, 17 medidas, 1.000+ fontes em 400+ sites, mais de 200 trilhões de pranchas possíveis; \"Errar a prancha custa caro: uma nova sai por R$ 1.500 a R$ 4.000. Acertar custa R$ 19,99.\"",
+   "Tela real de \"O que está por trás\" (13 tipos, 39–43 L).",
+   "Tela no celular: captura real do teste (dna_capture.py, mesmo jogador/surfista coerente dos reels RK-01 v4 e SF-03 v1) ou da página do produto (kv_dna_stills.py). Na prévia, os nomes das 3 recomendadas aparecem borrados porque o próprio site esconde antes do pagamento.",
+   "Logos oficiais (racketdna/surfdna-logo-fundo-escuro.svg), Archivo 800, Syne 800, DM Sans e JetBrains Mono; preto, grade técnica e a cor do esporte, como na referência ADC-RZ-08. Sem ilustração de equipamento, sem marca de terceiros, sem pessoas reais, sem etiqueta de exemplo. Sem IA generativa."
+  ],
+  "notes": "Série de 4 KVs por esporte pedida pelo Gui em 10/11 (\"foco em big numbers dos motores, chamativo, provocativo: errar equipamento custa caro\"). Você aprova só o hero; as adaptações seguem o hero.",
+  "version": "ADC-SF-05-v1",
+  "v": 1,
+  "mudou": "Peça nova (série KV SPORT DNA de 10/11).",
+  "media": [
+   "ads/ADC-SF-05-v1/ADC-SF-05-v1-feed45.png"
+  ],
+  "cover": "ADC-SF-05-v1-hero.jpg",
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do site (dna_capture.py e kv_dna_stills.py, Playwright); composição em HTML/CSS com SVGs e fontes oficiais (kv_dna.py). Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "KV 4:5 (hero)",
+    "path": "media/ads/ADC-SF-05-v1/ADC-SF-05-v1-feed45.png"
+   }
+  ],
+  "hash": "eb6cc5efe2"
+ },
+ {
+  "id": "ADC-SF-06",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": "dna-kv",
+  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "title": "SURF KV: 200 trilhões de pranchas, a sua sob medida",
+  "objetivo": "Tráfego para o teste SURF DNA (prévia grátis; relatório completo R$ 19,99, pagamento único).",
+  "publico": "Surfistas iniciantes e intermediários, 20–45 anos, cidades litorâneas (interesses: surf, escolas de surf, shapers, pranchas).",
+  "hipotese": "O número absurdo (200 trilhões) vende a ideia de sob medida; o card de DNA de surf mostra o resultado pessoal.",
+  "copy": "Mais de 200 trilhões de pranchas possíveis. A sua sai sob medida. 🏄\nO SURF DNA transforma suas respostas em nível, estilo e mar, compara com 13 tipos de prancha e calcula cada medida: 17 medidas na ficha técnica, prontas para levar a qualquer shaper.\nPrévia grátis, 3 minutos, sem cadastro.",
+  "titulo": "A sua prancha sob medida",
+  "cta": "Na arte: \"Descobrir minha prancha →\" + sportdna.com.br/surf. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_kv_200tri&utm_content=ADC-SF-06-v1",
+  "direitos": [
+   "Números do motor conferidos no site rodando a partir do código atual (gtorniero/sportdna, main 42f9455, 10/11/2026): 13 tipos, 416 tamanhos de 35 modelos, 422 casos reais, 17 medidas, 1.000+ fontes em 400+ sites, mais de 200 trilhões de pranchas possíveis; \"Errar a prancha custa caro: uma nova sai por R$ 1.500 a R$ 4.000. Acertar custa R$ 19,99.\"",
+   "Tela real do card \"Seu DNA de surf\" (Surfista de curvas de onda pequena, DNA Score 96%).",
+   "Tela no celular: captura real do teste (dna_capture.py, mesmo jogador/surfista coerente dos reels RK-01 v4 e SF-03 v1) ou da página do produto (kv_dna_stills.py). Na prévia, os nomes das 3 recomendadas aparecem borrados porque o próprio site esconde antes do pagamento.",
+   "Logos oficiais (racketdna/surfdna-logo-fundo-escuro.svg), Archivo 800, Syne 800, DM Sans e JetBrains Mono; preto, grade técnica e a cor do esporte, como na referência ADC-RZ-08. Sem ilustração de equipamento, sem marca de terceiros, sem pessoas reais, sem etiqueta de exemplo. Sem IA generativa."
+  ],
+  "notes": "Série de 4 KVs por esporte pedida pelo Gui em 10/11 (\"foco em big numbers dos motores, chamativo, provocativo: errar equipamento custa caro\"). Você aprova só o hero; as adaptações seguem o hero.",
+  "version": "ADC-SF-06-v1",
+  "v": 1,
+  "mudou": "Peça nova (série KV SPORT DNA de 10/11).",
+  "media": [
+   "ads/ADC-SF-06-v1/ADC-SF-06-v1-feed45.png"
+  ],
+  "cover": "ADC-SF-06-v1-hero.jpg",
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do site (dna_capture.py e kv_dna_stills.py, Playwright); composição em HTML/CSS com SVGs e fontes oficiais (kv_dna.py). Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "KV 4:5 (hero)",
+    "path": "media/ads/ADC-SF-06-v1/ADC-SF-06-v1-feed45.png"
+   }
+  ],
+  "hash": "213ab8680f"
+ },
+ {
+  "id": "ADC-SF-07",
+  "brand": "SPORT DNA",
+  "fmt": "estatico",
+  "lote": "dna-kv",
+  "formato": "KV estático 4:5 (hero). Adaptações 1:1, 9:16, 1,91:1 e 16:9 e motion depois da aprovação.",
+  "title": "SURF KV: a prancha do amigo foi feita pra outro surfista",
+  "objetivo": "Tráfego para o teste SURF DNA (prévia grátis; relatório completo R$ 19,99, pagamento único).",
+  "publico": "Surfistas iniciantes e intermediários, 20–45 anos, cidades litorâneas (interesses: surf, escolas de surf, shapers, pranchas).",
+  "hipotese": "Comprar a prancha (ou a usada) do amigo é comum; dizer que ela foi feita para outro peso, nível e mar provoca e abre a dúvida.",
+  "copy": "A prancha do amigo foi feita pra outro surfista. 🏄\nA litragem foi pensada para outro peso, outro nível e outro mar. O SURF DNA foi calibrado com 422 casos reais e mais de 1.000 fontes de surf para achar a sua.\nPrévia grátis, 3 minutos, sem cadastro.",
+  "titulo": "A prancha do amigo é de outro surfista",
+  "cta": "Na arte: \"Descobrir minha prancha →\" + sportdna.com.br/surf. Botão do anúncio: Saiba mais.",
+  "url": "https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_kv_amigo&utm_content=ADC-SF-07-v1",
+  "direitos": [
+   "Números do motor conferidos no site rodando a partir do código atual (gtorniero/sportdna, main 42f9455, 10/11/2026): 13 tipos, 416 tamanhos de 35 modelos, 422 casos reais, 17 medidas, 1.000+ fontes em 400+ sites, mais de 200 trilhões de pranchas possíveis; \"Errar a prancha custa caro: uma nova sai por R$ 1.500 a R$ 4.000. Acertar custa R$ 19,99.\"",
+   "Tela real da pergunta \"O que você já faz na onda?\" do teste.",
+   "Tela no celular: captura real do teste (dna_capture.py, mesmo jogador/surfista coerente dos reels RK-01 v4 e SF-03 v1) ou da página do produto (kv_dna_stills.py). Na prévia, os nomes das 3 recomendadas aparecem borrados porque o próprio site esconde antes do pagamento.",
+   "Logos oficiais (racketdna/surfdna-logo-fundo-escuro.svg), Archivo 800, Syne 800, DM Sans e JetBrains Mono; preto, grade técnica e a cor do esporte, como na referência ADC-RZ-08. Sem ilustração de equipamento, sem marca de terceiros, sem pessoas reais, sem etiqueta de exemplo. Sem IA generativa."
+  ],
+  "notes": "Série de 4 KVs por esporte pedida pelo Gui em 10/11 (\"foco em big numbers dos motores, chamativo, provocativo: errar equipamento custa caro\"). Você aprova só o hero; as adaptações seguem o hero.",
+  "version": "ADC-SF-07-v1",
+  "v": 1,
+  "mudou": "Peça nova (série KV SPORT DNA de 10/11).",
+  "media": [
+   "ads/ADC-SF-07-v1/ADC-SF-07-v1-feed45.png"
+  ],
+  "cover": "ADC-SF-07-v1-hero.jpg",
+  "producao": "pronto para revisão",
+  "ferramentas": "Captura real do site (dna_capture.py e kv_dna_stills.py, Playwright); composição em HTML/CSS com SVGs e fontes oficiais (kv_dna.py). Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "KV 4:5 (hero)",
+    "path": "media/ads/ADC-SF-07-v1/ADC-SF-07-v1-feed45.png"
+   }
+  ],
+  "hash": "5c7be9b3ad"
+ }
+]
