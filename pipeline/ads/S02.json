@@ -1806,5 +1806,325 @@
    }
   ],
   "hash": "5c7be9b3ad"
+ },
+ {
+  "id": "ADC-QD-11",
+  "brand": "Quiddo",
+  "fmt": "reel",
+  "lote": "familia-amigos",
+  "formato": "Vídeo 9:16 · 14 s · sem narração · sem música + vídeos 4:5, 1:1 e 16:9 (14 s) + estáticos 4:5 (hero), 1:1, 9:16 e 1,91:1",
+  "title": "Família: quem conhece melhor essa família?",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Quem organiza a noite de jogos, o almoço de domingo ou o Natal da família (25–55 anos; interesses: família, jogos de tabuleiro, festas de fim de ano).",
+  "hipotese": "A família toda já tem as piadas internas; transformar isso em perguntas que só a turma sabe responder é mais forte que um quiz genérico.",
+  "copy": "Quem conhece melhor essa família? 🏠\nVocê cria perguntas sobre vocês (quem ronca mais alto no Natal, a receita da vó, a viagem que deu errado), abre a sala e cada um joga pelo celular. A resposta aparece no telão, o ranking sai na hora e o pódio fecha a noite.\nCriar meu quiz.",
+  "titulo": "Quem conhece melhor essa família?",
+  "cta": "Na arte: \"Criar meu quiz\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_familia_amigos&utm_term=familia&utm_content=ADC-QD-11-v1",
+  "direitos": [
+   "Captura real do produto: partida jogada no app local, modo Amigos & família; perguntas e apelidos (Vó, Tio, Madrinha…) criados para a partida, sem nome próprio e sem etiqueta na tela.",
+   "Endereço local trocado por quiddo.com.br; QR desfocado; selo de teste local e botão de convite por app de mensagens ocultos.",
+   "Logo quiddo-cor.svg, Fraunces 900, Nunito, bichos do avatarSvg e símbolos das respostas, oficiais do site. Sem foto e sem IA generativa.",
+   "Balões de reação são frases curtas de brincadeira, sem nome e sem tom de depoimento.",
+   "Sem música (escolha o áudio na biblioteca da Meta, se quiser)."
+  ],
+  "notes": "Linha Família e Amigos (KV de 5 execuções, mesmo conceito: fundo creme, título com marcador na cor do tema, telão e celular com a tela real, a turma de bichos e balões de reação). Diferente da linha Empresas (tinta/mata). Noite de jogos em família, no telão (visual Floresta). Pergunta: \"Quem ronca mais alto no Natal?\" (O vô · A tia do pavê · O cachorro · Todo mundo). /criar abre o editor; o modo Amigos & família se escolhe lá dentro (não há parâmetro de URL).",
+  "version": "ADC-QD-11-v1",
+  "v": 1,
+  "mudou": "Peça nova: KV Quiddo Família e Amigos (briefing de 11/11).",
+  "media": [
+   "ADC-QD-11-v1.mp4"
+  ],
+  "cover": "ADC-QD-11-v1-capa.jpg",
+  "duration": 14.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Partida real gravada no Quiddo rodando a partir do código do site (gtorniero/quiddo), Playwright; composição em HTML/CSS (pipeline/ads/reels/qd_fam_kv.py, estudio.py), render quadro a quadro, H.264 30 fps sem áudio. Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-11-v1/ADC-QD-11-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-11-v1/ADC-QD-11-v1-motion-sq.mp4"
+   },
+   {
+    "label": "Vídeo 16:9",
+    "path": "media/ads/ADC-QD-11-v1/ADC-QD-11-v1-motion-16x9.mp4"
+   },
+   {
+    "label": "Estático 4:5 (hero)",
+    "path": "media/ads/ADC-QD-11-v1/ADC-QD-11-v1-feed45.png"
+   },
+   {
+    "label": "Estático 1:1",
+    "path": "media/ads/ADC-QD-11-v1/ADC-QD-11-v1-sq.png"
+   },
+   {
+    "label": "Estático 9:16",
+    "path": "media/ads/ADC-QD-11-v1/ADC-QD-11-v1-story.png"
+   },
+   {
+    "label": "Estático 1,91:1",
+    "path": "media/ads/ADC-QD-11-v1/ADC-QD-11-v1-land.png"
+   }
+  ],
+  "hash": "5db730f8a5"
+ },
+ {
+  "id": "ADC-QD-12",
+  "brand": "Quiddo",
+  "fmt": "reel",
+  "lote": "familia-amigos",
+  "formato": "Vídeo 9:16 · 14 s · sem narração · sem música + vídeos 4:5, 1:1 e 16:9 (14 s) + estáticos 4:5 (hero), 1:1, 9:16 e 1,91:1",
+  "title": "Amigos: o grupo virou jogo",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Grupos de amigos de 20–40 anos que se reúnem em casa (interesses: jogos, encontros com amigos, noite de jogos).",
+  "hipotese": "O humor do grupo (quem manda áudio, quem sempre atrasa) vira pergunta; o jogo dá motivo para marcar o encontro e para mandar no grupo.",
+  "copy": "O grupo virou jogo. 🎮\nCrie perguntas sobre a turma (quem manda o maior áudio, quem nunca chega na hora), mande o código no grupo e todo mundo joga pelo celular, sem baixar app. Resposta revelada na hora, ranking e pódio.\nCriar meu quiz.",
+  "titulo": "O grupo virou jogo.",
+  "cta": "Na arte: \"Criar meu quiz\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_familia_amigos&utm_term=amigos&utm_content=ADC-QD-12-v1",
+  "direitos": [
+   "Captura real do produto: partida jogada no app local, modo Amigos & família; perguntas e apelidos (Vó, Tio, Madrinha…) criados para a partida, sem nome próprio e sem etiqueta na tela.",
+   "Endereço local trocado por quiddo.com.br; QR desfocado; selo de teste local e botão de convite por app de mensagens ocultos.",
+   "Logo quiddo-cor.svg, Fraunces 900, Nunito, bichos do avatarSvg e símbolos das respostas, oficiais do site. Sem foto e sem IA generativa.",
+   "Balões de reação são frases curtas de brincadeira, sem nome e sem tom de depoimento.",
+   "Sem música (escolha o áudio na biblioteca da Meta, se quiser)."
+  ],
+  "notes": "Linha Família e Amigos (KV de 5 execuções, mesmo conceito: fundo creme, título com marcador na cor do tema, telão e celular com a tela real, a turma de bichos e balões de reação). Diferente da linha Empresas (tinta/mata). Noite com os amigos (visual Espaço). Pergunta: \"Quem do grupo manda o maior áudio?\" (O que dirige · A que mora fora · O do churrasco · Todo mundo). /criar abre o editor; o modo Amigos & família se escolhe lá dentro (não há parâmetro de URL).",
+  "version": "ADC-QD-12-v1",
+  "v": 1,
+  "mudou": "Peça nova: KV Quiddo Família e Amigos (briefing de 11/11).",
+  "media": [
+   "ADC-QD-12-v1.mp4"
+  ],
+  "cover": "ADC-QD-12-v1-capa.jpg",
+  "duration": 14.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Partida real gravada no Quiddo rodando a partir do código do site (gtorniero/quiddo), Playwright; composição em HTML/CSS (pipeline/ads/reels/qd_fam_kv.py, estudio.py), render quadro a quadro, H.264 30 fps sem áudio. Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-12-v1/ADC-QD-12-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-12-v1/ADC-QD-12-v1-motion-sq.mp4"
+   },
+   {
+    "label": "Vídeo 16:9",
+    "path": "media/ads/ADC-QD-12-v1/ADC-QD-12-v1-motion-16x9.mp4"
+   },
+   {
+    "label": "Estático 4:5 (hero)",
+    "path": "media/ads/ADC-QD-12-v1/ADC-QD-12-v1-feed45.png"
+   },
+   {
+    "label": "Estático 1:1",
+    "path": "media/ads/ADC-QD-12-v1/ADC-QD-12-v1-sq.png"
+   },
+   {
+    "label": "Estático 9:16",
+    "path": "media/ads/ADC-QD-12-v1/ADC-QD-12-v1-story.png"
+   },
+   {
+    "label": "Estático 1,91:1",
+    "path": "media/ads/ADC-QD-12-v1/ADC-QD-12-v1-land.png"
+   }
+  ],
+  "hash": "166bccc6ed"
+ },
+ {
+  "id": "ADC-QD-13",
+  "brand": "Quiddo",
+  "fmt": "reel",
+  "lote": "familia-amigos",
+  "formato": "Vídeo 9:16 · 14 s · sem narração · sem música + vídeos 4:5, 1:1 e 16:9 (14 s) + estáticos 4:5 (hero), 1:1, 9:16 e 1,91:1",
+  "title": "Chá-bar: quem conhece melhor o casal?",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Madrinhas, padrinhos e casais que organizam chá-bar, chá de panela ou chá de casa nova (interesses: casamento, noivado, chá de panela).",
+  "hipotese": "A brincadeira de \"quem conhece o casal\" já é tradição; com o celular de cada convidado, telão e pódio, ela fica mais divertida e sem papel.",
+  "copy": "Quem conhece melhor o casal? 💛\nMonte o quiz com a história de vocês (onde foi o primeiro encontro, quem cozinha melhor, a primeira viagem), abra a sala e cada convidado responde pelo celular. A resposta aparece no telão e o pódio sai na hora.\nCriar meu quiz.",
+  "titulo": "Quem conhece melhor o casal?",
+  "cta": "Na arte: \"Criar meu quiz\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_familia_amigos&utm_term=chabar&utm_content=ADC-QD-13-v1",
+  "direitos": [
+   "Captura real do produto: partida jogada no app local, modo Amigos & família; perguntas e apelidos (Vó, Tio, Madrinha…) criados para a partida, sem nome próprio e sem etiqueta na tela.",
+   "Endereço local trocado por quiddo.com.br; QR desfocado; selo de teste local e botão de convite por app de mensagens ocultos.",
+   "Logo quiddo-cor.svg, Fraunces 900, Nunito, bichos do avatarSvg e símbolos das respostas, oficiais do site. Sem foto e sem IA generativa.",
+   "Balões de reação são frases curtas de brincadeira, sem nome e sem tom de depoimento.",
+   "Sem música (escolha o áudio na biblioteca da Meta, se quiser)."
+  ],
+  "notes": "Linha Família e Amigos (KV de 5 execuções, mesmo conceito: fundo creme, título com marcador na cor do tema, telão e celular com a tela real, a turma de bichos e balões de reação). Diferente da linha Empresas (tinta/mata). Chá-bar e chá de casa nova (visual Amor). Pergunta: \"Onde foi o primeiro encontro?\" (No cinema · Numa pizzaria · Num casamento · Na fila do pão). /criar abre o editor; o modo Amigos & família se escolhe lá dentro (não há parâmetro de URL).",
+  "version": "ADC-QD-13-v1",
+  "v": 1,
+  "mudou": "Peça nova: KV Quiddo Família e Amigos (briefing de 11/11).",
+  "media": [
+   "ADC-QD-13-v1.mp4"
+  ],
+  "cover": "ADC-QD-13-v1-capa.jpg",
+  "duration": 14.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Partida real gravada no Quiddo rodando a partir do código do site (gtorniero/quiddo), Playwright; composição em HTML/CSS (pipeline/ads/reels/qd_fam_kv.py, estudio.py), render quadro a quadro, H.264 30 fps sem áudio. Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-13-v1/ADC-QD-13-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-13-v1/ADC-QD-13-v1-motion-sq.mp4"
+   },
+   {
+    "label": "Vídeo 16:9",
+    "path": "media/ads/ADC-QD-13-v1/ADC-QD-13-v1-motion-16x9.mp4"
+   },
+   {
+    "label": "Estático 4:5 (hero)",
+    "path": "media/ads/ADC-QD-13-v1/ADC-QD-13-v1-feed45.png"
+   },
+   {
+    "label": "Estático 1:1",
+    "path": "media/ads/ADC-QD-13-v1/ADC-QD-13-v1-sq.png"
+   },
+   {
+    "label": "Estático 9:16",
+    "path": "media/ads/ADC-QD-13-v1/ADC-QD-13-v1-story.png"
+   },
+   {
+    "label": "Estático 1,91:1",
+    "path": "media/ads/ADC-QD-13-v1/ADC-QD-13-v1-land.png"
+   }
+  ],
+  "hash": "fd3927745c"
+ },
+ {
+  "id": "ADC-QD-14",
+  "brand": "Quiddo",
+  "fmt": "reel",
+  "lote": "familia-amigos",
+  "formato": "Vídeo 9:16 · 14 s · sem narração · sem música + vídeos 4:5, 1:1 e 16:9 (14 s) + estáticos 4:5 (hero), 1:1, 9:16 e 1,91:1",
+  "title": "Despedida: quem conhece mesmo quem vai casar?",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Padrinhos, madrinhas e amigos que organizam despedida de solteiro ou solteira (interesses: casamento, despedida de solteiro, festas com amigos).",
+  "hipotese": "A despedida é sobre quem vai casar; um quiz com as manias e histórias da pessoa vira o momento mais lembrado da festa, sem depender de bebida.",
+  "copy": "Quem conhece mesmo quem vai casar? 🎉\nJunte as manias e as histórias de quem vai casar (a piada repetida, o atraso de sempre, o áudio de 4 minutos), abra a sala e a turma joga pelo celular. Telão, ranking e pódio na hora.\nCriar meu quiz.",
+  "titulo": "Quem conhece mesmo quem vai casar?",
+  "cta": "Na arte: \"Criar meu quiz\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_familia_amigos&utm_term=despedida&utm_content=ADC-QD-14-v1",
+  "direitos": [
+   "Captura real do produto: partida jogada no app local, modo Amigos & família; perguntas e apelidos (Vó, Tio, Madrinha…) criados para a partida, sem nome próprio e sem etiqueta na tela.",
+   "Endereço local trocado por quiddo.com.br; QR desfocado; selo de teste local e botão de convite por app de mensagens ocultos.",
+   "Logo quiddo-cor.svg, Fraunces 900, Nunito, bichos do avatarSvg e símbolos das respostas, oficiais do site. Sem foto e sem IA generativa.",
+   "Balões de reação são frases curtas de brincadeira, sem nome e sem tom de depoimento.",
+   "Sem música (escolha o áudio na biblioteca da Meta, se quiser)."
+  ],
+  "notes": "Linha Família e Amigos (KV de 5 execuções, mesmo conceito: fundo creme, título com marcador na cor do tema, telão e celular com a tela real, a turma de bichos e balões de reação). Diferente da linha Empresas (tinta/mata). Despedida de solteiro ou solteira (visual Entretenimento). Pergunta: \"Qual mania do noivo a turma não aguenta mais?\" (Contar a mesma piada · Chegar atrasado · Mandar áudio longo · Falar de futebol). Sem bebida e sem conotação sexual. /criar abre o editor; o modo Amigos & família se escolhe lá dentro (não há parâmetro de URL).",
+  "version": "ADC-QD-14-v1",
+  "v": 1,
+  "mudou": "Peça nova: KV Quiddo Família e Amigos (briefing de 11/11).",
+  "media": [
+   "ADC-QD-14-v1.mp4"
+  ],
+  "cover": "ADC-QD-14-v1-capa.jpg",
+  "duration": 14.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Partida real gravada no Quiddo rodando a partir do código do site (gtorniero/quiddo), Playwright; composição em HTML/CSS (pipeline/ads/reels/qd_fam_kv.py, estudio.py), render quadro a quadro, H.264 30 fps sem áudio. Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-14-v1/ADC-QD-14-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-14-v1/ADC-QD-14-v1-motion-sq.mp4"
+   },
+   {
+    "label": "Vídeo 16:9",
+    "path": "media/ads/ADC-QD-14-v1/ADC-QD-14-v1-motion-16x9.mp4"
+   },
+   {
+    "label": "Estático 4:5 (hero)",
+    "path": "media/ads/ADC-QD-14-v1/ADC-QD-14-v1-feed45.png"
+   },
+   {
+    "label": "Estático 1:1",
+    "path": "media/ads/ADC-QD-14-v1/ADC-QD-14-v1-sq.png"
+   },
+   {
+    "label": "Estático 9:16",
+    "path": "media/ads/ADC-QD-14-v1/ADC-QD-14-v1-story.png"
+   },
+   {
+    "label": "Estático 1,91:1",
+    "path": "media/ads/ADC-QD-14-v1/ADC-QD-14-v1-land.png"
+   }
+  ],
+  "hash": "b0952f3316"
+ },
+ {
+  "id": "ADC-QD-15",
+  "brand": "Quiddo",
+  "fmt": "reel",
+  "lote": "familia-amigos",
+  "formato": "Vídeo 9:16 · 14 s · sem narração · sem música + vídeos 4:5, 1:1 e 16:9 (14 s) + estáticos 4:5 (hero), 1:1, 9:16 e 1,91:1",
+  "title": "Confra: as histórias da turma valem um pódio",
+  "objetivo": "Tráfego para criar o quiz (teste grátis).",
+  "publico": "Quem organiza confraternização de fim de ano de turmas de amigos, times, grupos de esporte e turmas de faculdade (interesses: confraternização, festas de fim de ano, amigos).",
+  "hipotese": "Toda turma tem histórias que todo mundo conta; o quiz junta isso num jogo rápido que fecha a confra com pódio.",
+  "copy": "As histórias da turma valem um pódio. 🏆\nCrie perguntas sobre o ano da turma (quem chegou atrasado em todas, quem sumiu do grupo, o melhor momento), abra a sala e todo mundo joga pelo celular. Resposta no telão, ranking e pódio na hora.\nCriar meu quiz.",
+  "titulo": "As histórias da turma valem um pódio.",
+  "cta": "Na arte: \"Criar meu quiz\". Botão do anúncio: Saiba mais.",
+  "url": "https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_familia_amigos&utm_term=confra&utm_content=ADC-QD-15-v1",
+  "direitos": [
+   "Captura real do produto: partida jogada no app local, modo Amigos & família; perguntas e apelidos (Vó, Tio, Madrinha…) criados para a partida, sem nome próprio e sem etiqueta na tela.",
+   "Endereço local trocado por quiddo.com.br; QR desfocado; selo de teste local e botão de convite por app de mensagens ocultos.",
+   "Logo quiddo-cor.svg, Fraunces 900, Nunito, bichos do avatarSvg e símbolos das respostas, oficiais do site. Sem foto e sem IA generativa.",
+   "Balões de reação são frases curtas de brincadeira, sem nome e sem tom de depoimento.",
+   "Sem música (escolha o áudio na biblioteca da Meta, se quiser)."
+  ],
+  "notes": "Linha Família e Amigos (KV de 5 execuções, mesmo conceito: fundo creme, título com marcador na cor do tema, telão e celular com a tela real, a turma de bichos e balões de reação). Diferente da linha Empresas (tinta/mata). Confraternização da turma (visual Floresta). Pergunta: \"Quem chegou atrasado em todas as confras?\" (Quem mora mais perto · Quem organizou · O amigo secreto · Ninguém lembra). /criar abre o editor; o modo Amigos & família se escolhe lá dentro (não há parâmetro de URL).",
+  "version": "ADC-QD-15-v1",
+  "v": 1,
+  "mudou": "Peça nova: KV Quiddo Família e Amigos (briefing de 11/11).",
+  "media": [
+   "ADC-QD-15-v1.mp4"
+  ],
+  "cover": "ADC-QD-15-v1-capa.jpg",
+  "duration": 14.0,
+  "producao": "pronto para revisão",
+  "ferramentas": "Partida real gravada no Quiddo rodando a partir do código do site (gtorniero/quiddo), Playwright; composição em HTML/CSS (pipeline/ads/reels/qd_fam_kv.py, estudio.py), render quadro a quadro, H.264 30 fps sem áudio. Sem IA generativa.",
+  "arquivos": [
+   {
+    "label": "Motion 4:5",
+    "path": "media/ads/ADC-QD-15-v1/ADC-QD-15-v1-motion-feed45.mp4"
+   },
+   {
+    "label": "Motion 1:1",
+    "path": "media/ads/ADC-QD-15-v1/ADC-QD-15-v1-motion-sq.mp4"
+   },
+   {
+    "label": "Vídeo 16:9",
+    "path": "media/ads/ADC-QD-15-v1/ADC-QD-15-v1-motion-16x9.mp4"
+   },
+   {
+    "label": "Estático 4:5 (hero)",
+    "path": "media/ads/ADC-QD-15-v1/ADC-QD-15-v1-feed45.png"
+   },
+   {
+    "label": "Estático 1:1",
+    "path": "media/ads/ADC-QD-15-v1/ADC-QD-15-v1-sq.png"
+   },
+   {
+    "label": "Estático 9:16",
+    "path": "media/ads/ADC-QD-15-v1/ADC-QD-15-v1-story.png"
+   },
+   {
+    "label": "Estático 1,91:1",
+    "path": "media/ads/ADC-QD-15-v1/ADC-QD-15-v1-land.png"
+   }
+  ],
+  "hash": "fbde14c81a"
  }
 ]

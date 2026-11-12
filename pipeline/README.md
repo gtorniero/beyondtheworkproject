@@ -1,6 +1,7 @@
 # Pack Semanal de Instagram · Quiddo, Retrozap e SPORT DNA
 
 ## Estado atual
+- **KV Quiddo Família e Amigos (12/11):** ADC-QD-11 (família), 12 (amigos), 13 (chá-bar), 14 (despedida), 15 (confraternizações), v1 na Mesa para aprovação. Estáticos 4:5/1:1/9:16/1,91:1 e vídeos 9:16/4:5/1:1/16:9 sem trilha. Scripts `pipeline/ads/reels/qd_fam_cap.py` e `qd_fam_kv.py`. Na Mesa, a pasta `final/` agora só guarda os textos do S03 (as mídias do pack ficam em packs/S03 no GitHub), para caber no limite de 512 arquivos. `pipeline/ads/S02.json` foi sincronizado com a Mesa no ar (inclui RK-03 a 06 e SF-04 a 07 de outra sessão).
 - **Limites da Mesa (10/11):** 512 arquivos e 256 MB por versão, 64 MB por publish. Os vídeos de AD na Mesa são versões mais leves (CRF 27) dos originais em `ads/mesa` e `ads/aprovados` no GitHub; o hash do AD continua o do original (não reabre aprovação). Os editáveis saíram de `final/` (ficam em `editaveis/`).
 - **Quiddo Empresas (10/11):** KV principal ADC-QD-10-v1 ("Sua apresentação vira participação", 4:5, captura real do modo Corporativo) e a linha em vídeo ADC-QD-07 (reunião geral), 08 (onboarding) e 09 (treinamento). Adaptações do KV (1:1, 9:16, 1,91:1, 16:9 e vídeo de até 15 s) só depois da aprovação. /criar abre o editor e o modo Corporativo se escolhe lá dentro (não há parâmetro de URL).
 - **S03 fechado em 10/11: 42 de 42 aprovadas e liberadas (rodada 2).**
