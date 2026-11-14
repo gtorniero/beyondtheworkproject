@@ -61,3 +61,11 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 - ADC-RK-08 (ADC-RK-08-v1) · SPORT DNA · RACKET · A raquete do ídolo · `ads/aprovados/sportdna/ADC-RK-08-v1/` (pronto antes da aprovação)
 - ADC-RK-07 (ADC-RK-07-v1) · SPORT DNA · RACKET · Vai comprar raquete? Espera. · `ads/aprovados/sportdna/ADC-RK-07-v1/` (pronto antes da aprovação)
 - ADC-RZ-13 (ADC-RZ-13-v2) · Retrozap · Tier list do grupo: quem é o S? · `ads/aprovados/retrozap/ADC-RZ-13-v2/` (pronto antes da aprovação)
+
+## 14/11 · SPORT DNA v2 (narração por frase)
+- ADC-RK-07-v2 · `ads/aprovados/sportdna/ADC-RK-07-v2/`
+- ADC-RK-08-v2 · `ads/aprovados/sportdna/ADC-RK-08-v2/`
+- ADC-RK-09-v2 · `ads/aprovados/sportdna/ADC-RK-09-v2/`
+- ADC-SF-08-v2 · `ads/aprovados/sportdna/ADC-SF-08-v2/`
+- ADC-SF-09-v2 · `ads/aprovados/sportdna/ADC-SF-09-v2/`
+- ADC-SF-10-v2 · `ads/aprovados/sportdna/ADC-SF-10-v2/`
