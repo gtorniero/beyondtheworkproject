@@ -25,17 +25,14 @@ Use os mesmos `content_ids` do catálogo de preços (`racket-report`, `surf-repo
 
 ## 2. Conversions API para a compra
 
-- Hoje os eventos de servidor são: Retrozap 4 de 617, Quiddo 0 de 314, SportDNA 2 de 229. A EMQ da compra está em 4,6 e 4,4.
-- Envie `Purchase` **do servidor** a partir do webhook de pagamento confirmado (Stripe `checkout.session.completed` / `payment_intent.succeeded` e o webhook de Pix da Efí), com:
-  - `event_id` igual ao do navegador (deduplicação)
-  - `event_source_url` = página real
-  - `action_source: 'website'`
-  - `user_data`:
-    - `em` (e-mail com hash SHA-256, que a política de cookies já prevê)
-    - `fbp` e `fbc` (guardados no checkout)
-    - `client_ip_address`, `client_user_agent` e `external_id` com hash
-- Só envie se o comprador tiver aceitado cookies, como já está escrito na política. Guarde a escolha junto com o pedido.
-- O token de CAPI fica no worker como secret (o Conversions API System User já existe no Business). Nunca no código.
+**Ela já existe.** No SportDNA: `payments/src/meta-capi.mjs` e `meta-adapter.mjs`, com consentimento guardado por pedido, fila de envio e revogação. Retrozap e Quiddo usam o mesmo padrão (`btw_capi_choice_v1`, `/api/meta/revoke`). Ela só envia compras de quem aceitou cookies, o que está certo. Por isso os eventos de servidor são poucos (4, 0 e 2) e a EMQ da compra está em 4,6 e 4,4.
+
+O que conferir e ajustar:
+
+- Em produção, nos 3 workers: `META_CAPI_ENABLED=true` e `META_EMAIL_MATCHING=true`. O Quiddo tem 0 eventos de servidor, então provavelmente está desligado lá.
+- O payload leva `event_id` igual ao do navegador, `fbp`, `fbc`, `client_user_agent`, `external_id` com hash e `em` com hash quando `META_EMAIL_MATCHING` está ligado.
+- O Pix de cada marca também enfileira a compra: SportDNA via Mercado Pago, Retrozap via Efí.
+- O token de CAPI fica como secret do worker. Nunca no código.
 
 ## 3. Página real no pixel do Quiddo e do SportDNA
 

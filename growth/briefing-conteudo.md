@@ -76,7 +76,7 @@ Público: tenista amador de 30 a 55 anos (RACKET) e corredor de rua (RUN). Mostr
 | ADC-RK-06 | Reels 9:16, 12 s | "Sua raquete pode estar te machucando" | Tenista com a mão no cotovelo, depois a tela do Índice de Conforto no braço da prévia grátis. CTA: "Faça o teste, a prévia é grátis". |
 | ADC-RK-07 | Estático 4:5 | "Você joga com a raquete do ídolo?" | Mito comum: raquete de profissional é pesada demais para quem joga 2 vezes por semana. Mostrar o "erro" e o "certo" lado a lado. |
 | ADC-RK-08 | Gravação de tela 9:16, 15 s | "Responda 20 perguntas, veja suas 3 raquetes" | O teste rápido até a prévia com as 3 raquetes. Dados fictícios de exemplo. |
-| ADC-RN-01 | Estático 4:5 + Reels | "Qual tênis de corrida combina com o seu pé?" | **Teste novo, RUN DNA.** Mercado maior que tênis de quadra. Peso, largura do pé, km por semana e o resultado. |
+| ADC-RN-01 | Estático 4:5 + Reels | "Qual tênis de corrida combina com o seu pé? Grátis." | **RUN DNA grátis** (só depois que o site liberar o teste gratuito). Peso, largura do pé, km por semana e os 3 tênis indicados. O "grátis" vai no gancho. |
 
 CTA: "Fazer o teste" para sportdna.com.br/racket/ ou /run/.
 
@@ -87,6 +87,22 @@ CTA: "Fazer o teste" para sportdna.com.br/racket/ ou /run/.
 - **Retrozap:** 3 Reels por semana com cards de exemplo ("Os 7 tipos de pessoa em todo grupo de família"). Formato feito para compartilhar.
 - **Quiddo:** 2 posts por semana com perguntas prontas de quiz para Natal e confra (salvar e compartilhar).
 - **SportDNA:** 2 carrosséis por semana com guias do blog ("Peso de raquete: como escolher").
+
+## Briefing para creators (UGC)
+
+Mande para cada creator junto com o cupom dele.
+
+- **Formato:** vídeo 9:16, de 15 a 30 s, gravado no celular, na voz do creator. Nada de cara de anúncio.
+- **Estrutura:**
+  - 0 a 2 s: gancho falado olhando para a câmera.
+  - 2 a 20 s: usa o produto de verdade e mostra a tela.
+  - Final: reação e cupom.
+- **Ganchos:**
+  - Retrozap: "Descobri quem é o fantasma do meu grupo".
+  - Quiddo: "Fiz um quiz da família e a ceia virou campeonato".
+  - RUN DNA: "Fiz um teste grátis que me disse qual tênis comprar".
+- **Retrozap:** usar o modo de exemplo ou um grupo próprio com autorização de todos. Nunca mostrar nome, número ou mensagem de terceiros.
+- **Obrigatório:** #publi na legenda, entrega do arquivo bruto, direito de uso em anúncio por 90 dias e autorização de anúncio de parceria no Instagram/TikTok.
 
 ## Entrega
 
