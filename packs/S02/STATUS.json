@@ -1,7 +1,7 @@
 {
  "pack": "S02",
- "liberadas": 51,
- "total": 51,
+ "liberadas": 55,
+ "total": 55,
  "pecas": [
   {
    "peca": "Q-C3",
@@ -525,6 +525,50 @@
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reel extra com vídeo real, aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "D-RX3",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "16/11/2026 (seg)",
+   "hora": "19h45",
+   "versao": "X-D-RX3-v2",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-RZ-1",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "22/11/2026 (dom)",
+   "hora": "19h45",
+   "versao": "X-F-RZ-1-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-QD-2",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "22/11/2026 (dom)",
+   "hora": "19h45",
+   "versao": "X-F-QD-2-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "D-RX7",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "22/11/2026 (dom)",
+   "hora": "19h45",
+   "versao": "X-D-RX7-v2",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
   }
  ]
 }

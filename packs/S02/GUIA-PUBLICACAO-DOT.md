@@ -106,6 +106,15 @@ Gui aprovou na Mesa (rodada 7) 5 reels extras. Entram às **19h45** nos dias em 
 **Áudio:** estes reels já vêm com narração (voz de IA) e trilha própria. Agende com o áudio do vídeo. Não troque por áudio em alta. Se quiser áudio em alta, use o arquivo `-so-voz.mp4` e deixe o áudio em alta baixo, sem cobrir a voz.
 Legenda e capa: no `LEGENDAS.txt` de cada marca e no `-capa.png` (quadro do gancho).
 
+## Atualização de 14/11 (noite) · reels extras aprovados
+
+- 16/11/2026 (seg) 19h45 · SPORT DNA · D-RX3 (X-D-RX3-v2) · RACKET: Vai comprar raquete? Espera. (vídeo real)
+- 22/11/2026 (dom) 19h45 · Retrozap · F-RZ-1 (X-F-RZ-1-v1) · Todo grupo tem um: o Fantasma
+- 22/11/2026 (dom) 19h45 · Quiddo · F-QD-2 (X-F-QD-2-v1) · O pódio ao contrário: quem ficou em último?
+- 22/11/2026 (dom) 19h45 · SPORT DNA · D-RX7 (X-D-RX7-v2) · RACKET: Não é uma escolha, são seis (vídeo real)
+
+**Áudio dos extras:** já vêm com narração (voz de IA) e trilha própria; não trocar por áudio em alta.
+
 ## Prompt para colar no DOT
 
 ```

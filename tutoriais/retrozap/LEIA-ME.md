@@ -39,3 +39,6 @@ Cada pasta de vídeo tem:
 5. `tut_mesa.py`: põe os vídeos na Mesa.
 
 A captura bruta e as conversas fictícias de cada versão ficam em `fonte/`.
+
+## v2 (14/11, aprovados na Mesa)
+Tela fixa (sem zoom), narração por passo (voz de IA) e trilha baixa. Pastas TUT-RZ-GRUPO-v2 e TUT-RZ-CASAL-v2 (1080×1920 + .srt + capa). Substituem a v1.

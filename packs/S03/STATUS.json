@@ -1,7 +1,7 @@
 {
  "pack": "S03",
- "liberadas": 42,
- "total": 42,
+ "liberadas": 52,
+ "total": 52,
  "pecas": [
   {
    "peca": "Q-R7",
@@ -9,7 +9,7 @@
    "formato": "reel",
    "dia": "seg 23/11",
    "hora": "19h45",
-   "versao": "S03-Q-R7-v1",
+   "versao": "S03-Q-R7-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -29,7 +29,7 @@
    "formato": "reel",
    "dia": "qua 25/11",
    "hora": "19h45",
-   "versao": "S03-Q-R8-v1",
+   "versao": "S03-Q-R8-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -49,7 +49,7 @@
    "formato": "reel",
    "dia": "sex 27/11",
    "hora": "19h45",
-   "versao": "S03-Q-R9-v1",
+   "versao": "S03-Q-R9-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -69,7 +69,7 @@
    "formato": "reel",
    "dia": "dom 29/11",
    "hora": "19h45",
-   "versao": "S03-Q-R10-v1",
+   "versao": "S03-Q-R10-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -149,7 +149,7 @@
    "formato": "reel",
    "dia": "seg 23/11",
    "hora": "19h45",
-   "versao": "S03-R-R8-v1",
+   "versao": "S03-R-R8-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -169,7 +169,7 @@
    "formato": "reel",
    "dia": "qua 25/11",
    "hora": "19h45",
-   "versao": "S03-R-R9-v1",
+   "versao": "S03-R-R9-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -189,7 +189,7 @@
    "formato": "reel",
    "dia": "sex 27/11",
    "hora": "19h45",
-   "versao": "S03-R-R10-v1",
+   "versao": "S03-R-R10-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -209,7 +209,7 @@
    "formato": "reel",
    "dia": "dom 29/11",
    "hora": "19h45",
-   "versao": "S03-R-R11-v1",
+   "versao": "S03-R-R11-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -289,7 +289,7 @@
    "formato": "reel",
    "dia": "seg 23/11",
    "hora": "19h45",
-   "versao": "S03-D-R8-v1",
+   "versao": "S03-D-R8-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -309,7 +309,7 @@
    "formato": "reel",
    "dia": "qua 25/11",
    "hora": "19h45",
-   "versao": "S03-D-R9-v1",
+   "versao": "S03-D-R9-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -329,7 +329,7 @@
    "formato": "reel",
    "dia": "sex 27/11",
    "hora": "19h45",
-   "versao": "S03-D-R10-v1",
+   "versao": "S03-D-R10-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -349,7 +349,7 @@
    "formato": "reel",
    "dia": "dom 29/11",
    "hora": "19h45",
-   "versao": "S03-D-R11-v1",
+   "versao": "S03-D-R11-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -422,6 +422,116 @@
    "versao": "S03-D-S19-v2",
    "liberado": true,
    "status_mesa": "aprovado"
+  },
+  {
+   "peca": "F-RZ-2",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "24/11/2026 (ter)",
+   "hora": "19h45",
+   "versao": "X-F-RZ-2-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-QD-3",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "24/11/2026 (ter)",
+   "hora": "19h45",
+   "versao": "X-F-QD-3-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-QD-4",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "26/11/2026 (qui)",
+   "hora": "19h45",
+   "versao": "X-F-QD-4-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "D-RX5",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "26/11/2026 (qui)",
+   "hora": "19h45",
+   "versao": "X-D-RX5-v2",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-RZ-4",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "28/11/2026 (sáb)",
+   "hora": "19h45",
+   "versao": "X-F-RZ-4-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-QD-5",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "28/11/2026 (sáb)",
+   "hora": "19h45",
+   "versao": "X-F-QD-5-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "D-RX6",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "28/11/2026 (sáb)",
+   "hora": "19h45",
+   "versao": "X-D-RX6-v2",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-RZ-5",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "30/11/2026 (seg) · extra",
+   "hora": "19h45",
+   "versao": "X-F-RZ-5-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-QD-6",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "30/11/2026 (seg) · extra",
+   "hora": "19h45",
+   "versao": "X-F-QD-6-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "D-RX8",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "30/11/2026 (seg) · extra",
+   "hora": "19h45",
+   "versao": "X-D-RX8-v2",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
   }
  ]
 }
