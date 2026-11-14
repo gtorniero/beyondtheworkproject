@@ -100,6 +100,7 @@ Gui aprovou na Mesa (rodada 7) 5 reels extras. Entram às **19h45** nos dias em 
 - 20/11/2026 (sex) 19h45 · Quiddo · Q-RX2 (X-Q-RX2-v2) · O pódio: a tia que ninguém apostava (reação real)
 - 20/11/2026 (sex) 19h45 · Retrozap · R-RX3 (X-R-RX3-v2) · Tier list do grupo: quem é o S?
 - 20/11/2026 (sex) 19h45 · SPORT DNA · D-RX2 (X-D-RX2-v2) · RUN · Tênis errado cobra no km 10 (corredor real)
+- 18/11/2026 (qua) 19h45 · Retrozap · R-RX2 (X-R-RX2-v3) · Recibo do amor: quem paga o jantar (aprovado depois, na mesma rodada)
 
 **Áudio:** estes reels já vêm com narração (voz de IA) e trilha própria. Agende com o áudio do vídeo. Não troque por áudio em alta. Se quiser áudio em alta, use o arquivo `-so-voz.mp4` e deixe o áudio em alta baixo, sem cobrir a voz.
 Legenda e capa: no `LEGENDAS.txt` de cada marca e no `-capa.png` (quadro do gancho).

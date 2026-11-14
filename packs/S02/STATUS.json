@@ -1,7 +1,7 @@
 {
  "pack": "S02",
- "liberadas": 49,
- "total": 49,
+ "liberadas": 50,
+ "total": 50,
  "pecas": [
   {
    "peca": "Q-C3",
@@ -503,6 +503,17 @@
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reels extras com vídeo real, aprovados na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "R-RX2",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "qua 18/11",
+   "hora": "19h45",
+   "versao": "X-R-RX2-v3",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra com vídeo real, aprovado na Mesa (rodada 7, v3) em 14/11"
   }
  ]
 }
