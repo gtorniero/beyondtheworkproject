@@ -42,3 +42,13 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 | sportdna | ADC-SF-05 | v1 | atual | SURF KV: duas 6'0" com 10 litros de diferença | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-05-v1 |
 | sportdna | ADC-SF-06 | v1 | atual | SURF KV: 200 trilhões de pranchas, a sua sob medida | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-06-v1 |
 | sportdna | ADC-SF-07 | v1 | atual | SURF KV: a prancha do amigo foi feita pra outro surfista | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-07-v1 |
+
+## 14/11 · Lote vídeo real (aprovado na Mesa)
+- ADC-RZ-10 (ADC-RZ-10-v1) · Retrozap · Quem paga o jantar? (recibo real explicado) · `ads/aprovados/retrozap/ADC-RZ-10-v1/`
+- ADC-RZ-11 (ADC-RZ-11-v1) · Retrozap · Quantas mensagens vocês trocaram em 2026? · `ads/aprovados/retrozap/ADC-RZ-11-v1/`
+- ADC-RZ-14 (ADC-RZ-14-v1) · Retrozap · Quem manda mais "te amo"? · `ads/aprovados/retrozap/ADC-RZ-14-v1/`
+- ADC-RZ-12 (ADC-RZ-12-v1) · Retrozap · Quem é o Tagarela do seu grupo? · `ads/aprovados/retrozap/ADC-RZ-12-v1/`
+- ADC-QD-16 (ADC-QD-16-v1) · Quiddo · Qual bicho você é no quiz? · `ads/aprovados/quiddo/ADC-QD-16-v1/`
+- ADC-QD-17 (ADC-QD-17-v1) · Quiddo · Quem ganhou o quiz da família? (pódio) · `ads/aprovados/quiddo/ADC-QD-17-v1/`
+- ADC-RN-04 (ADC-RN-04-v1) · SPORT DNA · RUN · Tênis errado cobra no km 10 · `ads/aprovados/sportdna/ADC-RN-04-v1/`
+- ADC-RN-05 (ADC-RN-05-v1) · SPORT DNA · RUN · O erro que todo corredor comete · `ads/aprovados/sportdna/ADC-RN-05-v1/`
