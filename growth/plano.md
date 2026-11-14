@@ -7,7 +7,7 @@ Retrato de 14/11/2026. Fontes: Meta Marketing API, estatísticas dos 3 pixels, a
 - **Investido na Meta desde 09/11:** R$ 145,61, com 5 compras atribuídas e R$ 55,95 de receita. **ROAS 0,38.**
 - **Estrutura:** 3 campanhas de Vendas (Purchase) com orçamento total de cerca de R$ 120 cada, terminando em 19/11, todas numa conta só.
 - **Por marca:**
-  - **Retrozap:** R$ 51,90 investidos, 4 compras de R$ 8,99, ROAS 0,69, custo por compra R$ 12,98. Um anúncio só (RZ-03 Casal) trouxe as 4 compras.
+  - **Retrozap:** R$ 51,90 investidos, 4 compras de R$ 8,99, ROAS 0,69, custo por compra R$ 12,97. Um anúncio só (RZ-03 Casal) trouxe as 4 compras.
   - **Quiddo:** R$ 47,29 investidos, 0 compras. O CTR é bom (3,3%), mas a compra só acontece quando o evento passa de 10 pessoas, o que leva dias.
   - **SportDNA (RACKET):** R$ 46,42 investidos, 1 compra de R$ 19,99, ROAS 0,43. O CPM é de R$ 103 porque o público é estreito demais.
 - **Vendas reais no Stripe:** 4 cobranças no total, 2 delas testes seus. O Pix (Efí) não está visível para mim.
@@ -18,7 +18,7 @@ A meta é ROAS 3: receita igual a 3 vezes a mídia. Se você quis dizer ROI 3 no
 
 | Marca | Preço principal | Custo máximo por compra para ROAS 3 | Custo por compra hoje |
 |---|---|---|---|
-| Retrozap | R$ 8,99 | R$ 3,00 | R$ 12,98 |
+| Retrozap | R$ 8,99 | R$ 3,00 | R$ 12,97 |
 | Quiddo (Passe 7 dias) | R$ 12,99 | R$ 4,33 | sem compra |
 | SportDNA (RACKET) | R$ 19,99 | R$ 6,66 | R$ 46,42 |
 
