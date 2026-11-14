@@ -91,6 +91,19 @@ Gui aprovou na Mesa (rodada 6) os 4 stories pedidos no briefing de 11/11. Já es
 
 D-S8 v2 e R-S10 v3 continuam aprovados, mas viraram **reserva: não agendar**. Estão no fim do `agenda.csv` com hora "reserva".
 
+## Atualização de 14/11 · 5 reels extras aprovados (vídeo real)
+
+Gui aprovou na Mesa (rodada 7) 5 reels extras. Entram às **19h45** nos dias em que o pack só tem carrossel (12h30), então fica 1 reel por marca por dia e mais de 6 h entre os posts. Já estão no `agenda.csv` e no `STATUS.json`.
+
+- 18/11/2026 (qua) 19h45 · Quiddo · Q-RX1 (X-Q-RX1-v2) · Qual bicho é você no quiz? (amigos reais + bichos)
+- 18/11/2026 (qua) 19h45 · SPORT DNA · D-RX1 (X-D-RX1-v2) · RUN · O erro que todo corredor comete (mito × verdade)
+- 20/11/2026 (sex) 19h45 · Quiddo · Q-RX2 (X-Q-RX2-v2) · O pódio: a tia que ninguém apostava (reação real)
+- 20/11/2026 (sex) 19h45 · Retrozap · R-RX3 (X-R-RX3-v2) · Tier list do grupo: quem é o S?
+- 20/11/2026 (sex) 19h45 · SPORT DNA · D-RX2 (X-D-RX2-v2) · RUN · Tênis errado cobra no km 10 (corredor real)
+
+**Áudio:** estes reels já vêm com narração (voz de IA) e trilha própria. Agende com o áudio do vídeo. Não troque por áudio em alta. Se quiser áudio em alta, use o arquivo `-so-voz.mp4` e deixe o áudio em alta baixo, sem cobrir a voz.
+Legenda e capa: no `LEGENDAS.txt` de cada marca e no `-capa.png` (quadro do gancho).
+
 ## Prompt para colar no DOT
 
 ```
