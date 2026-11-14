@@ -4,6 +4,7 @@ Material do Growth Manager para Retrozap, Quiddo e SportDNA.
 
 | Arquivo | Para quem | O que é |
 |---|---|---|
+| [plano-aceleracao.md](plano-aceleracao.md) | Você | Plano de aceleração (14/11): onde aprovar, status, lançamento do Retrozap, Quiddo, SportDNA, jornada dos 3 sites, Google, Meta, AdSense |
 | [plano.md](plano.md) | Você | Diagnóstico, economia por marca, estratégia, plano e permissões |
 | [briefing-conteudo.md](briefing-conteudo.md) | Chat de conteúdo (Claude) | 14 criativos novos com gancho, formato e texto |
 | [briefing-chatgpt.md](briefing-chatgpt.md) | Agentes do ChatGPT | Tarefas de navegador na Meta e no Google, mais exportações semanais |
