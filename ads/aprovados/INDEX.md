@@ -52,3 +52,12 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 - ADC-QD-17 (ADC-QD-17-v1) · Quiddo · Quem ganhou o quiz da família? (pódio) · `ads/aprovados/quiddo/ADC-QD-17-v1/`
 - ADC-RN-04 (ADC-RN-04-v1) · SPORT DNA · RUN · Tênis errado cobra no km 10 · `ads/aprovados/sportdna/ADC-RN-04-v1/`
 - ADC-RN-05 (ADC-RN-05-v1) · SPORT DNA · RUN · O erro que todo corredor comete · `ads/aprovados/sportdna/ADC-RN-05-v1/`
+
+## 14/11 · Lote vídeo real · SPORT DNA e RZ-13 v2 (posicionamentos prontos antes da aprovação)
+- ADC-SF-10 (ADC-SF-10-v1) · SPORT DNA · SURF · A prancha do amigo não é a sua · `ads/aprovados/sportdna/ADC-SF-10-v1/` (pronto antes da aprovação)
+- ADC-SF-09 (ADC-SF-09-v1) · SPORT DNA · SURF · Duas 6'0", 10 litros de diferença · `ads/aprovados/sportdna/ADC-SF-09-v1/` (pronto antes da aprovação)
+- ADC-SF-08 (ADC-SF-08-v1) · SPORT DNA · SURF · Errar a prancha custa caro · `ads/aprovados/sportdna/ADC-SF-08-v1/` (pronto antes da aprovação)
+- ADC-RK-09 (ADC-RK-09-v1) · SPORT DNA · RACKET · Não é uma escolha, são seis · `ads/aprovados/sportdna/ADC-RK-09-v1/` (pronto antes da aprovação)
+- ADC-RK-08 (ADC-RK-08-v1) · SPORT DNA · RACKET · A raquete do ídolo · `ads/aprovados/sportdna/ADC-RK-08-v1/` (pronto antes da aprovação)
+- ADC-RK-07 (ADC-RK-07-v1) · SPORT DNA · RACKET · Vai comprar raquete? Espera. · `ads/aprovados/sportdna/ADC-RK-07-v1/` (pronto antes da aprovação)
+- ADC-RZ-13 (ADC-RZ-13-v2) · Retrozap · Tier list do grupo: quem é o S? · `ads/aprovados/retrozap/ADC-RZ-13-v2/` (pronto antes da aprovação)
