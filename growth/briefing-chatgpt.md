@@ -13,8 +13,7 @@ Cole a parte do agente certo no chat dele.
 
 1. **Aceitar os termos de público personalizado da conta de anúncios.**
    Abra https://www.facebook.com/customaudiences/app/tos/?act=1471479281571654 e aceite. Isso destrava os 12 públicos do pixel que o Claude cria pela API.
-2. **Ligar a correspondência automática avançada nos 3 pixels.**
-   Gerenciador de Eventos → cada pixel (Retrozap — Web, Quiddo — Web, SPORT DNA — Web) → Configurações → "Correspondência avançada automática" → Ligar, com e-mail e telefone marcados. Os sites só ativam o pixel depois do aceite de cookies, então isso fica dentro da LGPD.
+2. **NÃO ligar a "Correspondência avançada automática" nos pixels.** Os banners de cookies dos 3 sites prometem enviar à Meta só a compra e o e-mail protegido. Esse recurso mandaria outros campos de formulário e quebraria essa promessa. A correspondência por e-mail é feita pelo servidor (Conversions API).
 3. **Iniciar a verificação do Business** "Beyond the Work" (ID 303359410698910): Configurações do negócio → Central de segurança → Verificação, com o CNPJ 69.746.447/0001-00.
 4. **Não mexer** nas 3 campanhas ativas. Mudanças nelas são feitas pelo Claude via API, depois do ok.
 

@@ -91,6 +91,7 @@ Detalhes em [medicao-spec.md](medicao-spec.md).
 
 - **Pixel e GA4 só depois do "Aceitar"** (correto pela LGPD). Cerca de 2 em cada 3 cliques não aparecem.
 - **Conversions API já existe**, com consentimento e fila de envio (`meta-capi.mjs`). Poucos eventos chegam pelo servidor porque ela só envia compras de quem aceitou, e isso está certo. Falta conferir em produção `META_CAPI_ENABLED` e `META_EMAIL_MATCHING` nos 3 workers.
+- **Correspondência avançada automática do pixel: deixar desligada.** Os banners prometem enviar à Meta só a compra e o e-mail protegido, e esse recurso mandaria outros campos de formulário. O e-mail vai pelo servidor.
 - **Funil em eventos personalizados:** falta disparar o evento padrão junto (ViewContent, InitiateCheckout, AddPaymentInfo, Lead).
 - **Pixel do Quiddo e do SportDNA dentro do iframe `/medicao`:** falta mandar a página real.
 - **SportDNA:** 2 erros de checkout. O worker de pagamento de produção se chama `sportdna-payments-test`, e é ele mesmo que está no ar (`mode: live`).
