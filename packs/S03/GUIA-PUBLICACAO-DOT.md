@@ -99,6 +99,16 @@ Os MP4 saem sem música. Se o Business Suite mostrar uma biblioteca de músicas 
 
 **Áudio dos extras:** já vêm com narração (voz de IA) e trilha própria; não trocar por áudio em alta.
 
+## Atualização de 14/11 (noite) · reels extras aprovados
+
+- 26/11/2026 (qui) 19h45 · Retrozap · F-RZ-3 (X-F-RZ-3-v2) · Todo grupo tem um: o Podcaster
+
+**Reels do S03 com trilha própria (v2):** . Os arquivos .mp4 foram trocados no mesmo link; agendar a versão nova. Se você puser áudio em alta no app, ele substitui a trilha.
+
+**30/11 (seg):** dia extra fora da semana do pack, já incluído aqui no agenda.csv.
+
+**Áudio dos extras:** já vêm com narração (voz de IA) e trilha própria; não trocar por áudio em alta.
+
 ## Prompt para colar no DOT
 
 ```

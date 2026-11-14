@@ -115,6 +115,12 @@ Legenda e capa: no `LEGENDAS.txt` de cada marca e no `-capa.png` (quadro do ganc
 
 **Áudio dos extras:** já vêm com narração (voz de IA) e trilha própria; não trocar por áudio em alta.
 
+## Atualização de 14/11 (noite) · reels extras aprovados
+
+- 16/11/2026 (seg) 19h45 · Quiddo · F-QD-1 (X-F-QD-1-v2) · Qual bicho você é no quiz? Parte 2
+
+**Áudio dos extras:** já vêm com narração (voz de IA) e trilha própria; não trocar por áudio em alta.
+
 ## Prompt para colar no DOT
 
 ```

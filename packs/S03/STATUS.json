@@ -1,7 +1,7 @@
 {
  "pack": "S03",
- "liberadas": 52,
- "total": 52,
+ "liberadas": 53,
+ "total": 53,
  "pecas": [
   {
    "peca": "Q-R7",
@@ -529,6 +529,17 @@
    "dia": "30/11/2026 (seg) · extra",
    "hora": "19h45",
    "versao": "X-D-RX8-v2",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-RZ-3",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "26/11/2026 (qui)",
+   "hora": "19h45",
+   "versao": "X-F-RZ-3-v2",
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"

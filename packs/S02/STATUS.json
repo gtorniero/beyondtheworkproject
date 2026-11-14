@@ -1,7 +1,7 @@
 {
  "pack": "S02",
- "liberadas": 55,
- "total": 55,
+ "liberadas": 56,
+ "total": 56,
  "pecas": [
   {
    "peca": "Q-C3",
@@ -566,6 +566,17 @@
    "dia": "22/11/2026 (dom)",
    "hora": "19h45",
    "versao": "X-D-RX7-v2",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "F-QD-1",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "16/11/2026 (seg)",
+   "hora": "19h45",
+   "versao": "X-F-QD-1-v2",
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
