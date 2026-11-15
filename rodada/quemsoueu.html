@@ -120,7 +120,8 @@ function catChips(){return '<div class="chips" role="group" aria-label="Categori
 function placaMini(i){var x=N[i];return '<div class="pl"><small>Quem sou eu?</small><b>'+esc(x[0])+'</b><i>'+esc(x[1])+'</i></div>'}
 function home(){
   var canRoom=!!roomNs;
-  var h='<section class="panel"><div class="tag">Começar uma partida</div>'+
+  var h='<section class="panel"><div class="tag">Como jogar</div><ol class="rules"><li><b>O anfitrião cria a sala</b> e manda o código. Cada um entra no próprio celular.</li><li><b>Sem olhar</b>, toque em "Colocar na testa" e encoste o celular na testa, com a tela virada para a turma.</li><li><b>Na sua vez</b>, faça perguntas de sim ou não: "Sou mulher?", "Sou brasileiro?". Ouviu um não, passa a vez.</li><li><b>Achou que sabe?</b> Fale o nome. Acertou, segure a tela e toque em "Acertei!".</li><li><b>Pontos:</b> quem descobre primeiro leva 3, o segundo 2 e os demais que acertarem 1. O placar soma a noite toda.</li></ol></section>';
+  h+='<section class="panel"><div class="tag">Começar uma partida</div>'+
     '<p class="small">Este jogo é sempre cada um no seu celular: o aparelho fica na sua testa, virado para a turma.</p>'+
     '<div class="tag">Quantas pessoas</div><div class="stepper"><button data-act="n" data-v="-1" aria-label="Menos uma pessoa">−</button><b>'+S.n+'</b><button data-act="n" data-v="1" aria-label="Mais uma pessoa">+</button><span class="small">de '+MIN+' a '+MAX+'</span></div>'+
     '<div class="tag">Baralho</div>'+verSeg()+'<div class="tag">Quem pode sair na sua testa</div>'+catChips()+
@@ -131,7 +132,6 @@ function home(){
   h+='<section class="panel"><div class="tag">Recebeu um código?</div><div class="row"><label for="avCode">Código da sala<input type="text" class="code" id="avCode" maxlength="4" value="'+esc(S.joinCode)+'" placeholder="KX7Q" autocomplete="off"></label><label for="avNick2">Seu apelido<input type="text" id="avNick2" maxlength="18" value="'+esc(S.nick)+'" placeholder="Seu apelido"></label></div><button class="btn sec" data-act="join"'+(canRoom?'':' disabled')+'>Entrar na sala</button><p class="err" role="status">'+esc(S.joinErr)+'</p></section>';
   h+='<section class="panel"><div class="tag">Sem sala</div><p class="small">Cada pessoa abre esta página e sorteia um nome no próprio celular. Sem ranking, mas joga na hora.</p><button class="btn sec" data-act="solo">Sortear um nome para mim</button></section>';
   h+='<section class="panel"><div class="tag">A placa na testa</div><div class="placas">'+(S.ver==='fut'?['Pelé','Lionel Messi','Vinicius Júnior','Petković']:['Taylor Swift','Pelé','Seu ex','Casimiro']).map(function(n){for(var i=0;i<N.length;i++)if(N[i][0]===n)return i;return 0}).map(placaMini).join('')+'</div><p class="small">Dois baralhos: o Geral, com cantores, atores, influenciadores e uns curingas da família, e o Futebol, com craques do Brasil, gringos e um nível difícil de medianos e folclóricos.</p></section>';
-  h+='<section class="panel"><div class="tag">Como jogar</div><ol class="rules"><li><b>O anfitrião cria a sala</b> e manda o código. Cada um entra no próprio celular.</li><li><b>Sem olhar</b>, toque em "Colocar na testa" e encoste o celular na testa, com a tela virada para a turma.</li><li><b>Na sua vez</b>, faça perguntas de sim ou não: "Sou mulher?", "Sou brasileiro?". Ouviu um não, passa a vez.</li><li><b>Achou que sabe?</b> Fale o nome. Acertou, segure a tela e toque em "Acertei!".</li><li><b>Pontos:</b> quem descobre primeiro leva 3, o segundo 2 e os demais que acertarem 1. O placar soma a noite toda.</li></ol></section>';
   return h;
 }
 function peopleHtml(list,meId){return '<div class="people">'+list.map(function(p){return '<span class="'+(p.id===meId?'me':'')+'">'+esc(p.nick)+(p.id===meId?' (você)':'')+'</span>'}).join('')+'</div>'}
@@ -272,7 +272,7 @@ function toHome(){if(pushed){pushed=false;try{history.back();return}catch(e){}}d
 window.addEventListener('popstate',function(){pushed=false;if(tState){closeTesta()}if(S.screen!=='home')doHome()});
 function deal(list){
   var ids=pick(list.length);
-  S.G={ph:'jogo',ep:(S.G?S.G.ep+1:1)+Math.floor(Math.random()*1000)*1000,pl:list.map(function(p,i){return {id:p.id,nick:p.nick,ni:ids[i]}}),ord:shuffle(list.map(function(p){return p.id})),fin:{},prev:S.G?totals(S.G):{},t0:Date.now()};
+  S.G={ph:'jogo',ep:(S.G?S.G.ep+1:1)+Math.floor(Math.random()*1000)*1000,pl:list.map(function(p,i){return {id:p.id,nick:p.nick,ni:ids[i]}}),ord:(function(o){if(o.length>1&&S.G&&S.G.ord&&o[0]===S.G.ord[0])o.push(o.shift());return o})(shuffle(list.map(function(p){return p.id}))),fin:{},prev:S.G?totals(S.G):{},t0:Date.now()};
   S.mine=null;
 }
 function finish(res){

@@ -43,7 +43,8 @@ function start(cfg){
   /* ---------- telas ---------- */
   function home(){
     var online=S.mode==='online',canRoom=!!roomNs;
-    var h='<section class="panel"><div class="tag">Começar uma partida</div>'+
+    var h='<section class="panel"><div class="tag">Como jogar</div>'+(typeof cfg.rules==='function'?cfg.rules(S.modo):cfg.rules)+'</section>';
+    h+='<section class="panel"><div class="tag">Começar uma partida</div>'+
       '<div class="seg" role="group" aria-label="Como vão jogar"><button data-act="mode" data-v="online" aria-pressed="'+online+'">Cada um no seu celular<span>O anfitrião cria a sala; a turma entra com o código.</span></button><button data-act="mode" data-v="pass" aria-pressed="'+(!online)+'">Um celular só<span>Passa de mão em mão; cada um vê a sua carta.</span></button></div>'+
       (cfg.modes?'<div class="tag">Modo de jogo</div><div class="seg" role="group" aria-label="Modo de jogo">'+cfg.modes.map(function(m){return '<button data-act="modo" data-v="'+m.id+'" aria-pressed="'+(S.modo===m.id)+'">'+esc(m.nome)+'<span>'+esc(m.desc)+'</span></button>'}).join('')+'</div>':'')+
       '<div class="tag">Quantas pessoas'+(cfg.hostPlays?'':' (sem contar '+esc(cfg.hostLabel.toLowerCase())+')')+'</div>'+
@@ -63,7 +64,6 @@ function start(cfg){
     h+='<p class="err" role="status">'+esc(S.err)+'</p></section>';
     h+='<section class="panel"><div class="tag">Recebeu um código?</div><div class="row"><label for="avCode">Código da sala<input type="text" class="code" id="avCode" maxlength="4" value="'+esc(S.joinCode)+'" placeholder="KX7Q" autocomplete="off"></label><label for="avNick2">Seu apelido<input type="text" id="avNick2" maxlength="18" value="'+esc(S.nick)+'" placeholder="Seu apelido"></label></div><button class="btn sec" data-act="join"'+(canRoom?'':' disabled')+'>Entrar na sala</button><p class="err" role="status">'+esc(S.joinErr)+'</p></section>';
     h+='<section class="panel"><div class="tag">As cartas</div><div class="gallery">'+cfg.gallery().map(function(g){return cardHtml(g[0],g[1],{up:true})}).join('')+'</div></section>';
-    h+='<section class="panel"><div class="tag">Como jogar'+(cfg.modes?' · '+esc(modoAtual().nome):'')+'</div>'+(typeof cfg.rules==='function'?cfg.rules(S.modo):cfg.rules)+'</section>';
     return h;
   }
   function modoAtual(){for(var i=0;i<(cfg.modes||[]).length;i++)if(cfg.modes[i].id===S.modo)return cfg.modes[i];return cfg.modes?cfg.modes[0]:null}
@@ -127,7 +127,7 @@ function start(cfg){
   function myEntry(){var G=S.G;if(!G)return null;if(S.mode==='pass')return null;for(var i=0;i<G.pl.length;i++)if(G.pl[i].id===S.myPeer)return G.pl[i];return null}
   function packG(G){return {r:'h',g:cfg.id,ph:G.ph,ep:G.ep,pl:G.pl.map(function(p){return [p.id,p.nick,p.role]}),dt:G.data,out:G.out,t0:G.t0,dur:G.dur,win:cfg.vitoria?cfg.vitoria(G):null}}
   function unpack(hp){return {ph:hp.ph,ep:hp.ep,pl:(hp.pl||[]).map(function(a){return {id:String(a[0]),nick:String(a[1]).slice(0,18),role:String(a[2])}}).filter(function(p){return cfg.cards[p.role]}),data:hp.dt||{},out:Array.isArray(hp.out)?hp.out.map(String):[],t0:+hp.t0||0,dur:+hp.dur||0,win:hp.win?String(hp.win).slice(0,80):null}}
-  function sync(){if(S.isHost&&S.rm){var o=S.G?packG(S.G):{r:'h',g:cfg.id,ph:'lobby',ep:0};sess.set({code:S.code,host:true,nick:S.nick,G:S.G,step:S.step,n:S.n,opts:S.opts,dur:S.dur,modo:S.modo});S.rm.presence(o).catch(function(){S.err='Não deu para atualizar a sala.';render()})}}
+  function sync(){if(S.isHost&&S.rm){var o=S.G?packG(S.G):{r:'h',g:cfg.id,ph:'lobby',ep:0};sess.set({code:S.code,host:true,nick:S.nick,G:S.G,step:S.step,n:S.n,opts:S.opts,dur:S.dur,modo:S.modo,hist:S.hist});S.rm.presence(o).catch(function(){S.err='Não deu para atualizar a sala.';render()})}}
   function onPeers(ch){
     S.peers=ch.peers;
     if(!S.myPeer){for(var i=0;i<ch.peers.length;i++)if(ch.peers[i].sameTab){S.myPeer=ch.peers[i].peer;break}}
@@ -152,7 +152,7 @@ function start(cfg){
   function retoma(){
     var o=sess.get();if(!o||!/^[A-Z0-9]{4}$/.test(o.code||''))return false;
     S.nick=o.nick||S.nick;S.mode='online';
-    if(o.host){if(o.G)S.G=o.G;S.step=o.step||0;if(o.n)S.n=o.n;if(o.opts)S.opts=o.opts;if(o.dur)S.dur=o.dur;if(o.modo)S.modo=o.modo}
+    if(o.host){if(o.G)S.G=o.G;S.step=o.step||0;if(o.n)S.n=o.n;if(o.opts)S.opts=o.opts;if(o.dur)S.dur=o.dur;if(o.modo)S.modo=o.modo;if(o.hist)S.hist=o.hist}
     joinRoom(o.code,!!o.host).then(function(){
       if(o.host){var mp=S.rm.peers().filter(function(q){return q.sameTab})[0];if(mp)S.myPeer=mp.peer;sync();enter(S.G?(S.G.ph==='rev'?'rev':'game'):'lobby')}
       else enter('wait');
@@ -166,8 +166,29 @@ function start(cfg){
   function toHome(){if(pushed){pushed=false;try{history.back();return}catch(e){}}doHome()}
   window.addEventListener('popstate',function(){pushed=false;if(S.screen!=='home')doHome()});
 
+  /* Distribui os papéis especiais (infiltrado, assassino, detetive...) para quem teve menos vezes,
+     e nunca para quem teve um na rodada anterior, quando dá. Vale para sala e para "um celular só". */
+  function distribui(list,roles){
+    var cont={};roles.forEach(function(r){cont[r]=(cont[r]||0)+1});
+    var comum=Object.keys(cont).sort(function(a,b){return cont[b]-cont[a]})[0];
+    if(!S.hist){try{S.hist=JSON.parse(sessionStorage.getItem(HK)||'null')}catch(e){}}
+    var H=S.hist;if(!H||typeof H.vezes!=='object'||Array.isArray(H.ultima))H=S.hist={vezes:{},ultima:{}};
+    var chave=function(p){return S.mode==='pass'?'n:'+String(p.nick).toLowerCase():'i:'+p.id};
+    var out=list.map(function(){return comum}),livre=list.map(function(){return true}),novas={};
+    /* cada papel especial, um por vez: ninguém repete o mesmo papel da rodada anterior,
+       e quem teve menos vezes aquele papel tem preferência. O resto é sorteio. */
+    shuffle(roles.filter(function(r){return r!==comum})).forEach(function(r){
+      var cand=shuffle(list.map(function(p,i){return i}).filter(function(i){return livre[i]}));
+      cand.sort(function(x,y){var kx=chave(list[x]),ky=chave(list[y]),u=H.ultima[r]||[];
+        var rx=u.indexOf(kx)>=0?1:0,ry=u.indexOf(ky)>=0?1:0;
+        return (rx-ry)||(((H.vezes[kx]||{})[r]||0)-((H.vezes[ky]||{})[r]||0))});
+      var i=cand[0];out[i]=r;livre[i]=false;var k=chave(list[i]);
+      H.vezes[k]=H.vezes[k]||{};H.vezes[k][r]=(H.vezes[k][r]||0)+1;(novas[r]=novas[r]||[]).push(k);
+    });
+    H.ultima=novas;try{sessionStorage.setItem(HK,JSON.stringify(H))}catch(e){}return out;
+  }
   function deal(list){
-    var n=list.length,su=cfg.setup(n,S.opts,S.modo),roles=su.roles;
+    var n=list.length,su=cfg.setup(n,S.opts,S.modo),roles=distribui(list,su.roles);
     var G={ph:'jogo',ep:(S.G?S.G.ep+1:1)+rand(1000)*1000,pl:list.map(function(p,i){return {id:p.id,nick:p.nick,role:roles[i]}}),data:su.data||{},out:[],t0:0,dur:S.dur};
     if(cfg.modes)G.data.modo=S.modo;if(cfg.afterDeal)cfg.afterDeal(G,S.opts,S.modo);
     S.G=G;S.step=0;S.crossed={};

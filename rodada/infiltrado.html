@@ -17,7 +17,7 @@ body.av-in .hero,body.av-in footer{display:none}
   <a class="back" href="./">← Todos os jogos da Rodada</a>
   <header class="hero">
     <h1 class="lock" aria-label="Infiltrado"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="14" r="10" fill="#2EE6C8"></circle><circle cx="81" cy="32" r="10" fill="#2EE6C8"></circle><circle cx="81" cy="68" r="10" fill="#2EE6C8"></circle><circle cx="50" cy="86" r="10" fill="#2EE6C8"></circle><circle cx="19" cy="68" r="10" fill="#2EE6C8"></circle><circle cx="19" cy="32" r="8" fill="none" stroke="#FF6B8B" stroke-width="4"></circle></svg><span aria-hidden="true">infiltrado</span></h1>
-    <p class="muted" style="font-size:18px">Todo mundo sabe onde está. Menos um. Façam perguntas, desconfiem das respostas e descubram o infiltrado antes que ele descubra o lugar. Para 3 a 12 pessoas, mais de 120 lugares e dois jeitos de jogar.</p>
+    <p class="muted" style="font-size:18px">Todo mundo sabe onde está. Menos um. Com perguntas de sim ou não, ou com uma palavra cada, descubram o infiltrado antes que ele se safe. Para 3 a 12 pessoas, mais de 120 lugares e dois jeitos de jogar.</p>
   </header>
   <div id="app"></div>
   <footer>Rodada Ao Vivo · versão de teste. Crie a sala, mande o código e cada um joga no seu celular. No modo "Um celular só", basta um aparelho.</footer>
@@ -35,6 +35,7 @@ var P={
  doido:{nome:'Aleatório',l:['Estação espacial','Submarino','Navio pirata','Castelo medieval','Casa do reality show','Fábrica do Papai Noel','Cidade do faroeste','Nave alienígena','Ilha deserta','Shopping no apocalipse zumbi','Transatlântico em 1912','Pirâmide no Egito antigo','Fundo do mar','Base na Antártida','Bastidores de um show de mágica','Laboratório de cientista maluco']}
 };
 var ORD=['br','festa','viagem','cidade','trabalho','doido'];
+var ultimoSt=null;try{ultimoSt=sessionStorage.getItem('rav:in:st')}catch(e){}
 var I={
  pin:'<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"><path d="M50 90 C30 64 22 54 22 40 A28 28 0 0 1 78 40 C78 54 70 64 50 90Z"/><circle cx="50" cy="40" r="10" fill="currentColor"/></svg>',
  inf:'<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="38" stroke-dasharray="6 10"/><path d="M38 38 Q38 26 50 26 Q62 26 62 37 Q62 46 50 50 V58"/><circle cx="50" cy="71" r="3.5" fill="currentColor"/></svg>'
@@ -53,6 +54,10 @@ var usados=[];try{usados=JSON.parse(sessionStorage.getItem('rav:in:usados2')||'[
 function pool(o){var ks=ORD.filter(function(k){return o&&o['p_'+k]});if(!ks.length)ks=ORD;var a=[];L.forEach(function(x,i){if(ks.indexOf(x[1])>=0)a.push(i)});return a}
 function sorteiaLugar(o){var p=pool(o),livres=p.filter(function(i){return usados.indexOf(i)<0});if(!livres.length){usados=usados.filter(function(i){return p.indexOf(i)<0});livres=p}
  var l=livres[rand(livres.length)];usados.push(l);try{sessionStorage.setItem('rav:in:usados2',JSON.stringify(usados))}catch(e){}return l}
+function regrasTodas(){return '<ol class="rules"><li><b>Todos menos um</b> recebem a mesma carta com o lugar. <b>O infiltrado</b> recebe uma carta sem lugar.</li><li><b>Cada rodada tem 8 minutos.</b> A turma pode votar a qualquer momento: a maioria tira a pessoa e a carta dela aparece.</li></ol>'+
+ '<div class="tag" style="margin-top:6px">Dois jeitos de jogar</div>'+
+ '<div style="display:grid;gap:10px"><div><h3 style="font-size:18px">1. Perguntas</h3><ul class="rules"><li>Na sua vez, faça uma pergunta <b>fechada</b> para alguém: só vale resposta de sim ou não, tem ou não tem. Quem respondeu faz a próxima.</li><li><b>Não vale perguntar duas vezes</b> para a mesma pessoa na rodada.</li><li><b>O infiltrado vence se descobrir o lugar.</b> A qualquer momento ele se revela e dá um palpite: acertou, ganhou; errou, perdeu.</li><li><b>O grupo vence</b> se votar no infiltrado antes.</li></ul></div>'+
+ '<div><h3 style="font-size:18px">2. Uma palavra</h3><ul class="rules"><li>Na ordem da roda, cada um fala <b>uma palavra</b> ligada ao lugar. Nem óbvia demais, nem vaga demais.</li><li>Depois de cada volta, a turma pode votar.</li><li><b>O infiltrado vence se sair ileso</b> até o fim dos 8 minutos.</li><li><b>O grupo vence</b> se votar no infiltrado.</li></ul></div></div>'}
 function regrasPerguntas(){return '<ol class="rules"><li><b>Todos menos um</b> recebem a mesma carta com o lugar. <b>O infiltrado</b> recebe uma carta sem lugar.</li><li><b>Na sua vez</b>, faça uma pergunta <b>fechada</b> para alguém: só vale resposta de sim ou não, tem ou não tem. Quem respondeu faz a próxima pergunta.</li><li><b>Não vale perguntar duas vezes</b> para a mesma pessoa na rodada.</li><li><b>O infiltrado vence</b> se descobrir o lugar: a qualquer momento ele pode se revelar e dar um palpite. Acertou, ganhou. Errou, perdeu.</li><li><b>O grupo vence</b> se a maioria votar no infiltrado antes do fim dos 8 minutos.</li></ol>'}
 function regrasPalavra(){return '<ol class="rules"><li><b>Todos menos um</b> recebem a mesma carta com o lugar. <b>O infiltrado</b> recebe uma carta sem lugar.</li><li><b>Na ordem da roda</b>, cada um fala <b>uma palavra</b> ligada ao lugar. Nem óbvia demais (entrega para o infiltrado), nem vaga demais (você vira suspeito).</li><li><b>Depois de cada volta</b>, a turma pode votar em quem acha que é o infiltrado. A maioria tira a pessoa e a carta dela aparece.</li><li><b>O infiltrado vence</b> se sair ileso: não for votado até o fim dos 8 minutos.</li><li><b>O grupo vence</b> se votar no infiltrado.</li></ol>'}
 RodadaAoVivo.start({
@@ -63,7 +68,11 @@ RodadaAoVivo.start({
  opts:ORD.map(function(k){return {id:'p_'+k,label:P[k].nome+' ('+P[k].l.length+' lugares)',def:true}}).concat([{id:'dois',label:'Dois infiltrados (a partir de 8 pessoas)',def:false}]),
  setup:function(n,o){var a=(o.dois&&n>=8)?2:1,r=[];for(var i=0;i<a;i++)r.push('infiltrado');while(r.length<n)r.push('local');return {roles:shuffle(r),data:{}}},
  afterDeal:function(G,o,modo){G.data.l=sorteiaLugar(o);G.data.modo=modo||'perguntas';
-   var ordem=shuffle(G.pl.map(function(p){return p.nick}));G.data.ord=ordem;G.data.st=ordem[0];
+   var ordem=shuffle(G.pl.map(function(p){return p.nick}));
+   /* quem começa não repete a rodada anterior */
+   if(ordem.length>1&&ordem[0]===ultimoSt)ordem.push(ordem.shift());
+   ultimoSt=ordem[0];try{sessionStorage.setItem('rav:in:st',ultimoSt)}catch(e){}
+   G.data.ord=ordem;G.data.st=ordem[0];
    /* lista de palpites do modo Perguntas: os lugares dos pacotes escolhidos */
    G.data.pk=ORD.filter(function(k){return o&&o['p_'+k]});},
  card:function(k,G){
@@ -87,7 +96,7 @@ RodadaAoVivo.start({
   return h;
  },
  revealExtra:function(G){var l=L[G.data&&G.data.l]||L[0];return '<p style="font-size:18px">O lugar era <b style="color:var(--acc)">'+esc(l[0])+'</b>.</p>'},
- rules:function(m){return m==='palavra'?regrasPalavra():regrasPerguntas()}
+ rules:regrasTodas
 });
 })();
 </script>
