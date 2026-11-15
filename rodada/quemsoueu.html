@@ -101,6 +101,7 @@ var app=document.getElementById('app'),testa=document.getElementById('testa');
 var S={screen:'home',n:6,ver:'geral',cats:{mus:true,tela:true,esp:true,net:true,ico:true,fam:true,fbr:true,fgr:true,fmd:true},nick:store.get('nick',''),code:'',joinCode:'',
   isHost:false,rm:null,myPeer:null,peers:[],G:null,mine:null,solo:null,used:{},err:'',joinErr:'',waitLong:false,hostGone:false,keepScroll:false};
 try{var hm=location.hash.match(/^#([A-Za-z0-9]{4})$/);if(hm)S.joinCode=hm[1].toUpperCase()}catch(e){}
+S.aba=S.joinCode?'entrar':'regras';
 var roomNs=null,roomKnown=false;
 var SK='rav:sess:quem',sess={get:function(){try{return JSON.parse(sessionStorage.getItem(SK)||'null')}catch(e){return null}},set:function(o){try{sessionStorage.setItem(SK,JSON.stringify(o))}catch(e){}},del:function(){try{sessionStorage.removeItem(SK)}catch(e){}}};
 try{claude.use('room').then(function(r){roomNs=r;roomKnown=true;if(!retoma())render()},function(){roomKnown=true;render()})}catch(e){roomKnown=true}
@@ -120,20 +121,25 @@ function catChips(){return '<div class="chips" role="group" aria-label="Categori
 function placaMini(i){var x=N[i];return '<div class="pl"><small>Quem sou eu?</small><b>'+esc(x[0])+'</b><i>'+esc(x[1])+'</i></div>'}
 function home(){
   var canRoom=!!roomNs;
-  var h='<section class="panel"><div class="tag">Como jogar</div><ol class="rules"><li><b>O anfitrião cria a sala</b> e manda o código. Cada um entra no próprio celular.</li><li><b>Sem olhar</b>, toque em "Colocar na testa" e encoste o celular na testa, com a tela virada para a turma.</li><li><b>Na sua vez</b>, faça perguntas de sim ou não: "Sou mulher?", "Sou brasileiro?". Ouviu um não, passa a vez.</li><li><b>Achou que sabe?</b> Fale o nome. Acertou, segure a tela e toque em "Acertei!".</li><li><b>Pontos:</b> quem descobre primeiro leva 3, o segundo 2 e os demais que acertarem 1. O placar soma a noite toda.</li></ol></section>';
+  var h=abasHtml(S.aba);
+  if(S.aba==='regras')return h+'<section class="panel"><div class="tag">Como jogar</div><ol class="rules"><li><b>O anfitrião cria a sala</b> e manda o código. Cada um entra no próprio celular.</li><li><b>Sem olhar</b>, toque em "Colocar na testa" e encoste o celular na testa, com a tela virada para a turma.</li><li><b>Na sua vez</b>, faça perguntas de sim ou não: "Sou mulher?", "Sou brasileiro?". Ouviu um não, passa a vez.</li><li><b>Achou que sabe?</b> Fale o nome. Acertou, segure a tela e toque em "Acertei!".</li><li><b>Pontos:</b> quem descobre primeiro leva 3, o segundo 2 e os demais que acertarem 1. O placar soma a noite toda.</li></ol></section>'+'<section class="panel"><div class="tag">A placa na testa</div><div class="placas">'+(S.ver==='fut'?['Pelé','Lionel Messi','Vinicius Júnior','Petković']:['Taylor Swift','Pelé','Seu ex','Casimiro']).map(function(n){for(var i=0;i<N.length;i++)if(N[i][0]===n)return i;return 0}).map(placaMini).join('')+'</div><p class="small">Dois baralhos: o Geral, com cantores, atores, influenciadores e uns curingas da família, e o Futebol, com craques do Brasil, gringos e um nível difícil de medianos e folclóricos.</p></section>'+'<button class="btn" data-act="aba" data-v="comecar">Entendi, começar uma partida</button>';
+  if(S.aba==='entrar'){
+  h+='<section class="panel"><div class="tag">Entrar numa sala</div><p class="small">Quem criou a sala te passa um código de 4 letras.</p><div class="row"><label for="avCode">Código da sala<input type="text" class="code" id="avCode" maxlength="4" value="'+esc(S.joinCode)+'" placeholder="KX7Q" autocomplete="off"></label><label for="avNick2">Seu apelido<input type="text" id="avNick2" maxlength="18" value="'+esc(S.nick)+'" placeholder="Seu apelido"></label></div><button class="btn sec" data-act="join"'+(canRoom?'':' disabled')+'>Entrar na sala</button><p class="err" role="status">'+esc(S.joinErr)+'</p></section>';
+  return h}
   h+='<section class="panel"><div class="tag">Começar uma partida</div>'+
     '<p class="small">Este jogo é sempre cada um no seu celular: o aparelho fica na sua testa, virado para a turma.</p>'+
     '<div class="tag">Quantas pessoas</div><div class="stepper"><button data-act="n" data-v="-1" aria-label="Menos uma pessoa">−</button><b>'+S.n+'</b><button data-act="n" data-v="1" aria-label="Mais uma pessoa">+</button><span class="small">de '+MIN+' a '+MAX+'</span></div>'+
     '<div class="tag">Baralho</div>'+verSeg()+'<div class="tag">Quem pode sair na sua testa</div>'+catChips()+
     '<label for="avNick">Seu apelido<input type="text" id="avNick" maxlength="18" value="'+esc(S.nick)+'" placeholder="Como a turma te chama"></label>'+
     '<button class="btn" data-act="create"'+(canRoom?'':' disabled')+'>Criar sala</button>'+
-    (roomKnown&&!canRoom?'<p class="small">As salas ao vivo não estão disponíveis nesta visualização. Use "Sem sala" logo abaixo.</p>':'')+
+    (roomKnown&&!canRoom?'<p class="small">As salas ao vivo não estão disponíveis nesta visualização. Use "Sem sala" mais abaixo.</p>':'')+
     '<p class="err" role="status">'+esc(S.err)+'</p></section>';
-  h+='<section class="panel"><div class="tag">Recebeu um código?</div><div class="row"><label for="avCode">Código da sala<input type="text" class="code" id="avCode" maxlength="4" value="'+esc(S.joinCode)+'" placeholder="KX7Q" autocomplete="off"></label><label for="avNick2">Seu apelido<input type="text" id="avNick2" maxlength="18" value="'+esc(S.nick)+'" placeholder="Seu apelido"></label></div><button class="btn sec" data-act="join"'+(canRoom?'':' disabled')+'>Entrar na sala</button><p class="err" role="status">'+esc(S.joinErr)+'</p></section>';
   h+='<section class="panel"><div class="tag">Sem sala</div><p class="small">Cada pessoa abre esta página e sorteia um nome no próprio celular. Sem ranking, mas joga na hora.</p><button class="btn sec" data-act="solo">Sortear um nome para mim</button></section>';
-  h+='<section class="panel"><div class="tag">A placa na testa</div><div class="placas">'+(S.ver==='fut'?['Pelé','Lionel Messi','Vinicius Júnior','Petković']:['Taylor Swift','Pelé','Seu ex','Casimiro']).map(function(n){for(var i=0;i<N.length;i++)if(N[i][0]===n)return i;return 0}).map(placaMini).join('')+'</div><p class="small">Dois baralhos: o Geral, com cantores, atores, influenciadores e uns curingas da família, e o Futebol, com craques do Brasil, gringos e um nível difícil de medianos e folclóricos.</p></section>';
+  h+='<p class="small" style="text-align:center">Primeira vez? <button class="lnk" data-act="aba" data-v="regras">Veja como jogar</button></p>';
   return h;
 }
+function abasHtml(aba){var A=[['comecar','Começar uma partida','<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>'],['entrar','Entrar numa sala','<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/><path d="M10 16l4-4-4-4"/><path d="M14 12H4"/></svg>'],['regras','Como jogar','<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5V14"/><circle cx="12" cy="17.2" r=".6" fill="currentColor"/></svg>']];
+  return '<nav class="abas" aria-label="O que você quer fazer">'+A.map(function(a){return '<button data-act="aba" data-v="'+a[0]+'" aria-pressed="'+(aba===a[0])+'">'+a[2]+'<span>'+a[1]+'</span></button>'}).join('')+'</nav>'}
 function peopleHtml(list,meId){return '<div class="people">'+list.map(function(p){return '<span class="'+(p.id===meId?'me':'')+'">'+esc(p.nick)+(p.id===meId?' (você)':'')+'</span>'}).join('')+'</div>'}
 function lobby(){
   var ps=players(),n=ps.length+1,ok=n>=MIN&&n<=MAX;
@@ -288,6 +294,7 @@ app.addEventListener('click',function(e){
   var b=e.target.closest('[data-act]');if(!b)return;
   var a=b.dataset.act,v=b.dataset.v;S.err='';
   if(a==='n'){S.n=Math.max(MIN,Math.min(MAX,S.n+(+v)));S.keepScroll=true;render()}
+  else if(a==='aba'){S.aba=v;S.joinErr='';render();var ab=document.querySelector('.abas');if(ab)ab.scrollIntoView({block:'start'});return}
   else if(a==='ver'){S.ver=v==='fut'?'fut':'geral';S.keepScroll=true;render()}
   else if(a==='cat'){S.cats[v]=!S.cats[v];if(!(VERS[S.ver]||VERS.geral).some(function(k){return S.cats[k]}))S.cats[v]=true;S.keepScroll=true;render()}
   else if(a==='create'){

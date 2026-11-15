@@ -46,27 +46,28 @@ var esc=RodadaAoVivo.esc,rand=RodadaAoVivo.rand,shuffle=RodadaAoVivo.shuffle;
 /* todos os lugares numa lista só; cada um guarda o pacote */
 var L=[];ORD.forEach(function(k){P[k].l.forEach(function(n){L.push([n,k])})});
 var MODOS={
- perguntas:{nome:'Perguntas',desc:'Perguntas de sim ou não. O infiltrado tenta descobrir o lugar.'},
- palavra:{nome:'Uma palavra',desc:'Cada um fala uma palavra do lugar. O infiltrado tenta sair ileso.'}
+ perguntas:{nome:'Jeito 1 · Perguntas',desc:'Perguntas fechadas. O infiltrado vence se descobrir o lugar.'},
+ palavra:{nome:'Jeito 2 · Uma palavra',desc:'Uma palavra cada. O infiltrado vence se sair ileso.'}
 };
 /* lugares já jogados nesta aba não voltam até a lista acabar */
 var usados=[];try{usados=JSON.parse(sessionStorage.getItem('rav:in:usados2')||'[]').filter(function(i){return i>=0&&i<L.length})}catch(e){}
 function pool(o){var ks=ORD.filter(function(k){return o&&o['p_'+k]});if(!ks.length)ks=ORD;var a=[];L.forEach(function(x,i){if(ks.indexOf(x[1])>=0)a.push(i)});return a}
 function sorteiaLugar(o){var p=pool(o),livres=p.filter(function(i){return usados.indexOf(i)<0});if(!livres.length){usados=usados.filter(function(i){return p.indexOf(i)<0});livres=p}
  var l=livres[rand(livres.length)];usados.push(l);try{sessionStorage.setItem('rav:in:usados2',JSON.stringify(usados))}catch(e){}return l}
-function regrasTodas(){return '<ol class="rules"><li><b>Todos menos um</b> recebem a mesma carta com o lugar. <b>O infiltrado</b> recebe uma carta sem lugar.</li><li><b>Cada rodada tem 8 minutos.</b> A turma pode votar a qualquer momento: a maioria tira a pessoa e a carta dela aparece.</li></ol>'+
- '<div class="tag" style="margin-top:6px">Dois jeitos de jogar</div>'+
- '<div style="display:grid;gap:10px"><div><h3 style="font-size:18px">1. Perguntas</h3><ul class="rules"><li>Na sua vez, faça uma pergunta <b>fechada</b> para alguém: só vale resposta de sim ou não, tem ou não tem. Quem respondeu faz a próxima.</li><li><b>Não vale perguntar duas vezes</b> para a mesma pessoa na rodada.</li><li><b>O infiltrado vence se descobrir o lugar.</b> A qualquer momento ele se revela e dá um palpite: acertou, ganhou; errou, perdeu.</li><li><b>O grupo vence</b> se votar no infiltrado antes.</li></ul></div>'+
- '<div><h3 style="font-size:18px">2. Uma palavra</h3><ul class="rules"><li>Na ordem da roda, cada um fala <b>uma palavra</b> ligada ao lugar. Nem óbvia demais, nem vaga demais.</li><li>Depois de cada volta, a turma pode votar.</li><li><b>O infiltrado vence se sair ileso</b> até o fim dos 8 minutos.</li><li><b>O grupo vence</b> se votar no infiltrado.</li></ul></div></div>'}
+function regrasTodas(){return '<ol class="rules"><li><b>Todos menos um</b> recebem a mesma carta com o lugar. <b>O infiltrado</b> recebe uma carta sem lugar.</li><li><b>Com 8 pessoas ou mais</b>, entram 2 infiltrados. O sorteio faz isso sozinho.</li><li><b>Cada rodada tem 8 minutos.</b> A turma pode votar a qualquer momento: a maioria tira a pessoa e a carta dela aparece.</li></ol>'+
+ '<div class="tag" style="margin-top:6px">Escolha um dos dois jeitos de jogar</div>'+
+ '<div class="modos2"><div><span class="k">Jeito 1</span><h3>Perguntas</h3><ul class="rules"><li>Na sua vez, faça uma <b>pergunta fechada</b> para alguém: sim ou não, tem ou não tem, faz frio ou faz calor etc.</li><li><b>Não vale perguntar duas vezes</b> para a mesma pessoa. Quem respondeu faz a próxima.</li></ul><p class="meta">O infiltrado vence se descobrir o lugar.</p><p class="small">A qualquer momento ele se revela e dá um palpite: acertou, ganhou; errou, perdeu.</p></div>'+
+ '<div class="b"><span class="k">Jeito 2</span><h3>Uma palavra</h3><ul class="rules"><li>Na ordem da roda, cada um fala <b>uma palavra</b> ligada ao lugar.</li><li>Nem óbvia demais (entrega o lugar), nem vaga demais (vira suspeito). Depois de cada volta, dá para votar.</li></ul><p class="meta">O infiltrado vence se sair ileso.</p><p class="small">Basta não ser votado até o fim dos 8 minutos.</p></div></div>'}
 function regrasPerguntas(){return '<ol class="rules"><li><b>Todos menos um</b> recebem a mesma carta com o lugar. <b>O infiltrado</b> recebe uma carta sem lugar.</li><li><b>Na sua vez</b>, faça uma pergunta <b>fechada</b> para alguém: só vale resposta de sim ou não, tem ou não tem. Quem respondeu faz a próxima pergunta.</li><li><b>Não vale perguntar duas vezes</b> para a mesma pessoa na rodada.</li><li><b>O infiltrado vence</b> se descobrir o lugar: a qualquer momento ele pode se revelar e dar um palpite. Acertou, ganhou. Errou, perdeu.</li><li><b>O grupo vence</b> se a maioria votar no infiltrado antes do fim dos 8 minutos.</li></ol>'}
 function regrasPalavra(){return '<ol class="rules"><li><b>Todos menos um</b> recebem a mesma carta com o lugar. <b>O infiltrado</b> recebe uma carta sem lugar.</li><li><b>Na ordem da roda</b>, cada um fala <b>uma palavra</b> ligada ao lugar. Nem óbvia demais (entrega para o infiltrado), nem vaga demais (você vira suspeito).</li><li><b>Depois de cada volta</b>, a turma pode votar em quem acha que é o infiltrado. A maioria tira a pessoa e a carta dela aparece.</li><li><b>O infiltrado vence</b> se sair ileso: não for votado até o fim dos 8 minutos.</li><li><b>O grupo vence</b> se votar no infiltrado.</li></ol>'}
 RodadaAoVivo.start({
  id:'infiltrado',nome:'Infiltrado',cardTop:'',min:3,max:12,def:6,hostPlays:true,hostLabel:'O anfitrião',hostSeesRoles:false,outs:false,backSvg:back,cards:C,
  timer:{def:8,opts:[5,8,10]},
  modes:[{id:'perguntas',nome:MODOS.perguntas.nome,desc:MODOS.perguntas.desc},{id:'palavra',nome:MODOS.palavra.nome,desc:MODOS.palavra.desc}],
+ aviso:function(n){return n>=8?'Com 8 pessoas ou mais, entram 2 infiltrados.':'Até 7 pessoas, 1 infiltrado. Com 8 ou mais, entram 2.'},
  optsTitle:'Lugares',
- opts:ORD.map(function(k){return {id:'p_'+k,label:P[k].nome+' ('+P[k].l.length+' lugares)',def:true}}).concat([{id:'dois',label:'Dois infiltrados (a partir de 8 pessoas)',def:false}]),
- setup:function(n,o){var a=(o.dois&&n>=8)?2:1,r=[];for(var i=0;i<a;i++)r.push('infiltrado');while(r.length<n)r.push('local');return {roles:shuffle(r),data:{}}},
+ opts:ORD.map(function(k){return {id:'p_'+k,label:P[k].nome+' ('+P[k].l.length+' lugares)',def:true}}),
+ setup:function(n,o){var a=n>=8?2:1,r=[];for(var i=0;i<a;i++)r.push('infiltrado');while(r.length<n)r.push('local');return {roles:shuffle(r),data:{}}},
  afterDeal:function(G,o,modo){G.data.l=sorteiaLugar(o);G.data.modo=modo||'perguntas';
    var ordem=shuffle(G.pl.map(function(p){return p.nick}));
    /* quem começa não repete a rodada anterior */
@@ -88,7 +89,7 @@ RodadaAoVivo.start({
    var ord=(G.data.ord||[]).map(function(n,i){return (i?'<i>→</i>':'')+'<span>'+esc(n)+'</span>'}).join('');
    h+='<section class="panel"><div class="tag">Modo Uma palavra · ordem da roda</div><div class="mix" style="align-items:center;gap:6px">'+ord+'</div><p class="small">Cada um fala uma palavra ligada ao lugar, nessa ordem. No fim de cada volta, a turma pode votar. O infiltrado vence se sair ileso.</p></section>';
   }else{
-   h+='<section class="panel" style="text-align:center"><div class="tag">Modo Perguntas · quem começa perguntando</div><p style="font-size:22px;font-weight:800">'+esc(G.data.st||'')+'</p><p class="small">Só pergunta fechada: sim ou não, tem ou não tem. Não vale perguntar duas vezes para a mesma pessoa.</p></section>';
+   h+='<section class="panel" style="text-align:center"><div class="tag">Modo Perguntas · quem começa perguntando</div><p style="font-size:22px;font-weight:800">'+esc(G.data.st||'')+'</p><p class="small">Só pergunta fechada: sim ou não, tem ou não tem, faz frio ou faz calor etc. Não vale perguntar duas vezes para a mesma pessoa. O infiltrado vence se descobrir o lugar.</p></section>';
    var ks=(G.data.pk&&G.data.pk.length)?G.data.pk:ORD,lista=[];L.forEach(function(x,i){if(ks.indexOf(x[1])>=0)lista.push(i)});
    lista.sort(function(a,b){return L[a][0].localeCompare(L[b][0],'pt')});
    h+='<details class="panel"><summary style="cursor:pointer;font-weight:700">Lugares possíveis ('+lista.length+') · risque os que já descartou</summary><div class="locais" style="margin-top:12px">'+lista.map(function(i){var x=!!(crossed&&crossed[i]);return '<button data-act="cross" data-v="'+i+'" class="'+(x?'x':'')+'" aria-pressed="'+x+'">'+esc(L[i][0])+'</button>'}).join('')+'</div></details>';

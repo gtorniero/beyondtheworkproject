@@ -21,6 +21,7 @@ function start(cfg){
   (cfg.opts||[]).forEach(function(o){S.opts[o.id]=o.def});
   S.modo=cfg.modes?cfg.modes[0].id:null;
   try{var hm=location.hash.match(/^#([A-Za-z0-9]{4})$/);if(hm)S.joinCode=hm[1].toUpperCase()}catch(e){}
+  S.aba=S.joinCode?'entrar':'regras';
   var roomNs=null,roomKnown=false,SK='rav:sess:'+cfg.id;
   var sess={get:function(){try{return JSON.parse(sessionStorage.getItem(SK)||'null')}catch(e){return null}},set:function(o){try{sessionStorage.setItem(SK,JSON.stringify(o))}catch(e){}},del:function(){try{sessionStorage.removeItem(SK)}catch(e){}}};
   try{claude.use('room').then(function(r){roomNs=r;roomKnown=true;if(!retoma())render()},function(){roomKnown=true;render()})}catch(e){roomKnown=true}
@@ -29,7 +30,7 @@ function start(cfg){
   function mixHtml(n){
     if(n<cfg.min||n>cfg.max)return '<p class="small">'+esc(cfg.nome)+' é para '+cfg.min+' a '+cfg.max+' pessoas.</p>';
     var r=cfg.setup(n,S.opts).roles,c={};r.forEach(function(k){c[k]=(c[k]||0)+1});
-    return '<div class="mix">'+Object.keys(cfg.cards).filter(function(k){return c[k]}).map(function(k){var d=cfg.cards[k];return '<span><i style="background:'+d.c+'">'+c[k]+'</i>'+esc(c[k]>1?(d.plural||d.nome):d.nome)+'</span>'}).join('')+'</div>';
+    return (cfg.aviso?'<p class="small">'+esc(cfg.aviso(n)||'')+'</p>':'')+'<div class="mix">'+Object.keys(cfg.cards).filter(function(k){return c[k]}).map(function(k){var d=cfg.cards[k];return '<span><i style="background:'+d.c+'">'+c[k]+'</i>'+esc(c[k]>1?(d.plural||d.nome):d.nome)+'</span>'}).join('')+'</div>';
   }
   function cardHtml(role,G,opts,pl){
     opts=opts||{};var d=cfg.card(role,G||{},pl||null);
@@ -43,7 +44,12 @@ function start(cfg){
   /* ---------- telas ---------- */
   function home(){
     var online=S.mode==='online',canRoom=!!roomNs;
-    var h='<section class="panel"><div class="tag">Como jogar</div>'+(typeof cfg.rules==='function'?cfg.rules(S.modo):cfg.rules)+'</section>';
+    var regras='<section class="panel" id="avRegras"><div class="tag">Como jogar</div>'+(typeof cfg.rules==='function'?cfg.rules(S.modo):cfg.rules)+'</section>'+
+      '<section class="panel"><div class="tag">As cartas</div><div class="gallery">'+cfg.gallery().map(function(g){return cardHtml(g[0],g[1],{up:true})}).join('')+'</div></section>'+
+      '<button class="btn" data-act="aba" data-v="comecar">Entendi, começar uma partida</button>';
+    var h=abasHtml(S.aba);
+    if(S.aba==='regras')return h+regras;
+    if(S.aba==='comecar'){
     h+='<section class="panel"><div class="tag">Começar uma partida</div>'+
       '<div class="seg" role="group" aria-label="Como vão jogar"><button data-act="mode" data-v="online" aria-pressed="'+online+'">Cada um no seu celular<span>O anfitrião cria a sala; a turma entra com o código.</span></button><button data-act="mode" data-v="pass" aria-pressed="'+(!online)+'">Um celular só<span>Passa de mão em mão; cada um vê a sua carta.</span></button></div>'+
       (cfg.modes?'<div class="tag">Modo de jogo</div><div class="seg" role="group" aria-label="Modo de jogo">'+cfg.modes.map(function(m){return '<button data-act="modo" data-v="'+m.id+'" aria-pressed="'+(S.modo===m.id)+'">'+esc(m.nome)+'<span>'+esc(m.desc)+'</span></button>'}).join('')+'</div>':'')+
@@ -62,10 +68,13 @@ function start(cfg){
       if(!cfg.hostPlays)h+='<p class="small">'+esc(cfg.hostLabel)+' segura o celular e não recebe carta.</p>';
     }
     h+='<p class="err" role="status">'+esc(S.err)+'</p></section>';
-    h+='<section class="panel"><div class="tag">Recebeu um código?</div><div class="row"><label for="avCode">Código da sala<input type="text" class="code" id="avCode" maxlength="4" value="'+esc(S.joinCode)+'" placeholder="KX7Q" autocomplete="off"></label><label for="avNick2">Seu apelido<input type="text" id="avNick2" maxlength="18" value="'+esc(S.nick)+'" placeholder="Seu apelido"></label></div><button class="btn sec" data-act="join"'+(canRoom?'':' disabled')+'>Entrar na sala</button><p class="err" role="status">'+esc(S.joinErr)+'</p></section>';
-    h+='<section class="panel"><div class="tag">As cartas</div><div class="gallery">'+cfg.gallery().map(function(g){return cardHtml(g[0],g[1],{up:true})}).join('')+'</div></section>';
+    h+='<p class="small" style="text-align:center">Primeira vez? <button class="lnk" data-act="aba" data-v="regras">Veja como jogar</button></p>';
+    return h;}
+    h+='<section class="panel"><div class="tag">Entrar numa sala</div><p class="small">Quem criou a sala te passa um código de 4 letras.</p><div class="row"><label for="avCode">Código da sala<input type="text" class="code" id="avCode" maxlength="4" value="'+esc(S.joinCode)+'" placeholder="KX7Q" autocomplete="off"></label><label for="avNick2">Seu apelido<input type="text" id="avNick2" maxlength="18" value="'+esc(S.nick)+'" placeholder="Seu apelido"></label></div><button class="btn sec" data-act="join"'+(canRoom?'':' disabled')+'>Entrar na sala</button><p class="err" role="status">'+esc(S.joinErr)+'</p></section>';
     return h;
   }
+  function abasHtml(aba){var A=[['comecar','Começar uma partida','<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>'],['entrar','Entrar numa sala','<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/><path d="M10 16l4-4-4-4"/><path d="M14 12H4"/></svg>'],['regras','Como jogar','<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5V14"/><circle cx="12" cy="17.2" r=".6" fill="currentColor"/></svg>']];
+  return '<nav class="abas" aria-label="O que você quer fazer">'+A.map(function(a){return '<button data-act="aba" data-v="'+a[0]+'" aria-pressed="'+(aba===a[0])+'">'+a[2]+'<span>'+a[1]+'</span></button>'}).join('')+'</nav>'}
   function modoAtual(){for(var i=0;i<(cfg.modes||[]).length;i++)if(cfg.modes[i].id===S.modo)return cfg.modes[i];return cfg.modes?cfg.modes[0]:null}
   function lobby(){
     var ps=players(),n=ps.length+(cfg.hostPlays?1:0),ok=n>=cfg.min&&n<=cfg.max;
@@ -200,6 +209,7 @@ function start(cfg){
     if(!b){var c=e.target.closest('#myCard');if(c){S.cardOn=!S.cardOn;c.classList.toggle('on',S.cardOn);var hn=c.parentNode.querySelector('.hint');if(hn)hn.textContent='Toque na carta para '+(S.cardOn?'esconder':'ver')+'.'}return}
     var a=b.dataset.act,v=b.dataset.v;
     if(a==='opt')return;
+    if(a==='aba'){S.aba=v;S.err='';S.joinErr='';render();var ab=document.querySelector('.abas');if(ab)ab.scrollIntoView({block:'start',behavior:'auto'});return}
     S.err='';
     if(a==='mode'){S.mode=v;render()}
     else if(a==='modo'){S.modo=v;if(cfg.onModo)cfg.onModo(v,S);S.keepScroll=true;render()}

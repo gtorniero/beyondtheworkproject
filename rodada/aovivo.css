@@ -99,3 +99,20 @@ body.av-in .av{gap:12px}
 .av-in .rc .ln{font-size:clamp(11px,5.2cqw,16px)}
 .av-in .rc .xt{font-size:clamp(10px,4.2cqw,13px)}
 @media (prefers-reduced-motion:reduce){.rc .flip{transition:none}}
+
+/* três botões grandes no topo de cada jogo: começar, entrar, como jogar */
+.abas{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.abas button{min-height:92px;border:2px solid var(--line);background:var(--card);color:var(--fg);border-radius:18px;padding:12px 8px;font:800 15px/1.15 'Figtree',sans-serif;cursor:pointer;display:grid;justify-items:center;align-content:center;gap:8px;text-align:center}
+.abas button svg{width:28px;height:28px;color:var(--acc)}
+.abas button[aria-pressed="true"]{border-color:var(--acc);background:var(--acc-soft)}
+.abas button:focus-visible,.lnk:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+@media (max-width:350px){.abas button{font-size:13px}}
+.lnk{border:0;background:none;color:var(--fg);text-decoration:underline;font:700 14px 'Figtree',sans-serif;cursor:pointer;padding:6px 2px;min-height:44px}
+/* modos de jogo lado a lado */
+.modos2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:520px){.modos2{grid-template-columns:1fr}}
+.modos2>div{border:2px solid var(--acc);border-radius:16px;padding:14px;display:grid;gap:8px;align-content:start;background:var(--acc-soft)}
+.modos2>div.b{border-color:var(--bad);background:transparent}
+.modos2 .k{font:800 12px 'Figtree',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--fg2)}
+.modos2 h3{font-size:22px}
+.modos2 .meta{font-weight:800;border-top:1px solid var(--line);padding-top:8px}
