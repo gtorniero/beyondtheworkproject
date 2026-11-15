@@ -7,7 +7,7 @@ Versão aprovada: ADC-RZ-14-v2 · Retrozap · preço de novembro (R$ 13,99)
 - **Texto principal:** Quem manda mais "te amo"? ❤️ O recibo do amor conta. Façam a retrospectiva de vocês.
 - **Título:** Quem manda mais “te amo”?
 - **CTA:** No vídeo: "Façam a de vocês." / "Faça a do seu grupo." + retrozap.com.br. Botão do anúncio: Saiba mais.
-- **URL final:** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_casal_retro2026&utm_term=teamo&utm_content=ADC-RZ-14-v2
+- **URL final:** https://retrozap.com.br/?m=casal&utm_source=meta&utm_medium=paid_social&utm_campaign=rz_casal_retro2026&utm_term=teamo&utm_content=ADC-RZ-14-v2
 
 ## O que mudou
 Só o selo de preço do cartão final: "casal · R$ 8,99" virou "casal · R$ 13,99" (preço até 30/11). Vídeo, narração, trilha e copy iguais à v1 aprovada. A v1 (R$ 8,99) volta na promoção de 01 a 31/12.
