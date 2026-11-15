@@ -26,3 +26,8 @@ Mapa: Feed do Facebook e Instagram, Explorar, Marketplace → 4:5 (ou 1:1). Stor
 Vídeos sem áudio: a música, se houver, entra pela biblioteca da Meta.
 
 Nada foi enviado à conta de anúncios.
+
+## Adaptação de formato (15/11, aguardando aprovação)
+- `ADC-QD-03-v4_feed-coluna-1x1.png` (coluna da direita, Messenger, busca)
+- `ADC-QD-03-v4_busca-audience-1.91x1.png` (Audience Network, links)
+Quadro-chave do próprio vídeo aprovado, título do anúncio, sem preço. A versão aprovada do vídeo não mudou.

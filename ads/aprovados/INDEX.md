@@ -97,3 +97,6 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 - **Novos, AGUARDANDO aprovação ("aprovação rápida: só troca de preço"):** RZ-10-v2, RZ-11-v2, RZ-14-v2 com "casal · R$ 13,99" no cartão final. As v1 (R$ 8,99, aprovadas) ficam para a promo de 01 a 31/12.
 - **AGUARDANDO:** RK-01-v8 (70% da velocidade, 4 cenas), QD-11-v4 (11,4 s + cartão final com produto e CTA), QD-15-v3.
 - **Aprovado na rodada 8:** QD-12-v3 (música de banco).
+
+## 15/11 · Adaptação de formato (AGUARDANDO aprovação)
+- Estáticos 1:1 (`_feed-coluna-1x1.png`) e 1,91:1 (`_busca-audience-1.91x1.png`) novos nas pastas aprovadas de RZ-01-v5, RZ-02-v3, SF-03-v1, QD-01-v6, QD-03-v4 e QD-04-v5. O vídeo aprovado de cada um não mudou. Na Mesa: cards "-EST".
