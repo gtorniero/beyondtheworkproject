@@ -268,7 +268,9 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                 it["status"] = st
                 if "reserva" in (st.get("uso") or "").lower():
                     it["reserva"] = True
-                it["aprovado"] = st.get("liberado") is True and (st.get("status_mesa") or "").lower() == "aprovado"
+                # aceita "aprovado" puro ou com nota entre parênteses, ex.: "aprovado (música de banco, 15/11)"
+                it["aprovado"] = st.get("liberado") is True and bool(
+                    re.fullmatch(r"aprovado(\s*\(.*\))?", (st.get("status_mesa") or "").strip().lower()))
                 if not it["aprovado"]:
                     it["problemas"].append(f"não aprovado (liberado={st.get('liberado')}, "
                                            f"status_mesa={st.get('status_mesa')})")

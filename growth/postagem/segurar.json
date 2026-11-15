@@ -10,33 +10,6 @@
    "liberar_a_partir_de_v": 999,
    "motivo": "o Gui reprovou o conceito (15/11): nunca publicar",
    "desde": "2026-11-15"
-  },
-  {
-   "peca": "Q-R3",
-   "versoes": [
-    "S01-Q-R3-v1"
-   ],
-   "liberar_a_partir_de_v": 2,
-   "motivo": "reel mudo; só sai na versão com trilha, se o Gui aprovar",
-   "desde": "2026-11-15"
-  },
-  {
-   "peca": "R-R3",
-   "versoes": [
-    "S01-R-R3-v1"
-   ],
-   "liberar_a_partir_de_v": 2,
-   "motivo": "reel mudo; só sai na versão com trilha, se o Gui aprovar",
-   "desde": "2026-11-15"
-  },
-  {
-   "peca": "D-R3",
-   "versoes": [
-    "S01-D-R3-v1"
-   ],
-   "liberar_a_partir_de_v": 2,
-   "motivo": "reel mudo; só sai na versão com trilha, se o Gui aprovar",
-   "desde": "2026-11-15"
   }
  ]
 }
