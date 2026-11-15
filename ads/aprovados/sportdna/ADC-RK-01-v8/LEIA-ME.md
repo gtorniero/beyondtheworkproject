@@ -1,6 +1,6 @@
 # ADC-RK-01 · Piloto RACKET: antes de comprar, faça o teste
 
-Versão: ADC-RK-01-v8 · SPORT DNA · **aguardando aprovação na Mesa**
+Versão: ADC-RK-01-v8 · SPORT DNA · **aprovado na Mesa (15/11)**
 
 - **Objetivo:** Tráfego para o teste RACKET DNA (prévia grátis), com venda do relatório completo.
 - **Público:** Tenistas amadores que vão trocar de raquete (gancho de Black Friday, 27/11).

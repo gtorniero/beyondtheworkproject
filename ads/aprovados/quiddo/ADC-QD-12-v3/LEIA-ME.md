@@ -1,6 +1,6 @@
 # ADC-QD-12 · Amigos: o grupo virou jogo
 
-Versão: ADC-QD-12-v3 · Quiddo · **aguardando aprovação na Mesa**
+Versão: ADC-QD-12-v3 · Quiddo · **aprovado na Mesa (15/11)**
 
 - **Objetivo:** Tráfego para criar o quiz (teste grátis).
 - **Público:** Grupos de amigos de 20–40 anos que se reúnem em casa (interesses: jogos, encontros com amigos, noite de jogos).

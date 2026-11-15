@@ -104,3 +104,8 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 ## 15/11 · Regra nova do Gui: aprovação só do formato principal
 - O Gui aprova só o 9:16 (Reels) ou o 1:1 (estático). As outras dimensões são redimensionamento do aprovado e valem sem nova aprovação.
 - Por isso os estáticos 1:1 e 1,91:1 de RZ-01-v5, RZ-02-v3, SF-03-v1, QD-01-v6, QD-03-v4 e QD-04-v5 já VALEM (saíram da Mesa).
+
+## Status em 15/11, rodada 10 (TUDO APROVADO)
+- Aprovados agora: RZ-10-v2, RZ-11-v2, RZ-14-v2 (casal · R$ 13,99, link ?m=casal), RK-01-v8, QD-11-v4, QD-15-v3. Pastas completas com todas as dimensões.
+- Nenhum AD aguardando o Gui.
+- RZ-10/11/14 v1 (R$ 8,99) ficam para a promo de 01 a 31/12.

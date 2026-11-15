@@ -1,6 +1,6 @@
 # ADC-QD-11 · Família: quem conhece melhor essa família?
 
-Versão: ADC-QD-11-v4 · Quiddo · **aguardando aprovação na Mesa**
+Versão: ADC-QD-11-v4 · Quiddo · **aprovado na Mesa (15/11)**
 
 - **Objetivo:** Tráfego para criar o quiz (teste grátis).
 - **Público:** Quem organiza a noite de jogos, o almoço de domingo ou o Natal da família (25–55 anos; interesses: família, jogos de tabuleiro, festas de fim de ano).

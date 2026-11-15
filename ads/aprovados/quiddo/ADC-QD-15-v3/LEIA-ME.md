@@ -1,6 +1,6 @@
 # ADC-QD-15 · Confra: as histórias da turma valem um pódio
 
-Versão: ADC-QD-15-v3 · Quiddo · **aguardando aprovação na Mesa**
+Versão: ADC-QD-15-v3 · Quiddo · **aprovado na Mesa (15/11)**
 
 - **Objetivo:** Tráfego para criar o quiz (teste grátis).
 - **Público:** Quem organiza confraternização de fim de ano de turmas de amigos, times, grupos de esporte e turmas de faculdade (interesses: confraternização, festas de fim de ano, amigos).
