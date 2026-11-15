@@ -129,3 +129,18 @@ Mídia, legendas e agenda: GitHub, branch social, pasta packs/S02 (links diretos
 Antes de cada peça, cheque duplicidade no Registro de publicações, no Planejador e na grade do perfil. Depois, registre.
 Tudo vai agendado no Meta Business Suite, inclusive os stories (o CTA já está na arte). Não edite nada. Se der erro, pare e me mande print.
 ```
+
+## 15/11 · atualização (publicação pela API)
+- S02 Q-R4 -> S02-Q-R4-v2
+- S02 Q-R5 -> S02-Q-R5-v2
+- S02 Q-R6 -> S02-Q-R6-v2
+- S02 R-R4 -> S02-R-R4-v2
+- S02 R-R5 -> S02-R-R5-v2
+- S02 R-R6 -> S02-R-R6-v2
+- S02 D-R4 -> S02-D-R4-v2
+- S02 D-R5 -> S02-D-R5-v2
+- S02 D-R6 retirado (conceito reprovado)
+- S02 D-RX3 -> X-D-RX3-v3
+- S02 D-RX7 -> X-D-RX7-v3
+
+- Reels do S02 agora com trilha própria (antes mudos): a API não põe áudio do Instagram.

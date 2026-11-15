@@ -117,3 +117,8 @@ Mídia, legendas e agenda: GitHub, branch social, pasta packs/S03 (links diretos
 Antes de cada peça, cheque duplicidade no Registro de publicações, no Planejador e na grade do perfil. Depois, registre.
 Tudo vai agendado no Meta Business Suite, inclusive os stories (o CTA já está na arte). Não edite nada. Se der erro, pare e me mande print.
 ```
+
+## 15/11 · atualização (publicação pela API)
+- S03 D-RX6 -> X-D-RX6-v3
+- S03 D-RX8 -> X-D-RX8-v3
+- S03 D-RX4 v5 adicionado (ter 24)

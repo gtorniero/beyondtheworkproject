@@ -1,6 +1,6 @@
 {
  "pack": "S02",
- "liberadas": 56,
+ "liberadas": 55,
  "total": 56,
  "pecas": [
   {
@@ -19,7 +19,7 @@
    "formato": "reel",
    "dia": "ter 17/11",
    "hora": "19h45",
-   "versao": "S02-Q-R5-v1",
+   "versao": "S02-Q-R5-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -39,7 +39,7 @@
    "formato": "reel",
    "dia": "qui 19/11",
    "hora": "19h45",
-   "versao": "S02-Q-R6-v1",
+   "versao": "S02-Q-R6-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -59,7 +59,7 @@
    "formato": "reel",
    "dia": "sáb 21/11",
    "hora": "19h45",
-   "versao": "S02-Q-R4-v1",
+   "versao": "S02-Q-R4-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -159,7 +159,7 @@
    "formato": "reel",
    "dia": "ter 17/11",
    "hora": "19h45",
-   "versao": "S02-R-R4-v1",
+   "versao": "S02-R-R4-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -179,7 +179,7 @@
    "formato": "reel",
    "dia": "qui 19/11",
    "hora": "19h45",
-   "versao": "S02-R-R5-v1",
+   "versao": "S02-R-R5-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -199,7 +199,7 @@
    "formato": "reel",
    "dia": "sáb 21/11",
    "hora": "19h45",
-   "versao": "S02-R-R6-v1",
+   "versao": "S02-R-R6-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -290,7 +290,7 @@
    "formato": "reel",
    "dia": "ter 17/11",
    "hora": "19h45",
-   "versao": "S02-D-R4-v1",
+   "versao": "S02-D-R4-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -310,7 +310,7 @@
    "formato": "reel",
    "dia": "qui 19/11",
    "hora": "19h45",
-   "versao": "S02-D-R5-v1",
+   "versao": "S02-D-R5-v2",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -331,8 +331,8 @@
    "dia": "sáb 21/11",
    "hora": "19h45",
    "versao": "S02-D-R6-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "reprovado (v2 com trilha); não publicar"
   },
   {
    "peca": "D-C6",
@@ -532,7 +532,7 @@
    "formato": "reel",
    "dia": "16/11/2026 (seg)",
    "hora": "19h45",
-   "versao": "X-D-RX3-v2",
+   "versao": "X-D-RX3-v3",
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
@@ -565,7 +565,7 @@
    "formato": "reel",
    "dia": "22/11/2026 (dom)",
    "hora": "19h45",
-   "versao": "X-D-RX7-v2",
+   "versao": "X-D-RX7-v3",
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"

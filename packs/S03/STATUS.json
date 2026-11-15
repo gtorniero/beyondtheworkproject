@@ -1,7 +1,7 @@
 {
  "pack": "S03",
- "liberadas": 53,
- "total": 53,
+ "liberadas": 54,
+ "total": 54,
  "pecas": [
   {
    "peca": "Q-R7",
@@ -495,7 +495,7 @@
    "formato": "reel",
    "dia": "28/11/2026 (sáb)",
    "hora": "19h45",
-   "versao": "X-D-RX6-v2",
+   "versao": "X-D-RX6-v3",
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
@@ -528,7 +528,7 @@
    "formato": "reel",
    "dia": "30/11/2026 (seg) · extra",
    "hora": "19h45",
-   "versao": "X-D-RX8-v2",
+   "versao": "X-D-RX8-v3",
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
@@ -543,6 +543,17 @@
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+  },
+  {
+   "peca": "D-RX4",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "24/11/2026 (ter)",
+   "hora": "19h45",
+   "versao": "X-D-RX4-v5",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "reel extra aprovado na Mesa em 15/11"
   }
  ]
 }
