@@ -13,6 +13,18 @@ Material do Growth Manager para Retrozap, Quiddo e SportDNA.
 
 Painel: **BTW Growth Board** (artifact no claude.ai, aberto pelo link que o Claude enviou no chat).
 
+## Papéis e rotina (Gui, 15/11)
+
+| Quem | Faz | Quando |
+|---|---|---|
+| ChatGPT do Gui | Opera os anúncios na Meta e no Google (cria, pausa, orçamento), sempre com o ok do Gui | 1 vez por semana, lendo a [fila](anuncios/fila.csv) |
+| BTW Conteúdo (sessão do Estúdio) | Cria os ADs e o conteúdo orgânico a partir dos briefs do Growth; regras em `pipeline/ads/DIRECAO.md` (branch `social`) | Contínuo |
+| Gui | Aprova na Mesa só o formato principal (9:16 ou 1:1) | 1 vez por semana (revisão de domingo) |
+| Growth (Claude) | Posta o orgânico, mantém a fila de anúncios e a biblioteca da Meta, B2B (lojas, academias, creators) | Todo dia, às 9h47 |
+| Growth (Claude) | **Revisão semanal**: lê as campanhas da Meta e do Google e sugere otimizações, ranqueia os criativos e manda briefs de variação ao Conteúdo, propõe fontes novas de receita. Resultado em [semanal/](semanal/) | Toda quinta, às 8h42, antes da revisão de domingo |
+
+O Growth só lê as campanhas e sugere; quem executa é o ChatGPT, depois do ok do Gui.
+
 ## IDs que os agentes usam
 
 - Business: Beyond the Work `303359410698910` (não verificado)
