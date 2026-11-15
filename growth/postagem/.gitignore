@@ -1,0 +1,3 @@
+.postar.lock
+*.tmp
+__pycache__/

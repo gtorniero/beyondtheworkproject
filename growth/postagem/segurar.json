@@ -1,0 +1,19 @@
+{
+ "como_funciona": "Peça segurada não sai. Ela só volta a sair quando a agenda/STATUS do pack apontar uma versão diferente das listadas em 'versoes' (e, se houver, com número >= 'liberar_a_partir_de_v') e essa versão estiver aprovada. Para soltar de vez, apague a entrada.",
+ "segurar": [
+  {"peca": "Q-R4", "versoes": ["S01-Q-R4-v1", "S02-Q-R4-v1"], "liberar_a_partir_de_v": 2, "motivo": "reel mudo de propósito (feito para áudio em alta no app); só sai numa versão nova com trilha própria", "desde": "2026-11-15"},
+  {"peca": "Q-R5", "versoes": ["S02-Q-R5-v1"], "liberar_a_partir_de_v": 2, "motivo": "reel mudo de propósito (feito para áudio em alta no app); só sai numa versão nova com trilha própria", "desde": "2026-11-15"},
+  {"peca": "Q-R6", "versoes": ["S02-Q-R6-v1"], "liberar_a_partir_de_v": 2, "motivo": "reel mudo de propósito (feito para áudio em alta no app); só sai numa versão nova com trilha própria", "desde": "2026-11-15"},
+  {"peca": "R-R4", "versoes": ["S02-R-R4-v1"], "liberar_a_partir_de_v": 2, "motivo": "reel mudo de propósito (feito para áudio em alta no app); só sai numa versão nova com trilha própria", "desde": "2026-11-15"},
+  {"peca": "R-R5", "versoes": ["S02-R-R5-v1"], "liberar_a_partir_de_v": 2, "motivo": "reel mudo de propósito (feito para áudio em alta no app); só sai numa versão nova com trilha própria", "desde": "2026-11-15"},
+  {"peca": "R-R6", "versoes": ["S02-R-R6-v1"], "liberar_a_partir_de_v": 2, "motivo": "reel mudo de propósito (feito para áudio em alta no app); só sai numa versão nova com trilha própria", "desde": "2026-11-15"},
+  {"peca": "D-R4", "versoes": ["S02-D-R4-v1"], "liberar_a_partir_de_v": 2, "motivo": "reel mudo de propósito (feito para áudio em alta no app); só sai numa versão nova com trilha própria", "desde": "2026-11-15"},
+  {"peca": "D-R5", "versoes": ["S02-D-R5-v1"], "liberar_a_partir_de_v": 2, "motivo": "reel mudo de propósito (feito para áudio em alta no app); só sai numa versão nova com trilha própria", "desde": "2026-11-15"},
+  {"peca": "D-R6", "versoes": ["S02-D-R6-v1"], "liberar_a_partir_de_v": 2, "motivo": "reel mudo de propósito (feito para áudio em alta no app); só sai numa versão nova com trilha própria", "desde": "2026-11-15"},
+  {"peca": "D-RX3", "versoes": ["X-D-RX3-v2"], "liberar_a_partir_de_v": 3, "motivo": "ruído curto na voz; aguardando v3 aprovada", "desde": "2026-11-15"},
+  {"peca": "D-RX7", "versoes": ["X-D-RX7-v2"], "liberar_a_partir_de_v": 3, "motivo": "ruído curto na voz; aguardando v3 aprovada", "desde": "2026-11-15"},
+  {"peca": "D-RX6", "versoes": ["X-D-RX6-v2"], "liberar_a_partir_de_v": 3, "motivo": "ruído curto na voz; aguardando v3 aprovada", "desde": "2026-11-15"},
+  {"peca": "D-RX8", "versoes": ["X-D-RX8-v2"], "liberar_a_partir_de_v": 3, "motivo": "ruído curto na voz; aguardando v3 aprovada", "desde": "2026-11-15"},
+  {"peca": "D-RX4", "versoes": [], "liberar_a_partir_de_v": 5, "motivo": "ruído curto na voz; aguardando v5 aprovada", "desde": "2026-11-15"}
+ ]
+}

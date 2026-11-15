@@ -9,6 +9,7 @@ Material do Growth Manager para Retrozap, Quiddo e SportDNA.
 | [briefing-conteudo.md](briefing-conteudo.md) | Chat de conteúdo (Claude) | 14 criativos novos com gancho, formato e texto |
 | [briefing-chatgpt.md](briefing-chatgpt.md) | Agentes do ChatGPT | Tarefas de navegador na Meta e no Google, mais exportações semanais |
 | [medicao-spec.md](medicao-spec.md) | Claude Code nos repositórios dos sites | Eventos padrão, Conversions API, Consent Mode e checkout |
+| [postagem/](postagem/README.md) | Claude (publicador) | Publica a agenda aprovada do branch `social` no Instagram e no Facebook pela API |
 
 Painel: **BTW Growth Board** (artifact no claude.ai, aberto pelo link que o Claude enviou no chat).
 
