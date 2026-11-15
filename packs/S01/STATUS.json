@@ -61,7 +61,7 @@
    "hora": "19h45",
    "versao": "S01-Q-R3-v-musica",
    "liberado": true,
-   "status_mesa": "aprovado (música de banco Mixkit, 15/11)"
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-S4",
@@ -121,7 +121,7 @@
    "hora": "19h45",
    "versao": "S01-R-R3-v-musica",
    "liberado": true,
-   "status_mesa": "aprovado (música de banco Mixkit, 15/11)"
+   "status_mesa": "aprovado"
   },
   {
    "peca": "R-S4",
@@ -181,7 +181,7 @@
    "hora": "19h45",
    "versao": "S01-D-R3-v-musica",
    "liberado": true,
-   "status_mesa": "aprovado (música de banco Mixkit, 15/11)"
+   "status_mesa": "aprovado"
   }
  ]
 }
