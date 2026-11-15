@@ -1,7 +1,7 @@
 {
  "pack": "S03",
- "liberadas": 54,
- "total": 54,
+ "liberadas": 73,
+ "total": 73,
  "pecas": [
   {
    "peca": "Q-R7",
@@ -554,6 +554,215 @@
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "reel extra aprovado na Mesa em 15/11"
+  },
+  {
+   "peca": "Q-S20",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "30/11/2026 (seg)",
+   "hora": "12h",
+   "versao": "X-Q-S20-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "Q-S21",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "01/12/2026 (ter)",
+   "hora": "12h",
+   "versao": "X-Q-S21-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "Q-S22",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "02/12/2026 (qua)",
+   "hora": "12h",
+   "versao": "X-Q-S22-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "Q-S23",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "03/12/2026 (qui)",
+   "hora": "12h",
+   "versao": "X-Q-S23-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "Q-S24",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "04/12/2026 (sex)",
+   "hora": "12h",
+   "versao": "X-Q-S24-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "Q-S25",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "05/12/2026 (sáb)",
+   "hora": "12h",
+   "versao": "X-Q-S25-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "Q-S26",
+   "marca": "Quiddo",
+   "formato": "story",
+   "dia": "06/12/2026 (dom)",
+   "hora": "12h",
+   "versao": "X-Q-S26-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "R-S22",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "30/11/2026 (seg)",
+   "hora": "12h",
+   "versao": "X-R-S22-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "R-S23",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "01/12/2026 (ter)",
+   "hora": "12h",
+   "versao": "X-R-S23-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "R-S24",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "02/12/2026 (qua)",
+   "hora": "12h",
+   "versao": "X-R-S24-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "R-S25",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "03/12/2026 (qui)",
+   "hora": "12h",
+   "versao": "X-R-S25-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "R-S26",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "04/12/2026 (sex)",
+   "hora": "12h",
+   "versao": "X-R-S26-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "R-S27",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "05/12/2026 (sáb)",
+   "hora": "12h",
+   "versao": "X-R-S27-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "R-S28",
+   "marca": "Retrozap",
+   "formato": "story",
+   "dia": "06/12/2026 (dom)",
+   "hora": "12h",
+   "versao": "X-R-S28-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "D-S23",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "01/12/2026 (ter)",
+   "hora": "12h",
+   "versao": "X-D-S23-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "D-S24",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "02/12/2026 (qua)",
+   "hora": "12h",
+   "versao": "X-D-S24-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "D-S25",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "03/12/2026 (qui)",
+   "hora": "12h",
+   "versao": "X-D-S25-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "D-S27",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "05/12/2026 (sáb)",
+   "hora": "12h",
+   "versao": "X-D-S27-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "D-S28",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "06/12/2026 (dom)",
+   "hora": "12h",
+   "versao": "X-D-S28-v1",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
   }
  ]
 }

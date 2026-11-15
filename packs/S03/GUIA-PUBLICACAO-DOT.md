@@ -122,3 +122,6 @@ Tudo vai agendado no Meta Business Suite, inclusive os stories (o CTA já está 
 - S03 D-RX6 -> X-D-RX6-v3
 - S03 D-RX8 -> X-D-RX8-v3
 - S03 D-RX4 v5 adicionado (ter 24)
+
+## 15/11 · stories de 30/11 a 06/12
+- 19 stories liberados (12h, 1 por marca por dia). D-S22 (ter 01/12) e D-S26 (sáb 05/12) ainda na Mesa (v2).

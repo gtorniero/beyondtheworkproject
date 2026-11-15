@@ -91,3 +91,9 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 - **Aprovados na Mesa (valem):** RZ-10-v1, RZ-11-v1, RZ-12-v1, RZ-13-v2, RZ-14-v1, QD-13-v2, QD-14-v2, QD-16-v1, QD-17-v1, RN-04-v1, RN-05-v1, RK-02-v2, RK-07-v3, RK-08-v2, RK-09-v3, SF-08-v5, SF-09-v3, SF-10-v3.
 - **AGUARDANDO aprovação (não subir):** RK-01-v7 (17,3 s, mais lento, música de banco), QD-11-v3, QD-12-v3 e QD-15-v3 (música de banco Mixkit no lugar da trilha gerada).
 - **Preço:** até 30/11 o Retrozap custa R$ 13,99 (R$ 8,99 só na promo de 1 a 31/12). Não rodar antes de 01/12 os ADs com "R$ 8,99" na arte ou na copy: RZ-01-v2, RZ-02-v1, RZ-03, RZ-04, RZ-05, RZ-06, RZ-07, e o cartão final de RZ-10, RZ-11 e RZ-14.
+
+## Status em 15/11, rodada 9
+- **Correção:** RZ-03, RZ-04, RZ-05, RZ-06 e RZ-07 NÃO têm preço na arte nem na copy. Servem para novembro e dezembro como estão.
+- **Novos, AGUARDANDO aprovação ("aprovação rápida: só troca de preço"):** RZ-10-v2, RZ-11-v2, RZ-14-v2 com "casal · R$ 13,99" no cartão final. As v1 (R$ 8,99, aprovadas) ficam para a promo de 01 a 31/12.
+- **AGUARDANDO:** RK-01-v8 (70% da velocidade, 4 cenas), QD-11-v4 (11,4 s + cartão final com produto e CTA), QD-15-v3.
+- **Aprovado na rodada 8:** QD-12-v3 (música de banco).
