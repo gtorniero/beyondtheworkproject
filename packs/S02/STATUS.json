@@ -199,7 +199,7 @@
    "formato": "reel",
    "dia": "sáb 21/11",
    "hora": "19h45",
-   "versao": "S02-R-R6-v2",
+   "versao": "S02-R-R6-v3",
    "liberado": true,
    "status_mesa": "aprovado"
   },
@@ -444,7 +444,7 @@
    "formato": "story",
    "dia": "sex 20/11",
    "hora": "12h",
-   "versao": "X-R-S21-v1",
+   "versao": "X-R-S21-v2",
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "stories extras, aprovados na Mesa em 11/11"

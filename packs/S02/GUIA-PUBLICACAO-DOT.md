@@ -144,3 +144,5 @@ Tudo vai agendado no Meta Business Suite, inclusive os stories (o CTA já está 
 - S02 D-RX7 -> X-D-RX7-v3
 
 - Reels do S02 agora com trilha própria (antes mudos): a API não põe áudio do Instagram.
+
+- 15/11 (tarde): R-R6 v3 e R-S21 v2 aprovados, sem "R$ 8,99" (preço até 30/11 é R$ 13,99). Legenda do R-R6 sem preço.
