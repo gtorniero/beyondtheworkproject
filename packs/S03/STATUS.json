@@ -1,7 +1,7 @@
 {
  "pack": "S03",
- "liberadas": 73,
- "total": 73,
+ "liberadas": 75,
+ "total": 75,
  "pecas": [
   {
    "peca": "Q-R7",
@@ -763,6 +763,28 @@
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
+  },
+  {
+   "peca": "D-S22",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "01/12/2026 (ter)",
+   "hora": "12h",
+   "versao": "X-D-S22-v2",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 (rodada 9)"
+  },
+  {
+   "peca": "D-S26",
+   "marca": "SPORT DNA",
+   "formato": "story",
+   "dia": "05/12/2026 (sáb)",
+   "hora": "12h",
+   "versao": "X-D-S26-v2",
+   "liberado": true,
+   "status_mesa": "aprovado",
+   "origem": "stories 30/11–06/12 (rodada 9)"
   }
  ]
 }

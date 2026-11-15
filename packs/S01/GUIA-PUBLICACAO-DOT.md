@@ -64,3 +64,5 @@ Mídia, legendas e agenda: GitHub, branch social, pasta packs/S01 (links diretos
 Antes de cada peça, cheque duplicidade no Registro de publicações, no Planejador e na grade do perfil. Depois, registre.
 Tudo vai agendado no Meta Business Suite, inclusive os stories (o CTA já está na arte). Não edite nada. Se der erro, pare e me mande print.
 ```
+
+- 15/11: Q-R3, R-R3 e D-R3 agora com música de banco (Mixkit, licença comercial gratuita). Liberados para hoje 19h45.

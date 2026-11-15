@@ -59,9 +59,9 @@
    "formato": "reel",
    "dia": "dom 15/11",
    "hora": "19h45",
-   "versao": "S01-Q-R3-v2",
+   "versao": "S01-Q-R3-v-musica",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (música de banco Mixkit, 15/11)"
   },
   {
    "peca": "Q-S4",
@@ -119,9 +119,9 @@
    "formato": "reel",
    "dia": "dom 15/11",
    "hora": "19h45",
-   "versao": "S01-R-R3-v1",
+   "versao": "S01-R-R3-v-musica",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (música de banco Mixkit, 15/11)"
   },
   {
    "peca": "R-S4",
@@ -179,9 +179,9 @@
    "formato": "reel",
    "dia": "dom 15/11",
    "hora": "19h45",
-   "versao": "S01-D-R3-v1",
+   "versao": "S01-D-R3-v-musica",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (música de banco Mixkit, 15/11)"
   }
  ]
 }
