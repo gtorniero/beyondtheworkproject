@@ -2,7 +2,7 @@
  "pack": "S04",
  "periodo": "01/12 a 07/12/2026",
  "total": 24,
- "liberadas": 0,
+ "liberadas": 22,
  "pecas": [
   {
    "peca": "R-R12",
@@ -11,8 +11,8 @@
    "dia": "01/12/2026 (ter)",
    "hora": "19h45",
    "versao": "S04-R-R12-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "R-R13",
@@ -21,8 +21,8 @@
    "dia": "03/12/2026 (qui)",
    "hora": "19h45",
    "versao": "S04-R-R13-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "R-R14",
@@ -32,7 +32,7 @@
    "hora": "19h45",
    "versao": "S04-R-R14-v1",
    "liberado": false,
-   "status_mesa": "pendente"
+   "status_mesa": "reprovado"
   },
   {
    "peca": "R-R15",
@@ -41,8 +41,8 @@
    "dia": "07/12/2026 (seg)",
    "hora": "19h45",
    "versao": "S04-R-R15-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "R-C10",
@@ -51,8 +51,8 @@
    "dia": "02/12/2026 (qua)",
    "hora": "12h30",
    "versao": "S04-R-C10-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "R-C11",
@@ -61,8 +61,8 @@
    "dia": "04/12/2026 (sex)",
    "hora": "12h30",
    "versao": "S04-R-C11-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "R-C12",
@@ -71,8 +71,8 @@
    "dia": "06/12/2026 (dom)",
    "hora": "12h30",
    "versao": "S04-R-C12-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-R11",
@@ -81,8 +81,8 @@
    "dia": "01/12/2026 (ter)",
    "hora": "19h45",
    "versao": "S04-Q-R11-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-R12",
@@ -91,8 +91,8 @@
    "dia": "03/12/2026 (qui)",
    "hora": "19h45",
    "versao": "S04-Q-R12-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-R13",
@@ -101,8 +101,8 @@
    "dia": "05/12/2026 (sáb)",
    "hora": "19h45",
    "versao": "S04-Q-R13-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-R14",
@@ -111,8 +111,8 @@
    "dia": "07/12/2026 (seg)",
    "hora": "19h45",
    "versao": "S04-Q-R14-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-C10",
@@ -121,8 +121,8 @@
    "dia": "02/12/2026 (qua)",
    "hora": "12h30",
    "versao": "S04-Q-C10-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-C11",
@@ -131,8 +131,8 @@
    "dia": "04/12/2026 (sex)",
    "hora": "12h30",
    "versao": "S04-Q-C11-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-C12",
@@ -141,8 +141,8 @@
    "dia": "06/12/2026 (dom)",
    "hora": "12h30",
    "versao": "S04-Q-C12-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-R12",
@@ -151,8 +151,8 @@
    "dia": "01/12/2026 (ter)",
    "hora": "19h45",
    "versao": "S04-D-R12-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-R13",
@@ -162,7 +162,7 @@
    "hora": "19h45",
    "versao": "S04-D-R13-v1",
    "liberado": false,
-   "status_mesa": "pendente"
+   "status_mesa": "reprovado"
   },
   {
    "peca": "D-R14",
@@ -171,8 +171,8 @@
    "dia": "05/12/2026 (sáb)",
    "hora": "19h45",
    "versao": "S04-D-R14-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-R15",
@@ -181,8 +181,8 @@
    "dia": "07/12/2026 (seg)",
    "hora": "19h45",
    "versao": "S04-D-R15-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-C10",
@@ -191,8 +191,8 @@
    "dia": "02/12/2026 (qua)",
    "hora": "12h30",
    "versao": "S04-D-C10-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-C11",
@@ -201,8 +201,8 @@
    "dia": "04/12/2026 (sex)",
    "hora": "12h30",
    "versao": "S04-D-C11-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-C12",
@@ -211,8 +211,8 @@
    "dia": "06/12/2026 (dom)",
    "hora": "12h30",
    "versao": "S04-D-C12-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "Q-S27",
@@ -221,8 +221,8 @@
    "dia": "07/12/2026 (dom)",
    "hora": "12h",
    "versao": "S04-Q-S27-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "R-S29",
@@ -231,8 +231,8 @@
    "dia": "07/12/2026 (dom)",
    "hora": "12h",
    "versao": "S04-R-S29-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   },
   {
    "peca": "D-S29",
@@ -241,8 +241,8 @@
    "dia": "07/12/2026 (dom)",
    "hora": "12h",
    "versao": "S04-D-S29-v1",
-   "liberado": false,
-   "status_mesa": "pendente"
+   "liberado": true,
+   "status_mesa": "aprovado"
   }
  ]
 }
