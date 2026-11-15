@@ -47,3 +47,9 @@ Código: `pipeline/ads/reels/rz08.py`. Todo AD de todas as marcas segue essa té
 - Na Mesa vai SÓ o formato principal de cada AD: o 9:16 do Reels (vídeo) ou o 1:1 (estático). Não mandar 4:5, 16:9, 1,91:1, coluna da direita, Audience Network ou links para aprovação.
 - Aprovado o principal, o Estúdio prepara todas as outras dimensões a partir dele (mesmo conteúdo, só redimensionado/recortado) e entrega direto em ads/aprovados/<marca>/<ID>-vN/ para o Growth, sem nova aprovação.
 - Os cards da Mesa não listam as outras dimensões (só o LEIA-ME).
+
+## Divisão de papéis (Gui, 15/11)
+- **Estúdio (conteúdo):** só cria ADs, a partir dos briefs do Growth. Não abre produção nova por conta própria.
+- **Growth Manager:** analisa o que está funcionando melhor, define as variações do que performa e manda o brief ao Estúdio.
+- **Gui:** parou de autorizar coisas novas até a revisão de 22/11, porque a produção já passou da capacidade de execução. Até lá, o Estúdio só faz o que vier em brief do Growth e corrige o que já existe.
+- A Mesa continua sendo o único lugar de aprovação, com o formato principal apenas (9:16 ou 1:1).
