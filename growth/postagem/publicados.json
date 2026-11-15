@@ -1,4 +1,61 @@
 {
  "descricao": "Registro do growth/postagem/postar.py: o que já saiu (ou já existia) em cada rede.",
- "publicacoes": []
+ "publicacoes": [
+  {
+   "marca": "retrozap",
+   "peca": "R-S4",
+   "versao": "S01-R-S4-v1",
+   "pack": "S01",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-13T12:00:00-03:00",
+   "status": "publicado",
+   "media_id": "18120309404020234",
+   "permalink": "https://www.instagram.com/stories/retrozap.app/4031021166907133434",
+   "container_id": "17904461259396278",
+   "publicado_em": "2026-11-15T12:06:40-03:00"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-S4",
+   "versao": "S01-R-S4-v1",
+   "pack": "S01",
+   "formato": "story",
+   "plataforma": "facebook",
+   "agendado": "2026-11-13T12:00:00-03:00",
+   "status": "publicado",
+   "permalink": "",
+   "publicado_em": "2026-11-15T12:06:46-03:00",
+   "post_id": "4717063321859196",
+   "foto_id": "122111618073537718"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-S4",
+   "versao": "S01-Q-S4-v1",
+   "pack": "S01",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-13T12:00:00-03:00",
+   "status": "publicado",
+   "media_id": "18104421419357900",
+   "permalink": "https://www.instagram.com/stories/quiddo.app/4031021316828345055",
+   "container_id": "18131931601855686",
+   "publicado_em": "2026-11-15T12:06:59-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-S4",
+   "versao": "S01-Q-S4-v1",
+   "pack": "S01",
+   "formato": "story",
+   "plataforma": "facebook",
+   "agendado": "2026-11-13T12:00:00-03:00",
+   "status": "publicado",
+   "permalink": "",
+   "publicado_em": "2026-11-15T12:07:04-03:00",
+   "post_id": "1158856573463632",
+   "foto_id": "122110345857530679"
+  }
+ ]
 }
