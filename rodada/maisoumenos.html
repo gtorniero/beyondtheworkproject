@@ -1,0 +1,329 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/favicon.svg"><script src="sala.js"></script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Mais ou Menos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&display=swap">
+<style>
+/* Layout: cartas de jogo empilhadas numa coluna de 560px; placar em emojis no topo; cores da bandeira em blocos chapados */
+:root{
+  --fundo:#FFF8E6; --carta:#FFFFFF; --tinta:#11233F; --tinta-2:#55627A; --linha:#E8DFC7;
+  --verde:#009C58; --verde-bg:#DDF5E8; --amarelo:#FFCE1F; --azul:#1B3A8C; --erro:#D7263D; --erro-bg:#FBE1E4;
+  --f:'Rubik',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --fundo:#0E1726; --carta:#17233A; --tinta:#F2F4F8; --tinta-2:#A6B0C3; --linha:#2A3A57;
+  --verde:#2FD38A; --verde-bg:#123B2B; --amarelo:#FFD84D; --azul:#7EA2FF; --erro:#FF5C72; --erro-bg:#3F1A23; color-scheme:dark}}
+:root[data-theme="dark"]{--fundo:#0E1726; --carta:#17233A; --tinta:#F2F4F8; --tinta-2:#A6B0C3; --linha:#2A3A57;
+  --verde:#2FD38A; --verde-bg:#123B2B; --amarelo:#FFD84D; --azul:#7EA2FF; --erro:#FF5C72; --erro-bg:#3F1A23; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--f);font-size:16px;line-height:1.5;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px 48px}
+.wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.logo{display:inline-flex;align-items:center;gap:8px;font-family:'Bricolage Grotesque',var(--f);letter-spacing:-.045em;line-height:.85}
+.logo .bl{display:flex;align-items:flex-end;gap:3px}
+.logo .bl i{display:block;border-radius:50%}
+.logo .bl i:first-child{width:26px;height:26px;background:var(--verde)}
+.logo .bl i:last-child{width:12px;height:12px;border:3px solid var(--verde);box-sizing:border-box}
+.logo .w{display:flex;flex-direction:column}
+.logo .w b{font-weight:800;font-size:28px}
+.logo .w em{font-style:normal;font-weight:500;font-size:14px;color:var(--tinta-2)}
+.num{font-size:13px;color:var(--tinta-2);font-weight:600}
+.icon-btn{border:1.5px solid var(--linha);background:var(--carta);color:var(--tinta);border-radius:10px;padding:8px 12px;font:600 14px var(--f);cursor:pointer}
+.dots{display:flex;gap:6px;justify-content:center}
+.dots span{width:24px;height:8px;border-radius:99px;background:var(--linha)}
+.dots .ok{background:var(--verde)}.dots .no{background:var(--erro)}.dots .on{background:var(--amarelo)}
+.q{font-weight:800;font-size:clamp(22px,6vw,28px);line-height:1.15;text-align:center;text-wrap:balance}
+.cat{display:block;text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-2);font-weight:700;margin-bottom:6px}
+.pair{display:grid;gap:12px}
+.vs{text-align:center;font-weight:900;color:var(--tinta-2);font-size:14px;margin:-4px 0}
+.opt{border:2.5px solid var(--linha);background:var(--carta);color:var(--tinta);border-radius:18px;padding:20px 18px;text-align:left;cursor:pointer;font:inherit;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;transition:transform .12s, border-color .12s}
+.opt:hover:not(:disabled){border-color:var(--azul);transform:translateY(-1px)}
+.opt:disabled{cursor:default}
+.opt .em{font-size:38px;line-height:1}
+.opt .nm{font-weight:800;font-size:21px;line-height:1.15}
+.opt .sub{font-size:13px;color:var(--tinta-2)}
+.opt .val{grid-column:1/-1;display:grid;gap:6px}
+.opt .val b{font-weight:900;font-size:28px;font-variant-numeric:tabular-nums}
+.bar{height:10px;border-radius:99px;background:var(--linha);overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:99px;transition:width .7s ease-out}
+.opt.win{border-color:var(--verde);background:var(--verde-bg)}
+.opt.win .bar i{background:var(--verde)}
+.opt.lose .bar i{background:var(--tinta-2)}
+.opt.picked-wrong{border-color:var(--erro);background:var(--erro-bg)}
+.verdict{text-align:center;font-weight:900;font-size:22px}
+.verdict.ok{color:var(--verde)}.verdict.no{color:var(--erro)}
+.fact{background:var(--carta);border:1px solid var(--linha);border-radius:14px;padding:14px 16px;font-size:15px;display:grid;gap:4px}
+.fact small{color:var(--tinta-2);font-size:12.5px}
+.btn{border:0;border-radius:14px;padding:16px 20px;font:800 17px var(--f);cursor:pointer;width:100%}
+.btn-main{background:var(--azul);color:#fff}
+.btn-yellow{background:var(--amarelo);color:#11233F}
+.btn-sec{background:var(--carta);color:var(--tinta);border:1.5px solid var(--linha)}
+button:focus-visible{outline:3px solid var(--amarelo);outline-offset:2px}
+.hero{display:grid;gap:14px;text-align:center;padding-top:8px}
+.hero h1{margin:0;font-weight:900;font-size:clamp(40px,12vw,64px);line-height:.95;letter-spacing:-.02em}
+.hero h1 b{color:var(--verde)}.hero h1 i{font-style:normal;color:var(--azul)}
+.hero p{margin:0;color:var(--tinta-2);font-size:17px}
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;font-size:13px;color:var(--tinta-2)}
+.rules div{background:var(--carta);border:1px solid var(--linha);border-radius:12px;padding:12px 8px}
+.rules b{display:block;font-size:22px;color:var(--tinta)}
+.score{text-align:center;display:grid;gap:8px}
+.score .big{font-weight:900;font-size:72px;line-height:1;font-variant-numeric:tabular-nums}
+.grid{font-size:26px;letter-spacing:2px;text-align:center}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.stats div{background:var(--carta);border:1px solid var(--linha);border-radius:12px;padding:10px 4px}
+.stats b{display:block;font-weight:900;font-size:24px}
+.stats span{font-size:12px;color:var(--tinta-2)}
+.dist{display:grid;gap:4px;font-size:13px}
+.dist div{display:grid;grid-template-columns:28px 1fr;gap:8px;align-items:center}
+.dist i{display:block;height:18px;border-radius:4px;background:var(--linha);min-width:18px;color:var(--tinta);font-style:normal;font-size:12px;padding:0 6px;text-align:right;line-height:18px}
+.dist .me i{background:var(--verde);color:#fff}
+.ad{border:1px dashed var(--linha);border-radius:12px;padding:16px;text-align:center;font-size:12px;color:var(--tinta-2);letter-spacing:.1em;text-transform:uppercase}
+.cross{display:grid;gap:8px}
+.nextgame{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 18px;border-radius:20px;background:#F6EBCB;border:2px solid #E8A317;color:#1C1530;text-decoration:none;text-align:left}
+.nextgame .ng-l{display:flex;align-items:center;gap:14px;min-width:0}
+.nextgame .ng-l>span:last-child{display:grid;gap:2px}
+.ng-um{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:34px;letter-spacing:-.06em;line-height:1;flex:none}
+.ng-t{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#8A6100}
+.nextgame b{font-size:18px;line-height:1.2}
+.ng-s{font-size:14px;color:#5F5873}
+.ng-go{font-size:24px;font-weight:800;color:#8A6100}
+.nextgame:focus-visible{outline:3px solid #E8A317;outline-offset:2px}
+.cross a{display:flex;justify-content:space-between;gap:10px;background:var(--carta);border:1px solid var(--linha);border-radius:12px;padding:12px 14px;color:var(--tinta);text-decoration:none;font-weight:600}
+.cross a span{color:var(--tinta-2);font-weight:400;font-size:14px}
+.share-txt{white-space:pre-wrap;background:var(--carta);border:1px dashed var(--linha);border-radius:12px;padding:12px;font-size:15px;text-align:center}
+.toast{text-align:center;font-size:14px;color:var(--verde);font-weight:600;min-height:20px}
+.temas{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.temas span{background:var(--carta);border:1px solid var(--linha);border-radius:99px;padding:4px 10px;font-size:13px;font-weight:600}
+footer{font-size:12.5px;color:var(--tinta-2);text-align:center;border-top:1px solid var(--linha);padding-top:14px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <a href="./" style="font-size:14px;font-weight:600;color:var(--tinta-2);text-decoration:none;align-self:flex-start">← Todos os jogos da Rodada</a>
+  <div class="top"><div class="logo" role="img" aria-label="Mais ou Menos"><span class="bl" aria-hidden="true"><i></i><i></i></span><span class="w" aria-hidden="true"><b>mais</b><em>ou menos</em></span></div><span class="num" id="gnum"></span><button class="icon-btn" id="btn-stats" aria-label="Estatísticas">📊</button></div>
+
+  <section class="hero" id="hero">
+    <h1><b>Mais</b> ou<br><i>Menos</i></h1>
+    <p>Qual é maior? 10 duelos por dia, de baleia contra avião a Vênus contra Mercúrio. Um toque por duelo, com a fonte em cada carta.</p>
+    <div class="temas" id="temas"></div>
+    <div class="rules"><div><b>10</b>duelos por dia</div><div><b>1</b>toque por duelo</div><div><b>0h</b>jogo novo</div></div>
+    <button class="btn btn-main" id="play">Jogar o desafio de hoje</button>
+    <button class="btn btn-sec" id="demo">Ver 3 duelos de exemplo</button>
+  </section>
+
+  <section id="game" hidden>
+    <div class="dots" id="dots" aria-label="Progresso"></div>
+    <div><span class="cat" id="cat"></span><div class="q" id="q"></div></div>
+    <div class="pair" id="pair"></div>
+    <div id="after" hidden style="display:grid;gap:12px">
+      <div class="verdict" id="verdict" aria-live="polite"></div>
+      <div class="fact" id="fact"></div>
+      <button class="btn btn-main" id="next">Próximo duelo</button>
+    </div>
+  </section>
+
+  <section id="end" hidden style="display:grid;gap:16px">
+    <div class="score"><span class="cat" id="end-title">Desafio de hoje</span><div class="big" id="end-score"></div><div id="end-msg" style="font-weight:800;font-size:20px"></div><div class="grid" id="end-grid"></div></div>
+    <div><span class="cat" style="text-align:left">Seu card do dia</span><div id="rcardbox"></div></div>
+    <div class="share-txt" id="share-txt" hidden></div>
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <div class="stats" id="stats"></div>
+    <div><span class="cat" style="text-align:left">Distribuição de acertos</span><div class="dist" id="dist"></div></div>
+    <p style="text-align:center;margin:0;color:var(--tinta-2)">Próximo desafio em <b id="countdown"></b></p>
+    <a class="nextgame" href="1porcento.html"><span class="ng-l"><span class="ng-um" aria-hidden="true">1%</span><span><span class="ng-t">Agora jogue o 1%</span><b>Você está no topo? 10 perguntas de hoje</b><span class="ng-s">Futebol ou Conhecimentos gerais, com ranking do grupo e do Brasil.</span></span></span><span class="ng-go" aria-hidden="true">→</span></a>
+  </section>
+
+  <section id="demo-end" hidden style="display:grid;gap:16px">
+    <div class="score"><span class="cat">Exemplo · não conta na sequência</span><div class="big" id="demo-score"></div><div style="font-weight:800;font-size:20px">É assim que funciona</div><p style="margin:0;color:var(--tinta-2)">O desafio de verdade tem 10 duelos novos por dia, iguais para todo mundo, e vale para a sua sequência.</p></div>
+    <button class="btn btn-main" id="demo-play">Jogar o desafio de hoje</button>
+  </section>
+
+  <footer>Versão de teste. Números arredondados (médias de adultos, no caso dos bichos), com a fonte citada em cada duelo. Achou um erro? Na versão final, cada carta tem um botão para reportar.</footer>
+</div>
+
+<script src="cartao.js"></script>
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const nf=(v,d=1)=>v.toLocaleString('pt-BR',{maximumFractionDigits:d});
+const U={
+ hab:v=>(v>=1e6?nf(v/1e6,2)+' milhões':nf(v))+' hab.', km2:v=>v>=1e6?nf(v/1e6,2)+' milhões de km²':nf(v)+' km²',
+ m:v=>nf(v)+' m', km:v=>nf(v)+' km', ano:v=>'fundada em '+v, mun:v=>v+' municípios', lug:v=>nf(v)+' lugares',
+ kg:v=>v<1?nf(v*1000,0)+' g':v>=1000?nf(v/1000,1)+' t':nf(v)+' kg', kmh:v=>nf(v)+' km/h', vida:v=>nf(v)+' anos',
+ dias:v=>nf(v)+' dias', C:v=>nf(v)+' °C', kcal:v=>nf(v)+' kcal a cada 100 g', mg:v=>nf(v)+' mg', min:v=>nf(v)+' min', n:v=>nf(v)
+};
+const fmt=(o,u)=>o[3]||(U[u]?U[u](o[2]):String(o[2]));
+// banco Brasil (formato antigo): [categoria, pergunta, A, B, unidade, menor vence?, fonte, curiosidade]
+const BR=[
+ ['População','Quem tem mais habitantes?',['Campinas (SP)','🏙️',1139047],['Uruguai','🇺🇾',3444263],'hab',0,'IBGE, Censo 2022; INE Uruguai, Censo 2023','O Uruguai inteiro cabe três vezes em Campinas, em gente.'],
+ ['População','Qual capital tem mais habitantes?',['Fortaleza','🌴',2428708],['Salvador','🥁',2418005],'hab',0,'IBGE, Censo 2022','Diferença de cerca de 10 mil pessoas: Fortaleza passou Salvador no Censo 2022.'],
+ ['Área','Qual estado é maior?',['Amazonas','🌳',1559256],['Pará','🛶',1245870],'km2',0,'IBGE, Áreas Territoriais','O Amazonas é o maior estado do Brasil.'],
+ ['Área','O que é maior em área?',['Pernambuco','🦀',98068],['Portugal','🇵🇹',92226],'km2',0,'IBGE; INE Portugal','Pernambuco é maior que o país que colonizou o Brasil.'],
+ ['Altitude','Qual pico é mais alto?',['Pico da Neblina (AM)','⛰️',2995],['Pico da Bandeira (MG/ES)','🏔️',2892],'m',0,'IBGE, Pontos culminantes','O Pico da Neblina é o ponto mais alto do Brasil.'],
+ ['População','Qual capital tem mais habitantes?',['Belo Horizonte','🧀',2315560],['Manaus','🐟',2063547],'hab',0,'IBGE, Censo 2022','BH segue à frente de Manaus, mas a distância diminuiu.'],
+ ['População','Qual cidade tem mais habitantes?',['Brasília','🏛️',2817381],['Salvador','🥁',2418005],'hab',0,'IBGE, Censo 2022','Brasília é a terceira cidade mais populosa do país.'],
+ ['Municípios','Qual estado tem mais municípios?',['Minas Gerais','🧀',853],['São Paulo','🏙️',645],'mun','0','IBGE','Minas tem o maior número de municípios do Brasil.'],
+ ['Área','O que é maior?',['Ilha de Marajó (PA)','🐃',40100],['Sergipe','🦐',21938],'km2',0,'IBGE','Marajó tem quase o dobro da área de Sergipe.'],
+ ['Estádios','Qual estádio tem mais lugares?',['Maracanã','⚽',78838],['Mineirão','🏟️',61846],'lug',0,'Capacidades oficiais divulgadas pelos estádios (aprox.)','O Maracanã é o maior estádio do Brasil em capacidade.'],
+ ['População','Qual capital tem mais habitantes?',['Curitiba','🌲',1773718],['Recife','🌊',1488920],'hab',0,'IBGE, Censo 2022','Curitiba é a maior cidade do Sul.'],
+ ['População','Qual capital tem mais habitantes?',['Goiânia','🌾',1437366],['Belém','🍧',1303389],'hab',0,'IBGE, Censo 2022','Goiânia cresceu e passou Belém.'],
+ ['População','Qual cidade tem mais habitantes?',['Guarulhos (SP)','✈️',1291771],['Campinas (SP)','🏙️',1139047],'hab',0,'IBGE, Censo 2022','Guarulhos é a segunda maior cidade de São Paulo.'],
+ ['População','Qual capital tem mais habitantes?',['Porto Alegre','🧉',1332845],['Goiânia','🌾',1437366],'hab',0,'IBGE, Censo 2022','Porto Alegre perdeu habitantes entre os Censos de 2010 e 2022.'],
+ ['População','Qual estado tem mais habitantes?',['Paraná','🌲',11444380],['Rio Grande do Sul','🧉',10882965],'hab',0,'IBGE, Censo 2022','O Paraná passou o Rio Grande do Sul em população.'],
+ ['População','Qual estado tem mais habitantes?',['Bahia','🥥',14141626],['Rio de Janeiro','🏖️',16055174],'hab',0,'IBGE, Censo 2022','O estado do Rio é o terceiro mais populoso; a Bahia, o quarto.'],
+ ['Área','O que é maior em área?',['Minas Gerais','🧀',586513],['França (parte europeia)','🇫🇷',551695],'km2',0,'IBGE; INSEE','Minas Gerais é maior que a França europeia.'],
+ ['Área','O que é maior em área?',['Roraima','🦜',223644],['Reino Unido','🇬🇧',243610],'km2',0,'IBGE; ONS Reino Unido','Roraima é quase do tamanho do Reino Unido.'],
+ ['Área','Qual estado é maior?',['Mato Grosso','🐂',903208],['Pará','🛶',1245870],'km2',0,'IBGE, Áreas Territoriais','O Pará é o segundo maior estado; o Mato Grosso, o terceiro.'],
+ ['Altitude','Qual pico é mais alto?',['Pico da Bandeira','🏔️',2892],['Pico das Agulhas Negras','🗻',2791],'m',0,'IBGE, Pontos culminantes','Agulhas Negras é o ponto mais alto do estado do Rio.'],
+ ['Municípios','Qual estado tem mais municípios?',['Rio Grande do Sul','🧉',497],['Bahia','🥥',417],'mun',0,'IBGE','O RS tem mais municípios que a Bahia, com bem menos área.'],
+ ['História','Qual cidade é mais antiga?',['Olinda (PE)','⛪',1535],['Salvador (BA)','🥁',1549],'ano',1,'Datas oficiais de fundação','Olinda é 14 anos mais antiga que Salvador, a primeira capital.']
+];
+// banco amplo: [tema, pergunta, A, B, unidade, menor vence?, fonte, curiosidade] — A/B = [nome, emoji, valor, texto opcional]
+const MAIS=[
+ // Bichos
+ ['Bichos','Quem pesa mais?',['Girafa','🦒',1200],['Rinoceronte-branco','🦏',2300],'kg',0,'Smithsonian’s National Zoo; WWF (machos adultos, médias)','Com pescoço e tudo, a girafa pesa cerca de metade de um rinoceronte-branco.'],
+ ['Bichos','O que pesa mais?',['Baleia-azul','🐋',150000,'até 150 t'],['Boeing 737 vazio','✈️',41400,'≈41 t'],'kg',0,'NOAA Fisheries; Boeing (737-800, peso vazio operacional)','Uma baleia-azul adulta pesa mais que três Boeing 737 vazios.'],
+ ['Bichos','Quem pesa mais?',['Gorila (macho)','🦍',160],['Panda-gigante','🐼',100],'kg',0,'WWF (adultos, médias)','Um gorila-macho pesa uns 60% a mais que um panda-gigante.'],
+ ['Bichos','O que pesa mais?',['Hipopótamo','🦛',1500],['Fusca','🚗',800],'kg',0,'San Diego Zoo Wildlife Alliance; Volkswagen (Fusca 1300)','Um hipopótamo adulto pesa quase dois Fuscas.'],
+ ['Bichos','Quem pesa mais?',['Avestruz','🪶',110],['Capivara','🦫',50],'kg',0,'San Diego Zoo Wildlife Alliance (adultos, médias)','A avestruz é a maior ave do mundo; a capivara, o maior roedor.'],
+ ['Bichos','Quem é mais rápido?',['Guepardo','🐆',110],['Cavalo de corrida','🐎',70],'kmh',0,'National Geographic; recordes do turfe','O guepardo é o animal terrestre mais rápido, mas só aguenta uns 30 segundos nesse ritmo.'],
+ ['Bichos','Quem é mais rápido num tiro curto?',['Usain Bolt (no pico)','🏃',44.7],['Hipopótamo','🦛',30],'kmh',0,'World Athletics, análise biomecânica de Berlim 2009; National Geographic','Hipopótamos correm uns 30 km/h: o Bolt escaparia, a maioria de nós não.'],
+ ['Bichos','Quem é mais rápido?',['Avestruz','🪶',70],['Golfinho-nariz-de-garrafa','🐬',35],'kmh',0,'San Diego Zoo Wildlife Alliance; NOAA','A avestruz é a ave mais rápida em terra.'],
+ ['Bichos','Quem nada mais rápido?',['Tubarão-mako','🦈',70],['Pinguim-gentoo','🐧',36],'kmh',0,'NOAA Fisheries; Australian Antarctic Division','O mako é o tubarão mais rápido; o gentoo, o pinguim mais rápido.'],
+ ['Bichos','Quem vive mais?',['Tartaruga-de-galápagos','🐢',100,'mais de 100 anos'],['Elefante-africano','🐘',65,'≈65 anos'],'vida',0,'Galápagos Conservancy; WWF','Tartarugas-gigantes passam fácil dos 100 anos na natureza.'],
+ ['Bichos','Quem vive mais?',['Tubarão-da-groenlândia','🦈',272,'pelo menos 272 anos'],['Baleia-da-groenlândia','🐋',211,'≈211 anos'],'vida',0,'Nielsen et al., Science (2016); George et al. (1999)','É o vertebrado mais longevo que se conhece: as estimativas chegam perto de 400 anos.'],
+ ['Bichos','Qual é mais alto?',['Girafa (macho)','🦒',5.5],['Ônibus de dois andares','🚌',4.4],'m',0,'Giraffe Conservation Foundation; Transport for London','Uma girafa adulta olharia por cima de um ônibus de Londres.'],
+ ['Bichos','Qual é mais alto?',['Avestruz','🪶',2.7,'até 2,7 m'],['Porta de casa','🚪',2.1,'2,1 m'],'m',0,'San Diego Zoo Wildlife Alliance; padrão de portas no Brasil','Uma avestruz-macho precisaria abaixar a cabeça para entrar em casa.'],
+ ['Bichos','O que pesa mais?',['Ovo de avestruz','🥚',1.4],['Bola de futebol','⚽',0.43],'kg',0,'San Diego Zoo Wildlife Alliance; regras da FIFA','Um ovo de avestruz equivale a uns 24 ovos de galinha.'],
+ ['Bichos','Qual coração bate mais rápido?',['Beija-flor','🐦',1200,'até 1.200 por minuto'],['Coração humano no limite','❤️',200,'≈200 por minuto'],'n',0,'Smithsonian’s National Zoo; American Heart Association','O coração do beija-flor pode bater 20 vezes por segundo.'],
+ // Espaço
+ ['Espaço','O que é maior?',['Diâmetro da Lua','🌕',3474],['Largura da Austrália','🇦🇺',4000,'≈4.000 km'],'km',0,'NASA; Geoscience Australia','A Austrália, de leste a oeste, é mais larga que a Lua.'],
+ ['Espaço','O que é maior?',['Diâmetro de Plutão','🪐',2377],['Brasil de leste a oeste','🇧🇷',4319],'km',0,'NASA; IBGE','O Brasil, de ponta a ponta, tem quase duas Plutões.'],
+ ['Espaço','Qual planeta é maior?',['Saturno','🪐',116460],['Júpiter','🟠',139820],'km',0,'NASA (diâmetro no equador)','Júpiter tem mais que o dobro da massa de todos os outros planetas juntos.'],
+ ['Espaço','O que demora mais em Vênus?',['Uma volta em torno de si','🔄',243,'243 dias da Terra'],['Uma volta em torno do Sol','☀️',225,'225 dias da Terra'],'dias',0,'NASA','Vênus gira tão devagar que uma rotação demora mais que o ano dele. E gira ao contrário.'],
+ ['Espaço','Qual planeta é mais quente?',['Vênus','🌋',464],['Mercúrio (lado do Sol)','🔥',430],'C',0,'NASA','Mesmo mais longe do Sol, Vênus é mais quente por causa do efeito estufa.'],
+ ['Espaço','O que é maior?',['Distância da Terra à Lua','🌙',384400],['Volta da Terra pelo Equador','🌍',40075],'km',0,'NASA; IBGE','Daria para dar quase 10 voltas na Terra no caminho até a Lua.'],
+ ['Espaço','Qual planeta é maior?',['Marte','🔴',6779],['Mercúrio','⚫',4879],'km',0,'NASA (diâmetro)','Marte tem cerca de metade do diâmetro da Terra; Mercúrio é o menor planeta.'],
+ // Mundo
+ ['Mundo','O que é maior?',['Profundidade da Fossa das Marianas','🌊',10900,'≈10.900 m'],['Altura do Everest','🏔️',8849],'m',0,'NOAA; levantamento China–Nepal (2020)','Se o Everest fosse colocado lá no fundo, o pico ainda ficaria 2 km abaixo da superfície.'],
+ ['Mundo','O que fica mais alto?',['Topo do Everest','🏔️',8849],['Avião de linha em cruzeiro','✈️',10700,'≈10.700 m'],'m',0,'Levantamento China–Nepal (2020); FAA','Aviões comerciais costumam voar acima do topo do Everest.'],
+ ['Mundo','Qual é mais alto (com pedestal)?',['Cristo Redentor','⛪',38],['Estátua da Liberdade','🗽',93],'m',0,'Santuário Cristo Redentor; National Park Service (EUA)','A Estátua da Liberdade, do chão à tocha, tem mais que o dobro do Cristo.'],
+ ['Mundo','O que é mais alto?',['Torre Eiffel','🗼',330],['Pão de Açúcar','⛰️',396],'m',0,'Société d’Exploitation de la Tour Eiffel; Parque Bondinho Pão de Açúcar','O morro carioca supera a torre de Paris em quase 70 m.'],
+ ['Mundo','O que é mais alto?',['Burj Khalifa','🏙️',828],['Pão de Açúcar','⛰️',396],'m',0,'Emaar; Parque Bondinho Pão de Açúcar','O prédio mais alto do mundo tem mais que dois Pães de Açúcar.'],
+ ['Mundo','O que é maior?',['Grande Muralha (todos os trechos)','🧱',21196],['Diâmetro da Terra','🌍',12742],'km',0,'Administração Estatal do Patrimônio Cultural da China (2012); NASA','Somando todos os trechos, a Muralha passa de 21 mil km.'],
+ ['Mundo','Quem tem mais habitantes?',['Austrália','🇦🇺',27000000,'≈27 milhões hab.'],['Estado de São Paulo','🏙️',44411238],'hab',0,'Australian Bureau of Statistics; IBGE, Censo 2022','O estado de São Paulo tem uns 60% a mais de gente que a Austrália inteira.'],
+ ['Mundo','O que é maior?',['Titanic, de comprido','🚢',269],['Torre Eiffel, de alta','🗼',330],'m',0,'Encyclopaedia Britannica; Tour Eiffel','Em pé, o Titanic ficaria uns 60 m abaixo do topo da torre.'],
+ ['Mundo','O que é mais alto?',['Pirâmide de Quéops (original)','🔺',146],['Estátua da Liberdade (com pedestal)','🗽',93],'m',0,'Encyclopaedia Britannica; National Park Service (EUA)','Por quase 4 mil anos, a Grande Pirâmide foi a construção mais alta do mundo.'],
+ // Comida
+ ['Comida','Qual tem mais calorias?',['Pão francês','🥖',300],['Arroz branco cozido','🍚',128],'kcal',0,'Tabela TACO (Unicamp)','Grama por grama, o pãozinho tem mais que o dobro das calorias do arroz.'],
+ ['Comida','Qual tem mais calorias?',['Maçã','🍎',56],['Melancia','🍉',33],'kcal',0,'Tabela TACO (Unicamp)','A melancia é mais de 90% água.'],
+ ['Comida','Qual tem mais calorias?',['Azeite de oliva','🫒',884],['Manteiga','🧈',726],'kcal',0,'Tabela TACO (Unicamp)','A manteiga tem água; o azeite é praticamente só gordura.'],
+ ['Comida','Qual tem mais calorias?',['Abacaxi','🍍',48],['Banana-prata','🍌',98],'kcal',0,'Tabela TACO (Unicamp)','A banana tem o dobro das calorias do abacaxi.'],
+ ['Comida','Qual pimenta arde mais?',['Jalapeño','🌶️',8000,'até 8.000 SHU'],['Habanero','🌶️',350000,'até 350.000 SHU'],'n',0,'Escala Scoville (Chili Pepper Institute, Universidade do Novo México)','Um habanero pode arder dezenas de vezes mais que um jalapeño.'],
+ ['Comida','Qual tem mais cafeína?',['Um espresso (30 ml)','☕',63],['Lata de refrigerante de cola (350 ml)','🥤',35],'mg',0,'USDA FoodData Central; fabricantes','Um cafezinho tem quase o dobro da cafeína de uma lata de refri de cola.'],
+ // Corpo humano
+ ['Corpo humano','Quem tem mais ossos?',['Bebê recém-nascido','👶',300,'≈300 ossos'],['Adulto','🧑',206,'206 ossos'],'n',0,'Biblioteca Nacional de Medicina (EUA)','Vários ossos do bebê se fundem enquanto ele cresce.'],
+ ['Corpo humano','O que é maior?',['Vasos sanguíneos de um adulto, enfileirados','🩸',100000,'≈100.000 km'],['Volta da Terra pelo Equador','🌍',40075],'km',0,'The Franklin Institute; IBGE','Os vasos de uma pessoa dariam mais de duas voltas na Terra.'],
+ ['Corpo humano','Quem tem mais dentes?',['Adulto','🦷',32,'32 dentes'],['Criança (dentes de leite)','🧒',20,'20 dentes'],'n',0,'Associação Brasileira de Odontologia','Os sisos completam os 32, mas muita gente nunca chega a ter todos.'],
+ ['Corpo humano','O corpo tem mais o quê?',['Músculos','💪',600,'≈600 músculos'],['Ossos','🦴',206,'206 ossos'],'n',0,'Biblioteca Nacional de Medicina (EUA)','Temos quase três músculos para cada osso.'],
+ // Aleatório
+ ['Aleatório','Qual tem mais?',['Teclas de um piano','🎹',88,'88 teclas'],['Cartas de baralho com coringas','🃏',54,'54 cartas'],'n',0,'Padrão dos pianos modernos; baralho francês','O piano moderno tem 52 teclas brancas e 36 pretas.'],
+ ['Aleatório','Qual número é maior?',['Jeitos de embaralhar um cubo mágico','🧊',4.3e19,'≈43 quintilhões'],['Estrelas da Via Láctea','✨',4e11,'até ≈400 bilhões'],'n',0,'Rokicki et al. (cube20.org); NASA','Mas qualquer embaralhada se resolve em no máximo 20 movimentos.'],
+ ['Aleatório','O que é maior?',['Segundos em 1 semana','⏱️',604800],['Minutos em 1 ano','📅',525600],'n',0,'Conta exata','7 × 24 × 60 × 60 = 604.800; 365 × 24 × 60 = 525.600.'],
+ ['Aleatório','O que é maior?',['Horas em 1 ano','⏳',8760],['Dias vividos até os 25 anos','🎂',9131],'n',0,'Conta exata','Quem faz 25 anos já viveu mais dias do que um ano tem de horas.'],
+ ['Aleatório','O que dura mais?',['Jogo de futebol (sem acréscimos)','⚽',90],['Filme Titanic','🎬',194],'min',0,'Regras da FIFA; Paramount','Titanic tem 3h14, mais que dois jogos de futebol.'],
+ ['Aleatório','O que pesa mais?',['Bola de basquete','🏀',0.62],['Bola de futebol','⚽',0.43],'kg',0,'Regras da FIBA e da FIFA','A bola de basquete pesa uns 45% a mais.'],
+ ['Aleatório','Qual tem mais peças?',['Dominó','🎲',28,'28 peças'],['Baralho de truco','🃏',40,'40 cartas'],'n',0,'Regras tradicionais','O truco usa o baralho sem os 8, 9, 10 e coringas.']
+];
+const TEMAS=[['Bichos','🐾'],['Espaço','🪐'],['Mundo','🌍'],['Comida','🍽️'],['Corpo humano','🫀'],['Aleatório','🧩'],['Brasil','🇧🇷']];
+const ALL=MAIS.map(b=>({t:b[0],q:b[1],A:b[2],B:b[3],u:b[4],low:+b[5]===1,src:b[6],fact:b[7]}))
+ .concat(BR.map(b=>({t:'Brasil',q:b[1],A:b[2],B:b[3],u:b[4],low:+b[5]===1,src:b[6],fact:b[7]})));
+// 3 duelos de exemplo: fixos e fora do sorteio diário, para não estragar o desafio
+const DEMO_KEYS=['Girafa|Rinoceronte-branco','Torre Eiffel|Pão de Açúcar','Uma volta em torno de si|Uma volta em torno do Sol'];
+const isDemo=b=>DEMO_KEYS.includes(b.A[0]+'|'+b.B[0]);
+const DEMO=DEMO_KEYS.map(k=>ALL.find(b=>b.A[0]+'|'+b.B[0]===k));
+const BANK=ALL.filter(b=>!isDemo(b));
+const EPOCH=Date.UTC(2026,5,1);
+function dayNum(){const n=new Date();return Math.floor((Date.UTC(n.getFullYear(),n.getMonth(),n.getDate())-EPOCH)/864e5)+1}
+function rng(seed){let s=seed>>>0||1;return()=>{s^=s<<13;s>>>=0;s^=s>>17;s^=s<<5;s>>>=0;return s/4294967296}}
+// diário: no máximo 2 duelos por tema, para o dia sempre misturar assuntos
+function pick(seed){const r=rng(seed*2654435761);const pool=BANK;
+  const ix=pool.map((_,i)=>i);for(let i=ix.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[ix[i],ix[j]]=[ix[j],ix[i]]}
+  const cnt={},out=[];for(const i of ix){const b=pool[i];if((cnt[b.t]||0)>=2)continue;cnt[b.t]=(cnt[b.t]||0)+1;out.push(b);if(out.length===10)break}
+  return out.map(b=>{const flip=r()<.5;return Object.assign({},b,{A:flip?b.B:b.A,B:flip?b.A:b.B})})}
+const store={get(k,d){try{const v=localStorage.getItem('mom:'+k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem('mom:'+k,JSON.stringify(v))}catch(e){}}};
+const N=dayNum();$('gnum').textContent='#'+N;
+let set=[],idx=0,res=[],daily=true;
+$('temas').innerHTML=TEMAS.map(t=>'<span>'+t[1]+' '+t[0]+'</span>').join('');
+function start(isDaily){daily=isDaily;set=isDaily?pick(N):DEMO.map(b=>Object.assign({},b));idx=0;res=[];
+  if(isDaily){const done=store.get('day'+N,null);if(done){res=done;showEnd();return}}
+  $('hero').hidden=true;$('end').hidden=true;$('demo-end').hidden=true;$('game').hidden=false;card()}
+function dots(){$('dots').innerHTML=set.map((_,i)=>'<span class="'+(i<res.length?(res[i]?'ok':'no'):i===idx?'on':'')+'"></span>').join('')}
+function card(){
+  const c=set[idx];dots();$('cat').textContent=c.t+' · duelo '+(idx+1)+' de '+set.length;$('q').textContent=c.q;$('after').hidden=true;
+  const opt=(o,s)=>'<button class="opt" data-s="'+s+'"><span class="em" aria-hidden="true">'+o[1]+'</span><span><span class="nm">'+esc(o[0])+'</span></span><span class="val" hidden><b>'+esc(fmt(o,c.u))+'</b><span class="bar"><i></i></span></span></button>';
+  $('pair').innerHTML=opt(c.A,'A')+'<div class="vs">OU</div>'+opt(c.B,'B');
+  $('pair').querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>choose(b.dataset.s)));
+}
+function choose(s){
+  const c=set[idx],a=c.A[2],b=c.B[2];const win=c.low?(a<b?'A':'B'):(a>b?'A':'B');const ok=s===win;res.push(ok);
+  const mx=Math.max(a,b),mn=Math.min(a,b);
+  $('pair').querySelectorAll('.opt').forEach(el=>{el.disabled=true;const me=el.dataset.s,v=me==='A'?a:b;el.querySelector('.val').hidden=false;el.classList.add(me===win?'win':'lose');if(me===s&&!ok)el.classList.add('picked-wrong');
+    const w=c.low?(mn/v)*100:(v/mx)*100;requestAnimationFrame(()=>requestAnimationFrame(()=>{el.querySelector('.bar i').style.width=Math.max(4,w)+'%'}))});
+  const big=c.low?(win==='A'?c.B[0]:c.A[0]):(win==='A'?c.A[0]:c.B[0]),k=mx/mn;
+  const diff=c.u==='ano'?'Diferença de '+Math.abs(a-b)+' anos':big+' ganha por '+(k>=1e6?nf(k/1e6,0)+' milhões de vezes':k>=2?nf(k,k<10?1:0)+' vezes':Math.round((k-1)*100)+'%');
+  $('verdict').className='verdict '+(ok?'ok':'no');$('verdict').textContent=(ok?'Acertou! ':'Errou! ')+diff;
+  $('fact').innerHTML=esc(c.fact)+'<small>Fonte: '+esc(c.src)+'</small>';
+  $('after').hidden=false;$('next').textContent=idx===set.length-1?'Ver resultado':'Próximo duelo';dots();
+}
+$('next').addEventListener('click',()=>{if(idx<set.length-1){idx++;card();scrollTo(0,0)}else finishGame()});
+function finishGame(){
+  if(daily){store.set('day'+N,res);const st=store.get('stats',{played:0,streak:0,best:0,last:0,dist:[0,0,0,0,0,0,0,0,0,0,0]});const sc=res.filter(Boolean).length;
+    st.played++;st.dist[sc]++;st.streak=st.last===N-1?st.streak+1:1;st.best=Math.max(st.best,st.streak);st.last=N;store.set('stats',st);saveMom(sc)}
+  else{$('game').hidden=true;$('demo-score').textContent=res.filter(Boolean).length+'/'+res.length;$('demo-end').hidden=false;scrollTo(0,0);return}
+  showEnd();
+}
+const MSG=['Dia difícil','Dia difícil','Melhora amanhã','Melhora amanhã','No meio do caminho','Mais ou menos mesmo','Mandou bem','Mandou bem','Sabe das coisas','Quase perfeito','Gabaritou'];
+const msg=sc=>MSG[Math.round(sc/Math.max(1,res.length)*10)];
+function shareText(){return 'Mais ou Menos #'+N+'\n'+res.map(x=>x?'🟩':'🟥').join('')+' '+res.filter(Boolean).length+'/'+res.length+'\nbeyondthework.com.br/rodada/maisoumenos'}
+function showEnd(){
+  $('hero').hidden=true;$('game').hidden=true;$('demo-end').hidden=true;$('end').hidden=false;
+  const sc=res.filter(Boolean).length;$('end-title').textContent='Desafio #'+N;$('end-score').textContent=sc+'/'+res.length;$('end-msg').textContent=msg(sc);
+  $('end-grid').textContent=res.map(x=>x?'🟩':'🟥').join('');$('share-txt').textContent=shareText();
+  const st=store.get('stats',{played:0,streak:0,best:0,last:0,dist:[0,0,0,0,0,0,0,0,0,0,0]});
+  $('stats').innerHTML=[[st.played,'jogos'],[st.streak,'sequência'],[st.best,'recorde'],[st.played?Math.round(st.dist.reduce((s,v,i)=>s+v*i,0)/st.played*10):0,'% acertos']].map(x=>'<div><b>'+x[0]+'</b><span>'+x[1]+'</span></div>').join('');
+  const mx=Math.max(1,...st.dist);$('dist').innerHTML=st.dist.map((v,i)=>({v,i})).slice(4).reverse().map(o=>'<div class="'+(daily&&o.i===sc?'me':'')+'"><span>'+o.i+'</span><i style="width:'+(o.v/mx*100)+'%">'+o.v+'</i></div>').join('');
+  tick();scrollTo(0,0);if(daily)renderCard();
+}
+function tick(){const n=new Date(),m=new Date(n);m.setHours(24,0,0,0);const s=Math.max(0,Math.floor((m-n)/1000));$('countdown').textContent=String(Math.floor(s/3600)).padStart(2,'0')+':'+String(Math.floor(s%3600/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+setInterval(()=>{if(!$('end').hidden)tick()},1000);
+// ranking do dia (grupo e Brasil) no mesmo banco do 1%, no campo "mom" de cada jogador
+let db=null,myId=null,rows=[];
+const ls=k=>{try{const v=localStorage.getItem('1p3:'+k);return v?JSON.parse(v):null}catch(e){return null}};
+(async()=>{try{const u=await claude.use('user');if(u)myId=await u.id()}catch(e){}
+  try{db=await claude.use('db')}catch(e){db=null}
+  if(db){try{db.collection('rank').onSnapshot(sn=>{rows=sn.docs.map(d=>Object.assign({id:d.id},d.data()));if(!$('end').hidden&&daily)renderCard()},()=>{})}catch(e){}}})();
+async function saveMom(sc){if(!db||!myId)return;const mom={day:N,ok:sc,n:res.length},mine=rows.find(r=>r.id===myId);
+  try{if(mine)await db.doc('rank/'+myId).update({mom});else await db.doc('rank/'+myId).set({nick:(ls('nick')||'Jogador').slice(0,18),grp:ls('grp')||'',mom})}catch(e){}}
+function renderCard(){
+  const box=$('rcardbox');if(!box||typeof RodadaCard==='undefined')return;
+  const sc=res.filter(Boolean).length,g=ls('grp'),st=store.get('stats',{streak:1});
+  const today=rows.filter(r=>r.id!==myId&&r.mom&&r.mom.day===N);
+  const pos=list=>({p:list.filter(r=>r.mom.ok>sc).length+1,t:list.length+1,abaixo:list.filter(r=>r.mom.ok<sc).length});
+  const on=!!db&&!!myId,B=on?pos(today):null,GR=on&&g?pos(today.filter(r=>r.grp===g)):null;
+  const dt=new Date().toLocaleDateString('pt-BR',{day:'numeric',month:'short'}).replace('.','');
+  const txt='Mais ou Menos #'+N+'\n'+res.map(x=>x?'🟩':'🟥').join('')+' '+sc+'/'+res.length+(GR?'\n'+GR.p+'º de '+GR.t+' no grupo '+g:'')+(B?'\n'+B.p+'º de '+B.t+' no Brasil hoje':'')+'\nbeyondthework.com.br/rodada/maisoumenos';
+  RodadaCard.mount(box,{jogo:'mom',topo:'Desafio #'+N+' · '+dt,sub:'Qual é maior?',placar:[sc,res.length],detalhe:msg(sc),pips:res.slice(),
+    grupo:GR?{rot:'Grupo '+g,val:GR.p+'º de '+GR.t,nota:'no grupo hoje'}:null,
+    brasil:B?{rot:'No Brasil',val:B.p+'º de '+B.t,nota:B.t>1?'melhor que '+Math.round(B.abaixo/(B.t-1)*100)+'% de quem jogou':'você foi o primeiro hoje'}:null,
+    sequencia:st.streak||1,chamada:'Qual é maior? Jogue o de hoje.',texto:txt});
+}
+$('play').addEventListener('click',()=>start(true));$('demo').addEventListener('click',()=>start(false));$('demo-play').addEventListener('click',()=>start(true));
+$('btn-stats').addEventListener('click',()=>{if(!$('game').hidden)return;res=store.get('day'+N,null)||res;if(res.length===10){daily=true;showEnd()}else{$('toast').textContent='';alertBox()}});
+function alertBox(){const h=$('hero');if(!h.querySelector('.note')){const p=document.createElement('p');p.className='note';p.style.cssText='font-size:14px';p.textContent='Jogue o desafio de hoje para ver suas estatísticas.';h.appendChild(p)}}
+})();
+</script>
+
+</body></html>

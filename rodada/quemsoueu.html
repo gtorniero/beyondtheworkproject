@@ -1,0 +1,328 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/favicon.svg"><script src="sala.js"></script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Quem Sou Eu? · Rodada</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="aovivo.css">
+<style>
+/* Quem Sou Eu?: azul-noite e amarelo-letreiro. O celular vira uma placa amarela na testa, legível do outro lado da sala. Visual único, sempre escuro. */
+:root{--bg:#0E1450;--fg:#F5F6FF;--fg2:#AEB6F0;--card:#161E66;--line:#2A3390;--acc:#FFE14D;--acc-ink:#0E1450;--acc-soft:rgba(255,225,77,.13);--bad:#FF9AA8;--placa:#FFE14D;--placa-ink:#0E1450;color-scheme:dark}
+#app{display:grid;gap:20px}
+.hero{display:grid;gap:12px}
+.lock{display:flex;align-items:center;gap:14px;font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.045em;line-height:.85}
+.lock svg{width:72px;height:72px;flex:none}
+.lock .w{display:flex;flex-direction:column}
+.lock em{font-style:normal;font-weight:500;font-size:26px;color:var(--fg2)}
+.lock b{font-weight:800;font-size:60px;color:var(--acc)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{border:2px solid var(--line);background:transparent;color:var(--fg);border-radius:999px;padding:8px 14px;font:700 14px 'Figtree',sans-serif;cursor:pointer}
+.chips button span{font-weight:500;color:var(--fg2);margin-left:4px}
+.chips button[aria-pressed="true"]{border-color:var(--acc);background:var(--acc-soft)}
+.chips button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+/* plaquinhas da galeria */
+.placas{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory}
+.pl{flex:none;width:150px;aspect-ratio:9/16;border-radius:20px;background:var(--placa);color:var(--placa-ink);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:14px 10px;text-align:center;scroll-snap-align:start;border:4px solid #0B0F3A}
+.pl small{font-size:9px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;opacity:.7}
+.pl b{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;line-height:.95;letter-spacing:-.03em;text-wrap:balance}
+.pl i{font-style:normal;font-size:11px;font-weight:700;opacity:.75}
+/* área "não olhe" */
+.pronto{display:grid;justify-items:center;gap:14px;text-align:center;padding:26px 18px}
+.pronto svg{width:96px;height:96px}
+.pronto h2{font-size:clamp(28px,8vw,38px)}
+.res{display:grid;justify-items:center;gap:6px;text-align:center;padding:24px 18px}
+.res .nm{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(34px,11vw,52px);line-height:.95;letter-spacing:-.03em;color:var(--acc);text-wrap:balance}
+.ord{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-weight:700}
+.ord span{border-radius:999px;padding:4px 12px;background:var(--bg);border:1px solid var(--line);font-size:14px}
+.ord i{font-style:normal;color:var(--fg2)}
+.board{display:grid;gap:6px}
+.board div{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:10px 12px;border-radius:12px;background:var(--bg);border:1px solid var(--line);font-size:15px}
+.board .pos{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;min-width:2ch;color:var(--fg2)}
+.board .who{min-width:0;display:grid}
+.board .who b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board .who span{font-size:13px;color:var(--fg2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board .who span.q{letter-spacing:.2em}
+.board .st{font-size:12px;font-weight:800;border-radius:999px;padding:3px 10px;background:var(--line);color:var(--fg);white-space:nowrap}
+.board .st.ok{background:var(--acc);color:var(--acc-ink)}
+.board .st.des{background:transparent;border:1px solid var(--line);color:var(--fg2)}
+.board div.me{border-color:var(--acc)}
+.wa{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:14px;padding:13px 18px;background:#25D366;color:#073B1F;font-weight:800;text-decoration:none;width:100%}
+.wa svg{width:22px;height:22px;flex:none}
+/* a placa na testa: tela cheia */
+#testa{position:fixed;inset:0;z-index:50;background:var(--placa);color:var(--placa-ink);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:max(18px,env(safe-area-inset-top,0px)) 4vw max(18px,env(safe-area-inset-bottom,0px));text-align:center;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;touch-action:none}
+#testa[hidden]{display:none!important}
+#testa .tt{font:800 clamp(12px,3.4vmin,18px) 'Figtree',sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+#testa .tbox{flex:1;width:100%;display:grid;place-items:center;align-content:center;gap:2vmin;min-height:0}
+#testa .tn{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;line-height:.92;letter-spacing:-.035em;width:100%;overflow-wrap:normal;word-break:keep-all;text-wrap:balance}
+#testa .tc{font:700 clamp(15px,4.2vmin,26px) 'Figtree',sans-serif;opacity:.8}
+#testa .cnt{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:40vmin;line-height:1}
+#testa .tf{font:600 clamp(11px,3vmin,15px) 'Figtree',sans-serif;opacity:.6}
+#testa .tm{position:absolute;inset:0;background:var(--bg);color:var(--fg);display:grid;align-content:center;justify-items:center;gap:12px;padding:24px;touch-action:auto}
+#testa .tm[hidden]{display:none}
+#testa .tm .btn{max-width:420px}
+@media (prefers-reduced-motion:no-preference){#testa .tn{animation:pop .35s cubic-bezier(.2,.8,.2,1)}@keyframes pop{from{transform:scale(.85);opacity:0}to{transform:none;opacity:1}}}
+</style></head><body>
+<div class="av">
+  <a class="back" href="./">← Todos os jogos da Rodada</a>
+  <header class="hero">
+    <h1 class="lock" aria-label="Quem sou eu?"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M18 100 Q20 74 50 72 Q80 74 82 100Z" fill="#AEB6F0"/><circle cx="50" cy="50" r="24" fill="#AEB6F0"/><rect x="30" y="4" width="40" height="44" rx="8" fill="#FFE14D" stroke="#0E1450" stroke-width="4"/><path d="M43 18 Q43 12 50 12 Q57 12 57 18 Q57 23 50 25 V29" fill="none" stroke="#0E1450" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="37" r="3.2" fill="#0E1450"/></svg><span class="w" aria-hidden="true"><em>quem sou</em><b>eu?</b></span></h1>
+    <p class="muted" style="font-size:18px">Seu celular vai para a testa com um nome que só a turma consegue ler. Pergunte, ouça sim ou não e descubra quem você é antes de todo mundo. Para 2 a 20 pessoas, cada uma no seu celular.</p>
+  </header>
+  <div id="app"></div>
+  <footer>Rodada Ao Vivo · versão de teste. Crie a sala, mande o código e cada um joga no seu celular. Sem sala, cada um pode sortear um nome no próprio celular.</footer>
+</div>
+<div id="testa" hidden role="dialog" aria-modal="true" aria-label="Placa na testa"></div>
+<script>
+(function(){
+'use strict';
+/* ---------- os 50 nomes do teste ---------- */
+var CATS={mus:'Música',tela:'Cinema e TV',esp:'Esporte',net:'Internet',ico:'Ícones',fam:'Família e turma',fbr:'Craques do Brasil',fgr:'Craques gringos',fmd:'Nível difícil: medianos e folclóricos'};
+/* duas versões do baralho: Geral e Futebol */
+var VERS={geral:['mus','tela','esp','net','ico','fam'],fut:['fbr','fgr','fmd']};
+var N=[
+ ['Taylor Swift','Cantora · EUA','mus'],['Beyoncé','Cantora · EUA','mus'],['Michael Jackson','Cantor · EUA','mus'],['Madonna','Cantora · EUA','mus'],['Lady Gaga','Cantora · EUA','mus'],['Shakira','Cantora · Colômbia','mus'],['Bad Bunny','Cantor · Porto Rico','mus'],['Freddie Mercury','Cantor · Inglaterra','mus'],['Anitta','Cantora · Brasil','mus'],['Ivete Sangalo','Cantora · Brasil','mus'],['Roberto Carlos','Cantor · Brasil','mus'],['Ludmilla','Cantora · Brasil','mus'],
+ ['Leonardo DiCaprio','Ator · EUA','tela'],['Tom Cruise','Ator · EUA','tela'],['Charlie Chaplin','Ator · Inglaterra','tela'],['Marilyn Monroe','Atriz · EUA','tela'],['Fernanda Montenegro','Atriz · Brasil','tela'],['Xuxa','Apresentadora · Brasil','tela'],['Silvio Santos','Apresentador · Brasil','tela'],['Faustão','Apresentador · Brasil','tela'],['Ana Maria Braga','Apresentadora · Brasil','tela'],
+ ['Pelé','Futebol · Brasil','esp'],['Lionel Messi','Futebol · Argentina','esp'],['Cristiano Ronaldo','Futebol · Portugal','esp'],['Neymar','Futebol · Brasil','esp'],['Marta','Futebol · Brasil','esp'],['Ayrton Senna','Fórmula 1 · Brasil','esp'],['Usain Bolt','Atletismo · Jamaica','esp'],['Serena Williams','Tênis · EUA','esp'],['Michael Jordan','Basquete · EUA','esp'],['Rebeca Andrade','Ginástica · Brasil','esp'],
+ ['Whindersson Nunes','Humorista · Brasil','net'],['Virginia Fonseca','Influenciadora · Brasil','net'],['Casimiro','Streamer · Brasil','net'],['Felipe Neto','YouTuber · Brasil','net'],['Carlinhos Maia','Influenciador · Brasil','net'],['Luccas Neto','YouTuber · Brasil','net'],['MrBeast','YouTuber · EUA','net'],
+ ['Albert Einstein','Cientista · Alemanha','ico'],['Frida Kahlo','Pintora · México','ico'],['Leonardo da Vinci','Artista · Itália','ico'],['Gisele Bündchen','Modelo · Brasil','ico'],['Steve Jobs','Empresário · EUA','ico'],
+ ['Seu pai','O pai de quem está com o celular','fam'],['Sua mãe','A mãe de quem está com o celular','fam'],['Sua sogra','A sogra de quem está com o celular','fam'],['Seu chefe','O chefe de quem está com o celular','fam'],['Seu ex','O ex de quem está com o celular','fam'],['O dono da festa','Quem está recebendo a turma','fam'],['Você mesmo','A pessoa com o celular na testa','fam'],
+ ["Pelé","Atacante · Brasil · Santos","fbr"],["Garrincha","Ponta · Brasil · Botafogo","fbr"],["Zico","Meia · Brasil · Flamengo","fbr"],["Sócrates","Meia · Brasil · Corinthians","fbr"],["Romário","Atacante · Brasil · Copa de 94","fbr"],["Ronaldo Fenômeno","Atacante · Brasil · Copa de 2002","fbr"],["Rivaldo","Meia · Brasil · Barcelona","fbr"],["Ronaldinho Gaúcho","Meia · Brasil · Barcelona","fbr"],["Kaká","Meia · Brasil · Milan","fbr"],["Roberto Carlos","Lateral · Brasil · Real Madrid","fbr"],["Cafu","Lateral · Brasil · capitão do penta","fbr"],["Neymar","Atacante · Brasil · Santos","fbr"],["Vinicius Júnior","Atacante · Brasil · Real Madrid","fbr"],["Raphinha","Atacante · Brasil · Barcelona","fbr"],["Rodrygo","Atacante · Brasil · Real Madrid","fbr"],["Endrick","Atacante · Brasil · Palmeiras","fbr"],["Estêvão","Atacante · Brasil · Palmeiras","fbr"],["Marta","Atacante · Brasil · seis vezes a melhor do mundo","fbr"],["Formiga","Volante · Brasil · sete Copas","fbr"],["Casemiro","Volante · Brasil · Real Madrid","fbr"],["Thiago Silva","Zagueiro · Brasil · Fluminense","fbr"],["Marquinhos","Zagueiro · Brasil · PSG","fbr"],["Alisson","Goleiro · Brasil · Liverpool","fbr"],["Taffarel","Goleiro · Brasil · Copa de 94","fbr"],["Rogério Ceni","Goleiro · Brasil · São Paulo","fbr"],["Marcos","Goleiro · Brasil · Palmeiras","fbr"],["Adriano Imperador","Atacante · Brasil · Inter de Milão","fbr"],["Bebeto","Atacante · Brasil · Copa de 94","fbr"],["Rivellino","Meia · Brasil · Copa de 70","fbr"],["Jairzinho","Atacante · Brasil · Copa de 70","fbr"],["Tostão","Atacante · Brasil · Copa de 70","fbr"],["Falcão","Volante · Brasil · Roma","fbr"],["Dunga","Volante · Brasil · capitão do tetra","fbr"],["Juninho Pernambucano","Meia · Brasil · rei da falta","fbr"],["Edmundo","Atacante · Brasil · Vasco","fbr"],["Gabigol","Atacante · Brasil · Flamengo","fbr"],["Hulk","Atacante · Brasil · Atlético-MG","fbr"],["Richarlison","Atacante · Brasil · o Pombo","fbr"],["Philippe Coutinho","Meia · Brasil · Liverpool","fbr"],["Lucas Paquetá","Meia · Brasil · West Ham","fbr"],["Bruno Guimarães","Volante · Brasil · Newcastle","fbr"],["Zagallo","Ponta e técnico · Brasil · quatro Copas","fbr"],
+ ["Lionel Messi","Atacante · Argentina","fgr"],["Cristiano Ronaldo","Atacante · Portugal","fgr"],["Diego Maradona","Meia · Argentina","fgr"],["Zinedine Zidane","Meia · França","fgr"],["Kylian Mbappé","Atacante · França","fgr"],["Erling Haaland","Atacante · Noruega","fgr"],["David Beckham","Meia · Inglaterra","fgr"],["Robert Lewandowski","Atacante · Polônia","fgr"],["Luka Modrić","Meia · Croácia","fgr"],["Andrés Iniesta","Meia · Espanha","fgr"],["Xavi","Meia · Espanha","fgr"],["Iker Casillas","Goleiro · Espanha","fgr"],["Gianluigi Buffon","Goleiro · Itália","fgr"],["Andrea Pirlo","Meia · Itália","fgr"],["Francesco Totti","Atacante · Itália · Roma","fgr"],["Paolo Maldini","Zagueiro · Itália · Milan","fgr"],["Johan Cruyff","Atacante · Holanda","fgr"],["Franz Beckenbauer","Zagueiro · Alemanha","fgr"],["Eusébio","Atacante · Portugal · Benfica","fgr"],["Thierry Henry","Atacante · França · Arsenal","fgr"],["Zlatan Ibrahimović","Atacante · Suécia","fgr"],["Luis Suárez","Atacante · Uruguai","fgr"],["Edinson Cavani","Atacante · Uruguai","fgr"],["Mohamed Salah","Atacante · Egito · Liverpool","fgr"],["Kevin De Bruyne","Meia · Bélgica","fgr"],["Harry Kane","Atacante · Inglaterra","fgr"],["Wayne Rooney","Atacante · Inglaterra","fgr"],["Steven Gerrard","Meia · Inglaterra · Liverpool","fgr"],["Karim Benzema","Atacante · França","fgr"],["Antoine Griezmann","Atacante · França","fgr"],["Manuel Neuer","Goleiro · Alemanha","fgr"],["Toni Kroos","Meia · Alemanha","fgr"],["Didier Drogba","Atacante · Costa do Marfim","fgr"],["Samuel Eto'o","Atacante · Camarões","fgr"],["Jude Bellingham","Meia · Inglaterra","fgr"],["Lamine Yamal","Atacante · Espanha · Barcelona","fgr"],["Virgil van Dijk","Zagueiro · Holanda","fgr"],["Sergio Agüero","Atacante · Argentina","fgr"],["Juan Román Riquelme","Meia · Argentina · Boca Juniors","fgr"],["Gabriel Batistuta","Atacante · Argentina","fgr"],["Carlos Valderrama","Meia · Colômbia","fgr"],["James Rodríguez","Meia · Colômbia","fgr"],["Ángel Di María","Ponta · Argentina","fgr"],["Mesut Özil","Meia · Alemanha","fgr"],
+ ["Jardel","Atacante · Brasil · Grêmio e Porto","fmd"],["Túlio Maravilha","Atacante · Brasil · Botafogo","fmd"],["Viola","Atacante · Brasil · Corinthians","fmd"],["Marcelinho Carioca","Meia · Brasil · Corinthians","fmd"],["Edílson Capetinha","Atacante · Brasil · Corinthians","fmd"],["Denílson","Atacante · Brasil · Betis","fmd"],["Luís Fabiano","Atacante · Brasil · São Paulo","fmd"],["Fred","Atacante · Brasil · Fluminense","fmd"],["Grafite","Atacante · Brasil · São Paulo","fmd"],["Vampeta","Volante · Brasil · Corinthians","fmd"],["Kléberson","Volante · Brasil · penta","fmd"],["Felipe Melo","Volante · Brasil · Palmeiras","fmd"],["Fernandinho","Volante · Brasil · Manchester City","fmd"],["Willian","Meia · Brasil · Chelsea","fmd"],["Alex","Meia · Brasil · Cruzeiro e Fenerbahçe","fmd"],["Diego Souza","Meia · Brasil · Sport","fmd"],["Vagner Love","Atacante · Brasil · CSKA Moscou","fmd"],["Obina","Atacante · Brasil · Flamengo","fmd"],["Jô","Atacante · Brasil · Atlético-MG","fmd"],["Pedro","Atacante · Brasil · Flamengo","fmd"],["Everton Ribeiro","Meia · Brasil · Flamengo","fmd"],["Dudu","Atacante · Brasil · Palmeiras","fmd"],["Cássio","Goleiro · Brasil · Corinthians","fmd"],["Paulo Henrique Ganso","Meia · Brasil · Santos","fmd"],["Petković","Meia · Sérvia · Flamengo","fmd"],["Darío Conca","Meia · Argentina · Fluminense","fmd"],["Andrés D'Alessandro","Meia · Argentina · Internacional","fmd"],["Jorge Valdivia","Meia · Chile · Palmeiras","fmd"],["Diego Lugano","Zagueiro · Uruguai · São Paulo","fmd"],["Paolo Guerrero","Atacante · Peru · Corinthians","fmd"],["Giorgian de Arrascaeta","Meia · Uruguai · Flamengo","fmd"],["Germán Cano","Atacante · Argentina · Fluminense","fmd"],["Jonathan Calleri","Atacante · Argentina · São Paulo","fmd"],["Gustavo Gómez","Zagueiro · Paraguai · Palmeiras","fmd"],["Carlos Tevez","Atacante · Argentina · Corinthians","fmd"],["Juan Pablo Sorín","Lateral · Argentina · Cruzeiro","fmd"],["Memphis Depay","Atacante · Holanda · Corinthians","fmd"],["Dimitri Payet","Meia · França · Vasco","fmd"],["Clarence Seedorf","Meia · Holanda · Botafogo","fmd"],["Loco Abreu","Atacante · Uruguai · Botafogo","fmd"],["Peter Crouch","Atacante · Inglaterra","fmd"],["Rodrigo Garro","Meia · Argentina · Corinthians","fmd"]
+];
+var esc=function(t){return String(t==null?'':t).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+var shuffle=function(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a};
+var ALPHA='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+var newCode=function(){var s='';for(var i=0;i<4;i++)s+=ALPHA[Math.floor(Math.random()*ALPHA.length)];return s};
+var store={get:function(k,d){try{var v=localStorage.getItem('rav:'+k);return v==null?d:v}catch(e){return d}},set:function(k,v){try{localStorage.setItem('rav:'+k,v)}catch(e){}}};
+var HUB='https://beyondthework.com.br/rodada/',GID='quem',MIN=2,MAX=20;
+var WA='<svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3.2C9 3.2 3.3 8.8 3.3 15.7c0 2.3.6 4.5 1.8 6.4L3.2 28.8l6.9-1.8c1.8 1 3.9 1.5 6 1.5 7 0 12.7-5.6 12.7-12.6S23 3.2 16 3.2z"/><path fill="#25D366" d="M16 5.4c5.8 0 10.5 4.6 10.5 10.3S21.8 26.1 16 26.1c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4 1 1.1-3.9-.3-.4c-1-1.6-1.5-3.5-1.5-5.4C5.6 10 10.3 5.4 16 5.4z"/><path fill="#fff" d="M12.3 10.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.3 3.6 5.6 4.9 2.8 1.1 3.4.9 4 .8.6-.1 2-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.7-.4l-2.2-1.1c-.3-.1-.5-.2-.8.2l-1 1.2c-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4z"/></svg>';
+
+var app=document.getElementById('app'),testa=document.getElementById('testa');
+var S={screen:'home',n:6,ver:'geral',cats:{mus:true,tela:true,esp:true,net:true,ico:true,fam:true,fbr:true,fgr:true,fmd:true},nick:store.get('nick',''),code:'',joinCode:'',
+  isHost:false,rm:null,myPeer:null,peers:[],G:null,mine:null,solo:null,used:{},err:'',joinErr:'',waitLong:false,hostGone:false,keepScroll:false};
+try{var hm=location.hash.match(/^#([A-Za-z0-9]{4})$/);if(hm)S.joinCode=hm[1].toUpperCase()}catch(e){}
+var roomNs=null,roomKnown=false;
+var SK='rav:sess:quem',sess={get:function(){try{return JSON.parse(sessionStorage.getItem(SK)||'null')}catch(e){return null}},set:function(o){try{sessionStorage.setItem(SK,JSON.stringify(o))}catch(e){}},del:function(){try{sessionStorage.removeItem(SK)}catch(e){}}};
+try{claude.use('room').then(function(r){roomNs=r;roomKnown=true;if(!retoma())render()},function(){roomKnown=true;render()})}catch(e){roomKnown=true}
+
+/* ---------- regras de pontos ---------- */
+function ranking(G){var ok=[],des=[];G.pl.forEach(function(p){var f=G.fin[p.id];if(!f)return;(f[0]==='ok'?ok:des).push({id:p.id,ms:f[1]})});ok.sort(function(a,b){return a.ms-b.ms});return {ok:ok,des:des}}
+function roundPts(G){var r=ranking(G),o={};r.ok.forEach(function(x,i){o[x.id]=[3,2,1][i]||1});return o}
+function totals(G){var o={},rp=roundPts(G);G.pl.forEach(function(p){o[p.id]=(+(G.prev||{})[p.id]||0)+(rp[p.id]||0)});return o}
+function posOf(G,id){var r=ranking(G);for(var i=0;i<r.ok.length;i++)if(r.ok[i].id===id)return i+1;return 0}
+function selPool(){var vk=VERS[S.ver]||VERS.geral,ks=vk.filter(function(k){return S.cats[k]});if(!ks.length)ks=vk;var p=[];N.forEach(function(x,i){if(ks.indexOf(x[2])>=0)p.push(i)});return p}
+function pick(k){var pool=selPool(),fresh=pool.filter(function(i){return !S.used[i]});if(fresh.length<k){S.used={};fresh=pool}var a=shuffle(fresh).slice(0,k);while(a.length<k)a.push(shuffle(pool)[0]);a.forEach(function(i){S.used[i]=1});return a}
+function poolCount(k){var c=0;N.forEach(function(x){if(x[2]===k)c++});return c}
+
+/* ---------- telas ---------- */
+function verSeg(){return '<div class="seg" role="group" aria-label="Versão do baralho"><button data-act="ver" data-v="geral" aria-pressed="'+(S.ver==='geral')+'">Geral<span>Música, TV, internet, ícones e a família</span></button><button data-act="ver" data-v="fut" aria-pressed="'+(S.ver==='fut')+'">Futebol<span>'+(VERS.fut.reduce(function(t,k){return t+poolCount(k)},0))+' craques do Brasil e de fora</span></button></div>'}
+function catChips(){return '<div class="chips" role="group" aria-label="Categorias de nomes">'+(VERS[S.ver]||VERS.geral).map(function(k){return '<button data-act="cat" data-v="'+k+'" aria-pressed="'+(!!S.cats[k])+'">'+esc(CATS[k])+'<span>'+poolCount(k)+'</span></button>'}).join('')+'</div>'}
+function placaMini(i){var x=N[i];return '<div class="pl"><small>Quem sou eu?</small><b>'+esc(x[0])+'</b><i>'+esc(x[1])+'</i></div>'}
+function home(){
+  var canRoom=!!roomNs;
+  var h='<section class="panel"><div class="tag">Começar uma partida</div>'+
+    '<p class="small">Este jogo é sempre cada um no seu celular: o aparelho fica na sua testa, virado para a turma.</p>'+
+    '<div class="tag">Quantas pessoas</div><div class="stepper"><button data-act="n" data-v="-1" aria-label="Menos uma pessoa">−</button><b>'+S.n+'</b><button data-act="n" data-v="1" aria-label="Mais uma pessoa">+</button><span class="small">de '+MIN+' a '+MAX+'</span></div>'+
+    '<div class="tag">Baralho</div>'+verSeg()+'<div class="tag">Quem pode sair na sua testa</div>'+catChips()+
+    '<label for="avNick">Seu apelido<input type="text" id="avNick" maxlength="18" value="'+esc(S.nick)+'" placeholder="Como a turma te chama"></label>'+
+    '<button class="btn" data-act="create"'+(canRoom?'':' disabled')+'>Criar sala</button>'+
+    (roomKnown&&!canRoom?'<p class="small">As salas ao vivo não estão disponíveis nesta visualização. Use "Sem sala" logo abaixo.</p>':'')+
+    '<p class="err" role="status">'+esc(S.err)+'</p></section>';
+  h+='<section class="panel"><div class="tag">Recebeu um código?</div><div class="row"><label for="avCode">Código da sala<input type="text" class="code" id="avCode" maxlength="4" value="'+esc(S.joinCode)+'" placeholder="KX7Q" autocomplete="off"></label><label for="avNick2">Seu apelido<input type="text" id="avNick2" maxlength="18" value="'+esc(S.nick)+'" placeholder="Seu apelido"></label></div><button class="btn sec" data-act="join"'+(canRoom?'':' disabled')+'>Entrar na sala</button><p class="err" role="status">'+esc(S.joinErr)+'</p></section>';
+  h+='<section class="panel"><div class="tag">Sem sala</div><p class="small">Cada pessoa abre esta página e sorteia um nome no próprio celular. Sem ranking, mas joga na hora.</p><button class="btn sec" data-act="solo">Sortear um nome para mim</button></section>';
+  h+='<section class="panel"><div class="tag">A placa na testa</div><div class="placas">'+(S.ver==='fut'?['Pelé','Lionel Messi','Vinicius Júnior','Petković']:['Taylor Swift','Pelé','Seu ex','Casimiro']).map(function(n){for(var i=0;i<N.length;i++)if(N[i][0]===n)return i;return 0}).map(placaMini).join('')+'</div><p class="small">Dois baralhos: o Geral, com cantores, atores, influenciadores e uns curingas da família, e o Futebol, com craques do Brasil, gringos e um nível difícil de medianos e folclóricos.</p></section>';
+  h+='<section class="panel"><div class="tag">Como jogar</div><ol class="rules"><li><b>O anfitrião cria a sala</b> e manda o código. Cada um entra no próprio celular.</li><li><b>Sem olhar</b>, toque em "Colocar na testa" e encoste o celular na testa, com a tela virada para a turma.</li><li><b>Na sua vez</b>, faça perguntas de sim ou não: "Sou mulher?", "Sou brasileiro?". Ouviu um não, passa a vez.</li><li><b>Achou que sabe?</b> Fale o nome. Acertou, segure a tela e toque em "Acertei!".</li><li><b>Pontos:</b> quem descobre primeiro leva 3, o segundo 2 e os demais que acertarem 1. O placar soma a noite toda.</li></ol></section>';
+  return h;
+}
+function peopleHtml(list,meId){return '<div class="people">'+list.map(function(p){return '<span class="'+(p.id===meId?'me':'')+'">'+esc(p.nick)+(p.id===meId?' (você)':'')+'</span>'}).join('')+'</div>'}
+function lobby(){
+  var ps=players(),n=ps.length+1,ok=n>=MIN&&n<=MAX;
+  var inv='Bora jogar Quem Sou Eu? na Rodada? Entra na sala com o código '+S.code+': '+HUB+'#qs'+S.code;
+  var h='<section class="panel" style="text-align:center;justify-items:center"><div class="tag">Sala criada · mande o código para a turma</div><div class="bigcode" aria-label="Código da sala">'+esc(S.code)+'</div><a class="wa" href="https://wa.me/?text='+encodeURIComponent(inv)+'" target="_blank" rel="noopener">'+WA+'Mandar convite no WhatsApp</a><p class="small">O link já abre o jogo com o código preenchido. Ou a pessoa abre esta página, toca em "Recebeu um código?" e digita '+esc(S.code)+'.</p></section>';
+  h+='<section class="panel"><div class="tag">Na sala · '+n+' de '+S.n+' (com você)</div>'+peopleHtml([{id:'_h',nick:S.nick||'Anfitrião'}].concat(ps),'_h')+
+    '<div class="tag">Categorias</div>'+catChips()+
+    '<button class="btn" data-act="deal"'+(ok?'':' disabled')+'>Sortear os nomes</button>'+(ok?'':'<p class="small">Precisa de pelo menos mais uma pessoa.</p>')+
+    '<button class="btn sec" data-act="leave">Cancelar sala</button></section>';
+  return h;
+}
+function wait(){
+  var hp=hostPeer();
+  return '<section class="panel" style="text-align:center;justify-items:center"><div class="tag">Você está na sala</div><div class="bigcode">'+esc(S.code)+'</div><p class="muted">'+(hp?'Esperando o anfitrião sortear os nomes.':S.waitLong?'Ninguém abriu a sala '+esc(S.code)+' ainda. Confira o código com o anfitrião.':'Procurando a sala…')+'</p></section>'+
+    '<section class="panel"><div class="tag">Quem já entrou</div>'+peopleHtml(players(),S.myPeer)+'<button class="btn sec" data-act="leave">Sair da sala</button></section>';
+}
+var QSVG='<svg viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="6" width="56" height="88" rx="12" fill="#FFE14D" stroke="#0B0F3A" stroke-width="4"/><path d="M40 38 Q40 26 50 26 Q60 26 60 37 Q60 45 50 49 V57" fill="none" stroke="#0E1450" stroke-width="7" stroke-linecap="round"/><circle cx="50" cy="70" r="4.5" fill="#0E1450"/></svg>';
+function myCardPanel(ni,res,pos){
+  if(!res)return '<section class="panel pronto"><div class="tag">Seu nome chegou</div>'+QSVG+'<h2>Não olhe a tela.</h2><p class="muted">Toque no botão, conte até três e encoste o celular na testa com a tela para fora.</p><button class="btn" data-act="testa">Colocar na testa</button><p class="small">Para sair da testa, segure o dedo na tela.</p></section>';
+  var x=N[ni]||N[0];
+  return '<section class="panel res"><div class="tag">'+(res==='ok'?(pos?'Você descobriu em '+pos+'º lugar':'Você descobriu'):'Você desistiu')+'</div><div class="nm">'+esc(x[0])+'</div><p class="small">'+esc(x[1])+'</p>'+(res==='ok'&&pos?'<p style="font-weight:800">+'+([3,2,1][pos-1]||1)+' pontos</p>':'')+'</section>';
+}
+function game(){
+  var G=S.G,me=myEntry(),h='';
+  if(S.hostGone)h+='<p class="err">O anfitrião saiu da sala.</p>';
+  var myRes=me?myResult():null;
+  if(me)h+=myCardPanel(me.ni,myRes,myRes==='ok'?posOf(G,me.id):0);
+  var byId={};G.pl.forEach(function(p){byId[p.id]=p});
+  h+='<section class="panel"><div class="tag">Ordem das perguntas</div><div class="ord">'+G.ord.map(function(id,i){var p=byId[id];return p?(i?'<i>→</i>':'')+'<span>'+esc(p.nick)+'</span>':''}).join('')+'</div><p class="small">Só vale pergunta de sim ou não. Ouviu um não, passa a vez para o próximo.</p></section>';
+  var r=ranking(G),tot=totals(G),rows=G.pl.slice().sort(function(a,b){var pa=posOf(G,a.id)||99,pb=posOf(G,b.id)||99;return pa-pb});
+  h+='<section class="panel"><div class="tag">Na roda · '+r.ok.length+' de '+G.pl.length+' já descobriram</div><div class="board">'+rows.map(function(p){
+    var f=G.fin[p.id],isMe=me&&p.id===me.id,hide=isMe&&!myRes,pos=posOf(G,p.id);
+    var st=f?(f[0]==='ok'?'<span class="st ok">'+pos+'º · descobriu</span>':'<span class="st des">desistiu</span>'):'<span class="st">pensando</span>';
+    return '<div class="'+(isMe?'me':'')+'"><span class="pos">'+(tot[p.id]||0)+'</span><span class="who"><b>'+esc(p.nick)+(isMe?' (você)':'')+'</b>'+(hide?'<span class="q">? ? ?</span>':'<span>'+esc((N[p.ni]||N[0])[0])+'</span>')+'</span>'+st+'</div>'}).join('')+'</div><p class="small">O número à esquerda é o placar da noite. Dá para jogar por chamada de vídeo também: a lista mostra o nome de todo mundo, menos o seu.</p></section>';
+  if(S.isHost)h+='<section class="panel"><button class="btn" data-act="reveal">Fechar a rodada e mostrar todos</button><button class="btn sec" data-act="again">Nova rodada, nomes novos</button><button class="btn sec" data-act="end">Encerrar</button></section>';
+  else h+='<p class="small" style="text-align:center">O anfitrião fecha a rodada quando quiser.</p>';
+  return h;
+}
+function rev(){
+  var G=S.G,tot=totals(G),rp=roundPts(G),me=myEntry();
+  var rows=G.pl.slice().sort(function(a,b){return (tot[b.id]||0)-(tot[a.id]||0)||((posOf(G,a.id)||99)-(posOf(G,b.id)||99))});
+  var h='<section class="panel"><div class="tag">Fim da rodada · placar da noite</div><div class="board">'+rows.map(function(p,i){var f=G.fin[p.id];
+    return '<div class="'+(me&&p.id===me.id?'me':'')+'"><span class="pos">'+(i+1)+'º</span><span class="who"><b>'+esc(p.nick)+'</b><span>'+esc((N[p.ni]||N[0])[0])+(f?(f[0]==='ok'?' · +'+(rp[p.id]||0):' · desistiu'):' · não descobriu')+'</span></span><span class="st ok">'+(tot[p.id]||0)+' pts</span></div>'}).join('')+'</div></section>';
+  if(S.isHost)h+='<section class="panel"><button class="btn" data-act="again">Nova rodada, nomes novos</button><button class="btn sec" data-act="end">Encerrar</button></section>';
+  else h+='<p class="small" style="text-align:center">Esperando o anfitrião começar a próxima.</p>';
+  return h;
+}
+function solo(){
+  var x=N[S.solo.ni];
+  var h=S.solo.res?'<section class="panel res"><div class="tag">'+(S.solo.res==='ok'?'Você descobriu':'Você desistiu')+'</div><div class="nm">'+esc(x[0])+'</div><p class="small">'+esc(x[1])+'</p></section>':myCardPanel(S.solo.ni,null,0);
+  h+='<section class="panel"><div class="tag">Quem pode sair</div>'+catChips()+'<button class="btn'+(S.solo.res?'':' sec')+'" data-act="solo">Sortear outro nome</button><button class="btn sec" data-act="end">Voltar</button></section>';
+  return h;
+}
+function render(){
+  var f={home:home,lobby:lobby,wait:wait,game:game,rev:rev,solo:solo}[S.screen]||home;
+  var bk=document.querySelector('.back');if(bk){if(S.screen==='home'){bk.textContent='← Todos os jogos da Rodada';bk.removeAttribute('data-av')}else{bk.textContent='← Voltar ao início de Quem Sou Eu?';bk.setAttribute('data-av','1')}}
+  var y=window.scrollY;app.innerHTML=f();if(S.keepScroll)window.scrollTo(0,y);S.keepScroll=false;
+}
+function go(s){S.screen=s;window.scrollTo(0,0);render()}
+
+/* ---------- placa na testa ---------- */
+var tState=null,lpTimer=null,cdTimer=null,wake=null;
+function fit(){var el=testa.querySelector('.tn');if(!el)return;var box=testa.querySelector('.tbox');var maxH=box.clientHeight*0.78;var s=Math.min(window.innerWidth*0.24,window.innerHeight*0.3);el.style.fontSize=s+'px';var g=0;while(g++<80&&s>20&&(el.scrollWidth>el.clientWidth+1||el.scrollHeight>maxH)){s-=3;el.style.fontSize=s+'px'}}
+function openTesta(ni,onDone){
+  tState={ni:ni,done:onDone,phase:'cd'};testa.hidden=false;
+  try{var de=document.documentElement;if(de.requestFullscreen)de.requestFullscreen().catch(function(){})}catch(e){}
+  try{if(navigator.wakeLock)navigator.wakeLock.request('screen').then(function(w){wake=w},function(){})}catch(e){}
+  var c=3;var draw=function(){testa.innerHTML='<div class="tt">Encoste na testa</div><div class="tbox"><div class="cnt" aria-live="assertive">'+c+'</div></div><div class="tf">Tela virada para a turma</div>'};draw();
+  cdTimer=setInterval(function(){c--;if(c>0){draw();return}clearInterval(cdTimer);cdTimer=null;showName()},900);
+}
+function showName(){
+  if(!tState)return;tState.phase='name';var x=N[tState.ni]||N[0];
+  testa.innerHTML='<div class="tt">Quem sou eu?</div><div class="tbox"><div class="tn">'+esc(x[0])+'</div><div class="tc">'+esc(x[1])+'</div></div><div class="tf">Segure o dedo na tela para sair</div>'+
+    '<div class="tm" hidden><div class="tag">O nome está escondido</div><h2 style="text-align:center">E aí, descobriu?</h2><button class="btn" data-t="ok">Acertei!</button><button class="btn sec" data-t="back">Voltar para a testa</button><button class="btn sec" data-t="des">Desisto, quero ver</button></div>';
+  fit();
+}
+function menu(){if(!tState||tState.phase!=='name')return;tState.phase='menu';var m=testa.querySelector('.tm');if(m){m.hidden=false;var b=m.querySelector('button');if(b)b.focus()}}
+function closeTesta(){testa.hidden=true;testa.innerHTML='';if(cdTimer){clearInterval(cdTimer);cdTimer=null}tState=null;try{if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(function(){})}catch(e){}try{if(wake)wake.release();wake=null}catch(e){}}
+testa.addEventListener('pointerdown',function(e){if(e.target.closest('.tm'))return;if(!tState)return;if(tState.phase==='cd'){return}clearTimeout(lpTimer);lpTimer=setTimeout(menu,700)});
+['pointerup','pointercancel','pointerleave'].forEach(function(ev){testa.addEventListener(ev,function(){clearTimeout(lpTimer)})});
+testa.addEventListener('contextmenu',function(e){e.preventDefault()});
+testa.addEventListener('click',function(e){var b=e.target.closest('[data-t]');if(!b||!tState)return;var t=b.dataset.t;
+  if(t==='back'){tState.phase='name';testa.querySelector('.tm').hidden=true;return}
+  var done=tState.done;closeTesta();done(t);});
+document.addEventListener('keydown',function(e){if(!tState)return;if(e.key==='Escape'){e.preventDefault();if(tState.phase==='cd'){clearInterval(cdTimer);cdTimer=null;closeTesta()}else menu()}});
+window.addEventListener('resize',function(){if(tState&&tState.phase!=='cd')fit()});
+
+/* ---------- sala ---------- */
+function players(){return S.peers.filter(function(p){return p.kind==='viewer'&&p.presence&&p.presence.r==='p'}).map(function(p){return {id:p.peer,nick:String(p.presence.nick||'Jogador').slice(0,18)}})}
+function hostPeer(){for(var i=0;i<S.peers.length;i++){var p=S.peers[i];if(p.presence&&p.presence.r==='h'&&p.presence.g===GID&&!p.sameTab)return p}return null}
+function myEntry(){var G=S.G;if(!G)return null;for(var i=0;i<G.pl.length;i++)if(G.pl[i].id===S.myPeer)return G.pl[i];return null}
+function myResult(){var G=S.G,me=myEntry();if(!G||!me)return null;if(G.fin[me.id])return G.fin[me.id][0];if(S.mine&&S.mine.ep===G.ep)return S.mine.res;return null}
+function packG(G){return {r:'h',g:GID,ph:G.ph,ep:G.ep,pl:G.pl.map(function(p){return [p.id,p.nick,p.ni]}),ord:G.ord,fin:G.fin,prev:G.prev,t0:G.t0}}
+function unpack(P){return {ph:P.ph,ep:P.ep,pl:(P.pl||[]).map(function(a){return {id:String(a[0]),nick:String(a[1]).slice(0,18),ni:Math.max(0,Math.min(N.length-1,+a[2]||0))}}),ord:Array.isArray(P.ord)?P.ord.map(String):[],fin:(P.fin&&typeof P.fin==='object')?P.fin:{},prev:(P.prev&&typeof P.prev==='object')?P.prev:{},t0:+P.t0||0}}
+function sync(){if(S.isHost&&S.rm){var o=S.G?packG(S.G):{r:'h',g:GID,ph:'lobby',ep:0};sess.set({code:S.code,host:true,nick:S.nick,G:S.G,ver:S.ver,cats:S.cats,n:S.n});S.rm.presence(o).catch(function(){S.err='Não deu para atualizar a sala.';render()})}}
+function onPeers(ch){
+  S.peers=ch.peers;
+  if(!S.myPeer){for(var i=0;i<ch.peers.length;i++)if(ch.peers[i].sameTab){S.myPeer=ch.peers[i].peer;break}}
+  if(S.isHost){
+    var G=S.G,ch2=false;
+    if(G&&G.ph==='jogo'){S.peers.forEach(function(p){var st=p.presence&&p.presence.st;if(p.presence&&p.presence.r==='p'&&st&&st.ep===G.ep&&!G.fin[p.peer]&&G.pl.some(function(q){return q.id===p.peer})){G.fin[p.peer]=[st.res==='ok'?'ok':'des',Date.now()-G.t0];ch2=true}})}
+    if(ch2)sync();
+  }else{
+    var hp=hostPeer();
+    if(hp){S.hostGone=false;var P=hp.presence;
+      if(P.ph==='jogo'||P.ph==='rev'){var prevEp=S.G&&S.G.ep;S.G=unpack(P);var scr=P.ph==='jogo'?'game':'rev';if(prevEp!==S.G.ep){S.mine=null;if(tState)closeTesta()}if(S.screen!==scr||prevEp!==S.G.ep){go(scr);return}}
+      else if(S.screen!=='wait'){go('wait');return}
+    }else if(S.G&&(S.screen==='game'||S.screen==='rev'))S.hostGone=true;
+  }
+  if(tState)return;
+  S.keepScroll=true;render();
+}
+function joinRoom(code,asHost){
+  if(!roomNs)return Promise.reject();
+  return roomNs.join('rd-'+GID+'-'+code.toLowerCase()).then(function(rm){
+    S.rm=rm;S.code=code;S.isHost=asHost;S.peers=rm.peers();
+    rm.onPeers(onPeers,function(){S.err='A conexão com a sala caiu.';render()});
+    return rm.presence(asHost?{r:'h',g:GID,ph:'lobby',ep:0}:{r:'p',nick:S.nick||'Jogador',st:null});
+  });
+}
+/* recarregou no meio da partida: volta para a mesma sala */
+function retoma(){
+  var o=sess.get();if(!o||!/^[A-Z0-9]{4}$/.test(o.code||''))return false;
+  S.nick=o.nick||S.nick;if(o.host){if(o.G)S.G=o.G;if(o.ver)S.ver=o.ver;if(o.cats)S.cats=o.cats;if(o.n)S.n=o.n}
+  if(!o.host&&o.mine)S.mine=o.mine;
+  joinRoom(o.code,!!o.host).then(function(){
+    if(o.host){var mp=S.rm.peers().filter(function(q){return q.sameTab})[0];if(mp)S.myPeer=mp.peer;sync();enter(S.G?(S.G.ph==='rev'?'rev':'game'):'lobby')}
+    else{if(S.mine)S.rm.presence({r:'p',nick:S.nick||'Jogador',st:{ep:S.mine.ep,res:S.mine.res}}).catch(function(){});enter('wait')}
+  },function(){sess.del();render()});
+  return true;
+}
+function doHome(){sess.del();closeTesta();var r=S.rm;S.rm=null;S.isHost=false;S.G=null;S.peers=[];S.myPeer=null;S.mine=null;S.solo=null;if(r)r.leave().catch(function(){});go('home')}
+var pushed=false;
+function enter(s){if(S.screen==='home'&&s!=='home'&&!pushed){try{history.pushState({av:1},'');pushed=true}catch(e){}}go(s)}
+function toHome(){if(pushed){pushed=false;try{history.back();return}catch(e){}}doHome()}
+window.addEventListener('popstate',function(){pushed=false;if(tState){closeTesta()}if(S.screen!=='home')doHome()});
+function deal(list){
+  var ids=pick(list.length);
+  S.G={ph:'jogo',ep:(S.G?S.G.ep+1:1)+Math.floor(Math.random()*1000)*1000,pl:list.map(function(p,i){return {id:p.id,nick:p.nick,ni:ids[i]}}),ord:shuffle(list.map(function(p){return p.id})),fin:{},prev:S.G?totals(S.G):{},t0:Date.now()};
+  S.mine=null;
+}
+function finish(res){
+  var G=S.G,me=myEntry();if(!G||!me)return;
+  S.mine={ep:G.ep,res:res};if(!S.isHost){var so=sess.get();if(so){so.mine=S.mine;sess.set(so)}}
+  if(S.isHost){if(!G.fin[me.id]){G.fin[me.id]=[res,Date.now()-G.t0];sync()}}
+  else if(S.rm){S.rm.presence({r:'p',nick:S.nick||'Jogador',st:{ep:G.ep,res:res}}).catch(function(){})}
+  render();
+}
+
+/* ---------- ações ---------- */
+app.addEventListener('click',function(e){
+  var b=e.target.closest('[data-act]');if(!b)return;
+  var a=b.dataset.act,v=b.dataset.v;S.err='';
+  if(a==='n'){S.n=Math.max(MIN,Math.min(MAX,S.n+(+v)));S.keepScroll=true;render()}
+  else if(a==='ver'){S.ver=v==='fut'?'fut':'geral';S.keepScroll=true;render()}
+  else if(a==='cat'){S.cats[v]=!S.cats[v];if(!(VERS[S.ver]||VERS.geral).some(function(k){return S.cats[k]}))S.cats[v]=true;S.keepScroll=true;render()}
+  else if(a==='create'){
+    S.nick=(document.getElementById('avNick').value.trim()||'Anfitrião').slice(0,18);store.set('nick',S.nick);
+    b.disabled=true;var code=newCode();
+    joinRoom(code,true).then(function(){sess.set({code:code,host:true,nick:S.nick});enter('lobby')},function(){S.err='Não deu para criar a sala agora. Tente de novo ou jogue sem sala.';render()});
+  }
+  else if(a==='join'){
+    var code=(document.getElementById('avCode').value||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+    S.nick=(document.getElementById('avNick2').value.trim()||'').slice(0,18);
+    if(code.length!==4){S.joinErr='O código tem 4 letras ou números.';render();return}
+    if(!S.nick){S.joinErr='Escreva seu apelido para a turma saber quem é você.';render();return}
+    store.set('nick',S.nick);S.joinErr='';b.disabled=true;S.waitLong=false;
+    joinRoom(code,false).then(function(){sess.set({code:code,host:false,nick:S.nick});enter('wait');setTimeout(function(){if(S.screen==='wait'&&!hostPeer()){S.waitLong=true;render()}},8000)},function(){S.joinErr='Não deu para entrar agora. Tente de novo.';render()});
+  }
+  else if(a==='leave'||a==='end'){toHome()}
+  else if(a==='deal'||a==='again'){
+    if(!S.myPeer&&S.rm){var mp=S.rm.peers().filter(function(q){return q.sameTab})[0];if(mp)S.myPeer=mp.peer}
+    var list=[{id:S.myPeer,nick:S.nick||'Anfitrião'}].concat(players());
+    if(list.length<MIN){S.err='Saiu gente: precisa de pelo menos duas pessoas.';render();return}
+    deal(list.slice(0,MAX));sync();go('game');
+  }
+  else if(a==='reveal'){S.G.ph='rev';sync();go('rev')}
+  else if(a==='testa'){
+    if(S.screen==='solo')openTesta(S.solo.ni,function(res){if(res==='back')return;S.solo.res=res;render()});
+    else{var me=myEntry();if(me)openTesta(me.ni,function(res){finish(res)})}
+  }
+  else if(a==='solo'){S.solo={ni:pick(1)[0],res:null};if(S.screen==='solo')go('solo');else enter('solo')}
+});
+app.addEventListener('input',function(e){var t=e.target;
+  if(t.id==='avNick'||t.id==='avNick2')S.nick=t.value;
+  if(t.id==='avCode'){t.value=t.value.toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,4);S.joinCode=t.value}
+});
+document.addEventListener('click',function(e){var bk=e.target.closest&&e.target.closest('.back[data-av]');if(bk){e.preventDefault();toHome()}});
+render();
+})();
+</script>
+</body></html>

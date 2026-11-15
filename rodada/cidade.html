@@ -1,0 +1,65 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/favicon.svg"><script src="sala.js"></script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>Cidade Dorme · Rodada</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="aovivo.css">
+<style>
+/* Cidade Dorme: preto da madrugada, lua cheia e a silhueta de um assassino de chapéu, com a lâmina em vermelho. Visual único, sempre escuro. */
+:root{--bg:#050506;--fg:#F4F4F5;--fg2:#A1A1AA;--card:#121214;--line:#26262B;--acc:#EDE4CC;--acc-ink:#0A0A0A;--acc-soft:rgba(237,228,204,.12);--bad:#FF7A84;--back-bg:linear-gradient(180deg,#16161B,#050506);--back-line:#E5383B;color-scheme:dark}
+#app{display:grid;gap:20px}
+.hero{display:grid;gap:12px}
+.lock{display:flex;align-items:center;gap:14px;font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.045em;line-height:.85}
+.lock svg{width:70px;height:70px;flex:none}
+.lock .w{display:flex;flex-direction:column}
+.lock em{font-style:normal;font-weight:500;font-size:26px;color:var(--fg2)}
+.lock b{font-weight:800;font-size:60px}
+</style></head><body>
+<div class="av">
+  <a class="back" href="./">← Todos os jogos da Rodada</a>
+  <header class="hero">
+    <h1 class="lock" aria-label="Cidade Dorme"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="40" r="32" fill="#EDE4CC"/><path d="M30 42 H70 Q73 45 68 46 H32 Q27 45 30 42Z M39 42 L41 27 Q50 23 59 27 L61 42Z M42 46 H58 V54 H42Z M35 54 Q50 49 65 54 L75 100 H25Z" fill="#050506"/><path d="M71 78 L86 63" stroke="#E5383B" stroke-width="4" stroke-linecap="round"/></svg><span class="w" aria-hidden="true"><em>cidade</em><b>dorme</b></span></h1>
+    <p class="muted" style="font-size:18px">A cidade fecha os olhos. Os assassinos acordam. Até o dia nascer, ninguém sabe em quem confiar. Para 5 a 20 pessoas, com um mestre conduzindo a noite.</p>
+  </header>
+  <div id="app"></div>
+  <footer>Rodada Ao Vivo · versão de teste. Crie a sala, mande o código e cada um joga no seu celular. No modo "Um celular só", basta um aparelho.</footer>
+</div>
+<script src="aovivo.js"></script>
+<script>
+(function(){
+var I={
+ mask:'<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><path d="M10 40 Q50 18 90 40 Q88 68 66 68 Q55 68 50 57 Q45 68 34 68 Q12 68 10 40Z"/><ellipse cx="32" cy="46" rx="9" ry="6" fill="currentColor"/><ellipse cx="68" cy="46" rx="9" ry="6" fill="currentColor"/></svg>',
+ lupa:'<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"><circle cx="42" cy="42" r="24"/><path d="M60 60 L84 84"/></svg>',
+ anjo:'<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="50" cy="18" rx="20" ry="6"/><circle cx="50" cy="46" r="14"/><path d="M36 62 Q16 60 8 40 Q26 44 36 54"/><path d="M64 62 Q84 60 92 40 Q74 44 64 54"/><path d="M34 88 Q50 66 66 88"/></svg>',
+ casa:'<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 50 L50 20 L86 50"/><path d="M26 42 V82 H74 V42"/><path d="M44 82 V62 H56 V82"/><rect x="33" y="50" width="9" height="9" fill="currentColor" stroke="none"/><rect x="58" y="50" width="9" height="9" fill="currentColor" stroke="none"/></svg>'
+};
+var back='<svg viewBox="0 0 100 100" aria-hidden="true" style="width:58%"><circle cx="50" cy="40" r="32" fill="#EDE4CC"/><path d="M30 42 H70 Q73 45 68 46 H32 Q27 45 30 42Z M39 42 L41 27 Q50 23 59 27 L61 42Z M42 46 H58 V54 H42Z M35 54 Q50 49 65 54 L75 100 H25Z" fill="#0B0B0E"/><path d="M71 78 L86 63" stroke="#E5383B" stroke-width="4" stroke-linecap="round"/></svg>';
+var C={
+ assassino:{nome:'Assassino',plural:'Assassinos',c:'#FF4D5A',cbg:'#1A0507',cink:'#FFE9EC',i:I.mask,l:'De noite, acorde com os outros assassinos e escolham uma vítima. De dia, finja inocência.'},
+ detetive:{nome:'Detetive',plural:'Detetives',c:'#4DA3FF',cbg:'#06121F',cink:'#E6F2FF',i:I.lupa,l:'De noite, aponte um suspeito. O mestre responde com um sinal: é ou não é.'},
+ anjo:{nome:'Anjo',plural:'Anjos',c:'#F4F4F5',cbg:'#17171B',cink:'#F4F4F5',i:I.anjo,l:'De noite, escolha alguém para proteger. Se for a vítima, ela sobrevive.'},
+ cidadao:{nome:'Cidadão',plural:'Cidadãos',c:'#FFC94A',cbg:'#17130A',cink:'#FFF6DE',i:I.casa,l:'Durma de noite. De dia, descubra quem são os assassinos e vote para tirá-los.'}
+};
+RodadaAoVivo.start({
+ id:'cidade',nome:'Cidade Dorme',min:5,max:20,def:8,hostPlays:false,hostLabel:'O mestre',hostSeesRoles:true,backSvg:back,cards:C,
+ opts:[{id:'anjo',label:'Com Anjo (protege alguém a cada noite)',def:true}],
+ setup:function(n,o){var a=n<=6?1:n<=11?2:3,r=[];for(var i=0;i<a;i++)r.push('assassino');r.push('detetive');if(o.anjo)r.push('anjo');while(r.length<n)r.push('cidadao');return {roles:RodadaAoVivo.shuffle(r),data:{}}},
+ card:function(k){var d=C[k];return {nome:d.nome,linha:d.l,c:d.c,cbg:d.cbg,cink:d.cink,icon:d.i}},
+ gallery:function(){return [['assassino'],['detetive'],['anjo'],['cidadao']]},
+ steps:[
+  ['A cidade dorme.','Todo mundo fecha os olhos e abaixa a cabeça.'],
+  ['Assassinos, acordem.','Em silêncio, escolham juntos uma vítima e apontem para ela.'],
+  ['Assassinos, durmam.',''],
+  ['Anjo, acorde.','Se tiver Anjo: ele aponta quem quer proteger. Pode ser ele mesmo.'],
+  ['Anjo, durma.',''],
+  ['Detetive, acorde.','Ele aponta um suspeito. Faça sinal de joinha se for assassino, ou negue com a cabeça.'],
+  ['Detetive, durma.',''],
+  ['A cidade acorda.','Conte quem morreu na noite, ou que o Anjo salvou alguém. Marque quem saiu na lista.'],
+  ['Debate e votação.','A cidade discute e vota em quem eliminar. Marque quem saiu e comece outra noite.']
+ ],
+ vitoria:function(G){var alive=G.pl.filter(function(p){return G.out.indexOf(p.id)<0});var a=alive.filter(function(p){return p.role==='assassino'}).length;if(!G.out.length)return null;if(a===0)return 'A cidade venceu! Todos os assassinos foram pegos.';if(a>=alive.length-a)return 'Os assassinos venceram.';return null},
+ rules:'<ol class="rules"><li><b>O mestre</b> cria a sala (ou segura o celular) e não recebe carta: ele conduz a noite com o roteiro na tela.</li><li><b>Cada pessoa</b> vê a própria carta em segredo: assassino, detetive, anjo ou cidadão.</li><li><b>De noite</b>, o mestre chama cada papel para acordar, de olhos fechados para o resto.</li><li><b>De dia</b>, a cidade debate e vota em quem eliminar. Quem sai não fala mais.</li><li><b>A cidade vence</b> quando pega todos os assassinos. <b>Os assassinos vencem</b> quando ficam em número igual ao resto.</li></ol>'
+});
+})();
+</script>
+</body></html>

@@ -1,0 +1,414 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/favicon.svg"><script src="sala.js"></script><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Rodada · jogos rápidos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Sora:wght@600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: coluna de 760px. Topo limpo = o que é a Rodada, 3 passos e os logos dos jogos; cada jogo é uma ficha na cor do seu gomo, com uma amostra jogável; depois modos, ocasiões, rankings e a sala. */
+:root{
+  --fundo:#FFF7EA; --carta:#FFFFFF; --tinta:#1C1530; --tinta-2:#5F5873; --linha:#EDE3CF;
+  --mom:#009C58; --mom-bg:#DDF5E8; --um:#B8860B; --um-bg:#F6EBCB; --cas:#E23D77; --cas-bg:#FCE4EE; --roxo:#5B3FD6; --roxo-bg:#ECE7FF; --ouro:#E8A317; --erro:#C8341F; --erro-bg:#F9E0DA;
+  --f:'Figtree',system-ui,sans-serif; --d:'Bricolage Grotesque','Figtree',system-ui,sans-serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--fundo:#120E1E;--carta:#1D1730;--tinta:#F5F1FF;--tinta-2:#ABA3C2;--linha:#2E2645;--mom:#2FD38A;--mom-bg:#123B2B;--um:#F2C14E;--um-bg:#3A2F12;--cas:#FF6B9A;--cas-bg:#3D1730;--roxo:#9C86FF;--roxo-bg:#241C45;--ouro:#F2C14E;--erro:#FF6B57;--erro-bg:#3A1712;color-scheme:dark}}
+:root[data-theme="dark"]{--fundo:#120E1E;--carta:#1D1730;--tinta:#F5F1FF;--tinta-2:#ABA3C2;--linha:#2E2645;--mom:#2FD38A;--mom-bg:#123B2B;--um:#F2C14E;--um-bg:#3A2F12;--cas:#FF6B9A;--cas-bg:#3D1730;--roxo:#9C86FF;--roxo-bg:#241C45;--ouro:#F2C14E;--erro:#FF6B57;--erro-bg:#3A1712;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--f);font-size:16px;line-height:1.5;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:18px 56px}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:30px}
+h1,h2,h3{margin:0;line-height:1.02;font-family:var(--d);font-weight:800;letter-spacing:-.03em;text-wrap:balance}
+h1{font-size:clamp(44px,12vw,84px);letter-spacing:-.045em}
+h2{font-size:clamp(26px,6vw,34px)}
+h3{font-size:21px}
+p{margin:0}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-family:var(--d);font-weight:800;font-size:30px;line-height:1;letter-spacing:-.045em;white-space:nowrap;display:inline-flex;align-items:flex-end}
+.logo svg{width:.62em;height:.62em;margin:0 .02em .06em}
+.ring circle{fill:none;stroke-width:18;stroke-linecap:round;stroke-dasharray:56 170.2}
+.ring .c1{stroke:var(--cas)}.ring .c2{stroke:var(--ouro)}.ring .c3{stroke:var(--mom)}
+@media (prefers-reduced-motion:no-preference){.ring{transition:transform .5s ease}.logo:hover .ring{transform:rotate(120deg)}}
+.demo{font-size:12px;font-weight:700;color:var(--tinta-2);border:1px solid var(--linha);border-radius:999px;padding:4px 10px}
+.lead{font-size:clamp(17px,4.4vw,20px);color:var(--tinta-2);max-width:56ch}
+.tag{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-2);font-weight:700}
+.sec{display:grid;gap:14px}
+.small{font-size:14px;color:var(--tinta-2)}
+
+.how{list-style:none;margin:4px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;counter-reset:p}
+@media (max-width:600px){.how{grid-template-columns:1fr}}
+.how li{counter-increment:p;background:var(--carta);border:1px solid var(--linha);border-radius:16px;padding:14px;display:grid;gap:2px;align-content:start}
+.how li::before{content:counter(p);font-family:var(--d);font-weight:800;font-size:28px;line-height:1;color:var(--roxo);margin-bottom:6px}
+.how b{font-size:16px}
+.how span{font-size:14px;color:var(--tinta-2)}
+.jump{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media (max-width:560px){.jump{grid-template-columns:1fr}}
+.jump a{display:flex;align-items:center;justify-content:center;min-height:96px;padding:14px 16px;border-radius:18px;background:var(--carta);border:1px solid var(--linha);color:var(--tinta);text-decoration:none}
+.jump a:hover{border-color:var(--tinta-2)}
+.jump a:focus-visible{outline:3px solid var(--roxo);outline-offset:2px}
+.jump .lk-um{font-size:44px}
+.jump .lk-mom b{font-size:34px}
+.jump .lk-mom em{font-size:16px}
+.jump .bolas i:first-child{width:30px;height:30px}
+.jump .bolas i:last-child{width:14px;height:14px;border-width:3px}
+.jump .lk-cas svg{width:46px;height:34px}
+.jump .lk-cas em{font-size:15px}
+.jump .lk-cas b{font-size:34px}
+.jump .lk-cd svg{width:46px;height:46px;flex:none}
+.jump .lk-cd em{font-size:15px}
+.jump .lk-cd b{font-size:32px}
+.jump .lk-pi,.jump .lk-in{gap:10px}
+.jump .lk-pi svg{width:54px;height:33px;flex:none}
+.jump .lk-in svg{width:34px;height:34px;flex:none}
+.jump .lk-pi b,.jump .lk-in b{font-size:30px}
+.jump .lk-qs svg{width:44px;height:44px;flex:none}
+.jump .lk-qs em{font-size:15px}
+.jump .lk-qs b{font-size:32px;color:#1B2A8C}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .jump .lk-qs b{color:#FFD21F}}
+:root[data-theme="dark"] .jump .lk-qs b{color:#FFD21F}
+.jump.j2,.jump.j4{grid-template-columns:1fr 1fr}
+@media (max-width:560px){.jump.j2,.jump.j4{grid-template-columns:1fr}}
+.jump .lk-qz{gap:10px}
+.jump .lk-qz svg{width:38px;height:38px;flex:none}
+.jump .lk-qz b{font-size:28px}
+.jump a.feat{grid-column:1/-1;justify-content:flex-start;gap:18px;flex-wrap:wrap;padding:18px 20px;background:var(--roxo-bg);border-color:color-mix(in srgb,var(--roxo) 35%,transparent)}
+.jump a.feat .ftx{display:grid;gap:4px;flex:1 1 260px;min-width:0}
+.jump a.feat .ftx em{font-style:normal;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--roxo)}
+.jump a.feat .ftx span{font-size:15px;color:var(--tinta-2);line-height:1.4}
+.jump a.feat .lk-qz svg{width:52px;height:52px}
+.jump a.feat .lk-qz b{font-size:36px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.join{display:flex;gap:8px;flex-wrap:wrap;align-items:stretch}
+.join label{flex-basis:100%;font-size:14px;font-weight:600;color:var(--tinta-2)}
+.join input{flex:1 1 160px;min-width:0;font:700 26px var(--mono);letter-spacing:.3em;text-transform:uppercase;padding:12px 14px;border-radius:14px;border:2px solid var(--linha);background:var(--carta);color:var(--tinta)}
+.join input:focus-visible{outline:none;border-color:var(--roxo)}
+.btn{border:0;border-radius:14px;padding:14px 20px;font:800 16px var(--f);cursor:pointer;background:var(--roxo);color:#fff;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn:focus-visible,.play:focus-visible,.opt:focus-visible,.duel:focus-visible{outline:3px solid var(--roxo);outline-offset:2px}
+.btn.ghost{background:transparent;color:var(--tinta);border:2px solid var(--linha)}
+.msg{flex-basis:100%;font-size:14px;color:var(--tinta-2);min-height:21px}
+
+.today{background:var(--tinta);color:var(--fundo);border-radius:26px;padding:22px;display:grid;gap:16px}
+.today .tag{color:inherit;opacity:.7}
+.today p{opacity:.85}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.step{border-radius:16px;padding:14px;display:grid;gap:4px;background:color-mix(in srgb,var(--fundo) 10%,transparent);border:1px solid color-mix(in srgb,var(--fundo) 18%,transparent)}
+.step b{font-size:17px}
+.step span{font-size:14px;opacity:.78}
+.dot{width:12px;height:12px;border-radius:50%}
+.rcard{background:var(--carta);color:var(--tinta);border-radius:22px;padding:20px;display:grid;gap:16px;max-width:460px;width:100%;justify-self:start}
+.rc-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.rc-head .t{display:flex;align-items:center;gap:10px;min-width:0}
+.rc-head svg{width:34px;height:34px;flex:none}
+.rc-head b{font-family:var(--d);font-weight:800;font-size:22px;letter-spacing:-.03em;line-height:1;display:block}
+.rc-head small{font-size:13px;color:var(--tinta-2)}
+.pos{background:var(--roxo-bg);color:var(--roxo);border-radius:14px;padding:6px 12px;text-align:center;line-height:1.1;flex:none}
+.pos b{font-family:var(--d);font-size:22px;display:block}
+.pos span{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.rc-game{display:grid;gap:8px;padding-top:14px;border-top:1px solid var(--linha)}
+.rc-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rc-name{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;min-width:0}
+.rc-name i{width:10px;height:10px;border-radius:50%;flex:none}
+.rc-name em{font-style:normal;font-weight:500;color:var(--tinta-2)}
+.rc-score{font-family:var(--d);font-weight:800;font-size:30px;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.rc-score small{font-size:16px;color:var(--tinta-2)}
+.pips{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
+.pips span{aspect-ratio:1;max-width:100%;border-radius:50%;background:var(--linha)}
+.pips .h{background:var(--g)}
+.pips .m{background:transparent;border:2px solid var(--linha)}
+.rc-meta{display:flex;flex-wrap:wrap;gap:6px;font-size:13px}
+.rc-meta span{border-radius:999px;padding:3px 10px;background:var(--fundo);color:var(--tinta-2);font-weight:600}
+.rc-meta .top{background:var(--um-bg);color:var(--um)}
+.rc-streak{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-top:14px;border-top:1px solid var(--linha)}
+.week{display:flex;gap:6px}
+.week span{display:grid;justify-items:center;gap:3px;font-size:10px;font-weight:700;color:var(--tinta-2)}
+.week span i{width:18px;height:18px;border-radius:50%;background:var(--roxo)}
+.week span.hoje i{box-shadow:0 0 0 3px var(--roxo-bg)}
+.rc-streak b{font-family:var(--d);font-size:20px;line-height:1}
+.rc-streak small{display:block;font-size:12px;color:var(--tinta-2)}
+.txt{font-size:14px}
+.txt summary{cursor:pointer;opacity:.85}
+.txt pre{font:500 14px/1.6 var(--mono);white-space:pre;overflow-x:auto;margin:10px 0 0;opacity:.9}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.today .btn.ghost{color:var(--fundo);border-color:color-mix(in srgb,var(--fundo) 30%,transparent)}
+
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:520px){.modes{grid-template-columns:1fr}}
+.mode{background:var(--carta);border:1px solid var(--linha);border-radius:20px;padding:18px;display:grid;gap:6px;align-content:start}
+.mode p{color:var(--tinta-2);font-size:15px}
+.mode .k{font:700 13px var(--mono);color:var(--roxo)}
+
+.games{display:grid;gap:18px}
+.game{border-radius:24px;padding:22px;display:grid;gap:16px;border:2px solid transparent}
+.game.mom{background:var(--mom-bg);border-color:color-mix(in srgb,var(--mom) 40%,transparent)}
+.game.um{background:var(--um-bg);border-color:color-mix(in srgb,var(--um) 40%,transparent)}
+.game.cas{background:var(--cas-bg);border-color:color-mix(in srgb,var(--cas) 40%,transparent)}
+.game.soon{background:var(--carta);border:2px dashed var(--linha)}
+.ghead{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.ghead>div{min-width:0;display:grid;gap:6px}
+.gomo{flex:none;width:46px;height:46px}
+.path{font:500 13px var(--mono);color:var(--tinta-2)}
+.lock{display:flex;align-items:center;gap:12px;font-family:var(--d);letter-spacing:-.045em;line-height:.85}
+.lock .w{display:flex;flex-direction:column}
+.lock b{font-weight:800}
+.lock em{font-style:normal;font-weight:500;color:var(--tinta-2)}
+.lk-um{flex-direction:column;align-items:flex-start;gap:0;font-size:clamp(64px,16vw,84px);letter-spacing:-.06em}
+.lk-um svg{width:1.05em;height:.4em;margin-bottom:-.02em}
+.lk-mom b{font-size:clamp(48px,12vw,60px)}
+.lk-mom em{font-size:clamp(22px,5.6vw,28px);line-height:1}
+.bolas{display:flex;align-items:flex-end;gap:5px;flex:none}
+.bolas i{display:block;border-radius:50%}
+.bolas i:first-child{width:52px;height:52px;background:var(--mom)}
+.bolas i:last-child{width:24px;height:24px;border:5px solid var(--mom);box-sizing:border-box}
+.lk-cas svg{width:76px;height:56px;flex:none}
+.lk-cas em{font-size:clamp(20px,5vw,24px);line-height:1.05}
+.lk-cas b{font-size:clamp(48px,12vw,60px)}
+.slog{font-family:var(--d);font-weight:500;font-size:20px;letter-spacing:-.02em}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+@media (max-width:560px){.facts{grid-template-columns:1fr 1fr}}
+.facts div{background:var(--carta);border-radius:14px;padding:10px 12px;display:grid;gap:2px}
+.facts b{font-family:var(--d);font-size:22px;line-height:1.1}
+.facts span{font-size:13px;color:var(--tinta-2);line-height:1.35}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:13px;font-weight:600;border-radius:999px;padding:5px 11px;background:var(--carta);border:1px solid var(--linha)}
+.try{background:var(--carta);border-radius:18px;padding:16px;display:grid;gap:12px}
+.try .q{font-family:var(--d);font-weight:800;font-size:clamp(19px,5vw,23px);line-height:1.2}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (max-width:440px){.opts{grid-template-columns:1fr}}
+.opt{border:2px solid var(--linha);background:var(--fundo);color:var(--tinta);border-radius:12px;padding:11px 12px;text-align:left;font:600 15px var(--f);cursor:pointer}
+.opt:disabled{cursor:default}
+.opt.right{border-color:var(--mom);background:var(--mom-bg)}
+.opt.wrong{border-color:var(--erro);background:var(--erro-bg)}
+.opt.mine{border-color:var(--cas);background:var(--cas-bg)}
+.fb{font-size:15px;min-height:22px}
+.fb b{font-weight:800}
+.duels{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:stretch}
+.duels .vs{align-self:center;font-weight:800;color:var(--tinta-2);font-size:13px}
+.duel{border:2px solid var(--linha);background:var(--fundo);color:var(--tinta);border-radius:14px;padding:14px;text-align:left;font:inherit;cursor:pointer;display:grid;gap:8px;align-content:start;min-width:0}
+.duel:disabled{cursor:default}
+.duel .nm{font-weight:800;font-size:18px;line-height:1.15}
+.duel .val{display:grid;gap:6px}
+.duel .val b{font-family:var(--d);font-size:20px;font-variant-numeric:tabular-nums}
+.bar{height:8px;border-radius:9px;background:var(--linha);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--tinta-2);transition:width .6s ease-out}
+.duel.win{border-color:var(--mom);background:var(--mom-bg)}
+.duel.win .bar i{background:var(--mom)}
+.duel.wrong{border-color:var(--erro);background:var(--erro-bg)}
+.play{display:inline-flex;align-items:center;justify-content:center;border-radius:14px;padding:14px 20px;font:800 16px var(--f);text-decoration:none;color:#fff;width:100%}
+.mom .play{background:var(--mom)}.um .play{background:var(--um);color:#1C1530}.cas .play{background:var(--cas)}
+.price{display:flex;flex-wrap:wrap;gap:8px;font-size:14px}
+.price span{border:1px dashed var(--cas);border-radius:10px;padding:6px 10px}
+
+.occ{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media (max-width:620px){.occ{grid-template-columns:1fr 1fr}}
+.occ div{background:var(--carta);border:1px solid var(--linha);border-radius:16px;padding:14px;display:grid;gap:4px;align-content:start}
+.occ b{font-size:16px}
+.occ span{font-size:13px;color:var(--tinta-2)}
+.guide{display:grid;gap:4px;background:var(--roxo-bg);border:1px solid color-mix(in srgb,var(--roxo) 35%,transparent);border-radius:18px;padding:16px 18px;color:var(--tinta);text-decoration:none}
+.guide b{font-family:var(--d);font-size:20px;letter-spacing:-.02em}
+.guide span{font-size:15px;color:var(--tinta-2)}
+.guide em{font-style:normal;font-weight:800;color:var(--roxo);font-size:15px}
+.guide:focus-visible{outline:3px solid var(--roxo);outline-offset:2px}
+
+.rank{background:var(--carta);border:1px solid var(--linha);border-radius:20px;padding:20px;display:grid;gap:14px}
+.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}
+@media (max-width:460px){.levels{grid-template-columns:1fr}}
+.levels div{border:1px solid var(--linha);border-radius:14px;padding:14px 10px;display:grid;gap:4px}
+.levels b{font-family:var(--d);font-size:22px}
+.levels span{font-size:13px;color:var(--tinta-2)}
+.board{display:grid;gap:6px;font-variant-numeric:tabular-nums}
+.board div{display:grid;grid-template-columns:28px 1fr auto auto;gap:10px;align-items:center;padding:8px 10px;border-radius:12px;font-size:15px}
+.board div:nth-child(odd){background:var(--roxo-bg)}
+.board i{font-style:normal;font:700 13px var(--mono);color:var(--tinta-2)}
+.board em{font-style:normal;font-size:13px;color:var(--tinta-2)}
+.board strong{font-weight:800}
+
+.room{background:var(--roxo);color:#fff;border-radius:24px;padding:22px;display:grid;gap:10px}
+.room .tag{color:inherit;opacity:.75}
+.room .code{font:700 clamp(40px,12vw,64px) var(--mono);letter-spacing:.14em}
+.room p{opacity:.9}
+footer{font-size:13px;color:var(--tinta-2);border-top:1px solid var(--linha);padding-top:14px;display:grid;gap:6px}
+.foot{gap:18px}
+.btw{display:grid;gap:6px;padding-top:4px}
+.btw-k{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--tinta-2)}
+.btw-txt{display:grid;gap:6px;max-width:52ch}
+.btw-txt p{font-size:14px;color:var(--tinta-2)}
+.btw-s{font-family:'Sora','Figtree',sans-serif;font-weight:600;color:var(--tinta)!important;letter-spacing:-.02em}
+.btw-line{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--linha);padding-top:14px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px}
+.btw-sig{display:inline-flex}
+.btw-sig img{height:16px;width:auto;display:block}
+.sig-d{display:none!important}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sig-l{display:none!important}:root:not([data-theme="light"]) .sig-d{display:block!important}}
+:root[data-theme="dark"] .sig-l{display:none!important}:root[data-theme="dark"] .sig-d{display:block!important}
+@media (prefers-reduced-motion:no-preference){.play,.btn{transition:transform .12s}.play:active,.btn:active{transform:scale(.98)}}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <div class="logo" role="img" aria-label="Rodada"><span aria-hidden="true">r</span><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="c1" cx="50" cy="50" r="36" transform="rotate(-80 50 50)"></circle><circle class="c2" cx="50" cy="50" r="36" transform="rotate(40 50 50)"></circle><circle class="c3" cx="50" cy="50" r="36" transform="rotate(160 50 50)"></circle></svg><span aria-hidden="true">dada</span></div>
+    <span class="demo">VERSÃO DE TESTE</span>
+  </div>
+
+  <section class="sec">
+    <div class="tag">Jogos rápidos para jogar com o seu grupo</div>
+    <h1>Bora uma rodada?</h1>
+    <p class="lead">A Rodada é um site de jogos rápidos para jogar com amigos, família ou o pessoal do trabalho. Os jogos são de graça, direto no navegador, sem baixar app nem criar conta. Cada partida leva de 2 a 5 minutos e termina num placar para mandar no grupo do WhatsApp.</p>
+    <ol class="how">
+      <li><b>Escolha um jogo</b><span>1%, Mais ou Menos ou um dos jogos ao vivo.</span></li>
+      <li><b>Jogue sozinho ou junto</b><span>No seu tempo, ou ao vivo com todo mundo no mesmo link.</span></li>
+      <li><b>Mande o placar no grupo</b><span>E veja quem ficou no topo do grupo e do Brasil.</span></li>
+    </ol>
+    <nav class="jump j2" aria-label="Jogar">
+      <a href="1porcento.html" aria-label="Jogar o 1%"><span class="lock lk-um" aria-hidden="true"><svg viewBox="6 6 88 34"><circle cx="50" cy="50" r="36" fill="none" stroke="var(--ouro)" stroke-width="12" stroke-linecap="round" stroke-dasharray="56 170.2" transform="rotate(-134.5 50 50)"></circle></svg><span>1%</span></span></a>
+      <a href="maisoumenos.html" aria-label="Jogar o Mais ou Menos"><span class="lock lk-mom" aria-hidden="true"><span class="bolas"><i></i><i></i></span><span class="w"><b>mais</b><em>ou menos</em></span></span></a>
+    </nav>
+    <div class="tag" style="margin-top:8px">Jogos ao vivo em grupo</div>
+    <p class="small" style="margin-top:-6px">Todo mundo junto, cada um no seu celular, com um código para entrar. Cartas secretas, um nome na testa e muita conversa.</p>
+    <nav class="jump j4" aria-label="Jogos ao vivo em grupo">
+      <a href="cidade.html" aria-label="Jogar Cidade Dorme"><span class="lock lk-cd" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="40" r="32" fill="#E0B93F"/><path d="M30 42 H70 Q73 45 68 46 H32 Q27 45 30 42Z M39 42 L41 27 Q50 23 59 27 L61 42Z M42 46 H58 V54 H42Z M35 54 Q50 49 65 54 L75 100 H25Z" fill="currentColor"/><path d="M71 78 L86 63" stroke="#E5383B" stroke-width="4" stroke-linecap="round"/></svg><span class="w"><em>cidade</em><b>dorme</b></span></span></a>
+      <a href="piscadinha.html" aria-label="Jogar Piscadinha"><span class="lock lk-pi" aria-hidden="true"><svg viewBox="0 0 124 76"><circle cx="34" cy="34" r="22" fill="none" stroke="#FF7A2F" stroke-width="8"/><circle cx="34" cy="34" r="8" fill="currentColor"/><path d="M50 50 L66 66" stroke="#FF7A2F" stroke-width="9" stroke-linecap="round"/><path d="M82 36 Q99 56 116 36" fill="none" stroke="#FF7A2F" stroke-width="8" stroke-linecap="round"/></svg><b>piscadinha</b></span></a>
+      <a href="infiltrado.html" aria-label="Jogar Infiltrado"><span class="lock lk-in" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="14" r="10" fill="#14B8A0"></circle><circle cx="81" cy="32" r="10" fill="#14B8A0"></circle><circle cx="81" cy="68" r="10" fill="#14B8A0"></circle><circle cx="50" cy="86" r="10" fill="#14B8A0"></circle><circle cx="19" cy="68" r="10" fill="#14B8A0"></circle><circle cx="19" cy="32" r="8" fill="none" stroke="#FF5C7F" stroke-width="4"></circle></svg><b>infiltrado</b></span></a>
+      <a href="quemsoueu.html" aria-label="Jogar Quem Sou Eu?"><span class="lock lk-qs" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M18 100 Q20 74 50 72 Q80 74 82 100Z" fill="currentColor" opacity=".35"/><circle cx="50" cy="50" r="24" fill="currentColor" opacity=".35"/><rect x="30" y="4" width="40" height="44" rx="8" fill="#FFD21F" stroke="#1B2A8C" stroke-width="4"/><path d="M43 18 Q43 12 50 12 Q57 12 57 18 Q57 23 50 25 V29" fill="none" stroke="#1B2A8C" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="37" r="3.2" fill="#1B2A8C"/></svg><span class="w"><em>quem sou</em><b>eu?</b></span></span></a>
+      
+    </nav>
+    <form class="join" id="joinForm" novalidate>
+      <label for="codigo">Alguém te mandou um código? Entre na sala</label>
+      <input id="codigo" name="codigo" maxlength="4" autocomplete="off" placeholder="KX7Q" aria-describedby="joinMsg">
+      <button class="btn" type="submit">Entrar</button>
+      <span class="msg" id="joinMsg" role="status"></span>
+    </form>
+  </section>
+
+  <section class="sec" aria-labelledby="jogosT">
+    <div class="tag" id="jogosT">Os jogos · prove uma pergunta de cada</div>
+    <div class="games">
+
+      <article class="game um" id="jogo-um">
+        <div class="ghead">
+          <div><h2 class="lock lk-um" aria-label="1%"><svg viewBox="6 6 88 34" aria-hidden="true"><circle cx="50" cy="50" r="36" fill="none" stroke="var(--ouro)" stroke-width="12" stroke-linecap="round" stroke-dasharray="56 170.2" transform="rotate(-134.5 50 50)"></circle></svg><span aria-hidden="true">1%</span></h2><p class="slog">Chegue ao topo.</p><p class="path">rodada/1porcento</p><p>Cada tema é uma liga. Todo dia, 10 perguntas novas por liga, das fáceis às que só o 1% acerta. Acerte mais, responda mais rápido e suba no ranking da temporada.</p></div>
+        </div>
+        <div class="facts">
+          <div><b>10</b><span>perguntas novas por liga, todo dia</span></div>
+          <div><b>15 s</b><span>para cada resposta</span></div>
+          <div><b>3·4·3</b><span>fáceis, médias e difíceis</span></div>
+          <div><b>1×</b><span>por dia vale para o ranking</span></div>
+        </div>
+        <div class="chips" aria-label="Ligas"><span>Futebol</span><span>Conhecimentos gerais</span></div>
+        <div class="try" id="tryUm">
+          <div class="tag">Prove · Futebol · média</div>
+          <div class="q">Quem fez os dois gols do Brasil na final da Copa de 2002?</div>
+          <div class="opts">
+            <button class="opt" data-ok="0">Rivaldo</button>
+            <button class="opt" data-ok="1">Ronaldo</button>
+            <button class="opt" data-ok="0">Ronaldinho</button>
+            <button class="opt" data-ok="0">Edmílson</button>
+          </div>
+          <p class="fb" id="fbUm" role="status"></p>
+        </div>
+        <a class="play" href="1porcento.html">Jogar as 10 de hoje</a>
+      </article>
+
+      <article class="game mom" id="jogo-mom">
+        <div class="ghead">
+          <div><h2 class="lock lk-mom" aria-label="Mais ou Menos"><span class="bolas" aria-hidden="true"><i></i><i></i></span><span class="w" aria-hidden="true"><b>mais</b><em>ou menos</em></span></h2><p class="slog">Qual é maior?</p><p class="path">rodada/maisoumenos</p><p>Qual é maior? 10 duelos por dia, um toque cada: bichos, espaço, comida, mundo, Brasil e comparações absurdas, com a fonte em cada carta.</p></div>
+        </div>
+        <div class="facts">
+          <div><b>10</b><span>duelos por dia</span></div>
+          <div><b>1</b><span>toque por duelo</span></div>
+          <div><b>0h</b><span>jogo novo à meia-noite</span></div>
+          <div><b>3</b><span>estatísticas: sequência, recorde e % de acertos</span></div>
+        </div>
+        <div class="chips" aria-label="Temas"><span>Bichos</span><span>Espaço</span><span>Mundo</span><span>Comida</span><span>Corpo humano</span><span>Aleatório</span><span>Brasil</span></div>
+        <div class="try">
+          <div class="tag">Prove · Bichos · quem pesa mais?</div>
+          <div class="duels" id="tryMom">
+            <button class="duel" data-v="1200"><span class="nm">🦒 Girafa</span><span class="val" hidden><b>1,2 t</b><span class="bar"><i></i></span></span></button>
+            <span class="vs">OU</span>
+            <button class="duel" data-v="2300"><span class="nm">🦏 Rinoceronte-branco</span><span class="val" hidden><b>2,3 t</b><span class="bar"><i></i></span></span></button>
+          </div>
+          <p class="fb" id="fbMom" role="status"></p>
+        </div>
+        <a class="play" href="maisoumenos.html">Jogar os 10 duelos de hoje</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="modes" aria-label="Como jogar">
+    <div class="mode"><span class="k">AO VIVO</span><h3>Todo mundo junto</h3><p>Cidade Dorme, Piscadinha, Infiltrado e Quem Sou Eu?: um código de 4 letras e cada um joga no seu celular.</p></div>
+    <div class="mode"><span class="k">NO SEU TEMPO</span><h3>1% e Mais ou Menos</h3><p>Cada um joga quando puder e manda o card no WhatsApp. O link do grupo guarda o ranking do grupo, e todo mundo vê sua posição no Brasil.</p></div>
+  </section>
+
+
+  <section class="sec">
+    <div class="tag">Para qual roda?</div>
+    <div class="occ">
+      <div><b>Grupo da família</b><span>1% e Mais ou Menos no seu tempo, ranking da semana</span></div>
+      <div><b>Despedida e chá</b><span>Piscadinha e Quem Sou Eu? para quebrar o gelo</span></div>
+      <div><b>Churrasco e viagem</b><span>Quem Sou Eu? e Cidade Dorme, cada um no seu celular</span></div>
+      <div><b>Firma</b><span>Liga de Conhecimentos gerais na sexta, sem cadastro</span></div>
+    </div>
+  </section>
+
+
+
+  <footer class="foot">
+    <p>Versão de teste da Rodada. Os jogos ao vivo já funcionam com cada um no seu celular. O 1% e o Mais ou Menos rodam com perguntas de exemplo e o resultado fica só no seu aparelho; o ranking online vem na próxima versão.</p>
+    <div class="btw">
+      <div class="btw-txt">
+        <span class="btw-k">Beyond the Work</span>
+        <p>Estúdio criativo que reúne projetos como a Rodada e o Retrozap, além de consultorias de marketing, publicidade e criatividade.</p>
+        <p class="btw-s">A próxima série já está vindo.</p>
+      </div>
+    </div>
+    <div class="btw-line">
+      <span>© 2026 Rodada</span>
+      <span class="btw-sig" role="img" aria-label="Um projeto Beyond the Work"><img class="sig-l" src="img/btw-um-projeto-preto.svg" alt="" width="246" height="16"><img class="sig-d" src="img/btw-um-projeto-branco.svg" alt="" width="246" height="16"></span>
+    </div>
+  </footer>
+</div>
+
+<script>
+/* convite de grupo do 1% (#gCODE) abre direto o jogo */
+try{if(/^#g[A-Za-z0-9]{4,6}$/.test(location.hash))location.replace('1porcento.html'+location.hash)}catch(e){}
+/* convite de sala ao vivo (#cdKX7Q, #piKX7Q, #inKX7Q, #qsKX7Q) abre o jogo com o código preenchido */
+try{var mv=location.hash.match(/^#(cd|pi|in|qs)([A-Za-z0-9]{4})$/);if(mv)location.replace({cd:'cidade.html',pi:'piscadinha.html',in:'infiltrado.html',qs:'quemsoueu.html'}[mv[1]]+'#'+mv[2].toUpperCase())}catch(e){}
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  /* dia do desafio: mesma contagem dos jogos (1º de junho de 2026 = #1) */
+  var EPOCH=Date.UTC(2026,5,1),n=new Date(),DAY=Math.floor((Date.UTC(n.getFullYear(),n.getMonth(),n.getDate())-EPOCH)/864e5)+1;
+  /* entrada por código */
+  var f=$('joinForm'),inp=$('codigo'),msg=$('joinMsg');
+  inp.addEventListener('input',function(){inp.value=inp.value.replace(/[^a-z0-9]/gi,'').toUpperCase().slice(0,4);msg.textContent='';});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(inp.value.length<4){msg.textContent='O código tem 4 letras ou números. Confira na tela do anfitrião.';inp.focus();return;}
+    var c=inp.value;msg.textContent='Procurando a sala '+c+'…';
+    var PG={cidade:'cidade.html',pisca:'piscadinha.html',infiltrado:'infiltrado.html',quem:'quemsoueu.html'};
+    (window.RodadaSalas?RodadaSalas.jogoDoCodigo(c):Promise.reject()).then(function(j){
+      if(j&&PG[j]){location.href=PG[j]+'#'+c;return}
+      msg.textContent='Não achamos a sala '+c+'. Confira o código com quem criou a sala.';
+    },function(){msg.textContent='Não deu para conectar agora. Confira a internet e tente de novo.'});
+  });
+
+  /* prove: 1% */
+  var um=document.querySelectorAll('#tryUm .opt');
+  um.forEach(function(o){o.addEventListener('click',function(){
+    um.forEach(function(x){x.disabled=true;if(x.dataset.ok==='1')x.classList.add('right');});
+    var acertou=o.dataset.ok==='1';if(!acertou)o.classList.add('wrong');
+    $('fbUm').innerHTML=(acertou?'<b>Acertou.</b> ':'<b>Era Ronaldo.</b> ')+'Brasil 2 x 0 Alemanha, em Yokohama. Faltam 9 perguntas na liga de hoje.';
+  });});
+
+  /* prove: Mais ou Menos */
+  var du=document.querySelectorAll('#tryMom .duel');
+  du.forEach(function(d){d.addEventListener('click',function(){
+    var vals=[].map.call(du,function(x){return +x.dataset.v}),mx=Math.max.apply(null,vals);
+    du.forEach(function(x){x.disabled=true;x.querySelector('.val').hidden=false;var v=+x.dataset.v;if(v===mx)x.classList.add('win');
+      var bar=x.querySelector('.bar i');requestAnimationFrame(function(){requestAnimationFrame(function(){bar.style.width=(v/mx*100)+'%';});});});
+    var acertou=+d.dataset.v===mx;if(!acertou)d.classList.add('wrong');
+    $('fbMom').innerHTML=(acertou?'<b>Acertou.</b> ':'<b>Errou.</b> ')+'Com pescoço e tudo, a girafa pesa cerca de metade de um rinoceronte-branco. Fonte: Smithsonian’s National Zoo; WWF.';
+  });});
+
+})();
+</script>
+
+</body></html>

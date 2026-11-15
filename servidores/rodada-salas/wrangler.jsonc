@@ -1,0 +1,12 @@
+// Servidor das salas ao vivo da Rodada. Publicado à parte do site (o site é Cloudflare Pages).
+// Para publicar: npx wrangler deploy (nesta pasta).
+{
+  "name": "rodada-salas",
+  "main": "worker.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": false,
+  "routes": [{ "pattern": "salas.beyondthework.com.br", "custom_domain": true }],
+  "durable_objects": { "bindings": [{ "name": "SALAS", "class_name": "Sala" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Sala"] }],
+  "observability": { "enabled": true }
+}
