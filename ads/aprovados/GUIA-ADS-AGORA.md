@@ -13,6 +13,13 @@
 - SPORT DNA: os preços citados (RACKET e SURF R$ 19,99, RUN R$ 9,99, prévia grátis) são os do site hoje. Valem agora.
 - Quiddo: sem preço ("Teste grátis").
 
+## Janela de data de 3 ADs com tema de época (fila do Growth)
+Estão aprovados e prontos, mas só fazem sentido nestas datas:
+- **ADC-RN-02-v1** (Black Friday): rodar só até 27/11.
+- **ADC-QD-02-v2** (Natal): rodar só em dezembro.
+- **ADC-RZ-07-v2** (fim de ano / virada): rodar de 15/12 a 05/01.
+Todos os outros 52 rodam já.
+
 ## Exceção (NÃO usar ainda)
 - Estáticos 1:1 e 1,91:1 do **SF-03-v1**: segurados até o Gui ver a nova versão. O vídeo SF-03-v1 está liberado.
 
