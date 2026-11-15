@@ -78,3 +78,11 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 
 ## 15/11 · SPORT DNA sem rajada de ruído no fim das frases (aguardando aprovação)
 - SF-08-v5, RK-07-v3, SF-09-v3, RK-09-v3, SF-10-v3 substituem as versões anteriores (o gerador de voz deixava uma rajada de ~0,16 s depois de algumas frases). Só estas valem quando aprovadas.
+
+## Status em 15/11, à tarde (substitui o status acima)
+- **Aprovados na Mesa (valem):** RZ-10-v1, RZ-11-v1, RZ-12-v1, RZ-14-v1, QD-16-v1, QD-17-v1, RN-04-v1, RN-05-v1, **RK-02-v2** (arte com 183), **RK-08-v2**.
+- **Reprovados, refeitos, AGUARDANDO aprovação (não subir):**
+  - RK-01-v6: mais curto (16,7 s) e com trilha. A v4 e a v5 ficam para trás.
+  - QD-11-v2 a QD-15-v2: com trilha em todos os vídeos.
+- **AGUARDANDO aprovação (sem ruído):** SF-08-v5, SF-09-v3, SF-10-v3, RK-07-v3, RK-09-v3, RZ-13-v2.
+- QD-11 a QD-15 v2: `ads/aprovados/quiddo/ADC-QD-1x-v2/` · RK-01-v6: `ads/aprovados/sportdna/ADC-RK-01-v6/`.
