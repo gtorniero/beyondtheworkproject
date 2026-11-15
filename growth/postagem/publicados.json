@@ -56,6 +56,34 @@
    "publicado_em": "2026-11-15T12:07:04-03:00",
    "post_id": "1158856573463632",
    "foto_id": "122110345857530679"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-S8",
+   "versao": "S02-D-S8-v2",
+   "pack": "S02",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-15T12:07:16-03:00",
+   "status": "publicado",
+   "media_id": "18114964304612621",
+   "permalink": "https://www.instagram.com/stories/sportdna.app/4031021575272925846",
+   "container_id": "17926976205281754",
+   "publicado_em": "2026-11-15T12:07:29-03:00"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-S8",
+   "versao": "S02-D-S8-v2",
+   "pack": "S02",
+   "formato": "story",
+   "plataforma": "facebook",
+   "agendado": "2026-11-15T12:07:16-03:00",
+   "status": "publicado",
+   "permalink": "",
+   "publicado_em": "2026-11-15T12:07:34-03:00",
+   "post_id": "1475140684683222",
+   "foto_id": "122110154475528044"
   }
  ]
 }
