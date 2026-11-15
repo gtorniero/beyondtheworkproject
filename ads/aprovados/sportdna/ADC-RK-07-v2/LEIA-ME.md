@@ -7,7 +7,7 @@ Versão aprovada: ADC-RK-07-v2 · SPORT DNA · lote vídeo real (14/11)
 - **Texto principal:** Vai comprar raquete? Espera. 🎾 O RACKET DNA compara 183 raquetes e mostra as 3 do seu jogo. Prévia grátis.
 - **Título:** Vai comprar raquete? Espera.
 - **CTA:** No vídeo: "Antes de comprar, faça o teste." + sportdna.com.br/racket. Botão do anúncio: Saiba mais.
-- **URL final:** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_video_real&utm_term=espera&utm_content=ADC-RK-07-v1
+- **URL final:** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_video_real&utm_term=espera&utm_content=ADC-RK-07-v2
 
 ## Arquivos por posicionamento
 - `ADC-RK-07-v2_busca-audience-1.91x1.png`

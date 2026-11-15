@@ -7,7 +7,7 @@ Versão aprovada: ADC-RZ-13-v2 · Retrozap · lote vídeo real (14/11)
 - **Texto principal:** Tier list do grupo: quem é o S do seu? 🏆 Descubra na retrospectiva 2026. 1º grupo grátis.
 - **Título:** Quem é o S do seu grupo?
 - **CTA:** No vídeo: "Façam a de vocês." / "Faça a do seu grupo." + retrozap.com.br. Botão do anúncio: Saiba mais.
-- **URL final:** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_term=tierlist&utm_content=ADC-RZ-13-v1
+- **URL final:** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_term=tierlist&utm_content=ADC-RZ-13-v2
 
 ## Arquivos por posicionamento
 - `ADC-RZ-13-v2_busca-audience-1.91x1.png`

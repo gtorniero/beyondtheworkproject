@@ -69,3 +69,9 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 - ADC-SF-08-v2 · `ads/aprovados/sportdna/ADC-SF-08-v2/`
 - ADC-SF-09-v2 · `ads/aprovados/sportdna/ADC-SF-09-v2/`
 - ADC-SF-10-v2 · `ads/aprovados/sportdna/ADC-SF-10-v2/`
+
+## Status em 15/11 (leia antes de subir)
+- **Aprovados na Mesa (valem):** RZ-10-v1, RZ-11-v1, RZ-12-v1, RZ-14-v1, QD-16-v1, QD-17-v1, RN-04-v1, RN-05-v1; RK-01-v4 e RK-02-v1 (com "62": substituir pelas versões novas quando aprovadas).
+- **Prontos, AGUARDANDO aprovação (não subir ainda):** RZ-13-v2, RK-07-v2, RK-08-v2, RK-09-v2, SF-08-v4 (a v3 e a v2 ficaram para trás), SF-09-v2, SF-10-v2, RK-01-v5 (texto com 183), RK-02-v2 (arte com 183).
+- SF-08: v2 (narração por frase) → v3 (filtro na voz) → v4 (trilha sem pratos, sem chiado). Só a v4 vale.
+- UTMs dos LEIA-ME corrigidas para a versão de cada pasta (utm_content=<ID>-vN).

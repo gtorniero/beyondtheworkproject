@@ -7,7 +7,7 @@ Versão aprovada: ADC-RK-09-v2 · SPORT DNA · lote vídeo real (14/11)
 - **Texto principal:** Raquete não é uma escolha. São seis. 🎾 279.990 combinações; o RACKET DNA acha a sua. Prévia grátis.
 - **Título:** Raquete não é uma escolha. São seis.
 - **CTA:** No vídeo: "Antes de comprar, faça o teste." + sportdna.com.br/racket. Botão do anúncio: Saiba mais.
-- **URL final:** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_video_real&utm_term=seis&utm_content=ADC-RK-09-v1
+- **URL final:** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_video_real&utm_term=seis&utm_content=ADC-RK-09-v2
 
 ## Arquivos por posicionamento
 - `ADC-RK-09-v2_busca-audience-1.91x1.png`

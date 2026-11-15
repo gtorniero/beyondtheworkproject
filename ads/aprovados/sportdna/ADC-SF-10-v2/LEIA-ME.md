@@ -7,7 +7,7 @@ Versão aprovada: ADC-SF-10-v2 · SPORT DNA · lote vídeo real (14/11)
 - **Texto principal:** A prancha do amigo foi feita pra outro surfista. 🏄 Ache a sua: prévia grátis, 3 minutos.
 - **Título:** A prancha do amigo não é a sua.
 - **CTA:** No vídeo: "Antes de comprar, faça o teste." + sportdna.com.br/surf. Botão do anúncio: Saiba mais.
-- **URL final:** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_video_real&utm_term=amigo&utm_content=ADC-SF-10-v1
+- **URL final:** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_video_real&utm_term=amigo&utm_content=ADC-SF-10-v2
 
 ## Arquivos por posicionamento
 - `ADC-SF-10-v2_busca-audience-1.91x1.png`
