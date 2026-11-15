@@ -109,3 +109,6 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 - Aprovados agora: RZ-10-v2, RZ-11-v2, RZ-14-v2 (casal · R$ 13,99, link ?m=casal), RK-01-v8, QD-11-v4, QD-15-v3. Pastas completas com todas as dimensões.
 - Nenhum AD aguardando o Gui.
 - RZ-10/11/14 v1 (R$ 8,99) ficam para a promo de 01 a 31/12.
+
+## 15/11 · SF-03-v1: estáticos refeitos
+- O Gui reprovou a 1ª versão dos estáticos 1:1 e 1,91:1 do SF-03 (quadro das 3 pranchas, com nomes borrados). Os arquivos foram refeitos com o quadro do gancho ("Sua prancha é a certa?" + tela do teste) e substituem os anteriores, com os mesmos nomes. Pela regra do formato principal, valem sem nova aprovação.
