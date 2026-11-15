@@ -75,3 +75,6 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 - **Prontos, AGUARDANDO aprovação (não subir ainda):** RZ-13-v2, RK-07-v2, RK-08-v2, RK-09-v2, SF-08-v4 (a v3 e a v2 ficaram para trás), SF-09-v2, SF-10-v2, RK-01-v5 (texto com 183), RK-02-v2 (arte com 183).
 - SF-08: v2 (narração por frase) → v3 (filtro na voz) → v4 (trilha sem pratos, sem chiado). Só a v4 vale.
 - UTMs dos LEIA-ME corrigidas para a versão de cada pasta (utm_content=<ID>-vN).
+
+## 15/11 · SPORT DNA sem rajada de ruído no fim das frases (aguardando aprovação)
+- SF-08-v5, RK-07-v3, SF-09-v3, RK-09-v3, SF-10-v3 substituem as versões anteriores (o gerador de voz deixava uma rajada de ~0,16 s depois de algumas frases). Só estas valem quando aprovadas.
