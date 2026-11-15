@@ -42,3 +42,8 @@ Código: `pipeline/ads/reels/rz08.py`. Todo AD de todas as marcas segue essa té
 - Motion para feed: `-motion-feed45.mp4` (4:5) e `-motion-sq.mp4` (1:1), 8 a 14 s, recompostos para o formato (não é crop do reel): gancho, 1 interação, recompensa, CTA.
 - Patch da entrada na Mesa (`pipeline/ads/patch-<ID>.json`) com version, v, media, cover, duration, formato, mudou, copy, titulo, cta, url (UTM com a versão), ferramentas, direitos, notes, arquivos (links dos motions).
 - Antes de entregar: `preview()` a cada ~0,5 s, olhar a folha, corrigir sobreposição, texto cortado e contraste.
+
+## Regra do Gui (15/11): aprovação só do formato principal
+- Na Mesa vai SÓ o formato principal de cada AD: o 9:16 do Reels (vídeo) ou o 1:1 (estático). Não mandar 4:5, 16:9, 1,91:1, coluna da direita, Audience Network ou links para aprovação.
+- Aprovado o principal, o Estúdio prepara todas as outras dimensões a partir dele (mesmo conteúdo, só redimensionado/recortado) e entrega direto em ads/aprovados/<marca>/<ID>-vN/ para o Growth, sem nova aprovação.
+- Os cards da Mesa não listam as outras dimensões (só o LEIA-ME).

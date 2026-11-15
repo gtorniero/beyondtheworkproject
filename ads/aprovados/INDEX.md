@@ -100,3 +100,7 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 
 ## 15/11 · Adaptação de formato (AGUARDANDO aprovação)
 - Estáticos 1:1 (`_feed-coluna-1x1.png`) e 1,91:1 (`_busca-audience-1.91x1.png`) novos nas pastas aprovadas de RZ-01-v5, RZ-02-v3, SF-03-v1, QD-01-v6, QD-03-v4 e QD-04-v5. O vídeo aprovado de cada um não mudou. Na Mesa: cards "-EST".
+
+## 15/11 · Regra nova do Gui: aprovação só do formato principal
+- O Gui aprova só o 9:16 (Reels) ou o 1:1 (estático). As outras dimensões são redimensionamento do aprovado e valem sem nova aprovação.
+- Por isso os estáticos 1:1 e 1,91:1 de RZ-01-v5, RZ-02-v3, SF-03-v1, QD-01-v6, QD-03-v4 e QD-04-v5 já VALEM (saíram da Mesa).
