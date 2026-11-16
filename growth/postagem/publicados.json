@@ -255,6 +255,87 @@
    "publicado_em": "2026-11-16T11:58:53-03:00",
    "post_id": "1426679499626459",
    "foto_id": "122110501713528044"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-C3",
+   "versao": "S02-R-C3-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-16T12:30:00-03:00",
+   "status": "publicado",
+   "media_id": "17968351191235755",
+   "permalink": "https://www.instagram.com/p/DfzrZAEHzvD/",
+   "container_id": "17904768861396278",
+   "publicado_em": "2026-11-16T12:28:29-03:00"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-C3",
+   "versao": "S02-R-C3-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "facebook",
+   "agendado": "2026-11-16T12:30:00-03:00",
+   "status": "publicado",
+   "permalink": "https://www.facebook.com/122111606733537718/posts/122112304689537718",
+   "publicado_em": "2026-11-16T12:28:40-03:00",
+   "post_id": "1481891254996380_122112304689537718"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-C3",
+   "versao": "S02-Q-C3-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-16T12:30:00-03:00",
+   "status": "publicado",
+   "media_id": "17968794908985182",
+   "permalink": "https://www.instagram.com/p/DfzrfVBEWOl/",
+   "container_id": "18132075919855686",
+   "publicado_em": "2026-11-16T12:29:36-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-C3",
+   "versao": "S02-Q-C3-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "facebook",
+   "agendado": "2026-11-16T12:30:00-03:00",
+   "status": "publicado",
+   "permalink": "https://www.facebook.com/122110338453530679/posts/122110693371530679",
+   "publicado_em": "2026-11-16T12:29:47-03:00",
+   "post_id": "1336804232858527_122110693371530679"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-C3",
+   "versao": "S02-D-C3-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-16T12:30:00-03:00",
+   "status": "publicado",
+   "media_id": "17898082221613766",
+   "permalink": "https://www.instagram.com/p/Dfzrm3CCY3s/",
+   "container_id": "17927261979281754",
+   "publicado_em": "2026-11-16T12:30:30-03:00"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-C3",
+   "versao": "S02-D-C3-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "facebook",
+   "agendado": "2026-11-16T12:30:00-03:00",
+   "status": "publicado",
+   "permalink": "https://www.facebook.com/122110146903528044/posts/122110523745528044",
+   "publicado_em": "2026-11-16T12:30:43-03:00",
+   "post_id": "1460739327115922_122110523745528044"
   }
  ]
 }
