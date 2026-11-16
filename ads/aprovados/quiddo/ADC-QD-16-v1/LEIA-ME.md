@@ -4,7 +4,7 @@ Versão aprovada: ADC-QD-16-v1 · Quiddo · lote vídeo real (14/11)
 
 - **Objetivo:** Tráfego qualificado para o início do produto (teste do conceito viral).
 - **Público:** Quem organiza encontro de família e amigos no fim de ano.
-- **Texto principal:** Qual bicho você é no quiz? 🐆🦥 Crie o quiz da sua turma: todo mundo joga pelo celular. Teste grátis.
+- **Texto principal:** Qual bicho você é no quiz? 🐆🦥 Crie o quiz da sua turma: todo mundo joga pelo celular. Teste grátis. 🔊 Narração com voz gerada por IA.
 - **Título:** Qual bicho você é no quiz?
 - **CTA:** No vídeo: "Faça o seu. Teste grátis." + quiddo.com.br. Botão do anúncio: Saiba mais.
 - **URL final:** https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_familia_amigos&utm_term=bicho&utm_content=ADC-QD-16-v1

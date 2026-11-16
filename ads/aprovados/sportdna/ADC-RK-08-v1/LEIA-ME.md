@@ -4,7 +4,7 @@ Versão aprovada: ADC-RK-08-v1 · SPORT DNA · lote vídeo real (14/11)
 
 - **Objetivo:** Tráfego para o teste (prévia grátis).
 - **Público:** Tenistas amadores que jogam 1 a 3 vezes por semana.
-- **Texto principal:** Você joga com a raquete do ídolo? 🎾 Mais peso, golpe atrasado. Antes de comprar, faça o teste.
+- **Texto principal:** Você joga com a raquete do ídolo? 🎾 Mais peso, golpe atrasado. Antes de comprar, faça o teste. 🔊 Narração com voz gerada por IA.
 - **Título:** Você joga com a raquete do ídolo?
 - **CTA:** No vídeo: "Antes de comprar, faça o teste." + sportdna.com.br/racket. Botão do anúncio: Saiba mais.
 - **URL final:** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_video_real&utm_term=idolo&utm_content=ADC-RK-08-v1
