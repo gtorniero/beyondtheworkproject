@@ -10,6 +10,204 @@
    "liberar_a_partir_de_v": 999,
    "motivo": "o Gui reprovou o conceito (15/11): nunca publicar",
    "desde": "2026-11-15"
+  },
+  {
+   "peca": "D-R4",
+   "versoes": [
+    "S02-D-R4-v2"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "R-RX3",
+   "versoes": [
+    "X-R-RX3-v2"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "Q-RX1",
+   "versoes": [
+    "X-Q-RX1-v2"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "Q-RX2",
+   "versoes": [
+    "X-Q-RX2-v2"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "D-RX1",
+   "versoes": [
+    "X-D-RX1-v2"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "D-RX2",
+   "versoes": [
+    "X-D-RX2-v2"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "R-RX2",
+   "versoes": [
+    "X-R-RX2-v3"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-RZ-1",
+   "versoes": [
+    "X-F-RZ-1-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-QD-2",
+   "versoes": [
+    "X-F-QD-2-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "D-RX7",
+   "versoes": [
+    "X-D-RX7-v3"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-RZ-2",
+   "versoes": [
+    "X-F-RZ-2-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-QD-3",
+   "versoes": [
+    "X-F-QD-3-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-QD-4",
+   "versoes": [
+    "X-F-QD-4-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "D-RX5",
+   "versoes": [
+    "X-D-RX5-v2"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-RZ-4",
+   "versoes": [
+    "X-F-RZ-4-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-QD-5",
+   "versoes": [
+    "X-F-QD-5-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "D-RX6",
+   "versoes": [
+    "X-D-RX6-v3"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-RZ-5",
+   "versoes": [
+    "X-F-RZ-5-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-QD-6",
+   "versoes": [
+    "X-F-QD-6-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "D-RX8",
+   "versoes": [
+    "X-D-RX8-v3"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "F-RZ-3",
+   "versoes": [
+    "X-F-RZ-3-v2"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
+  },
+  {
+   "peca": "D-RX4",
+   "versoes": [
+    "X-D-RX4-v5"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "reel com voz de IA: o Gui mandou tirar da fila (16/11). Para voltar, apagar esta entrada com ok do Gui.",
+   "desde": "2026-11-16"
   }
  ]
 }
