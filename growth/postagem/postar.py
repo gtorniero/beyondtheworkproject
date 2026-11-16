@@ -303,7 +303,7 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                     if re.sub(r"\s+", " ", man[-1]["caption"]).strip() != re.sub(r"\s+", " ", it["legenda"]).strip():
                         it["avisos"].append("legenda do LEGENDAS.txt difere do manifest.json (vale o LEGENDAS.txt)")
                 if it["legenda"]:
-                    garante_aviso_ia(it, [b] + [x for x in blocos.values() if x["peca"] == it["peca"]])
+                    tira_aviso_ia(it)
                     verifica_legenda(it)
 
             # mídia
@@ -362,24 +362,12 @@ def monta_midia(it: dict, caminhos: list[str], url_api) -> None:
                   for k, v in it["midia"].items() if k != "tipo" and v}
 
 
-AVISO_IA = "🔊 Narração com voz gerada por IA."
-
-
-def garante_aviso_ia(it: dict, blocos: list) -> None:
-    """Reel com voz de IA (Áudio:/Notas: do LEGENDAS.txt) sempre sai com o aviso na legenda.
-    Se faltar, entra sozinho antes das hashtags (regra do Gui, 16/11)."""
-    if it["formato"] != "reel":
-        return
-    info = " ".join(f"{x.get('audio', '')} {x.get('notas', '')}" for x in blocos if x)
-    if not re.search(r"voz (de|gerada por) IA|narração.{0,20}\bIA\b", info, re.I):
-        return
-    if re.search(r"\bIA\b", it["legenda"]):
-        return
-    linhas = it["legenda"].rstrip().split("\n")
-    pos = len(linhas) - 1 if linhas and linhas[-1].lstrip().startswith("#") else len(linhas)
-    linhas.insert(pos, AVISO_IA)
-    it["legenda"] = "\n".join(linhas)
-    it["avisos"].append("aviso de voz de IA incluído na legenda (faltava no LEGENDAS.txt)")
+def tira_aviso_ia(it: dict) -> None:
+    """Regra do Gui (16/11): legenda não leva aviso de voz de IA. Se o LEGENDAS.txt trouxer, sai aqui."""
+    nova = re.sub(r"\n?[^\n]*voz (de|gerada por) IA[^\n]*", "", it["legenda"]).strip()
+    if nova != it["legenda"]:
+        it["legenda"] = re.sub(r"\n{3,}", "\n\n", nova)
+        it["avisos"].append("aviso de voz de IA tirado da legenda (regra do Gui, 16/11)")
 
 
 def verifica_legenda(it: dict) -> None:
