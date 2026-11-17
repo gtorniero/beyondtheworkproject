@@ -311,7 +311,7 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
             if st is None:
                 outras = [p.get("versao") for p in st_peca.get(it["peca"], [])]
                 it["problemas"].append("peça fora do STATUS.json" if not outras else
-                                       f"versão {it['versao']} não está no STATUS.json (lá: {', '.join(outras)})")
+                                       f"versão {it['versao']} não está no STATUS.json (lá: {', '.join(str(x) for x in outras)})")
             else:
                 it["status"] = st
                 it["rotulo_ia"] = st.get("rotulo_ia") is True
@@ -319,7 +319,10 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                     it["reserva"] = True
                 # aceita "aprovado" puro ou com nota entre parênteses, ex.: "aprovado (música de banco, 15/11)"
                 it["aprovado"] = st.get("liberado") is True and bool(
-                    re.fullmatch(r"aprovado(\s*\(.*\))?", (st.get("status_mesa") or "").strip().lower()))
+                    re.fullmatch(r"aprovado(\s*\(.*\)|\s*·.*)?", (st.get("status_mesa") or "").strip().lower(), re.S))
+                # "aprovado · RESERVA: se a sequência ... for liberada, posta a sequência e NÃO este" (17/11)
+                it["cede_para_sequencia"] = bool(re.search(r"sequ[êe]ncia", st.get("status_mesa") or "", re.I)
+                                                 and re.search(r"reserva", st.get("status_mesa") or "", re.I))
                 if not it["aprovado"]:
                     it["problemas"].append(f"não aprovado (liberado={st.get('liberado')}, "
                                            f"status_mesa={st.get('status_mesa')})")
@@ -353,6 +356,7 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                         it["avisos"].append("legenda do LEGENDAS.txt difere do manifest.json (vale o LEGENDAS.txt)")
                 if it["legenda"]:
                     tira_aviso_ia(it)
+                    tira_avisos_ficcao(it)
                 # rede de segurança: LEGENDAS.txt diz voz de IA e o STATUS.json não marcou o rótulo
                 info = " ".join(f"{x.get('audio', '')} {x.get('notas', '')}" for x in
                                 [b] + [x for x in blocos.values() if x["peca"] == it["peca"]] if x)
@@ -423,6 +427,23 @@ def rotulo_ia(it: dict, params: dict) -> dict:
     if it.get("rotulo_ia"):
         return dict(params, is_ai_generated="true")
     return params
+
+
+FICCAO = (r"simula[çc][ãa]o|simulad[oa]s? com|nomes? de exemplo|dados de exemplo|conversa de exemplo|grupo de exemplo|"
+          r"fict[íi]ci[oa]s?|feit[oa] (?:com|por) (?:a )?IA|gerad[oa] (?:com|por) (?:a )?IA|ilustrativ[oa]")
+
+
+def tira_avisos_ficcao(it: dict) -> None:
+    """Regra do Gui (17/11): legenda NUNCA diz que é exemplo, simulação, fictício ou feito por IA.
+    Tira parênteses com esses avisos e linhas que são só o aviso."""
+    leg = it["legenda"]
+    nova = re.sub(r"[ \t]*\([^()\n]*\b(?:" + FICCAO + r")[^()\n]*\)\.?", "", leg, flags=re.I)
+    linhas = [l for l in nova.split("\n")
+              if not re.fullmatch(r"\s*[^\w\n]{0,3}\s*(?:" + FICCAO + r")[^\n]{0,60}", l, re.I)]
+    nova = re.sub(r"\n{3,}", "\n\n", "\n".join(l.rstrip() for l in linhas)).strip()
+    if nova != leg:
+        it["legenda"] = nova
+        it["avisos"].append("aviso de exemplo/simulação tirado da legenda (regra do Gui, 17/11)")
 
 
 def tira_aviso_ia(it: dict) -> None:
@@ -1304,6 +1325,10 @@ def main() -> int:
     cont = Conteudo(buscar=not a.sem_fetch)
     avisos += cont.avisos
     itens = carrega_agenda(cont, fixar_sha=not a.sem_fixar)
+    aprovados_seq = {(i["marca"], i["peca"]) for i in itens if i.get("quadro") == 1 and i.get("aprovado")}
+    for i in itens:
+        if i.get("cede_para_sequencia") and (i["marca"], f"{i['peca']}.1") in aprovados_seq:
+            i["problemas"].append("substituído pela sequência aprovada do mesmo dia (STORIES-SEQ)")
 
     if a.cobertura:
         de, _, ate = a.cobertura.partition(":")
