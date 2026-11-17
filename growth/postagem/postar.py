@@ -1196,7 +1196,7 @@ def main() -> int:
                          f"também pega até {ANTECIPAR_MIN} min à frente")
     ap.add_argument("--marca", action="append", help="só esta marca (retrozap, quiddo, sportdna); pode repetir")
     ap.add_argument("--peca", action="append", help="só esta peça (ex.: R-RX1); pode repetir")
-    ap.add_argument("--plataformas", default="instagram,facebook", help="instagram,facebook (padrão: as duas)")
+    ap.add_argument("--plataformas", default="instagram", help="instagram (padrão; o Gui decidiu em 17/11 não postar no Facebook)")
     ap.add_argument("--liberar", action="append", default=[],
                     help="peça cujo alerta de conteúdo o Gui já liberou (ex.: R-R6); pode repetir")
     ap.add_argument("--incluir-reserva", action="append", default=[], metavar="PECA",
@@ -1350,8 +1350,8 @@ def main() -> int:
         for p in plats:
             if p == "facebook" and it["marca"] in sem_fb.get(it["formato"], []):
                 rel["pulado"].append({"peca": nome, "plataforma": p,
-                                      "motivo": "Facebook desligado para este formato (sem_facebook.json): "
-                                                "o Facebook repostava no Instagram e duplicava"})
+                                      "motivo": "Facebook desligado (sem_facebook.json): "
+                                                "o Gui decidiu em 17/11 não postar no Facebook"})
                 continue
             ja = reg.achar(it["marca"], it["peca"], p)
             if ja:

@@ -1,7 +1,20 @@
 {
- "como_funciona": "Formato -> marcas que NÃO saem no Facebook. Criado em 16/11: os carrosséis postados no Facebook foram republicados sozinhos no Instagram (compartilhamento automático do Facebook para o Instagram), e o story do Quiddo também duplicou. Volta ao normal quando o Gui desligar o compartilhamento automático na Central de Contas; aí basta esvaziar as listas.",
+ "como_funciona": "Formato -> marcas que NÃO saem no Facebook. Desde 17/11 o Gui decidiu: nada vai para o Facebook (o Facebook republicava no Instagram e duplicava). Só mudar com ok explícito do Gui.",
  "pular": {
-  "carrossel": ["retrozap", "quiddo", "sportdna"],
-  "story": ["quiddo"]
+  "story": [
+   "retrozap",
+   "quiddo",
+   "sportdna"
+  ],
+  "carrossel": [
+   "retrozap",
+   "quiddo",
+   "sportdna"
+  ],
+  "reel": [
+   "retrozap",
+   "quiddo",
+   "sportdna"
+  ]
  }
 }
