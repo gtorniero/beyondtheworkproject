@@ -267,6 +267,7 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                                        f"versão {it['versao']} não está no STATUS.json (lá: {', '.join(outras)})")
             else:
                 it["status"] = st
+                it["rotulo_ia"] = st.get("rotulo_ia") is True
                 if "reserva" in (st.get("uso") or "").lower():
                     it["reserva"] = True
                 # aceita "aprovado" puro ou com nota entre parênteses, ex.: "aprovado (música de banco, 15/11)"
@@ -305,6 +306,12 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                         it["avisos"].append("legenda do LEGENDAS.txt difere do manifest.json (vale o LEGENDAS.txt)")
                 if it["legenda"]:
                     tira_aviso_ia(it)
+                # rede de segurança: LEGENDAS.txt diz voz de IA e o STATUS.json não marcou o rótulo
+                info = " ".join(f"{x.get('audio', '')} {x.get('notas', '')}" for x in
+                                [b] + [x for x in blocos.values() if x["peca"] == it["peca"]] if x)
+                if not it.get("rotulo_ia") and re.search(r"voz (de|gerada por) IA|narração.{0,20}\bIA\b", info, re.I):
+                    it["rotulo_ia"] = True
+                    it["avisos"].append("rótulo de IA ligado pelo LEGENDAS.txt (voz de IA; faltava rotulo_ia no STATUS.json)")
                     verifica_legenda(it)
 
             # mídia
@@ -361,6 +368,14 @@ def monta_midia(it: dict, caminhos: list[str], url_api) -> None:
         it["midia"] = {"tipo": "carrossel", "imagens": ordem}
     it["urls"] = {k: (url_api(v) if isinstance(v, str) else [url_api(x) for x in v])
                   for k, v in it["midia"].items() if k != "tipo" and v}
+
+
+def rotulo_ia(it: dict, params: dict) -> dict:
+    """Peça com "rotulo_ia": true no STATUS.json sai com o rótulo "Informações de IA" da Meta
+    (is_ai_generated no container; não dá para pôr depois de publicado). Regra do Gui, 17/11."""
+    if it.get("rotulo_ia"):
+        return dict(params, is_ai_generated="true")
+    return params
 
 
 def tira_aviso_ia(it: dict) -> None:
@@ -730,13 +745,13 @@ class Publicador:
         if it["formato"] == "story":
             p = {"media_type": "STORIES"}
             p.update({"image_url": u["imagem"]} if "imagem" in u else {"video_url": u["video"]})
-            cid = self.ig_container(ig, p)
+            cid = self.ig_container(ig, rotulo_ia(it, p))
             self.ig_esperar(cid, ESPERA_REEL_S if "video" in u else 180)
         elif it["formato"] == "reel":
             p = {"media_type": "REELS", "video_url": u["video"], "caption": it["legenda"], "share_to_feed": "true"}
             if u.get("capa"):
                 p["cover_url"] = u["capa"]
-            cid = self.ig_container(ig, p)
+            cid = self.ig_container(ig, rotulo_ia(it, p))
             self.ig_esperar(cid, ESPERA_REEL_S)
         else:
             filhos = []
@@ -744,8 +759,8 @@ class Publicador:
                 filhos.append(self.ig_container(ig, {"is_carousel_item": "true", "image_url": img}))
             for f in filhos:
                 self.ig_esperar(f, 180)
-            cid = self.ig_container(ig, {"media_type": "CAROUSEL", "children": ",".join(filhos),
-                                         "caption": it["legenda"]})
+            cid = self.ig_container(ig, rotulo_ia(it, {"media_type": "CAROUSEL", "children": ",".join(filhos),
+                                         "caption": it["legenda"]}))
             self.ig_esperar(cid, 180)
         pend = dict(entrada_base(it, "instagram"), status="publicando", container_id=cid, inicio=iso(inicio))
         self.reg.gravar(pend)
@@ -1046,19 +1061,19 @@ def validar_containers(it: dict, g: Graph) -> list[str]:
         if it["formato"] == "story":
             p = {"media_type": "STORIES"}
             p.update({"image_url": u["imagem"]} if "imagem" in u else {"video_url": u["video"]})
-            cid = pub.ig_container(ig, p)
+            cid = pub.ig_container(ig, rotulo_ia(it, p))
             pub.ig_esperar(cid, ESPERA_REEL_S)
         elif it["formato"] == "reel":
             p = {"media_type": "REELS", "video_url": u["video"], "caption": it["legenda"], "share_to_feed": "true"}
             if u.get("capa"):
                 p["cover_url"] = u["capa"]
-            cid = pub.ig_container(ig, p)
+            cid = pub.ig_container(ig, rotulo_ia(it, p))
             pub.ig_esperar(cid, ESPERA_REEL_S)
         else:
             filhos = [pub.ig_container(ig, {"is_carousel_item": "true", "image_url": x}) for x in u["imagens"]]
             for f in filhos:
                 pub.ig_esperar(f, 180)
-            cid = pub.ig_container(ig, {"media_type": "CAROUSEL", "children": ",".join(filhos), "caption": it["legenda"]})
+            cid = pub.ig_container(ig, rotulo_ia(it, {"media_type": "CAROUSEL", "children": ",".join(filhos), "caption": it["legenda"]}))
             pub.ig_esperar(cid, 180)
         res.append(f"container IG {cid}: FINISHED (pronto, NÃO publicado)")
     except ErroGraph as e:
@@ -1108,6 +1123,8 @@ def rotulo(it: dict) -> str:
 def imprime_item_dry(it: dict, plats: list[str], destinos: dict) -> None:
     print(f"\n▶ {rotulo(it)}  [{it['pack']}, linha {it['linha']}]")
     print(f"  título: {it['titulo']}")
+    if it.get("rotulo_ia"):
+        print("  rótulo de IA da Meta: ligado (is_ai_generated)")
     for p in plats:
         alvo = MARCAS[it["marca"]]["usuario"] if p == "instagram" else f"página {MARCAS[it['marca']]['page']}"
         print(f"  {p}: {destinos[p]}  → {alvo}")
