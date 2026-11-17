@@ -10,9 +10,9 @@
    "formato": "reel",
    "dia": "01/12/2026 (ter)",
    "hora": "19h45",
-   "versao": "S04-R-R12-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-R-R12-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "R-R13",
@@ -20,9 +20,9 @@
    "formato": "reel",
    "dia": "03/12/2026 (qui)",
    "hora": "19h45",
-   "versao": "S04-R-R13-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-R-R13-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "R-R14",
@@ -30,9 +30,9 @@
    "formato": "reel",
    "dia": "05/12/2026 (sáb)",
    "hora": "19h45",
-   "versao": "S04-R-R14-v1",
+   "versao": "S04-R-R14-v3",
    "liberado": false,
-   "status_mesa": "reprovado"
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "R-R15",
@@ -40,9 +40,9 @@
    "formato": "reel",
    "dia": "07/12/2026 (seg)",
    "hora": "19h45",
-   "versao": "S04-R-R15-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-R-R15-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "R-C10",
@@ -50,9 +50,9 @@
    "formato": "carrossel",
    "dia": "02/12/2026 (qua)",
    "hora": "12h30",
-   "versao": "S04-R-C10-v2",
+   "versao": "S04-R-C10-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "R-C11",
@@ -70,9 +70,9 @@
    "formato": "carrossel",
    "dia": "06/12/2026 (dom)",
    "hora": "12h30",
-   "versao": "S04-R-C12-v2",
+   "versao": "S04-R-C12-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "Q-R11",
@@ -80,9 +80,9 @@
    "formato": "reel",
    "dia": "01/12/2026 (ter)",
    "hora": "19h45",
-   "versao": "S04-Q-R11-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-Q-R11-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "Q-R12",
@@ -90,9 +90,9 @@
    "formato": "reel",
    "dia": "03/12/2026 (qui)",
    "hora": "19h45",
-   "versao": "S04-Q-R12-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-Q-R12-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "Q-R13",
@@ -100,9 +100,9 @@
    "formato": "reel",
    "dia": "05/12/2026 (sáb)",
    "hora": "19h45",
-   "versao": "S04-Q-R13-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-Q-R13-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "Q-R14",
@@ -110,9 +110,9 @@
    "formato": "reel",
    "dia": "07/12/2026 (seg)",
    "hora": "19h45",
-   "versao": "S04-Q-R14-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-Q-R14-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "Q-C10",
@@ -150,9 +150,9 @@
    "formato": "reel",
    "dia": "01/12/2026 (ter)",
    "hora": "19h45",
-   "versao": "S04-D-R12-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-D-R12-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "D-R13",
@@ -160,9 +160,9 @@
    "formato": "reel",
    "dia": "03/12/2026 (qui)",
    "hora": "19h45",
-   "versao": "S04-D-R13-v1",
+   "versao": "S04-D-R13-v3",
    "liberado": false,
-   "status_mesa": "reprovado"
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "D-R14",
@@ -170,9 +170,9 @@
    "formato": "reel",
    "dia": "05/12/2026 (sáb)",
    "hora": "19h45",
-   "versao": "S04-D-R14-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-D-R14-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "D-R15",
@@ -180,9 +180,9 @@
    "formato": "reel",
    "dia": "07/12/2026 (seg)",
    "hora": "19h45",
-   "versao": "S04-D-R15-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S04-D-R15-v3",
+   "liberado": false,
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "D-C10",
@@ -200,9 +200,9 @@
    "formato": "carrossel",
    "dia": "04/12/2026 (sex)",
    "hora": "12h30",
-   "versao": "S04-D-C11-v2",
+   "versao": "S04-D-C11-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
   },
   {
    "peca": "D-C12",
@@ -221,8 +221,8 @@
    "dia": "07/12/2026 (dom)",
    "hora": "12h",
    "versao": "S04-Q-S27-v1",
-   "liberado": false,
-   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado · RESERVA: se a sequência do mesmo dia (STORIES-SEQ) for liberada, posta a sequência e NÃO este"
   },
   {
    "peca": "R-S29",

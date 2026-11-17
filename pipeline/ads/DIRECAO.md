@@ -57,3 +57,9 @@ Código: `pipeline/ads/reels/rz08.py`. Todo AD de todas as marcas segue essa té
 ## Aviso de IA (Gui, 17/11)
 - Nunca escrever aviso de IA na legenda nem no texto do anúncio.
 - Peça com voz de IA: marcar `rotulo_ia: true` no STATUS.json (orgânico) ou listar no GUIA-ADS-AGORA (anúncio). Quem programa liga o rótulo de IA da Meta.
+
+## Nada de aviso de "exemplo", "simulação", "fictício" ou "IA" (Gui, 17/11, rodada 15)
+- Nunca escrever na legenda, no texto do anúncio ou na tela que é exemplo, simulação, conversa fictícia, dados de exemplo ou feito por IA. É anúncio/conteúdo de internet: é óbvio.
+- Nomes e números continuam fictícios (regra do Retrozap), só não se avisa.
+- Voz de IA: só o rótulo de IA da Meta na programação (rotulo_ia), nunca no texto.
+- Sem preço no orgânico (rodada 13). Preço só nos ADs.

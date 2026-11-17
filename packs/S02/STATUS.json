@@ -100,8 +100,8 @@
    "dia": "qua 18/11",
    "hora": "12h",
    "versao": "S02-Q-S8-v1",
-   "liberado": false,
-   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado · RESERVA: se a sequência do mesmo dia (STORIES-SEQ) for liberada, posta a sequência e NÃO este"
   },
   {
    "peca": "Q-S9",
@@ -110,8 +110,8 @@
    "dia": "qui 19/11",
    "hora": "12h",
    "versao": "S02-Q-S9-v1",
-   "liberado": false,
-   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado · RESERVA: se a sequência do mesmo dia (STORIES-SEQ) for liberada, posta a sequência e NÃO este"
   },
   {
    "peca": "Q-S10",
@@ -120,8 +120,8 @@
    "dia": "sex 20/11",
    "hora": "12h",
    "versao": "S02-Q-S10-v1",
-   "liberado": false,
-   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado · RESERVA: se a sequência do mesmo dia (STORIES-SEQ) for liberada, posta a sequência e NÃO este"
   },
   {
    "peca": "Q-S11",
@@ -130,8 +130,8 @@
    "dia": "sáb 21/11",
    "hora": "12h",
    "versao": "S02-Q-S11-v1",
-   "liberado": false,
-   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado · RESERVA: se a sequência do mesmo dia (STORIES-SEQ) for liberada, posta a sequência e NÃO este"
   },
   {
    "peca": "Q-S12",
@@ -140,8 +140,8 @@
    "dia": "dom 22/11",
    "hora": "12h",
    "versao": "S02-Q-S12-v1",
-   "liberado": false,
-   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado · RESERVA: se a sequência do mesmo dia (STORIES-SEQ) for liberada, posta a sequência e NÃO este"
   },
   {
    "peca": "R-C3",
