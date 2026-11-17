@@ -11,8 +11,8 @@ Versão: ADC-RZ-18-v1 · Retrozap · aguardando aprovação na Mesa (formato pri
 ## Copy
 
 Retrospectiva do seu namoro no WhatsApp. 💌
-Quem manda mais mensagem, quem é mais romântico, quem pede mais desculpas: 8 troféus do casal feitos da conversa de vocês.
-Nada sai do seu celular.
+Quem manda mais mensagem, quem é mais romântico, quem pede mais desculpas: 8 troféus do casal feitos da conversa de vocês, o placar um contra o outro e o vídeo de vocês. E grupos ilimitados também.
+Pagamento único, sem assinatura. Nada sai do seu celular.
 
 Título: Retrospectiva do seu namoro
 

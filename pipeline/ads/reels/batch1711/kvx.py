@@ -13,10 +13,11 @@ K.FONTS += ff('Bricolage Grotesque', 'Bricolage-800.woff2', '800')
 K.SP.update({
     'racket': dict(K.SP['racket'], cta='Fazer o teste'),
     'surf': dict(K.SP['surf'], cta='Fazer o teste'),
+    'rkfree': dict(K.SP['racket'], cta='Avaliar minha raquete', fine='Grátis. Relatório completo opcional: R$ 19,99.'),
     'rzg': dict(c='#FFC23C', logo=str(HERE / 'rz-logo-g.svg'), cta='Fazer a do meu grupo', url='retrozap.com.br', fine='1º grupo grátis · sem cadastro.'),
     'rzc': dict(c='#FF5C93', logo=str(HERE / 'rz-logo-c.svg'), cta='Fazer a de vocês', url='retrozap.com.br', fine='Pagamento único · Pix ou cartão.'),
 })
-THEME = {'racket': ('#0A0A0A', '#0E4D64'), 'surf': ('#0A0A0A', '#0E4D64'), 'rzg': ('#1A0B2E', '#6B2FD6'), 'rzc': ('#2A0716', '#8A1240')}
+THEME = {'racket': ('#0A0A0A', '#0E4D64'), 'rkfree': ('#0A0A0A', '#0E4D64'), 'surf': ('#0A0A0A', '#0E4D64'), 'rzg': ('#1A0B2E', '#6B2FD6'), 'rzc': ('#2A0716', '#8A1240')}
 RZCSS = "<style>.hd{font-family:'Bricolage Grotesque',Archivo,sans-serif!important;letter-spacing:-.03em!important}.num{font-family:'Bricolage Grotesque',Syne,sans-serif!important;letter-spacing:-.04em!important}.ph .scr{background:#1A0B2E}</style>"
 RS = K.RS
 
@@ -29,6 +30,12 @@ SPEC = {
  'ADC-RK-12-v1': dict(sp='racket', title='Antes de comprar raquete na Black Friday, *faça o teste.*', kick='Black Friday', ph=PH('racket_card.jpg'),
                       nums=[(RS + '19,99', 'relatório completo, pagamento único'), ('183', 'raquetes medidas, cruzadas com o seu jogo')],
                       post='Você vê a prévia grátis e só paga se quiser o relatório.'),
+ 'ADC-RK-13-v1': dict(sp='rkfree', title='Sua raquete é a certa? *Descubra grátis.*', kick='Grátis', ph=PH('racket_free_match.jpg'),
+                      nums=[('183', 'raquetes medidas para comparar com a sua')],
+                      post='Grátis: onde ela acerta, o que pesa contra e o conforto no braço. Relatório completo: R$ 19,99.'),
+ 'ADC-RK-14-v1': dict(sp='rkfree', title='Avalie a sua raquete. *Grátis.*', kick='Grátis', ph=PH('racket_free_pesa.jpg'),
+                      nums=[('Grátis', 'Você descobre se a sua raquete combina com o seu jogo e o seu braço.')],
+                      post='Se quiser, o relatório completo mostra as 3 que mais combinam.'),
  # SURF (board) · didático
  'ADC-SF-11-v1': dict(sp='surf', title='Qual prancha é *a certa* pra você?', kick='Teste Surf DNA', ph=PH('surf_res.jpg'),
                       nums=[('3 min', 'para contar seu corpo, seu surf e o seu mar'), ('13', 'tipos de prancha disputam o seu resultado')],
@@ -46,7 +53,7 @@ SPEC = {
                       post='Nada sai do seu celular. *Vídeo no Premium.'),
  'ADC-RZ-18-v1': dict(sp='rzc', title='Retrospectiva do seu *namoro* no WhatsApp.', kick='Retrozap Casais', ph=PH('c_msgs.jpg'),
                       nums=[(RS + '13,99', 'pagamento único, no Pix ou no cartão'), ('8', 'troféus do casal: quem manda mais mensagem, quem é mais romântico')],
-                      post='Nada sai do seu celular.'),
+                      post='Com o vídeo de vocês e grupos ilimitados. Nada sai do seu celular.'),
 }
 ROT = (-10, 4, 2.5)
 

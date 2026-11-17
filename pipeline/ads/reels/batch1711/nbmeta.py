@@ -64,8 +64,28 @@ ADS = [
       objetivo='Vender a retrospectiva de casal (R$ 13,99 até 30/11).',
       publico='Casais de 20 a 40 anos (interesses: relacionamento, presentes criativos, aniversário de namoro, Natal).',
       hipotese='Na linha do RZ-03 v2, o único que vende (4 compras): casal, direto, com o resultado na tela e o preço.',
-      copy='Retrospectiva do seu namoro no WhatsApp. 💌\nQuem manda mais mensagem, quem é mais romântico, quem pede mais desculpas: 8 troféus do casal feitos da conversa de vocês.\nNada sai do seu celular.',
+      copy='Retrospectiva do seu namoro no WhatsApp. 💌\nQuem manda mais mensagem, quem é mais romântico, quem pede mais desculpas: 8 troféus do casal feitos da conversa de vocês, o placar um contra o outro e o vídeo de vocês. E grupos ilimitados também.\nPagamento único, sem assinatura. Nada sai do seu celular.',
       titulo='Retrospectiva do seu namoro', cta='Na arte: "Fazer a de vocês". Botão do anúncio: Saiba mais.',
       url=f'https://retrozap.com.br/?m=casal&{U}&utm_campaign=rz_casal_retro2026&utm_content=ADC-RZ-18-v1', direitos=RZ_D,
       notes='Preço R$ 13,99 na arte: rodar até 30/11. Depois da aprovação faço a versão de dezembro com R$ 8,99 (01 a 31/12). Preço fora da copy (regra do guia).'),
+]
+ADS[0:0] = [
+ dict(id='ADC-RK-13', brand='SPORT DNA', sp='rkfree', track=('1076', 30.0), title='RACKET grátis: sua raquete é a certa? Descubra grátis',
+      objetivo='Tráfego para o teste grátis do RACKET DNA (avaliação da raquete atual), com venda do relatório completo (R$ 19,99) para quem quiser mais.',
+      publico='Tenistas amadores de 25 a 55 anos que já têm raquete (interesses: tênis, raquetes, artigos esportivos).',
+      hipotese='Mudança no produto (Gui, 17/11): a versão grátis já avalia a raquete atual. "Grátis" + a dúvida que todo tenista tem ("a minha serve?") baixa a barreira; o relatório pago vira o passo seguinte.',
+      copy='Sua raquete é a certa pra você? Descubra grátis. 🎾\nO RACKET DNA avalia a raquete que você já usa: onde ela acerta, o que pesa contra e o conforto no braço. É grátis.\nSe quiser ir além, o relatório completo (R$ 19,99) revela as 3 raquetes que mais combinam com o seu jogo, entre 183 medidas.',
+      titulo='Sua raquete é a certa? Descubra grátis', cta='Na arte: "Avaliar minha raquete". Botão do anúncio: Saiba mais.',
+      url=f'https://sportdna.com.br/racket/?{U}&utm_campaign=rk_avaliacao_gratis&utm_content=ADC-RK-13-v1', direitos=[
+        'Tela real do RACKET DNA (sportdna.com.br/racket), capturada em 17/11 num teste respondido no site: a parte grátis "O match da sua raquete". Nome da raquete borrado (sem marca de terceiros).',
+        'Números e oferta do site: 183 raquetes medidas, avaliação da raquete atual grátis, relatório R$ 19,99.',
+        'Música Mixkit (licença livre, uso comercial, sem crédito). Sem voz de IA.'], notes=''),
+ dict(id='ADC-RK-14', brand='SPORT DNA', sp='rkfree', static_only=True, title='RACKET grátis, estático direto: avalie a sua raquete',
+      objetivo='Tráfego para o teste grátis do RACKET DNA (avaliação da raquete atual).',
+      publico='Tenistas amadores de 25 a 55 anos que já têm raquete.',
+      hipotese='Mix de formato pedido pelo Gui: um estático seco, só "grátis" + tela + botão, para comparar com o motion do RK-13.',
+      copy='Avalie a sua raquete. Grátis. 🎾\nResponda o teste e veja se a raquete que você usa combina com o seu jogo e o seu braço. Se quiser, o relatório completo (R$ 19,99) mostra as 3 que mais combinam.',
+      titulo='Avalie a sua raquete. Grátis.', cta='Na arte: "Avaliar minha raquete". Botão do anúncio: Saiba mais.',
+      url=f'https://sportdna.com.br/racket/?{U}&utm_campaign=rk_avaliacao_gratis&utm_content=ADC-RK-14-v1', direitos=[
+        'Tela real do RACKET DNA, parte grátis da avaliação da raquete atual, capturada em 17/11. Sem marca de terceiros.'], notes='Só estático (1:1 para aprovar; 4:5, 9:16 e 1,91:1 depois).'),
 ]
