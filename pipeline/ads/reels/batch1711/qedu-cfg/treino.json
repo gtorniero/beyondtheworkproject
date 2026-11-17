@@ -1,0 +1,109 @@
+{
+ "quiz": {
+  "titulo": "Treinamento de atendimento",
+  "tema": "corp",
+  "visual": "escritorio",
+  "tempo": 20,
+  "perguntas": [
+   {
+    "t": "Qual é o prazo para responder um cliente no chat?",
+    "o": [
+     "Até 2 minutos",
+     "Até 10 minutos",
+     "No mesmo dia",
+     "Em 48 horas"
+    ],
+    "c": 0,
+    "tl": 20
+   },
+   {
+    "t": "O cliente pediu reembolso. Qual é o primeiro passo?",
+    "o": [
+     "Encaminhar ao financeiro",
+     "Confirmar o pedido e o motivo",
+     "Oferecer um cupom",
+     "Encerrar o chamado"
+    ],
+    "c": 1,
+    "tl": 20
+   },
+   {
+    "t": "Quem aprova uma troca fora do prazo?",
+    "o": [
+     "O próprio atendente",
+     "A coordenação",
+     "O cliente",
+     "Ninguém"
+    ],
+    "c": 1,
+    "tl": 20
+   }
+  ]
+ },
+ "hero": [
+  "Carla",
+  [
+   0,
+   1,
+   1
+  ],
+  1.2
+ ],
+ "sorteios": 2,
+ "jogadores": [
+  [
+   "Marcos",
+   [
+    0,
+    1,
+    1
+   ],
+   1.6
+  ],
+  [
+   "Júlia",
+   [
+    1,
+    1,
+    1
+   ],
+   2.2
+  ],
+  [
+   "Pedro",
+   [
+    0,
+    0,
+    1
+   ],
+   2.6
+  ],
+  [
+   "Renata",
+   [
+    0,
+    1,
+    0
+   ],
+   3.0
+  ],
+  [
+   "Igor",
+   [
+    2,
+    1,
+    1
+   ],
+   3.4
+  ],
+  [
+   "Sofia",
+   [
+    0,
+    1,
+    1
+   ],
+   3.8
+  ]
+ ]
+}

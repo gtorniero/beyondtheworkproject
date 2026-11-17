@@ -1,0 +1,109 @@
+{
+ "quiz": {
+  "titulo": "História do Brasil · 8º ano",
+  "tema": "escola",
+  "visual": "album",
+  "tempo": 20,
+  "perguntas": [
+   {
+    "t": "Em que ano foi assinada a Lei Áurea?",
+    "o": [
+     "1822",
+     "1888",
+     "1889",
+     "1930"
+    ],
+    "c": 1,
+    "tl": 20
+   },
+   {
+    "t": "Quem proclamou a Independência do Brasil?",
+    "o": [
+     "Tiradentes",
+     "Dom Pedro I",
+     "Dom Pedro II",
+     "Deodoro da Fonseca"
+    ],
+    "c": 1,
+    "tl": 20
+   },
+   {
+    "t": "Em que ano o ser humano pisou na Lua?",
+    "o": [
+     "1959",
+     "1965",
+     "1969",
+     "1972"
+    ],
+    "c": 2,
+    "tl": 20
+   }
+  ]
+ },
+ "hero": [
+  "Ana",
+  [
+   1,
+   1,
+   2
+  ],
+  1.2
+ ],
+ "sorteios": 2,
+ "jogadores": [
+  [
+   "Davi",
+   [
+    1,
+    1,
+    2
+   ],
+   1.6
+  ],
+  [
+   "Lu",
+   [
+    0,
+    1,
+    2
+   ],
+   2.2
+  ],
+  [
+   "Theo",
+   [
+    1,
+    3,
+    2
+   ],
+   2.6
+  ],
+  [
+   "Bia",
+   [
+    1,
+    1,
+    1
+   ],
+   3.0
+  ],
+  [
+   "Rafa",
+   [
+    2,
+    1,
+    2
+   ],
+   3.4
+  ],
+  [
+   "Nina",
+   [
+    1,
+    1,
+    2
+   ],
+   3.8
+  ]
+ ]
+}

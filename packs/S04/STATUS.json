@@ -221,8 +221,8 @@
    "dia": "07/12/2026 (dom)",
    "hora": "12h",
    "versao": "S04-Q-S27-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
   },
   {
    "peca": "R-S29",

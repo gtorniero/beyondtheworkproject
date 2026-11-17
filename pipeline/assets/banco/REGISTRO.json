@@ -1,0 +1,1314 @@
+{
+ "base_dir": "/tmp/claude-0/-home-user-beyondtheworkproject/d7452b64-01ec-54a7-b200-d4dc961592d6/scratchpad/work",
+ "note": "paths relative to work/; existing clips in work/clips are NOT included",
+ "clips": [
+  {
+   "id": "5940",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/5940.mp4",
+   "title": "Teacher speaking to her class.",
+   "source_url": "https://mixkit.co/free-stock-video/teacher-speaking-to-her-class-5940/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 18.52,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/5940-a.jpg",
+    "clips2/sala_de_aula/stills/5940-b.jpg"
+   ],
+   "used_in": [
+    "QE-C3 (foto)"
+   ]
+  },
+  {
+   "id": "6676",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/6676.mp4",
+   "title": "Teacher happy with her class.",
+   "source_url": "https://mixkit.co/free-stock-video/teacher-happy-with-her-class-6676/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 27.79,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/6676-a.jpg",
+    "clips2/sala_de_aula/stills/6676-b.jpg"
+   ],
+   "used_in": [
+    "QE-R3"
+   ]
+  },
+  {
+   "id": "21995",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/21995.mp4",
+   "title": "Medical students listening to a Professor.",
+   "source_url": "https://mixkit.co/free-stock-video/medical-students-listening-to-a-professor-21995/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 13.0,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/21995-a.jpg",
+    "clips2/sala_de_aula/stills/21995-b.jpg"
+   ],
+   "used_in": [
+    "QE-C1 (foto)"
+   ]
+  },
+  {
+   "id": "23537",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/23537.mp4",
+   "title": "Man writing a chemical formula on the blackboard.",
+   "source_url": "https://mixkit.co/free-stock-video/man-writing-a-chemical-formula-on-the-blackboard-23537/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 13.84,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/23537-a.jpg",
+    "clips2/sala_de_aula/stills/23537-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "24259",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/24259.mp4",
+   "title": "Lecture of anatomy in the classroom.",
+   "source_url": "https://mixkit.co/free-stock-video/lecture-of-anatomy-in-the-classroom-24259/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 16.44,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/24259-a.jpg",
+    "clips2/sala_de_aula/stills/24259-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "28315",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/28315.mp4",
+   "title": "Young students copying the blackboard in a classroom.",
+   "source_url": "https://mixkit.co/free-stock-video/young-students-copying-the-blackboard-in-a-classroom-28315/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 14.88,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/28315-a.jpg",
+    "clips2/sala_de_aula/stills/28315-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "29981",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/29981.mp4",
+   "title": "Student girl trying to solve equations on the whiteboard.",
+   "source_url": "https://mixkit.co/free-stock-video/student-girl-trying-to-solve-equations-on-the-whiteboard-29981/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 10.25,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/29981-a.jpg",
+    "clips2/sala_de_aula/stills/29981-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "35954",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/35954.mp4",
+   "title": "Classroom with children raising their hands.",
+   "source_url": "https://mixkit.co/free-stock-video/classroom-with-children-raising-their-hands-35954/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 21.49,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/35954-a.jpg",
+    "clips2/sala_de_aula/stills/35954-b.jpg"
+   ],
+   "used_in": [
+    "QE-R1"
+   ]
+  },
+  {
+   "id": "36011",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/36011.mp4",
+   "title": "Teacher reading a story to children on a carpet.",
+   "source_url": "https://mixkit.co/free-stock-video/teacher-reading-a-story-to-children-on-a-carpet-36011/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 17.62,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/36011-a.jpg",
+    "clips2/sala_de_aula/stills/36011-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "36046",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/36046.mp4",
+   "title": "Children and her teacher learning didactically.",
+   "source_url": "https://mixkit.co/free-stock-video/children-and-her-teacher-learning-didactically-36046/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 19.19,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/36046-a.jpg",
+    "clips2/sala_de_aula/stills/36046-b.jpg"
+   ],
+   "used_in": [
+    "QE-C2 (foto)"
+   ]
+  },
+  {
+   "id": "48165",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/48165.mp4",
+   "title": "University students in a classroom with a professor.",
+   "source_url": "https://mixkit.co/free-stock-video/university-students-in-a-classroom-with-a-professor-48165/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 8.08,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/48165-a.jpg",
+    "clips2/sala_de_aula/stills/48165-b.jpg"
+   ],
+   "used_in": [
+    "QE-R2"
+   ]
+  },
+  {
+   "id": "49155",
+   "theme": "sala_de_aula",
+   "file": "clips2/sala_de_aula/49155.mp4",
+   "title": "Young English teacher conducting classes.",
+   "source_url": "https://mixkit.co/free-stock-video/young-english-teacher-conducting-classes-49155/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 21.52,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/sala_de_aula/stills/49155-a.jpg",
+    "clips2/sala_de_aula/stills/49155-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "9069",
+   "theme": "treinamento",
+   "file": "clips2/treinamento/9069.mp4",
+   "title": "Digital marketing team leader explains strategy on whiteboard.",
+   "source_url": "https://mixkit.co/free-stock-video/digital-marketing-team-leader-explains-strategy-on-whiteboard-9069/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 17.02,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/treinamento/stills/9069-a.jpg",
+    "clips2/treinamento/stills/9069-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "12892",
+   "theme": "treinamento",
+   "file": "clips2/treinamento/12892.mp4",
+   "title": "Young business people listen to lecture in conference room.",
+   "source_url": "https://mixkit.co/free-stock-video/young-business-people-listen-to-lecture-in-conference-room-12892/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 6.64,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/treinamento/stills/12892-a.jpg",
+    "clips2/treinamento/stills/12892-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "23669",
+   "theme": "treinamento",
+   "file": "clips2/treinamento/23669.mp4",
+   "title": "Man explaining charts to a small audience.",
+   "source_url": "https://mixkit.co/free-stock-video/man-explaining-charts-to-a-small-audience-23669/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 24.44,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/treinamento/stills/23669-a.jpg",
+    "clips2/treinamento/stills/23669-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "42644",
+   "theme": "treinamento",
+   "file": "clips2/treinamento/42644.mp4",
+   "title": "Business meeting in a meeting room.",
+   "source_url": "https://mixkit.co/free-stock-video/business-meeting-in-a-meeting-room-42644/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 10.39,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/treinamento/stills/42644-a.jpg",
+    "clips2/treinamento/stills/42644-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "45957",
+   "theme": "treinamento",
+   "file": "clips2/treinamento/45957.mp4",
+   "title": "Manager presenting in front of colleagues .",
+   "source_url": "https://mixkit.co/free-stock-video/manager-presenting-in-front-of-colleagues-45957/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 15.48,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/treinamento/stills/45957-a.jpg",
+    "clips2/treinamento/stills/45957-b.jpg"
+   ],
+   "used_in": [
+    "QE-R4"
+   ]
+  },
+  {
+   "id": "46750",
+   "theme": "treinamento",
+   "file": "clips2/treinamento/46750.mp4",
+   "title": "CEO giving feed back to his team.",
+   "source_url": "https://mixkit.co/free-stock-video/ceo-giving-feed-back-to-his-team-46750/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 11.84,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/treinamento/stills/46750-a.jpg",
+    "clips2/treinamento/stills/46750-b.jpg"
+   ],
+   "used_in": [
+    "QE-C4 (foto)"
+   ]
+  },
+  {
+   "id": "48712",
+   "theme": "treinamento",
+   "file": "clips2/treinamento/48712.mp4",
+   "title": "Co-workers sharing ideas during a workshop.",
+   "source_url": "https://mixkit.co/free-stock-video/co-workers-sharing-ideas-during-a-workshop-48712/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 17.16,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/treinamento/stills/48712-a.jpg",
+    "clips2/treinamento/stills/48712-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "49288",
+   "theme": "treinamento",
+   "file": "clips2/treinamento/49288.mp4",
+   "title": "Group of professionals at a business meeting in the office.",
+   "source_url": "https://mixkit.co/free-stock-video/group-of-professionals-at-a-business-meeting-in-the-office-49288/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 14.56,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/treinamento/stills/49288-a.jpg",
+    "clips2/treinamento/stills/49288-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "144",
+   "theme": "estudo_celular",
+   "file": "clips2/estudo_celular/144.mp4",
+   "title": "Hands shown texting on a smartphone.",
+   "source_url": "https://mixkit.co/free-stock-video/hands-shown-texting-on-a-smartphone-144/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 16.31,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/estudo_celular/stills/144-a.jpg",
+    "clips2/estudo_celular/stills/144-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "4801",
+   "theme": "estudo_celular",
+   "file": "clips2/estudo_celular/4801.mp4",
+   "title": "Young man sitting scrolling on his cell phone.",
+   "source_url": "https://mixkit.co/free-stock-video/young-man-sitting-scrolling-on-his-cell-phone-4801/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 15.72,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/estudo_celular/stills/4801-a.jpg",
+    "clips2/estudo_celular/stills/4801-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "24977",
+   "theme": "estudo_celular",
+   "file": "clips2/estudo_celular/24977.mp4",
+   "title": "Doing homework with a laptop.",
+   "source_url": "https://mixkit.co/free-stock-video/doing-homework-with-a-laptop-24977/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 18.75,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/estudo_celular/stills/24977-a.jpg",
+    "clips2/estudo_celular/stills/24977-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "39774",
+   "theme": "estudo_celular",
+   "file": "clips2/estudo_celular/39774.mp4",
+   "title": "Hands of a Young Woman Typing on Her Smartphone.",
+   "source_url": "https://mixkit.co/free-stock-video/hands-of-a-young-woman-typing-on-her-smartphone-39774/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 12.29,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/estudo_celular/stills/39774-a.jpg",
+    "clips2/estudo_celular/stills/39774-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "41173",
+   "theme": "estudo_celular",
+   "file": "clips2/estudo_celular/41173.mp4",
+   "title": "Man texting on whatsapp.",
+   "source_url": "https://mixkit.co/free-stock-video/man-texting-on-whatsapp-41173/",
+   "license": "Mixkit Free License",
+   "width": 720,
+   "height": 1280,
+   "duration": 15.1,
+   "orientation": "vertical",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/estudo_celular/stills/41173-a.jpg",
+    "clips2/estudo_celular/stills/41173-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "41174",
+   "theme": "estudo_celular",
+   "file": "clips2/estudo_celular/41174.mp4",
+   "title": "Happy man texting on his smartphone.",
+   "source_url": "https://mixkit.co/free-stock-video/happy-man-texting-on-his-smartphone-41174/",
+   "license": "Mixkit Free License",
+   "width": 720,
+   "height": 1280,
+   "duration": 7.26,
+   "orientation": "vertical",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/estudo_celular/stills/41174-a.jpg",
+    "clips2/estudo_celular/stills/41174-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "43270",
+   "theme": "estudo_celular",
+   "file": "clips2/estudo_celular/43270.mp4",
+   "title": "Woman typing on her cell phone.",
+   "source_url": "https://mixkit.co/free-stock-video/woman-typing-on-her-cell-phone-43270/",
+   "license": "Mixkit Free License",
+   "width": 1080,
+   "height": 1920,
+   "duration": 7.59,
+   "orientation": "vertical",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/estudo_celular/stills/43270-a.jpg",
+    "clips2/estudo_celular/stills/43270-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "51123",
+   "theme": "estudo_celular",
+   "file": "clips2/estudo_celular/51123.mp4",
+   "title": "Woman sending messages on Whatsapp, Zoom shot.",
+   "source_url": "https://mixkit.co/free-stock-video/woman-sending-messages-on-whatsapp-zoom-shot-51123/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 8.38,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/estudo_celular/stills/51123-a.jpg",
+    "clips2/estudo_celular/stills/51123-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "6704",
+   "theme": "grupos_amigos",
+   "file": "clips2/grupos_amigos/6704.mp4",
+   "title": "Friends using their phones while out.",
+   "source_url": "https://mixkit.co/free-stock-video/friends-using-their-phones-while-out-6704/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 25.79,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/grupos_amigos/stills/6704-a.jpg",
+    "clips2/grupos_amigos/stills/6704-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "11502",
+   "theme": "grupos_amigos",
+   "file": "clips2/grupos_amigos/11502.mp4",
+   "title": "Group of friends glued to their phones.",
+   "source_url": "https://mixkit.co/free-stock-video/group-of-friends-glued-to-their-phones-11502/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 11.16,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/grupos_amigos/stills/11502-a.jpg",
+    "clips2/grupos_amigos/stills/11502-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "23832",
+   "theme": "grupos_amigos",
+   "file": "clips2/grupos_amigos/23832.mp4",
+   "title": "Friends watching the phone in the countryside.",
+   "source_url": "https://mixkit.co/free-stock-video/friends-watching-the-phone-in-the-countryside-23832/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 26.72,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/grupos_amigos/stills/23832-a.jpg",
+    "clips2/grupos_amigos/stills/23832-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "36036",
+   "theme": "grupos_amigos",
+   "file": "clips2/grupos_amigos/36036.mp4",
+   "title": "Friends on the street while using cell phones.",
+   "source_url": "https://mixkit.co/free-stock-video/friends-on-the-street-while-using-cell-phones-36036/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 16.32,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/grupos_amigos/stills/36036-a.jpg",
+    "clips2/grupos_amigos/stills/36036-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "36158",
+   "theme": "grupos_amigos",
+   "file": "clips2/grupos_amigos/36158.mp4",
+   "title": "Friends with cell phones sitting on a swimming pool.",
+   "source_url": "https://mixkit.co/free-stock-video/friends-with-cell-phones-sitting-on-a-swimming-pool-36158/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 30.76,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/grupos_amigos/stills/36158-a.jpg",
+    "clips2/grupos_amigos/stills/36158-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "36783",
+   "theme": "grupos_amigos",
+   "file": "clips2/grupos_amigos/36783.mp4",
+   "title": "Some friends looking at a cell phone in a bar.",
+   "source_url": "https://mixkit.co/free-stock-video/some-friends-looking-at-a-cell-phone-in-a-bar-36783/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 15.76,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/grupos_amigos/stills/36783-a.jpg",
+    "clips2/grupos_amigos/stills/36783-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "45474",
+   "theme": "grupos_amigos",
+   "file": "clips2/grupos_amigos/45474.mp4",
+   "title": "Friend group waving sparklers in the air on a summer evening.",
+   "source_url": "https://mixkit.co/free-stock-video/friend-group-waving-sparklers-in-the-air-on-a-summer-45474/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 5.28,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/grupos_amigos/stills/45474-a.jpg",
+    "clips2/grupos_amigos/stills/45474-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "47028",
+   "theme": "grupos_amigos",
+   "file": "clips2/grupos_amigos/47028.mp4",
+   "title": "Happy friends having fun in their yard.",
+   "source_url": "https://mixkit.co/free-stock-video/happy-friends-having-fun-in-their-yard-47028/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 12.2,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/grupos_amigos/stills/47028-a.jpg",
+    "clips2/grupos_amigos/stills/47028-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "13303",
+   "theme": "casal",
+   "file": "clips2/casal/13303.mp4",
+   "title": "Hip urban couple surf internet on mobile phones outside in autumn.",
+   "source_url": "https://mixkit.co/free-stock-video/hip-urban-couple-surf-internet-on-mobile-phones-outside-in-13303/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 11.13,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/casal/stills/13303-a.jpg",
+    "clips2/casal/stills/13303-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "21292",
+   "theme": "casal",
+   "file": "clips2/casal/21292.mp4",
+   "title": "Couple looking at selfies in their cell phone.",
+   "source_url": "https://mixkit.co/free-stock-video/couple-looking-at-selfies-in-their-cell-phone-21292/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 6.81,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/casal/stills/21292-a.jpg",
+    "clips2/casal/stills/21292-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "23865",
+   "theme": "casal",
+   "file": "clips2/casal/23865.mp4",
+   "title": "Couple watching the smartphone in the bed.",
+   "source_url": "https://mixkit.co/free-stock-video/couple-watching-the-smartphone-in-the-bed-23865/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 11.32,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/casal/stills/23865-a.jpg",
+    "clips2/casal/stills/23865-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "26555",
+   "theme": "casal",
+   "file": "clips2/casal/26555.mp4",
+   "title": "Closeup of couple holding hands.",
+   "source_url": "https://mixkit.co/free-stock-video/closeup-of-couple-holding-hands-26555/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 22.94,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/casal/stills/26555-a.jpg",
+    "clips2/casal/stills/26555-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "36452",
+   "theme": "casal",
+   "file": "clips2/casal/36452.mp4",
+   "title": "Couple checking something in a smartphone in a bar.",
+   "source_url": "https://mixkit.co/free-stock-video/couple-checking-something-in-a-smartphone-in-a-bar-36452/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 12.68,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/casal/stills/36452-a.jpg",
+    "clips2/casal/stills/36452-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "45791",
+   "theme": "casal",
+   "file": "clips2/casal/45791.mp4",
+   "title": "Romantic couple looking at something on a phone in the park.",
+   "source_url": "https://mixkit.co/free-stock-video/romantic-couple-looking-at-something-on-a-phone-in-the-45791/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 12.0,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/casal/stills/45791-a.jpg",
+    "clips2/casal/stills/45791-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "5655",
+   "theme": "familia_natal",
+   "file": "clips2/familia_natal/5655.mp4",
+   "title": "Family sings and waves sparklers at holiday dinner.",
+   "source_url": "https://mixkit.co/free-stock-video/family-sings-and-waves-sparklers-at-holiday-dinner-5655/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 12.8,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/familia_natal/stills/5655-a.jpg",
+    "clips2/familia_natal/stills/5655-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "9148",
+   "theme": "familia_natal",
+   "file": "clips2/familia_natal/9148.mp4",
+   "title": "Family celebrates Christmas with cuddle near tree.",
+   "source_url": "https://mixkit.co/free-stock-video/family-celebrates-christmas-with-cuddle-near-tree-9148/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 16.2,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/familia_natal/stills/9148-a.jpg",
+    "clips2/familia_natal/stills/9148-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "33530",
+   "theme": "familia_natal",
+   "file": "clips2/familia_natal/33530.mp4",
+   "title": "Mom giving Christmas gifts to her children.",
+   "source_url": "https://mixkit.co/free-stock-video/mom-giving-christmas-gifts-to-her-children-33530/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 8.6,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/familia_natal/stills/33530-a.jpg",
+    "clips2/familia_natal/stills/33530-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "44562",
+   "theme": "familia_natal",
+   "file": "clips2/familia_natal/44562.mp4",
+   "title": "Christmas tree with lights at home.",
+   "source_url": "https://mixkit.co/free-stock-video/christmas-tree-with-lights-at-home-44562/",
+   "license": "Mixkit Free License",
+   "width": 720,
+   "height": 1280,
+   "duration": 22.35,
+   "orientation": "vertical",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/familia_natal/stills/44562-a.jpg",
+    "clips2/familia_natal/stills/44562-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "44571",
+   "theme": "familia_natal",
+   "file": "clips2/familia_natal/44571.mp4",
+   "title": "Mother and daughter decorating the Christmas tree.",
+   "source_url": "https://mixkit.co/free-stock-video/mother-and-daughter-decorating-the-christmas-tree-44571/",
+   "license": "Mixkit Free License",
+   "width": 720,
+   "height": 1280,
+   "duration": 18.15,
+   "orientation": "vertical",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/familia_natal/stills/44571-a.jpg",
+    "clips2/familia_natal/stills/44571-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "45462",
+   "theme": "familia_natal",
+   "file": "clips2/familia_natal/45462.mp4",
+   "title": "Large happy family shares a toast at Christmas dinner.",
+   "source_url": "https://mixkit.co/free-stock-video/large-happy-family-shares-a-toast-at-christmas-dinner-45462/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 15.36,
+   "orientation": "horizontal",
+   "faces": "close",
+   "logos_visible": false,
+   "stills": [
+    "clips2/familia_natal/stills/45462-a.jpg",
+    "clips2/familia_natal/stills/45462-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "869",
+   "theme": "tenis",
+   "file": "clips2/tenis/869.mp4",
+   "title": "Tennis players at an outdoor court.",
+   "source_url": "https://mixkit.co/free-stock-video/tennis-players-at-an-outdoor-court-869/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 20.1,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/tenis/stills/869-a.jpg",
+    "clips2/tenis/stills/869-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "879",
+   "theme": "tenis",
+   "file": "clips2/tenis/879.mp4",
+   "title": "Tennis serve aerial view.",
+   "source_url": "https://mixkit.co/free-stock-video/tennis-serve-aerial-view-879/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 10.01,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/tenis/stills/879-a.jpg",
+    "clips2/tenis/stills/879-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "880",
+   "theme": "tenis",
+   "file": "clips2/tenis/880.mp4",
+   "title": "Two people playing tennis aerial view.",
+   "source_url": "https://mixkit.co/free-stock-video/two-people-playing-tennis-aerial-view-880/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 18.44,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/tenis/stills/880-a.jpg",
+    "clips2/tenis/stills/880-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "5014",
+   "theme": "tenis",
+   "file": "clips2/tenis/5014.mp4",
+   "title": "Tennis courts filmed from the air.",
+   "source_url": "https://mixkit.co/free-stock-video/tennis-courts-filmed-from-the-air-5014/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 10.68,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/tenis/stills/5014-a.jpg",
+    "clips2/tenis/stills/5014-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "13999",
+   "theme": "tenis",
+   "file": "clips2/tenis/13999.mp4",
+   "title": "Tennis player bouncing the ball on the wall.",
+   "source_url": "https://mixkit.co/free-stock-video/tennis-player-bouncing-the-ball-on-the-wall-13999/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 12.56,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/tenis/stills/13999-a.jpg",
+    "clips2/tenis/stills/13999-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "14057",
+   "theme": "tenis",
+   "file": "clips2/tenis/14057.mp4",
+   "title": "Tennis ball on the ground of a court.",
+   "source_url": "https://mixkit.co/free-stock-video/tennis-ball-on-the-ground-of-a-court-14057/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 12.16,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/tenis/stills/14057-a.jpg",
+    "clips2/tenis/stills/14057-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "23639",
+   "theme": "tenis",
+   "file": "clips2/tenis/23639.mp4",
+   "title": "Tennis ball flying over the net.",
+   "source_url": "https://mixkit.co/free-stock-video/tennis-ball-flying-over-the-net-23639/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 9.36,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/tenis/stills/23639-a.jpg",
+    "clips2/tenis/stills/23639-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "23946",
+   "theme": "tenis",
+   "file": "clips2/tenis/23946.mp4",
+   "title": "A man takes a tennis ball out of the basket.",
+   "source_url": "https://mixkit.co/free-stock-video/a-man-takes-a-tennis-ball-out-of-the-basket-23946/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 10.76,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/tenis/stills/23946-a.jpg",
+    "clips2/tenis/stills/23946-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "1042",
+   "theme": "surf",
+   "file": "clips2/surf/1042.mp4",
+   "title": "Woman paddling on a surfboard.",
+   "source_url": "https://mixkit.co/free-stock-video/woman-paddling-on-a-surfboard-1042/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 21.62,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/surf/stills/1042-a.jpg",
+    "clips2/surf/stills/1042-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "1044",
+   "theme": "surf",
+   "file": "clips2/surf/1044.mp4",
+   "title": "Person with surfboard walks towards waves.",
+   "source_url": "https://mixkit.co/free-stock-video/person-with-surfboard-walks-towards-waves-1044/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 18.67,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/surf/stills/1044-a.jpg",
+    "clips2/surf/stills/1044-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "1065",
+   "theme": "surf",
+   "file": "clips2/surf/1065.mp4",
+   "title": "Surfer jogging on the beach with a board.",
+   "source_url": "https://mixkit.co/free-stock-video/surfer-jogging-on-the-beach-with-a-board-1065/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 14.17,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/surf/stills/1065-a.jpg",
+    "clips2/surf/stills/1065-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "1066",
+   "theme": "surf",
+   "file": "clips2/surf/1066.mp4",
+   "title": "Surfer carrying his board along the beach.",
+   "source_url": "https://mixkit.co/free-stock-video/surfer-carrying-his-board-along-the-beach-1066/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 18.27,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/surf/stills/1066-a.jpg",
+    "clips2/surf/stills/1066-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "1220",
+   "theme": "surf",
+   "file": "clips2/surf/1220.mp4",
+   "title": "A surfer walking on the beach with a surfboard.",
+   "source_url": "https://mixkit.co/free-stock-video/a-surfer-walking-on-the-beach-with-a-surfboard-1220/",
+   "license": "Mixkit Free License",
+   "width": 720,
+   "height": 1280,
+   "duration": 18.27,
+   "orientation": "vertical",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/surf/stills/1220-a.jpg",
+    "clips2/surf/stills/1220-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "15845",
+   "theme": "surf",
+   "file": "clips2/surf/15845.mp4",
+   "title": "Surfer riding sunlit wave in slow motion.",
+   "source_url": "https://mixkit.co/free-stock-video/surfer-riding-sunlit-wave-in-slow-motion-15845/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 19.73,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/surf/stills/15845-a.jpg",
+    "clips2/surf/stills/15845-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "722",
+   "theme": "corrida",
+   "file": "clips2/corrida/722.mp4",
+   "title": "Runner training in a park.",
+   "source_url": "https://mixkit.co/free-stock-video/runner-training-in-a-park-722/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 30.03,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/corrida/stills/722-a.jpg",
+    "clips2/corrida/stills/722-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "32807",
+   "theme": "corrida",
+   "file": "clips2/corrida/32807.mp4",
+   "title": "Woman running above the camera on a running track.",
+   "source_url": "https://mixkit.co/free-stock-video/woman-running-above-the-camera-on-a-running-track-32807/",
+   "license": "Mixkit Free License",
+   "width": 720,
+   "height": 1280,
+   "duration": 10.17,
+   "orientation": "vertical",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/corrida/stills/32807-a.jpg",
+    "clips2/corrida/stills/32807-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "32812",
+   "theme": "corrida",
+   "file": "clips2/corrida/32812.mp4",
+   "title": "Legs of a woman when running on a running track.",
+   "source_url": "https://mixkit.co/free-stock-video/legs-of-a-woman-when-running-on-a-running-track-32812/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 12.38,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": true,
+   "stills": [
+    "clips2/corrida/stills/32812-a.jpg",
+    "clips2/corrida/stills/32812-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "37003",
+   "theme": "corrida",
+   "file": "clips2/corrida/37003.mp4",
+   "title": "Athlete tying shoelaces before training.",
+   "source_url": "https://mixkit.co/free-stock-video/athlete-tying-shoelaces-before-training-37003/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 20.94,
+   "orientation": "horizontal",
+   "faces": "none",
+   "logos_visible": false,
+   "stills": [
+    "clips2/corrida/stills/37003-a.jpg",
+    "clips2/corrida/stills/37003-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "40776",
+   "theme": "corrida",
+   "file": "clips2/corrida/40776.mp4",
+   "title": "Young woman jogging head-on outdoors.",
+   "source_url": "https://mixkit.co/free-stock-video/young-woman-jogging-head-on-outdoors-40776/",
+   "license": "Mixkit Free License",
+   "width": 720,
+   "height": 1280,
+   "duration": 12.29,
+   "orientation": "vertical",
+   "faces": "far",
+   "logos_visible": true,
+   "stills": [
+    "clips2/corrida/stills/40776-a.jpg",
+    "clips2/corrida/stills/40776-b.jpg"
+   ],
+   "used_in": []
+  },
+  {
+   "id": "40881",
+   "theme": "corrida",
+   "file": "clips2/corrida/40881.mp4",
+   "title": "Man and woman jogging together on the street.",
+   "source_url": "https://mixkit.co/free-stock-video/man-and-woman-jogging-together-on-the-street-40881/",
+   "license": "Mixkit Free License",
+   "width": 1280,
+   "height": 720,
+   "duration": 12.46,
+   "orientation": "horizontal",
+   "faces": "far",
+   "logos_visible": false,
+   "stills": [
+    "clips2/corrida/stills/40881-a.jpg",
+    "clips2/corrida/stills/40881-b.jpg"
+   ],
+   "used_in": []
+  }
+ ]
+}

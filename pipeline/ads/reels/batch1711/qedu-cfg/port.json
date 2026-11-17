@@ -1,0 +1,109 @@
+{
+ "quiz": {
+  "titulo": "Português · acentuação e concordância",
+  "tema": "escola",
+  "visual": "espaco",
+  "tempo": 20,
+  "perguntas": [
+   {
+    "t": "Qual destas palavras é proparoxítona?",
+    "o": [
+     "Café",
+     "Lâmpada",
+     "Caju",
+     "Janela"
+    ],
+    "c": 1,
+    "tl": 20
+   },
+   {
+    "t": "Complete: \"___ dois anos que a gente não se vê.\"",
+    "o": [
+     "Faz",
+     "Fazem",
+     "Fizeram",
+     "Faziam"
+    ],
+    "c": 0,
+    "tl": 20
+   },
+   {
+    "t": "Qual é o plural de \"cidadão\"?",
+    "o": [
+     "Cidadões",
+     "Cidadães",
+     "Cidadãos",
+     "Cidadãoes"
+    ],
+    "c": 2,
+    "tl": 20
+   }
+  ]
+ },
+ "hero": [
+  "Ana",
+  [
+   1,
+   0,
+   2
+  ],
+  1.2
+ ],
+ "sorteios": 2,
+ "jogadores": [
+  [
+   "Davi",
+   [
+    1,
+    1,
+    2
+   ],
+   1.6
+  ],
+  [
+   "Lu",
+   [
+    1,
+    0,
+    0
+   ],
+   2.2
+  ],
+  [
+   "Theo",
+   [
+    0,
+    0,
+    2
+   ],
+   2.6
+  ],
+  [
+   "Bia",
+   [
+    1,
+    0,
+    2
+   ],
+   3.0
+  ],
+  [
+   "Rafa",
+   [
+    1,
+    1,
+    2
+   ],
+   3.4
+  ],
+  [
+   "Nina",
+   [
+    3,
+    0,
+    2
+   ],
+   3.8
+  ]
+ ]
+}

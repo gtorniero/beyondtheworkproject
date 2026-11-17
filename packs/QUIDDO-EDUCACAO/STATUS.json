@@ -1,0 +1,61 @@
+{
+ "pack": "QUIDDO-EDUCACAO",
+ "pecas": [
+  {
+   "peca": "QE-R1",
+   "formato": "reel",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)",
+   "data": "a programar (Growth)"
+  },
+  {
+   "peca": "QE-R2",
+   "formato": "reel",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)",
+   "data": "a programar (Growth)"
+  },
+  {
+   "peca": "QE-R3",
+   "formato": "reel",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)",
+   "data": "a programar (Growth)"
+  },
+  {
+   "peca": "QE-R4",
+   "formato": "reel",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)",
+   "data": "a programar (Growth)"
+  },
+  {
+   "peca": "QE-C1",
+   "formato": "carrossel",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)",
+   "data": "a programar (Growth)"
+  },
+  {
+   "peca": "QE-C2",
+   "formato": "carrossel",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)",
+   "data": "a programar (Growth)"
+  },
+  {
+   "peca": "QE-C3",
+   "formato": "carrossel",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)",
+   "data": "a programar (Growth)"
+  },
+  {
+   "peca": "QE-C4",
+   "formato": "carrossel",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)",
+   "data": "a programar (Growth)"
+  }
+ ]
+}

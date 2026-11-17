@@ -1,0 +1,109 @@
+{
+ "quiz": {
+  "titulo": "Revisão de Geografia · 7º ano",
+  "tema": "escola",
+  "visual": "sala",
+  "tempo": 20,
+  "perguntas": [
+   {
+    "t": "Qual é a capital da Austrália?",
+    "o": [
+     "Sydney",
+     "Melbourne",
+     "Camberra",
+     "Perth"
+    ],
+    "c": 2,
+    "tl": 20
+   },
+   {
+    "t": "Qual é o maior bioma do Brasil?",
+    "o": [
+     "Cerrado",
+     "Mata Atlântica",
+     "Amazônia",
+     "Caatinga"
+    ],
+    "c": 2,
+    "tl": 20
+   },
+   {
+    "t": "Qual é o maior oceano do mundo?",
+    "o": [
+     "Pacífico",
+     "Atlântico",
+     "Índico",
+     "Ártico"
+    ],
+    "c": 0,
+    "tl": 20
+   }
+  ]
+ },
+ "hero": [
+  "Ana",
+  [
+   2,
+   2,
+   0
+  ],
+  1.2
+ ],
+ "sorteios": 2,
+ "jogadores": [
+  [
+   "Davi",
+   [
+    2,
+    2,
+    0
+   ],
+   1.6
+  ],
+  [
+   "Lu",
+   [
+    0,
+    2,
+    0
+   ],
+   2.2
+  ],
+  [
+   "Theo",
+   [
+    2,
+    0,
+    0
+   ],
+   2.6
+  ],
+  [
+   "Bia",
+   [
+    1,
+    2,
+    0
+   ],
+   3.0
+  ],
+  [
+   "Rafa",
+   [
+    2,
+    2,
+    1
+   ],
+   3.4
+  ],
+  [
+   "Nina",
+   [
+    2,
+    2,
+    0
+   ],
+   3.8
+  ]
+ ]
+}

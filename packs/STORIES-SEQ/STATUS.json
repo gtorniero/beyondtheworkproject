@@ -1,0 +1,320 @@
+{
+ "pack": "STORIES-SEQ",
+ "pecas": [
+  {
+   "peca": "D-S10",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S11",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S12",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S13",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S14",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S15",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S16",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S17",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S18",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S19",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S21",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S22",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S23",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S24",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S25",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S26",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S27",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S28",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S29",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S7",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "D-S9",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S10",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S11",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S12",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S13",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S14",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S15",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S16",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S17",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S18",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S19",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S20",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S21",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S22",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S23",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S24",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S25",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S26",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S27",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S7",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S8",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "Q-S9",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S11",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S12",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S13",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S14",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S15",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S16",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S17",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S18",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S19",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S21",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S22",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S23",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S24",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S25",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S26",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S27",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S28",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S29",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S7",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S8",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  },
+  {
+   "peca": "R-S9",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa (rodada 14)"
+  }
+ ]
+}

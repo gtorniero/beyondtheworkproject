@@ -80,8 +80,8 @@
    "dia": "seg 23/11",
    "hora": "12h",
    "versao": "S03-Q-S13-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
   },
   {
    "peca": "Q-S14",
@@ -90,8 +90,8 @@
    "dia": "ter 24/11",
    "hora": "12h",
    "versao": "S03-Q-S14-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
   },
   {
    "peca": "Q-S15",
@@ -100,8 +100,8 @@
    "dia": "qua 25/11",
    "hora": "12h",
    "versao": "S03-Q-S15-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
   },
   {
    "peca": "Q-S16",
@@ -110,8 +110,8 @@
    "dia": "qui 26/11",
    "hora": "12h",
    "versao": "S03-Q-S16-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
   },
   {
    "peca": "Q-S17",
@@ -120,8 +120,8 @@
    "dia": "sex 27/11",
    "hora": "12h",
    "versao": "S03-Q-S17-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
   },
   {
    "peca": "Q-S18",
@@ -130,8 +130,8 @@
    "dia": "sáb 28/11",
    "hora": "12h",
    "versao": "S03-Q-S18-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
   },
   {
    "peca": "Q-S19",
@@ -140,8 +140,8 @@
    "dia": "dom 29/11",
    "hora": "12h",
    "versao": "S03-Q-S19-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa"
   },
   {
    "peca": "R-R8",
@@ -179,9 +179,9 @@
    "formato": "carrossel",
    "dia": "qui 26/11",
    "hora": "12h30",
-   "versao": "S03-R-C8-v2",
+   "versao": "S03-R-C8-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (sem preço no card final, rodada 13)"
   },
   {
    "peca": "R-R10",
@@ -574,8 +574,8 @@
    "dia": "30/11/2026 (seg)",
    "hora": "12h",
    "versao": "X-Q-S20-v1",
-   "liberado": true,
-   "status_mesa": "aprovado",
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa",
    "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
   },
   {
@@ -585,8 +585,8 @@
    "dia": "01/12/2026 (ter)",
    "hora": "12h",
    "versao": "X-Q-S21-v1",
-   "liberado": true,
-   "status_mesa": "aprovado",
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa",
    "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
   },
   {
@@ -596,8 +596,8 @@
    "dia": "02/12/2026 (qua)",
    "hora": "12h",
    "versao": "X-Q-S22-v1",
-   "liberado": true,
-   "status_mesa": "aprovado",
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa",
    "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
   },
   {
@@ -607,8 +607,8 @@
    "dia": "03/12/2026 (qui)",
    "hora": "12h",
    "versao": "X-Q-S23-v1",
-   "liberado": true,
-   "status_mesa": "aprovado",
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa",
    "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
   },
   {
@@ -618,8 +618,8 @@
    "dia": "04/12/2026 (sex)",
    "hora": "12h",
    "versao": "X-Q-S24-v1",
-   "liberado": true,
-   "status_mesa": "aprovado",
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa",
    "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
   },
   {
@@ -629,8 +629,8 @@
    "dia": "05/12/2026 (sáb)",
    "hora": "12h",
    "versao": "X-Q-S25-v1",
-   "liberado": true,
-   "status_mesa": "aprovado",
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa",
    "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
   },
   {
@@ -640,8 +640,8 @@
    "dia": "06/12/2026 (dom)",
    "hora": "12h",
    "versao": "X-Q-S26-v1",
-   "liberado": true,
-   "status_mesa": "aprovado",
+   "liberado": false,
+   "status_mesa": "substituído pela sequência de 3 quadros (packs/STORIES-SEQ), aguardando a Mesa",
    "origem": "stories 30/11–06/12 aprovados na Mesa em 15/11 (rodada 8)"
   },
   {
