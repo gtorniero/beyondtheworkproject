@@ -19,9 +19,9 @@
    "formato": "carrossel",
    "dia": "ter 24/11",
    "hora": "12h30",
-   "versao": "S03-Q-C7-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-Q-C7-v2",
+   "liberado": false,
+   "status_mesa": "revisar (card final de CTA, 17/11)"
   },
   {
    "peca": "Q-R8",
@@ -39,9 +39,9 @@
    "formato": "carrossel",
    "dia": "qui 26/11",
    "hora": "12h30",
-   "versao": "S03-Q-C8-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-Q-C8-v2",
+   "liberado": false,
+   "status_mesa": "revisar (card final de CTA, 17/11)"
   },
   {
    "peca": "Q-R9",
@@ -59,9 +59,9 @@
    "formato": "carrossel",
    "dia": "sáb 28/11",
    "hora": "12h30",
-   "versao": "S03-Q-C9-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-Q-C9-v2",
+   "liberado": false,
+   "status_mesa": "revisar (card final de CTA, 17/11)"
   },
   {
    "peca": "Q-R10",
@@ -159,9 +159,9 @@
    "formato": "carrossel",
    "dia": "ter 24/11",
    "hora": "12h30",
-   "versao": "S03-R-C7-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-R-C7-v2",
+   "liberado": false,
+   "status_mesa": "revisar (card final de CTA, 17/11)"
   },
   {
    "peca": "R-R9",
@@ -179,9 +179,9 @@
    "formato": "carrossel",
    "dia": "qui 26/11",
    "hora": "12h30",
-   "versao": "S03-R-C8-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-R-C8-v2",
+   "liberado": false,
+   "status_mesa": "revisar (card final de CTA, 17/11)"
   },
   {
    "peca": "R-R10",
@@ -199,9 +199,9 @@
    "formato": "carrossel",
    "dia": "sáb 28/11",
    "hora": "12h30",
-   "versao": "S03-R-C9-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-R-C9-v2",
+   "liberado": false,
+   "status_mesa": "revisar (card final de CTA, 17/11)"
   },
   {
    "peca": "R-R11",
@@ -289,9 +289,9 @@
    "formato": "reel",
    "dia": "seg 23/11",
    "hora": "19h45",
-   "versao": "S03-D-R8-v2",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-D-R8-v3",
+   "liberado": false,
+   "status_mesa": "revisar (62 → 183, 17/11)"
   },
   {
    "peca": "D-C7",
@@ -299,9 +299,9 @@
    "formato": "carrossel",
    "dia": "ter 24/11",
    "hora": "12h30",
-   "versao": "S03-D-C7-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-D-C7-v2",
+   "liberado": false,
+   "status_mesa": "revisar (card final de CTA, 17/11)"
   },
   {
    "peca": "D-R9",
@@ -319,9 +319,9 @@
    "formato": "carrossel",
    "dia": "qui 26/11",
    "hora": "12h30",
-   "versao": "S03-D-C8-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-D-C8-v2",
+   "liberado": false,
+   "status_mesa": "revisar (card final de CTA, 17/11)"
   },
   {
    "peca": "D-R10",
@@ -339,9 +339,9 @@
    "formato": "carrossel",
    "dia": "sáb 28/11",
    "hora": "12h30",
-   "versao": "S03-D-C9-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "versao": "S03-D-C9-v2",
+   "liberado": false,
+   "status_mesa": "revisar (card final de CTA, 17/11)"
   },
   {
    "peca": "D-R11",

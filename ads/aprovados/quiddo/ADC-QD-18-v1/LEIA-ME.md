@@ -9,6 +9,10 @@ Cada um responde no próprio celular e o pódio sai na hora, no telão da sala. 
 - **CTA:** No último card: "Criar meu quiz" + quiddo.com.br. Botão do anúncio: Saiba mais.
 - **URL final (todos os cards):** https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_familia_amigos&utm_term=carrossel&utm_content=ADC-QD-18-v1
 
+## Card final de CTA (17/11)
+
+Card 5: Criar meu quiz grátis · quiddo.com.br.
+
 ## Arquivos
 - `ADC-QD-18-v1_carrossel-1x1-card1.png`
 - `ADC-QD-18-v1_carrossel-1x1-card2.png`
@@ -17,3 +21,4 @@ Cada um responde no próprio celular e o pódio sai na hora, no telão da sala. 
 
 ## Origem
 Telas reais do jogo tiradas do ADC-QD-11-v4 aprovado (versão 1:1), com o título de cada passo trocado. Sem preço do Retrozap. Nada foi subido na conta de anúncios.
+- `ADC-QD-18-v1_carrossel-1x1-card5.png` (CTA)

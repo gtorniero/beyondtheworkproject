@@ -9,6 +9,10 @@ Você escolhe o grupo, vê o troféu de cada um e fecha com o Gran Finale, com o
 - **CTA:** No último card: "Faça a retrospectiva do seu grupo." + retrozap.com.br. Botão do anúncio: Saiba mais.
 - **URL final (todos os cards):** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_term=carrossel&utm_content=ADC-RZ-15-v1
 
+## Card final de CTA (17/11)
+
+Card 5: Fazer a do meu grupo · retrozap.com.br.
+
 ## Arquivos
 - `ADC-RZ-15-v1_carrossel-1x1-card1.png`
 - `ADC-RZ-15-v1_carrossel-1x1-card2.png`
@@ -17,3 +21,4 @@ Você escolhe o grupo, vê o troféu de cada um e fecha com o Gran Finale, com o
 
 ## Origem
 Quadros reais do produto tirados do ADC-RZ-01-v5 aprovado (versão 1:1). Sem preço do Retrozap. Nada foi subido na conta de anúncios.
+- `ADC-RZ-15-v1_carrossel-1x1-card5.png` (CTA)
