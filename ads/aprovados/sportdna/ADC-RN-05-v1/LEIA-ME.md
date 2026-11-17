@@ -4,7 +4,7 @@ Versão aprovada: ADC-RN-05-v1 · SPORT DNA · lote vídeo real (14/11)
 
 - **Objetivo:** Tráfego qualificado para o início do produto (teste do conceito viral).
 - **Público:** Corredores de rua 25 a 55 anos.
-- **Texto principal:** O erro que todo corredor comete: achar que o tênis mais caro é o melhor. Antes de comprar, faça o teste. 🔊 Narração com voz gerada por IA.
+- **Texto principal:** O erro que todo corredor comete: achar que o tênis mais caro é o melhor. Antes de comprar, faça o teste.
 - **Título:** O erro que todo corredor comete
 - **CTA:** No vídeo: "Antes de comprar, faça o teste." + sportdna.com.br/run. Botão do anúncio: Saiba mais.
 - **URL final:** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=run_teste&utm_term=erro&utm_content=ADC-RN-05-v1

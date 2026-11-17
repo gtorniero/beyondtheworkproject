@@ -4,7 +4,7 @@ Versão aprovada: ADC-RZ-13-v2 · Retrozap · lote vídeo real (14/11)
 
 - **Objetivo:** Tráfego qualificado para o início do produto (teste do conceito viral).
 - **Público:** 18 a 44 anos em grupo de WhatsApp.
-- **Texto principal:** Tier list do grupo: quem é o S do seu? 🏆 Descubra na retrospectiva 2026. 1º grupo grátis. 🔊 Narração com voz gerada por IA.
+- **Texto principal:** Tier list do grupo: quem é o S do seu? 🏆 Descubra na retrospectiva 2026. 1º grupo grátis.
 - **Título:** Quem é o S do seu grupo?
 - **CTA:** No vídeo: "Façam a de vocês." / "Faça a do seu grupo." + retrozap.com.br. Botão do anúncio: Saiba mais.
 - **URL final:** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_term=tierlist&utm_content=ADC-RZ-13-v2

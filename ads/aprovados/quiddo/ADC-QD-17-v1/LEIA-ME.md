@@ -4,7 +4,7 @@ Versão aprovada: ADC-QD-17-v1 · Quiddo · lote vídeo real (14/11)
 
 - **Objetivo:** Tráfego qualificado para o início do produto (teste do conceito viral).
 - **Público:** Famílias que se reúnem no Natal e no fim de ano.
-- **Texto principal:** Quem ganhou o quiz da família? 🏆 Crie o seu em 5 minutos e todo mundo joga pelo celular. Teste grátis. 🔊 Narração com voz gerada por IA.
+- **Texto principal:** Quem ganhou o quiz da família? 🏆 Crie o seu em 5 minutos e todo mundo joga pelo celular. Teste grátis.
 - **Título:** Quem ganhou o quiz da família?
 - **CTA:** No vídeo: "Faça o seu. Teste grátis." + quiddo.com.br. Botão do anúncio: Saiba mais.
 - **URL final:** https://www.quiddo.com.br/criar?utm_source=meta&utm_medium=paid_social&utm_campaign=qd_familia_amigos&utm_term=podio&utm_content=ADC-QD-17-v1

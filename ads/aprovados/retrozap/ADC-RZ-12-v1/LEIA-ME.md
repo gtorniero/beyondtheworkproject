@@ -4,7 +4,7 @@ Versão aprovada: ADC-RZ-12-v1 · Retrozap · lote vídeo real (14/11)
 
 - **Objetivo:** Tráfego qualificado para o início do produto (teste do conceito viral).
 - **Público:** 18 a 44 anos que vivem em grupo de WhatsApp (amigos, família, trabalho).
-- **Texto principal:** Quem é o Tagarela do seu grupo? 🗣️ Faça a retrospectiva 2026 do grupo. O 1º grupo é grátis. 🔊 Narração com voz gerada por IA.
+- **Texto principal:** Quem é o Tagarela do seu grupo? 🗣️ Faça a retrospectiva 2026 do grupo. O 1º grupo é grátis.
 - **Título:** Quem é o Tagarela do seu grupo?
 - **CTA:** No vídeo: "Façam a de vocês." / "Faça a do seu grupo." + retrozap.com.br. Botão do anúncio: Saiba mais.
 - **URL final:** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_term=tagarela&utm_content=ADC-RZ-12-v1

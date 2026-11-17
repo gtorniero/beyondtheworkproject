@@ -20,6 +20,10 @@ Estão aprovados e prontos, mas só fazem sentido nestas datas:
 - **ADC-RZ-07-v2** (fim de ano / virada): rodar de 15/12 a 05/01.
 Todos os outros 52 rodam já.
 
+## Rótulo de IA da Meta (regra do Gui, 17/11)
+A legenda e o texto do anúncio NÃO levam aviso de IA. O aviso vai no próprio rótulo de IA da Meta, ligado na hora de programar ou subir o anúncio ("Rótulo de IA" / "AI info").
+ADs com narração de voz gerada por IA, que precisam do rótulo ligado: ADC-RZ-10, RZ-11, RZ-12, RZ-13, RZ-14, QD-16, QD-17, RN-04, RN-05, RK-07, RK-08, RK-09, SF-08, SF-09, SF-10 (todas as versões). Os demais não têm voz de IA.
+
 ## Exceção (NÃO usar ainda)
 - Estáticos 1:1 e 1,91:1 do **SF-03-v1**: segurados até o Gui ver a nova versão. O vídeo SF-03-v1 está liberado.
 

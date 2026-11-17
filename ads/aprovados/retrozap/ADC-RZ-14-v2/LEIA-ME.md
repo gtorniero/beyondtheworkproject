@@ -4,7 +4,7 @@ Versão aprovada: ADC-RZ-14-v2 · Retrozap · preço de novembro (R$ 13,99)
 
 - **Objetivo:** Tráfego qualificado para o início do produto (teste do conceito viral).
 - **Público:** Casais 20 a 40 anos.
-- **Texto principal:** Quem manda mais "te amo"? ❤️ O recibo do amor conta. Façam a retrospectiva de vocês. 🔊 Narração com voz gerada por IA.
+- **Texto principal:** Quem manda mais "te amo"? ❤️ O recibo do amor conta. Façam a retrospectiva de vocês.
 - **Título:** Quem manda mais “te amo”?
 - **CTA:** No vídeo: "Façam a de vocês." / "Faça a do seu grupo." + retrozap.com.br. Botão do anúncio: Saiba mais.
 - **URL final:** https://retrozap.com.br/?m=casal&utm_source=meta&utm_medium=paid_social&utm_campaign=rz_casal_retro2026&utm_term=teamo&utm_content=ADC-RZ-14-v2

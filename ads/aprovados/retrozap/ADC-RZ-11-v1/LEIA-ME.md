@@ -4,7 +4,7 @@ Versão aprovada: ADC-RZ-11-v1 · Retrozap · lote vídeo real (14/11)
 
 - **Objetivo:** Tráfego qualificado para o início do produto (teste do conceito viral).
 - **Público:** Casais 20 a 40 anos.
-- **Texto principal:** Quantas mensagens vocês trocaram em 2026? O Retrozap conta tudo. Façam a de vocês. 🔊 Narração com voz gerada por IA.
+- **Texto principal:** Quantas mensagens vocês trocaram em 2026? O Retrozap conta tudo. Façam a de vocês.
 - **Título:** Quantas mensagens vocês trocaram?
 - **CTA:** No vídeo: "Façam a de vocês." / "Faça a do seu grupo." + retrozap.com.br. Botão do anúncio: Saiba mais.
 - **URL final:** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_casal_retro2026&utm_term=mensagens&utm_content=ADC-RZ-11-v1

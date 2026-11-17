@@ -432,7 +432,8 @@
    "versao": "X-F-RZ-2-v1",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "F-QD-3",
@@ -443,7 +444,8 @@
    "versao": "X-F-QD-3-v1",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "F-QD-4",
@@ -454,7 +456,8 @@
    "versao": "X-F-QD-4-v1",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "D-RX5",
@@ -465,7 +468,8 @@
    "versao": "X-D-RX5-v2",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "F-RZ-4",
@@ -476,7 +480,8 @@
    "versao": "X-F-RZ-4-v1",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "F-QD-5",
@@ -487,7 +492,8 @@
    "versao": "X-F-QD-5-v1",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "D-RX6",
@@ -498,7 +504,8 @@
    "versao": "X-D-RX6-v3",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "F-RZ-5",
@@ -509,7 +516,8 @@
    "versao": "X-F-RZ-5-v1",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "F-QD-6",
@@ -520,7 +528,8 @@
    "versao": "X-F-QD-6-v1",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "D-RX8",
@@ -531,7 +540,8 @@
    "versao": "X-D-RX8-v3",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "F-RZ-3",
@@ -542,7 +552,8 @@
    "versao": "X-F-RZ-3-v2",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11"
+   "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
+   "rotulo_ia": true
   },
   {
    "peca": "D-RX4",
@@ -553,7 +564,8 @@
    "versao": "X-D-RX4-v5",
    "liberado": true,
    "status_mesa": "aprovado",
-   "origem": "reel extra aprovado na Mesa em 15/11"
+   "origem": "reel extra aprovado na Mesa em 15/11",
+   "rotulo_ia": true
   },
   {
    "peca": "Q-S20",

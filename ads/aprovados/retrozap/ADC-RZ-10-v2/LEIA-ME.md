@@ -4,7 +4,7 @@ Versão aprovada: ADC-RZ-10-v2 · Retrozap · preço de novembro (R$ 13,99)
 
 - **Objetivo:** Tráfego qualificado para o início do produto (teste do conceito viral).
 - **Público:** Casais 20 a 40 anos que conversam o dia todo no WhatsApp; Natal e fim de ano.
-- **Texto principal:** Quem paga o jantar? 🧾 Quem mandou menos perde no placar. Façam a retrospectiva de vocês. 🔊 Narração com voz gerada por IA.
+- **Texto principal:** Quem paga o jantar? 🧾 Quem mandou menos perde no placar. Façam a retrospectiva de vocês.
 - **Título:** Quem paga o jantar?
 - **CTA:** No vídeo: "Façam a de vocês." / "Faça a do seu grupo." + retrozap.com.br. Botão do anúncio: Saiba mais.
 - **URL final:** https://retrozap.com.br/?m=casal&utm_source=meta&utm_medium=paid_social&utm_campaign=rz_casal_retro2026&utm_term=jantar&utm_content=ADC-RZ-10-v2

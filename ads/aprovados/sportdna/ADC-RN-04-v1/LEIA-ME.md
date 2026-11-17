@@ -4,7 +4,7 @@ Versão aprovada: ADC-RN-04-v1 · SPORT DNA · lote vídeo real (14/11)
 
 - **Objetivo:** Tráfego qualificado para o início do produto (teste do conceito viral).
 - **Público:** Corredores de rua 25 a 55 anos, Black Friday e Natal.
-- **Texto principal:** Tênis errado cobra no km 10. 🏃 Antes de comprar, faça o teste RUN DNA e veja os tênis para o seu perfil. 🔊 Narração com voz gerada por IA.
+- **Texto principal:** Tênis errado cobra no km 10. 🏃 Antes de comprar, faça o teste RUN DNA e veja os tênis para o seu perfil.
 - **Título:** Tênis errado cobra no km 10.
 - **CTA:** No vídeo: "Antes de comprar, faça o teste." + sportdna.com.br/run. Botão do anúncio: Saiba mais.
 - **URL final:** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=run_teste&utm_term=km10&utm_content=ADC-RN-04-v1

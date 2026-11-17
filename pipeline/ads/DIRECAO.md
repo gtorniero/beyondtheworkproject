@@ -53,3 +53,7 @@ Código: `pipeline/ads/reels/rz08.py`. Todo AD de todas as marcas segue essa té
 - **Growth Manager:** analisa o que está funcionando melhor, define as variações do que performa e manda o brief ao Estúdio.
 - **Gui:** parou de autorizar coisas novas até a revisão de 22/11, porque a produção já passou da capacidade de execução. Até lá, o Estúdio só faz o que vier em brief do Growth e corrige o que já existe.
 - A Mesa continua sendo o único lugar de aprovação, com o formato principal apenas (9:16 ou 1:1).
+
+## Aviso de IA (Gui, 17/11)
+- Nunca escrever aviso de IA na legenda nem no texto do anúncio.
+- Peça com voz de IA: marcar `rotulo_ia: true` no STATUS.json (orgânico) ou listar no GUIA-ADS-AGORA (anúncio). Quem programa liga o rótulo de IA da Meta.

@@ -4,7 +4,7 @@ Versão aprovada: ADC-SF-08-v5 · SPORT DNA · lote vídeo real (14/11)
 
 - **Objetivo:** Tráfego para o teste (prévia grátis).
 - **Público:** Surfistas iniciantes e intermediários que vão comprar prancha.
-- **Texto principal:** Errar a prancha custa caro: uma nova sai por R$ 1.500 a R$ 4.000. Acertar custa R$ 19,99. 🏄 🔊 Narração com voz gerada por IA.
+- **Texto principal:** Errar a prancha custa caro: uma nova sai por R$ 1.500 a R$ 4.000. Acertar custa R$ 19,99. 🏄
 - **Título:** Errar a prancha custa caro.
 - **CTA:** No vídeo: "Antes de comprar, faça o teste." + sportdna.com.br/surf. Botão do anúncio: Saiba mais.
 - **URL final:** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_video_real&utm_term=custo&utm_content=ADC-SF-08-v5
