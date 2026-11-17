@@ -41,6 +41,7 @@ AQUI = Path(__file__).resolve().parent
 REPO = AQUI.parents[1]
 LOG = AQUI / "publicados.json"
 TRAVA = AQUI / ".postar.lock"
+SEM_FACEBOOK = Path(__file__).with_name("sem_facebook.json")
 SEGURAR = AQUI / "segurar.json"
 GRAPH = "https://graph.facebook.com/v23.0"
 DONO_REPO = "gtorniero/beyondtheworkproject"
@@ -1214,6 +1215,10 @@ def main() -> int:
     a = ap.parse_args()
 
     plats = [p.strip() for p in a.plataformas.split(",") if p.strip()]
+    try:
+        sem_fb = json.loads(SEM_FACEBOOK.read_text(encoding="utf-8")).get("pular", {}) if SEM_FACEBOOK.exists() else {}
+    except (ValueError, OSError):
+        sem_fb = {"story": list(MARCAS), "carrossel": list(MARCAS), "reel": list(MARCAS)}  # ilegível: não arrisca
     if any(p not in PLATAFORMAS for p in plats):
         ap.error("--plataformas aceita instagram e facebook")
     marcas_f = {chave_marca(m) for m in (a.marca or [])}
@@ -1343,6 +1348,11 @@ def main() -> int:
         destinos = descreve_destinos(it)
         a_fazer = []
         for p in plats:
+            if p == "facebook" and it["marca"] in sem_fb.get(it["formato"], []):
+                rel["pulado"].append({"peca": nome, "plataforma": p,
+                                      "motivo": "Facebook desligado para este formato (sem_facebook.json): "
+                                                "o Facebook repostava no Instagram e duplicava"})
+                continue
             ja = reg.achar(it["marca"], it["peca"], p)
             if ja:
                 e = ja[-1]
