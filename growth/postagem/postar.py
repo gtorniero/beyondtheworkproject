@@ -137,6 +137,51 @@ class Conteudo:
         self.sha = git("rev-parse", REF_CONTEUDO).strip()
         self.arquivos = set(git("ls-tree", "-r", "--name-only", REF_CONTEUDO, "packs/").split())
         self._cache: dict[str, str] = {}
+        self._virtual_sequencias()
+
+    def _virtual_sequencias(self) -> None:
+        """packs/STORIES-SEQ (17/11): cada story vira 2 ou 3 quadros postados em sequência no mesmo horário.
+        Viram linhas de agenda comuns com peça "<PECA>.<quadro>" (ex.: Q-S8.2). Quadro sem link (o 1 do
+        Retrozap e da SPORT DNA) é o story do pack da semana, que já está na agenda normal."""
+        base = "packs/STORIES-SEQ"
+        fonte = f"{base}/agenda-sequencias.csv"
+        if fonte not in self.arquivos:
+            return
+        try:
+            st = json.loads(self.texto(f"{base}/STATUS.json") or "{}")
+        except json.JSONDecodeError:
+            st = {}
+            self.avisos.append("STORIES-SEQ: STATUS.json ilegível; nenhum quadro de sequência sai")
+        st_peca = {x.get("peca"): x for x in st.get("pecas", [])}
+        linhas = list(csv.DictReader(io.StringIO(self.texto(fonte) or "")))
+        com_q1 = {(l.get("marca"), l.get("peca")) for l in linhas if (l.get("quadro") or "").strip() == "1"
+                  and (l.get("link") or "").strip()}
+        out = io.StringIO()
+        w = csv.writer(out)
+        w.writerow(["data", "hora", "marca", "formato", "peca", "versao", "como", "arquivos", "links",
+                    "adesivo", "titulo", "quadro", "anterior"])
+        pecas = []
+        for l in linhas:
+            q = (l.get("quadro") or "").strip()
+            link = (l.get("link") or "").strip()
+            if not q.isdigit() or not link:
+                continue
+            peca, n = (l.get("peca") or "").strip(), int(q)
+            if n == 1:
+                anterior = ""
+            elif n == 2:
+                anterior = f"{peca}.1" if (l.get("marca"), peca) in com_q1 else peca
+            else:
+                anterior = f"{peca}.{n - 1}"
+            nome = f"{peca}.{n}"
+            w.writerow([l.get("data", ""), l.get("hora", ""), l.get("marca", ""), "story", nome, f"SEQ-{nome}-v1",
+                        "sequência", l.get("arquivo", ""), link, "", l.get("titulo", ""), n, anterior])
+            ref = st_peca.get(peca, {})
+            pecas.append({"peca": nome, "versao": f"SEQ-{nome}-v1", "liberado": ref.get("liberado") is True,
+                          "status_mesa": ref.get("status_mesa", "fora do STATUS.json da STORIES-SEQ")})
+        self._cache[f"{base}/agenda.csv"] = out.getvalue()
+        self._cache[f"{base}/STATUS.json"] = json.dumps({"pack": "STORIES-SEQ", "pecas": pecas})
+        self.arquivos |= {f"{base}/agenda.csv", f"{base}/STATUS.json"}
 
     def texto(self, caminho: str) -> str | None:
         if caminho not in self.arquivos:
@@ -242,7 +287,9 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                   "como": linha.get("como", ""), "titulo": linha.get("titulo", ""),
                   "adesivo": linha.get("adesivo", ""), "problemas": [], "avisos": [], "conteudo": [],
                   "reserva": False, "aprovado": False, "legenda": None, "legenda_fonte": "",
-                  "midia": {}, "links": linha.get("links", "").split()}
+                  "midia": {}, "links": linha.get("links", "").split(),
+                  "quadro": int(linha["quadro"]) if (linha.get("quadro") or "").isdigit() else 0,
+                  "anterior": linha.get("anterior", "")}
             it["marca"] = chave_marca(it["marca_txt"])
             it["formato"] = FORMATOS.get(it["formato_txt"].lower())
             data, hora = le_data(it["data_txt"]), le_hora(it["hora_txt"])
@@ -1283,7 +1330,8 @@ def main() -> int:
     if a.peca:
         sel = [i for i in sel if i["peca"].upper() in {p.upper() for p in a.peca}]
     sel.sort(key=lambda i: (i.get("quando") or dt.datetime.combine(i["data"], dt.time(23, 59), BRT),
-                            list(MARCAS).index(i["marca"]) if i["marca"] else 9, i["formato"] or ""))
+                            list(MARCAS).index(i["marca"]) if i["marca"] else 9, i["formato"] or "",
+                            i.get("quadro", 0)))
 
     modo_txt = "EXECUÇÃO" if a.executar else "DRY-RUN (nenhum POST de publicação)"
     print(f"== postar.py · {modo_txt} · branch social @ {cont.sha[:10]}")
@@ -1328,6 +1376,7 @@ def main() -> int:
             except (ErroGraph, KeyError, IndexError, ValueError):
                 cota[m] = 100
 
+    planejado: set = set()  # (marca, peça, plataforma) que sai nesta rodada (no dry-run, libera o quadro seguinte)
     for it in sel:
         nome = rotulo(it)
         if it["reserva"]:
@@ -1365,6 +1414,12 @@ def main() -> int:
         destinos = descreve_destinos(it)
         a_fazer = []
         for p in plats:
+            if it.get("anterior"):
+                ant = [e for e in reg.achar(it["marca"], it["anterior"], p) if e.get("status") in ("publicado", "ja_existia")]
+                if not ant and not (not a.executar and (it["marca"], it["anterior"], p) in planejado):
+                    rel["pulado"].append({"peca": nome, "plataforma": p,
+                                          "motivo": f"sequência: o quadro anterior ({it['anterior']}) ainda não saiu"})
+                    continue
             if p == "facebook" and it["marca"] in sem_fb.get(it["formato"], []):
                 rel["pulado"].append({"peca": nome, "plataforma": p,
                                       "motivo": "Facebook desligado (sem_facebook.json): "
@@ -1394,6 +1449,7 @@ def main() -> int:
                 continue
             a_fazer.append(p)
 
+        planejado.update((it["marca"], it["peca"], p) for p in a_fazer)
         if not a.executar:
             if a_fazer:
                 imprime_item_dry(it, a_fazer, destinos)
