@@ -1,6 +1,12 @@
 # PROMPT · SUBIR NOVOS ANÚNCIOS NA META (18/11/2026 · rodada 16: tudo aprovado, inclusive RN-06 a RN-09)
 
 > **Atualizado em 18/11 (Estúdio):** pacotes completos por posicionamento; arquivos separados em anúncio de VÍDEO e anúncio ESTÁTICO; rótulo de IA corrigido (os ADs do lote 17–18/11 têm só música, sem voz). Esta versão substitui a anterior.
+> ## ⚠️ DECISÃO DO GUI (18/11): ENVIO ENXUTO
+> - **Suba AGORA só o bloco "1 · ENVIO DE AGORA"** (16 anúncios novos, mais as 3 trocas de áudio). Não ative uma montanha de anúncios.
+> - **Natal só em dezembro:** o bloco "2 · A PARTIR DE 01/12" (RK-17 e SF-14, com e sem preço) sobe em 01/12, não antes.
+> - **O bloco "3 · RESERVA"** fica guardado. Só entra quando os do bloco 1 tiverem resultado e eu mandar.
+> - As regras de "Como montar" abaixo valem para os três blocos. Onde elas citam campanhas que não estão no bloco 1, ignore por enquanto.
+
 
 Você é o meu agente de anúncios na Meta (Gerenciador de Anúncios). Suba os anúncios novos abaixo. Tudo aqui já está APROVADO por mim (Gui) na Mesa de Aprovação.
 
@@ -38,8 +44,9 @@ Você é o meu agente de anúncios na Meta (Gerenciador de Anúncios). Suba os a
 ---
 # OS ANÚNCIOS
 
-## PRIORIDADE 1 · Retrozap CASAL SEM PREÇO (subir primeiro, maior parte da verba de casal)
-Público: casais de 20 a 40 anos (relacionamento, presentes criativos, aniversário de namoro, Natal). Link com `?m=casal` (já está na URL). Valem em novembro e dezembro.
+# 1 · ENVIO DE AGORA
+
+## Retrozap · CASAL SEM PREÇO (prioridade, maior verba)
 
 ### ADC-RZ-18-SP-v1
 - **Nota (18/11):** a v2 deste AD (mesmo criativo, CTA maior, pedido do Gui) está EM APROVAÇÃO na Mesa (`ads/em-aprovacao/retrozap/ADC-RZ-18-SP-v2/`). Até ela ser aprovada, suba/mantenha esta v1. Não troque sem o aviso de aprovação.
@@ -148,6 +155,373 @@ Pagamento único, sem assinatura.
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-22-SP-v1/ADC-RZ-22-SP-v1_feed-1x1.png
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-22-SP-v1/ADC-RZ-22-SP-v1_busca-audience-1.91x1.png
 
+## Retrozap · TESTE DE VISUAL A/B/C (grupo; mesmo público e mesma verba para os três)
+
+### ADC-RZ-27-v1
+- **Título:** Teste o seu grupo
+- **Texto principal:**
+```
+Abrimos o grupo. Socorro. 😳
+10 mil mensagens, um fantasma e quem manda áudio de 4 minutos. A retrospectiva conta tudo e cada um ganha o seu pôster.
+Teste o seu grupo: o 1º é grátis. Nada sai do seu celular.
+```
+- **URL (com UTM):** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_grupo_viral&utm_content=ADC-RZ-27-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_feed-1x1.png
+
+### ADC-RZ-29-v1
+- **Título:** Teste o seu grupo
+- **Texto principal:**
+```
+Quem sumiu do grupo? Qual é a gíria oficial? 👻📻
+O 2026 do seu grupo vira pôster: procura-se, rádio, plantão e o ranking contra o Brasil.
+Teste o seu grupo: o 1º é grátis.
+```
+- **URL (com UTM):** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_grupo_viral&utm_content=ADC-RZ-29-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_feed-1x1.png
+
+### ADC-RZ-31-v1
+- **Título:** Seu grupo contra o Brasil
+- **Texto principal:**
+```
+Seu grupo contra o Brasil. 🇧🇷
+Risada, madrugada, figurinhas: em que o seu grupo fica no Top do Brasil? Só os números saem do celular, sem nomes nem textos.
+Teste o seu grupo: o 1º é grátis.
+```
+- **URL (com UTM):** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_grupo_viral&utm_content=ADC-RZ-31-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_feed-1x1.png
+
+## BLACK FRIDAY · só até 27/11 (pausar no fim do dia 27)
+
+### ADC-RK-12-v1
+- **Título:** Antes da Black Friday, faça o teste
+- **Texto principal:**
+```
+Vai comprar raquete na Black Friday? Faça o teste antes. 🎾
+O RACKET DNA cruza seu corpo, seu braço e seu jogo com 183 raquetes medidas e mostra as que combinam com você. Prévia grátis; relatório completo por R$ 19,99, pagamento único.
+```
+- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_blackfriday&utm_content=ADC-RK-12-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-12-v1/ADC-RK-12-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-12-v1/ADC-RK-12-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-12-v1/ADC-RK-12-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-12-v1/ADC-RK-12-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-12-v1/ADC-RK-12-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-12-v1/ADC-RK-12-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-12-v1/ADC-RK-12-v1_busca-audience-1.91x1.png
+
+### ADC-SF-12-v1
+- **Título:** Antes da Black Friday, faça o teste
+- **Texto principal:**
+```
+Vai comprar prancha na Black Friday? Faça o teste antes. 🏄
+Uma prancha nova sai por R$ 1.500 a R$ 4.000. O SURF DNA mostra o tipo, as medidas e a litragem certas para você: 17 medidas na ficha técnica, prontas para qualquer shaper. Prévia grátis; relatório completo por R$ 19,99.
+```
+- **URL (com UTM):** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=sf_blackfriday&utm_content=ADC-SF-12-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-12-v1/ADC-SF-12-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-12-v1/ADC-SF-12-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-12-v1/ADC-SF-12-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-12-v1/ADC-SF-12-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-12-v1/ADC-SF-12-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-12-v1/ADC-SF-12-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-12-v1/ADC-SF-12-v1_busca-audience-1.91x1.png
+
+## RACKET · avaliação grátis
+
+### ADC-RK-15-v1
+- **Título:** Avalie sua raquete grátis
+- **Texto principal:**
+```
+Você joga com a raquete errada? 🎾
+Avalie a sua raquete de graça: o RACKET DNA compara peso e balanço da sua com o ideal para o seu jogo e o seu braço. Se quiser trocar, o relatório completo mostra as 3 que mais combinam.
+```
+- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_gratis_avaliacao&utm_content=ADC-RK-15-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_busca-audience-1.91x1.png
+
+### ADC-RK-16-v1
+- **Título:** Sua ficha ideal, grátis
+- **Texto principal:**
+```
+A sua raquete ideal, nota por nota. 🎾
+De graça, o RACKET DNA monta a sua ficha ideal: peso, tamanho de cabeça, swingweight e balanço. Leve para a loja ou compare com a sua.
+```
+- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_gratis_avaliacao&utm_content=ADC-RK-16-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_busca-audience-1.91x1.png
+
+## [RN] CORREDORES · TÊNIS DNA (campanha nova; 100% grátis, compra pelo link do Mercado Livre no resultado)
+
+### ADC-RN-06-v1
+- **Título:** Descubra o seu tênis, grátis
+- **Texto principal:**
+```
+Qual tênis de corrida é o seu? 🏃
+Responda 19 perguntas sobre seu corpo, sua corrida e seu objetivo e receba o relatório completo com o pódio dos tênis que combinam com você. 100% grátis, sem cadastro e sem cartão.
+```
+- **URL (com UTM):** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=rn_corredores&utm_term=gratis&utm_content=ADC-RN-06-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_busca-audience-1.91x1.png
+
+### ADC-RN-07-v1
+- **Título:** Teste antes de comprar
+- **Texto principal:**
+```
+Tênis de corrida de quase R$ 1.000? Teste antes de comprar. 🏃
+O RUN DNA cruza o seu corpo e o seu treino com 212 tênis de 13 marcas e mostra o preço de cada finalista. Você sabe quanto vai gastar antes de abrir a loja. 100% grátis.
+```
+- **URL (com UTM):** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=rn_corredores&utm_term=caro&utm_content=ADC-RN-07-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_busca-audience-1.91x1.png
+
+### ADC-RN-08-v1
+- **Título:** Sem se arrepender
+- **Texto principal:**
+```
+Compre o tênis de corrida certo. Sem se arrepender. 🏃
+Em 3 minutos você sai com o pódio dos tênis que combinam com você e o link pronto pra comprar. 100% grátis, sem cadastro.
+```
+- **URL (com UTM):** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=rn_corredores&utm_term=arrependimento&utm_content=ADC-RN-08-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_busca-audience-1.91x1.png
+
+### ADC-RN-09-v1
+- **Título:** Como o motor escolhe
+- **Texto principal:**
+```
+Como o RUN DNA escolhe o seu tênis de corrida. 🏃
+1.755 reviews lidas, 41 estudos científicos e 212 tênis cruzados com o seu corpo e o seu treino: peso, espuma, drop, durabilidade e preço. Nenhuma marca paga para aparecer. 100% grátis.
+```
+- **URL (com UTM):** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=rn_corredores&utm_term=motor&utm_content=ADC-RN-09-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_busca-audience-1.91x1.png
+
+## TROCAS DE ÁUDIO nos anúncios que já estão no ar (substituir o criativo; mesmo texto)
+
+### ADC-RK-08-v3
+- **Título:** Você joga com a raquete do ídolo?
+- **Texto principal:**
+```
+Você joga com a raquete do ídolo? 🎾 Mais peso, golpe atrasado. Antes de comprar, faça o teste.
+```
+- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_video_real&utm_term=idolo&utm_content=ADC-RK-08-v3
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** SIM (narração com voz de IA)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_busca-audience-1.91x1.png
+
+### ADC-SF-08-v7
+- **Título:** Errar a prancha custa caro.
+- **Texto principal:**
+```
+Errar a prancha custa caro: uma nova sai por R$ 1.500 a R$ 4.000. Acertar custa R$ 19,99. 🏄
+```
+- **URL (com UTM):** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_video_real&utm_term=custo&utm_content=ADC-SF-08-v7
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** SIM (narração com voz de IA)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_busca-audience-1.91x1.png
+
+### ADC-RK-09-v5
+- **Título:** Raquete não é uma escolha. São seis.
+- **Texto principal:**
+```
+Raquete não é uma escolha. São seis. 🎾 279.990 combinações; o RACKET DNA acha a sua. Prévia grátis.
+```
+- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_video_real&utm_term=seis&utm_content=ADC-RK-09-v5
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** SIM (narração com voz de IA)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_busca-audience-1.91x1.png
+
+---
+# 2 · A PARTIR DE 01/12 (Natal; não subir antes)
+
+### ADC-RK-17-v2
+- **Título:** Raquete de presente? Acerte
+- **Texto principal:**
+```
+Vai dar raquete de presente? Acerte. 🎄🎾
+Faça o teste junto com quem vai ganhar: o RACKET DNA mostra as 3 raquetes que mais combinam com o jogo dele. Prévia grátis; relatório completo por R$ 19,99.
+```
+- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_natal&utm_content=ADC-RK-17-v2
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_busca-audience-1.91x1.png
+
+### ADC-RK-17-SP-v1
+- **Título:** Raquete de presente? Acerte
+- **Texto principal:**
+```
+Vai dar raquete de presente? Acerte. 🎄🎾
+Faça o teste junto com quem vai ganhar: o RACKET DNA mostra as 3 raquetes que mais combinam com o jogo dele.
+```
+- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_natal&utm_content=ADC-RK-17-SP-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_busca-audience-1.91x1.png
+
+### ADC-SF-14-v2
+- **Título:** Prancha de presente? Acerte
+- **Texto principal:**
+```
+Vai dar prancha de presente? Acerte as medidas. 🎄🏄
+Faça o teste junto com quem vai ganhar: o SURF DNA entrega 17 medidas prontas para a loja ou o shaper. Prévia grátis; relatório completo por R$ 19,99.
+```
+- **URL (com UTM):** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=sf_natal&utm_content=ADC-SF-14-v2
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_busca-audience-1.91x1.png
+
+### ADC-SF-14-SP-v1
+- **Título:** Prancha de presente? Acerte
+- **Texto principal:**
+```
+Vai dar prancha de presente? Acerte as medidas. 🎄🏄
+Faça o teste junto com quem vai ganhar: o SURF DNA entrega 17 medidas prontas para a loja ou o shaper.
+```
+- **URL (com UTM):** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=sf_natal&utm_content=ADC-SF-14-SP-v1
+- **Botão:** Saiba mais
+- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
+- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_video-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_video-feed-coluna-1x1.mp4
+- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_stories-reels-9x16.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_feed-4x5.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_feed-1x1.png
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_busca-audience-1.91x1.png
+
+---
+# 3 · RESERVA (aprovados; só subir quando eu mandar, depois do resultado do bloco 1)
+
 ### ADC-RZ-28-v1
 - **Título:** Teste o de vocês
 - **Texto principal:**
@@ -207,9 +581,6 @@ Teste o de vocês. Nada sai do seu celular.
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-32-v1/ADC-RZ-32-v1_stories-reels-9x16.png
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-32-v1/ADC-RZ-32-v1_feed-4x5.png
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-32-v1/ADC-RZ-32-v1_feed-1x1.png
-
-## PRIORIDADE 2 · Retrozap CASAL COM PREÇO (R$ 13,99) · TESTE contra os sem preço · SÓ ATÉ 30/11
-Pausar todos estes no fim de 30/11 (o preço muda para R$ 8,99 em 01/12; a versão de dezembro vem depois).
 
 ### ADC-RZ-18-v3
 - **Título:** Retrospectiva de casal do seu zap
@@ -315,69 +686,6 @@ Pagamento único, sem assinatura.
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-22-v2/ADC-RZ-22-v2_feed-4x5.png
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-22-v2/ADC-RZ-22-v2_feed-1x1.png
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-22-v2/ADC-RZ-22-v2_busca-audience-1.91x1.png
-
-## Retrozap GRUPO (1º grupo grátis, sem preço)
-Público: adultos de 18 a 45 anos com grupos ativos (amigos, família, trabalho). RZ-27, RZ-29 e RZ-31 são o TESTE DE LOOK & FEEL (A conversa, B stories de pôsteres, C placar ao vivo): mesmo público e mesma verba para os três.
-
-### ADC-RZ-27-v1
-- **Título:** Teste o seu grupo
-- **Texto principal:**
-```
-Abrimos o grupo. Socorro. 😳
-10 mil mensagens, um fantasma e quem manda áudio de 4 minutos. A retrospectiva conta tudo e cada um ganha o seu pôster.
-Teste o seu grupo: o 1º é grátis. Nada sai do seu celular.
-```
-- **URL (com UTM):** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_grupo_viral&utm_content=ADC-RZ-27-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-27-v1/ADC-RZ-27-v1_feed-1x1.png
-
-### ADC-RZ-29-v1
-- **Título:** Teste o seu grupo
-- **Texto principal:**
-```
-Quem sumiu do grupo? Qual é a gíria oficial? 👻📻
-O 2026 do seu grupo vira pôster: procura-se, rádio, plantão e o ranking contra o Brasil.
-Teste o seu grupo: o 1º é grátis.
-```
-- **URL (com UTM):** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_grupo_viral&utm_content=ADC-RZ-29-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-29-v1/ADC-RZ-29-v1_feed-1x1.png
-
-### ADC-RZ-31-v1
-- **Título:** Seu grupo contra o Brasil
-- **Texto principal:**
-```
-Seu grupo contra o Brasil. 🇧🇷
-Risada, madrugada, figurinhas: em que o seu grupo fica no Top do Brasil? Só os números saem do celular, sem nomes nem textos.
-Teste o seu grupo: o 1º é grátis.
-```
-- **URL (com UTM):** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_grupo_viral&utm_content=ADC-RZ-31-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-31-v1/ADC-RZ-31-v1_feed-1x1.png
 
 ### ADC-RZ-23-v1
 - **Título:** Seu grupo contra o Brasil
@@ -544,89 +852,6 @@ Você escolhe o grupo, vê o troféu de cada um e fecha com o Gran Finale, com o
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_video-sequencia-feed-4x5.mp4
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_video-sequencia-1x1.mp4
 
-## RACKET DNA (pode ter preço: relatório R$ 19,99; avaliação grátis)
-Público: tenistas amadores de 25 a 55 anos. RK-17 é Natal (presente). RK-12 (Black Friday) segue a regra antiga: só até 27/11.
-
-### ADC-RK-15-v1
-- **Título:** Avalie sua raquete grátis
-- **Texto principal:**
-```
-Você joga com a raquete errada? 🎾
-Avalie a sua raquete de graça: o RACKET DNA compara peso e balanço da sua com o ideal para o seu jogo e o seu braço. Se quiser trocar, o relatório completo mostra as 3 que mais combinam.
-```
-- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_gratis_avaliacao&utm_content=ADC-RK-15-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-15-v1/ADC-RK-15-v1_busca-audience-1.91x1.png
-
-### ADC-RK-16-v1
-- **Título:** Sua ficha ideal, grátis
-- **Texto principal:**
-```
-A sua raquete ideal, nota por nota. 🎾
-De graça, o RACKET DNA monta a sua ficha ideal: peso, tamanho de cabeça, swingweight e balanço. Leve para a loja ou compare com a sua.
-```
-- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_gratis_avaliacao&utm_content=ADC-RK-16-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-16-v1/ADC-RK-16-v1_busca-audience-1.91x1.png
-
-### ADC-RK-17-SP-v1
-- **Título:** Raquete de presente? Acerte
-- **Texto principal:**
-```
-Vai dar raquete de presente? Acerte. 🎄🎾
-Faça o teste junto com quem vai ganhar: o RACKET DNA mostra as 3 raquetes que mais combinam com o jogo dele.
-```
-- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_natal&utm_content=ADC-RK-17-SP-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1/ADC-RK-17-SP-v1_busca-audience-1.91x1.png
-
-### ADC-RK-17-v2
-- **Título:** Raquete de presente? Acerte
-- **Texto principal:**
-```
-Vai dar raquete de presente? Acerte. 🎄🎾
-Faça o teste junto com quem vai ganhar: o RACKET DNA mostra as 3 raquetes que mais combinam com o jogo dele. Prévia grátis; relatório completo por R$ 19,99.
-```
-- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_natal&utm_content=ADC-RK-17-v2
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-17-v2/ADC-RK-17-v2_busca-audience-1.91x1.png
-
 ### ADC-RK-18-v1
 - **Título:** O setup completo
 - **Texto principal:**
@@ -770,9 +995,6 @@ O RACKET DNA cruza o seu corpo, o seu braço e o seu jogo com 183 raquetes medid
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_video-sequencia-feed-4x5.mp4
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_video-sequencia-1x1.mp4
 
-## SURF DNA (board)
-Público: surfistas iniciantes e intermediários de 20 a 50 anos. SF-12 (Black Friday): só até 27/11.
-
 ### ADC-SF-13-v1
 - **Título:** Os seus litros certos
 - **Texto principal:**
@@ -812,46 +1034,6 @@ Comprimento, largura, espessura, litros e mais: 17 medidas do SURF DNA, calculad
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-15-v1/ADC-SF-15-v1_feed-4x5.png
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-15-v1/ADC-SF-15-v1_feed-1x1.png
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-15-v1/ADC-SF-15-v1_busca-audience-1.91x1.png
-
-### ADC-SF-14-SP-v1
-- **Título:** Prancha de presente? Acerte
-- **Texto principal:**
-```
-Vai dar prancha de presente? Acerte as medidas. 🎄🏄
-Faça o teste junto com quem vai ganhar: o SURF DNA entrega 17 medidas prontas para a loja ou o shaper.
-```
-- **URL (com UTM):** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=sf_natal&utm_content=ADC-SF-14-SP-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1/ADC-SF-14-SP-v1_busca-audience-1.91x1.png
-
-### ADC-SF-14-v2
-- **Título:** Prancha de presente? Acerte
-- **Texto principal:**
-```
-Vai dar prancha de presente? Acerte as medidas. 🎄🏄
-Faça o teste junto com quem vai ganhar: o SURF DNA entrega 17 medidas prontas para a loja ou o shaper. Prévia grátis; relatório completo por R$ 19,99.
-```
-- **URL (com UTM):** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=sf_natal&utm_content=ADC-SF-14-v2
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-14-v2/ADC-SF-14-v2_busca-audience-1.91x1.png
 
 ### ADC-SF-16-SP-v1
 - **Título:** Prancha usada? Confira
@@ -913,140 +1095,3 @@ Prévia grátis, sem cadastro.
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-11-v1/ADC-SF-11-v1_feed-4x5.png
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-11-v1/ADC-SF-11-v1_feed-1x1.png
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-11-v1/ADC-SF-11-v1_busca-audience-1.91x1.png
-
-## TROCAS DE VERSÃO (áudio corrigido) nos anúncios que já estão no ar
-Substituir o criativo: RK-08 v2 → v3, SF-08 v5 → v7, RK-09 v3 → v5 (mesmo texto; só o áudio mudou). O ADC-SF-10 foi CANCELADO: não subir e pausar se estiver no ar.
-
-### ADC-RK-08-v3
-- **Título:** Você joga com a raquete do ídolo?
-- **Texto principal:**
-```
-Você joga com a raquete do ídolo? 🎾 Mais peso, golpe atrasado. Antes de comprar, faça o teste.
-```
-- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_video_real&utm_term=idolo&utm_content=ADC-RK-08-v3
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** SIM (narração com voz de IA)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-08-v3/ADC-RK-08-v3_busca-audience-1.91x1.png
-
-### ADC-SF-08-v7
-- **Título:** Errar a prancha custa caro.
-- **Texto principal:**
-```
-Errar a prancha custa caro: uma nova sai por R$ 1.500 a R$ 4.000. Acertar custa R$ 19,99. 🏄
-```
-- **URL (com UTM):** https://sportdna.com.br/surf/?utm_source=meta&utm_medium=paid_social&utm_campaign=surf_video_real&utm_term=custo&utm_content=ADC-SF-08-v7
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** SIM (narração com voz de IA)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-SF-08-v7/ADC-SF-08-v7_busca-audience-1.91x1.png
-
-### ADC-RK-09-v5
-- **Título:** Raquete não é uma escolha. São seis.
-- **Texto principal:**
-```
-Raquete não é uma escolha. São seis. 🎾 279.990 combinações; o RACKET DNA acha a sua. Prévia grátis.
-```
-- **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=racket_video_real&utm_term=seis&utm_content=ADC-RK-09-v5
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** SIM (narração com voz de IA)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_busca-audience-1.91x1.png
-
-## [RN] CORREDORES · TÊNIS DNA (100% grátis; compra pelo link do Mercado Livre no resultado) · APROVADOS (subir junto)
-Campanha nova "Corredores". Público: 20 a 55 anos, corrida de rua, maratona e meia maratona, treino, apps de corrida, tênis de corrida. Os 4 no mesmo conjunto, para a Meta escolher o melhor.
-
-### ADC-RN-06-v1
-- **Título:** Descubra o seu tênis, grátis
-- **Texto principal:**
-```
-Qual tênis de corrida é o seu? 🏃
-Responda 19 perguntas sobre seu corpo, sua corrida e seu objetivo e receba o relatório completo com o pódio dos tênis que combinam com você. 100% grátis, sem cadastro e sem cartão.
-```
-- **URL (com UTM):** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=rn_corredores&utm_term=gratis&utm_content=ADC-RN-06-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-06-v1/ADC-RN-06-v1_busca-audience-1.91x1.png
-
-### ADC-RN-07-v1
-- **Título:** Teste antes de comprar
-- **Texto principal:**
-```
-Tênis de corrida de quase R$ 1.000? Teste antes de comprar. 🏃
-O RUN DNA cruza o seu corpo e o seu treino com 212 tênis de 13 marcas e mostra o preço de cada finalista. Você sabe quanto vai gastar antes de abrir a loja. 100% grátis.
-```
-- **URL (com UTM):** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=rn_corredores&utm_term=caro&utm_content=ADC-RN-07-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-07-v1/ADC-RN-07-v1_busca-audience-1.91x1.png
-
-### ADC-RN-08-v1
-- **Título:** Sem se arrepender
-- **Texto principal:**
-```
-Compre o tênis de corrida certo. Sem se arrepender. 🏃
-Em 3 minutos você sai com o pódio dos tênis que combinam com você e o link pronto pra comprar. 100% grátis, sem cadastro.
-```
-- **URL (com UTM):** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=rn_corredores&utm_term=arrependimento&utm_content=ADC-RN-08-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-08-v1/ADC-RN-08-v1_busca-audience-1.91x1.png
-
-### ADC-RN-09-v1
-- **Título:** Como o motor escolhe
-- **Texto principal:**
-```
-Como o RUN DNA escolhe o seu tênis de corrida. 🏃
-1.755 reviews lidas, 41 estudos científicos e 212 tênis cruzados com o seu corpo e o seu treino: peso, espuma, drop, durabilidade e preço. Nenhuma marca paga para aparecer. 100% grátis.
-```
-- **URL (com UTM):** https://sportdna.com.br/run/?utm_source=meta&utm_medium=paid_social&utm_campaign=rn_corredores&utm_term=motor&utm_content=ADC-RN-09-v1
-- **Botão:** Saiba mais
-- **Rótulo de IA da Meta:** não precisa (só música de banco, sem voz)
-- **Arquivos · anúncio de VÍDEO** (9:16 em Stories/Reels · 4:5 no Feed · 1:1 nos demais):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_reels-stories-9x16.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_video-feed-4x5.mp4
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_video-feed-coluna-1x1.mp4
-- **Arquivos · anúncio ESTÁTICO** (outro anúncio, opcional):
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_stories-reels-9x16.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_feed-4x5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_feed-1x1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RN-09-v1/ADC-RN-09-v1_busca-audience-1.91x1.png
