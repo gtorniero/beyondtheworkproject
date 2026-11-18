@@ -1,6 +1,6 @@
 # ADC-RZ-32 · Casal · VIRAL C (placar ao vivo): quem ama mais?
 
-Versão: ADC-RZ-32-v1 · Retrozap · aguardando aprovação na Mesa
+Versão: ADC-RZ-32-v1 · Retrozap · aprovado na Mesa (rodada 16, 18/11/2026)
 
 Look & feel C · Placar ao vivo: cara de transmissão esportiva, grupo contra o Brasil / um contra o outro.
 
@@ -16,10 +16,22 @@ Teste o de vocês. Nada sai do seu celular.
 
 Título: Quem ama mais?
 
-## Arquivos
-- `ADC-RZ-32-v1_reels-stories-9x16.mp4`: 12 s, música de banco (Mixkit), sem voz.
-- `ADC-RZ-32-v1_capa-9x16.jpg`
+## Arquivos (todos do mesmo criativo aprovado)
 
-Depois da aprovação: 4:5, 1:1, 16:9, estáticos e sem áudio.
+**Anúncio de VÍDEO** (um anúncio só de vídeo, em todos os posicionamentos):
+- `ADC-RZ-32-v1_reels-stories-9x16.mp4`: Stories e Reels (o vídeo aprovado na Mesa).
+- `ADC-RZ-32-v1_video-feed-4x5.mp4`: Feed.
+- `ADC-RZ-32-v1_video-feed-coluna-1x1.mp4`: os demais posicionamentos que aceitam vídeo (coluna da direita, Marketplace, Explorar, busca).
+
+**Anúncio ESTÁTICO** (outro anúncio, só de imagem):
+- `ADC-RZ-32-v1_stories-reels-9x16.png`: Stories e Reels.
+- `ADC-RZ-32-v1_feed-4x5.png`: Feed.
+- `ADC-RZ-32-v1_feed-1x1.png`: coluna da direita, Marketplace e os demais.
+
+Nunca misture PNG e MP4 no mesmo anúncio.
+
+4:5 e 1:1 são o vídeo 9:16 inteiro, centralizado, com o fundo do próprio vídeo nas laterais: nada cortado, nenhum texto mexido. Não há 1,91:1: o vertical ficaria pequeno demais para ler; nesses posicionamentos a Meta usa o 1:1.
+
+Áudio: só música de banco (Mixkit), a mesma faixa nos três vídeos. Sem voz: não precisa do rótulo de IA da Meta.
 
 Nada foi enviado à conta de anúncios.

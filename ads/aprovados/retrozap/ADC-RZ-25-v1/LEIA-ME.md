@@ -1,6 +1,6 @@
 # ADC-RZ-25 · Grupo · URGENTE: seu grupo virou notícia (Plantão do Zap)
 
-Versão: ADC-RZ-25-v1 · Retrozap · aguardando aprovação na Mesa (formato principal)
+Versão: ADC-RZ-25-v1 · Retrozap · aprovado na Mesa (rodada 16, 18/11/2026)
 
 - **Objetivo:** Gerar retrospectivas de grupo (1º grupo grátis) e levar ao Premium.
 - **Público:** Adultos de 18 a 45 anos com grupos ativos no WhatsApp (amigos, família, trabalho; interesses: amigos, memes, festas de fim de ano).
@@ -15,13 +15,23 @@ O 1º grupo é grátis. Nada sai do seu celular.
 
 Título: Seu grupo virou notícia
 
-## Arquivos
+## Arquivos (todos do mesmo criativo aprovado)
 
-- `ADC-RZ-25-v1_reels-stories-9x16.mp4`: motion 9:16, 12 s, com música de banco (Mixkit).
-- `ADC-RZ-25-v1_feed-1x1.png`: estático 1:1.
+**Anúncio de VÍDEO** (um anúncio só de vídeo, em todos os posicionamentos):
+- `ADC-RZ-25-v1_reels-stories-9x16.mp4`: Stories e Reels (o vídeo aprovado na Mesa).
+- `ADC-RZ-25-v1_video-feed-4x5.mp4`: Feed.
+- `ADC-RZ-25-v1_video-feed-coluna-1x1.mp4`: os demais posicionamentos que aceitam vídeo (coluna da direita, Marketplace, Explorar, busca).
 
-Depois da aprovação entram aqui os outros posicionamentos: estáticos 4:5, 9:16, 1,91:1 e 16:9; motions 4:5 e 1:1; versões sem áudio.
+**Anúncio ESTÁTICO** (outro anúncio, só de imagem):
+- `ADC-RZ-25-v1_stories-reels-9x16.png`: Stories e Reels.
+- `ADC-RZ-25-v1_feed-4x5.png`: Feed.
+- `ADC-RZ-25-v1_feed-1x1.png`: o estático aprovado na Mesa; coluna da direita, Marketplace e os demais.
+- `ADC-RZ-25-v1_busca-audience-1.91x1.png`: busca e Audience Network.
 
-Sem voz de IA: não precisa do rótulo de IA da Meta.
+Nunca misture PNG e MP4 no mesmo anúncio.
+
+Mesmo criativo aprovado, montado no layout de cada formato pelo mesmo motor (mesmos textos, números, telas e CTA; nada cortado). O 9:16 e o 1:1 aprovados não foram alterados.
+
+Áudio: só música de banco (Mixkit), a mesma faixa nos três vídeos. Sem voz: não precisa do rótulo de IA da Meta.
 
 Nada foi enviado à conta de anúncios.
