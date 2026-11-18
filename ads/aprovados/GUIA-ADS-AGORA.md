@@ -171,6 +171,13 @@ Regra (Gui): **um anúncio = um tipo de mídia em todos os posicionamentos.** An
 - **ADC-RN-08-v1** → [`sportdna/ADC-RN-08-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-08-v1) (copy, título e URL no LEIA-ME da pasta)
 - **ADC-RN-09-v1** → [`sportdna/ADC-RN-09-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-09-v1) (copy, título e URL no LEIA-ME da pasta)
 
+### Carrosséis com 4:5 e 9:16 (acrescentado em 18/11)
+
+Anúncio carrossel (cards 1:1/4:5/9:16, mesma ordem) e, separado, o vídeo da mesma sequência para Reels. Nunca no mesmo anúncio.
+
+- **ADC-RZ-15-v1** → [`retrozap/ADC-RZ-15-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-15-v1) (5 cards; copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-10-v2** → [`sportdna/ADC-RK-10-v2/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-10-v2) (7 cards; copy, título e URL no LEIA-ME da pasta)
+
 ## Regras fixas
 - Nada de criar, ativar ou impulsionar anúncio nem gastar sem ordem do Gui.
 - Aprovação nova sempre pela Mesa (só o formato principal, 9:16 ou 1:1); as outras dimensões saem do aprovado.

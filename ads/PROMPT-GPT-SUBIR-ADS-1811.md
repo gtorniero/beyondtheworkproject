@@ -508,6 +508,7 @@ Nada sai do seu celular. O 1º grupo é grátis.
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-17-v1/ADC-RZ-17-v1_busca-audience-1.91x1.png
 
 ### ADC-RZ-15-v1
+- **Nota (18/11):** formatos 4:5 e 9:16 do carrossel prontos (mesmos cards); vídeo da sequência como anúncio separado. Não misturar.
 - **Título:** A retrospectiva do seu grupo do WhatsApp
 - **Texto principal:**
 ```
@@ -517,12 +518,31 @@ Você escolhe o grupo, vê o troféu de cada um e fecha com o Gran Finale, com o
 - **URL (com UTM):** https://retrozap.com.br/?utm_source=meta&utm_medium=paid_social&utm_campaign=rz_retro2026_grupo&utm_term=carrossel&utm_content=ADC-RZ-15-v1
 - **Botão:** Saiba mais
 - **Rótulo de IA da Meta:** não precisa
-- **Arquivos:**
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card2.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card3.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card4.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card5.png
+- **Arquivos · anúncio CARROSSEL** (5 cards, nesta ordem; em cada card: 1:1 nos demais · 4:5 no Feed · 9:16 em Stories/Reels):
+  - card 1:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card1.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-feed-4x5-card1.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-stories-9x16-card1.png
+  - card 2:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card2.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-feed-4x5-card2.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-stories-9x16-card2.png
+  - card 3:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card3.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-feed-4x5-card3.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-stories-9x16-card3.png
+  - card 4:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card4.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-feed-4x5-card4.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-stories-9x16-card4.png
+  - card 5:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-1x1-card5.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-feed-4x5-card5.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_carrossel-stories-9x16-card5.png
+- **Arquivos · anúncio de VÍDEO** (OUTRO anúncio, opcional, para Reels; mesma sequência; 9:16 em Reels/Stories · 4:5 no Feed · 1:1 nos demais; sem áudio):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_video-sequencia-reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_video-sequencia-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-15-v1/ADC-RZ-15-v1_video-sequencia-1x1.mp4
 
 ## RACKET DNA (pode ter preço: relatório R$ 19,99; avaliação grátis)
 Público: tenistas amadores de 25 a 55 anos. RK-17 é Natal (presente). RK-12 (Black Friday) segue a regra antiga: só até 27/11.
@@ -706,6 +726,7 @@ Responda o teste e veja se a raquete que você usa combina com o seu jogo e o se
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-14-v1/ADC-RK-14-v1_busca-audience-1.91x1.png
 
 ### ADC-RK-10-v2
+- **Nota (18/11):** formatos 4:5 e 9:16 do carrossel prontos (mesmos cards); vídeo da sequência como anúncio separado. Não misturar.
 - **Título:** Qual raquete é a certa pra você?
 - **Texto principal:**
 ```
@@ -715,14 +736,39 @@ O RACKET DNA cruza o seu corpo, o seu braço e o seu jogo com 183 raquetes medid
 - **URL (com UTM):** https://sportdna.com.br/racket/?utm_source=meta&utm_medium=paid_social&utm_campaign=rk_carrossel&utm_term=historia&utm_content=ADC-RK-10-v2
 - **Botão:** Saiba mais
 - **Rótulo de IA da Meta:** não precisa
-- **Arquivos:**
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card1.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card2.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card3.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card4.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card5.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card6.png
-  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card7.png
+- **Arquivos · anúncio CARROSSEL** (7 cards, nesta ordem; em cada card: 1:1 nos demais · 4:5 no Feed · 9:16 em Stories/Reels):
+  - card 1:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card1.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-feed-4x5-card1.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-stories-9x16-card1.png
+  - card 2:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card2.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-feed-4x5-card2.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-stories-9x16-card2.png
+  - card 3:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card3.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-feed-4x5-card3.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-stories-9x16-card3.png
+  - card 4:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card4.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-feed-4x5-card4.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-stories-9x16-card4.png
+  - card 5:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card5.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-feed-4x5-card5.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-stories-9x16-card5.png
+  - card 6:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card6.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-feed-4x5-card6.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-stories-9x16-card6.png
+  - card 7:
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-1x1-card7.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-feed-4x5-card7.png
+    - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_carrossel-stories-9x16-card7.png
+- **Arquivos · anúncio de VÍDEO** (OUTRO anúncio, opcional, para Reels; mesma sequência; 9:16 em Reels/Stories · 4:5 no Feed · 1:1 nos demais; sem áudio):
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_video-sequencia-reels-stories-9x16.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_video-sequencia-feed-4x5.mp4
+  - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-10-v2/ADC-RK-10-v2_video-sequencia-1x1.mp4
 
 ## SURF DNA (board)
 Público: surfistas iniciantes e intermediários de 20 a 50 anos. SF-12 (Black Friday): só até 27/11.

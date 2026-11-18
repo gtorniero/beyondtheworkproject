@@ -156,3 +156,5 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 | sportdna | ADC-RN-07 | v1 | atual | TÊNIS DNA · Tênis de quase R$ 1.000? Teste antes | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-07-v1 |
 | sportdna | ADC-RN-08 | v1 | atual | TÊNIS DNA · Compre o tênis certo, sem se arrepender | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-08-v1 |
 | sportdna | ADC-RN-09 | v1 | atual | TÊNIS DNA · Como o motor escolhe o seu tênis | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-09-v1 |
+| retrozap | ADC-RZ-15 | v1 | atual | A retrospectiva do seu grupo, passo a passo (carrossel) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-15-v1 |
+| sportdna | ADC-RK-10 | v2 | atual | Carrossel RACKET com história | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-10-v2 |
