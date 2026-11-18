@@ -41,3 +41,7 @@ Nada foi subido na conta de anúncios. Subir, ativar e gastar dependem de ordem 
 
 ## ADC-RK-09-v5 (18/11)
 Rodada 15 ("chiado depois de caro/seis"): o gerador de voz deixava uma rajada curta de ruído agudo ~0,4 s depois do fim de cada frase. Agora ela é cortada em todos os posicionamentos (janelas [(3.08, 3.34), (10.16, 10.42), (15.59, 15.86), (20.23, 20.49)]). Imagem, voz e trilha iguais à v4.
+
+
+## 18/11, 2ª passada
+O Gui ainda ouvia um ruído mais grave depois de cada fala. A rajada do TTS é de banda larga (inclusive grave); agora ela é zerada inteira na faixa de voz e o áudio é remixado com a mesma trilha. Na janela, o som fica no nível da música.
