@@ -66,3 +66,13 @@ Código: `pipeline/ads/reels/rz08.py`. Todo AD de todas as marcas segue essa té
 
 ## Narração de IA: chiado no fim das frases (18/11)
 O gerador de voz deixa uma rajada curta de ruído agudo ~0,4 s depois do fim de cada frase. Toda narração passa por `pipeline/hiss.py scan` (faixa só-voz) antes de ir pra Mesa; se achar algo, `pipeline/dehiss.py` corta os agudos só nessas janelas em todos os posicionamentos. Nenhum vídeo narrado sai com rajada detectada.
+
+## Aprendizado do orgânico 01–18/11 (Growth, 18/11)
+- Reel alcança de 5 a 10 vezes o carrossel. Os que ganham abrem com cena concreta ou número no 1º segundo: horário ("03:12"), valor ("R$ 699 e o joelho"), dor, placar apertado.
+- Repetir:
+  - Quiddo: bichos e personagens jogando.
+  - SPORT DNA: "erro caro".
+  - Retrozap: madrugada e caos do grupo.
+- Evitar: carrossel de lista, regras ou dicionário; meme genérico sem produto; tier list.
+- Testar: capa de carrossel com a tensão do reel; CTA de salvar com motivo concreto; pergunta no fim.
+- Para os ADs, vale o mesmo gancho: tensão concreta no quadro 0.
