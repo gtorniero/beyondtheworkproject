@@ -45,3 +45,6 @@ Rodada 15 ("chiado depois de caro/seis"): o gerador de voz deixava uma rajada cu
 
 ## 18/11, 2ª passada
 O Gui ainda ouvia um ruído mais grave depois de cada fala. A rajada do TTS é de banda larga (inclusive grave); agora ela é zerada inteira na faixa de voz e o áudio é remixado com a mesma trilha. Na janela, o som fica no nível da música.
+
+## CANCELADO (rodada 16, 18/11)
+O Gui cancelou este AD. Não subir na conta de anúncios.

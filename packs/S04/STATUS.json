@@ -42,7 +42,7 @@
    "hora": "19h45",
    "versao": "S04-R-R15-v3",
    "liberado": false,
-   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
+   "status_mesa": "CANCELADO pelo Gui (rodada 16, 18/11): não postar nem refazer"
   },
   {
    "peca": "R-C10",
@@ -82,7 +82,7 @@
    "hora": "19h45",
    "versao": "S04-Q-R11-v3",
    "liberado": false,
-   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
+   "status_mesa": "CANCELADO pelo Gui (rodada 16, 18/11): não postar nem refazer"
   },
   {
    "peca": "Q-R12",
