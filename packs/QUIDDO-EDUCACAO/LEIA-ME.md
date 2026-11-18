@@ -16,5 +16,5 @@ Pedido do Gui: conteúdo do Quiddo voltado para sala de aula, educação e trein
 - **Telas reais:** partidas gravadas no Quiddo rodando a partir do código do repositório (modo Escola com os visuais Sala, Álbum e Espaço; modo Corporativo com Escritório). Alunos e equipe com apelidos fictícios.
 - **Imagens de banco novas e sem repetição:** cada peça usa um clipe/foto diferente da biblioteca ampliada hoje (registro em `pipeline/assets/banco/REGISTRO.json`, campo `used_in`).
 - **Áudio:** música Mixkit (licença livre, uso comercial), sem voz. Sem rótulo de IA.
-- **Sem preço.** Oferta citada: "grátis até 10 pessoas, sem baixar app" (site).
+- **Sem preço.** Oferta citada: "faça o seu, teste grátis.
 - **Datas:** a programar pelo Growth. Sugestão: trocar os Reels/carrosséis de família e curiosidades do Quiddo nas próximas semanas por estes.

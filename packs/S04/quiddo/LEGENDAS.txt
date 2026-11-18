@@ -58,7 +58,7 @@ Notas: Fato: a vila do Papai Noel fica em Rovaniemi, na Lapônia (Finlândia). M
 
 ------------------------------------------------------------
 
-S04-Q-C10-v1 · qua 02/12 · 12h30 · CARROSSEL · 8 perguntas pro quiz de Natal da família
+S04-Q-C10-v3 · qua 02/12 · 12h30 · CARROSSEL · 8 perguntas pro quiz de Natal da família
 Arquivos: Q-C10-1.png, Q-C10-2.png, Q-C10-3.png, Q-C10-4.png, Q-C10-5.png, Q-C10-6.png
 
 LEGENDA
@@ -72,7 +72,7 @@ Notas: Perguntas de brincadeira (sem fato a conferir). Bichos oficiais.
 
 ------------------------------------------------------------
 
-S04-Q-C11-v1 · sex 04/12 · 12h30 · CARROSSEL · Como montar o quiz da família em 3 passos
+S04-Q-C11-v3 · sex 04/12 · 12h30 · CARROSSEL · Como montar o quiz da família em 3 passos
 Arquivos: Q-C11-1.png, Q-C11-2.png, Q-C11-3.png, Q-C11-4.png
 
 LEGENDA
@@ -86,7 +86,7 @@ Notas: Telas reais do jogo (captura do ADC-QD-11 aprovado).
 
 ------------------------------------------------------------
 
-S04-Q-C12-v1 · dom 06/12 · 12h30 · CARROSSEL · 5 perguntas para o amigo secreto
+S04-Q-C12-v3 · dom 06/12 · 12h30 · CARROSSEL · 5 perguntas para o amigo secreto
 Arquivos: Q-C12-1.png, Q-C12-2.png, Q-C12-3.png, Q-C12-4.png, Q-C12-5.png, Q-C12-6.png
 
 LEGENDA

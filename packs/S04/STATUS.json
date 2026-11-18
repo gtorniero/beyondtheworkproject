@@ -120,9 +120,9 @@
    "formato": "carrossel",
    "dia": "02/12/2026 (qua)",
    "hora": "12h30",
-   "versao": "S04-Q-C10-v2",
+   "versao": "S04-Q-C10-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (CTA sem \"até 10 pessoas\", 18/11)"
   },
   {
    "peca": "Q-C11",
@@ -130,9 +130,9 @@
    "formato": "carrossel",
    "dia": "04/12/2026 (sex)",
    "hora": "12h30",
-   "versao": "S04-Q-C11-v2",
+   "versao": "S04-Q-C11-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (CTA sem \"até 10 pessoas\", 18/11)"
   },
   {
    "peca": "Q-C12",
@@ -140,9 +140,9 @@
    "formato": "carrossel",
    "dia": "06/12/2026 (dom)",
    "hora": "12h30",
-   "versao": "S04-Q-C12-v2",
+   "versao": "S04-Q-C12-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (CTA sem \"até 10 pessoas\", 18/11)"
   },
   {
    "peca": "D-R12",

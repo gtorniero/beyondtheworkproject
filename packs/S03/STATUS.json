@@ -19,9 +19,9 @@
    "formato": "carrossel",
    "dia": "ter 24/11",
    "hora": "12h30",
-   "versao": "S03-Q-C7-v2",
+   "versao": "S03-Q-C7-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (CTA sem \"até 10 pessoas\", 18/11)"
   },
   {
    "peca": "Q-R8",
@@ -39,9 +39,9 @@
    "formato": "carrossel",
    "dia": "qui 26/11",
    "hora": "12h30",
-   "versao": "S03-Q-C8-v2",
+   "versao": "S03-Q-C8-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (CTA sem \"até 10 pessoas\", 18/11)"
   },
   {
    "peca": "Q-R9",
@@ -59,9 +59,9 @@
    "formato": "carrossel",
    "dia": "sáb 28/11",
    "hora": "12h30",
-   "versao": "S03-Q-C9-v2",
+   "versao": "S03-Q-C9-v3",
    "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "status_mesa": "revisar (CTA sem \"até 10 pessoas\", 18/11)"
   },
   {
    "peca": "Q-R10",

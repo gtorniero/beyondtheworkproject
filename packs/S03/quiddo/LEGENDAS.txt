@@ -20,7 +20,7 @@ Notas: Trend "ligar/desligar" (doc do DOT, 06/11; circulação no Brasil sem val
 
 ------------------------------------------------------------
 
-S03-Q-C7-v1 · ter 24/11 · 12h30 · CARROSSEL · Último dia de aula: 6 perguntas para o quiz da turma
+S03-Q-C7-v3 · ter 24/11 · 12h30 · CARROSSEL · Último dia de aula: 6 perguntas para o quiz da turma
 Arquivos: Q-C7-1.png, Q-C7-2.png, Q-C7-3.png, Q-C7-4.png, Q-C7-5.png, Q-C7-6.png, Q-C7-7.png, Q-C7-8.png
 
 LEGENDA
@@ -56,7 +56,7 @@ Notas: Meme de comportamento (antes/depois dentro da conversa). Celular e conver
 
 ------------------------------------------------------------
 
-S03-Q-C8-v1 · qui 26/11 · 12h30 · CARROSSEL · Bloco de notas: regras da casa na noite do quiz
+S03-Q-C8-v3 · qui 26/11 · 12h30 · CARROSSEL · Bloco de notas: regras da casa na noite do quiz
 Arquivos: Q-C8-1.png, Q-C8-2.png, Q-C8-3.png, Q-C8-4.png, Q-C8-5.png, Q-C8-6.png, Q-C8-7.png
 
 LEGENDA
@@ -97,7 +97,7 @@ Notas: Meme do dia da Black Friday (sex 27/11), feito com etiquetas de preço (o
 
 ------------------------------------------------------------
 
-S03-Q-C9-v1 · sáb 28/11 · 12h30 · CARROSSEL · Desafio: complete o ditado (5 cartas)
+S03-Q-C9-v3 · sáb 28/11 · 12h30 · CARROSSEL · Desafio: complete o ditado (5 cartas)
 Arquivos: Q-C9-1.png, Q-C9-2.png, Q-C9-3.png, Q-C9-4.png, Q-C9-5.png, Q-C9-6.png, Q-C9-7.png
 
 LEGENDA
