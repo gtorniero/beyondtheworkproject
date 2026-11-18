@@ -52,3 +52,14 @@ As agendas usam três horários, em Brasília: **12h** (stories), **12h30** (car
 | `postar.py` | O publicador |
 | `segurar.json` | Peças seguradas, com motivo e a versão a partir da qual podem sair |
 | `publicados.json` | Registro do que saiu (ou já existia) em cada rede, com id e link |
+
+## Nada sai duplicado (18/11)
+
+O `postar.py` só publica uma peça se ela passar por todas estas travas:
+
+1. **Registro:** a peça (marca + peça, qualquer versão) já está no `publicados.json`, então não sai de novo.
+2. **Conta:** no feed, se já existe post com a mesma 1ª linha de legenda, não sai. No story, se já existe um story fora do registro perto do horário, também não sai.
+3. **Mesma mídia:** o mesmo arquivo (mesmo blob do git, com qualquer nome ou versão) já saiu por outra peça da marca, ou sai antes na agenda, então não sai. No carrossel, a regra vale com metade ou mais dos cards repetidos, porque o card final de CTA se repete de propósito. O registro guarda os blobs de cada publicação.
+4. **Um por dia:** cada marca tem 1 reel e 1 carrossel por dia. Se houver dois aprovados no mesmo dia, ganha o que já saiu; depois, o de pack especial (ex.: QUIDDO-EDUCACAO) ganha do pack da semana; o outro fica bloqueado.
+5. **Facebook:** desligado desde 17/11 (`sem_facebook.json`), porque ele republicava no Instagram.
+6. **Sequência de stories:** o story base do Quiddo cede para a sequência aprovada do mesmo dia, e cada quadro só sai depois do anterior.

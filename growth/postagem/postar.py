@@ -136,6 +136,13 @@ class Conteudo:
                 self.avisos.append("git fetch do branch social falhou; usando a cópia local (pode estar velha)")
         self.sha = git("rev-parse", REF_CONTEUDO).strip()
         self.arquivos = set(git("ls-tree", "-r", "--name-only", REF_CONTEUDO, "packs/").split())
+        # id do conteúdo de cada arquivo (blob do git): mesmo id = mesmo arquivo, com qualquer nome
+        self.blob: dict[str, str] = {}
+        for l in git("ls-tree", "-r", REF_CONTEUDO, "packs/").splitlines():
+            meta, _, cam = l.partition("\t")
+            partes = meta.split()
+            if len(partes) == 3 and partes[1] == "blob":
+                self.blob[cam] = partes[2]
         self._cache: dict[str, str] = {}
         self._virtual_sequencias()
 
@@ -384,6 +391,10 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
             url_api = (lambda c: f"{RAW}{cont.sha}/{c}") if fixar_sha else (lambda c: RAW_SOCIAL + c)
             if arquivos_ok and it["formato"]:
                 monta_midia(it, caminhos, url_api)
+                md = it.get("midia") or {}
+                principais = ([md.get("video")] if md.get("tipo") == "video" else
+                              [md.get("imagem")] if md.get("tipo") == "imagem" else list(md.get("imagens") or []))
+                it["blobs"] = [cont.blob[c] for c in principais if c and c in cont.blob]
             itens.append(it)
     return itens
 
@@ -635,9 +646,68 @@ class Registro:
             os.replace(tmp, self.caminho)
 
 
+def trava_duplicados(itens: list[dict], reg) -> None:
+    """Nada sai duplicado (Gui, 18/11). Além do registro por peça e da checagem na conta:
+    1) mesma mídia (mesmo arquivo, com qualquer nome ou versão) já publicada por outra peça da marca;
+    2) duas peças diferentes com a mesma mídia na agenda: só a primeira pode sair;
+    3) feed (reel/carrossel): uma por marca, formato e dia. Já publicada ganha; depois, pack especial
+       (ex.: QUIDDO-EDUCACAO) ganha do pack da semana (Snn); o resto fica bloqueado."""
+    pub = {(e.get("marca"), e.get("peca")) for e in reg.itens if e.get("status") in ("publicado", "ja_existia", "publicando")}
+    dono: dict[tuple, str] = {}
+    for e in reg.itens:
+        if e.get("status") in ("publicado", "ja_existia", "publicando"):
+            for b in e.get("blobs") or []:
+                dono.setdefault((e.get("marca"), b), e.get("peca"))
+    for i in itens:
+        if (i["marca"], i["peca"]) in pub:
+            for b in i.get("blobs") or []:
+                dono.setdefault((i["marca"], b), i["peca"])
+
+    def repete(i):
+        bl = i.get("blobs") or []
+        if not bl:
+            return None
+        outros = [dono.get((i["marca"], b)) for b in bl]
+        outros = [o for o in outros if o and o != i["peca"]]
+        # reel/story: o arquivo principal; carrossel: metade ou mais dos cards (o card final de CTA se repete de propósito)
+        if i["formato"] == "carrossel" and len(outros) * 2 < len(bl):
+            return None
+        return outros[0] if outros else None
+
+    ordem = sorted(itens, key=lambda i: (i.get("quando") or dt.datetime.max.replace(tzinfo=BRT), i["pack"], i.get("quadro", 0)))
+    for i in ordem:
+        if (i["marca"], i["peca"]) in pub or not i.get("aprovado") or i.get("reserva"):
+            continue
+        o = repete(i)
+        if o:
+            i["problemas"].append(f"duplicado: a mesma mídia já saiu (ou vai sair antes) como {o}")
+            continue
+        if not i["problemas"]:
+            for b in i.get("blobs") or []:
+                dono.setdefault((i["marca"], b), i["peca"])
+
+    especial = lambda i: not re.fullmatch(r"S\d+", i["pack"] or "")
+    grupos: dict[tuple, list[dict]] = {}
+    for i in itens:
+        if i["formato"] in ("reel", "carrossel") and i.get("data") and not i.get("reserva") and i.get("aprovado"):
+            grupos.setdefault((i["marca"], i["data"], i["formato"]), []).append(i)
+    for chave, lista in grupos.items():
+        vivos = [i for i in lista if (i["marca"], i["peca"]) in pub or not i["problemas"]]
+        if len(vivos) < 2:
+            continue
+        vivos.sort(key=lambda i: (0 if (i["marca"], i["peca"]) in pub else 1, 0 if especial(i) else 1, i["pack"], i["peca"]))
+        fica = vivos[0]
+        for i in vivos[1:]:
+            if (i["marca"], i["peca"]) not in pub:
+                i["problemas"].append(f"duplicado no dia: já há {i['formato']} da marca em {chave[1]:%d/%m} ({fica['peca']})")
+
+
 def entrada_base(it: dict, plataforma: str) -> dict:
-    return {"marca": it["marca"], "peca": it["peca"], "versao": it["versao"], "pack": it["pack"],
-            "formato": it["formato"], "plataforma": plataforma, "agendado": iso(it["quando"])}
+    e = {"marca": it["marca"], "peca": it["peca"], "versao": it["versao"], "pack": it["pack"],
+         "formato": it["formato"], "plataforma": plataforma, "agendado": iso(it["quando"])}
+    if it.get("blobs"):
+        e["blobs"] = it["blobs"]
+    return e
 
 
 # --------------------------------------------------------------------------- o que já está nas contas
@@ -1330,6 +1400,7 @@ def main() -> int:
     for i in itens:
         if i.get("cede_para_sequencia") and (i["marca"], f"{i['peca']}.1") in aprovados_seq:
             i["problemas"].append("substituído pela sequência aprovada do mesmo dia (STORIES-SEQ)")
+    trava_duplicados(itens, Registro())  # lê o publicados.json (só leitura)
 
     if a.cobertura:
         de, _, ate = a.cobertura.partition(":")
