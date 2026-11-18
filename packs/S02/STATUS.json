@@ -456,8 +456,8 @@
    "dia": "sex 20/11",
    "hora": "19h45",
    "versao": "X-R-RX3-v3",
-   "liberado": false,
-   "status_mesa": "revisar (chiado do TTS removido, 18/11)",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reels extras com vídeo real, aprovados na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -481,7 +481,7 @@
    "hora": "19h45",
    "versao": "X-Q-RX2-v2",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reels extras com vídeo real, aprovados na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -505,7 +505,7 @@
    "hora": "19h45",
    "versao": "X-D-RX2-v2",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reels extras com vídeo real, aprovados na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -515,9 +515,9 @@
    "formato": "reel",
    "dia": "qua 18/11",
    "hora": "19h45",
-   "versao": "X-R-RX2-v3",
+   "versao": "X-R-RX2-v4",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra com vídeo real, aprovado na Mesa (rodada 7, v3) em 14/11",
    "rotulo_ia": true
   },
@@ -553,7 +553,7 @@
    "hora": "19h45",
    "versao": "X-F-RZ-1-v1",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -565,7 +565,7 @@
    "hora": "19h45",
    "versao": "X-F-QD-2-v1",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -576,8 +576,8 @@
    "dia": "22/11/2026 (dom)",
    "hora": "19h45",
    "versao": "X-D-RX7-v5",
-   "liberado": false,
-   "status_mesa": "revisar (chiado do TTS removido, 18/11)",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },

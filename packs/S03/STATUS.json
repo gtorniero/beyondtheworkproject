@@ -1,6 +1,6 @@
 {
  "pack": "S03",
- "liberadas": 75,
+ "liberadas": 74,
  "total": 75,
  "pecas": [
   {
@@ -11,7 +11,7 @@
    "hora": "19h45",
    "versao": "S03-Q-R7-v2",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "Q-C7",
@@ -20,8 +20,8 @@
    "dia": "ter 24/11",
    "hora": "12h30",
    "versao": "S03-Q-C7-v3",
-   "liberado": false,
-   "status_mesa": "revisar (CTA sem \"até 10 pessoas\", 18/11)"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "Q-R8",
@@ -31,7 +31,7 @@
    "hora": "19h45",
    "versao": "S03-Q-R8-v2",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "Q-C8",
@@ -40,8 +40,8 @@
    "dia": "qui 26/11",
    "hora": "12h30",
    "versao": "S03-Q-C8-v3",
-   "liberado": false,
-   "status_mesa": "revisar (CTA sem \"até 10 pessoas\", 18/11)"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "Q-R9",
@@ -51,7 +51,7 @@
    "hora": "19h45",
    "versao": "S03-Q-R9-v2",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "Q-C9",
@@ -60,8 +60,8 @@
    "dia": "sáb 28/11",
    "hora": "12h30",
    "versao": "S03-Q-C9-v3",
-   "liberado": false,
-   "status_mesa": "revisar (CTA sem \"até 10 pessoas\", 18/11)"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "Q-R10",
@@ -69,9 +69,9 @@
    "formato": "reel",
    "dia": "dom 29/11",
    "hora": "19h45",
-   "versao": "S03-Q-R10-v2",
+   "versao": "S03-Q-R10-v3",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "Q-S13",
@@ -151,7 +151,7 @@
    "hora": "19h45",
    "versao": "S03-R-R8-v2",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "R-C7",
@@ -160,8 +160,8 @@
    "dia": "ter 24/11",
    "hora": "12h30",
    "versao": "S03-R-C7-v2",
-   "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "R-R9",
@@ -169,9 +169,9 @@
    "formato": "reel",
    "dia": "qua 25/11",
    "hora": "19h45",
-   "versao": "S03-R-R9-v2",
+   "versao": "S03-R-R9-v3",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "R-C8",
@@ -180,8 +180,8 @@
    "dia": "qui 26/11",
    "hora": "12h30",
    "versao": "S03-R-C8-v3",
-   "liberado": false,
-   "status_mesa": "revisar (sem preço no card final, rodada 13)"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "R-R10",
@@ -191,7 +191,7 @@
    "hora": "19h45",
    "versao": "S03-R-R10-v2",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "R-C9",
@@ -200,8 +200,8 @@
    "dia": "sáb 28/11",
    "hora": "12h30",
    "versao": "S03-R-C9-v2",
-   "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "R-R11",
@@ -211,7 +211,7 @@
    "hora": "19h45",
    "versao": "S03-R-R11-v2",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "R-S13",
@@ -290,8 +290,8 @@
    "dia": "seg 23/11",
    "hora": "19h45",
    "versao": "S03-D-R8-v3",
-   "liberado": false,
-   "status_mesa": "revisar (62 → 183, 17/11)"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "D-C7",
@@ -300,8 +300,8 @@
    "dia": "ter 24/11",
    "hora": "12h30",
    "versao": "S03-D-C7-v2",
-   "liberado": false,
-   "status_mesa": "revisar (card final de CTA, 17/11)"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "D-R9",
@@ -311,7 +311,7 @@
    "hora": "19h45",
    "versao": "S03-D-R9-v2",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "D-C8",
@@ -320,8 +320,8 @@
    "dia": "qui 26/11",
    "hora": "12h30",
    "versao": "S03-D-C8-v3",
-   "liberado": false,
-   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "D-R10",
@@ -330,8 +330,8 @@
    "dia": "sex 27/11",
    "hora": "19h45",
    "versao": "S03-D-R10-v3",
-   "liberado": false,
-   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "D-C9",
@@ -340,8 +340,8 @@
    "dia": "sáb 28/11",
    "hora": "12h30",
    "versao": "S03-D-C9-v3",
-   "liberado": false,
-   "status_mesa": "revisar (rodada 14) · aguardando a Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "D-R11",
@@ -351,7 +351,7 @@
    "hora": "19h45",
    "versao": "S03-D-R11-v2",
    "liberado": true,
-   "status_mesa": "aprovado"
+   "status_mesa": "aprovado (rodada 16, 18/11)"
   },
   {
    "peca": "D-S13",
@@ -431,7 +431,7 @@
    "hora": "19h45",
    "versao": "X-F-RZ-2-v1",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -443,7 +443,7 @@
    "hora": "19h45",
    "versao": "X-F-QD-3-v1",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -455,7 +455,7 @@
    "hora": "19h45",
    "versao": "X-F-QD-4-v1",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -466,8 +466,8 @@
    "dia": "26/11/2026 (qui)",
    "hora": "19h45",
    "versao": "X-D-RX5-v3",
-   "liberado": false,
-   "status_mesa": "revisar (chiado do TTS removido, 18/11)",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -479,7 +479,7 @@
    "hora": "19h45",
    "versao": "X-F-RZ-4-v1",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -491,7 +491,7 @@
    "hora": "19h45",
    "versao": "X-F-QD-5-v1",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -503,7 +503,7 @@
    "hora": "19h45",
    "versao": "X-D-RX6-v3",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -515,7 +515,7 @@
    "hora": "19h45",
    "versao": "X-F-RZ-5-v1",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -527,7 +527,7 @@
    "hora": "19h45",
    "versao": "X-F-QD-6-v1",
    "liberado": true,
-   "status_mesa": "aprovado",
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -538,8 +538,8 @@
    "dia": "30/11/2026 (seg) · extra",
    "hora": "19h45",
    "versao": "X-D-RX8-v5",
-   "liberado": false,
-   "status_mesa": "revisar (chiado do TTS removido, 18/11)",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -550,8 +550,8 @@
    "dia": "26/11/2026 (qui)",
    "hora": "19h45",
    "versao": "X-F-RZ-3-v4",
-   "liberado": false,
-   "status_mesa": "revisar (chiado do TTS removido, 18/11)",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
    "rotulo_ia": true
   },
@@ -562,8 +562,8 @@
    "dia": "24/11/2026 (ter)",
    "hora": "19h45",
    "versao": "X-D-RX4-v7",
-   "liberado": false,
-   "status_mesa": "revisar (chiado do TTS removido, 18/11)",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "origem": "reel extra aprovado na Mesa em 15/11",
    "rotulo_ia": true
   },

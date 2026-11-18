@@ -4,8 +4,8 @@
   {
    "peca": "QE-R1",
    "formato": "reel",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "marca": "Quiddo",
    "dia": "qua 25/11",
    "hora": "19h45",
@@ -14,8 +14,8 @@
   {
    "peca": "QE-R2",
    "formato": "reel",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "marca": "Quiddo",
    "dia": "dom 29/11",
    "hora": "19h45",
@@ -24,8 +24,8 @@
   {
    "peca": "QE-R3",
    "formato": "reel",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "marca": "Quiddo",
    "dia": "qui 03/12",
    "hora": "19h45",
@@ -34,8 +34,8 @@
   {
    "peca": "QE-R4",
    "formato": "reel",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "marca": "Quiddo",
    "dia": "sex 27/11",
    "hora": "19h45",
@@ -44,8 +44,8 @@
   {
    "peca": "QE-C1",
    "formato": "carrossel",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "marca": "Quiddo",
    "dia": "qui 26/11",
    "hora": "12h30",
@@ -54,8 +54,8 @@
   {
    "peca": "QE-C2",
    "formato": "carrossel",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "marca": "Quiddo",
    "dia": "sex 04/12",
    "hora": "12h30",
@@ -64,8 +64,8 @@
   {
    "peca": "QE-C3",
    "formato": "carrossel",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "marca": "Quiddo",
    "dia": "qua 02/12",
    "hora": "12h30",
@@ -74,12 +74,13 @@
   {
    "peca": "QE-C4",
    "formato": "carrossel",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa",
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 16, 18/11)",
    "marca": "Quiddo",
    "dia": "sáb 28/11",
    "hora": "12h30",
    "versao": "QE-C4-v2"
   }
- ]
+ ],
+ "liberadas": null
 }
