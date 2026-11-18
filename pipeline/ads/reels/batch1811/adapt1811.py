@@ -6,6 +6,7 @@ import kvx
 K = kvx.K
 kvx.SPEC['ADC-RZ-18-v2'] = dict(kvx.SPEC['ADC-RZ-18-v1'], title='Retrospectiva de casal do seu *zap.*')
 import kvab, kvrun, kvrz  # noqa: registram as variantes
+import kvcta  # noqa: ADC-RZ-18-SP-v2 / ADC-RZ-19-SP-v2 (CTA maior, comentários do Gui)
 # 4:5: o pôster de trás encostava no fim do título; desce 60 px (o resto do layout não muda)
 kvrz.P['feed45'] = (410, 615, 430)
 

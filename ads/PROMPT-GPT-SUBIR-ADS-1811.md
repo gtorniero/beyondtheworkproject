@@ -42,6 +42,7 @@ Você é o meu agente de anúncios na Meta (Gerenciador de Anúncios). Suba os a
 Público: casais de 20 a 40 anos (relacionamento, presentes criativos, aniversário de namoro, Natal). Link com `?m=casal` (já está na URL). Valem em novembro e dezembro.
 
 ### ADC-RZ-18-SP-v1
+- **Nota (18/11):** a v2 deste AD (mesmo criativo, CTA maior, pedido do Gui) está EM APROVAÇÃO na Mesa (`ads/em-aprovacao/retrozap/ADC-RZ-18-SP-v2/`). Até ela ser aprovada, suba/mantenha esta v1. Não troque sem o aviso de aprovação.
 - **Título:** Retrospectiva de casal do seu zap
 - **Texto principal:**
 ```
@@ -63,6 +64,7 @@ Pagamento único, sem assinatura. Nada sai do seu celular.
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/retrozap/ADC-RZ-18-SP-v1/ADC-RZ-18-SP-v1_busca-audience-1.91x1.png
 
 ### ADC-RZ-19-SP-v1
+- **Nota (18/11):** a v2 deste AD (mesmo criativo, CTA maior, pedido do Gui) está EM APROVAÇÃO na Mesa (`ads/em-aprovacao/retrozap/ADC-RZ-19-SP-v2/`). Até ela ser aprovada, suba/mantenha esta v1. Não troque sem o aviso de aprovação.
 - **Título:** O mapa astral do casal
 - **Texto principal:**
 ```

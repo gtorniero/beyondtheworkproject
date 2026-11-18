@@ -2,6 +2,8 @@
 
 Versão: ADC-RZ-18-SP-v1 · Retrozap · aprovado na Mesa (rodada 16, 18/11/2026)
 
+> 18/11: a v2 (CTA maior, pedido do Gui) está em aprovação na Mesa: `ads/em-aprovacao/retrozap/ADC-RZ-18-SP-v2/`. Até ela ser aprovada, esta v1 continua valendo.
+
 - **Objetivo:** Vender a retrospectiva de casal.
 - **Público:** Casais de 20 a 40 anos (interesses: relacionamento, presentes criativos, aniversário de namoro, Natal).
 - **CTA:** Na arte: "Teste o de vocês agora". Botão do anúncio: Saiba mais.
