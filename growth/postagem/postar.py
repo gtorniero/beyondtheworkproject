@@ -672,6 +672,9 @@ def trava_duplicados(itens: list[dict], reg) -> None:
         # reel/story: o arquivo principal; carrossel: metade ou mais dos cards (o card final de CTA se repete de propósito)
         if i["formato"] == "carrossel" and len(outros) * 2 < len(bl):
             return None
+        # quadro final de CTA das sequências de stories (quadro 3) também se repete de propósito
+        if i.get("quadro", 0) >= 3:
+            return None
         return outros[0] if outros else None
 
     ordem = sorted(itens, key=lambda i: (i.get("quando") or dt.datetime.max.replace(tzinfo=BRT), i["pack"], i.get("quadro", 0)))
@@ -682,7 +685,8 @@ def trava_duplicados(itens: list[dict], reg) -> None:
         if o:
             i["problemas"].append(f"duplicado: a mesma mídia já saiu (ou vai sair antes) como {o}")
             continue
-        if not i["problemas"]:
+        # só "reserva" a mídia o que ainda vai sair (data de hoje em diante); o que passou da data e não saiu não conta
+        if not i["problemas"] and i.get("data") and i["data"] >= agora().date():
             for b in i.get("blobs") or []:
                 dono.setdefault((i["marca"], b), i["peca"])
 
