@@ -1,4 +1,4 @@
-# PROMPT · SUBIR NOVOS ANÚNCIOS NA META (18/11/2026)
+# PROMPT · SUBIR NOVOS ANÚNCIOS NA META (18/11/2026 · rodada 16: tudo aprovado, inclusive RN-06 a RN-09)
 
 Você é o meu agente de anúncios na Meta (Gerenciador de Anúncios). Suba os anúncios novos abaixo. Tudo aqui já está APROVADO por mim (Gui) na Mesa de Aprovação.
 
@@ -9,7 +9,7 @@ Você é o meu agente de anúncios na Meta (Gerenciador de Anúncios). Suba os a
    - **[RZ] Casal · com preço (teste até 30/11)** com o bloco "Prioridade 2".
    - **[RZ] Grupo** com o bloco Grupo. O conjunto **"Teste look & feel"** leva RZ-27, RZ-29 e RZ-31, com o mesmo público e a mesma verba para os três.
    - **[RK] Racket DNA** e **[SF] Surf DNA**, cada um com os ADs da sua seção.
-   - **[RN] Corredores (TÊNIS DNA)**: campanha NOVA. Os ADs RN-06 a RN-09 só entram depois que eu aprovar na Mesa (eu aviso).
+   - **[RN] Corredores (TÊNIS DNA)**: campanha NOVA com os ADs RN-06 a RN-09 (já aprovados).
 2. **Prioridade de verba:** casal SEM preço primeiro, com a maior fatia da verba de casal. Os COM preço rodam ao lado, como teste A/B (sem preço × com preço), para descobrirmos qual converte mais. O resto pode ter preço: vamos testando.
 3. **Orçamento e status:** use o orçamento diário que eu definir aqui: **[PREENCHER: R$ por campanha]**. Status ao subir: **[PREENCHER: ativo / pausado]**. Não aumente verba sozinho.
 4. **Posicionamentos:** Advantage+ (automático).
@@ -714,7 +714,7 @@ Raquete não é uma escolha. São seis. 🎾 279.990 combinações; o RACKET DNA
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_video-feed-coluna-1x1.mp4
   - https://raw.githubusercontent.com/gtorniero/beyondtheworkproject/social/ads/aprovados/sportdna/ADC-RK-09-v5/ADC-RK-09-v5_video-instream-16x9.mp4
 
-## [RN] CORREDORES · TÊNIS DNA (100% grátis; compra pelo link do Mercado Livre no resultado) · SÓ DEPOIS QUE EU APROVAR NA MESA
+## [RN] CORREDORES · TÊNIS DNA (100% grátis; compra pelo link do Mercado Livre no resultado) · APROVADOS (subir junto)
 Campanha nova "Corredores". Público: 20 a 55 anos, corrida de rua, maratona e meia maratona, treino, apps de corrida, tênis de corrida. Os 4 no mesmo conjunto, para a Meta escolher o melhor.
 
 ### ADC-RN-06-v1
