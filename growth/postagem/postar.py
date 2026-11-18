@@ -211,7 +211,8 @@ def le_legendas(texto: str | None) -> dict[str, dict]:
         return blocos
     for bloco in re.split(r"\n-{10,}\s*\n", texto.replace("\r\n", "\n")):
         linhas = bloco.strip("\n").split("\n")
-        idx = next((i for i, l in enumerate(linhas) if re.match(r"^(S\d+|X)-[A-Z].*-v\d+\s+·", l)), None)
+        # "S03-Q-R8-v2 · …", "X-D-RX3-v2 · …" ou, desde 18/11, sem prefixo de pack: "QE-R1-v3 · …"
+        idx = next((i for i, l in enumerate(linhas) if re.match(r"^(?:(?:S\d+|X)-)?[A-Z][A-Za-z0-9.]*-[A-Za-z0-9.-]*-v\d+\s+·", l)), None)
         if idx is None:
             continue
         cab = linhas[idx]
