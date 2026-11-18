@@ -112,3 +112,47 @@ Cada pasta tem os arquivos nomeados por posicionamento e um LEIA-ME.md com copy,
 
 ## 15/11 · SF-03-v1: estáticos refeitos
 - O Gui reprovou a 1ª versão dos estáticos 1:1 e 1,91:1 do SF-03 (quadro das 3 pranchas, com nomes borrados). Os arquivos foram refeitos com o quadro do gancho ("Sua prancha é a certa?" + tela do teste) e substituem os anteriores, com os mesmos nomes. Pela regra do formato principal, valem sem nova aprovação.
+| retrozap | ADC-RZ-16 | v1 | atual | Retrospectiva do seu WhatsApp em 3 passos | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-16-v1 |
+| retrozap | ADC-RZ-17 | v1 | atual | Retrospectiva do seu grupo: o que vem nela | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-17-v1 |
+| retrozap | ADC-RZ-18-SP | v1 | atual | Retrospectiva de casal do seu zap · SEM preço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-18-SP-v1 |
+| retrozap | ADC-RZ-18 | v3 | atual | Retrospectiva de casal do seu zap · COM preço (preço depois) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-18-v3 |
+| retrozap | ADC-RZ-19-SP | v1 | atual | Casal · O mapa astral do WhatsApp de vocês · SEM preço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-19-SP-v1 |
+| retrozap | ADC-RZ-19 | v2 | atual | Casal · O mapa astral do WhatsApp de vocês · COM preço (preço depois) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-19-v2 |
+| retrozap | ADC-RZ-20-SP | v1 | atual | Casal · Quem paga o jantar? O recibo do amor · SEM preço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-20-SP-v1 |
+| retrozap | ADC-RZ-20 | v2 | atual | Casal · Quem paga o jantar? O recibo do amor · COM preço (preço depois) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-20-v2 |
+| retrozap | ADC-RZ-21-SP | v1 | atual | Casal · Boletim do casal: aprovados pra 2027? · SEM preço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-21-SP-v1 |
+| retrozap | ADC-RZ-21 | v2 | atual | Casal · Boletim do casal: aprovados pra 2027? · COM preço (preço depois) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-21-v2 |
+| retrozap | ADC-RZ-22-SP | v1 | atual | Casal · Vocês contra os casais do Brasil (ranking) · SEM preço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-22-SP-v1 |
+| retrozap | ADC-RZ-22 | v2 | atual | Casal · Vocês contra os casais do Brasil (ranking) · COM preço (preço depois) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-22-v2 |
+| retrozap | ADC-RZ-23 | v1 | atual | Grupo · Seu grupo contra o Brasil inteiro (ranking) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-23-v1 |
+| retrozap | ADC-RZ-24 | v1 | atual | Grupo · Procura-se: o fantasma do grupo | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-24-v1 |
+| retrozap | ADC-RZ-25 | v1 | atual | Grupo · URGENTE: seu grupo virou notícia (Plantão do Zap) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-25-v1 |
+| retrozap | ADC-RZ-26 | v1 | atual | Grupo · As mais tocadas do grupo (Rádio Turma FM) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-26-v1 |
+| retrozap | ADC-RZ-27 | v1 | atual | Grupo · VIRAL A (conversa): "Abrimos o grupo. Socorro." | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-27-v1 |
+| retrozap | ADC-RZ-28 | v1 | atual | Casal · VIRAL A (conversa): "Abrimos a conversa do casal." | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-28-v1 |
+| retrozap | ADC-RZ-29 | v1 | atual | Grupo · VIRAL B (stories de pôsteres) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-29-v1 |
+| retrozap | ADC-RZ-30 | v1 | atual | Casal · VIRAL B (stories de pôsteres) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-30-v1 |
+| retrozap | ADC-RZ-31 | v1 | atual | Grupo · VIRAL C (placar ao vivo): seu grupo contra o Brasil | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-31-v1 |
+| retrozap | ADC-RZ-32 | v1 | atual | Casal · VIRAL C (placar ao vivo): quem ama mais? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-32-v1 |
+| sportdna | ADC-RK-11 | v1 | atual | RACKET didático: qual raquete é a certa pra você? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-11-v1 |
+| sportdna | ADC-RK-12 | v1 | atual | RACKET Black Friday: antes de comprar, faça o teste | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-12-v1 |
+| sportdna | ADC-RK-13 | v1 | atual | RACKET grátis: sua raquete é a certa? Descubra grátis | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-13-v1 |
+| sportdna | ADC-RK-14 | v1 | atual | RACKET grátis, estático direto: avalie a sua raquete | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-14-v1 |
+| sportdna | ADC-RK-15 | v1 | atual | RACKET grátis · Você joga com a raquete errada? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-15-v1 |
+| sportdna | ADC-RK-16 | v1 | atual | RACKET grátis · A sua ficha ideal, nota por nota | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-16-v1 |
+| sportdna | ADC-RK-17-SP | v1 | atual | RACKET Natal · Raquete de presente? Acerte · SEM preço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1 |
+| sportdna | ADC-RK-17 | v2 | atual | RACKET Natal · Raquete de presente? Acerte · COM preço (preço depois) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-17-v2 |
+| sportdna | ADC-RK-18 | v1 | atual | RACKET · Raquete certa, setup errado? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-18-v1 |
+| sportdna | ADC-RK-19 | v1 | atual | RACKET · Seu perfil de jogo em um hexágono | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-19-v1 |
+| sportdna | ADC-SF-11 | v1 | atual | SURF didático: qual prancha é a certa pra você? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-11-v1 |
+| sportdna | ADC-SF-12 | v1 | atual | SURF Black Friday: antes de comprar prancha, faça o teste | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-12-v1 |
+| sportdna | ADC-SF-13 | v1 | atual | SURF · Sua prancha tem os litros certos? | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-13-v1 |
+| sportdna | ADC-SF-14-SP | v1 | atual | SURF Natal · Prancha de presente? Acerte as medidas · SEM preço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1 |
+| sportdna | ADC-SF-14 | v2 | atual | SURF Natal · Prancha de presente? Acerte as medidas · COM preço (preço depois) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-14-v2 |
+| sportdna | ADC-SF-15 | v1 | atual | SURF · Vai encomendar no shaper? Leve a ficha | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-15-v1 |
+| sportdna | ADC-SF-16-SP | v1 | atual | SURF · Prancha usada? Confira antes de pagar · SEM preço | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-16-SP-v1 |
+| sportdna | ADC-SF-16 | v2 | atual | SURF · Prancha usada? Confira antes de pagar · COM preço (preço depois) | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-16-v2 |
+| sportdna | ADC-RN-06 | v1 | atual | TÊNIS DNA · Qual tênis de corrida é o seu? 100% grátis | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-06-v1 |
+| sportdna | ADC-RN-07 | v1 | atual | TÊNIS DNA · Tênis de quase R$ 1.000? Teste antes | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-07-v1 |
+| sportdna | ADC-RN-08 | v1 | atual | TÊNIS DNA · Compre o tênis certo, sem se arrepender | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-08-v1 |
+| sportdna | ADC-RN-09 | v1 | atual | TÊNIS DNA · Como o motor escolhe o seu tênis | https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-09-v1 |

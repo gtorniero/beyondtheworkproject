@@ -105,6 +105,72 @@ ADs com narração de voz gerada por IA, que precisam do rótulo ligado: ADC-RZ-
 - **ADC-RN-04-v1** → [`sportdna/ADC-RN-04-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-04-v1) (copy, título e URL no LEIA-ME da pasta)
 - **ADC-RN-05-v1** → [`sportdna/ADC-RN-05-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-05-v1) (copy, título e URL no LEIA-ME da pasta)
 
+## Lote 17–18/11 · aprovados na Mesa e com pacote completo · acrescentado em 18/11
+
+Regra (Gui): **um anúncio = um tipo de mídia em todos os posicionamentos.** Anúncio de vídeo: 9:16 em Stories/Reels, 4:5 no Feed, 1:1 nos demais. Anúncio estático (outro anúncio): 9:16, 4:5, 1:1 e 1,91:1. Nunca PNG no Feed com MP4 em Stories/Reels. Nenhum destes tem voz (só música de banco): rótulo de IA não precisa.
+
+### Retrozap · casal SEM preço (PRIORIDADE; novembro e dezembro)
+
+- **ADC-RZ-18-SP-v1** → [`retrozap/ADC-RZ-18-SP-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-18-SP-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-19-SP-v1** → [`retrozap/ADC-RZ-19-SP-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-19-SP-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-20-SP-v1** → [`retrozap/ADC-RZ-20-SP-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-20-SP-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-21-SP-v1** → [`retrozap/ADC-RZ-21-SP-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-21-SP-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-22-SP-v1** → [`retrozap/ADC-RZ-22-SP-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-22-SP-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-28-v1** → [`retrozap/ADC-RZ-28-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-28-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-30-v1** → [`retrozap/ADC-RZ-30-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-30-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-32-v1** → [`retrozap/ADC-RZ-32-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-32-v1) (copy, título e URL no LEIA-ME da pasta)
+
+### Retrozap · casal COM preço R$ 13,99 (teste A/B; pausar no fim de 30/11)
+
+- **ADC-RZ-18-v3** → [`retrozap/ADC-RZ-18-v3/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-18-v3) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-19-v2** → [`retrozap/ADC-RZ-19-v2/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-19-v2) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-20-v2** → [`retrozap/ADC-RZ-20-v2/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-20-v2) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-21-v2** → [`retrozap/ADC-RZ-21-v2/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-21-v2) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-22-v2** → [`retrozap/ADC-RZ-22-v2/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-22-v2) (copy, título e URL no LEIA-ME da pasta)
+
+### Retrozap · grupo (sem preço)
+
+- **ADC-RZ-23-v1** → [`retrozap/ADC-RZ-23-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-23-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-24-v1** → [`retrozap/ADC-RZ-24-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-24-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-25-v1** → [`retrozap/ADC-RZ-25-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-25-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-26-v1** → [`retrozap/ADC-RZ-26-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-26-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-27-v1** → [`retrozap/ADC-RZ-27-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-27-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-29-v1** → [`retrozap/ADC-RZ-29-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-29-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-31-v1** → [`retrozap/ADC-RZ-31-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-31-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-16-v1** → [`retrozap/ADC-RZ-16-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-16-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RZ-17-v1** → [`retrozap/ADC-RZ-17-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/retrozap/ADC-RZ-17-v1) (copy, título e URL no LEIA-ME da pasta)
+
+### RACKET DNA (RK-12: Black Friday, só até 27/11; RK-14: só estático)
+
+- **ADC-RK-11-v1** → [`sportdna/ADC-RK-11-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-11-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-12-v1** → [`sportdna/ADC-RK-12-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-12-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-13-v1** → [`sportdna/ADC-RK-13-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-13-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-14-v1** → [`sportdna/ADC-RK-14-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-14-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-15-v1** → [`sportdna/ADC-RK-15-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-15-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-16-v1** → [`sportdna/ADC-RK-16-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-16-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-17-SP-v1** → [`sportdna/ADC-RK-17-SP-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-17-SP-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-17-v2** → [`sportdna/ADC-RK-17-v2/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-17-v2) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-18-v1** → [`sportdna/ADC-RK-18-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-18-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RK-19-v1** → [`sportdna/ADC-RK-19-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RK-19-v1) (copy, título e URL no LEIA-ME da pasta)
+
+### SURF DNA (SF-12: Black Friday, só até 27/11)
+
+- **ADC-SF-11-v1** → [`sportdna/ADC-SF-11-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-11-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-SF-12-v1** → [`sportdna/ADC-SF-12-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-12-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-SF-13-v1** → [`sportdna/ADC-SF-13-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-13-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-SF-14-SP-v1** → [`sportdna/ADC-SF-14-SP-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-14-SP-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-SF-14-v2** → [`sportdna/ADC-SF-14-v2/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-14-v2) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-SF-15-v1** → [`sportdna/ADC-SF-15-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-15-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-SF-16-SP-v1** → [`sportdna/ADC-SF-16-SP-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-16-SP-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-SF-16-v2** → [`sportdna/ADC-SF-16-v2/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-SF-16-v2) (copy, título e URL no LEIA-ME da pasta)
+
+### TÊNIS DNA · Corredores (campanha nova)
+
+- **ADC-RN-06-v1** → [`sportdna/ADC-RN-06-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-06-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RN-07-v1** → [`sportdna/ADC-RN-07-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-07-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RN-08-v1** → [`sportdna/ADC-RN-08-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-08-v1) (copy, título e URL no LEIA-ME da pasta)
+- **ADC-RN-09-v1** → [`sportdna/ADC-RN-09-v1/`](https://github.com/gtorniero/beyondtheworkproject/tree/social/ads/aprovados/sportdna/ADC-RN-09-v1) (copy, título e URL no LEIA-ME da pasta)
+
 ## Regras fixas
 - Nada de criar, ativar ou impulsionar anúncio nem gastar sem ordem do Gui.
 - Aprovação nova sempre pela Mesa (só o formato principal, 9:16 ou 1:1); as outras dimensões saem do aprovado.
