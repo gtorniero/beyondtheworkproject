@@ -11,7 +11,7 @@ Versão: ADC-SF-16-SP-v1 · SPORT DNA · aguardando aprovação na Mesa (formato
 ## Copy
 
 Vai comprar prancha usada? Confira antes de pagar. 🏄
-O SURF DNA compara 416 tamanhos de 35 modelos com o seu surf e mostra o que combina com você.000 de uma prancha. Prévia grátis.
+O SURF DNA compara 416 tamanhos de 35 modelos com o seu surf e mostra o que combina com você. Prévia grátis.
 
 Título: Prancha usada? Confira
 
