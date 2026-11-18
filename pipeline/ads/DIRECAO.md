@@ -63,3 +63,6 @@ Código: `pipeline/ads/reels/rz08.py`. Todo AD de todas as marcas segue essa té
 - Nomes e números continuam fictícios (regra do Retrozap), só não se avisa.
 - Voz de IA: só o rótulo de IA da Meta na programação (rotulo_ia), nunca no texto.
 - Sem preço no orgânico (rodada 13). Preço só nos ADs.
+
+## Narração de IA: chiado no fim das frases (18/11)
+O gerador de voz deixa uma rajada curta de ruído agudo ~0,4 s depois do fim de cada frase. Toda narração passa por `pipeline/hiss.py scan` (faixa só-voz) antes de ir pra Mesa; se achar algo, `pipeline/dehiss.py` corta os agudos só nessas janelas em todos os posicionamentos. Nenhum vídeo narrado sai com rajada detectada.
