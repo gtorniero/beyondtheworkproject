@@ -1135,6 +1135,72 @@
    "permalink": "https://www.instagram.com/stories/sportdna.app/4034641581336101284",
    "container_id": "17928209739281754",
    "publicado_em": "2026-11-20T11:59:45-03:00"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-C5",
+   "versao": "S02-R-C5-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-20T12:30:00-03:00",
+   "blobs": [
+    "9a1160905f480aa3d8db675a5ed9207ba5da0cde",
+    "b9e0a9b2dd39436e4c0953c6f4ac06286f1e5f72",
+    "c88fed90ae4a8a17bc4f3329dbfaad64868aac00",
+    "34a63374a6883cc917ca768d9f72aa7c9471a4e8",
+    "db10f21a816b233cc9552b96de8eb32cf8ebaccd"
+   ],
+   "status": "publicado",
+   "media_id": "17900152341412726",
+   "permalink": "https://www.instagram.com/p/Df9-x1WmGqK/",
+   "container_id": "17905934538396278",
+   "publicado_em": "2026-11-20T12:30:19-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-C5",
+   "versao": "S02-Q-C5-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-20T12:30:00-03:00",
+   "blobs": [
+    "70bcfa495e965838ba0666c5cf0e0eb51de1c5cf",
+    "9725ad2800d4b647f7b3c1f5fd92bd6864b96946",
+    "95cb5cfdfb18b3f4d353795c7c0bec42e7dc271d",
+    "46b513dfdbd0d236f57523359c617ae79f025ace",
+    "a7733f457422d70efcc0eb97272a2620cecfa4eb",
+    "20f0c379ae13555d3ee6f467b71ed9fab54a55e6",
+    "662d2093ed0119df9c2d44a7299e7a29e463cb4c"
+   ],
+   "status": "publicado",
+   "media_id": "18094463486216137",
+   "permalink": "https://www.instagram.com/p/Df9-22Cj8vs/",
+   "container_id": "18132513802855686",
+   "publicado_em": "2026-11-20T12:31:04-03:00"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-C5",
+   "versao": "S02-D-C5-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-20T12:30:00-03:00",
+   "blobs": [
+    "73dfa6299daf01cb3ace94fcf562658adfcd8449",
+    "d993d5935e590e112a8b3854cc9e21a2025366c3",
+    "f09f9adabe444c443febe202d453857aae807fa4",
+    "4ef449e658b5ba026275a0b805ecbad5df8606f3",
+    "3845937af493de5fcab34899c6ce32840cde7285",
+    "a73443b00dbd4a1ec28c7a681c9027fcb1e0174b",
+    "256c2767e81c3606884c1a58e1c4d8e6eac95940"
+   ],
+   "status": "ja_existia",
+   "permalink": "https://www.instagram.com/p/Df9-xxEDmk5/",
+   "obs": "mesma 1ª linha de legenda já publicada (2026-11-20T15:30)",
+   "registrado_em": "2026-11-20T12:31:05-03:00"
   }
  ]
 }
