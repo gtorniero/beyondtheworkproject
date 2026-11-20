@@ -1201,6 +1201,57 @@
    "permalink": "https://www.instagram.com/p/Df9-xxEDmk5/",
    "obs": "mesma 1ª linha de legenda já publicada (2026-11-20T15:30)",
    "registrado_em": "2026-11-20T12:31:05-03:00"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-RX3",
+   "versao": "X-R-RX3-v3",
+   "pack": "S02",
+   "formato": "reel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-20T19:45:00-03:00",
+   "blobs": [
+    "1c7df440f891acac98876712b72f19d1b480ca1c"
+   ],
+   "status": "publicado",
+   "media_id": "18155001076546849",
+   "permalink": "https://www.instagram.com/reel/Df-xIh2lH02/",
+   "container_id": "17906030052396278",
+   "publicado_em": "2026-11-20T19:50:51-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-RX2",
+   "versao": "X-Q-RX2-v2",
+   "pack": "S02",
+   "formato": "reel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-20T19:45:00-03:00",
+   "blobs": [
+    "0906ced8ea4e5167bacedfe3a06739dccef385e8"
+   ],
+   "status": "publicado",
+   "media_id": "18082884635394316",
+   "permalink": "https://www.instagram.com/reel/Df-xOMJmXWN/",
+   "container_id": "18132563137855686",
+   "publicado_em": "2026-11-20T19:51:36-03:00"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-RX2",
+   "versao": "X-D-RX2-v2",
+   "pack": "S02",
+   "formato": "reel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-20T19:45:00-03:00",
+   "blobs": [
+    "4656b84264436c2fb216b19bf5bef6ac5efefce2"
+   ],
+   "status": "publicado",
+   "media_id": "18086773274358085",
+   "permalink": "https://www.instagram.com/reel/Df-xZs1nE8o/",
+   "container_id": "17928286260281754",
+   "publicado_em": "2026-11-20T19:53:21-03:00"
   }
  ]
 }
