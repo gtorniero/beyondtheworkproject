@@ -63,3 +63,4 @@ O `postar.py` só publica uma peça se ela passar por todas estas travas:
 4. **Um por dia:** cada marca tem 1 reel e 1 carrossel por dia. Se houver dois aprovados no mesmo dia, ganha o que já saiu; depois, o de pack especial (ex.: QUIDDO-EDUCACAO) ganha do pack da semana; o outro fica bloqueado.
 5. **Facebook:** desligado desde 17/11 (`sem_facebook.json`), porque ele republicava no Instagram.
 6. **Sequência de stories:** o story base do Quiddo cede para a sequência aprovada do mesmo dia, e cada quadro só sai depois do anterior.
+7. **Última checagem (20/11):** no feed, o perfil é lido de novo logo antes do `media_publish`. As rodadas rodam às 12h34 e às 19h49, depois do horário redondo em que o DOT agendava, para que um post dele já esteja visível na checagem.
