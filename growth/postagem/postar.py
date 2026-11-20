@@ -533,6 +533,14 @@ class PublicadoSemId(ErroGraph):
     """O Instagram publicou, mas não consegui descobrir o id da mídia."""
 
 
+class JaNaConta(Exception):
+    """Na última checagem, logo antes de publicar, a peça apareceu na conta (DOT ou alguém postou no meio)."""
+
+    def __init__(self, desc: str, link: str):
+        super().__init__(desc)
+        self.desc, self.link = desc, link
+
+
 class Graph:
     TRANSITORIOS = {1, 2, 4, 17, 32, 341, 613, 80001, 80002, 80004}
 
@@ -905,6 +913,12 @@ class Publicador:
             cid = self.ig_container(ig, rotulo_ia(it, {"media_type": "CAROUSEL", "children": ",".join(filhos),
                                          "caption": it["legenda"]}))
             self.ig_esperar(cid, 180)
+        if it["formato"] != "story":
+            # 20/11: o DOT postou o mesmo carrossel 40 s antes do nosso media_publish. Relê o perfil agora.
+            self.perfis.esquecer(marca)
+            achou, desc, link, _ = duplicata_remota(it, "instagram", self.perfis, self.reg.ids_conhecidos())
+            if achou:
+                raise JaNaConta(f"{desc}; vi na última checagem, antes de publicar", link)
         pend = dict(entrada_base(it, "instagram"), status="publicando", container_id=cid, inicio=iso(inicio))
         self.reg.gravar(pend)
         try:
@@ -1580,6 +1594,11 @@ def main() -> int:
                                          "id": ent.get("media_id") or ent.get("post_id") or ent.get("video_id"),
                                          "obs": ent.get("obs", "")})
                 print(f"  ok: {ent.get('permalink') or ent.get('media_id') or ent.get('post_id') or ent.get('video_id')}")
+            except JaNaConta as e:
+                rel["pulado"].append({"peca": nome, "plataforma": p, "motivo": e.desc, "link": e.link})
+                reg.gravar(dict(entrada_base(it, p), status="ja_existia", permalink=e.link,
+                                obs=e.desc, registrado_em=iso(agora())))
+                print(f"  pulado: {e.desc} {e.link}")
             except (ErroGraph, requests.RequestException, KeyError) as e:
                 msg = oculta_segredos(str(e))
                 rel["erros"].append({"peca": nome, "plataforma": p, "erro": msg})
