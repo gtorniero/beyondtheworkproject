@@ -1405,6 +1405,40 @@
    "permalink": "https://www.instagram.com/stories/sportdna.app/4035366119896430635",
    "container_id": "17928434133281754",
    "publicado_em": "2026-11-21T11:59:16-03:00"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-R6",
+   "versao": "S02-R-R6-v3",
+   "pack": "S02",
+   "formato": "reel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-21T19:45:00-03:00",
+   "blobs": [
+    "c6718f9b54760fff7b416b46961a310925fbd367"
+   ],
+   "status": "publicado",
+   "media_id": "18120791890804179",
+   "permalink": "https://www.instagram.com/reel/DgBV8gSCdtF/",
+   "container_id": "17906320929396278",
+   "publicado_em": "2026-11-21T19:50:56-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-R4",
+   "versao": "S02-Q-R4-v2",
+   "pack": "S02",
+   "formato": "reel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-21T19:45:00-03:00",
+   "blobs": [
+    "c9b0fda668f6a685e9c252b560f964bfb5068275"
+   ],
+   "status": "publicado",
+   "media_id": "18120658094596035",
+   "permalink": "https://www.instagram.com/reel/DgBWIusnfFU/",
+   "container_id": "18132665047855686",
+   "publicado_em": "2026-11-21T19:52:41-03:00"
   }
  ]
 }
