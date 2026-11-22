@@ -1,6 +1,6 @@
 {
  "pack": "S03",
- "liberadas": 73,
+ "liberadas": 72,
  "total": 86,
  "pecas": [
   {
@@ -150,8 +150,9 @@
    "dia": "seg 23/11",
    "hora": "19h45",
    "versao": "S03-R-R8-v2",
-   "liberado": true,
-   "status_mesa": "aprovado (rodada 16, 18/11)"
+   "liberado": false,
+   "status_mesa": "aprovado · BLOQUEADO até 01/12 (arte tem \"Figurinha de Natal\"; regra do Gui 22/11)",
+   "nao_antes": "2026-12-01"
   },
   {
    "peca": "R-C7",
