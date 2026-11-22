@@ -44,7 +44,7 @@ for k, (dt, tit, n, cap) in FX.items():
 st['total'] = len(st['pecas']); st['liberadas'] = sum(1 for x in st['pecas'] if x.get('liberado'))
 (P3 / 'STATUS.json').write_text(json.dumps(st, ensure_ascii=False, indent=1))
 for bd, blocks in leg_add.items():
-    lg = P3 / bd / 'LEGENDAS.txt'; lg.write_text(lg.read_text().rstrip('\n') + '\n\n' + '\n'.join(blocks))
+    lg = P3 / bd / 'LEGENDAS.txt'; lg.write_text(lg.read_text().rstrip('\n').rstrip('-').rstrip('\n') + '\n\n' + '-' * 60 + '\n\n' + '\n'.join(blocks))
 # agendas: como → postar.py, coluna serie (+ observacao onde faltar)
 SER = json.loads(subprocess.check_output(['git', '-C', str(S), 'show', 'origin/claude/sweet-hypatia-43ca1s:growth/postagem/series.json']))
 PSER = {p: g for g, x in SER['grupos'].items() for p in x['pecas']}
