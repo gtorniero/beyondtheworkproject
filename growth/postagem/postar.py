@@ -217,15 +217,22 @@ def le_legendas(texto: str | None) -> dict[str, dict]:
     blocos: dict[str, dict] = {}
     if not texto:
         return blocos
-    for bloco in re.split(r"\n-{10,}\s*\n", texto.replace("\r\n", "\n")):
-        linhas = bloco.strip("\n").split("\n")
-        # "S03-Q-R8-v2 · …", "X-D-RX3-v2 · …" ou, desde 18/11, sem prefixo de pack: "QE-R1-v3 · …"
-        idx = next((i for i, l in enumerate(linhas) if re.match(r"^(?:(?:S\d+|X)-)?[A-Z][A-Za-z0-9.]*-[A-Za-z0-9.-]*-v\d+\s+·", l)), None)
-        if idx is None:
-            continue
-        cab = linhas[idx]
+    # "S03-Q-R8-v2 · …", "X-D-RX3-v2 · …" ou, desde 18/11, sem prefixo de pack: "QE-R1-v3 · …"
+    cab_rx = re.compile(r"^(?:(?:S\d+|X)-)?[A-Z][A-Za-z0-9.]*-[A-Za-z0-9.-]*-v\d+\s+·")
+    # um bloco começa em cada cabeçalho (22/11: o estúdio às vezes cola um bloco sem a linha "-----" antes)
+    pedacos, atual = [], None
+    for l in texto.replace("\r\n", "\n").split("\n"):
+        if cab_rx.match(l):
+            atual = [l]; pedacos.append(atual)
+        elif atual is not None:
+            if re.fullmatch(r"-{10,}\s*", l):
+                atual = None
+            else:
+                atual.append(l)
+    for linhas in pedacos:
+        cab = linhas[0]
         versao = cab.split("·")[0].strip()
-        corpo = "\n".join(linhas[idx + 1:])
+        corpo = "\n".join(linhas[1:])
         legenda = None
         m = re.search(r"(?m)^LEGENDA\s*\n(.*)", corpo, re.S)
         if m:
