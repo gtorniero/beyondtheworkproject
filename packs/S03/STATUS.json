@@ -1,7 +1,7 @@
 {
  "pack": "S03",
  "liberadas": 74,
- "total": 75,
+ "total": 86,
  "pecas": [
   {
    "peca": "Q-R7",
@@ -797,6 +797,116 @@
    "liberado": true,
    "status_mesa": "aprovado",
    "origem": "stories 30/11–06/12 (rodada 9)"
+  },
+  {
+   "peca": "R-R16",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "ter 24/11",
+   "hora": "19h45",
+   "versao": "S03-R-R16-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa"
+  },
+  {
+   "peca": "R-R17",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "qui 26/11",
+   "hora": "19h45",
+   "versao": "S03-R-R17-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa"
+  },
+  {
+   "peca": "R-R18",
+   "marca": "Retrozap",
+   "formato": "reel",
+   "dia": "sáb 28/11",
+   "hora": "19h45",
+   "versao": "S03-R-R18-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa"
+  },
+  {
+   "peca": "D-R16",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "ter 24/11",
+   "hora": "19h45",
+   "versao": "S03-D-R16-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa"
+  },
+  {
+   "peca": "D-R17",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "qui 26/11",
+   "hora": "19h45",
+   "versao": "S03-D-R17-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa"
+  },
+  {
+   "peca": "D-R18",
+   "marca": "SPORT DNA",
+   "formato": "reel",
+   "dia": "sáb 28/11",
+   "hora": "19h45",
+   "versao": "S03-D-R18-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa"
+  },
+  {
+   "peca": "Q-R15",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "qui 26/11",
+   "hora": "19h45",
+   "versao": "S03-Q-R15-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa"
+  },
+  {
+   "peca": "Q-R16",
+   "marca": "Quiddo",
+   "formato": "reel",
+   "dia": "sáb 28/11",
+   "hora": "19h45",
+   "versao": "S03-Q-R16-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa"
+  },
+  {
+   "peca": "D-FX1",
+   "marca": "SPORT DNA",
+   "formato": "carrossel",
+   "dia": "qua 25/11",
+   "hora": "12h30",
+   "versao": "S03-D-FX1-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa · FIXAR"
+  },
+  {
+   "peca": "D-FX2",
+   "marca": "SPORT DNA",
+   "formato": "carrossel",
+   "dia": "sex 27/11",
+   "hora": "12h30",
+   "versao": "S03-D-FX2-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa · FIXAR"
+  },
+  {
+   "peca": "D-FX3",
+   "marca": "SPORT DNA",
+   "formato": "carrossel",
+   "dia": "dom 29/11",
+   "hora": "12h30",
+   "versao": "S03-D-FX3-v1",
+   "liberado": false,
+   "status_mesa": "aguardando aprovação na Mesa · FIXAR"
   }
  ]
 }
