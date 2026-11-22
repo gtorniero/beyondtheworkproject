@@ -10,6 +10,15 @@
    "liberar_a_partir_de_v": 999,
    "motivo": "o Gui reprovou o conceito (15/11): nunca publicar",
    "desde": "2026-11-15"
+  },
+  {
+   "peca": "F-RZ-1",
+   "versoes": [
+    "X-F-RZ-1-v1"
+   ],
+   "liberar_a_partir_de_v": 999,
+   "motivo": "mesmo fundo e mesmo esqueleto do Tagarela (16/11); o Gui proibiu série/fundo repetido (22/11)",
+   "desde": "2026-11-22"
   }
  ]
 }
