@@ -43,6 +43,7 @@ LOG = AQUI / "publicados.json"
 TRAVA = AQUI / ".postar.lock"
 SEM_FACEBOOK = Path(__file__).with_name("sem_facebook.json")
 SEGURAR = AQUI / "segurar.json"
+SERIES = AQUI / "series.json"
 GRAPH = "https://graph.facebook.com/v23.0"
 DONO_REPO = "gtorniero/beyondtheworkproject"
 RAW = f"https://raw.githubusercontent.com/{DONO_REPO}/"
@@ -293,7 +294,8 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                   "marca_txt": linha.get("marca", ""), "formato_txt": linha.get("formato", ""),
                   "data_txt": linha.get("data", ""), "hora_txt": linha.get("hora", ""),
                   "como": linha.get("como", ""), "titulo": linha.get("titulo", ""),
-                  "adesivo": linha.get("adesivo", ""), "problemas": [], "avisos": [], "conteudo": [],
+                  "adesivo": linha.get("adesivo", ""), "serie": (linha.get("serie") or "").strip(),
+                  "problemas": [], "avisos": [], "conteudo": [],
                   "reserva": False, "aprovado": False, "legenda": None, "legenda_fonte": "",
                   "midia": {}, "links": linha.get("links", "").split(),
                   "quadro": int(linha["quadro"]) if (linha.get("quadro") or "").isdigit() else 0,
@@ -652,6 +654,54 @@ class Registro:
             tmp = self.caminho.with_suffix(".tmp")
             tmp.write_text(json.dumps(self.dados, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
             os.replace(tmp, self.caminho)
+
+
+def le_series() -> tuple[dict, int]:
+    """series.json -> ({(marca, PECA): grupo}, janela em dias). A coluna 'serie' da agenda também vale."""
+    if not SERIES.exists():
+        return {}, 30
+    try:
+        d = json.loads(SERIES.read_text(encoding="utf-8"))
+    except ValueError as e:
+        raise SystemExit(f"series.json ilegível ({e}); corrija antes de publicar")
+    mapa = {}
+    for nome, g in (d.get("grupos") or {}).items():
+        for peca in g.get("pecas", []):
+            mapa[(g.get("marca"), peca.upper())] = nome
+    return mapa, int(d.get("janela_dias", 30))
+
+
+def trava_series(itens: list[dict], reg) -> None:
+    """Sem série repetida (Gui, 22/11): mesma série, mesmo fundo ou mesmo esqueleto só volta depois de N dias.
+    Vale para feed (reel e carrossel). Já publicada conta pela data em que saiu; na agenda, a primeira do grupo ganha."""
+    mapa, janela = le_series()
+
+    def grupo(marca, peca, it=None):
+        g = (it or {}).get("serie") or mapa.get((marca, (peca or "").upper()))
+        return f"{marca}:{g}" if g else None
+
+    saiu: dict[str, list[tuple[dt.date, str]]] = {}
+    for e in reg.itens:
+        if e.get("status") in ("publicado", "ja_existia", "publicando") and e.get("formato") in ("reel", "carrossel"):
+            g = grupo(e.get("marca"), e.get("peca"))
+            quando = (e.get("publicado_em") or e.get("agendado") or e.get("registrado_em") or "")[:10]
+            if g and quando:
+                saiu.setdefault(g, []).append((dt.date.fromisoformat(quando), e.get("peca")))
+    pub = {(e.get("marca"), e.get("peca")) for e in reg.itens if e.get("status") in ("publicado", "ja_existia", "publicando")}
+    ordem = sorted((i for i in itens if i["formato"] in ("reel", "carrossel") and i.get("data") and i.get("aprovado")
+                    and not i.get("reserva")), key=lambda i: (i["data"], i["pack"], i["peca"]))
+    for i in ordem:
+        g = grupo(i["marca"], i["peca"], i)
+        if not g or (i["marca"], i["peca"]) in pub:
+            continue
+        perto = [(d, p) for d, p in saiu.get(g, []) if p != i["peca"] and abs((i["data"] - d).days) < janela]
+        if perto:
+            d, p = max(perto)
+            i["problemas"].append(f"mesma série/fundo de {p} ({d:%d/%m}): o Gui não quer série repetida "
+                                  f"(espera {janela} dias; grupo {g.split(':', 1)[1]} em series.json)")
+            continue
+        if not i["problemas"] and i["data"] >= agora().date():
+            saiu.setdefault(g, []).append((i["data"], i["peca"]))
 
 
 def trava_duplicados(itens: list[dict], reg) -> None:
@@ -1418,6 +1468,7 @@ def main() -> int:
     for i in itens:
         if i.get("cede_para_sequencia") and (i["marca"], f"{i['peca']}.1") in aprovados_seq:
             i["problemas"].append("substituído pela sequência aprovada do mesmo dia (STORIES-SEQ)")
+    trava_series(itens, Registro())  # mesma série/fundo (series.json)
     trava_duplicados(itens, Registro())  # lê o publicados.json (só leitura)
 
     if a.cobertura:

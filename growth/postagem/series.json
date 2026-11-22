@@ -1,0 +1,12 @@
+{
+ "como_funciona": "Premissa do Gui (22/11): nada de mesma série, mesmo fundo ou mesmo esqueleto em sequência. Peças do mesmo grupo (mesma marca) só saem com 30 dias ou mais de distância da última que saiu; na agenda, só a primeira do grupo dentro da janela pode sair, o resto fica bloqueado. Peça nova de série entra aqui (ou na coluna 'serie' da agenda). Grupos montados olhando os quadros dos vídeos em 22/11.",
+ "janela_dias": 30,
+ "grupos": {
+  "rz-todo-grupo-tem-um": {"marca": "retrozap", "descricao": "mãos no celular + 'Todo grupo tem um: X' + troféu", "pecas": ["R-RX1", "F-RZ-1", "F-RZ-2", "F-RZ-3"]},
+  "rz-recibo-maos": {"marca": "retrozap", "descricao": "mãos segurando o recibo do casal", "pecas": ["R-RX2", "F-RZ-4"]},
+  "qd-qual-bicho": {"marca": "quiddo", "descricao": "família no sofá + 'Qual bicho você é no quiz?' + bichos", "pecas": ["Q-RX1", "F-QD-1", "F-QD-5"]},
+  "qd-ranking-verde": {"marca": "quiddo", "descricao": "fundo verde com pódio/ranking da família", "pecas": ["Q-RX2", "F-QD-2"]},
+  "qd-pergunta-do-dia": {"marca": "quiddo", "descricao": "fundo creme + 'Pergunta do dia' + barras A/B/C/D", "pecas": ["F-QD-3", "F-QD-4"]},
+  "sd-video-caixa-texto": {"marca": "sportdna", "descricao": "vídeo do esporte + frase em caixa colorida + número grande", "pecas": ["D-RX1", "D-RX2", "D-RX3", "D-RX4", "D-RX5", "D-RX6", "D-RX7"]}
+ }
+}
