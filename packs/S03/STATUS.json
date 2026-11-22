@@ -1,6 +1,6 @@
 {
  "pack": "S03",
- "liberadas": 74,
+ "liberadas": 73,
  "total": 86,
  "pecas": [
   {
@@ -526,10 +526,11 @@
    "dia": "30/11/2026 (seg) · extra",
    "hora": "19h45",
    "versao": "X-F-QD-6-v1",
-   "liberado": true,
-   "status_mesa": "aprovado (rodada 16, 18/11)",
+   "liberado": false,
+   "status_mesa": "aprovado · BLOQUEADO até 01/12 (tema Natal; regra do Gui 22/11)",
    "origem": "reel extra aprovado na Mesa (rodada 7) em 14/11",
-   "rotulo_ia": true
+   "rotulo_ia": true,
+   "nao_antes": "2026-12-01"
   },
   {
    "peca": "D-RX8",

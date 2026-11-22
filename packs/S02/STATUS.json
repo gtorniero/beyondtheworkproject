@@ -1,6 +1,6 @@
 {
  "pack": "S02",
- "liberadas": 55,
+ "liberadas": 54,
  "total": 56,
  "pecas": [
   {
@@ -70,8 +70,11 @@
    "dia": "dom 22/11",
    "hora": "12h30",
    "versao": "S02-Q-C6-v1",
-   "liberado": true,
-   "status_mesa": "aprovado"
+   "liberado": false,
+   "status_mesa": "removido · publicado por engano em 22/11 12h30 e excluído no mesmo dia (confirmação do Gui). Não republicar em novembro: Natal só a partir de 01/12.",
+   "removido_em": "2026-11-22",
+   "url_removida": "https://www.instagram.com/p/DgDIXaXiWpa/",
+   "nao_antes": "2026-12-01"
   },
   {
    "peca": "Q-S6",
