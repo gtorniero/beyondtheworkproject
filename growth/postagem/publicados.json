@@ -1593,6 +1593,69 @@
    "permalink": "https://www.instagram.com/stories/quiddo.app/4036091319193916869",
    "container_id": "18132743041855686",
    "publicado_em": "2026-11-22T12:00:10-03:00"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-C6",
+   "versao": "S02-R-C6-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-22T12:30:00-03:00",
+   "blobs": [
+    "6a60b5a0d6544d88082dc371e65fe89f72b71a3b",
+    "94832a52d1ffc85db35802eb1764bf0dfb577ce2",
+    "ae5e98079f06f27b0783e1a9d51ff00573a4d569",
+    "3ce5293d7d0001bb773d8ded4c5850967e016761",
+    "e5117d931fd685ca07159c6a907fdd5690bb2ccf",
+    "5dd2862093a0135e98afae4a7f7901df9f53c1c6"
+   ],
+   "status": "publicado",
+   "media_id": "18130526696486364",
+   "permalink": "https://www.instagram.com/p/DgDI_njo4ts/",
+   "container_id": "17906525280396278",
+   "publicado_em": "2026-11-22T12:35:47-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-C6",
+   "versao": "S02-Q-C6-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-22T12:30:00-03:00",
+   "blobs": [
+    "a15f629e53d5a31a2aaf277582f94ce422ef49ed",
+    "1e3ac4e5ecdeca5cc801b85a4d2f22a01133f66e",
+    "257266704bda54be7c9c33332eff7716b2385bd7",
+    "fe6b1fa1c0f9ce0461850bf820091097343c1548",
+    "79a37c75a5fb6ee0fab87714b0d207b343adfeee"
+   ],
+   "status": "ja_existia",
+   "permalink": "https://www.instagram.com/p/DgDIXaXiWpa/",
+   "obs": "mesma 1ª linha de legenda já publicada (2026-11-22T15:30)",
+   "registrado_em": "2026-11-22T12:35:48-03:00"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-C6",
+   "versao": "S02-D-C6-v1",
+   "pack": "S02",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-22T12:30:00-03:00",
+   "blobs": [
+    "9fcf092d4a4b28b33bf0fda610b926b3492a3a35",
+    "e3cdea7a35f9206aafaae1f891d5ad033764f069",
+    "2a630dd75f42663658aca594f07a3bc8a865511f",
+    "dc0693e3c38c665dd457d2399038f20fb208362c",
+    "0c2c794f13209929cab74ea900ca7310cc6278c7"
+   ],
+   "status": "publicado",
+   "media_id": "17968025343236684",
+   "permalink": "https://www.instagram.com/p/DgDJEtoo_9K/",
+   "container_id": "17928670452281754",
+   "publicado_em": "2026-11-22T12:36:30-03:00"
   }
  ]
 }
