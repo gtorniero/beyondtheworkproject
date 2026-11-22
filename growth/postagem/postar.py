@@ -382,6 +382,21 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                     it["avisos"].append("rótulo de IA ligado pelo LEGENDAS.txt (voz de IA; faltava rotulo_ia no STATUS.json)")
                     verifica_legenda(it)
 
+            # data mínima do STATUS.json ("nao_antes") e Natal só a partir de 01/12 (Gui, 22/11)
+            d = it.get("data")
+            na = (it.get("status") or {}).get("nao_antes") if isinstance(it.get("status"), dict) else None
+            if d and na:
+                try:
+                    lim = dt.date.fromisoformat(str(na)[:10])
+                except ValueError:
+                    lim = None
+                if lim and d < lim:
+                    it["problemas"].append(f"só pode sair a partir de {lim:%d/%m} (nao_antes no STATUS.json)")
+            if d and d.month in (10, 11):
+                tema = " ".join(str(it.get(k) or "") for k in ("legenda", "titulo", "adesivo"))
+                if re.search(r"\bnatal(?:in[oa]s?)?\b|\bnoel\b|\bceia\b|🎄|🎅|🤶", tema, re.I):
+                    it["problemas"].append("tema de Natal: só a partir de 01/12 (o Gui decidiu em 22/11)")
+
             # mídia
             arquivos_ok = True
             caminhos = []
