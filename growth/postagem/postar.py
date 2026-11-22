@@ -1616,6 +1616,11 @@ def main() -> int:
             ja = reg.achar(it["marca"], it["peca"], p)
             if ja:
                 e = ja[-1]
+                if e.get("status") == "publicando":
+                    # tentativa incerta (o script caiu entre o media_publish e a confirmação): não reenvia
+                    rel["avisos"].append(f"{it['peca']}: tentativa incerta no {p} desde {e.get('inicio') or e.get('agendado')} "
+                                         f"(container {e.get('container_id')}): confira o perfil e reconcilie o "
+                                         "publicados.json antes de reenviar")
                 rel["pulado"].append({"peca": nome, "plataforma": p,
                                       "motivo": f"já no registro ({e.get('status')} {e.get('versao')} "
                                                 f"{e.get('publicado_em') or e.get('agendado')})",
