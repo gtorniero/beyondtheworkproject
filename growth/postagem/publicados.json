@@ -1657,6 +1657,108 @@
    "permalink": "https://www.instagram.com/p/DgDJEtoo_9K/",
    "container_id": "17928670452281754",
    "publicado_em": "2026-11-22T12:36:30-03:00"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-S13",
+   "versao": "S03-R-S13-v1",
+   "pack": "S03",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-23T12:00:00-03:00",
+   "blobs": [
+    "759d9a34e09e638141809d4134f069ce00bd0f4f"
+   ],
+   "status": "publicado",
+   "media_id": "18351158677266216",
+   "permalink": "https://www.instagram.com/stories/retrozap.app/4036815231551879523",
+   "container_id": "17906787864396278",
+   "publicado_em": "2026-11-23T11:58:24-03:00"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-S13.2",
+   "versao": "SEQ-R-S13.2-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-23T12:00:00-03:00",
+   "blobs": [
+    "6e2941c6885ffe3379aaa55f5e276b9f85dff011"
+   ],
+   "status": "publicado",
+   "media_id": "18450633697133229",
+   "permalink": "https://www.instagram.com/stories/retrozap.app/4036815299332942565",
+   "container_id": "17906787939396278",
+   "publicado_em": "2026-11-23T11:58:31-03:00"
+  },
+  {
+   "marca": "retrozap",
+   "peca": "R-S13.3",
+   "versao": "SEQ-R-S13.3-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-23T12:00:00-03:00",
+   "blobs": [
+    "cf9c58bb0d7a45ea970244c7a3ed763db022279b"
+   ],
+   "status": "publicado",
+   "media_id": "18138127063668255",
+   "permalink": "https://www.instagram.com/stories/retrozap.app/4036815359361063465",
+   "container_id": "17906787981396278",
+   "publicado_em": "2026-11-23T11:58:40-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-S13.1",
+   "versao": "SEQ-Q-S13.1-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-23T12:00:00-03:00",
+   "blobs": [
+    "e24db430448254bae037d77b62e91238e3699d58"
+   ],
+   "status": "publicado",
+   "media_id": "18172812199463059",
+   "permalink": "https://www.instagram.com/stories/quiddo.app/4036815437735737091",
+   "container_id": "18132865366855686",
+   "publicado_em": "2026-11-23T11:58:47-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-S13.2",
+   "versao": "SEQ-Q-S13.2-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-23T12:00:00-03:00",
+   "blobs": [
+    "7e902386c30a58048451249dd13f28f6c87fd4f1"
+   ],
+   "status": "publicado",
+   "media_id": "17917393665490059",
+   "permalink": "https://www.instagram.com/stories/quiddo.app/4036815496204340389",
+   "container_id": "18132865387855686",
+   "publicado_em": "2026-11-23T11:58:55-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-S13.3",
+   "versao": "SEQ-Q-S13.3-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-23T12:00:00-03:00",
+   "blobs": [
+    "ab73594775a979ac24ce279c875bf6cc401fcd9a"
+   ],
+   "status": "publicado",
+   "media_id": "18079999682460288",
+   "permalink": "https://www.instagram.com/stories/quiddo.app/4036815561736689935",
+   "container_id": "18132865405855686",
+   "publicado_em": "2026-11-23T11:59:03-03:00"
   }
  ]
 }
