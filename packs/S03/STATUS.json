@@ -1,6 +1,6 @@
 {
  "pack": "S03",
- "liberadas": 72,
+ "liberadas": 80,
  "total": 86,
  "pecas": [
   {
@@ -808,7 +808,7 @@
    "hora": "19h45",
    "versao": "S03-R-R16-v1",
    "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa"
+   "status_mesa": "reprovado (rodada 18, 23/11)"
   },
   {
    "peca": "R-R17",
@@ -817,8 +817,8 @@
    "dia": "qui 26/11",
    "hora": "19h45",
    "versao": "S03-R-R17-v1",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 18, 23/11)"
   },
   {
    "peca": "R-R18",
@@ -828,7 +828,7 @@
    "hora": "19h45",
    "versao": "S03-R-R18-v1",
    "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa"
+   "status_mesa": "reprovado (rodada 18, 23/11)"
   },
   {
    "peca": "D-R16",
@@ -837,8 +837,8 @@
    "dia": "ter 24/11",
    "hora": "19h45",
    "versao": "S03-D-R16-v1",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 18, 23/11)"
   },
   {
    "peca": "D-R17",
@@ -847,8 +847,8 @@
    "dia": "qui 26/11",
    "hora": "19h45",
    "versao": "S03-D-R17-v1",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 18, 23/11)"
   },
   {
    "peca": "D-R18",
@@ -857,8 +857,8 @@
    "dia": "sáb 28/11",
    "hora": "19h45",
    "versao": "S03-D-R18-v1",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 18, 23/11)"
   },
   {
    "peca": "Q-R15",
@@ -867,8 +867,8 @@
    "dia": "qui 26/11",
    "hora": "19h45",
    "versao": "S03-Q-R15-v1",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 18, 23/11)"
   },
   {
    "peca": "Q-R16",
@@ -877,8 +877,8 @@
    "dia": "sáb 28/11",
    "hora": "19h45",
    "versao": "S03-Q-R16-v1",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 18, 23/11)"
   },
   {
    "peca": "D-FX1",
@@ -886,9 +886,9 @@
    "formato": "carrossel",
    "dia": "qua 25/11",
    "hora": "12h30",
-   "versao": "S03-D-FX1-v1",
+   "versao": "S03-D-FX1-v2",
    "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa · FIXAR"
+   "status_mesa": "aguardando aprovação na Mesa (v2: só RACKET, cores do RACKET) · FIXAR"
   },
   {
    "peca": "D-FX2",
@@ -897,8 +897,8 @@
    "dia": "sex 27/11",
    "hora": "12h30",
    "versao": "S03-D-FX2-v1",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa · FIXAR"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 18, 23/11) · FIXAR"
   },
   {
    "peca": "D-FX3",
@@ -907,8 +907,8 @@
    "dia": "dom 29/11",
    "hora": "12h30",
    "versao": "S03-D-FX3-v1",
-   "liberado": false,
-   "status_mesa": "aguardando aprovação na Mesa · FIXAR"
+   "liberado": true,
+   "status_mesa": "aprovado (rodada 18, 23/11) · FIXAR"
   }
  ]
 }
