@@ -336,7 +336,7 @@ def carrega_agenda(cont: Conteudo, fixar_sha: bool = True) -> list[dict]:
                     it["reserva"] = True
                 # aceita "aprovado" puro ou com nota entre parênteses, ex.: "aprovado (música de banco, 15/11)"
                 it["aprovado"] = st.get("liberado") is True and bool(
-                    re.fullmatch(r"aprovado(\s*\(.*\)|\s*·.*)?", (st.get("status_mesa") or "").strip().lower(), re.S))
+                    re.fullmatch(r"aprovado(\s*\([^)]*\))?(\s*·.*)?", (st.get("status_mesa") or "").strip().lower(), re.S))
                 # "aprovado · RESERVA: se a sequência ... for liberada, posta a sequência e NÃO este" (17/11)
                 it["cede_para_sequencia"] = bool(re.search(r"sequ[êe]ncia", st.get("status_mesa") or "", re.I)
                                                  and re.search(r"reserva", st.get("status_mesa") or "", re.I))
