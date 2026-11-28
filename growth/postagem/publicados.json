@@ -2805,6 +2805,108 @@
    "permalink": "https://www.instagram.com/reel/DgQy6jpNIoh/",
    "container_id": "17929695204281754",
    "publicado_em": "2026-11-27T19:52:36-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-S18.1",
+   "versao": "SEQ-Q-S18.1-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-28T12:00:00-03:00",
+   "blobs": [
+    "de1a3ba0c6baf251119c0a6a0c5ec9f8d6301b0d"
+   ],
+   "status": "publicado",
+   "media_id": "18049376735845062",
+   "permalink": "https://www.instagram.com/stories/quiddo.app/4040439169826154388",
+   "container_id": "18133386637855686",
+   "publicado_em": "2026-11-28T11:58:31-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-S18.2",
+   "versao": "SEQ-Q-S18.2-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-28T12:00:00-03:00",
+   "blobs": [
+    "bda82a5b30332155c2bae117732f34ef313e2123"
+   ],
+   "status": "publicado",
+   "media_id": "18435908164195998",
+   "permalink": "https://www.instagram.com/stories/quiddo.app/4040439233202927300",
+   "container_id": "18133386655855686",
+   "publicado_em": "2026-11-28T11:58:37-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "Q-S18.3",
+   "versao": "SEQ-Q-S18.3-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-28T12:00:00-03:00",
+   "blobs": [
+    "d9bc1d64c6410bb3a48d6225729072b28b995e2b"
+   ],
+   "status": "publicado",
+   "media_id": "17933810958426260",
+   "permalink": "https://www.instagram.com/stories/quiddo.app/4040439287685942820",
+   "container_id": "18133386682855686",
+   "publicado_em": "2026-11-28T11:58:45-03:00"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-S18",
+   "versao": "S03-D-S18-v2",
+   "pack": "S03",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-28T12:00:00-03:00",
+   "blobs": [
+    "2dec88f73bda4df7ca24898cf10f8e47c99e0ced"
+   ],
+   "status": "publicado",
+   "media_id": "18123041417008206",
+   "permalink": "https://www.instagram.com/stories/sportdna.app/4040439357017515937",
+   "container_id": "17929821351281754",
+   "publicado_em": "2026-11-28T11:58:53-03:00"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-S18.2",
+   "versao": "SEQ-D-S18.2-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-28T12:00:00-03:00",
+   "blobs": [
+    "1ce9549b18f0db33f9a6cb6182819b78e60e8b2d"
+   ],
+   "status": "publicado",
+   "media_id": "18190589932421664",
+   "permalink": "https://www.instagram.com/stories/sportdna.app/4040439422986391681",
+   "container_id": "17929821417281754",
+   "publicado_em": "2026-11-28T11:59:00-03:00"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-S18.3",
+   "versao": "SEQ-D-S18.3-v1",
+   "pack": "STORIES-SEQ",
+   "formato": "story",
+   "plataforma": "instagram",
+   "agendado": "2026-11-28T12:00:00-03:00",
+   "blobs": [
+    "0d0f92ba1abc501f2945a86db519dcbd58e4258c"
+   ],
+   "status": "publicado",
+   "media_id": "18055640645602888",
+   "permalink": "https://www.instagram.com/stories/sportdna.app/4040439478207748667",
+   "container_id": "17929821474281754",
+   "publicado_em": "2026-11-28T11:59:07-03:00"
   }
  ]
 }
