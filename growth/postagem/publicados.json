@@ -2907,6 +2907,50 @@
    "permalink": "https://www.instagram.com/stories/sportdna.app/4040439478207748667",
    "container_id": "17929821474281754",
    "publicado_em": "2026-11-28T11:59:07-03:00"
+  },
+  {
+   "marca": "quiddo",
+   "peca": "QE-C4",
+   "versao": "QE-C4-v2",
+   "pack": "QUIDDO-EDUCACAO",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-28T12:30:00-03:00",
+   "blobs": [
+    "3d377846bb5b56e0d189247b4031f98dd1a0bb76",
+    "628f09367e22a93d9bd2773b821ec15ea059cb19",
+    "9df16189139e74c2b897dcd4052807a17df80488",
+    "aad73052a5c8cb2e0826926865ac65957a62fb0c",
+    "a0e8aaff2efa2e09d814284e2f84cc4ed628bf85",
+    "53fe8887039b50fc32df47db6050be866d4c2e85"
+   ],
+   "status": "publicado",
+   "media_id": "18655997704000797",
+   "permalink": "https://www.instagram.com/p/DgSlynfnXNa/",
+   "container_id": "18133391080855686",
+   "publicado_em": "2026-11-28T12:36:00-03:00"
+  },
+  {
+   "marca": "sportdna",
+   "peca": "D-C9",
+   "versao": "S03-D-C9-v3",
+   "pack": "S03",
+   "formato": "carrossel",
+   "plataforma": "instagram",
+   "agendado": "2026-11-28T12:30:00-03:00",
+   "blobs": [
+    "7c27749d98c6556e1f686f5e251cbe240944e230",
+    "ed0941e7fdc76f20cc20e5844d0089bd59d59974",
+    "72a97bd978b05a966fdc0e9d1dff98c24fc9176a",
+    "683bf85fa9dfee6ca9ad8d919005ed42c4d69321",
+    "2f4a77a62daa53f131f32a787795218f42984bdc",
+    "9918270bf8a566f186ed42c6097233f2e0bfee50"
+   ],
+   "status": "publicado",
+   "media_id": "18098332400174089",
+   "permalink": "https://www.instagram.com/p/DgSl2uxDCyY/",
+   "container_id": "17929829790281754",
+   "publicado_em": "2026-11-28T12:36:35-03:00"
   }
  ]
 }
