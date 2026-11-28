@@ -35,6 +35,12 @@ async def render_reel(page, p, html_path, media_dir, tmp):
            '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', '20', '-preset', 'medium',
            '-r', str(FPS), '-c:a', 'aac', '-b:a', '64k', '-shortest', '-movflags', '+faststart', str(out)]
     subprocess.run(cmd, check=True)
+    if p.get('music'):  # S05: trilha de banco de um reel aprovado, com fade de entrada e de saída
+        m4a = tmp / f"{p['id']}.m4a"; C.trilha(C.PACKS / p['music'], p['total'], m4a)
+        silent = out.with_name(out.stem + '-mudo.mp4'); out.rename(silent)
+        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', str(silent), '-i', str(m4a), '-map', '0:v', '-map', '1:a',
+                        '-c:v', 'copy', '-c:a', 'copy', '-shortest', '-movflags', '+faststart', str(out)], check=True)
+        silent.unlink(); m4a.unlink()
     # pôster para a ferramenta (frame de meio)
     shutil.copy(fr / f'{min(n - 1, int(n * p.get("poster", .55))):05d}.jpg', media_dir / f"{p['id']}-poster.jpg")
     shutil.rmtree(fr)
@@ -88,7 +94,7 @@ async def main(only=None, part='all'):
                 'slot': p.get('slot', ''), 'title': p['title'], 'kind': p.get('kind', 'engajamento'),
                 'caption': p['caption'], 'notes': p.get('notes', ''), 'version': f"{C.PACK}-{p['id']}-v{v}",
                 'v': v, 'hash': mh, 'media': files, 'editable': f"editaveis/{p['id']}.html",
-                'duration': p.get('total'), 'sticker': p.get('sticker', ''),
+                'duration': p.get('total'), 'sticker': p.get('sticker', ''), 'music': p.get('music', ''), 'frames': p.get('frames', 0),
             }
             print(f"{p['id']}: v{v} {files} {time.time() - t0:.1f}s", flush=True)
         await br.close()

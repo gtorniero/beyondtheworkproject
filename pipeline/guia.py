@@ -9,9 +9,7 @@ SUB = {'reel': 'reels', 'carrossel': 'carrosseis', 'story': 'stories'}
 ZIP = {'Quiddo': 'quiddo.zip', 'Retrozap': 'retrozap.zip', 'SPORT DNA': 'sportdna.zip'}
 
 def como(p):
-    if p['fmt'] == 'reel': return 'Business Suite · reel'
-    if p['fmt'] == 'carrossel': return 'Business Suite · post'
-    return 'Lembrete ao Gui (app)' if p.get('sticker') and 'Sem adesivo' not in p['sticker'] else 'Business Suite · story'
+    return {'reel': 'Instagram · reel', 'carrossel': 'Instagram · carrossel', 'story': 'Instagram · story (sequência)'}[p['fmt']]
 
 def hora(p):
     return p.get('slot') or ('12h' if p['fmt'] == 'story' else '12h30')
@@ -26,65 +24,55 @@ def linhas(P):
     order = {'reel': 0, 'carrossel': 1, 'story': 2}
     return sorted(P, key=lambda p: (p['day'], hora(p).zfill(3), p['brand'], order[p['fmt']]))
 
+def quadros(p):
+    """Story em sequência (S05+): cada quadro vira uma linha "<PECA>.<n>" (formato lido pelo postar.py, como na STORIES-SEQ)."""
+    n = p.get('frames') or 0
+    if p['fmt'] != 'story' or n < 2: return [(p['id'], p['version'], p['media'], 0, '')]
+    base = p['version'].rsplit('-v', 1)
+    return [(f"{p['id']}.{k}", f"{base[0].replace(p['id'], p['id'] + '.' + str(k))}-v{base[1]}", [p['media'][k - 1]], k, f"{p['id']}.{k - 1}" if k > 1 else '') for k in range(1, n + 1)]
+
+def audio(p):
+    if p['fmt'] != 'reel': return ''
+    return 'Música de banco (Mixkit) já no vídeo, sem narração; entrada e saída suaves.' if p.get('music') else 'Sem áudio.'
+
 def agenda_csv(P):
-    b = io.StringIO(); w = csv.writer(b)
-    w.writerow(['data', 'hora', 'marca', 'formato', 'peca', 'versao', 'como', 'arquivos', 'links', 'adesivo', 'titulo'])
+    b = io.StringIO(); w = csv.writer(b, lineterminator='\n')
+    w.writerow(['data', 'hora', 'marca', 'formato', 'peca', 'versao', 'onde', 'arquivos', 'links', 'audio', 'titulo', 'como', 'serie', 'observacao', 'quadro', 'anterior'])
     for p in linhas(P):
-        w.writerow([DATAS[p['day']], hora(p), p['brand'], p['fmt'], p['id'], p['version'], como(p), arquivos(p), links(p), p.get('sticker', ''), p['title']])
+        for peca, ver, media, q, ant in quadros(p):
+            m = list(media) + ([f"{p['id']}-capa.png"] if p['fmt'] == 'reel' else [])
+            obs = 'candidata do S03 (sem decisão); FIXAR no perfil' if p['id'] == 'D-FX1' else ('sequência de 3, mesmo horário' if q else '')
+            w.writerow([DATAS[p['day']], hora(p), p['brand'], p['fmt'], peca, ver, como(p), ', '.join(m),
+                        ' '.join(f"{RAW}/{SLUG[p['brand']]}/{SUB[p['fmt']]}/{f}" for f in m), audio(p), p['title'], 'postar.py', '', obs, q or '', ant])
     return b.getvalue()
 
-PROMPT = f"""DOT, agende o Pack Semanal {C.NUM} (Quiddo, Retrozap e SPORT DNA, semana de {C.SEMANA_LONGA}) seguindo o guia do pack.
-Mídia, legendas e agenda: GitHub, branch social, pasta packs/{C.PACK} (links diretos no agenda.csv). Só agende o que o STATUS.json marca como liberado.
-Antes de cada peça, cheque duplicidade no Registro de publicações, no Planejador e na grade do perfil. Depois, registre.
-Tudo vai agendado no Meta Business Suite, inclusive os stories (o CTA já está na arte). Não edite nada. Se der erro, pare e me mande print."""
+PROMPT = f"""Growth, publique o Pack Semanal {C.NUM} (Quiddo, Retrozap e SPORT DNA, {C.SEMANA_LONGA}) com o postar.py, lendo packs/{C.PACK}/agenda.csv, STATUS.json e LEGENDAS.txt do branch social.
+Só sai o que o STATUS.json marca como liberado, na versão exata. Antes de cada peça, rode as travas de duplicidade do CONTINUIDADE.md. Stories saem em sequência (quadro 1, 2 e 3 no mesmo horário)."""
 
 def guia_md(P, pack=C.PACK):
-    rows = '\n'.join(f"| {DATAS[p['day']]} | {hora(p)} | {p['brand']} | {p['fmt']} | {p['id']} ({p['version'].split('-')[-1]}) | {como(p)} |" for p in linhas(P))
-    stickers = '\n'.join(f"- **{p['id']}** ({p['brand']}, {DATAS[p['day']]}): {p['sticker']}" for p in linhas(P) if p['fmt'] == 'story' and p.get('sticker'))
+    rows = '\n'.join(f"| {DATAS[p['day']]} | {hora(p)} | {p['brand']} | {p['fmt']} | {p['id']} ({p['version'].split('-')[-1]}) | {p['title']} |" for p in linhas(P))
     return f"""# Guia de publicação · Pack Semanal {C.NUM}
 
-Para o DOT (ChatGPT, modo agente) agendar as peças aprovadas na Mesa de Aprovação. Semana de {C.SEMANA_LONGA}.
+Semana de {C.SEMANA_LONGA} (grade de dezembro: carrossel ter, qui, sáb e seg às 12h30; reel qua, sex e dom às 19h45; stories todo dia às 12h).
+Quem publica: o Growth, com `growth/postagem/postar.py` (regra do Gui, 22/11). O DOT não recebe mais nada.
 
 ## Onde está tudo
 
-- **Mídia e legendas:** no GitHub, pasta pública `packs/{C.PACK}` do branch `social` (`{RAW}/<marca>/...`). Cada linha do `agenda.csv` traz os links diretos dos arquivos. `LEGENDAS.txt` de cada marca: `{RAW}/<marca>/LEGENDAS.txt`.
-- **Liberação:** o arquivo `{RAW}/STATUS.json` diz quais peças estão aprovadas (`"liberado": true`). Só agende peça liberada, na versão indicada ali.
-- **Controle do que já foi feito:** planilha "Registro de publicações" na pasta "Entrada do DOT" do Drive.
+- Mídia, `agenda.csv`, `STATUS.json`, `manifest.json` e `LEGENDAS.txt` de cada marca: `packs/{C.PACK}` do branch `social` ({RAW}).
+- Só sai peça com `"liberado": true` no STATUS.json, na versão indicada (a Mesa libera peça a peça).
+- Reels: MP4 1080×1920 com música de banco (Mixkit) já no arquivo, sem narração; capa `-capa.png` (arte 4:5 no centro).
+- Stories: cada um é uma sequência de 3 quadros (`<PECA>.1`, `.2`, `.3`), no mesmo horário, sem adesivo (o CTA está na arte).
+- D-FX1 v2 é candidata do S03 (sem decisão): só sai se o Gui aprovar, e é para FIXAR no perfil.
 
 ## Regras
 
-- Publicar só peças com `"liberado": true` no STATUS.json, na versão indicada.
-- **Antes de cada peça, checar duplicidade, nesta ordem:**
-  1. o Registro de publicações (mesma peça e versão já marcada "agendado" ou "publicado");
-  2. o Planejador do Business Suite (mesma data, hora e conta, ou mesma primeira linha de legenda);
-  3. a grade do perfil (mesma primeira linha de legenda).
-  Se achar, não agende de novo; marque "já existia" no Registro.
-- Logo depois de agendar, preencher o Registro: peça, versão, conta, data/hora, status "agendado" e link.
-- Uma marca por conta. Conferir a conta do Instagram antes de cada agendamento.
-- Não editar arte, legenda, logo, bio, foto de perfil nem destaques. Legenda exatamente como no `LEGENDAS.txt`.
-- Se algo falhar (login, upload, capa, horário, conta), parar e avisar o Gui com um print.
-- O Gui não posta nada: tudo vai agendado.
-
-## Como agendar cada formato no Meta Business Suite
-
-Entrar em business.facebook.com, abrir **Planejador** e escolher a conta da marca.
-
-**Carrossel (feed).** Criar post → só a conta do Instagram da marca → adicionar as imagens na ordem do nome (`-1`, `-2`, `-3`…) → colar a legenda da peça → Agendar → data e hora da agenda.
-
-**Reel.** Criar reel → conta da marca → enviar o MP4 → em capa ou miniatura, enviar o PNG `-capa` da mesma peça → colar a legenda → manter "compartilhar no feed" ligado → Agendar.
-Os MP4 saem sem música. Se o Business Suite mostrar uma biblioteca de músicas para o reel, escolher uma música animada em alta. Se não mostrar, perguntar ao Gui antes: ele decide entre agendar sem música ou postar pelo app com música.
-
-**Story.** Criar story → conta da marca → PNG → Agendar. Nenhum story usa adesivo do Instagram: o CTA ("responde no direct", "link na bio") já está desenhado na arte. O Gui não posta nada; tudo é agendado.
+- Travas de duplicidade do `CONTINUIDADE.md` antes de cada peça; registro com link e status depois.
+- Legenda exatamente como no `LEGENDAS.txt`. Não editar arte, legenda, bio nem destaques.
+- Nada de anúncio, impulsionamento ou gasto.
 
 ## Agenda
 
-| Data | Hora | Marca | Formato | Peça | Como |
+| Data | Hora | Marca | Formato | Peça | Título |
 |---|---|---|---|---|---|
 {rows}
-
-## Prompt para colar no DOT
-
-```
-{PROMPT}
-```
 """

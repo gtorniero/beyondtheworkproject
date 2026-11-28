@@ -6,16 +6,16 @@ ROOT = Path(__file__).parent
 A = ROOT / 'assets'
 FONTS = ROOT / 'fonts'
 OUT = ROOT / 'out'
-PACK = 'S03'  # Pack Semanal 03
-NUM = '03'
-SEMANA = '23–29/11'
-SEMANA_LONGA = '23 a 29/11/2026'
-PREV = 'S02'  # pack anterior (para a grade)
+PACK = 'S05'  # Pack Semanal 05
+NUM = '05'
+SEMANA = '08–14/12'
+SEMANA_LONGA = '08 a 14/12/2026'
+PREV = 'S04'  # pack anterior (para a grade)
 
-# Datas da semana do pack (dia 1 = segunda 23/11/2026)
-DIAS = {1: 'seg 23/11', 2: 'ter 24/11', 3: 'qua 25/11', 4: 'qui 26/11', 5: 'sex 27/11', 6: 'sáb 28/11', 7: 'dom 29/11'}
-DATAS = {1: '23/11/2026 (seg)', 2: '24/11/2026 (ter)', 3: '25/11/2026 (qua)', 4: '26/11/2026 (qui)',
-         5: '27/11/2026 (sex)', 6: '28/11/2026 (sáb)', 7: '29/11/2026 (dom)'}
+# Datas do pack (grade de dezembro: S05 = ter 08/12 a seg 14/12; dia 1 = terça 08/12/2026)
+DIAS = {1: 'ter 08/12', 2: 'qua 09/12', 3: 'qui 10/12', 4: 'sex 11/12', 5: 'sáb 12/12', 6: 'dom 13/12', 7: 'seg 14/12'}
+DATAS = {1: '08/12/2026 (ter)', 2: '09/12/2026 (qua)', 3: '10/12/2026 (qui)', 4: '11/12/2026 (sex)',
+         5: '12/12/2026 (sáb)', 6: '13/12/2026 (dom)', 7: '14/12/2026 (seg)'}
 
 def b64(p):
     return base64.b64encode(Path(p).read_bytes()).decode()
@@ -225,3 +225,20 @@ def legenda(txt, t0, t1, y=1430, total=0):
     """Legenda curta por cima da gravação (texto do reel)."""
     return (f'<div class="abs" style="left:60px;right:60px;top:{y}px;text-align:center;z-index:40;opacity:0;animation:fade .25s linear {t0:.2f}s 1 both{f",fadeOut .25s linear {t1:.2f}s 1 forwards" if t1 else ""}">'
             f'<span style="display:inline-block;background:#fff;color:#111;border-radius:18px;padding:16px 28px;font:800 46px/1.2 \'DM Sans\',sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.35)">{txt}</span></div>')
+
+# ---------------------------------------------------------------- S05: card final aprovado e trilha de banco
+def endcard(path, w=1080, h=1350):
+    """Card final de CTA já aprovado na Mesa (mesma arte, reaproveitada como último card do carrossel)."""
+    return (f'<section class="page" style="width:{w}px;height:{h}px;background:#000">'
+            f'<img src="data:image/png;base64,{b64(path)}" style="display:block;width:{w}px;height:{h}px"></section>')
+
+PACKS = ROOT.parent / 'packs'
+
+def trilha(src_mp4, total, out_m4a):
+    """Música de banco (Mixkit) tirada de um reel já aprovado, sem voz. Duas cópias com crossfade de 1,5 s
+    para cobrir a duração, entrada de 0,4 s e saída suave de 2 s (nada de corte seco no fim)."""
+    fo = max(0.5, total - 2.0)
+    subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', str(src_mp4), '-i', str(src_mp4), '-filter_complex',
+                    f'[0:a]aresample=48000[a0];[1:a]aresample=48000[a1];[a0][a1]acrossfade=d=1.5:c1=tri:c2=tri,atrim=0:{total},'
+                    f'loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000,afade=t=in:st=0:d=0.4,afade=t=out:st={fo}:d=2.0[a]',
+                    '-map', '[a]', '-c:a', 'aac', '-b:a', '160k', str(out_m4a)], check=True)

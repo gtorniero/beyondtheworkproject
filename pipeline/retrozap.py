@@ -127,402 +127,372 @@ LINHAS_DEZ = [
     ('marca', 'Retrospectiva do grupo', 'var(--manga)', False, None),
 ]
 
-def r_r8():
-    T = 17.0
-    tl = TL(T)
-    s0 = f'''<div {tl.scene(0, 3.4, fin=False)}>
-      <div class="abs mono" style="left:90px;top:420px;font-size:36px;color:var(--neblina);{at(.05,'fade')}">TURMA DO CHURRAS · CONFIGURAÇÕES</div>
-      <div class="abs t" style="left:90px;top:500px;width:900px;font-size:150px;{at(.15,'rise')}">Modo dezembro:</div>
-      <div class="abs" style="left:90px;top:820px;display:flex;align-items:center;gap:40px;transform:scale(1.6);transform-origin:left center">{toggle(1.3)}</div>
-      <div class="abs t hl" style="left:470px;top:790px;font-size:130px;opacity:0;{at(1.5,'stamp')}">ATIVADO</div>
-    </div>'''
-    rows, t = '', 3.7
-    for i, (ic, txt, cor, stuck, sub) in enumerate(LINHAS_DEZ):
-        last = i == len(LINHAS_DEZ) - 1
-        subh = f'<div class="mono" style="font-size:32px;color:var(--goiaba);margin-top:6px;{at(t + 1.0,"fade")}">{sub}…</div>' if sub else ''
-        rows += f'''<div style="display:flex;align-items:center;gap:28px;background:{'var(--acai)' if not last else 'var(--acai2)'};border:{'5px solid var(--manga)' if last else '3px solid var(--linha)'};border-radius:36px;padding:32px 32px;margin-bottom:28px;{at(t,'slideR')}">
-          <div style="flex:none;width:100px;height:100px;border-radius:26px;background:var(--areia);display:flex;align-items:center;justify-content:center">{icon(ic, 80)}</div>
-          <div style="flex:1;min-width:0"><div style="font-size:50px;font-weight:700;line-height:1.15">{txt}</div>{subh}</div>{toggle(t + .7, cor, stuck=stuck, kx=37 if stuck else 74)}</div>'''
-        t += 1.7 if not stuck else 2.4
-    s1 = f'''<div {tl.scene(3.4, 13.6)}>
-      <div class="abs mono" style="left:90px;top:300px;font-size:32px;color:var(--neblina)">MODO DEZEMBRO · ATIVADO</div>
-      <div class="abs" style="left:70px;top:370px;width:940px">{rows}</div>
-    </div>'''
-    s2 = f'<div {tl.scene(13.6, T, fout=False)}>{fim(13.6, "Dezembro chegou no grupo.")}</div>'
-    body = f'<section class="page" style="width:1080px;height:1920px">{s0}{s1}{s2}</section>'
-    crow = ''.join(f'''<div style="display:flex;align-items:center;gap:24px;background:var(--acai);border:3px solid var(--linha);border-radius:30px;padding:18px 26px;margin-bottom:18px">
-        <div style="flex:none;width:80px;height:80px;border-radius:22px;background:var(--areia);display:flex;align-items:center;justify-content:center">{icon(ic, 64)}</div>
-        <div style="flex:1;font-size:40px;font-weight:700">{txt}</div>{toggle_static(True, cor, half=stuck)}</div>''' for ic, txt, cor, stuck, _ in LINHAS_DEZ)
-    cover_body = f'''<div class="page" style="width:1080px;height:1350px">
-      <div class="abs t" style="left:80px;top:80px;width:920px;font-size:120px">Modo dezembro: <span class="hl">ativado.</span></div>
-      <div class="abs" style="left:80px;top:400px;width:920px">{crow}</div></div>'''
-    piece(id='R-R8', fmt='reel', day=1, slot='19h45', title='Trend liga/desliga: modo dezembro ativado no grupo', total=T, poster=.55, kind='trend',
-          html=doc('R-R8', FONTS, CSS + tl.style(), body, 1080, 1920, reel=True, total=T),
-          cover=cover_from_feed(cover_body, 'var(--noite)'),
-          caption=('Modo dezembro: ativado no grupo. 🎄\n\n'
-                   'Amigo secreto: ligado.\nFigurinha de Natal: ligada.\nLista de presentes com link: ligada.\nConfra marcada: em votação desde outubro.\n\n'
-                   'Manda no grupo que ainda não marcou a confra 👇\n'
-                   'No fim do ano, o Retrozap transforma a conversa do grupo em retrospectiva. retrozap.com.br\n'
-                   '#retrozap #dezembro #amigosecreto #confraternizacao #grupodeamigos #trend'),
-          notes='Trend "liga/desliga" (doc do DOT de 06/11): chaves desenhadas pela marca, sem interface de terceiros. A chave da confra trava no meio (piada). Motivo de envio: marcar o grupo que não marcou a confra. Áudio em alta no app.')
+
+SIM = '<span class="sim">simulação · nomes de exemplo</span>'
+EXEMPLO = '<span class="sim">dados de exemplo · Turma do Churras</span>'
+
+def fim(t, frase='e o seu grupo?', top=470):
+    """Encerramento dos reels (sem preço na arte)."""
+    return f'''<div class="abs" style="left:0;right:0;top:{top}px;display:flex;justify-content:center;{at(t + .1,'pop')}">{assinatura(700)}</div>
+      <div class="abs t" style="left:90px;right:90px;top:{top + 290}px;text-align:center;font-size:88px;{at(t + .4,'rise')}">{frase}</div>
+      <div class="foot" style="top:{top + 640}px;font-size:42px;{at(t + .9,'fade')}">retrozap.com.br</div>'''
+
+def chat_head(sub='Lu, Caio, Pedrão, Bia, Rafa, você'):
+    return f'''<div style="height:110px;background:var(--noite);color:var(--areia);display:flex;align-items:center;gap:18px;padding:0 26px">
+      <div style="width:70px;height:70px;border-radius:50%;background:var(--manga);display:flex;align-items:center;justify-content:center">{icon('hamburger', 50)}</div>
+      <div><div style="font:800 34px/1.1 'Bricolage Grotesque'">Turma do Churras</div><div style="font-size:22px;color:var(--neblina)">{sub}</div></div></div>'''
 
 # =====================================================================================
-# R-C7 · Carrossel · Amigo secreto do grupo: o regulamento (bloco de notas) (ter, capa Manga)
+# S05 · 08–14/12/2026 · Retrospectiva 2026 no centro, sem preço em nenhuma peça (Gui, rodada 18)
 # =====================================================================================
-REGRAS = [
-    ('Valor: R$&nbsp;50.', 'Alguém vai dar um de R$&nbsp;20 e dizer que "achou a sua cara".'),
-    ('Sorteio até sexta.', 'Vai ser refeito 3 vezes. Alguém sempre tira a si mesmo.'),
-    ('Cada um manda a lista de desejos.', 'Uma pessoa manda. O resto: "qualquer coisa tá bom".'),
-    ('Ninguém revela quem tirou.', 'Revelado no mesmo dia. Por áudio.'),
-    ('Troca no dia da confra.', 'Alguém vai esquecer o presente em casa.'),
-]
+END_RG = C.PACKS / 'S04' / 'retrozap' / 'carrosseis' / 'R-C10-6.png'   # card final aprovado (grupo)
+END_RC = C.PACKS / 'S04' / 'retrozap' / 'carrosseis' / 'R-C12-5.png'   # card final aprovado (casal)
 
-def r_c7():
-    def nota(inner, h=1090, rot=0):
-        return (f'<div class="abs note" style="left:90px;top:150px;width:900px;height:{h}px;transform:rotate({rot}deg);overflow:hidden">'
-                f'<div style="height:110px;background:#F6E7C8;display:flex;align-items:center;justify-content:space-between;padding:0 40px;font:700 30px/1 \'DM Sans\';color:#8A6A2E">'
-                f'<span>‹ Notas</span><span>amigo secreto 2026</span><span>Feito</span></div>'
-                f'<div style="padding:40px 50px">{inner}</div></div>')
-    capa_nota = nota(f'''<div class="t" style="font-size:96px;line-height:1">Regulamento do amigo secreto</div>
-        <div style="font-size:40px;margin-top:30px;line-height:1.5;font-weight:700">Turma do Churras · 2026</div>
-        <div style="margin-top:50px;font-size:40px;line-height:2;font-weight:500">1. Valor…<br>2. Sorteio…<br>3. Lista…</div>''', 760, -3)
+def SC(tl, a, z):
+    return tl.scene(max(0, a - .04), z, fin=False, fout=False)
+
+CSS += """
+.bingo{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.bingo .c{background:var(--areia);color:var(--noite);border-radius:22px;height:208px;padding:16px 14px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;font-weight:700;font-size:25px;line-height:1.15}
+.bingo .c.x{background:var(--manga)}
+.ticket{background:var(--areia);color:var(--noite);border-radius:26px;position:relative;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.ticket::after{content:'';position:absolute;left:0;right:0;bottom:-18px;height:36px;background:radial-gradient(circle at 18px 0,transparent 17px,var(--areia) 18px) repeat-x;background-size:36px 36px}
+.flux{background:var(--acai);border:3px solid var(--linha);border-radius:26px;padding:22px 28px;font-weight:700;font-size:36px;line-height:1.2;text-align:center}
+.flux.q{background:var(--manga);color:var(--noite);border-color:var(--manga)}
+.seta{position:absolute;width:6px;background:var(--neblina);opacity:.7}
+"""
+
+# -------------------------------------------------------------------------------------
+# R-C13 · Carrossel (ter 08/12) · Bingo do grupo em dezembro
+# -------------------------------------------------------------------------------------
+BINGO = [('camera-with-flash', 'Foto da árvore montada'), ('spiral-calendar-pad', '"Quem leva o quê?"'), ('sparkles', 'Figurinha de Papai Noel'), ('black-sun-with-rays', 'Bom dia com flor e glitter'),
+         ('ghost', 'Sumido aparece no dia 24'), ('scroll', '"Feliz Natal" copiado de outro grupo'), ('hamburger', 'Foto do prato da ceia'), ('clipboard', 'Lista do amigo secreto'),
+         ('wastebasket', 'Alguém sai do grupo (e volta)'), ('frame-with-picture', 'Foto de família de 2009'), ('clinking-beer-mugs', '"Vai ter churrasco dia 25?"'), ('incoming-envelope', 'Corrente de fim de ano'),
+         ('speaker-with-three-sound-waves', 'Áudio cantando parabéns atrasado'), ('house-with-garden', '"A ceia é lá em casa"'), ('eyes', 'Visualizou e não respondeu'), ('party-popper', 'Contagem regressiva às 23h59')]
+
+def r_c13():
+    def cartela(marcadas=()):
+        return '<div class="bingo">' + ''.join(f'<div class="c{" x" if k in marcadas else ""}">{icon(ic, 84)}<span>{t}</span></div>' for k, (ic, t) in enumerate(BINGO)) + '</div>'
     pages = [page(f'''
       <div class="abs" style="inset:0;background:var(--manga)"></div>
-      {capa_nota.replace('top:150px', 'top:100px')}
-      <div class="abs" style="left:760px;top:760px;transform:rotate(10deg)">{icon('party-popper', 230)}</div>
-      <div class="abs t" style="left:90px;top:960px;width:900px;font-size:76px;color:var(--noite)">O que está escrito × o que vai acontecer.</div>
-      <div class="abs" style="left:90px;top:1200px"><span class="tag" style="background:var(--noite);border-color:var(--noite)">Arrasta →</span></div>''')]
-    for i in range(0, len(REGRAS), 2):
-        bloco = ''
-        for j, (regra, real) in enumerate(REGRAS[i:i + 2]):
-            n = i + j + 1
-            bloco += f'''<div style="display:flex;gap:26px;align-items:flex-start;margin-bottom:70px">
-              <div class="ck">✓</div><div style="flex:1"><div class="t" style="font-size:86px;line-height:1.02">{n}. {regra}</div>
-              <div class="esc" style="font-size:52px;line-height:1.3;margin-top:26px">→ {real}</div></div></div>'''
-        if i + 2 > len(REGRAS):
-            bloco += f'''<div style="display:flex;gap:26px;align-items:flex-start;margin-bottom:70px">
-              <div class="ck"></div><div style="flex:1"><div class="t" style="font-size:86px;line-height:1.02">6. ________</div>
-              <div class="esc" style="font-size:52px;line-height:1.3;margin-top:22px">→ comenta a regra que falta no seu grupo.</div></div></div>'''
-        pages.append(page(f'''
-          {nota(bloco, 1050, 1.5 if i % 4 else -1.5)}
-          <div class="abs mono" style="left:90px;top:1250px;font-size:28px;color:var(--neblina)">{f'REGRAS {i+1}–{i+2}' if i + 2 <= len(REGRAS) else f'REGRA {i+1}'} DE {len(REGRAS)}</div>'''))
+      <div class="abs mono" style="left:80px;top:70px;font-size:28px;letter-spacing:.08em;color:var(--noite)">DEZEMBRO · 4 × 4</div>
+      <div class="abs t" style="left:80px;top:130px;width:920px;font-size:128px;color:var(--noite)">Bingo do grupo em dezembro.</div>
+      <div class="abs" style="left:110px;top:560px;width:860px;transform:rotate(-3deg);background:var(--noite);border-radius:34px;padding:22px;box-shadow:0 30px 60px rgba(26,11,46,.35);height:720px;overflow:hidden">
+        <div style="transform:scale(.88);transform-origin:top left;width:927px">{cartela((0, 5, 10))}</div></div>''', cls='')]
     pages.append(page(f'''
-      <div class="abs" style="left:80px;top:120px">{icon('incoming-envelope', 200)}</div>
-      <div class="abs t" style="left:80px;top:380px;width:920px;font-size:100px">Cola no grupo antes do <span class="hl">sorteio.</span></div>
-      <div class="abs" style="left:80px;top:700px;width:900px;font-size:46px;line-height:1.3">E em dezembro, o Retrozap lê a conversa do grupo e entrega os troféus do ano.</div>
-      <div class="abs" style="left:80px;top:1110px">{assinatura(420)}</div>
-      <div class="abs" style="right:80px;top:1155px;font-size:34px;font-weight:700">retrozap.com.br</div>'''))
-    piece(id='R-C7', fmt='carrossel', day=2, slot='12h30', title='Amigo secreto do grupo: o regulamento (bloco de notas)', kind='engajamento', w=1080, h=1350,
-          html=doc('R-C7', FONTS, CSS, ''.join(pages), 1080, 1350),
-          caption=('Regulamento do amigo secreto do grupo: o que está escrito × o que vai acontecer. 🎁\n\n'
-                   '1. Valor: R$ 50. Alguém vai dar um de R$ 20.\n2. Sorteio até sexta. Vai ser refeito 3 vezes.\n3. Lista de desejos. "Qualquer coisa tá bom."\n4. Ninguém revela quem tirou. Revelado no mesmo dia, por áudio.\n5. Troca no dia da confra. Alguém esquece o presente.\n\n'
-                   'Manda no grupo do amigo secreto antes do sorteio 👇\n'
-                   'retrozap.com.br\n#amigosecreto #amigooculto #retrozap #grupodeamigos #natal'),
-          notes='Bloco de notas genérico (sem marca de app) com o "realidade" rabiscado em Chiclete. Motivo de envio: colar no grupo antes do sorteio. Capa Manga, páginas Noite.')
+      <div class="abs mono" style="left:80px;top:60px;font-size:26px;letter-spacing:.08em;color:var(--neblina)">A CARTELA · TIRA PRINT</div>
+      <div class="abs" style="left:60px;top:120px;width:960px">{cartela()}</div>
+      <div class="abs" style="left:80px;top:1060px;width:920px;font-size:40px;font-weight:700;line-height:1.3">Marca o que já aconteceu no seu grupo.<br><span class="hl">Fechou uma linha? Manda no grupo.</span></div>'''))
+    pages.append(page(f'''
+      <div class="abs" style="inset:0;background:var(--areia)"></div>
+      <div class="abs t" style="left:80px;top:90px;width:920px;font-size:96px;color:var(--noite)">E quem preencheu mais casas?</div>
+      <div class="abs" style="left:80px;top:420px;width:920px;font-size:44px;font-weight:700;line-height:1.35;color:var(--noite)">Em janeiro, a retrospectiva do grupo conta quem mais falou, quem sumiu e quem só mandou áudio.</div>
+      <div class="abs" style="left:80px;top:760px;display:flex;gap:30px">{icon('medalha-1', 170)}{icon('medalha-2', 170)}{icon('medalha-3', 170)}</div>
+      <div class="abs" style="left:80px;top:1130px">{assinatura(330, inv=True)}</div>''', cls=''))
+    pages.append(C.endcard(END_RG))
+    piece(id='R-C13', fmt='carrossel', day=1, slot='12h30', title='Bingo do grupo em dezembro (cartela 4 × 4)', kind='engajamento', w=1080, h=1350,
+          html=doc('R-C13', FONTS, CSS, ''.join(pages), 1080, 1350),
+          caption=('Bingo do grupo em dezembro. 🎄\n'
+                   'Foto da árvore, "quem leva o quê?", o sumido que aparece no dia 24… Tira print da cartela e marca o que já aconteceu.\n\n'
+                   'Fechou uma linha? Manda no grupo e marca quem completou 👇\n'
+                   'A retrospectiva do grupo: retrozap.com.br\n#retrozap #grupodewhatsapp #natal #bingo #amigos #familia'),
+          notes='Formato novo (bingo de comportamento do grupo). Casas sem repetir piadas das últimas 4 semanas (link de promoção, áudio "tô chegando" e foto da confra ficaram de fora). Só ícones oficiais. Sem preço. Card final = CTA aprovado do S04 (R-C10-6). Motivo de envio: print da cartela no grupo.')
 
-# =====================================================================================
-# R-R9 · Reel meme · "gente, preciso contar uma coisa" (qua, capa Piscina)
-# =====================================================================================
-MSGS_R9 = [
-    ('gente, preciso contar uma coisa', 'Lu', '22:14', False, 3.9),
-    ('FALA', 'Pedrão', '22:14', False, 5.0),
-    ('conta logo', 'Bia', '22:14', False, 5.6),
-    ('é bom ou ruim??', 'Caio', '22:15', False, 6.2),
-    ('oi', 'Rafa', '22:15', False, 6.9),
-    ('liga aqui agora', None, '22:15', True, 7.6),
-    ('deixa, amanhã eu conto', 'Lu', '22:31', False, 9.4),
-]
+# -------------------------------------------------------------------------------------
+# R-R19 · Reel MEME (qua 09/12) · As 4 reações quando a retrospectiva cai no grupo
+# -------------------------------------------------------------------------------------
+MSGS_R19 = [('RECONTAGEM. Eu não mandei 2 mil mensagens.', 'Lu', '21:02', False, 3.0, 'a que pede recontagem', 'right-pointing-magnifying-glass'),
+            ('não vi nada. não tô aqui.', 'Caio', '21:03', False, 5.6, 'o que finge que não viu', 'eyes'),
+            ('já mandei imprimir o meu troféu', 'Pedrão', '21:03', False, 8.2, 'o que já emoldurou', 'frame-with-picture'),
+            ('mandando no grupo da família também', 'Bia', '21:04', False, 10.8, 'o que espalha', 'mobile-phone-with-rightwards-arrow-at-left')]
 
-def r_r9():
-    T = 16.0
-    tl = TL(T)
-    s0 = f'''<div {tl.scene(0, 3.6, fin=False)}>
-      <div class="abs" style="inset:0;background:var(--piscina)"></div>
-      <div class="abs t" style="left:90px;top:420px;width:900px;font-size:120px;color:var(--noite);{at(.05,'rise')}">Ninguém:</div>
-      <div class="abs t" style="left:90px;top:640px;width:900px;font-size:92px;color:var(--noite);{at(.9,'rise')}">O grupo depois de um "preciso contar uma coisa":</div>
+def r_r19():
+    T = 16.0; tl = TL(T)
+    s0 = f'''<div {SC(tl, 0, 2.8)}>
+      <div class="abs" style="inset:0;background:var(--noite)"></div>
+      <div class="abs t" style="left:90px;top:520px;width:900px;font-size:112px;{at(.05,'rise')}">Quando a retrospectiva cai no grupo:</div>
+      <div class="abs" style="left:90px;top:1000px;{at(.6,'pop')}">{icon('party-popper', 200)}</div>
     </div>'''
-    bl = ''.join(f'<div style="{at(t,"rise",.3)}">{C.bubble(txt, me=me, nome=n or "", hora=h, bg_me="#FFE3A3", fs=31)}</div>' for txt, n, h, me, t in MSGS_R9)
-    tela = f'<div style="position:absolute;inset:0;background:#F3EDE2">{chat_head()}<div style="padding-top:18px">{bl}</div></div>'
-    s1 = f'''<div {tl.scene(3.6, 12.6)}>
-      <div class="abs" style="left:150px;top:290px">{C.phone(tela, 780, 1240, screen='#F3EDE2', frame='#0B0414', status_color='#1A0B2E', hora='22:31')}</div>
-      <div class="abs" style="left:330px;top:1080px;--r:-5deg;white-space:nowrap;{at(7.1,'pop')}"><span class="lbl" style="background:var(--manga);color:var(--noite);font-size:30px;box-shadow:0 8px 0 var(--noite)">← o Rafa, sumido desde março</span></div>
-      <div class="abs" style="left:150px;top:560px;--r:-4deg;{at(10.4,'stamp')}"><div class="t" style="background:var(--chiclete);color:var(--areia);padding:18px 40px;font-size:84px;box-shadow:0 12px 0 var(--noite)">Ninguém dormiu.</div></div>
-      <div class="abs" style="left:0;right:0;top:1545px;text-align:center;color:var(--neblina)">{SIM}</div>
+    bl = ''
+    for txt, n, h, me, t, lab, ic in MSGS_R19:
+        bl += f'<div style="{at(t,"rise",.3)}">{C.bubble(txt, me=me, nome=n, hora=h, bg_me="#FFE3A3", fs=34)}</div>'
+    tela = f'<div style="position:absolute;inset:0;background:#F3EDE2">{chat_head()}<div style="padding-top:18px"><div style="{at(2.9,"rise",.3)}">{C.bubble("🏆 Retrospectiva 2026 da Turma do Churras", me=True, hora="21:01", bg_me="#FFE3A3", fs=34)}</div>{bl}</div></div>'
+    labels = ''
+    for k, (txt, n, h, me, t, lab, ic) in enumerate(MSGS_R19):
+        z = MSGS_R19[k + 1][4] if k < 3 else 13.3
+        labels += (f'<div class="abs" style="left:110px;top:1260px;opacity:0;animation:fade .2s linear {t + .4:.2f}s 1 both,fadeOut .2s linear {z:.2f}s 1 forwards;display:flex;align-items:center;gap:20px">'
+                   f'<div style="width:120px;height:120px;border-radius:30px;background:var(--areia);display:flex;align-items:center;justify-content:center">{icon(ic, 96)}</div>'
+                   f'<span class="lbl" style="background:var(--manga);color:var(--noite);font-size:44px;font-weight:500">{lab}</span></div>')
+    s1 = f'''<div {SC(tl, 2.8, 13.3)}>
+      <div class="abs" style="inset:0;background:var(--acai2)"></div>
+      <div class="abs" style="left:150px;top:260px">{C.phone(tela, 780, 980, screen='#F3EDE2', frame='#0B0414', status_color='#1A0B2E', hora='21:04')}</div>
+      {labels}
+      <div class="abs" style="left:0;right:0;top:1480px;text-align:center;color:var(--neblina)">{SIM}</div>
     </div>'''
-    s2 = f'<div {tl.scene(12.6, T, fout=False)}>{fim(12.6, "Todo grupo tem uma Lu.")}</div>'
+    s2 = f'<div {SC(tl, 13.3, T)}><div class="abs" style="inset:0;background:var(--noite)"></div>{fim(13.3, "Qual é você?")}</div>'
     body = f'<section class="page" style="width:1080px;height:1920px">{s0}{s1}{s2}</section>'
-    bls = ''.join(C.bubble(txt, me=me, nome=n or '', hora=h, bg_me='#FFE3A3', fs=30) for txt, n, h, me, t in MSGS_R9[:5])
-    tela_c = f'<div style="position:absolute;inset:0;background:#F3EDE2">{chat_head()}<div style="padding-top:14px">{bls}</div></div>'
-    cover_body = f'''<div class="page" style="width:1080px;height:1350px;background:var(--piscina);color:var(--noite)">
-      <div class="abs t" style="left:70px;top:90px;width:460px;font-size:84px">"Gente, preciso contar uma coisa."</div>
-      <div class="abs" style="left:70px;top:620px;width:420px;font-size:40px;font-weight:700;line-height:1.3">E o grupo inteiro acordou.</div>
-      <div class="abs" style="left:530px;top:70px">{C.phone(tela_c, 500, 1000, screen='#F3EDE2', frame='#0B0414', status_color='#1A0B2E', hora='22:15')}</div>
-      <div class="abs" style="left:70px;top:820px">{icon('eyes', 200)}</div></div>'''
-    piece(id='R-R9', fmt='reel', day=3, slot='19h45', title='Meme "Ninguém:": o grupo depois de um "preciso contar uma coisa"', total=T, poster=.62, kind='meme',
-          html=doc('R-R9', FONTS, CSS + tl.style(), body, 1080, 1920, reel=True, total=T),
-          cover=cover_from_feed(cover_body, 'var(--piscina)'),
-          caption=('Ninguém:\nO grupo depois de um "gente, preciso contar uma coisa": 👀\n\n'
-                   'FALA. Conta logo. É bom ou ruim? Até o Rafa, sumido desde março, apareceu.\n'
-                   'E a resposta: "deixa, amanhã eu conto".\n\n'
-                   'Marca a Lu do seu grupo 👇\n'
-                   'retrozap.com.br\n#retrozap #grupodeamigos #meme #amigos #fofoca'),
-          notes='Meme "Ninguém:" com conversa num celular genérico (sem marca de app), etiqueta "simulação · nomes de exemplo", Turma do Churras. Motivo de envio: marcar a "Lu" do grupo. Capa Piscina.')
+    grid = ''.join(f'<div style="background:var(--acai);border:3px solid var(--linha);border-radius:30px;padding:26px;display:flex;flex-direction:column;gap:18px;height:330px">'
+                   f'<div style="width:120px;height:120px;border-radius:28px;background:var(--areia);display:flex;align-items:center;justify-content:center">{icon(ic, 96)}</div>'
+                   f'<div class="t" style="font-size:48px">{lab}</div></div>' for _, _, _, _, _, lab, ic in MSGS_R19)
+    cover = f'''<div class="page" style="width:1080px;height:1350px;background:var(--noite)">
+      <div class="abs t" style="left:80px;top:80px;width:920px;font-size:92px">Quando a retrospectiva cai no grupo:</div>
+      <div class="abs" style="left:80px;top:420px;width:920px;display:grid;grid-template-columns:1fr 1fr;gap:26px">{grid}</div></div>'''
+    piece(id='R-R19', fmt='reel', day=2, slot='19h45', title='Meme: as 4 reações quando a retrospectiva cai no grupo', total=T, poster=.6, kind='meme',
+          music='S03/retrozap/reels/R-R17.mp4',
+          html=doc('R-R19', FONTS, CSS + C.REC_CSS + tl.style(), body, 1080, 1920, reel=True, total=T),
+          cover=cover_from_feed(cover, 'var(--noite)'),
+          caption=('Quando a retrospectiva cai no grupo: 🏆\n'
+                   'Uma pede recontagem, um finge que não viu, um já emoldurou o troféu e uma manda até no grupo da família.\n\n'
+                   'Qual é você? Marca o resto do grupo 👇\n'
+                   'A retrospectiva do seu grupo: retrozap.com.br\n#retrozap #grupodewhatsapp #retrospectiva2026 #amigos #meme'),
+          notes='Meme de reações (comportamento de grupo), conversa em celular genérico com etiqueta "simulação · nomes de exemplo" (Turma do Churras). Ideia nova: R-R11 era o fantasma; aqui é a reação ao resultado. Música de banco do R-R17 aprovado, com fade de saída. Sem preço.')
 
-# =====================================================================================
-# R-C8 · Carrossel casal · 5 apostas que a conversa de vocês responde (qui, Casa Casal, Creme)
-# =====================================================================================
-APOSTAS = [
-    ('Quem manda "bom dia" primeiro?', 'black-sun-with-rays'),
-    ('Quem demora mais para responder?', 'turtle'),
-    ('Quem pede desculpa primeiro?', 'face-with-pleading-eyes'),
-    ('Quem manda mais áudio?', 'studio-microphone'),
-    ('Quem manda foto da comida antes de comer?', 'hamburger'),
-]
+# -------------------------------------------------------------------------------------
+# R-C14 · Carrossel (qui 10/12) · A cerimônia de premiação do grupo, em 5 passos (confra)
+# -------------------------------------------------------------------------------------
+PASSOS = [('studio-microphone', 'Escolha o apresentador.', 'Quem fala mais no grupo, claro.'),
+          ('lock', 'Guarde os troféus até a confra.', 'Ninguém vê antes. Suspense é tudo.'),
+          ('scroll', 'Leia um prêmio por vez.', 'Primeiro a categoria, depois o nome. Pausa dramática.'),
+          ('speaking-head-in-silhouette', 'O premiado faz discurso.', '15 segundos. Vale agradecer à família.'),
+          ('camera-with-flash', 'Foto oficial com o troféu na tela.', 'E manda no grupo antes de a festa acabar.')]
 
-def r_c8():
-    def chips(sel=None):
-        c = lambda t, on: (f'<div style="flex:1;text-align:center;border-radius:28px;padding:30px 0;font:800 58px/1 \'Bricolage Grotesque\';'
-                           f'background:{"var(--cereja)" if on else "#fff"};color:{"var(--creme)" if on else "var(--vinho)"};border:4px solid var(--cereja)">{t}</div>')
-        return f'<div style="display:flex;gap:26px">{c("EU", sel == 0)}{c("VOCÊ", sel == 1)}</div>'
+def r_c14():
     pages = [page(f'''
-      <div class="abs mono" style="left:80px;top:100px;font-size:32px;color:var(--cereja)">TESTE DO CASAL · 5 APOSTAS</div>
-      <div class="abs t" style="left:80px;top:170px;width:920px;font-size:128px">A conversa de vocês sabe a <span class="hl">resposta.</span></div>
-      <div class="abs" style="left:80px;top:720px;width:560px;background:#fff;border-radius:40px;padding:40px;box-shadow:0 20px 50px rgba(94,11,43,.15);transform:rotate(-2deg)">
-        <div style="font-size:40px;font-weight:700;margin-bottom:30px">Quem manda "bom dia" primeiro?</div>{chips()}</div>
-      <div class="abs" style="left:700px;top:820px;transform:rotate(8deg)">{icon('revolving-hearts', 280, 'casal')}</div>
-      <div class="abs" style="left:80px;top:1200px"><span class="tag">Arrasta e responde junto →</span></div>''', cls='casal')]
-    for i, (q, ic) in enumerate(APOSTAS):
-        pages.append(page(f'''
-          <div class="abs mono" style="left:80px;top:100px;font-size:32px;color:var(--cereja)">APOSTA {i+1} DE 5</div>
-          <div class="abs" style="left:80px;top:180px;width:920px;height:960px;background:#fff;border-radius:48px;box-shadow:0 24px 60px rgba(94,11,43,.14)">
-            <div class="abs" style="left:60px;top:60px">{icon(ic, 240, 'casal')}</div>
-            <div class="abs t" style="left:60px;top:360px;width:800px;font-size:104px">{q}</div>
-            <div class="abs" style="left:60px;top:740px;width:800px">{chips()}</div></div>
-          <div class="abs" style="left:80px;top:1200px;font-size:36px;font-weight:700">Cada um responde. Depois confiram na conversa.</div>''', cls='casal'))
-    pages.append(page(f'''
-      <div class="abs" style="inset:0;background:var(--cereja)"></div>
-      <div class="abs t" style="left:80px;top:150px;width:920px;font-size:104px;color:var(--creme)">Quantas vocês acertaram juntos?</div>
-      <div class="abs" style="left:80px;top:500px;width:900px;font-size:46px;line-height:1.3;color:var(--creme)">O Retrozap faz a retrospectiva do casal com a conversa de vocês, lida no seu celular.</div>
-      <div class="abs" style="left:80px;top:830px;font-size:44px;font-weight:700;color:var(--creme)">Manda pro seu amor e apostem.</div>
-      <div class="abs" style="left:80px;top:1110px">{assinatura(420, 'casal', inv=True)}</div>
-      <div class="abs" style="right:80px;top:1155px;font-size:34px;font-weight:700;color:var(--creme)">retrozap.com.br</div>''', cls='casal'))
-    piece(id='R-C8', fmt='carrossel', day=4, slot='12h30', title='Casal: 5 apostas que a conversa de vocês responde', kind='engajamento', w=1080, h=1350,
-          html=doc('R-C8', FONTS, CSS, ''.join(pages), 1080, 1350),
-          caption=('5 apostas para o casal. A conversa de vocês sabe a resposta. 💬❤️\n\n'
-                   '1. Quem manda "bom dia" primeiro?\n2. Quem demora mais para responder?\n3. Quem pede desculpa primeiro?\n4. Quem manda mais áudio?\n5. Quem manda foto da comida antes de comer?\n\n'
-                   'Manda pro seu amor, cada um responde e depois confiram 👇\n'
-                   'retrozap.com.br\n#casal #namorados #retrozap #casais #teste'),
-          notes='Casa Casal (Creme + Cereja, sem roxo). Cartão de aposta com botões EU/VOCÊ. Motivo de envio: mandar pro parceiro e apostar. Não promete métrica específica do produto.')
-
-# =====================================================================================
-# R-R10 · Reel trend "minivlog com rótulos" · Black Friday no grupo (sex 27/11, Noite)
-# =====================================================================================
-VLOG = [
-    ('00:01', 'Chega o primeiro link de promoção.', 'incoming-envelope', 'var(--manga)'),
-    ('08:30', '"Alguém divide o frete comigo?"', 'handshake', 'var(--piscina)'),
-    ('12:15', 'Print do carrinho. Sem contexto.', 'camera-with-flash', 'var(--chiclete)'),
-    ('15:40', '"Tá mais caro que semana passada."', 'right-pointing-magnifying-glass', 'var(--goiaba)'),
-    ('21:00', '"Comprei. Não precisava."', 'face-with-pleading-eyes', 'var(--uva)'),
-    ('23:59', '"Alguém sabe como devolve?"', 'wastebasket', 'var(--manga)'),
-]
-
-def r_r10():
-    T = 19.0
-    tl = TL(T)
-    s0 = f'''<div {tl.scene(0, 3.0, fin=False)}>
-      <div class="abs" style="left:90px;top:380px;{at(.05,'pop')}"><span class="lbl" style="background:var(--chiclete);color:var(--areia);font-size:34px">SEX 27/11 · MINIVLOG</span></div>
-      <div class="abs t" style="left:90px;top:480px;width:900px;font-size:136px;{at(.2,'rise')}">Black Friday no <span class="hl">grupo.</span></div>
-      <div class="abs" style="left:700px;top:960px;--r:8deg;{at(.7,'drop')}">{icon('receipt', 260)}</div>
-    </div>'''
-    sc, t, d = '', 3.0, 2.15
-    seg = lambda k: ''.join(f'<div style="flex:1;height:10px;border-radius:5px;background:{"var(--areia)" if j <= k else "var(--linha)"}"></div>' for j in range(len(VLOG)))
-    for i, (h, txt, ic, cor) in enumerate(VLOG):
-        sc += f'''<div {tl.scene(t, t + d, fade=.08)}>
-          <div class="abs" style="left:90px;right:90px;top:300px;display:flex;gap:10px">{seg(i)}</div>
-          <div class="abs" style="left:90px;top:400px;--r:-3deg;{at(t + .02,'stamp')}"><span class="lbl" style="background:{cor};color:var(--noite);font-size:64px;padding:16px 34px">{h}</span></div>
-          <div class="abs" style="left:90px;top:620px;width:900px;height:600px;border-radius:48px;background:{cor};{at(t + .05,'pop')}">
-            <div class="abs" style="left:310px;top:110px">{icon(ic, 380)}</div></div>
-          <div class="abs t" style="left:90px;top:1270px;width:900px;font-size:76px;{at(t + .2,'rise')}">{txt}</div>
-        </div>'''
-        t += d
-    s7 = f'<div {tl.scene(t, T, fout=False)}>{fim(t, "Esse grupo merece uma retrospectiva.")}</div>'
-    body = f'<section class="page" style="width:1080px;height:1920px">{s0}{sc}{s7}</section>'
-    cells = ''.join(f'<div style="border-radius:30px;background:{c};padding:22px;display:flex;flex-direction:column;align-items:center;gap:12px"><span class="lbl" style="background:var(--noite);color:var(--areia);font-size:30px;padding:8px 16px">{h}</span>{icon(i, 130)}</div>' for h, _, i, c in VLOG)
-    cover_body = f'''<div class="page" style="width:1080px;height:1350px">
-      <div class="abs" style="left:80px;top:90px"><span class="lbl" style="background:var(--chiclete);color:var(--areia);font-size:32px">MINIVLOG · 00:01 → 23:59</span></div>
-      <div class="abs t" style="left:80px;top:190px;width:920px;font-size:130px">Black Friday no <span class="hl">grupo.</span></div>
-      <div class="abs" style="left:80px;top:620px;width:920px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px">{cells}</div></div>'''
-    piece(id='R-R10', fmt='reel', day=5, slot='19h45', title='Trend minivlog com rótulos: Black Friday no grupo', total=T, poster=.4, kind='trend',
-          html=doc('R-R10', FONTS, CSS + tl.style(), body, 1080, 1920, reel=True, total=T),
-          cover=cover_from_feed(cover_body, 'var(--noite)'),
-          caption=('Black Friday no grupo, um minivlog. 🛒\n\n'
-                   '00:01 chega o primeiro link de promoção.\n08:30 "alguém divide o frete comigo?"\n12:15 print do carrinho, sem contexto.\n15:40 "tá mais caro que semana passada."\n21:00 "comprei. não precisava."\n23:59 "alguém sabe como devolve?"\n\n'
-                   'Manda no grupo que virou central de cupom hoje 👇\n'
-                   'retrozap.com.br\n#blackfriday #retrozap #grupodeamigos #meme #trend'),
-          notes='Trend "minivlog com rótulos" (doc do DOT de 06/11) no dia da Black Friday. Rótulos de hora e barra de progresso desenhados pela marca, ícones oficiais. Sem marca de loja. Sai no dia: se perder a janela, cai. Áudio em alta no app.')
-
-# =====================================================================================
-# R-C9 · Carrossel · O ano do grupo em 12 meses (sáb, capa Goiaba)
-# =====================================================================================
-MESES = [
-    ('JAN', 'Lista de metas do grupo: viagem, academia e churrasco todo mês.'),
-    ('FEV', 'Carnaval: 214 fotos. As mesmas 3 pessoas em todas.'),
-    ('MAR', 'Alguém troca a foto do grupo. Começa a guerra.'),
-    ('ABR', '11 dias de silêncio. Ninguém sabe por quê.'),
-    ('MAI', 'O churrasco do mês, finalmente. O primeiro.'),
-    ('JUN', 'Bolão da Copa: 9 palpitaram, 1 pagou.'),
-    ('JUL', 'Festa julina: "quem leva o quê" em 80 mensagens.'),
-    ('AGO', 'Aniversário do grupo. Ninguém lembrou.'),
-    ('SET', 'Sai o primeiro "bora marcar a confra?"'),
-    ('OUT', 'Abre a votação da data da confra.'),
-    ('NOV', '"Esse ano passou rápido, hein."'),
-]
-
-def r_c9():
-    def folha(m, txt, cor):
-        holes = ''.join('<span style="width:22px;height:22px;border-radius:50%;background:var(--noite)"></span>' for _ in range(8))
-        return f'''<div style="background:var(--areia);color:var(--noite);border-radius:30px;overflow:hidden;margin-bottom:30px;display:flex;height:300px">
-          <div style="flex:none;width:250px;background:{cor};display:flex;flex-direction:column;align-items:center;justify-content:center">
-            <div style="display:flex;gap:6px;margin-bottom:20px">{holes[:len(holes)//2]}</div><div class="t" style="font-size:96px">{m}</div><div class="mono" style="font-size:24px;margin-top:6px">2026</div></div>
-          <div style="flex:1;padding:0 40px;display:flex;align-items:center;font:700 46px/1.25 'DM Sans'">{txt}</div></div>'''
-    cores = ['var(--manga)', 'var(--piscina)', 'var(--chiclete)', 'var(--goiaba)', 'var(--uva)']
-    pages = [page(f'''
-      <div class="abs" style="inset:0;background:var(--goiaba)"></div>
-      <div class="abs" style="left:80px;top:90px">{icon('spiral-calendar-pad', 220)}</div>
-      <div class="abs t" style="left:80px;top:380px;width:920px;font-size:150px;color:var(--noite)">O ano do grupo em 12 meses.</div>
-      <div class="abs" style="left:80px;top:900px;width:860px;font-size:46px;font-weight:700;line-height:1.3;color:var(--noite)">Confere se o seu foi assim. Dezembro está na última página.</div>
-      <div class="abs" style="left:80px;top:1200px"><span class="tag" style="background:var(--noite);border-color:var(--noite)">Arrasta →</span></div>''')]
-    for p in range(0, 11, 3):
-        fs = ''.join(folha(m, txt, cores[(p + k) % len(cores)]) for k, (m, txt) in enumerate(MESES[p:p + 3]))
-        pages.append(page(f'<div class="abs" style="left:70px;top:{150 if p < 9 else 330}px;width:940px">{fs}</div>'))
-    pages.append(page(f'''
-      <div class="abs" style="left:70px;top:110px;width:940px">{folha('DEZ', 'O grupo ganha troféu.', 'var(--manga)')}</div>
-      <div class="abs" style="left:80px;top:500px;width:900px;font-size:46px;line-height:1.3">O Retrozap lê a conversa do ano inteiro, no seu celular, e entrega a retrospectiva do grupo.</div>
-      <div class="abs t" style="left:80px;top:800px;width:900px;font-size:76px">Manda no grupo e vê se foi <span class="hl">assim.</span></div>
-      <div class="abs" style="left:80px;top:1110px">{assinatura(420)}</div>
-      <div class="abs" style="right:80px;top:1155px;font-size:34px;font-weight:700">retrozap.com.br</div>'''))
-    piece(id='R-C9', fmt='carrossel', day=6, slot='12h30', title='O ano do grupo em 12 meses (calendário)', kind='engajamento', w=1080, h=1350,
-          html=doc('R-C9', FONTS, CSS, ''.join(pages), 1080, 1350),
-          caption=('O ano do grupo em 12 meses. 🗓️\n\n'
-                   'Jan: metas do grupo. Fev: 214 fotos de carnaval. Mar: a guerra da foto do grupo. Jun: bolão da Copa, 1 pagou. Ago: ninguém lembrou do aniversário do grupo. Out: votação da data da confra.\n'
-                   'Dez: o grupo ganha troféu.\n\n'
-                   'Manda no grupo e vê se o de vocês foi assim 👇\n'
-                   'retrozap.com.br\n#retrozap #retrospectiva2026 #grupodeamigos #amigos #fimdeano'),
-          notes='Folhas de calendário com os 11 meses e dezembro como gancho para a retrospectiva. Copa do Mundo foi em jun–jul/2026 (bolão é verdadeiro como referência de época). Capa Goiaba, páginas Noite.')
-
-# =====================================================================================
-# R-R11 · Reel meme · "Manda pro amigo que some o ano todo e volta em dezembro" (dom, capa Uva)
-# =====================================================================================
-def r_r11():
-    T = 16.0
-    tl = TL(T)
-    s0 = f'''<div {tl.scene(0, 3.8, fin=False)}>
       <div class="abs" style="inset:0;background:var(--uva)"></div>
-      <div class="abs t" style="left:90px;top:420px;width:900px;font-size:112px;color:var(--noite);{at(.05,'rise')}">Manda pro amigo que some o ano todo e volta em dezembro.</div>
-      <div class="abs" style="left:700px;top:1060px;--r:8deg;{at(.8,'drop')}">{icon('ghost', 260)}</div>
-    </div>'''
-    meses = ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV']
-    cel = ''.join(f'''<div style="height:170px;border-radius:28px;background:var(--acai);border:3px solid var(--linha);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;{at(4.0 + i * .5,'pop',.3)}">
-        <span class="mono" style="font-size:30px;color:var(--neblina)">{m}</span><span class="t" style="font-size:52px">0</span></div>''' for i, m in enumerate(meses))
-    s1 = f'''<div {tl.scene(3.8, 10.4)}>
-      <div class="abs mono" style="left:90px;top:300px;font-size:34px;color:var(--neblina)">MENSAGENS DO FANTASMA NO GRUPO · 2026</div>
-      <div class="abs" style="left:90px;top:380px;width:900px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px">{cel}</div>
-      <div class="abs" style="left:90px;top:1180px;display:flex;align-items:center;gap:30px;{at(8.4,'rise')}">{icon('ghost', 150)}<span class="t" style="font-size:66px">visto por último:<br><span class="hl">em março</span></span></div>
-    </div>'''
-    s2 = f'''<div {tl.scene(10.4, 13.4)}>
-      <div class="abs" style="left:90px;top:320px"><span class="lbl" style="background:var(--manga);color:var(--noite);font-size:44px">DEZ</span></div>
-      <div class="abs" style="left:90px;top:460px;width:900px;background:#F3EDE2;color:#111;border-radius:40px;padding:40px 46px;box-shadow:0 20px 50px rgba(0,0,0,.4);{at(10.5,'pop')}">
-        <div style="display:flex;align-items:center;gap:20px;margin-bottom:16px">{icon('ghost', 80)}<b style="font-size:34px;color:#C2185B">o fantasma</b></div>
-        <div class="t" style="font-size:96px">GENTE!!! bora marcar a confra?</div></div>
-      <div class="abs" style="left:300px;top:1040px;--r:-4deg;{at(11.6,'stamp')}"><div class="t" style="background:var(--chiclete);color:var(--areia);padding:18px 40px;font-size:80px;box-shadow:0 12px 0 #0B0414">Dezembro chegou.</div></div>
-    </div>'''
-    s3 = f'<div {tl.scene(13.4, T, fout=False)}>{fim(13.4, "Em dezembro, até o fantasma ganha troféu.")}</div>'
-    body = f'<section class="page" style="width:1080px;height:1920px">{s0}{s1}{s2}{s3}</section>'
-    cover_body = f'''<div class="page" style="width:1080px;height:1350px;background:var(--uva);color:var(--noite)">
-      <div class="abs t" style="left:80px;top:90px;width:920px;font-size:104px">Manda pro amigo que some o ano todo e volta em dezembro.</div>
-      <div class="abs" style="left:80px;top:720px;width:640px;background:#F3EDE2;color:#111;border-radius:36px;padding:30px 36px;transform:rotate(-2deg)">
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:10px">{icon('ghost', 60)}<b style="font-size:28px;color:#C2185B">o fantasma</b></div>
-        <div class="t" style="font-size:64px">GENTE!!! bora marcar a confra?</div></div>
-      <div class="abs" style="left:770px;top:820px;transform:rotate(8deg)">{icon('ghost', 230)}</div></div>'''
-    piece(id='R-R11', fmt='reel', day=7, slot='19h45', title='Meme "manda pro amigo que…": o fantasma que volta em dezembro', total=T, poster=.7, kind='meme',
-          html=doc('R-R11', FONTS, CSS + tl.style(), body, 1080, 1920, reel=True, total=T),
-          cover=cover_from_feed(cover_body, 'var(--uva)'),
-          caption=('Manda pro amigo que some o ano todo e volta em dezembro. 👻\n\n'
-                   'Jan a nov: 0 mensagens. Visto por último em março.\n'
-                   'Dezembro: "GENTE!!! bora marcar a confra?"\n\n'
-                   'Marca o fantasma do seu grupo 👇\n'
-                   'retrozap.com.br\n#retrozap #grupodeamigos #meme #confraternizacao #amigos'),
-          notes='Meme "manda pro amigo que…" (marcação). Contador de meses com ícone oficial do fantasma. Capa Uva fecha a semana, como na grade do S02 (alterna com a Noite do R-R10).')
+      <div class="abs" style="left:80px;top:80px">{taca(120, inv=True)}</div>
+      <div class="abs t" style="left:80px;top:250px;width:920px;font-size:112px;color:var(--noite)">A cerimônia de premiação do grupo.</div>
+      <div class="abs" style="left:80px;top:700px;font-size:46px;font-weight:700;color:var(--noite)">Roteiro em 5 passos pra confra.</div>
+      <div class="abs" style="left:640px;top:850px;transform:rotate(8deg)">{icon('medalha-1', 300)}</div>
+      <div class="abs mono" style="left:80px;top:1180px;font-size:28px;letter-spacing:.08em;color:var(--noite)">MANDA PRO ORGANIZADOR DA CONFRA</div>''')]
+    for i, (ic, t, sub) in enumerate(PASSOS):
+        pages.append(page(f'''
+          <div class="abs mono" style="left:80px;top:70px;font-size:28px;letter-spacing:.08em;color:var(--neblina)">PASSO {i + 1} DE 5</div>
+          <div class="abs n" style="left:60px;top:120px;font-family:'Bricolage Grotesque';font-weight:800;font-size:420px;line-height:1;color:var(--acai)">{i + 1}</div>
+          <div class="abs" style="right:90px;top:180px;width:300px;height:300px;border-radius:70px;background:var(--areia);display:flex;align-items:center;justify-content:center;transform:rotate({(-1) ** i * 5}deg)">{icon(ic, 220)}</div>
+          <div class="abs t" style="left:80px;top:640px;width:920px;font-size:100px">{t}</div>
+          <div class="abs" style="left:80px;top:{900 if len(t) < 26 else 1000}px;width:920px;font-size:46px;font-weight:700;color:var(--manga)">{sub}</div>'''))
+    pages.append(C.endcard(END_RG))
+    piece(id='R-C14', fmt='carrossel', day=3, slot='12h30', title='A cerimônia de premiação do grupo, em 5 passos (confra)', kind='utilidade', w=1080, h=1350,
+          html=doc('R-C14', FONTS, CSS, ''.join(pages), 1080, 1350),
+          caption=('A cerimônia de premiação do grupo, em 5 passos. 🎤\n'
+                   'Apresentador, troféus guardados até a confra, um prêmio por vez, discurso de 15 segundos e foto oficial.\n\n'
+                   'Manda pro organizador da confra 👇\n'
+                   'Os troféus saem da retrospectiva do grupo: retrozap.com.br\n#retrozap #confraternizacao #amigos #retrospectiva2026 #grupodewhatsapp'),
+          notes='Utilidade para a confra (usar a retrospectiva como cerimônia). Capa Uva para não repetir o Areia do R-R21 nem o Manga do R-C13/R-R20 na grade. Só ícones oficiais. Sem preço. Card final = CTA aprovado do S04 (R-C10-6). Motivo de envio: mandar pro organizador.')
 
-# =====================================================================================
-# Stories · Frase pro grupo (frases novas, 3 desenhos alternados, sem adesivo)
-# =====================================================================================
-FRASES_S03 = [
-    (1, 'Todo grupo tem alguém que só aparece para mandar link de promoção.', 'receipt', 'nota'),
-    (2, 'Amigo secreto: 12 pessoas, 1 sorteio e 3 semanas para decidir o valor.', 'party-popper', 'cor'),
-    (3, 'Ninguém sabe quem criou o grupo. Todo mundo sabe quem silenciou.', 'sleuth-or-spy', 'balao'),
-    (4, '"Tanto faz" é a resposta mais perigosa do casal.', 'serious-face-with-symbols-covering-mouth', 'casal'),
-    (5, 'Black Friday: o grupo vira central de cupom por 24 horas.', 'label', 'nota'),
-    (6, 'A foto da confra do ano passado ainda é a foto do grupo.', 'frame-with-picture', 'cor'),
-    (7, 'Domingo à noite: o grupo volta à vida só para reclamar da segunda.', 'crescent-moon', 'balao'),
+# -------------------------------------------------------------------------------------
+# R-R20 · Reel TREND antes × depois (sex 11/12) · O grupo silencioso × o grupo depois da retrospectiva
+# -------------------------------------------------------------------------------------
+def r_r20():
+    T = 15.0; tl = TL(T)
+    s1 = f'''<div {SC(tl, 0, 6.0)}>
+      <div class="abs" style="inset:0;background:#2A2433"></div>
+      <div class="abs" style="left:90px;top:300px;{at(.05,'fade')}"><span class="lbl" style="background:var(--linha);color:var(--neblina);font-size:40px">ANTES</span></div>
+      <div class="abs" style="left:90px;top:420px;width:900px;background:var(--acai2);border-radius:36px;padding:34px 36px;{at(.2,'rise')}">
+        <div style="font-size:30px;color:var(--neblina)">Turma do Churras · visto por último há 3 dias</div>
+        <div style="margin-top:24px;display:inline-block;background:#3B3346;border-radius:24px;padding:20px 28px;font-size:44px">bom dia ☀️ <span style="font-size:26px;opacity:.6">08:12</span></div>
+        <div style="margin-top:30px;font-size:34px;color:var(--neblina)">0 respostas</div></div>
+      <div class="abs t" style="left:90px;top:900px;width:900px;font-size:100px;color:var(--neblina);{at(1.2,'rise')}">Grupo em silêncio desde segunda.</div>
+      <div class="abs" style="left:90px;top:1280px;opacity:.45;{at(2.0,'fade')}">{icon('turtle', 180)}</div>
+    </div>'''
+    s2 = f'''<div {SC(tl, 6.0, 12.0)}>
+      <div class="abs" style="inset:0;background:var(--manga);color:var(--noite)"></div>
+      <div class="abs" style="left:90px;top:300px;{at(6.05,'stamp')}"><span class="lbl" style="background:var(--noite);color:var(--manga);font-size:40px">DEPOIS DA RETROSPECTIVA</span></div>
+      <div class="abs" style="left:90px;top:440px;width:900px;background:var(--noite);color:var(--areia);border-radius:36px;padding:34px 36px;{at(6.3,'pop')}">
+        <div style="display:flex;align-items:center;justify-content:space-between"><span style="font-size:32px;color:var(--neblina)">Turma do Churras</span>
+          <span style="background:var(--chiclete);color:#fff;border-radius:40px;padding:8px 26px;font:800 44px/1 'Bricolage Grotesque'"><span class="cnt" style="--n:47;animation:cntup 2.4s cubic-bezier(.2,.8,.2,1) 6.8s 1 both"></span></span></div>
+        <div style="margin-top:20px;font-size:40px">Lu: RECONTAGEM</div><div style="font-size:40px">Pedrão: quem me deu "Some e Volta"???</div><div style="font-size:40px">Rafa: apareci 👋</div></div>
+      <div class="abs t" style="left:90px;top:1000px;width:900px;font-size:104px;color:var(--noite);{at(8.2,'rise')}">47 mensagens em 10 minutos.</div>
+      <div class="abs" style="left:90px;top:1420px;color:var(--noite)">{SIM}</div>
+    </div>'''
+    s3 = f'<div {SC(tl, 12.0, T)}><div class="abs" style="inset:0;background:var(--noite)"></div>{fim(12.0, "Acorda o seu grupo.")}</div>'
+    body = f'<section class="page" style="width:1080px;height:1920px">{s1}{s2}{s3}</section>'
+    cover = f'''<div class="page" style="width:1080px;height:1350px;background:var(--manga);color:var(--noite)">
+      <div class="abs" style="left:0;top:0;width:1080px;height:560px;background:#2A2433"></div>
+      <div class="abs" style="left:80px;top:70px"><span class="lbl" style="background:var(--linha);color:var(--neblina);font-size:34px">ANTES</span></div>
+      <div class="abs t" style="left:80px;top:170px;width:920px;font-size:88px;color:var(--neblina)">"bom dia" · 0 respostas</div>
+      <div class="abs" style="left:80px;top:360px;opacity:.5">{icon('turtle', 150)}</div>
+      <div class="abs" style="left:80px;top:630px"><span class="lbl" style="background:var(--noite);color:var(--manga);font-size:34px">DEPOIS DA RETROSPECTIVA</span></div>
+      <div class="abs t" style="left:80px;top:740px;width:920px;font-size:120px">47 mensagens em 10 minutos.</div>
+      <div class="abs" style="left:800px;top:1050px">{icon('fire', 180)}</div></div>'''
+    piece(id='R-R20', fmt='reel', day=4, slot='19h45', title='Trend antes × depois: o grupo em silêncio × depois da retrospectiva', total=T, poster=.62, kind='trend',
+          music='S04/retrozap/reels/R-R13.mp4',
+          html=doc('R-R20', FONTS, CSS + C.REC_CSS + tl.style() + '@keyframes cntup{from{--n:0}to{--n:47}}', body, 1080, 1920, reel=True, total=T),
+          cover=cover_from_feed(cover, 'var(--manga)'),
+          caption=('Antes: "bom dia" com 0 respostas há 3 dias. 🐢\n'
+                   'Depois da retrospectiva: 47 mensagens em 10 minutos e até o Rafa apareceu.\n\n'
+                   'Manda no grupo que tá em silêncio 👇\n'
+                   'A retrospectiva do seu grupo: retrozap.com.br\n#retrozap #grupodewhatsapp #antesedepois #retrospectiva2026 #amigos'),
+          notes='Trend "antes × depois" (doc de trends do DOT, 06/11: "grupo silencioso versus premiação"; circulação no Brasil sem validação). Conversa simulada com etiqueta "simulação · nomes de exemplo". Música de banco do R-R13 aprovado (S04), fade de saída. Sem preço.')
+
+# -------------------------------------------------------------------------------------
+# R-C15 · Carrossel (sáb 12/12) · Bolão 2027 do grupo: 6 apostas pra conferir no fim do ano que vem
+# -------------------------------------------------------------------------------------
+BOLAO = [('speech-balloon', 'Quem vai mandar mais mensagem em 2027?'), ('spiral-calendar-pad', 'Quem vai ser o primeiro a dizer "vamos marcar"?'),
+         ('studio-microphone', 'Quem vai mandar mais áudio?'), ('frame-with-picture', 'Quem vai trocar a foto do grupo?'),
+         ('rocket', 'Quem vai sumir em março?'), ('heart-hands', 'Quem vai pedir pra fazer a retrospectiva primeiro?')]
+
+def r_c15():
+    pages = [page(f'''
+      <div class="abs" style="inset:0;background:var(--piscina)"></div>
+      <div class="abs mono" style="left:80px;top:70px;font-size:28px;letter-spacing:.08em;color:var(--noite)">BOLÃO 2027 · 6 APOSTAS</div>
+      <div class="abs t" style="left:80px;top:140px;width:920px;font-size:120px;color:var(--noite)">Aposta agora. Confere em dezembro de 2027.</div>
+      <div class="abs ticket" style="left:120px;top:720px;width:840px;padding:40px 46px;transform:rotate(-2.5deg)">
+        <div class="mono" style="font-size:26px;letter-spacing:.08em;opacity:.6">APOSTA 1 · TURMA DO CHURRAS</div>
+        <div class="t" style="font-size:64px;margin-top:14px">Quem vai mandar mais mensagem em 2027?</div>
+        <div style="margin-top:24px;border-top:4px dashed var(--neblina);padding-top:18px;font-size:34px;font-weight:700">Meu palpite: ____________</div></div>''')]
+    for i, (ic, q) in enumerate(BOLAO):
+        pages.append(page(f'''
+          <div class="abs mono" style="left:80px;top:70px;font-size:28px;letter-spacing:.08em;color:var(--neblina)">APOSTA {i + 1} DE 6</div>
+          <div class="abs ticket" style="left:80px;top:170px;width:920px;padding:50px 56px 60px;transform:rotate({(-1) ** i * 1.5}deg)">
+            <div style="display:flex;justify-content:space-between;align-items:center"><span class="mono" style="font-size:26px;letter-spacing:.08em;opacity:.6">BOLÃO 2027</span>{icon(ic, 120)}</div>
+            <div class="t" style="font-size:88px;margin-top:30px">{q}</div>
+            <div style="margin-top:60px;border-top:4px dashed var(--neblina);padding-top:26px;font-size:40px;font-weight:700">Meu palpite: ____________</div>
+            <div style="margin-top:18px;font-size:40px;font-weight:700">Palpite do grupo: ____________</div></div>
+          <div class="abs" style="left:80px;top:1170px;font-size:40px;font-weight:700;color:var(--manga)">Tira print e responde no grupo.</div>'''))
+    pages.append(C.endcard(END_RG))
+    piece(id='R-C15', fmt='carrossel', day=5, slot='12h30', title='Bolão 2027 do grupo: 6 apostas pra conferir no fim do ano que vem', kind='engajamento', w=1080, h=1350,
+          html=doc('R-C15', FONTS, CSS, ''.join(pages), 1080, 1350),
+          caption=('Bolão 2027 do grupo. 🎟️\n'
+                   'Quem vai mandar mais mensagem? Quem vai sumir em março? Quem vai ser o primeiro a dizer "vamos marcar"?\n\n'
+                   'Tira print, manda no grupo e cada um responde. Em dezembro de 2027, a conversa confere 👇\n'
+                   'A retrospectiva do seu grupo: retrozap.com.br\n#retrozap #grupodewhatsapp #2027 #amigos #bolao'),
+          notes='Formato novo (bolão de previsões com bilhete para preencher). Piscina na capa para variar a grade. Sem preço. Card final = CTA aprovado do S04 (R-C10-6). Motivo de envio: cada um responde no grupo.')
+
+# -------------------------------------------------------------------------------------
+# R-R21 · Reel MEME (dom 13/12) · "Eu quase não falo no grupo" × a retrospectiva
+# -------------------------------------------------------------------------------------
+def r_r21():
+    T = 14.0; tl = TL(T)
+    s1 = f'''<div {SC(tl, 0, 4.6)}>
+      <div class="abs" style="inset:0;background:var(--areia);color:var(--noite)"></div>
+      <div class="abs t" style="left:90px;top:330px;font-size:84px;color:var(--acai);{at(.05,'fade')}">Eu, todo ano:</div>
+      <div class="abs t" style="left:90px;top:520px;width:900px;font-size:132px;color:var(--noite);{at(.3,'rise')}">"Eu quase não falo no grupo."</div>
+      <div class="abs" style="left:90px;top:1100px;{at(1.4,'pop')}">{icon('face-with-no-good-gesture', 260)}</div>
+    </div>'''
+    s2 = f'''<div {SC(tl, 4.6, 10.6)}>
+      <div class="abs" style="inset:0;background:var(--noite)"></div>
+      <div class="abs t" style="left:90px;top:300px;font-size:84px;color:var(--manga);{at(4.65,'fade')}">A retrospectiva:</div>
+      <div class="abs ticket" style="left:110px;top:470px;width:860px;padding:44px 50px 60px;transform:rotate(-2deg);{at(5.1,'pop')}">
+        <div style="display:flex;align-items:center;gap:18px">{taca(56)}<span class="mono" style="font-size:24px;letter-spacing:.08em;opacity:.6">TURMA DO CHURRAS · 2026</span></div>
+        <div class="mono" style="margin-top:30px;font-size:30px;letter-spacing:.06em">1º LUGAR · TAGARELA DO ANO</div>
+        <div class="t" style="font-size:190px;margin-top:10px;{at(5.7,'pop')}">2.318</div>
+        <div style="font-size:44px;font-weight:700">mensagens. Você.</div></div>
+      <div class="abs" style="left:640px;top:1180px;--r:-6deg;{at(8.2,'stamp')}">{icon('face-with-tears-of-joy', 230)}</div>
+      <div class="abs" style="left:110px;top:1440px;color:var(--neblina)">{EXEMPLO}</div>
+    </div>'''
+    s3 = f'<div {SC(tl, 10.6, T)}><div class="abs" style="inset:0;background:var(--noite)"></div>{fim(10.6, "Marca quem jura que é quieto.")}</div>'
+    body = f'<section class="page" style="width:1080px;height:1920px">{s1}{s2}{s3}</section>'
+    cover = f'''<div class="page" style="width:1080px;height:1350px;background:var(--areia);color:var(--noite)">
+      <div class="abs t" style="left:80px;top:80px;width:920px;font-size:104px">"Eu quase não falo no grupo."</div>
+      <div class="abs ticket" style="left:120px;top:560px;width:840px;padding:40px 46px 54px;transform:rotate(-2deg);background:var(--noite);color:var(--areia)">
+        <div class="mono" style="font-size:26px;letter-spacing:.06em;color:var(--manga)">A RETROSPECTIVA · TAGARELA DO ANO</div>
+        <div class="t" style="font-size:180px;margin-top:10px;color:var(--manga)">2.318</div><div style="font-size:42px;font-weight:700">mensagens. Você.</div></div>'''
+    cover = cover.replace('class="abs ticket"', 'class="abs"') + '</div>'
+    piece(id='R-R21', fmt='reel', day=6, slot='19h45', title='Meme: "eu quase não falo no grupo" × a retrospectiva', total=T, poster=.55, kind='meme',
+          music='S04/retrozap/reels/R-R12.mp4',
+          html=doc('R-R21', FONTS, CSS + tl.style() + '@keyframes cntup{from{--n:0}to{--n:2318}}', body, 1080, 1920, reel=True, total=T),
+          cover=cover_from_feed(cover, 'var(--areia)'),
+          caption=('Eu, todo ano: "eu quase não falo no grupo." 🤐\n'
+                   'A retrospectiva: 2.318 mensagens. Tagarela do ano.\n\n'
+                   'Marca quem jura que é quieto (e manda no grupo pra ele ver) 👇\n'
+                   'A retrospectiva do seu grupo: retrozap.com.br\n#retrozap #grupodewhatsapp #meme #retrospectiva2026 #amigos'),
+          notes='Meme "eu × a realidade". Número de exemplo com etiqueta "dados de exemplo · Turma do Churras". Fundo areia → noite. Música de banco do R-R12 aprovado (S04), fade de saída. Sem preço.')
+
+# -------------------------------------------------------------------------------------
+# R-C16 · Carrossel (seg 14/12) · Qual grupo fazer primeiro? (fluxograma)
+# -------------------------------------------------------------------------------------
+def r_c16():
+    def caixa(x, y, w, txt, q=False, extra=''):
+        return f'<div class="abs flux{" q" if q else ""}" style="left:{x}px;top:{y}px;width:{w}px;{extra}">{txt}</div>'
+    def seta(x, y, h, lbl=''):
+        return (f'<div class="seta" style="left:{x}px;top:{y}px;height:{h}px"></div>'
+                + (f'<div class="abs mono" style="left:{x + 16}px;top:{y + h / 2 - 18}px;font-size:26px;color:var(--neblina)">{lbl}</div>' if lbl else ''))
+    pages = [page(f'''
+      <div class="abs mono" style="left:80px;top:70px;font-size:28px;letter-spacing:.08em;color:var(--neblina)">FLUXOGRAMA · 30 SEGUNDOS</div>
+      <div class="abs t" style="left:80px;top:140px;width:920px;font-size:118px">Qual grupo fazer primeiro?</div>
+      <div class="abs" style="left:80px;top:470px;font-size:44px;font-weight:700;color:var(--manga)">Família, amigos, firma ou casal. Arrasta →</div>
+      <div class="abs" style="left:80px;top:700px;display:flex;gap:30px">{icon('house-with-garden', 180)}{icon('clinking-beer-mugs', 180)}{icon('briefcase', 180)}{icon('two-hearts', 180)}</div>''')]
+    pages.append(page(f'''
+      <div class="abs mono" style="left:80px;top:60px;font-size:26px;letter-spacing:.08em;color:var(--neblina)">COMECE AQUI</div>
+      {caixa(190, 120, 700, 'O grupo teve mais de 1.000 mensagens este ano?', True)}
+      {seta(300, 260, 120, 'sim')}{seta(780, 260, 120, 'não')}
+      {caixa(80, 390, 480, 'Tem alguém que some e volta no Natal?', True)}
+      {caixa(620, 390, 380, 'É só você e o seu amor?', True)}
+      {seta(200, 560, 130, 'sim')}{seta(450, 560, 130, 'não')}{seta(720, 520, 170, 'sim')}{seta(930, 520, 170, 'não')}
+      {caixa(60, 700, 300, icon('house-with-garden', 110) + '<br>Grupo da família')}
+      {caixa(380, 700, 260, icon('clinking-beer-mugs', 110) + '<br>Grupo dos amigos')}
+      {caixa(660, 700, 190, icon('two-hearts', 90) + '<br>Casal', extra='font-size:32px')}
+      {caixa(870, 700, 170, icon('briefcase', 90) + '<br>Firma', extra='font-size:32px;padding:22px 10px')}
+      <div class="abs" style="left:80px;top:1080px;width:920px;font-size:40px;font-weight:700">Deu família? Prepare-se pro troféu "Bom Dia com Flor".</div>'''))
+    pages.append(page(f'''
+      <div class="abs" style="inset:0;background:var(--manga)"></div>
+      <div class="abs t" style="left:80px;top:100px;width:920px;font-size:110px;color:var(--noite)">O primeiro grupo é grátis.</div>
+      <div class="abs t" style="left:80px;top:400px;width:920px;font-size:110px;color:var(--noite)">Escolhe bem.</div>
+      <div class="abs" style="left:80px;top:720px;width:900px;font-size:44px;font-weight:700;line-height:1.35;color:var(--noite)">Manda o fluxograma no grupo que você escolheu. Eles vão querer saber por quê.</div>
+      <div class="abs" style="left:80px;top:1100px">{assinatura(360, inv=True)}</div>'''))
+    pages.append(C.endcard(END_RG))
+    piece(id='R-C16', fmt='carrossel', day=7, slot='12h30', title='Fluxograma: qual grupo fazer primeiro?', kind='utilidade', w=1080, h=1350,
+          html=doc('R-C16', FONTS, CSS, ''.join(pages), 1080, 1350),
+          caption=('Qual grupo fazer primeiro: família, amigos, firma ou casal? 🧭\n'
+                   'Segue o fluxograma e descobre em 30 segundos.\n\n'
+                   'Manda no grupo que você escolheu (eles vão querer saber por quê) 👇\n'
+                   'O primeiro grupo é grátis: retrozap.com.br\n#retrozap #grupodewhatsapp #retrospectiva2026 #amigos #familia'),
+          notes='Formato novo (fluxograma). Fala do 1º grupo grátis (oferta do site), sem preço. Só ícones oficiais. Card final = CTA aprovado do S04 (R-C10-6). Motivo de envio: mandar no grupo escolhido.')
+
+# -------------------------------------------------------------------------------------
+# Stories (1 sequência de 3 por dia, 12h, sem adesivo): Frase pro grupo
+# -------------------------------------------------------------------------------------
+FRASES5 = [
+    (1, 'grupo', 'O grupo da família em dezembro: foto da árvore, foto da ceia, foto do prato.', 'camera-with-flash', 'Quem manda a primeira foto no seu?'),
+    (2, 'grupo', 'Todo amigo secreto tem quem compra o presente no caminho da festa.', 'party-popper', 'Marca quem é no seu grupo.'),
+    (3, 'casal', '"Chegou?" é o "te amo" de quem não gosta de falar "te amo".', 'heart-with-arrow', 'Manda pro seu amor.'),
+    (4, 'grupo', 'Grupo do trabalho de 20/12 a 5/1: o silêncio mais bonito do ano.', 'briefcase', 'Quem vai quebrar o silêncio no seu?'),
+    (5, 'grupo', 'Todo grupo tem quem manda "feliz Natal" copiado de outro grupo.', 'scroll', 'Marca o copia e cola.'),
+    (6, 'casal', 'Casal: cada um jura que é o outro que esquece de responder.', 'love-letter', 'A conversa de vocês tem o placar.'),
+    (7, 'grupo', 'Grupo dos amigos em dezembro: 14 "saudade" e nenhum encontro marcado.', 'spiral-calendar-pad', 'Manda no grupo e marca a data.'),
 ]
 
 def r_stories():
-    for n, (d, txt, ic, lay) in enumerate(FRASES_S03):
-        if n == 1: r_s14(); continue  # rodada 1: Gui pediu tema e design novos
-        fs = 120 if len(txt) < 50 else 106
-        if lay == 'nota':  # papel de cupom/recibo
-            corpo = f'''<div class="abs" style="left:110px;top:330px;width:860px;background:var(--areia);color:var(--noite);border-radius:12px;padding:60px 60px 70px;transform:rotate(-2deg);box-shadow:0 30px 60px rgba(0,0,0,.4);
-                -webkit-mask:radial-gradient(18px at 50% 100%,#0000 98%,#000) 0 0/52px 100% repeat-x">
-              <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:4px dashed var(--noite);padding-bottom:30px;margin-bottom:40px">
-                <span class="mono" style="font-size:30px">GRUPO · {C.DIAS[d].upper()}</span>{icon(ic, 120)}</div>
-              <div class="t" style="font-size:{fs}px">{txt}</div></div>'''
-            bg, cls = 'var(--noite)', ''
-        elif lay == 'balao':  # mensagem única gigante, sem marca de app
-            corpo = f'''<div class="abs" style="left:80px;top:330px">{icon(ic, 200)}</div>
-              <div class="abs" style="left:80px;top:580px;width:920px;background:var(--areia);color:var(--noite);border-radius:50px 50px 50px 12px;padding:56px 56px 40px;box-shadow:0 20px 50px rgba(0,0,0,.35)">
-                <div class="t" style="font-size:{fs}px">{txt}</div><div class="mono" style="text-align:right;font-size:28px;opacity:.5;margin-top:24px">21:07 ✓✓</div></div>'''
-            bg, cls = 'var(--noite)', ''
-        elif lay == 'casal':
-            corpo = f'''<div class="abs" style="left:80px;top:330px">{icon(ic, 240, 'casal')}</div>
-              <div class="abs" style="left:80px;top:640px;width:920px;background:#fff;border-radius:50px;padding:60px;box-shadow:0 24px 60px rgba(94,11,43,.18)"><div class="t" style="font-size:{fs + 10}px">{txt}</div></div>'''
-            bg, cls = 'var(--creme)', 'casal'
-        else:  # cor chapada com ícone
-            corpo = f'''<div class="abs" style="left:80px;top:320px">{icon(ic, 260)}</div>
-              <div class="abs t" style="left:80px;top:660px;width:920px;font-size:{fs + 8}px;color:var(--noite)">{txt}</div>'''
-            bg, cls = 'var(--manga)', ''
-        claro = bg == 'var(--manga)'
-        cor_cta = 'var(--noite)' if claro else ('var(--cereja)' if cls else 'var(--manga)')
-        casa = 'casal' if cls else 'grupo'
-        body = f'''<section class="page {cls}" style="width:1080px;height:1920px;background:{bg}">{corpo}
-          <div class="abs" style="left:80px;top:1350px;width:920px;font-size:44px;font-weight:700;color:{cor_cta}">{'Tira print e manda pro seu amor.' if cls else 'Tira print e manda no grupo.'}</div>
-          <div class="abs" style="left:80px;top:1440px">{assinatura(300, casa, inv=claro)}</div>
-        </section>'''
-        sid = f'R-S{13 + n}'
-        piece(id=sid, fmt='story', day=d, title=f'Frase pro grupo: {txt}', w=1080, h=1920, html=doc(sid, FONTS, CSS, body, 1080, 1920),
-              caption='(story, sem legenda)', sticker='', kind='story',
-              notes={'nota': 'Frase num papel de recibo (cupom). ', 'balao': 'Frase como mensagem única, sem marca de app. ', 'casal': 'Casa Casal, sem roxo. ', 'cor': 'Cor chapada com ícone oficial. '}[lay] + 'Sem adesivo, sem preço, sem etiqueta. Motivo de envio: print no grupo.')
-
-def r_s14():
-    """v2 (rodada 1): tema novo (amigo secreto já está no R-C7) e objeto concreto: resposta citando mensagem antiga."""
-    txt = 'Todo grupo tem quem responde em novembro a mensagem de março.'
-    corpo = f'''<div class="abs t" style="left:80px;top:300px;width:920px;font-size:96px;color:var(--noite)">{txt}</div>
-      <div class="abs" style="left:80px;top:800px;width:920px;background:var(--areia);color:var(--noite);border-radius:50px 50px 12px 50px;padding:34px 40px 26px;box-shadow:0 20px 50px rgba(26,11,46,.25);transform:rotate(-1.5deg)">
-        <div style="background:rgba(26,11,46,.08);border-left:10px solid var(--uva);border-radius:18px;padding:20px 26px;margin-bottom:22px">
-          <div style="font-weight:800;font-size:30px;color:var(--acai)">Você · 14/03</div>
-          <div style="font-size:38px;margin-top:6px">alguém tem o contato de um encanador?</div></div>
-        <div class="t" style="font-size:64px">tenho sim!! ainda precisa?</div>
-        <div class="mono" style="text-align:right;font-size:28px;opacity:.55;margin-top:14px">23/11 · 21:07 ✓✓</div></div>
-      <div class="abs" style="left:850px;top:720px;transform:rotate(8deg)">{icon('turtle', 170)}</div>'''
-    body = f'''<section class="page" style="width:1080px;height:1920px;background:var(--manga)">{corpo}
-      <div class="abs" style="left:80px;top:1350px;width:920px;font-size:44px;font-weight:700;color:var(--noite)">Marca o amigo que ainda vai responder.</div>
-      <div class="abs" style="left:80px;top:1440px">{assinatura(300, 'grupo', inv=True)}</div>
-    </section>'''
-    piece(id='R-S14', fmt='story', day=2, title=f'Frase pro grupo: {txt}', w=1080, h=1920, html=doc('R-S14', FONTS, CSS, body, 1080, 1920),
-          caption='(story, sem legenda)', sticker='', kind='story',
-          notes='v2 (rodada 1): tema novo (amigo secreto já estava no R-C7) e objeto concreto: a resposta citando a mensagem de março, num balão sem marca de app. Sem adesivo, sem preço, sem etiqueta. Motivo de envio: marcar o amigo.')
+    for n, (d, casa, frase, ic, prompt) in enumerate(FRASES5):
+        sid = f'R-S{30 + n}'
+        cs = casa == 'casal'
+        bg = 'var(--creme)' if cs else 'var(--noite)'
+        fg = 'var(--vinho)' if cs else 'var(--areia)'
+        acc = 'var(--cereja)' if cs else 'var(--manga)'
+        tk_bg = '#fff' if cs else 'var(--areia)'
+        f1 = f'''<section class="page {'casal' if cs else ''}" style="width:1080px;height:1920px;background:{bg}">
+          <div class="abs" style="left:90px;top:320px;width:880px;background:{tk_bg};color:{'var(--vinho)' if cs else 'var(--noite)'};border-radius:26px;padding:46px 50px 70px;transform:rotate(-2deg);box-shadow:0 30px 60px rgba(0,0,0,.3)">
+            <div style="display:flex;justify-content:space-between;align-items:center"><span class="mono" style="font-size:26px;letter-spacing:.06em">{'CASAL' if cs else 'GRUPO'} · {C.DIAS[d].upper()}</span>
+              <div style="width:110px;height:110px;border-radius:28px;background:{acc};display:flex;align-items:center;justify-content:center">{icon(ic, 84, casa)}</div></div>
+            <div style="border-top:4px dashed {'var(--clinha)' if cs else 'var(--neblina)'};margin:28px 0"></div>
+            <div class="t" style="font-size:{84 if len(frase) < 60 else 74}px;line-height:1.02">{frase}</div></div>
+          <div class="abs" style="left:90px;top:1380px;font-size:46px;font-weight:700;color:{acc}">Tira print e manda {'pro seu amor' if cs else 'no grupo'}.</div>
+          <div class="abs" style="left:90px;top:1480px">{assinatura(260, casa)}</div></section>'''
+        f2 = f'''<section class="page {'casal' if cs else ''}" style="width:1080px;height:1920px;background:{bg};color:{fg}">
+          <div class="abs t" style="left:90px;top:330px;width:900px;font-size:76px">{frase}</div>
+          <div class="abs" style="left:90px;top:850px;width:320px;height:320px;border-radius:80px;background:{acc};display:flex;align-items:center;justify-content:center;transform:rotate(-4deg)">{icon(ic, 240, casa)}</div>
+          <div class="abs t" style="left:90px;top:1330px;width:900px;font-size:70px;color:{acc}">{prompt}</div>
+          <div class="abs" style="left:90px;top:1500px">{assinatura(240, casa)}</div></section>'''
+        if cs:
+            f3 = f'''<section class="page casal" style="width:1080px;height:1920px;background:var(--creme);color:var(--vinho)">
+              <div class="abs" style="left:90px;top:300px">{assinatura(300, 'casal')}</div>
+              <div class="abs t" style="left:90px;top:430px;width:900px;font-size:110px">A retrospectiva de <span class="hl">vocês dois.</span></div>
+              <div class="abs" style="left:90px;top:860px;width:900px;font-size:46px;font-weight:700;line-height:1.5">✓ Troféus do casal, feitos da conversa<br>✓ Quem manda mais, quem responde mais rápido<br>✓ Nada sai do seu celular</div>
+              <div class="abs" style="left:90px;top:1360px;width:900px;height:140px;border-radius:30px;background:var(--cereja);color:#fff;display:flex;align-items:center;justify-content:center;font:800 56px/1 'Bricolage Grotesque'">Fazer a de vocês →</div>
+              <div class="abs mono" style="left:0;right:0;top:1550px;text-align:center;font-size:38px">retrozap.com.br</div></section>'''
+        else:
+            f3 = f'''<section class="page" style="width:1080px;height:1920px;background:var(--noite);color:var(--areia)">
+              <div class="abs" style="left:90px;top:300px">{assinatura(300)}</div>
+              <div class="abs t" style="left:90px;top:430px;width:900px;font-size:110px">A retrospectiva do seu grupo do WhatsApp.</div>
+              <div class="abs" style="left:90px;top:900px;width:900px;font-size:46px;font-weight:700;line-height:1.5">✓ Um troféu pra cada um, feito da conversa do ano<br>✓ Quem fala mais, quem some, quem manda áudio<br>✓ Nada sai do seu celular</div>
+              <div class="abs" style="left:90px;top:1360px;width:900px;height:140px;border-radius:30px;background:var(--manga);color:var(--noite);display:flex;align-items:center;justify-content:center;font:800 56px/1 'Bricolage Grotesque'">Fazer a do meu grupo →</div>
+              <div class="abs mono" style="left:0;right:0;top:1550px;text-align:center;font-size:38px">retrozap.com.br</div></section>'''
+        piece(id=sid, fmt='story', day=d, slot='12h', title=f'Frase pro grupo: {frase} · sequência de 3', w=1080, h=1920, frames=3,
+              html=doc(sid, FONTS, CSS, f1 + f2 + f3, 1080, 1920), caption='(story, sem legenda; postar os 3 quadros em sequência, no mesmo horário)', sticker='', kind='story',
+              notes=f'Sequência de 3 sem adesivo (formato aprovado no S03): frase em bilhete → pergunta de marcação → CTA ({casa}). Frase nova, sem repetir as das últimas 4 semanas. Sem preço. Motivo de envio: print no grupo.')
 
 def build():
-    r_r8(); r_c7(); r_r9(); r_c8(); r_r10(); r_c9(); r_r11(); r_stories()
+    r_c13(); r_r19(); r_c14(); r_r20(); r_c15(); r_r21(); r_c16(); r_stories()
 
 build()
